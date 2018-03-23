@@ -32,7 +32,7 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kwonsikkim"
+  id:               "algamza"
 
 # URL
 url:                "https://algamza.github.io" # the base hostname & protocol for your site
