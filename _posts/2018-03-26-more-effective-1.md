@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "항목 1 : 포인터(pinter)와 참조자(reference)를 구분하자"
+title: "항목 1 : 포인터(pointer)와 참조자(reference)를 구분하자"
 description: "포인터와 참조자를 쓸 시기를 구분하는 방법은 무엇일까?"
 date: 2018-03-26
 tags: [c++, More Effective C++]
