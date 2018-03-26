@@ -9,7 +9,7 @@ share: true
 ---
 
 > C99의 경우에 다소 제한적이기는 하지만, 프로그램 실행 중에 크기가 변할 수 있는 배열인
-VLA(Variable Length Array)를 지원한다.\
-– 전웅, <C 언어 펀더멘탈>, 한빛미디어, 2005, pp. 506
+VLA(Variable Length Array)를 지원한다.
+> – 전웅, <C 언어 펀더멘탈>, 한빛미디어, 2005, pp. 506
 
 
