@@ -3,7 +3,7 @@ layout: post
 title: "A Full and Comprehensive Style Test"
 description: "Test post for style"
 date: 2016-08-15
-tags: [test, style]
+tags: [샘플]
 comments: true
 share: true
 ---

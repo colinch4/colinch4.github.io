@@ -3,7 +3,7 @@ layout: post
 title: "한글 문서 스타일 샘플"
 description: "한글로 된 글의 샘플입니다."
 date: 2017-01-19
-tags: [샘플 포스트, 테스트, 스타일]
+tags: [샘플]
 comments: true
 share: true
 ---
