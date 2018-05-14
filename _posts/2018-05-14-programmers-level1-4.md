@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[programmers][알고리즘][level1]최대공약수와 최소공배수"
+title: "programmers-level1-최대공약수와 최소공배수"
 description: "최대공약수와 최소공배수"
 date: 2018-05-14
 tags: [programmers, 알고리즘]
