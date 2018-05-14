@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "programmers-level1-피보나치 수"
+title: "programmers level1 : 피보나치 수"
 description: "피보나치 수"
 date: 2018-05-14
 tags: [programmers]
@@ -34,8 +34,11 @@ int main()
 	cout<<testAnswer;
 }
 
+```
+
 curookie 님의 풀이
 
+```c++
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -72,4 +75,3 @@ int main()
     cout<<testAnswer;
 }
 ```
-
