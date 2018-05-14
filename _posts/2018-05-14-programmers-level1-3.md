@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[programmers][알고리즘][level1]행렬의 덧셈"
+title: "programmers-level1-행렬의 덧셈"
 description: "행렬의 덧셈"
 date: 2018-05-14
 tags: [programmers, 알고리즘]
