@@ -12,14 +12,10 @@ share: true
 
 예를 들어 2x2 행렬인 A = ((1, 2), (2, 3)), B = ((3, 4), (5, 6)) 가 주어지면, 같은 2x2 행렬인 ((4, 6), (7, 9))를 반환하면 됩니다.(어떠한 행렬에도 대응하는 함수를 완성해주세요.)
 
-```c++11
+```c++
 #include<iostream>
 #include<vector>
 
 using namespace std;
 
-int main()
-{
-	vector<vector<int> > a{{1,2},{2,3}}, b{{3,4},{5,6}};
-}
 ```
