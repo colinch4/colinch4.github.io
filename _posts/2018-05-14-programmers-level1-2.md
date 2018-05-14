@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[programmers][알고리즘][level1]피보나치 수"
+title: "programmers-level1-피보나치 수"
 description: "피보나치 수"
 date: 2018-05-14
 tags: [programmers, 알고리즘]
