@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers-level2-소수 찾기"
+title: "[programmers][알고리즘][level2] 소수 찾기"
 description: "소수 찾기"
 date: 2018-05-14
-tags: [programmers]
+tags: [programmers, 알고리즘]
 comments: true
 share: true
 ---
@@ -44,9 +44,10 @@ int main()
 
 	cout<<testAnswer;
 }
+```
 
 정문교 님의 풀이
-
+```
 #include<iostream>
 #include <vector>
 
