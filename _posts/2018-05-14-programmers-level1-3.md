@@ -31,12 +31,12 @@ vector<vector<int> > satrix(vector<vector<int> >A, vector<vector<int> >B)
         while( _a_it != (*a_it).end() ) 
         {
             _answer.push_back((*_a_it) + (*_b_it)); 
-            ++_a_it;
-            ++_b_it;
+            _a_it += 1;
+            _b_it += 1;
         }
         answer.push_back(_answer);
-        ++a_it; 
-        ++b_it; 
+        a_it += 1; 
+        b_it += 1; 
     }
 	return answer;
 }
