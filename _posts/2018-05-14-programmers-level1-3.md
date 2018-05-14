@@ -13,79 +13,8 @@ share: true
 예를 들어 2x2 행렬인 A = ((1, 2), (2, 3)), B = ((3, 4), (5, 6)) 가 주어지면, 같은 2x2 행렬인 ((4, 6), (7, 9))를 반환하면 됩니다.(어떠한 행렬에도 대응하는 함수를 완성해주세요.)
 
 ```c++
-//#include<iostream>
-//#include<vector>
-
-//using namespace std;
-
-//vector<vector<int> > satrix(vector<vector<int> >A, vector<vector<int> >B)
-//{
-//	vector<vector<int> > answer;
-//    auto a_it = A.begin(); 
-//    auto b_it = B.begin(); 
-//    while( a_it != A.end() ) 
-//    {
-//        vector<int> _answer; 
-//        auto _a_it = (*a_it).begin(); 
-//        auto _b_it = (*b_it).begin(); 
-//        while( _a_it != (*a_it).end() ) 
-//        {
-//            _answer.push_back((*_a_it) + (*_b_it)); 
-//            _a_it += 1;
- //           _b_it += 1;
- //       }
- //       answer.push_back(_answer);
- //       a_it += 1; 
-//        b_it += 1; 
-//    }
-//	return answer;
-//}
-//int main()
-//{
-//	vector<vector<int> > a{{1,2},{2,3}}, b{{3,4},{5,6}};//
-//	vector<vector<int> > answer = satrix(a,b);
-
-//	for(int i=0;i<answer.size();i++)
-//	{
-//		for(int j=0;j<answer[0].size();j++)
-//		{
-//			cout<<answer[i][j]<<" ";
-//		}
-//		cout<<"\n";
-//	}
-//}
-```
-김경주 님의 풀이
-
-```c++
 #include<iostream>
 #include<vector>
+
 using namespace std;
-
-vector<vector<int> > suatrix(vector<vector<int> >A, vector<vector<int> >B)
-{
-    vector<vector<int> > answer = A;
-
-  for(int i=0; i<A.size(); i++){
-    for(int j=0; j<A[0].size(); j++){
-      answer[i][j] = A[i][j] + B[i][j];
-    }
-  }
-
-    return answer;
-}
-int main()
-{
-    vector<vector<int> > a{{1,2},{2,3}}, b{{3,4},{5,6}};
-    vector<vector<int> > answer = suatrix(a,b);
-
-    for(int i=0;i<answer.size();i++)
-    {
-        for(int j=0;j<answer[0].size();j++)
-        {
-            cout<<answer[i][j]<<" ";
-        }
-        cout<<"\n";
-    }
-}
-```  
+```
