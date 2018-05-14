@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "programmers-level1-약수의 합"
+title: "programmers level1 : 약수의 합"
 description: "약수의 합"
 date: 2018-05-14
 tags: [programmers]
@@ -33,10 +33,10 @@ int main()
 
 	cout<<testAnswer;
 }
-
+```
 
 curookie 님의 풀이
-
+```c++
 #include<iostream>
 #include<cmath>
 using namespace std;
