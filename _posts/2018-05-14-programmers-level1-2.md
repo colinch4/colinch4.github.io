@@ -33,6 +33,5 @@ int main()
 
 	cout<<testAnswer;
 }
-
 ```
 
