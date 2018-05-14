@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers-level1-최대공약수와 최소공배수"
+title: "[programmers][알고리즘][level1] 최대공약수와 최소공배수"
 description: "최대공약수와 최소공배수"
 date: 2018-05-14
-tags: [programmers]
+tags: [programmers, 알고리즘]
 comments: true
 share: true
 ---
@@ -60,10 +60,11 @@ int main()
 
 	cout<<testAnswer[0]<<" "<<testAnswer[1];
 }
-
+```
 
 김준민 님의 풀이 
 
+```c++
 #include<vector>
 #include<iostream>
 using namespace std;
