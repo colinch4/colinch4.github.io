@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers level1 : 약수의 합"
+title: "[programmers][알고리즘][level1] 약수의 합"
 description: "약수의 합"
 date: 2018-05-14
-tags: [programmers]
+tags: [programmers, 알고리즘]
 comments: true
 share: true
 ---
