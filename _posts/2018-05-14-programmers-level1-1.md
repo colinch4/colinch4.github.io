@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[programmers][알고리즘][level1]약수의 합"
+title: "programmers-level1-약수의 합"
 description: "약수의 합"
 date: 2018-05-14
 tags: [programmers, 알고리즘]
@@ -34,3 +34,26 @@ int main()
 	cout<<testAnswer;
 }
 ```
+
+curookie 님의 풀이
+```c++
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int sumDivisor(int n)
+{
+  int sum = 0;
+  for(int i=1; i<=sqrt(n); i++) if(n%i==0) { sum += i; if(n!=i*i) sum += n/i; }
+    return sum;
+}
+
+int main()
+{
+    int testCase = 12;
+    int testAnswer = sumDivisor(testCase);
+
+    cout<<testAnswer;
+}
+```
+
