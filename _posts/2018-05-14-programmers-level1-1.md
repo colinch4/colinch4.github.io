@@ -3,7 +3,7 @@ layout: post
 title: "programmers-level1-약수의 합"
 description: "약수의 합"
 date: 2018-05-14
-tags: [programmers, 알고리즘]
+tags: [programmers]
 comments: true
 share: true
 ---
