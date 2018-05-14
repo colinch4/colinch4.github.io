@@ -60,10 +60,10 @@ int main()
 
 	cout<<testAnswer[0]<<" "<<testAnswer[1];
 }
-```
+
 
 김준민 님의 풀이 
-```c++
+
 #include<vector>
 #include<iostream>
 using namespace std;

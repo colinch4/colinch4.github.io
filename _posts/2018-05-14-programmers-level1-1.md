@@ -33,10 +33,10 @@ int main()
 
 	cout<<testAnswer;
 }
-```
+
 
 curookie 님의 풀이
-```c++
+
 #include<iostream>
 #include<cmath>
 using namespace std;

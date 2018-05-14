@@ -44,10 +44,9 @@ int main()
 
 	cout<<testAnswer;
 }
-```
 
 정문교 님의 풀이
-```c++
+
 #include<iostream>
 #include <vector>
 

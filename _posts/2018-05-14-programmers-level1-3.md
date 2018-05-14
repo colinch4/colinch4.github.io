@@ -54,10 +54,9 @@ int main()
 		cout<<"\n";
 	}
 }
-```
 
 김경주 님의 풀이
-```c++
+
 #include<iostream>
 #include<vector>
 using namespace std;
