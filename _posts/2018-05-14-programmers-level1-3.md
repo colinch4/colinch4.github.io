@@ -18,4 +18,41 @@ share: true
 
 using namespace std;
 
+vector<vector<int>> sumMatrix(vector<vector<int>> A, vector<vector<int>> B)
+{
+	vector<vector<int>> answer;
+    auto a_it = A.begin(); 
+    auto b_it = B.begin(); 
+    while( a_it != A.end() ) 
+    {
+        vector<int> _answer; 
+        auto _a_it = (*a_it).begin(); 
+        auto _b_it = (*b_it).begin(); 
+        while( _a_it != (*a_it).end() ) 
+        {
+            _answer.push_back((*_a_it) + (*_b_it)); 
+            ++_a_it;
+            ++_b_it;
+        }
+        answer.push_back(_answer);
+        ++a_it; 
+        ++b_it; 
+    }
+	return answer;
+}
+
+int main()
+{
+	vector<vector<int> > a{{1,2},{2,3}}, b{{3,4},{5,6}};
+	vector<vector<int> > answer = sumMatrix(a,b);
+
+	for(int i=0;i<answer.size();i++)
+	{
+		for(int j=0;j<answer[0].size();j++)
+		{
+			cout<<answer[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+}
 ```
