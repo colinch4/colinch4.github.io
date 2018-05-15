@@ -38,7 +38,7 @@ int main()
 ```
 
 김솔비 님의 풀이
-```
+```c++
 #include<iostream>
 using namespace std;
 

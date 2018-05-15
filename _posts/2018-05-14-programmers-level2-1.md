@@ -47,7 +47,7 @@ int main()
 ```
 
 정문교 님의 풀이
-```
+```c++
 #include<iostream>
 #include <vector>
 
