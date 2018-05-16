@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[programmers][알고리즘][level2] 최소값 만들기"
-description: "최소값 만들기"
+description: "자연수로 이루어진 길이가 같은 수열 A,B가 있습니다. 최솟값 만들기는 A, B에서 각각 한 개의 숫자를 뽑아 두 수를 곱한 값을 누적하여 더합니다. 이러한 과정을 수열의 길이만큼 반복하여 최종적으로 누적된 값이 최소가 되도록 만드는 것이 목표입니다."
 date: 2018-05-15
 tags: [programmers, 알고리즘]
 comments: true
