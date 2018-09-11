@@ -130,3 +130,6 @@ $ rake preview
 ## License
 
 This theme is released under MIT License.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MDMxODUwNzRdfQ==
+-->
