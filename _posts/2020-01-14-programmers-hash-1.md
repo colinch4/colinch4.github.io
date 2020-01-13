@@ -27,9 +27,9 @@ share: true
 ### 입출력 예제
 |phone_book|return|
 |------|---|
-|[119, 97674223, 1195524421]|false|
-|[123,456,789]|true|
-|[12,123,1235,567,88]|false|
+|119, 97674223, 1195524421|false|
+|123,456,789|true|
+|12,123,1235,567,88|false|
 
 ### 입출력 예 설명
 입출력 예 #1
@@ -41,7 +41,7 @@ share: true
 입출력 예 #3
 첫 번째 전화번호, “12”가 두 번째 전화번호 “123”의 접두사입니다. 따라서 답은 false입니다.
 
-
+#### 내 풀이 
 ```c++
 #include <string>
 #include <vector>
@@ -62,7 +62,7 @@ bool solution(vector<string> phone_book) {
 }
 ```
 
-이종현 님의 풀이
+#### 이종현 님의 풀이
 ```c++
 #include <string>
 #include <vector>
