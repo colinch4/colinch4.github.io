@@ -21,17 +21,11 @@ completion의 길이는 participant의 길이보다 1 작습니다.
 참가자 중에는 동명이인이 있을 수 있습니다.
 
 ### 입출력 예
-| participant | completion | return |
-| - | - | - |
-| [leo, kiki, eden] | [eden, kiki] | leo |
-| [marina, josipa, nikola, vinko, filipa] | [josipa, filipa, marina, nikola] | vinko |
-| [mislav, stanko, mislav, ana] | [stanko, ana, mislav] |mislav |
-
-|제목|내용|설명|
-|:---|---:|:---:|
-|왼쪽정렬|오른쪽정렬|중앙정렬|
-|왼쪽정렬|오른쪽정렬|중앙정렬|
-|왼쪽정렬|오른쪽정렬|중앙정렬|
+|participant|completion|return|
+|-----------|----------|------|
+|[leo, kiki, eden]|[eden, kiki]|leo|
+|[marina, josipa, nikola, vinko, filipa]|[josipa, filipa, marina, nikola]|vinko|
+|[mislav, stanko, mislav, ana]|[stanko, ana, mislav]|mislav|
 
 #### 입출력 예 설명
 예제 #1
