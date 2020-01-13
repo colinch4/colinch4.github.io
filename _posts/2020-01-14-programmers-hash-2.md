@@ -27,6 +27,12 @@ completion의 길이는 participant의 길이보다 1 작습니다.
 | [marina, josipa, nikola, vinko, filipa] | [josipa, filipa, marina, nikola] | vinko |
 | [mislav, stanko, mislav, ana] | [stanko, ana, mislav] |mislav |
 
+|제목|내용|설명|
+|:---|---:|:---:|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
+
 #### 입출력 예 설명
 예제 #1
 leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
