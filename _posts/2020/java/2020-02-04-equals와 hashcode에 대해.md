@@ -9,8 +9,6 @@ share: true
 ---
 
 
-# Java equals()와 hashCode()에 대해
-
 ## equals()
 
 -   두 객체의  `내용이 같은지`  확인하는 Method입니다.
