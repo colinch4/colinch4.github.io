@@ -11,7 +11,7 @@ b. 1984 Paju-si, Gyeonggi-do, KR
 * * * 
 
 #### System Software Engineer
-9년 차 시스템 개발자로 다양한 SW 아키텍처 설계 경험 있습니다. Java/Kotlin, C/C++ 등을 사용하여 Android, Linux시스템에서 Automotive Service, 네트워크 통신 및 미디어 서비스를 위한 프레임워크 개발을 진행했습니다. IVI system, Settop-Box, Casting Device 등 에서 좋은 구조의 프레임워크를 만들기 위해 항상 고민하고 노력하고 있습니다.
+I am a 9-year system developer with various SW architecture design experiences. I used Java / Kotlin, C / C ++, etc. to develop a framework for Automotive Service, Network Communication and Media Services on Android and Linux systems. I am always struggling and trying to make a good structured framework in IVI system, Settop-Box, Casting Device, etc.
 
 * * * 
 #### Technical Tools
