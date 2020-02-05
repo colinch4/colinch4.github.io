@@ -75,7 +75,7 @@ Modem, PPPOE for configuration
 * ***Soongsil Univ***, 2003 - 2010 – Seoul, KR  
 Bachelor of Media Engineering 
 
-* Computer Science, Data Structure, Algorithm, Graphics, Image Processing, Computer Vision, Embedded System, Database, Multimedia, Network, Programming Language (C, C++, JAVA)
+Computer Science, Data Structure, Algorithm, Graphics, Image Processing, Computer Vision, Embedded System, Database, Multimedia, Network, Programming Language (C, C++, JAVA)
 
 * ***Sam Kwang Highschool***, 2000 - 2002 – Paju, KR  
 Major in 
