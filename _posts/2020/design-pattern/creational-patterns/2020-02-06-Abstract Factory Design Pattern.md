@@ -247,7 +247,8 @@ The client code calls the creation methods of a factory object instead of creati
 
 Client code works with factories and products only through their abstract interfaces. It allows the same client code to work with different products. You just create a new concrete factory class and pass it to the client code.
 
-> -   If you can’t figure out the difference between various factory patterns and concepts, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory Comparison).
+> -   If you can’t figure out the difference between various factory patterns and concepts, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory-Comparison).
+
 
 [Learn more about Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)
 

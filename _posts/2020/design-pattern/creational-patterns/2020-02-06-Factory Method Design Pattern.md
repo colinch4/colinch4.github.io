@@ -251,7 +251,7 @@ Therefore, you need to have a regular method capable of creating new objects as 
 
 Factory Method defines a method, which should be used for creating objects instead of direct constructor call (`new`  operator). Subclasses can override this method to change the class of objects that will be created.
 
-> If you can’t figure out the difference between  **Factories**,  **Factory Method**  &  **Abstract Factory**  patterns, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory Comparison).
+> If you can’t figure out the difference between  **Factories**,  **Factory Method**  &  **Abstract Factory**  patterns, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory-Comparison).
 
 [Learn more about Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)
 
