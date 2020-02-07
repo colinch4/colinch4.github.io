@@ -216,9 +216,9 @@ package algamza.facade.example.some_complex_media_library;
 
 public interface Codec {
 }
-
+```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-MPEG4CompressionCodec-java)**some_complex_media_library/MPEG4CompressionCodec.java**
-
+```java
 package algamza.facade.example.some_complex_media_library;
 
 public class MPEG4CompressionCodec implements Codec {
