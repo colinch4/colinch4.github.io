@@ -1,352 +1,831 @@
 ---
 layout: post
-title: "Builder Design Pattern"
-description: "Separate the construction of a complex object from its representation so that the same construction process can create different representations. Parse a complex representation, create one of several targets."
+title: "[Design Pattern] Builder"
+description: "Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code."
 date: 2020-02-06 13:04
 tags: [디자인패턴]
 comments: true
 share: true
 ---
 
-/ [Design Patterns](../2020-02-06-Design%20Patterns.md) / [Creational patterns](./2020-02-06-Creational%20patterns.md)
-
-### Intent
-
--   Separate the construction of a complex object from its representation so that the same construction process can create different representations.
--   Parse a complex representation, create one of several targets.
-
-### Problem
-
-An application needs to create the elements of a complex aggregate. The specification for the aggregate exists on secondary storage and one of many representations needs to be built in primary storage.
-
-### Discussion
-
-Separate the algorithm for interpreting (i.e. reading and parsing) a stored persistence mechanism (e.g. RTF files) from the algorithm for building and representing one of many target products (e.g. ASCII, TeX, text widget). The focus/distinction is on creating complex aggregates.
-
-The "director" invokes "builder" services as it interprets the external format. The "builder" creates part of the complex object each time it is called and maintains all intermediate state. When the product is finished, the client retrieves the result from the "builder".
-
-Affords finer control over the construction process. Unlike creational patterns that construct products in one shot, the Builder pattern constructs the product step by step under the control of the "director".
-
-### Structure
-
-The Reader encapsulates the parsing of the common input. The Builder hierarchy makes possible the polymorphic creation of many peculiar representations or targets.
-
-![Scheme of Builder](https://sourcemaking.com/files/v2/content/patterns/Builder.png)
-
-### Example
-
-The Builder pattern separates the construction of a complex object from its representation so that the same construction process can create different representations. This pattern is used by fast food restaurants to construct children's meals. Children's meals typically consist of a main item, a side item, a drink, and a toy (e.g., a hamburger, fries, Coke, and toy dinosaur). Note that there can be variation in the content of the children's meal, but the construction process is the same. Whether a customer orders a hamburger, cheeseburger, or chicken, the process is the same. The employee at the counter directs the crew to assemble a main item, side item, and toy. These items are then placed in a bag. The drink is placed in a cup and remains outside of the bag. This same process is used at competing restaurants.
-
-![Example of Builder](https://sourcemaking.com/files/v2/content/patterns/Builder_example1.png)
-
-### Check list
-
-1.  Decide if a common input and many possible representations (or outputs) is the problem at hand.
-2.  Encapsulate the parsing of the common input in a Reader class.
-3.  Design a standard protocol for creating all possible output representations. Capture the steps of this protocol in a Builder interface.
-4.  Define a Builder derived class for each target representation.
-5.  The client creates a Reader object and a Builder object, and registers the latter with the former.
-6.  The client asks the Reader to "construct".
-7.  The client asks the Builder to return the result.
-
-### Rules of thumb
-
--   Sometimes creational patterns are complementary: Builder can use one of the other patterns to implement which components get built. Abstract Factory, Builder, and Prototype can use Singleton in their implementations.
--   Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product objects (either simple or complex). Builder returns the product as a final step, but as far as the Abstract Factory is concerned, the product gets returned immediately.
--   Builder often builds a Composite.
--   Often, designs start out using Factory Method (less complicated, more customizable, subclasses proliferate) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, more complex) as the designer discovers where more flexibility is needed.
+/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
 
 
-### Code 
+## Intent
 
-#### Before
+**Builder**  is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
-In this example we render a tabular data read from a file into a GUI table. The requirement of this job is to be able to pick a different GUI implementation in run time.
+![Builder design pattern](https://refactoring.guru/images/patterns/content/builder/builder.png)
 
-This is the code BEFORE we applied the Builder pattern.
+## Problem
 
-Note: for the sake of simplicity of comparison between BEFORE and AFTER, we have made all important classes internal, so that they can live together in one file. This is not a pattern limitation.
+Imagine a complex object that requires laborious, step-by-step initialization of many fields and nested objects. Such initialization code is usually buried inside a monstrous constructor with lots of parameters. Or even worse: scattered all over the client code.
+
+![Lots of subclasses create another problem](https://refactoring.guru/images/patterns/diagrams/builder/problem1.png)
+
+You might make the program too complex by creating a subclass for every possible configuration of an object.
+
+For example, let’s think about how to create a  `House`  object. To build a simple house, you need to construct four walls and a floor, install a door, fit a pair of windows, and build a roof. But what if you want a bigger, brighter house, with a backyard and other goodies (like a heating system, plumbing, and electrical wiring)?
+
+The simplest solution is to extend the base  `House`  class and create a set of subclasses to cover all combinations of the parameters. But eventually you’ll end up with a considerable number of subclasses. Any new parameter, such as the porch style, will require growing this hierarchy even more.
+
+There’s another approach that doesn’t involve breeding subclasses. You can create a giant constructor right in the base  `House`  class with all possible parameters that control the house object. While this approach indeed eliminates the need for subclasses, it creates another problem.
+
+![The telescopic constructor](https://refactoring.guru/images/patterns/diagrams/builder/problem2.png)
+
+The constructor with lots of parameters has its downside: not all the parameters are needed at all times.
+
+In most cases most of the parameters will be unused, making  [the constructor calls pretty ugly](https://refactoring.guru/smells/long-parameter-list). For instance, only a fraction of houses have swimming pools, so the parameters related to swimming pools will be useless nine times out of ten.
+
+## Solution
+
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called  _builders_.
+
+![Applying the Builder pattern](https://refactoring.guru/images/patterns/diagrams/builder/solution1.png)
+
+The Builder pattern lets you construct complex objects step by step. The Builder doesn’t allow other objects to access the product while it’s being built.
+
+The pattern organizes object construction into a set of steps (`buildWalls`,  `buildDoor`, etc.). To create an object, you execute a series of these steps on a builder object. The important part is that you don’t need to call all of the steps. You can call only those steps that are necessary for producing a particular configuration of an object.
+
+Some of the construction steps might require different implementation when you need to build various representations of the product. For example, walls of a cabin may be built of wood, but the castle walls must be built with stone.
+
+In this case, you can create several different builder classes that implement the same set of building steps, but in a different manner. Then you can use these builders in the construction process (i.e., an ordered set of calls to the building steps) to produce different kinds of objects.
+
+![](https://refactoring.guru/images/patterns/content/builder/builder-comic-1-en.png)
+
+Different builders execute the same task in various ways.
+
+For example, imagine a builder that builds everything from wood and glass, a second one that builds everything with stone and iron and a third one that uses gold and diamonds. By calling the same set of steps, you get a regular house from the first builder, a small castle from the second and a palace from the third. However, this would only work if the client code that calls the building steps is able to interact with builders using a common interface.
+
+#### Director
+
+You can go further and extract a series of calls to the builder steps you use to construct a product into a separate class called  _director_. The director class defines the order in which to execute the building steps, while the builder provides the implementation for those steps.
+
+![](https://refactoring.guru/images/patterns/content/builder/builder-comic-2-en.png)
+
+The director knows which building steps to execute to get a working product.
+
+Having a director class in your program isn’t strictly necessary. You can always call the building steps in a specific order directly from the client code. However, the director class might be a good place to put various construction routines so you can reuse them across your program.
+
+In addition, the director class completely hides the details of product construction from the client code. The client only needs to associate a builder with a director, launch the construction with the director, and get the result from the builder.
+
+## Structure
+
+![Structure of the Builder design pattern](https://refactoring.guru/images/patterns/diagrams/builder/structure.png)
+
+1.  The  **Builder**  interface declares product construction steps that are common to all types of builders.
+    
+2.  **Concrete Builders**  provide different implementations of the construction steps. Concrete builders may produce products that don’t follow the common interface.
+    
+3.  **Products**  are resulting objects. Products constructed by different builders don’t have to belong to the same class hierarchy or interface.
+    
+4.  The  **Director**  class defines the order in which to call construction steps, so you can create and reuse specific configurations of products.
+    
+5.  The  **Client**  must associate one of the builder objects with the director. Usually, it’s done just once, via parameters of the director’s constructor. Then the director uses that builder object for all further construction. However, there’s an alternative approach for when the client passes the builder object to the production method of the director. In this case, you can use a different builder each time you produce something with the director.
+    
+
+## Pseudocode
+
+This example of the  **Builder**  pattern illustrates how you can reuse the same object construction code when building different types of products, such as cars, and create the corresponding manuals for them.
+
+![The structure of the Builder pattern example](https://refactoring.guru/images/patterns/diagrams/builder/example.png)
+
+The example of step-by-step construction of cars and the user guides that fit those car models.
+
+A car is a complex object that can be constructed in a hundred different ways. Instead of bloating the  `Car`  class with a huge constructor, we extracted the car assembly code into a separate car builder class. This class has a set of methods for configuring various parts of a car.
+
+If the client code needs to assemble a special, fine-tuned model of a car, it can work with the builder directly. On the other hand, the client can delegate the assembly to the director class, which knows how to use a builder to construct several of the most popular models of cars.
+
+You might be shocked, but every car needs a manual (seriously, who reads them?). The manual describes every feature of the car, so the details in the manuals vary across the different models. That’s why it makes sense to reuse an existing construction process for both real cars and their respective manuals. Of course, building a manual isn’t the same as building a car, and that’s why we must provide another builder class that specializes in composing manuals. This class implements the same building methods as its car-building sibling, but instead of crafting car parts, it describes them. By passing these builders to the same director object, we can construct either a car or a manual.
+
+The final part is fetching the resulting object. A metal car and a paper manual, although related, are still very different things. We can’t place a method for fetching results in the director without coupling the director to concrete product classes. Hence, we obtain the result of the construction from the builder which performed the job.
 
 ```java
-public class TableBuilderDemo {
+// Using the Builder pattern makes sense only when your products
+// are quite complex and require extensive configuration. The
+// following two products are related, although they don't have
+// a common interface.
+class Car is
+    // A car can have a GPS, trip computer and some number of
+    // seats. Different models of cars (sports car, SUV,
+    // cabriolet) might have different features installed or
+    // enabled.
 
-    public static void main(String[] args) {
-        (new TableBuilderDemo()).demo(args);
+class Manual is
+    // Each car should have a user manual that corresponds to
+    // the car's configuration and describes all its features.
+
+// The builder interface specifies methods for creating the
+// different parts of the product objects.
+interface Builder is
+    method reset()
+    method setSeats(...)
+    method setEngine(...)
+    method setTripComputer(...)
+    method setGPS(...)
+
+// The concrete builder classes follow the builder interface and
+// provide specific implementations of the building steps. Your
+// program may have several variations of builders, each
+// implemented differently.
+class CarBuilder implements Builder is
+    private field car:Car
+
+    // A fresh builder instance should contain a blank product
+    // object which it uses in further assembly.
+    constructor CarBuilder() is
+        this.reset()
+
+    // The reset method clears the object being built.
+    method reset() is
+        this.car = new Car()
+
+    // All production steps work with the same product instance.
+    method setSeats(...) is
+        // Set the number of seats in the car.
+
+    method setEngine(...) is
+        // Install a given engine.
+
+    method setTripComputer(...) is
+        // Install a trip computer.
+
+    method setGPS(...) is
+        // Install a global positioning system.
+
+    // Concrete builders are supposed to provide their own
+    // methods for retrieving results. That's because various
+    // types of builders may create entirely different products
+    // that don't all follow the same interface. Therefore such
+    // methods can't be declared in the builder interface (at
+    // least not in a statically-typed programming language).
+    //
+    // Usually, after returning the end result to the client, a
+    // builder instance is expected to be ready to start
+    // producing another product. That's why it's a usual
+    // practice to call the reset method at the end of the
+    // `getProduct` method body. However, this behavior isn't
+    // mandatory, and you can make your builder wait for an
+    // explicit reset call from the client code before disposing
+    // of the previous result.
+    method getProduct():Car is
+        product = this.car
+        this.reset()
+        return product
+
+// Unlike other creational patterns, builder lets you construct
+// products that don't follow the common interface.
+class CarManualBuilder implements Builder is
+    private field manual:Manual
+
+    constructor CarManualBuilder() is
+        this.reset()
+
+    method reset() is
+        this.manual = new Manual()
+
+    method setSeats(...) is
+        // Document car seat features.
+
+    method setEngine(...) is
+        // Add engine instructions.
+
+    method setTripComputer(...) is
+        // Add trip computer instructions.
+
+    method setGPS(...) is
+        // Add GPS instructions.
+
+    method getProduct():Manual is
+        // Return the manual and reset the builder.
+
+// The director is only responsible for executing the building
+// steps in a particular sequence. It's helpful when producing
+// products according to a specific order or configuration.
+// Strictly speaking, the director class is optional, since the
+// client can control builders directly.
+class Director is
+    private field builder:Builder
+
+    // The director works with any builder instance that the
+    // client code passes to it. This way, the client code may
+    // alter the final type of the newly assembled product.
+    method setBuilder(builder:Builder)
+        this.builder = builder
+
+    // The director can construct several product variations
+    // using the same building steps.
+    method constructSportsCar(builder: Builder) is
+        builder.reset()
+        builder.setSeats(2)
+        builder.setEngine(new SportEngine())
+        builder.setTripComputer(true)
+        builder.setGPS(true)
+
+    method constructSUV(builder: Builder) is
+        // ...
+
+// The client code creates a builder object, passes it to the
+// director and then initiates the construction process. The end
+// result is retrieved from the builder object.
+class Application is
+
+    method makeCar() is
+        director = new Director()
+
+        CarBuilder builder = new CarBuilder()
+        director.constructSportsCar(builder)
+        Car car = builder.getProduct()
+
+        CarManualBuilder builder = new CarManualBuilder()
+        director.constructSportsCar(builder)
+
+        // The final product is often retrieved from a builder
+        // object since the director isn't aware of and not
+        // dependent on concrete builders and products.
+        Manual manual = builder.getProduct()
+```
+
+## Applicability
+
+Use the Builder pattern to get rid of a “telescopic constructor”.
+
+Say you have a constructor with ten optional parameters. Calling such a beast is very inconvenient; therefore, you overload the constructor and create several shorter versions with fewer parameters. These constructors still refer to the main one, passing some default values into any omitted parameters.
+```java
+class Pizza {
+    Pizza(int size) { ... }
+    Pizza(int size, boolean cheese) { ... }
+    Pizza(int size, boolean cheese, boolean pepperoni) { ... }
+    // ...
+```
+Creating such a monster is only possible in languages that support method overloading, such as C# or Java.
+
+The Builder pattern lets you build objects step by step, using only those steps that you really need. After implementing the pattern, you don’t have to cram dozens of parameters into your constructors anymore.
+
+Use the Builder pattern when you want your code to be able to create different representations of some product (for example, stone and wooden houses).
+
+The Builder pattern can be applied when construction of various representations of the product involves similar steps that differ only in the details.
+
+The base builder interface defines all possible construction steps, and concrete builders implement these steps to construct particular representations of the product. Meanwhile, the director class guides the order of construction.
+
+Use the Builder to construct  [Composite](https://refactoring.guru/design-patterns/composite)  trees or other complex objects.
+
+The Builder pattern lets you construct products step-by-step. You could defer execution of some steps without breaking the final product. You can even call steps recursively, which comes in handy when you need to build an object tree.
+
+A builder doesn’t expose the unfinished product while running construction steps. This prevents the client code from fetching an incomplete result.
+
+## How to Implement
+
+1.  Make sure that you can clearly define the common construction steps for building all available product representations. Otherwise, you won’t be able to proceed with implementing the pattern.
+    
+2.  Declare these steps in the base builder interface.
+    
+3.  Create a concrete builder class for each of the product representations and implement their construction steps.
+    
+    Don’t forget about implementing a method for fetching the result of the construction. The reason why this method can’t be declared inside the builder interface is that various builders may construct products that don’t have a common interface. Therefore, you don’t know what would be the return type for such a method. However, if you’re dealing with products from a single hierarchy, the fetching method can be safely added to the base interface.
+    
+4.  Think about creating a director class. It may encapsulate various ways to construct a product using the same builder object.
+    
+5.  The client code creates both the builder and the director objects. Before construction starts, the client must pass a builder object to the director. Usually, the client does this only once, via parameters of the director’s constructor. The director uses the builder object in all further construction. There’s an alternative approach, where the builder is passed directly to the construction method of the director.
+    
+6.  The construction result can be obtained directly from the director only if all products follow the same interface. Otherwise, the client should fetch the result from the builder.
+    
+
+## Pros and Cons
+
+-   You can construct objects step-by-step, defer construction steps or run steps recursively.
+-   You can reuse the same construction code when building various representations of products.
+-   _Single Responsibility Principle_. You can isolate complex construction code from the business logic of the product.
+
+-   The overall complexity of the code increases since the pattern requires creating multiple new classes.
+
+## Relations with Other Patterns
+
+-   Many designs start by using  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory),  [Prototype](https://refactoring.guru/design-patterns/prototype), or  [Builder](https://refactoring.guru/design-patterns/builder)  (more flexible, but more complicated).
+    
+-   [Builder](https://refactoring.guru/design-patterns/builder)  focuses on constructing complex objects step by step.  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  specializes in creating families of related objects.  _Abstract Factory_  returns the product immediately, whereas  _Builder_  lets you run some additional construction steps before fetching the product.
+    
+-   You can use  [Builder](https://refactoring.guru/design-patterns/builder)  when creating complex  [Composite](https://refactoring.guru/design-patterns/composite)  trees because you can program its construction steps to work recursively.
+    
+-   You can combine  [Builder](https://refactoring.guru/design-patterns/builder)  with  [Bridge](https://refactoring.guru/design-patterns/bridge): the  _director_  class plays the role of the abstraction, while different  _builders_  act as  _implementations_.
+    
+-   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+
+## Code Example
+
+**Builder**  is a creational design pattern, which allows constructing complex objects step by step.
+
+Unlike other creational patterns, Builder doesn’t require products to have a common interface. That makes it possible to produce different products using the same construction process.
+
+[Learn more about Builder](https://refactoring.guru/design-patterns/builder)
+
+## Usage of the pattern in Java
+
+**Complexity:**
+
+**Popularity:**
+
+**Usage examples:**  The Builder pattern is a well-known pattern in Java world. It’s especially useful when you need to create an object with lots of possible configuration options.
+
+Builder is widely used in Java core libraries:
+
+-   [`java.lang.StringBuilder#append()`](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#append-boolean-)  (`unsynchronized`)
+-   [`java.lang.StringBuffer#append()`](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#append-boolean-)  (`synchronized`)
+-   [`java.nio.ByteBuffer#put()`](http://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html#put-byte-)  (also in  [`CharBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html#put-char-),  [`ShortBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/ShortBuffer.html#put-short-),  [`IntBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html#put-int-),  [`LongBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/LongBuffer.html#put-long-),  [`FloatBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html#put-float-)  and  [`DoubleBuffer`](http://docs.oracle.com/javase/8/docs/api/java/nio/DoubleBuffer.html#put-double-))
+-   [`javax.swing.GroupLayout.Group#addComponent()`](http://docs.oracle.com/javase/8/docs/api/javax/swing/GroupLayout.Group.html#addComponent-java.awt.Component-)
+-   All implementations  [`java.lang.Appendable`](http://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html)
+
+**Identification:**  The Builder pattern can be recognized in class, which has a single creation method and several methods to configure the resulting object. Builder methods often support chaining (for example,  `someBuilder->setValueA(1)->setValueB(2)->create()`).
+
+## Step-by-step car production
+
+In this example, the Builder pattern allows step by step construction of different car models.
+
+The example also shows how Builder produces products of different kinds (car manual) using the same building steps.
+
+The Director controls the order of the construction. It knows which building steps to call to produce this or that car model. It works with builders only via their common interface. This allows passing different types of builders to the director.
+
+The end result is retrieved from the builder object because the director can’t know the type of resulting product. Only the Builder object knows what exactly does it builds.
+
+## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders)**builders**
+
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-Builder-java)**builders/Builder.java:**  Common builder interface
+```java
+package refactoring_guru.builder.example.builders;
+
+import refactoring_guru.builder.example.cars.Type;
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Builder interface defines all possible ways to configure a product.
+ */
+public interface Builder {
+    void setType(Type type);
+    void setSeats(int seats);
+    void setEngine(Engine engine);
+    void setTransmission(Transmission transmission);
+    void setTripComputer(TripComputer tripComputer);
+    void setGPSNavigator(GPSNavigator gpsNavigator);
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-CarBuilder-java)**builders/CarBuilder.java:**  Builder of car
+```java
+package refactoring_guru.builder.example.builders;
+
+import refactoring_guru.builder.example.cars.Car;
+import refactoring_guru.builder.example.cars.Type;
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Concrete builders implement steps defined in the common interface.
+ */
+public class CarBuilder implements Builder {
+    private Type type;
+    private int seats;
+    private Engine engine;
+    private Transmission transmission;
+    private TripComputer tripComputer;
+    private GPSNavigator gpsNavigator;
+
+    @Override
+    public void setType(Type type) {
+        this.type = type;
     }
 
-    /**
-     * Client code perspective.
-     */
-    public void demo(String[] args) {
-        // Name of the GUI table class can be passed to the app parameters.
-        String class_name = args.length > 0 ?  args[0] : "JTable_Table";
-
-        // Then we read the tabular data from file...
-        String file_name = getClass().getResource("../BuilderDemo.dat").getFile();
-        String[][] matrix = read_data_file(file_name);
-
-        // ..and pass it to specific GUI creator, which knows what GUI
-        // component to create and how to initialize it.
-        Component comp;
-        if (class_name.equals("GridLayout_Table")) {
-            comp = new GridLayout_Table(matrix).get_table();
-        } else if (class_name.equals("GridBagLayout_Table")) {
-            comp = new GridBagLayout_Table(matrix).get_table();
-        } else {
-            comp = new JTable_Table(matrix).get_table();
-        }
-
-        // Finally, create a GUI window and put there our table component.
-        JFrame frame = new JFrame("BuilderDemo - " + class_name);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(comp);
-        frame.pack();
-        frame.setVisible(true);
+    @Override
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 
-    class JTable_Table {
-        private JTable m_table;
-
-        public JTable_Table(String[][] matrix) {
-            m_table = new JTable(matrix[0].length, matrix.length);
-
-            TableModel model = m_table.getModel();
-            for (int i = 0; i < matrix.length; ++i)
-                for (int j = 0; j < matrix[i].length; ++j)
-                    model.setValueAt(matrix[i][j], j, i);
-        }
-
-        public Component get_table() {
-            return m_table;
-        }
+    @Override
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
-    class GridLayout_Table {
-        private JPanel m_table = new JPanel();
-
-        public GridLayout_Table(String[][] matrix) {
-            m_table = new JPanel();
-            m_table.setLayout(new GridLayout(matrix[0].length, matrix.length));
-            m_table.setBackground(Color.white);
-
-            for (int i = 0; i < matrix[i].length; ++i)
-                for (int j = 0; j < matrix.length; ++j)
-                    m_table.add(new Label(matrix[j][i]));
-        }
-
-        public Component get_table() {
-            return m_table;
-        }
+    @Override
+    public void setTransmission(Transmission transmission) {
+        this.transmission = transmission;
     }
 
-    class GridBagLayout_Table {
-        private JPanel m_table = new JPanel();
-
-        public GridBagLayout_Table(String[][] matrix) {
-            GridBagConstraints c = new GridBagConstraints();
-
-            m_table.setLayout(new GridBagLayout());
-            m_table.setBackground(Color.white);
-
-            for (int i = 0; i < matrix.length; ++i)
-                for (int j = 0; j < matrix[i].length; ++j) {
-                    c.gridx = i;
-                    c.gridy = j;
-                    m_table.add(new Label(matrix[i][j]), c);
-                }
-        }
-
-        public Component get_table() {
-            return m_table;
-        }
+    @Override
+    public void setTripComputer(TripComputer tripComputer) {
+        this.tripComputer = tripComputer;
     }
 
-    public static String[][] read_data_file(String file_name) {
-        String[][] matrix = null;
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(file_name));
-            String line;
-            String[] cells;
+    @Override
+    public void setGPSNavigator(GPSNavigator gpsNavigator) {
+        this.gpsNavigator = gpsNavigator;
+    }
 
-            if ((line = br.readLine()) != null) {
-                cells = line.split("\\t");
-                int width = Integer.parseInt(cells[0]);
-                int height = Integer.parseInt(cells[1]);
-                matrix = new String[width][height];
-            }
-
-            int row = 0;
-            while ((line = br.readLine()) != null) {
-                cells = line.split("\\t");
-                for (int i = 0; i < cells.length; ++i) {
-                    matrix[i][row] = cells[i];
-                }
-                row++;France
-            }
-            br.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return matrix;
+    public Car getResult() {
+        return new Car(type, seats, engine, transmission, tripComputer, gpsNavigator);
     }
 }
 ```
-  
-  
-
-#### After
-
-The  `main()`  creates a reader/parser, and configures it with a builder (an object that implements a standard interface and knows how to create one of many possible "results". The reader reads and parses the common input and delegates the construction to the configured builder.
-
-This implementation demonstrates the spirit of the Builder pattern, but it is more intricate, and probably cannot be justified for this fairly limited context.
-
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-CarManualBuilder-java)**builders/CarManualBuilder.java:**  Builder of a car manual
 ```java
-public class TableBuilderDemo {
+package refactoring_guru.builder.example.builders;
 
-    public static void main(String[] args) {
-        (new TableBuilderDemo()).demo(args);
+import refactoring_guru.builder.example.cars.Manual;
+import refactoring_guru.builder.example.cars.Type;
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Unlike other creational patterns, Builder can construct unrelated products,
+ * which don't have the common interface.
+ *
+ * In this case we build a user manual for a car, using the same steps as we
+ * built a car. This allows to produce manuals for specific car models,
+ * configured with different features.
+ */
+public class CarManualBuilder implements Builder{
+    private Type type;
+    private int seats;
+    private Engine engine;
+    private Transmission transmission;
+    private TripComputer tripComputer;
+    private GPSNavigator gpsNavigator;
+
+    @Override
+    public void setType(Type type) {
+        this.type = type;
     }
 
-    /**
-     * Client code perspective.
-     */
-    public void demo(String[] args) {
-        // Name of the GUI table class can be passed to the app parameters.
-        String class_name = args.length > 0 ? args[0] : "JTable_Builder";
-
-        Builder target = null;
-        try {
-            target = (Builder) Class.forName(getClass().getName() + "$" + class_name)
-                    .getDeclaredConstructor().newInstance();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-
-        String file_name = getClass().getResource("../BuilderDemo.dat").getFile();
-        TableDirector director = new TableDirector(target);
-        director.construct(file_name);
-        Component comp = target.get_result();
-
-        JFrame frame = new JFrame("BuilderDemo - " + class_name);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(comp);
-        frame.pack();
-        frame.setVisible(true);
+    @Override
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 
-    interface Builder {
-        void set_width_and_height(int width, int height);
-
-        void start_row();
-
-        void build_cell(String value);
-
-        Component get_result();
+    @Override
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
-    public static class JTable_Builder implements Builder {
-        private JTable m_table;
-        private TableModel m_model;
-        private int x = 0, y = 0;
+    @Override
+    public void setTransmission(Transmission transmission) {
+        this.transmission = transmission;
+    }
 
-        public void set_width_and_height(int width, int height) {
-            m_table = new JTable(height, width);
-            m_model = m_table.getModel();
+    @Override
+    public void setTripComputer(TripComputer tripComputer) {
+        this.tripComputer = tripComputer;
+    }
+
+    @Override
+    public void setGPSNavigator(GPSNavigator gpsNavigator) {
+        this.gpsNavigator = gpsNavigator;
+    }
+
+    public Manual getResult() {
+        return new Manual(type, seats, engine, transmission, tripComputer, gpsNavigator);
+    }
+}
+```
+## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars)**cars**
+
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Car-java)**cars/Car.java:**  Car product
+```java
+package refactoring_guru.builder.example.cars;
+
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Car is a product class.
+ */
+public class Car {
+    private final Type type;
+    private final int seats;
+    private final Engine engine;
+    private final Transmission transmission;
+    private final TripComputer tripComputer;
+    private final GPSNavigator gpsNavigator;
+    private double fuel = 0;
+
+    public Car(Type type, int seats, Engine engine, Transmission transmission,
+               TripComputer tripComputer, GPSNavigator gpsNavigator) {
+        this.type = type;
+        this.seats = seats;
+        this.engine = engine;
+        this.transmission = transmission;
+        this.tripComputer = tripComputer;
+        this.tripComputer.setCar(this);
+        this.gpsNavigator = gpsNavigator;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public double getFuel() {
+        return fuel;
+    }
+
+    public void setFuel(double fuel) {
+        this.fuel = fuel;
+    }
+
+    public int getSeats() {
+        return seats;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
+    public TripComputer getTripComputer() {
+        return tripComputer;
+    }
+
+    public GPSNavigator getGpsNavigator() {
+        return gpsNavigator;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Manual-java)**cars/Manual.java:**  Manual product
+```java
+package refactoring_guru.builder.example.cars;
+
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Car manual is another product. Note that it does not have the same ancestor
+ * as a Car. They are not related.
+ */
+public class Manual {
+    private final Type type;
+    private final int seats;
+    private final Engine engine;
+    private final Transmission transmission;
+    private final TripComputer tripComputer;
+    private final GPSNavigator gpsNavigator;
+
+    public Manual(Type type, int seats, Engine engine, Transmission transmission,
+                  TripComputer tripComputer, GPSNavigator gpsNavigator) {
+        this.type = type;
+        this.seats = seats;
+        this.engine = engine;
+        this.transmission = transmission;
+        this.tripComputer = tripComputer;
+        this.gpsNavigator = gpsNavigator;
+    }
+
+    public String print() {
+        String info = "";
+        info += "Type of car: " + type + "\n";
+        info += "Count of seats: " + seats + "\n";
+        info += "Engine: volume - " + engine.getVolume() + "; mileage - " + engine.getMileage() + "\n";
+        info += "Transmission: " + transmission + "\n";
+        if (this.tripComputer != null) {
+            info += "Trip Computer: Functional" + "\n";
+        } else {
+            info += "Trip Computer: N/A" + "\n";
         }
-
-        public void start_row() {
-            x = 0;
-            ++y;
+        if (this.gpsNavigator != null) {
+            info += "GPS Navigator: Functional" + "\n";
+        } else {
+            info += "GPS Navigator: N/A" + "\n";
         }
+        return info;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Type-java)**cars/Type.java**
+```java
+package refactoring_guru.builder.example.cars;
 
-        public void build_cell(String value) {
-            m_model.setValueAt(value, y, x++);
-        }
+public enum Type {
+    CITY_CAR, SPORTS_CAR, SUV
+}
+```
+## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components)**components**
 
-        public Component get_result() {
-            return m_table;
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-Engine-java)**components/Engine.java:**  Product feature 1
+```java
+package refactoring_guru.builder.example.components;
+
+/**
+ * Just another feature of a car.
+ */
+public class Engine {
+    private final double volume;
+    private double mileage;
+    private boolean started;
+
+    public Engine(double volume, double mileage) {
+        this.volume = volume;
+        this.mileage = mileage;
+    }
+
+    public void on() {
+        started = true;
+    }
+
+    public void off() {
+        started = false;
+    }
+
+    public boolean isStarted() {
+        return started;
+    }
+
+    public void go(double mileage) {
+        if (started) {
+            this.mileage += mileage;
+        } else {
+            System.err.println("Cannot go(), you must start engine first!");
         }
     }
 
-    public static class GridLayout_Builder implements Builder {
-        private JPanel m_panel = new JPanel();
-
-        public void set_width_and_height(int width, int height) {
-            m_panel.setLayout(new GridLayout(height, width));
-            m_panel.setBackground(Color.white);
-        }
-
-        public void start_row() {
-        }
-
-        public void build_cell(String value) {
-            m_panel.add(new Label(value));
-        }
-
-        public Component get_result() {
-            return m_panel;
-        }
+    public double getVolume() {
+        return volume;
     }
 
-    public static class GridBagLayout_Builder implements Builder {
-        private JPanel m_panel = new JPanel();
-        private GridBagConstraints c = new GridBagConstraints();
-        private int x = 0, y = 0;
+    public double getMileage() {
+        return mileage;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-GPSNavigator-java)**components/GPSNavigator.java:**  Product feature 2
+```java
+package refactoring_guru.builder.example.components;
 
-        public void set_width_and_height(int width, int height) {
-            m_panel.setLayout(new GridBagLayout());
-            m_panel.setBackground(Color.white);
-        }
+/**
+ * Just another feature of a car.
+ */
+public class GPSNavigator {
+    private String route;
 
-        public void start_row() {
-            x = 0;
-            ++y;
-        }
-
-        public void build_cell(String value) {
-            c.gridx = x++;
-            c.gridy = y;
-            m_panel.add(new Label(value), c);
-        }
-
-        public Component get_result() {
-            return m_panel;
-        }
+    public GPSNavigator() {
+        this.route = "221b, Baker Street, London  to Scotland Yard, 8-10 Broadway, London";
     }
 
-    class TableDirector {
-        private Builder m_builder;
+    public GPSNavigator(String manualRoute) {
+        this.route = manualRoute;
+    }
 
-        public TableDirector(Builder b) {
-            m_builder = b;
-        }
+    public String getRoute() {
+        return route;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-Transmission-java)**components/Transmission.java:**  Product feature 3
+```java
+package refactoring_guru.builder.example.components;
 
-        public void construct(String file_name) {
-            try {
-                BufferedReader br = new BufferedReader(new FileReader(file_name));
-                String line;
-                String[] cells;
+/**
+ * Just another feature of a car.
+ */
+public enum Transmission {
+    SINGLE_SPEED, MANUAL, AUTOMATIC, SEMI_AUTOMATIC
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-TripComputer-java)**components/TripComputer.java:**  Product feature 4
+```java
+package refactoring_guru.builder.example.components;
 
-                if ((line = br.readLine()) != null) {
-                    cells = line.split("\\t");
-                    int width = Integer.parseInt(cells[0]);
-                    int height = Integer.parseInt(cells[1]);
-                    m_builder.set_width_and_height(width, height);
-                }
+import refactoring_guru.builder.example.cars.Car;
 
-                while ((line = br.readLine()) != null) {
-                    cells = line.split("\\t");
-                    for (int col = 0; col < cells.length; ++col) {
-                        m_builder.build_cell(cells[col]);
-                    }
-                    m_builder.start_row();
-                }
+/**
+ * Just another feature of a car.
+ */
+public class TripComputer {
 
-                br.close();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
+    private Car car;
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public void showFuelLevel() {
+        System.out.println("Fuel level: " + car.getFuel());
+    }
+
+    public void showStatus() {
+        if (this.car.getEngine().isStarted()) {
+            System.out.println("Car is started");
+        } else {
+            System.out.println("Car isn't started");
         }
     }
 }
+```
+## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--director)**director**
+
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--director-Director-java)**director/Director.java:**  Director controls builders
+```java
+package refactoring_guru.builder.example.director;
+
+import refactoring_guru.builder.example.builders.Builder;
+import refactoring_guru.builder.example.cars.Type;
+import refactoring_guru.builder.example.components.Engine;
+import refactoring_guru.builder.example.components.GPSNavigator;
+import refactoring_guru.builder.example.components.Transmission;
+import refactoring_guru.builder.example.components.TripComputer;
+
+/**
+ * Director defines the order of building steps. It works with a builder object
+ * through common Builder interface. Therefore it may not know what product is
+ * being built.
+ */
+public class Director {
+
+    public void constructSportsCar(Builder builder) {
+        builder.setType(Type.SPORTS_CAR);
+        builder.setSeats(2);
+        builder.setEngine(new Engine(3.0, 0));
+        builder.setTransmission(Transmission.SEMI_AUTOMATIC);
+        builder.setTripComputer(new TripComputer());
+        builder.setGPSNavigator(new GPSNavigator());
+    }
+
+    public void constructCityCar(Builder builder) {
+        builder.setType(Type.CITY_CAR);
+        builder.setSeats(2);
+        builder.setEngine(new Engine(1.2, 0));
+        builder.setTransmission(Transmission.AUTOMATIC);
+        builder.setTripComputer(new TripComputer());
+        builder.setGPSNavigator(new GPSNavigator());
+    }
+
+    public void constructSUV(Builder builder) {
+        builder.setType(Type.SUV);
+        builder.setSeats(4);
+        builder.setEngine(new Engine(2.5, 0));
+        builder.setTransmission(Transmission.MANUAL);
+        builder.setGPSNavigator(new GPSNavigator());
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--Demo-java)**Demo.java:**  Client code
+```java
+package refactoring_guru.builder.example;
+
+import refactoring_guru.builder.example.builders.CarBuilder;
+import refactoring_guru.builder.example.builders.CarManualBuilder;
+import refactoring_guru.builder.example.cars.Car;
+import refactoring_guru.builder.example.cars.Manual;
+import refactoring_guru.builder.example.director.Director;
+
+/**
+ * Demo class. Everything comes together here.
+ */
+public class Demo {
+
+    public static void main(String[] args) {
+        Director director = new Director();
+
+        // Director gets the concrete builder object from the client
+        // (application code). That's because application knows better which
+        // builder to use to get a specific product.
+        CarBuilder builder = new CarBuilder();
+        director.constructSportsCar(builder);
+
+        // The final product is often retrieved from a builder object, since
+        // Director is not aware and not dependent on concrete builders and
+        // products.
+        Car car = builder.getResult();
+        System.out.println("Car built:\n" + car.getType());
+
+
+        CarManualBuilder manualBuilder = new CarManualBuilder();
+
+        // Director may know several building recipes.
+        director.constructSportsCar(manualBuilder);
+        Manual carManual = manualBuilder.getResult();
+        System.out.println("\nCar manual built:\n" + carManual.print());
+    }
+
+}
+```
+#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
+```java
+Car built:
+SPORTS_CAR
+
+Car manual built:
+Type of car: SPORTS_CAR
+Count of seats: 2
+Engine: volume - 3.0; mileage - 0.0
+Transmission: SEMI_AUTOMATIC
+Trip Computer: Functional
+GPS Navigator: Functional
 ```

@@ -1,43 +1,34 @@
 ---
 layout: post
-title: "Creational patterns"
-description: "In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation."
+title: "[Design Pattern] Creational patterns"
+description: "Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code."
 date: 2020-02-06 13:02
 tags: [디자인패턴]
 comments: true
 share: true
 ---
 
-/  [Design Patterns](../2020-02-06-Design%20Patterns.md)
 
-In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
+/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Catalog](https://refactoring.guru/design-patterns/catalog)
 
-[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory-preview.png)](2020-02-06-Abstract%20Factory%20Design%20Pattern.md)
+Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
--   [Abstract Factory](./2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  
-    Creates an instance of several families of classes
--   [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  
-    Separates object construction from its representation
--   [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")  
-    Creates an instance of several derived classes
--   [Object Pool](./2020-02-06-Object%20Pool%20Design%20Pattern.md "Avoid expensive acquisition and release of resources by recycling objects that are no longer in use")  
-    Avoid expensive acquisition and release of resources by recycling objects that are no longer in use
--   [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  
-    A fully initialized instance to be copied or cloned
--   [Singleton](./2020-02-06-Singleton%20Design%20Pattern.md "Restricts instantiation of a class to one object.")  
-    A class of which only a single instance can exist
+[![Factory Method](https://refactoring.guru/images/patterns/cards/factory-method-mini.png)Factory Method](https://refactoring.guru/design-patterns/factory-method)
 
-## Rules of thumb
+Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
-1.  Sometimes creational patterns are competitors: there are cases when either  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  or  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  could be used profitably. At other times they are complementary:  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  might store a set of  [Prototypes](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  from which to clone and return product objects,  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  can use one of the other patterns to implement which components get built.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme."),  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations."), and  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  can use  [Singleton](./2020-02-06-Singleton%20Design%20Pattern.md "Restricts instantiation of a class to one object.")  in their implementation.
-2.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme."),  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations."), and  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  define a factory object that's responsible for knowing and creating the class of product objects, and make it a parameter of the system.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  has the factory object producing objects of several classes.  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  has the factory object building a complex product incrementally using a correspondingly complex protocol.  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  has the factory object (aka prototype) building a product by copying a prototype object.
-3.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  classes are often implemented with  [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")s, but they can also be implemented using  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.").
-4.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  can be used as an alternative to  [Facade](https://sourcemaking.com/design_patterns/facade "Provides a simplified interface to a larger body of code.")  to hide platform-specific classes.
-5.  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  focuses on constructing a complex object step by step.  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  emphasizes a family of product objects (either simple or complex).  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  returns the product as a final step, but as far as the  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  is concerned, the product gets returned immediately.
-6.  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  is to creation as  [Strategy](https://sourcemaking.com/design_patterns/strategy "Algorithms can be selected on-the-fly at runtime.")  is to algorithm.
-7.  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  often builds a  [Composite](https://sourcemaking.com/design_patterns/composite "Designed as a composition of one-or-more similar objects, all exhibiting similar functionality.").
-8.  [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")s are usually called within  [Template method](https://sourcemaking.com/design_patterns/template_method "A template method defines the skeleton of an algorithm.")s.
-9.  [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created."): creation through inheritance.  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects."): creation through delegation.
-10.  Often, designs start out using  [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")  (less complicated, more customizable, subclasses proliferate) and evolve toward  [Abstract Factory](2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme."),  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects."), or  [Builder](./2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  (more flexible, more complex) as the designer discovers where more flexibility is needed.
-11.  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  doesn't require subclassing, but it does require an Initialize operation.  [Factory Method](./2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")  requires subclassing, but doesn't require Initialize.
-12.  Designs that make heavy use of the  [Composite](https://sourcemaking.com/design_patterns/composite "Designed as a composition of one-or-more similar objects, all exhibiting similar functionality.")  and  [Decorator](https://sourcemaking.com/design_patterns/decorator "Allows new/additional behavior to be added to an existing method of an object dynamically.")  patterns often can benefit from  [Prototype](./2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  as well.
+[![Abstract Factory](https://refactoring.guru/images/patterns/cards/abstract-factory-mini.png)Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+
+Lets you produce families of related objects without specifying their concrete classes.
+
+[![Builder](https://refactoring.guru/images/patterns/cards/builder-mini.png)Builder](https://refactoring.guru/design-patterns/builder)
+
+Lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+
+[![Prototype](https://refactoring.guru/images/patterns/cards/prototype-mini.png)Prototype](https://refactoring.guru/design-patterns/prototype)
+
+Lets you copy existing objects without making your code dependent on their classes.
+
+[![Singleton](https://refactoring.guru/images/patterns/cards/singleton-mini.png)Singleton](https://refactoring.guru/design-patterns/singleton)
+
+Lets you ensure that a class has only one instance, while providing a global access point to this instance.

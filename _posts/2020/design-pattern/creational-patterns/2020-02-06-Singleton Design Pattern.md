@@ -1,110 +1,246 @@
 ---
 layout: post
-title: "Singleton Design Pattern"
-description: "Ensure a class has only one instance, and provide a global point of access to it. Encapsulated just-in-time initialization or initialization on first use."
+title: "[Design Pattern] Singleton"
+description: "Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance."
 date: 2020-02-06 13:08
 tags: [디자인패턴]
 comments: true
 share: true
 ---
 
-/ [Design Patterns](../2020-02-06-Design%20Patterns.md) / [Creational patterns](./2020-02-06-Creational%20patterns.md)
+/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
 
-### Intent
+## Intent
 
--   Ensure a class has only one instance, and provide a global point of access to it.
--   Encapsulated "just-in-time initialization" or "initialization on first use".
+**Singleton**  is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
-### Problem
+![Singleton pattern](https://refactoring.guru/images/patterns/content/singleton/singleton.png)
 
-Application needs one, and only one, instance of an object. Additionally, lazy initialization and global access are necessary.
+## Problem
 
-### Discussion
+The Singleton pattern solves two problems at the same time, violating the  _Single Responsibility Principle_:
 
-Make the class of the single instance object responsible for creation, initialization, access, and enforcement. Declare the instance as a private static data member. Provide a public static member function that encapsulates all initialization code, and provides access to the instance.
+1.  **Ensure that a class has just a single instance**. Why would anyone want to control how many instances a class has? The most common reason for this is to control access to some shared resource—for example, a database or a file.
+    
+    Here’s how it works: imagine that you created an object, but after a while decided to create a new one. Instead of receiving a fresh object, you’ll get the one you already created.
+    
+    Note that this behavior is impossible to implement with a regular constructor since a constructor call  **must**  always return a new object by design.
+    
 
-The client calls the accessor function (using the class name and scope resolution operator) whenever a reference to the single instance is required.
+![The global access to an object](https://refactoring.guru/images/patterns/content/singleton/singleton-comic-1-en.png)
 
-Singleton should be considered only if all three of the following criteria are satisfied:
+Clients may not even realize that they’re working with the same object all the time.
 
--   Ownership of the single instance cannot be reasonably assigned
--   Lazy initialization is desirable
--   Global access is not otherwise provided for
+2.  **Provide a global access point to that instance**. Remember those global variables that you (all right, me) used to store some essential objects? While they’re very handy, they’re also very unsafe since any code can potentially overwrite the contents of those variables and crash the app.
+    
+    Just like a global variable, the Singleton pattern lets you access some object from anywhere in the program. However, it also protects that instance from being overwritten by other code.
+    
+    There’s another side to this problem: you don’t want the code that solves problem #1 to be scattered all over your program. It’s much better to have it within one class, especially if the rest of your code already depends on it.
+    
 
-If ownership of the single instance, when and how initialization occurs, and global access are not issues, Singleton is not sufficiently interesting.
+Nowadays, the Singleton pattern has become so popular that people may call something a  _singleton_  even if it solves just one of the listed problems.
 
-The Singleton pattern can be extended to support access to an application-specific number of instances.
+## Solution
 
-The "static member function accessor" approach will not support subclassing of the Singleton class. If subclassing is desired, refer to the discussion in the book.
+All implementations of the Singleton have these two steps in common:
 
-Deleting a Singleton class/instance is a non-trivial design problem. See "[To Kill A Singleton](http://sourcemaking.com/design_patterns/to_kill_a_singleton)" by John Vlissides for a discussion.
+-   Make the default constructor private, to prevent other objects from using the  `new`  operator with the Singleton class.
+-   Create a static creation method that acts as a constructor. Under the hood, this method calls the private constructor to create an object and saves it in a static field. All following calls to this method return the cached object.
 
-### Structure
+If your code has access to the Singleton class, then it’s able to call the Singleton’s static method. So whenever that method is called, the same object is always returned.
 
-![Scheme of Singleton](https://sourcemaking.com/files/v2/content/patterns/singleton1.png)
+## Real-World Analogy
 
-Make the class of the single instance responsible for access and "initialization on first use". The single instance is a private static attribute. The accessor function is a public static method.
+The government is an excellent example of the Singleton pattern. A country can have only one official government. Regardless of the personal identities of the individuals who form governments, the title, “The Government of X”, is a global point of access that identifies the group of people in charge.
 
-![Scheme of Singleton.](https://sourcemaking.com/files/v2/content/patterns/Singleton.png)
+## Structure
 
-### Example
+![The structure of the Singleton pattern](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png)
 
-The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is named after the singleton set, which is defined to be a set containing one element. The office of the President of the United States is a Singleton. The United States Constitution specifies the means by which a president is elected, limits the term of office, and defines the order of succession. As a result, there can be at most one active president at any given time. Regardless of the personal identity of the active president, the title, "The President of the United States" is a global point of access that identifies the person in the office.
+1.  The  **Singleton**  class declares the static method  `getInstance`  that returns the same instance of its own class.
+    
+    The Singleton’s constructor should be hidden from the client code. Calling the  `getInstance`  method should be the only way of getting the Singleton object.
+    
 
-![Example of Singleton.](https://sourcemaking.com/files/v2/content/patterns/Singleton_example1.png)
+## Pseudocode
 
-### Check list
+In this example, the database connection class acts as a  **Singleton**. This class doesn’t have a public constructor, so the only way to get its object is to call the  `getInstance`  method. This method caches the first created object and returns it in all subsequent calls.
 
-1.  Define a private  `static`  attribute in the "single instance" class.
-2.  Define a public  `static`  accessor function in the class.
-3.  Do "lazy initialization" (creation on first use) in the accessor function.
-4.  Define all constructors to be  `protected`  or  `private`.
-5.  Clients may only use the accessor function to manipulate the Singleton.
-
-### Rules of thumb
-
--   Abstract Factory, Builder, and Prototype can use Singleton in their implementation.
--   Facade objects are often Singletons because only one Facade object is required.
--   State objects are often Singletons.
--   The advantage of Singleton over global variables is that you are absolutely sure of the number of instances when you use Singleton, and, you can change your mind and manage any number of instances.
--   The Singleton design pattern is one of the most inappropriately used patterns. Singletons are intended to be used when a class must have exactly one instance, no more, no less. Designers frequently use Singletons in a misguided attempt to replace global variables. A Singleton is, for intents and purposes, a global variable. The Singleton does not do away with the global; it merely renames it.
--   When is Singleton unnecessary? Short answer: most of the time. Long answer: when it's simpler to pass an object resource as a reference to the objects that need it, rather than letting objects access the resource globally. The real problem with Singletons is that they give you such a good excuse not to think carefully about the appropriate visibility of an object. Finding the right balance of exposure and protection for an object is critical for maintaining flexibility.
--   Our group had a bad habit of using global data, so I did a study group on Singleton. The next thing I know Singletons appeared everywhere and none of the problems related to global data went away. The answer to the global data question is not, "Make it a Singleton." The answer is, "Why in the hell are you using global data?" Changing the name doesn't change the problem. In fact, it may make it worse because it gives you the opportunity to say, "Well I'm not doing that, I'm doing this" – even though this and that are the same thing.
-
-
-Thread safe Singleton
 ```java
-public final class Singleton {
-    private static volatile Singleton instance;
+// The Database class defines the `getInstance` method that lets
+// clients access the same instance of a database connection
+// throughout the program.
+class Database is
+    // The field for storing the singleton instance should be
+    // declared static.
+    private static field instance: Database
 
-    private Singleton() {}
+    // The singleton's constructor should always be private to
+    // prevent direct construction calls with the `new`
+    // operator.
+    private constructor Database() is
+        // Some initialization code, such as the actual
+        // connection to a database server.
+        // ...
+
+    // The static method that controls access to the singleton
+    // instance.
+    public static method getInstance() is
+        if (Database.instance == null) then
+            acquireThreadLock() and then
+                // Ensure that the instance hasn't yet been
+                // initialized by another thread while this one
+                // has been waiting for the lock's release.
+                if (Database.instance == null) then
+                    Database.instance = new Database()
+        return Database.instance
+
+    // Finally, any singleton should define some business logic
+    // which can be executed on its instance.
+    public method query(sql) is
+        // For instance, all database queries of an app go
+        // through this method. Therefore, you can place
+        // throttling or caching logic here.
+        // ...
+
+class Application is
+    method main() is
+        Database foo = Database.getInstance()
+        foo.query("SELECT  ...")
+        // ...
+        Database bar = Database.getInstance()
+        bar.query("SELECT  ...")
+        // The variable `bar` will contain the same object as
+        // the variable `foo`.
+```
+
+## Applicability
+
+Use the Singleton pattern when a class in your program should have just a single instance available to all clients; for example, a single database object shared by different parts of the program.
+
+The Singleton pattern disables all other means of creating objects of a class except for the special creation method. This method either creates a new object or returns an existing one if it has already been created.
+
+Use the Singleton pattern when you need stricter control over global variables.
+
+Unlike global variables, the Singleton pattern guarantees that there’s just one instance of a class. Nothing, except for the Singleton class itself, can replace the cached instance.
+
+Note that you can always adjust this limitation and allow creating any number of Singleton instances. The only piece of code that needs changing is the body of the  `getInstance`  method.
+
+## How to Implement
+
+1.  Add a private static field to the class for storing the singleton instance.
+    
+2.  Declare a public static creation method for getting the singleton instance.
+    
+3.  Implement “lazy initialization” inside the static method. It should create a new object on its first call and put it into the static field. The method should always return that instance on all subsequent calls.
+    
+4.  Make the constructor of the class private. The static method of the class will still be able to call the constructor, but not the other objects.
+    
+5.  Go over the client code and replace all direct calls to the singleton’s constructor with calls to its static creation method.
+    
+
+## Pros and Cons
+
+-   You can be sure that a class has only a single instance.
+-   You gain a global access point to that instance.
+-   The singleton object is initialized only when it’s requested for the first time.
+
+-   Violates the  _Single Responsibility Principle_. The pattern solves two problems at the time.
+-   The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.
+-   The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.
+-   It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.
+
+## Relations with Other Patterns
+
+-   A  [Facade](https://refactoring.guru/design-patterns/facade)  class can often be transformed into a  [Singleton](https://refactoring.guru/design-patterns/singleton)  since a single facade object is sufficient in most cases.
+    
+-   [Flyweight](https://refactoring.guru/design-patterns/flyweight)  would resemble  [Singleton](https://refactoring.guru/design-patterns/singleton)  if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
+    
+    1.  There should be only one Singleton instance, whereas a  _Flyweight_  class can have multiple instances with different intrinsic states.
+    2.  The  _Singleton_  object can be mutable. Flyweight objects are immutable.
+-   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+
+## Code Example
+
+**Singleton**  is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code.
+
+Singleton has almost the same pros and cons as global variables. Although they’re super-handy, they break the modularity of your code.
+
+You can just use a class, which depends on Singleton, in some other context. You’ll have to carry the Singleton class as well. Most of the time, this limitation comes up during the creation of unit tests.
+
+[Learn more about Singleton](https://refactoring.guru/design-patterns/singleton)
+
+## Usage of the pattern in Java
+
+**Complexity:**
+
+**Popularity:**
+
+**Usage examples:**  A lot of developers consider the Singleton pattern an antipattern. That’s why its usage is on the decline in Java code.
+
+Despite this, there are quite a lot of Singleton examples in Java core libraries:
+
+-   [`java.lang.Runtime#getRuntime()`](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime--)
+-   [`java.awt.Desktop#getDesktop()`](http://docs.oracle.com/javase/8/docs/api/java/awt/Desktop.html#getDesktop--)
+-   [`java.lang.System#getSecurityManager()`](http://docs.oracle.com/javase/8/docs/api/java/lang/System.html#getSecurityManager--)
+
+**Identification:**  Singleton can be recognized by a static creation method, which returns the same cached object.
+
+[Naïve Singleton](https://refactoring.guru/design-patterns/singleton/java/example#example-0)[Naïve Singleton](https://refactoring.guru/design-patterns/singleton/java/example#example-1)[Thread-safe Singleton with lazy loading](https://refactoring.guru/design-patterns/singleton/java/example#example-2)[Want more?](https://refactoring.guru/design-patterns/singleton/java/example#example-3)
+
+## Naïve Singleton (single-threaded)
+
+It’s pretty easy to implement a sloppy Singleton. You just need to hide constructor and implement a static creation method.
+
+#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--Singleton-java)**Singleton.java:**  Singleton
+```java
+package refactoring_guru.singleton.example.non_thread_safe;
+
+public final class Singleton {
+    private static Singleton instance;
+    public String value;
+
+    private Singleton(String value) {
+        // The following code emulates slow initialization.
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        this.value = value;
+    }
 
     public static Singleton getInstance(String value) {
         if (instance == null) {
-            synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton();
-                }
-            }
+            instance = new Singleton(value);
         }
         return instance;
     }
 }
 ```
-
-University of Maryland Computer Science researcher Bill Pugh has written about the code issues underlying the Singleton pattern when implemented in Java. Pugh's efforts on the "Double-checked locking" idiom led to changes in the Java memory model in Java 5 and to what is generally regarded as the standard method to implement Singletons in Java. The technique is known as the initialization on demand holder idiom, is as lazy as possible, and works in all known versions of Java. It takes advantage of language guarantees about class initialization, and will therefore work correctly in all Java-compliant compilers and virtual machines.
-
-The inner class is referenced no earlier (and therefore loaded no earlier by the class loader) than the moment that getInstance() is called. Thus, this solution is thread-safe without requiring special language constructs (i.e. volatile or synchronized).
+#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--DemoSingleThread-java)**DemoSingleThread.java:**  Client code
 ```java
-public class Singleton {
-    private Singleton() {}
+package refactoring_guru.singleton.example.non_thread_safe;
 
-    private static class SingletonHolder {
-        private static final Singleton INSTANCE = new Singleton();
-    }
-
-    public static Singleton getInstance() {
-        return SingletonHolder.INSTANCE;
+public class DemoSingleThread {
+    public static void main(String[] args) {
+        System.out.println("If you see the same value, then singleton was reused (yay!)" + "\n" +
+                "If you see different values, then 2 singletons were created (booo!!)" + "\n\n" +
+                "RESULT:" + "\n");
+        Singleton singleton = Singleton.getInstance("FOO");
+        Singleton anotherSingleton = Singleton.getInstance("BAR");
+        System.out.println(singleton.value);
+        System.out.println(anotherSingleton.value);
     }
 }
+```
+#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--OutputDemoSingleThread-txt)**OutputDemoSingleThread.txt:**  Execution results
+```java
+If you see the same value, then singleton was reused (yay!)
+If you see different values, then 2 singletons were created (booo!!)
+
+RESULT:
+
+FOO
+FOO
 ```

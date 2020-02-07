@@ -1,118 +1,103 @@
 ---
 layout: post
-title: "Design Patterns"
-description: "In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations."
+title: "[Design Pattern] What’s a design pattern?"
+description: "Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code."
 date: 2020-02-06 13:01
 tags: [디자인패턴]
 comments: true
 share: true
 ---
 
-In software engineering, a  **design pattern**  is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+# What’s a design pattern?
 
-### Uses of Design Patterns
+**Design patterns**  are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.
 
-Design patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.
+You can’t just find a pattern and copy it into your program, the way you can with off-the-shelf functions or libraries. The pattern is not a specific piece of code, but a general concept for solving a particular problem. You can follow the pattern details and implement a solution that suits the realities of your own program.
 
-Often, people only understand how to apply certain software design techniques to certain problems. These techniques are difficult to apply to a broader range of problems. Design patterns provide general solutions, documented in a format that doesn't require specifics tied to a particular problem.
+Patterns are often confused with algorithms, because both concepts describe typical solutions to some known problems. While an algorithm always defines a clear set of actions that can achieve some goal, a pattern is a more high-level description of a solution. The code of the same pattern applied to two different programs may be different.
 
-In addition, patterns allow developers to communicate using well-known, well understood names for software interactions. Common design patterns can be improved over time, making them more robust than ad-hoc designs.
+An analogy to an algorithm is a cooking recipe: both have clear steps to achieve a goal. On the other hand, a pattern is more like a blueprint: you can see what the result and its features are, but the exact order of implementation is up to you.
 
-### [Creational design patterns](./creational-patterns/2020-02-06-Creational%20patterns.md)
+## What does the pattern consist of?
 
-These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
+Most patterns are described very formally so people can reproduce them in many contexts. Here are the sections that are usually present in a pattern description:
 
-[![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory-preview.png)](./creational-patterns/2020-02-06-Abstract%20Factory%20Design%20Pattern.md)
+-   **Intent**  of the pattern briefly describes both the problem and the solution.
+-   **Motivation**  further explains the problem and the solution the pattern makes possible.
+-   **Structure**  of classes shows each part of the pattern and how they are related.
+-   **Code example**  in one of the popular programming languages makes it easier to grasp the idea behind the pattern.
 
--   [Abstract Factory](./creational-patterns/2020-02-06-Abstract%20Factory%20Design%20Pattern.md "Provides a way to encapsulate a group of individual factories that have a common theme.")  
-    Creates an instance of several families of classes
--   [Builder](./creational-patterns/2020-02-06-Builder%20Design%20Pattern.md "Separate the construction of a complex object from its representation so that the same construction process can create different representations.")  
-    Separates object construction from its representation
--   [Factory Method](./creational-patterns/2020-02-06-Factory%20Method%20Design%20Pattern.md "Defines a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.")  
-    Creates an instance of several derived classes
--   [Object Pool](./creational-patterns/2020-02-06-Object%20Pool%20Design%20Pattern.md "Avoid expensive acquisition and release of resources by recycling objects that are no longer in use")  
-    Avoid expensive acquisition and release of resources by recycling objects that are no longer in use
--   [Prototype](./creational-patterns/2020-02-06-Prototype%20Design%20Pattern.md "Being cloned to produce new objects.")  
-    A fully initialized instance to be copied or cloned
--   [Singleton](./creational-patterns/2020-02-06-Singleton%20Design%20Pattern.md "Restricts instantiation of a class to one object.")  
-    A class of which only a single instance can exist
+Some pattern catalogs list other useful details, such as applicability of the pattern, implementation steps and relations with other patterns.
 
-### [Structural design patterns](https://sourcemaking.com/design_patterns/structural_patterns)
+# History of patterns
 
-These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
+That’s a good, but not a very accurate, question. Design patterns aren’t obscure, sophisticated concepts—quite the opposite. Patterns are typical solutions to common problems in object-oriented design. When a solution gets repeated over and over in various projects, someone eventually puts a name to it and describes the solution in detail. That’s basically how a pattern gets discovered.
 
-[![](https://sourcemaking.com/files/v2/content/patterns/Decorator-preview.png)](https://sourcemaking.com/design_patterns/decorator)
+The concept of patterns was first described by Christopher Alexander in  [A Pattern Language: Towns, Buildings, Construction](https://refactoring.guru/pattern-language-book). The book describes a “language” for designing the urban environment. The units of this language are patterns. They may describe how high windows should be, how many levels a building should have, how large green areas in a neighborhood are supposed to be, and so on.
 
--   [Adapter](https://sourcemaking.com/design_patterns/adapter "Adapts one interface for a class into one that a client expects.")  
-    Match interfaces of different classes
--   [Bridge](https://sourcemaking.com/design_patterns/bridge "Decouples an abstraction from its implementation so that the two can vary independently.")  
-    Separates an object’s interface from its implementation
--   [Composite](https://sourcemaking.com/design_patterns/composite "Designed as a composition of one-or-more similar objects, all exhibiting similar functionality.")  
-    A tree structure of simple and composite objects
--   [Decorator](https://sourcemaking.com/design_patterns/decorator "Allows new/additional behavior to be added to an existing method of an object dynamically.")  
-    Add responsibilities to objects dynamically
--   [Facade](https://sourcemaking.com/design_patterns/facade "Provides a simplified interface to a larger body of code.")  
-    A single class that represents an entire subsystem
--   [Flyweight](https://sourcemaking.com/design_patterns/flyweight "When many objects must be manipulated and these cannot afford to have extraneous data, flyweight is appropriate.")  
-    A fine-grained instance used for efficient sharing
--   [![](https://sourcemaking.com/files/v2/content/patterns/Proxy-preview.png)](https://sourcemaking.com/design_patterns/proxy)
+The idea was picked up by four authors: Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm. In 1995, they published  [Design Patterns: Elements of Reusable Object-Oriented Software](https://refactoring.guru/gof-book), in which they applied the concept of design patterns to programming. The book featured 23 patterns solving various problems of object-oriented design and became a best-seller very quickly. Due to its lengthy name, people started to call it “the book by the gang of four” which was soon shortened to simply “the GoF book”.
+
+Since then, dozens of other object-oriented patterns have been discovered. The “pattern approach” became very popular in other programming fields, so lots of other patterns now exist outside of object-oriented design as well.
+
+# Why should I learn patterns?
+
+The truth is that you might manage to work as a programmer for many years without knowing about a single pattern. A lot of people do just that. Even in that case, though, you might be implementing some patterns without even knowing it. So why would you spend time learning them?
+
+-   Design patterns are a toolkit of  **tried and tested solutions**  to common problems in software design. Even if you never encounter these problems, knowing patterns is still useful because it teaches you how to solve all sorts of problems using principles of object-oriented design.
     
-    [Private Class Data](https://sourcemaking.com/design_patterns/private_class_data "Restricts accessor/mutator access")  
-    Restricts accessor/mutator access
--   [Proxy](https://sourcemaking.com/design_patterns/proxy "Class functioning as an interface to another thing.")  
-    An object representing another object
+-   Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
+# Criticism of patterns
 
-### [Behavioral design patterns](https://sourcemaking.com/design_patterns/behavioral_patterns)
+It seems like only a lazy person haven’t criticized design patterns yet. Let’s take a look at the most typical arguments against using patterns.
 
-These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
+#### Kludges for a weak programming language
 
-[![](https://sourcemaking.com/files/v2/content/patterns/Interpreter-preview.png)](https://sourcemaking.com/design_patterns/interpreter)
+Usually the need for patterns arises when people choose a programming language or a technology that lacks the necessary level of abstraction. In this case, patterns become a kludge that gives the language much-needed super-abilities.
 
--   [Chain of responsibility](https://sourcemaking.com/design_patterns/chain_of_responsibility "Source of command objects and a series of processing objects.")  
-    A way of passing a request between a chain of objects
--   [Command](https://sourcemaking.com/design_patterns/command "Objects are used to represent actions.")  
-    Encapsulate a command request as an object
--   [Interpreter](https://sourcemaking.com/design_patterns/interpreter "The basic idea is to implement a specialized computer language to rapidly solve a defined class of problems.")  
-    A way to include language elements in a program
--   [Iterator](https://sourcemaking.com/design_patterns/iterator "Used to access the elements of an aggregate object sequentially without exposing its underlying representation.")  
-    Sequentially access the elements of a collection
--   [Mediator](https://sourcemaking.com/design_patterns/mediator "Provides a unified interface to a set of interfaces in a subsystem.")  
-    Defines simplified communication between classes
--   [Memento](https://sourcemaking.com/design_patterns/memento "Provides the ability to restore an object to its previous state.")  
-    Capture and restore an object's internal state
--   [Null Object](https://sourcemaking.com/design_patterns/null_object "Designed to act as a default value of an object.")  
-    Designed to act as a default value of an object
--   [Observer](https://sourcemaking.com/design_patterns/observer "Observes the state of an object in a program.")  
-    A way of notifying change to a number of classes
--   [![](https://sourcemaking.com/files/v2/content/patterns/State-preview.png)](https://sourcemaking.com/design_patterns/state)
+For example, the  [Strategy](https://refactoring.guru/design-patterns/strategy)  pattern can be implemented with a simple anonymous (lambda) function in most modern programming languages.
+
+#### Inefficient solutions
+
+Patterns try to systematize approaches that are already widely used. This unification is viewed by many as a dogma and they implement patterns “to the point”, without adapting them to the context of their project.
+
+#### Unjustified use
+
+> If all you have is a hammer, everything looks like a nail.
+
+This is the problem that haunts many novices who have just familiarized themselves with patterns. Having learned about patterns, they try to apply them everywhere, even in situations where simpler code would do just fine.
+
+# Classification of patterns
+
+Design patterns differ by their complexity, level of detail and scale of applicability to the entire system being designed. I like the analogy to road construction: you can make an intersection safer by either installing some traffic lights or building an entire multi-level interchange with underground passages for pedestrians.
+
+The most basic and low-level patterns are often called  _idioms_. They usually apply only to a single programming language.
+
+The most universal and high-level patterns are  _architectural patterns_. Developers can implement these patterns in virtually any language. Unlike other patterns, they can be used to design the architecture of an entire application.
+
+In addition, all patterns can be categorized by their  _intent_, or purpose. This book covers three main groups of patterns:
+
+-   **Creational patterns**  provide object creation mechanisms that increase flexibility and reuse of existing code.
     
-    [State](https://sourcemaking.com/design_patterns/state "Represent the state of an object.")  
-    Alter an object's behavior when its state changes
--   [Strategy](https://sourcemaking.com/design_patterns/strategy "Algorithms can be selected on-the-fly at runtime.")  
-    Encapsulates an algorithm inside a class
--   [Template method](https://sourcemaking.com/design_patterns/template_method "A template method defines the skeleton of an algorithm.")  
-    Defer the exact steps of an algorithm to a subclass
--   [Visitor](https://sourcemaking.com/design_patterns/visitor "A way of separating an algorithm from an object structure.")  
-    Defines a new operation to a class without change
+-   **Structural patterns**  explain how to assemble objects and classes into larger structures, while keeping the structures flexible and efficient.
+    
+-   **Behavioral patterns**  take care of effective communication and the assignment of responsibilities between objects.
 
-### Criticism
+# The Catalog of Design Patterns
 
-The concept of design patterns has been criticized by some in the field of computer science.
+### Creational patterns
 
-#### Targets the wrong problem
+These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
-The need for patterns results from using computer languages or techniques with insufficient abstraction ability. Under ideal factoring, a concept should not be copied, but merely referenced. But if something is referenced instead of copied, then there is no "pattern" to label and catalog. Paul Graham writes in the essay  [Revenge of the Nerds](http://www.paulgraham.com/icad.html).
+[![Factory Method](https://refactoring.guru/images/patterns/cards/factory-method-mini.png)Factory Method](https://refactoring.guru/design-patterns/factory-method)[![Abstract Factory](https://refactoring.guru/images/patterns/cards/abstract-factory-mini.png)Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)[![Builder](https://refactoring.guru/images/patterns/cards/builder-mini.png)Builder](https://refactoring.guru/design-patterns/builder)[![Prototype](https://refactoring.guru/images/patterns/cards/prototype-mini.png)Prototype](https://refactoring.guru/design-patterns/prototype)[![Singleton](https://refactoring.guru/images/patterns/cards/singleton-mini.png)Singleton](https://refactoring.guru/design-patterns/singleton)
 
-Peter Norvig provides a similar argument. He demonstrates that 16 out of the 23 patterns in the Design Patterns book (which is primarily focused on C++) are simplified or eliminated (via direct language support) in Lisp or Dylan.
+### Structural patterns
 
-#### Lacks formal foundations
+These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
 
-The study of design patterns has been excessively ad hoc, and some have argued that the concept sorely needs to be put on a more formal footing. At  OOPSLA 1999, the Gang of Four were (with their full cooperation) subjected to a show trial, in which they were "charged" with numerous crimes against computer science. They were "convicted" by ⅔ of the "jurors" who attended the trial.
+[![Adapter](https://refactoring.guru/images/patterns/cards/adapter-mini.png)Adapter](https://refactoring.guru/design-patterns/adapter)[![Bridge](https://refactoring.guru/images/patterns/cards/bridge-mini.png)Bridge](https://refactoring.guru/design-patterns/bridge)[![Composite](https://refactoring.guru/images/patterns/cards/composite-mini.png)Composite](https://refactoring.guru/design-patterns/composite)[![Decorator](https://refactoring.guru/images/patterns/cards/decorator-mini.png)Decorator](https://refactoring.guru/design-patterns/decorator)[![Facade](https://refactoring.guru/images/patterns/cards/facade-mini.png)Facade](https://refactoring.guru/design-patterns/facade)[![Flyweight](https://refactoring.guru/images/patterns/cards/flyweight-mini.png)Flyweight](https://refactoring.guru/design-patterns/flyweight)[![Proxy](https://refactoring.guru/images/patterns/cards/proxy-mini.png)Proxy](https://refactoring.guru/design-patterns/proxy)
 
-#### Leads to inefficient solutions
+### Behavioral patterns
 
-The idea of a design pattern is an attempt to standardize what are already accepted best practices. In principle this might appear to be beneficial, but in practice it often results in the unnecessary duplication of code. It is almost always a more efficient solution to use a well-factored implementation rather than a "just barely good enough" design pattern.
+These patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
-#### Does not differ significantly from other abstractions
-
-Some authors allege that design patterns don't differ significantly from other forms of abstraction, and that the use of new terminology (borrowed from the architecture community) to describe existing phenomena in the field of programming is unnecessary. The Model-View-Controller paradigm is touted as an example of a "pattern" which predates the concept of "design patterns" by several years. It is further argued by some that the primary contribution of the Design Patterns community (and the Gang of Four book) was the use of Alexander's pattern language as a form of documentation; a practice which is often ignored in the literature.
+[![Chain of Responsibility](https://refactoring.guru/images/patterns/cards/chain-of-responsibility-mini.png)Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)[![Command](https://refactoring.guru/images/patterns/cards/command-mini.png)Command](https://refactoring.guru/design-patterns/command)[![Iterator](https://refactoring.guru/images/patterns/cards/iterator-mini.png)Iterator](https://refactoring.guru/design-patterns/iterator)[![Mediator](https://refactoring.guru/images/patterns/cards/mediator-mini.png)Mediator](https://refactoring.guru/design-patterns/mediator)[![Memento](https://refactoring.guru/images/patterns/cards/memento-mini.png)Memento](https://refactoring.guru/design-patterns/memento)[![Observer](https://refactoring.guru/images/patterns/cards/observer-mini.png)Observer](https://refactoring.guru/design-patterns/observer)[![State](https://refactoring.guru/images/patterns/cards/state-mini.png)State](https://refactoring.guru/design-patterns/state)[![Strategy](https://refactoring.guru/images/patterns/cards/strategy-mini.png)Strategy](https://refactoring.guru/design-patterns/strategy)[![Template Method](https://refactoring.guru/images/patterns/cards/template-method-mini.png)Template Method](https://refactoring.guru/design-patterns/template-method)[![Visitor](https://refactoring.guru/images/patterns/cards/visitor-mini.png)Visitor](https://refactoring.guru/design-patterns/visitor)
