@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 #### Also known as:  Wrapper
 
@@ -282,32 +282,32 @@ Many programming languages have the  `final`  keyword that can be used to preven
 
 ## Relations with Other Patterns
 
--   [Adapter](https://refactoring.guru/design-patterns/adapter)  changes the interface of an existing object, while  [Decorator](https://refactoring.guru/design-patterns/decorator)  enhances an object without changing its interface. In addition,  _Decorator_  supports recursive composition, which isn’t possible when you use  _Adapter_.
+-   [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  changes the interface of an existing object, while  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  enhances an object without changing its interface. In addition,  _Decorator_  supports recursive composition, which isn’t possible when you use  _Adapter_.
     
--   [Adapter](https://refactoring.guru/design-patterns/adapter)  provides a different interface to the wrapped object,  [Proxy](https://refactoring.guru/design-patterns/proxy)  provides it with the same interface, and  [Decorator](https://refactoring.guru/design-patterns/decorator)  provides it with an enhanced interface.
+-   [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  provides a different interface to the wrapped object,  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  provides it with the same interface, and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  provides it with an enhanced interface.
     
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
     
     The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
     
--   [Composite](https://refactoring.guru/design-patterns/composite)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
+-   [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
     
     A  _Decorator_  is like a  _Composite_  but only has one child component. There’s another significant difference:  _Decorator_  adds additional responsibilities to the wrapped object, while  _Composite_  just “sums up” its children’s results.
     
     However, the patterns can also cooperate: you can use  _Decorator_  to extend the behavior of a specific object in the  _Composite_  tree.
     
--   Designs that make heavy use of  [Composite](https://refactoring.guru/design-patterns/composite)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  can often benefit from using  [Prototype](https://refactoring.guru/design-patterns/prototype). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
+-   Designs that make heavy use of  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  can often benefit from using  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
     
--   [Decorator](https://refactoring.guru/design-patterns/decorator)  lets you change the skin of an object, while  [Strategy](https://refactoring.guru/design-patterns/strategy)  lets you change the guts.
+-   [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  lets you change the skin of an object, while  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  lets you change the guts.
     
--   [Decorator](https://refactoring.guru/design-patterns/decorator)  and  [Proxy](https://refactoring.guru/design-patterns/proxy)  have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a  _Proxy_  usually manages the life cycle of its service object on its own, whereas the composition of  _Decorators_  is always controlled by the client.
+-   [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  and  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a  _Proxy_  usually manages the life cycle of its service object on its own, whereas the composition of  _Decorators_  is always controlled by the client.
 
 ## Code Example
 **Decorator**  is a Conceptual pattern that allows adding new behaviors to objects dynamically by placing them inside special wrapper objects.
 
 Using decorators you can wrap objects countless number of times since both target objects and decorators follow the same interface. The resulting object will get a stacking behavior of all wrappers.
 
-[Learn more about Decorator](https://refactoring.guru/design-patterns/decorator)
+[Learn more about Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -338,9 +338,9 @@ The first wrapper encrypts and decrypts data, and the second one compresses and 
 
 You can even combine these wrappers by wrapping one decorator with another.
 
-## [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators)**decorators**
+## [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators)**decorators**
 
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators-DataSource-java)**decorators/DataSource.java:**  A common data interface, which defines read and write operations
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-DataSource-java)**decorators/DataSource.java:**  A common data interface, which defines read and write operations
 ```java
 package refactoring_guru.decorator.example.decorators;
 
@@ -350,7 +350,7 @@ public interface DataSource {
     String readData();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators-FileDataSource-java)**decorators/FileDataSource.java:**  Simple data reader-writer
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-FileDataSource-java)**decorators/FileDataSource.java:**  Simple data reader-writer
 ```java
 package refactoring_guru.decorator.example.decorators;
 
@@ -387,7 +387,7 @@ public class FileDataSource implements DataSource {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators-DataSourceDecorator-java)**decorators/DataSourceDecorator.java:**  Abstract base decorator
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-DataSourceDecorator-java)**decorators/DataSourceDecorator.java:**  Abstract base decorator
 ```java
 package refactoring_guru.decorator.example.decorators;
 
@@ -409,7 +409,7 @@ public class DataSourceDecorator implements DataSource {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators-EncryptionDecorator-java)**decorators/EncryptionDecorator.java:**  Encryption decorator
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-EncryptionDecorator-java)**decorators/EncryptionDecorator.java:**  Encryption decorator
 ```java
 package refactoring_guru.decorator.example.decorators;
 
@@ -448,7 +448,7 @@ public class EncryptionDecorator extends DataSourceDecorator {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--decorators-CompressionDecorator-java)**decorators/CompressionDecorator.java:**  Compression decorator
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-CompressionDecorator-java)**decorators/CompressionDecorator.java:**  Compression decorator
 ```java
 package refactoring_guru.decorator.example.decorators;
 
@@ -520,7 +520,7 @@ public class CompressionDecorator extends DataSourceDecorator {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.decorator.example;
 
@@ -544,7 +544,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/decorator/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 - Input ----------------
 Name,Salary

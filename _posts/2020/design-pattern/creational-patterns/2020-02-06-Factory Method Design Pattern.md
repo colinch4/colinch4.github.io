@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Creational Patterns](https://algamza.github.io/2020-02-06/Creational-Design-patterns)
 
 #### Also known as: Virtual Constructor
 
@@ -89,7 +89,7 @@ When the factory method comes into play, you don’t need to rewrite the logic o
 
 For this pattern to work, the base dialog class must work with abstract buttons: a base class or an interface that all concrete buttons follow. This way the dialog’s code remains functional, whichever type of buttons it works with.
 
-Of course, you can apply this approach to other UI elements as well. However, with each new factory method you add to the dialog, you get closer to the  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  pattern. Fear not, we’ll talk about this pattern later.
+Of course, you can apply this approach to other UI elements as well. However, with each new factory method you add to the dialog, you get closer to the  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  pattern. Fear not, we’ll talk about this pattern later.
 
 ```java
 // The creator class declares the factory method that must
@@ -234,15 +234,15 @@ Therefore, you need to have a regular method capable of creating new objects as 
 
 ## Relations with Other Patterns
 
--   Many designs start by using  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory),  [Prototype](https://refactoring.guru/design-patterns/prototype), or  [Builder](https://refactoring.guru/design-patterns/builder)  (more flexible, but more complicated).
+-   Many designs start by using  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern), or  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  (more flexible, but more complicated).
     
--   [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  classes are often based on a set of  [Factory Methods](https://refactoring.guru/design-patterns/factory-method), but you can also use  [Prototype](https://refactoring.guru/design-patterns/prototype)  to compose the methods on these classes.
+-   [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  classes are often based on a set of  [Factory Methods](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern), but you can also use  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  to compose the methods on these classes.
     
--   You can use  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to let collection subclasses return different types of iterators that are compatible with the collections.
+-   You can use  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to let collection subclasses return different types of iterators that are compatible with the collections.
     
--   [Prototype](https://refactoring.guru/design-patterns/prototype)  isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand,  _Prototype_  requires a complicated initialization of the cloned object.  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  is based on inheritance but doesn’t require an initialization step.
+-   [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand,  _Prototype_  requires a complicated initialization of the cloned object.  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  is based on inheritance but doesn’t require an initialization step.
     
--   [Factory Method](https://refactoring.guru/design-patterns/factory-method)  is a specialization of  [Template Method](https://refactoring.guru/design-patterns/template-method). At the same time, a  _Factory Method_  may serve as a step in a large  _Template Method_.
+-   [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  is a specialization of  [Template Method](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern). At the same time, a  _Factory Method_  may serve as a step in a large  _Template Method_.
 
 
 ## Code Example
@@ -251,9 +251,9 @@ Therefore, you need to have a regular method capable of creating new objects as 
 
 Factory Method defines a method, which should be used for creating objects instead of direct constructor call (`new`  operator). Subclasses can override this method to change the class of objects that will be created.
 
-> If you can’t figure out the difference between  **Factories**,  **Factory Method**  &  **Abstract Factory**  patterns, then read our  [Factory Comparison](https://refactoring.guru/design-patterns/factory-comparison).
+> If you can’t figure out the difference between  **Factories**,  **Factory Method**  &  **Abstract Factory**  patterns, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory Comparison).
 
-[Learn more about Factory Method](https://refactoring.guru/design-patterns/factory-method)
+[Learn more about Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -283,9 +283,9 @@ Different types of dialogs require their own types of elements. That’s why we 
 
 Now, each dialog type will instantiate proper button classes. Base dialog works with products using their common interface, that’s why its code remains functional after all changes.
 
-## [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--buttons)**buttons**
+## [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons)**buttons**
 
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--buttons-Button-java)**buttons/Button.java:**  Common product interface
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-Button-java)**buttons/Button.java:**  Common product interface
 
 ```java
 package refactoring_guru.factory_method.example.buttons;
@@ -298,7 +298,7 @@ public interface Button {
     void onClick();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--buttons-HtmlButton-java)**buttons/HtmlButton.java:**  Concrete product
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-HtmlButton-java)**buttons/HtmlButton.java:**  Concrete product
 ```java
 package refactoring_guru.factory_method.example.buttons;
 
@@ -317,7 +317,7 @@ public class HtmlButton implements Button {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java:**  One more concrete product
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java:**  One more concrete product
 ```java
 package refactoring_guru.factory_method.example.buttons;
 
@@ -363,9 +363,9 @@ public class WindowsButton implements Button {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--factory)**factory**
+## [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory)**factory**
 
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--factory-Dialog-java)**factory/Dialog.java:**  Base creator
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-Dialog-java)**factory/Dialog.java:**  Base creator
 ```java
 package refactoring_guru.factory_method.example.factory;
 
@@ -392,7 +392,7 @@ public abstract class Dialog {
     public abstract Button createButton();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--factory-HtmlDialog-java)**factory/HtmlDialog.java:**  Concrete creator
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-HtmlDialog-java)**factory/HtmlDialog.java:**  Concrete creator
 ```java
 package refactoring_guru.factory_method.example.factory;
 
@@ -410,7 +410,7 @@ public class HtmlDialog extends Dialog {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--factory-WindowsDialog-java)**factory/WindowsDialog.java:**  One more concrete creator
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-WindowsDialog-java)**factory/WindowsDialog.java:**  One more concrete creator
 ```java
 package refactoring_guru.factory_method.example.factory;
 
@@ -428,7 +428,7 @@ public class WindowsDialog extends Dialog {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.factory_method.example;
 
@@ -469,11 +469,11 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results (HtmlDialog)
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results (HtmlDialog)
 
 <button>Test Button</button>
 Click! Button says - 'Hello World!'
 
-#### [](https://refactoring.guru/design-patterns/factory-method/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution results (WindowsDialog)
+#### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution results (WindowsDialog)
 
 ![](https://refactoring.guru/images/patterns/examples/java/factory-method/OutputDemo.png)

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 #### Also known as:  Object Tree
 
@@ -200,30 +200,30 @@ All elements defined by the Composite pattern share a common interface. Using th
 
 ## Relations with Other Patterns
 
--   You can use  [Builder](https://refactoring.guru/design-patterns/builder)  when creating complex  [Composite](https://refactoring.guru/design-patterns/composite)  trees because you can program its construction steps to work recursively.
+-   You can use  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  when creating complex  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  trees because you can program its construction steps to work recursively.
     
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  is often used in conjunction with  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
     
--   You can use  [Iterators](https://refactoring.guru/design-patterns/iterator)  to traverse  [Composite](https://refactoring.guru/design-patterns/composite)  trees.
+-   You can use  [Iterators](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to traverse  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  trees.
     
--   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  to execute an operation over an entire  [Composite](https://refactoring.guru/design-patterns/composite)  tree.
+-   You can use  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  to execute an operation over an entire  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  tree.
     
--   You can implement shared leaf nodes of the  [Composite](https://refactoring.guru/design-patterns/composite)  tree as  [Flyweights](https://refactoring.guru/design-patterns/flyweight)  to save some RAM.
+-   You can implement shared leaf nodes of the  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  tree as  [Flyweights](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  to save some RAM.
     
--   [Composite](https://refactoring.guru/design-patterns/composite)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
+-   [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  have similar structure diagrams since both rely on recursive composition to organize an open-ended number of objects.
     
     A  _Decorator_  is like a  _Composite_  but only has one child component. There’s another significant difference:  _Decorator_  adds additional responsibilities to the wrapped object, while  _Composite_  just “sums up” its children’s results.
     
     However, the patterns can also cooperate: you can use  _Decorator_  to extend the behavior of a specific object in the  _Composite_  tree.
     
--   Designs that make heavy use of  [Composite](https://refactoring.guru/design-patterns/composite)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  can often benefit from using  [Prototype](https://refactoring.guru/design-patterns/prototype). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
+-   Designs that make heavy use of  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  can often benefit from using  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
 
 ## Code Example
 **Composite**  is a structural design pattern that allows composing objects into a tree-like structure and work with the it as if it was a singular object.
 
 Composite became a pretty popular solution for the most problems that require building a tree structure. Composite’s great feature is the ability to run methods recursively over the whole tree structure and sum up the results.
 
-[Learn more about Composite](https://refactoring.guru/design-patterns/composite)
+[Learn more about Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -246,9 +246,9 @@ Here are some composite examples from standard Java libraries:
 
 This example shows how to create complex graphical shapes, composed of simpler shapes and treat both of them uniformly.
 
-## [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes)**shapes**
+## [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes)**shapes**
 
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -267,7 +267,7 @@ public interface Shape {
     void paint(Graphics graphics);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java:**  Abstract shape with basic functionality
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java:**  Abstract shape with basic functionality
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -363,7 +363,7 @@ abstract class BaseShape implements Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -393,7 +393,7 @@ public class Dot extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -423,7 +423,7 @@ public class Circle extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -456,7 +456,7 @@ public class Rectangle extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  Compound shape, which consists of other shape objects
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  Compound shape, which consists of other shape objects
 ```java
 package refactoring_guru.composite.example.shapes;
 
@@ -598,9 +598,9 @@ public class CompoundShape extends BaseShape {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/composite/java/example#example-0--editor)**editor**
+## [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--editor)**editor**
 
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--editor-ImageEditor-java)**editor/ImageEditor.java:**  Shape editor
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--editor-ImageEditor-java)**editor/ImageEditor.java:**  Shape editor
 ```java
 package refactoring_guru.composite.example.editor;
 
@@ -679,7 +679,7 @@ public class ImageEditor {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.composite.example;
 
@@ -714,6 +714,6 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/composite/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
 
 ![](https://refactoring.guru/images/patterns/examples/java/composite/OutputDemo.png)

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 #### Also known as:  Snapshot
 
@@ -105,7 +105,7 @@ There’s another implementation which is useful when you don’t want to leave 
 
 ## Pseudocode
 
-In this example uses the Memento pattern alongside the  [Command](https://refactoring.guru/design-patterns/command)  pattern for storing snapshots of the complex text editor’s state and restoring an earlier state from these snapshots when needed.
+In this example uses the Memento pattern alongside the  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  pattern for storing snapshots of the complex text editor’s state and restoring an earlier state from these snapshots when needed.
 
 ![Structure of the Memento example](https://refactoring.guru/images/patterns/diagrams/memento/example.png)
 
@@ -215,11 +215,11 @@ The Memento makes the object itself responsible for creating a snapshot of its s
 
 ## Relations with Other Patterns
 
--   You can use  [Command](https://refactoring.guru/design-patterns/command)  and  [Memento](https://refactoring.guru/design-patterns/memento)  together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
+-   You can use  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  and  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)  together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
     
--   You can use  [Memento](https://refactoring.guru/design-patterns/memento)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to capture the current iteration state and roll it back if necessary.
+-   You can use  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to capture the current iteration state and roll it back if necessary.
     
--   Sometimes  [Prototype](https://refactoring.guru/design-patterns/prototype)  can be a simpler alternative to  [Memento](https://refactoring.guru/design-patterns/memento). This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
+-   Sometimes  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can be a simpler alternative to  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern). This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
 
 ## Code Example 
 
@@ -227,7 +227,7 @@ The Memento makes the object itself responsible for creating a snapshot of its s
 
 The Memento doesn’t compromise the internal structure of the object it works with, as well as data kept inside the snapshots.
 
-[Learn more about Memento](https://refactoring.guru/design-patterns/memento)
+[Learn more about Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -252,9 +252,9 @@ When a user requests the undo, the editor fetches a recent command from the hist
 
 Reverted commands are kept in history until the user makes some modifications to the shapes on the screen. This is crucial for redoing undone commands.
 
-## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor)**editor**
+## [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--editor)**editor**
 
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Editor code
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Editor code
 ```java
 package refactoring_guru.memento.example.editor;
 
@@ -329,7 +329,7 @@ public class Editor extends JComponent {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor-Canvas-java)**editor/Canvas.java:**  Canvas code
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--editor-Canvas-java)**editor/Canvas.java:**  Canvas code
 ```java
 package refactoring_guru.memento.example.editor;
 
@@ -503,9 +503,9 @@ class Canvas extends java.awt.Canvas {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history)**history**
+## [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--history)**history**
 
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history-History-java)**history/History.java:**  History stores commands and mementos
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--history-History-java)**history/History.java:**  History stores commands and mementos
 ```java
 package refactoring_guru.memento.example.history;
 
@@ -581,7 +581,7 @@ public class History {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history-Memento-java)**history/Memento.java:**  Memento class
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--history-Memento-java)**history/Memento.java:**  Memento class
 ```java
 package refactoring_guru.memento.example.history;
 
@@ -601,9 +601,9 @@ public class Memento {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands)**commands**
+## [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands)**commands**
 
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-Command-java)**commands/Command.java:**  Base command class
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-Command-java)**commands/Command.java:**  Base command class
 ```java
 package refactoring_guru.memento.example.commands;
 
@@ -612,7 +612,7 @@ public interface Command {
     void execute();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-ColorCommand-java)**commands/ColorCommand.java:**  Changes color of selected shape
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-ColorCommand-java)**commands/ColorCommand.java:**  Changes color of selected shape
 ```java
 package refactoring_guru.memento.example.commands;
 
@@ -643,7 +643,7 @@ public class ColorCommand implements Command {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-MoveCommand-java)**commands/MoveCommand.java:**  Moves selected shape
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-MoveCommand-java)**commands/MoveCommand.java:**  Moves selected shape
 ```java
 package refactoring_guru.memento.example.commands;
 
@@ -694,9 +694,9 @@ public class MoveCommand implements Command {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes)**shapes:**  Various shapes
+## [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes)**shapes:**  Various shapes
 
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Shape-java)**shapes/Shape.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -721,7 +721,7 @@ public interface Shape extends Serializable {
     void paint(Graphics graphics);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -844,7 +844,7 @@ public abstract class BaseShape implements Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Circle-java)**shapes/Circle.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -875,7 +875,7 @@ public class Circle extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Dot-java)**shapes/Dot.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -905,7 +905,7 @@ public class Dot extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -938,7 +938,7 @@ public class Rectangle extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java**
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java**
 ```java
 package refactoring_guru.memento.example.shapes;
 
@@ -1127,7 +1127,7 @@ public class CompoundShape extends BaseShape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
 package refactoring_guru.memento.example;
 
@@ -1161,6 +1161,6 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
+#### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
 
 ![](https://refactoring.guru/images/patterns/examples/java/memento/OutputDemo.png)

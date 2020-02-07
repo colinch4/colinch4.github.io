@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 #### Also known as:  Wrapper
 
@@ -161,7 +161,7 @@ Use the pattern when you want to reuse several existing subclasses that lack som
 
 You could extend each subclass and put the missing functionality into new child classes. However, you’ll need to duplicate the code across all of these new classes, which  [smells really bad](https://refactoring.guru/smells/duplicate-code).
 
-The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter’s field should follow that interface. This approach looks very similar to the  [Decorator](https://refactoring.guru/design-patterns/decorator)  pattern.
+The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter’s field should follow that interface. This approach looks very similar to the  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  pattern.
 
 ## How to Implement
 
@@ -189,15 +189,15 @@ The much more elegant solution would be to put the missing functionality into an
 
 ## Relations with Other Patterns
 
--   [Bridge](https://refactoring.guru/design-patterns/bridge)  is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand,  [Adapter](https://refactoring.guru/design-patterns/adapter)  is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern)  is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand,  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
     
--   [Adapter](https://refactoring.guru/design-patterns/adapter)  changes the interface of an existing object, while  [Decorator](https://refactoring.guru/design-patterns/decorator)  enhances an object without changing its interface. In addition,  _Decorator_  supports recursive composition, which isn’t possible when you use  _Adapter_.
+-   [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  changes the interface of an existing object, while  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  enhances an object without changing its interface. In addition,  _Decorator_  supports recursive composition, which isn’t possible when you use  _Adapter_.
     
--   [Adapter](https://refactoring.guru/design-patterns/adapter)  provides a different interface to the wrapped object,  [Proxy](https://refactoring.guru/design-patterns/proxy)  provides it with the same interface, and  [Decorator](https://refactoring.guru/design-patterns/decorator)  provides it with an enhanced interface.
+-   [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  provides a different interface to the wrapped object,  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  provides it with the same interface, and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  provides it with an enhanced interface.
     
--   [Facade](https://refactoring.guru/design-patterns/facade)  defines a new interface for existing objects, whereas  [Adapter](https://refactoring.guru/design-patterns/adapter)  tries to make the existing interface usable.  _Adapter_  usually wraps just one object, while  _Facade_  works with an entire subsystem of objects.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  defines a new interface for existing objects, whereas  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  tries to make the existing interface usable.  _Adapter_  usually wraps just one object, while  _Facade_  works with an entire subsystem of objects.
     
--   [Bridge](https://refactoring.guru/design-patterns/bridge),  [State](https://refactoring.guru/design-patterns/state),  [Strategy](https://refactoring.guru/design-patterns/strategy)  (and to some degree  [Adapter](https://refactoring.guru/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern),  [State](https://algamza.github.io/2020-02-06/State-Design-Pattern),  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  (and to some degree  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
 
 ## Code Example
 
@@ -205,7 +205,7 @@ The much more elegant solution would be to put the missing functionality into an
 
 The Adapter acts as a wrapper between two objects. It catches calls for one object and transforms them to format and interface recognizable by the second object.
 
-[Learn more about Adapter](https://refactoring.guru/design-patterns/adapter)
+[Learn more about Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -230,9 +230,9 @@ There are some standard Adapters in Java core libraries:
 
 This simple example shows how an Adapter can make incompatible objects work together.
 
-## [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--round)**round**
+## [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--round)**round**
 
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--round-RoundHole-java)**round/RoundHole.java:**  Round holes
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--round-RoundHole-java)**round/RoundHole.java:**  Round holes
 ```java
 package refactoring_guru.adapter.example.round;
 
@@ -257,7 +257,7 @@ public class RoundHole {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--round-RoundPeg-java)**round/RoundPeg.java:**  Round pegs
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--round-RoundPeg-java)**round/RoundPeg.java:**  Round pegs
 ```java
 package refactoring_guru.adapter.example.round;
 
@@ -278,9 +278,9 @@ public class RoundPeg {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--square)**square**
+## [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--square)**square**
 
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--square-SquarePeg-java)**square/SquarePeg.java:**  Square pegs
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--square-SquarePeg-java)**square/SquarePeg.java:**  Square pegs
 ```java
 package refactoring_guru.adapter.example.square;
 
@@ -306,9 +306,9 @@ public class SquarePeg {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--adapters)**adapters**
+## [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--adapters)**adapters**
 
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--adapters-SquarePegAdapter-java)**adapters/SquarePegAdapter.java:**  Adapter of square pegs to round holes
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--adapters-SquarePegAdapter-java)**adapters/SquarePegAdapter.java:**  Adapter of square pegs to round holes
 ```java
 package refactoring_guru.adapter.example.adapters;
 
@@ -334,7 +334,7 @@ public class SquarePegAdapter extends RoundPeg {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.adapter.example;
 
@@ -371,7 +371,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/adapter/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Round peg r5 fits round hole r5.
 Square peg w2 fits round hole r5.

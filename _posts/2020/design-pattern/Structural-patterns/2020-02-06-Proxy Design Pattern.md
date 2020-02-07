@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 ## Intent
 
@@ -213,11 +213,11 @@ The proxy can also track whether the client had modified the service object. The
 
 ## Relations with Other Patterns
 
--   [Adapter](https://refactoring.guru/design-patterns/adapter)  provides a different interface to the wrapped object,  [Proxy](https://refactoring.guru/design-patterns/proxy)  provides it with the same interface, and  [Decorator](https://refactoring.guru/design-patterns/decorator)  provides it with an enhanced interface.
+-   [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  provides a different interface to the wrapped object,  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  provides it with the same interface, and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  provides it with an enhanced interface.
     
--   [Facade](https://refactoring.guru/design-patterns/facade)  is similar to  [Proxy](https://refactoring.guru/design-patterns/proxy)  in that both buffer a complex entity and initialize it on its own. Unlike  _Facade_,  _Proxy_  has the same interface as its service object, which makes them interchangeable.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  is similar to  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  in that both buffer a complex entity and initialize it on its own. Unlike  _Facade_,  _Proxy_  has the same interface as its service object, which makes them interchangeable.
     
--   [Decorator](https://refactoring.guru/design-patterns/decorator)  and  [Proxy](https://refactoring.guru/design-patterns/proxy)  have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a  _Proxy_  usually manages the life cycle of its service object on its own, whereas the composition of  _Decorators_  is always controlled by the client.
+-   [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  and  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  have similar structures, but very different intents. Both patterns are built on the composition principle, where one object is supposed to delegate some of the work to another. The difference is that a  _Proxy_  usually manages the life cycle of its service object on its own, whereas the composition of  _Decorators_  is always controlled by the client.
 
 ## Code Example
 
@@ -225,7 +225,7 @@ The proxy can also track whether the client had modified the service object. The
 
 The proxy object has the same interface as a service, which makes it interchangeable with a real object when passed to a client.
 
-[Learn more about Proxy](https://refactoring.guru/design-patterns/proxy)
+[Learn more about Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -251,9 +251,9 @@ In this example, the Proxy pattern helps to implement the lazy initialization an
 
 Proxy is invaluable when you have to add some additional behaviors to a class which code you can’t change.
 
-## [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--some_cool_media_library)**some_cool_media_library**
+## [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library)**some_cool_media_library**
 
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeLib-java)**some_cool_media_library/ThirdPartyYoutubeLib.java:**  Remote service interface
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeLib-java)**some_cool_media_library/ThirdPartyYoutubeLib.java:**  Remote service interface
 ```java
 package refactoring_guru.proxy.example.some_cool_media_library;
 
@@ -265,7 +265,7 @@ public interface ThirdPartyYoutubeLib {
     Video getVideo(String videoId);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeClass-java)**some_cool_media_library/ThirdPartyYoutubeClass.java:**  Remote service implementation
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeClass-java)**some_cool_media_library/ThirdPartyYoutubeClass.java:**  Remote service implementation
 ```java
 package refactoring_guru.proxy.example.some_cool_media_library;
 
@@ -336,7 +336,7 @@ public class ThirdPartyYoutubeClass implements ThirdPartyYoutubeLib {
 
 }
 ```
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--some_cool_media_library-Video-java)**some_cool_media_library/Video.java:**  Video file
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-Video-java)**some_cool_media_library/Video.java:**  Video file
 ```java
 package refactoring_guru.proxy.example.some_cool_media_library;
 
@@ -352,9 +352,9 @@ public class Video {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--proxy)**proxy**
+## [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--proxy)**proxy**
 
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--proxy-YoutubeCacheProxy-java)**proxy/YoutubeCacheProxy.java:**  Caching proxy
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--proxy-YoutubeCacheProxy-java)**proxy/YoutubeCacheProxy.java:**  Caching proxy
 ```java
 package refactoring_guru.proxy.example.proxy;
 
@@ -401,9 +401,9 @@ public class YoutubeCacheProxy implements ThirdPartyYoutubeLib {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--downloader)**downloader**
+## [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--downloader)**downloader**
 
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--downloader-YoutubeDownloader-java)**downloader/YoutubeDownloader.java:**  Media downloader app
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--downloader-YoutubeDownloader-java)**downloader/YoutubeDownloader.java:**  Media downloader app
 ```java
 package refactoring_guru.proxy.example.downloader;
 
@@ -440,7 +440,7 @@ public class YoutubeDownloader {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
 package refactoring_guru.proxy.example;
 
@@ -478,7 +478,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/proxy/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Connecting to http://www.youtube.com... Connected!
 Downloading populars... Done!

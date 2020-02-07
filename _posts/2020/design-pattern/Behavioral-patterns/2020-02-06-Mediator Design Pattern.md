@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 #### Also known as:  Intermediary,­Controller
 
@@ -192,7 +192,7 @@ Since all relations between components are contained within the mediator, it’s
     
 3.  Implement the concrete mediator class. This class would benefit from storing references to all of the components it manages.
     
-4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a  [factory](https://refactoring.guru/design-patterns/abstract-factory)  or a  [facade](https://refactoring.guru/design-patterns/facade).
+4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a  [factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  or a  [facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern).
     
 5.  Components should store a reference to the mediator object. The connection is usually established in the component’s constructor, where a mediator object is passed as an argument.
     
@@ -210,17 +210,17 @@ Since all relations between components are contained within the mediator, it’s
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern),  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern),  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_  establishes unidirectional connections between senders and receivers.
     -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Facade](https://refactoring.guru/design-patterns/facade)  and  [Mediator](https://refactoring.guru/design-patterns/mediator)  have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  and  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
     
     -   _Facade_  defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
     -   _Mediator_  centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
--   The difference between  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+-   The difference between  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
     
     The primary goal of  _Mediator_  is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of  _Observer_  is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
     
@@ -235,7 +235,7 @@ Since all relations between components are contained within the mediator, it’s
 
 The Mediator makes it easy to modify, extend and reuse individual components because they’re no longer dependent on the dozens of other classes.
 
-[Learn more about Mediator](https://refactoring.guru/design-patterns/mediator)
+[Learn more about Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -257,9 +257,9 @@ Here are some examples of the pattern in core Java libraries:
 
 This example shows how to organize lots of GUI elements so that they cooperate with the help of a mediator but don’t depend on each other.
 
-## [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components)**components:**  Colleague classes
+## [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components)**components:**  Colleague classes
 
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Component-java)**components/Component.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Component-java)**components/Component.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -273,7 +273,7 @@ public interface Component {
     String getName();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-AddButton-java)**components/AddButton.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-AddButton-java)**components/AddButton.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -310,7 +310,7 @@ public class AddButton extends JButton implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-DeleteButton-java)**components/DeleteButton.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-DeleteButton-java)**components/DeleteButton.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -346,7 +346,7 @@ public class DeleteButton extends JButton  implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Filter-java)**components/Filter.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Filter-java)**components/Filter.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -411,7 +411,7 @@ public class Filter extends JTextField implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-List-java)**components/List.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-List-java)**components/List.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -493,7 +493,7 @@ public class List extends JList implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-SaveButton-java)**components/SaveButton.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-SaveButton-java)**components/SaveButton.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -529,7 +529,7 @@ public class SaveButton extends JButton implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-TextBox-java)**components/TextBox.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-TextBox-java)**components/TextBox.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -561,7 +561,7 @@ public class TextBox extends JTextArea implements Component {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Title-java)**components/Title.java**
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Title-java)**components/Title.java**
 ```java
 package refactoring_guru.mediator.example.components;
 
@@ -593,9 +593,9 @@ public class Title extends JTextField implements Component {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator)**mediator**
+## [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator)**mediator**
 
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Mediator-java)**mediator/Mediator.java:**  Defines common mediator interface
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Mediator-java)**mediator/Mediator.java:**  Defines common mediator interface
 ```java
 package refactoring_guru.mediator.example.mediator;
 
@@ -620,7 +620,7 @@ public interface Mediator {
     void createGUI();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Editor-java)**mediator/Editor.java:**  Concrete mediator
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Editor-java)**mediator/Editor.java:**  Concrete mediator
 ```java
 package refactoring_guru.mediator.example.mediator;
 
@@ -817,7 +817,7 @@ public class Editor implements Mediator {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Note-java)**mediator/Note.java:**  A note’s class
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Note-java)**mediator/Note.java:**  A note’s class
 ```java
 package refactoring_guru.mediator.example.mediator;
 
@@ -854,7 +854,7 @@ public class Note {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
 package refactoring_guru.mediator.example;
 
@@ -883,6 +883,6 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
 
 ![](https://refactoring.guru/images/patterns/examples/java/mediator/OutputDemo.png)

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 ## Intent
 
@@ -229,20 +229,20 @@ The pattern provides a couple of generic interfaces for both collections and ite
 
 ## Relations with Other Patterns
 
--   You can use  [Iterators](https://refactoring.guru/design-patterns/iterator)  to traverse  [Composite](https://refactoring.guru/design-patterns/composite)  trees.
+-   You can use  [Iterators](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to traverse  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  trees.
     
--   You can use  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to let collection subclasses return different types of iterators that are compatible with the collections.
+-   You can use  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to let collection subclasses return different types of iterators that are compatible with the collections.
     
--   You can use  [Memento](https://refactoring.guru/design-patterns/memento)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to capture the current iteration state and roll it back if necessary.
+-   You can use  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to capture the current iteration state and roll it back if necessary.
     
--   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
+-   You can use  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
 
 ## Code Example 
 **Iterator**  is a behavioral design pattern that allows sequential traversal through a complex data structure without exposing its internal details.
 
 Thanks to the Iterator, clients can go over elements of different collections in a similar fashion using a single iterator interface.
 
-[Learn more about Iterator](https://refactoring.guru/design-patterns/iterator)
+[Learn more about Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -265,9 +265,9 @@ Here are some examples from core Java libraries:
 
 In this example, the Iterator pattern is used to go over social profiles of a remote social network collection without exposing any of the communication details to the client code.
 
-## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators)**iterators**
+## [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators)**iterators**
 
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-ProfileIterator-java)**iterators/ProfileIterator.java:**  Defines profile interface
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-ProfileIterator-java)**iterators/ProfileIterator.java:**  Defines profile interface
 ```java
 package refactoring_guru.iterator.example.iterators;
 
@@ -281,7 +281,7 @@ public interface ProfileIterator {
     void reset();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-FacebookIterator-java)**iterators/FacebookIterator.java:**  Implements iteration over Facebook profiles
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-FacebookIterator-java)**iterators/FacebookIterator.java:**  Implements iteration over Facebook profiles
 ```java
 package refactoring_guru.iterator.example.iterators;
 
@@ -343,7 +343,7 @@ public class FacebookIterator implements ProfileIterator {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-LinkedInIterator-java)**iterators/LinkedInIterator.java:**  Implements iteration over LinkedIn profiles
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-LinkedInIterator-java)**iterators/LinkedInIterator.java:**  Implements iteration over LinkedIn profiles
 ```java
 package refactoring_guru.iterator.example.iterators;
 
@@ -405,9 +405,9 @@ public class LinkedInIterator implements ProfileIterator {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks)**social_networks**
+## [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks)**social_networks**
 
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-SocialNetwork-java)**social_networks/SocialNetwork.java:**  Defines common social network interface
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-SocialNetwork-java)**social_networks/SocialNetwork.java:**  Defines common social network interface
 ```java
 package refactoring_guru.iterator.example.social_networks;
 
@@ -419,7 +419,7 @@ public interface SocialNetwork {
     ProfileIterator createCoworkersIterator(String profileEmail);
 }
 
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-Facebook-java)**social_networks/Facebook.java:**  Facebook
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-Facebook-java)**social_networks/Facebook.java:**  Facebook
 
 package refactoring_guru.iterator.example.social_networks;
 
@@ -496,7 +496,7 @@ public class Facebook implements SocialNetwork {
 
 }
 ```
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-LinkedIn-java)**social_networks/LinkedIn.java:**  LinkedIn
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-LinkedIn-java)**social_networks/LinkedIn.java:**  LinkedIn
 ```java
 package refactoring_guru.iterator.example.social_networks;
 
@@ -572,9 +572,9 @@ public class LinkedIn implements SocialNetwork {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--profile)**profile**
+## [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--profile)**profile**
 
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--profile-Profile-java)**profile/Profile.java:**  Social profiles
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--profile-Profile-java)**profile/Profile.java:**  Social profiles
 ```java
 package refactoring_guru.iterator.example.profile;
 
@@ -626,9 +626,9 @@ public class Profile {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--spammer)**spammer**
+## [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--spammer)**spammer**
 
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--spammer-SocialSpammer-java)**spammer/SocialSpammer.java:**  Message sending app
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--spammer-SocialSpammer-java)**spammer/SocialSpammer.java:**  Message sending app
 ```java
 package refactoring_guru.iterator.example.spammer;
 
@@ -667,7 +667,7 @@ public class SocialSpammer {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.iterator.example;
 
@@ -720,7 +720,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Please specify social network to target spam tool (default:Facebook):
 1. Facebook

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 ## Intent
 
@@ -71,7 +71,7 @@ Document delegates the work to a state object.
 
 To transition the context into another state, replace the active state object with another object that represents that new state. This is possible only if all state classes follow the same interface and the context itself works with these objects through that interface.
 
-This structure may look similar to the  [Strategy](https://refactoring.guru/design-patterns/strategy)  pattern, but there’s one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
+This structure may look similar to the  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  pattern, but there’s one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
 
 ## Real-World Analogy
 
@@ -274,16 +274,16 @@ The State pattern lets you compose hierarchies of state classes and reduce dupli
 
 ## Relations with Other Patterns
 
--   [Bridge](https://refactoring.guru/design-patterns/bridge),  [State](https://refactoring.guru/design-patterns/state),  [Strategy](https://refactoring.guru/design-patterns/strategy)  (and to some degree  [Adapter](https://refactoring.guru/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern),  [State](https://algamza.github.io/2020-02-06/State-Design-Pattern),  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  (and to some degree  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
     
--   [State](https://refactoring.guru/design-patterns/state)  can be considered as an extension of  [Strategy](https://refactoring.guru/design-patterns/strategy). Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects.  _Strategy_  makes these objects completely independent and unaware of each other. However,  _State_  doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
+-   [State](https://algamza.github.io/2020-02-06/State-Design-Pattern)  can be considered as an extension of  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern). Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects.  _Strategy_  makes these objects completely independent and unaware of each other. However,  _State_  doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
 
 ## Code Example 
 **State**  is a behavioral design pattern that allows an object to change the behavior when its internal state changes.
 
 The pattern extracts state-related behaviors into separate state classes and forces the original object to delegate the work to an instance of these classes, instead of acting on its own.
 
-[Learn more about State](https://refactoring.guru/design-patterns/state)
+[Learn more about State](https://algamza.github.io/2020-02-06/State-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -303,9 +303,9 @@ Here are some examples of the State pattern in core Java libraries:
 
 In this example, the State pattern lets the same media player controls behave differently, depending on the current playback state. The main class of the player contains a reference to a state object, which performs most of the work for the player. Some actions may end-up replacing the state object with another, which changes the way the player reacts to the user interactions.
 
-## [](https://refactoring.guru/design-patterns/state/java/example#example-0--states)**states**
+## [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states)**states**
 
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--states-State-java)**states/State.java:**  Common state interface
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-State-java)**states/State.java:**  Common state interface
 ```java
 package refactoring_guru.state.example.states;
 
@@ -331,7 +331,7 @@ public abstract class State {
     public abstract String onPrevious();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--states-LockedState-java)**states/LockedState.java**
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-LockedState-java)**states/LockedState.java**
 ```java
 package refactoring_guru.state.example.states;
 
@@ -374,7 +374,7 @@ public class LockedState extends State {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--states-ReadyState-java)**states/ReadyState.java**
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-ReadyState-java)**states/ReadyState.java**
 ```java
 package refactoring_guru.state.example.states;
 
@@ -413,7 +413,7 @@ public class ReadyState extends State {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--states-PlayingState-java)**states/PlayingState.java**
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-PlayingState-java)**states/PlayingState.java**
 ```java
 package refactoring_guru.state.example.states;
 
@@ -449,9 +449,9 @@ public class PlayingState extends State {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/state/java/example#example-0--ui)**ui**
+## [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--ui)**ui**
 
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--ui-Player-java)**ui/Player.java:**  Player primary code
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--ui-Player-java)**ui/Player.java:**  Player primary code
 ```java
 package refactoring_guru.state.example.ui;
 
@@ -516,7 +516,7 @@ public class Player {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--ui-UI-java)**ui/UI.java:**  Player’s GUI
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--ui-UI-java)**ui/UI.java:**  Player’s GUI
 ```java
 package refactoring_guru.state.example.ui;
 
@@ -561,7 +561,7 @@ public class UI {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
 package refactoring_guru.state.example;
 
@@ -579,6 +579,6 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/state/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
+#### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
 
 ![](https://refactoring.guru/images/patterns/examples/java/state/OutputDemo.png)

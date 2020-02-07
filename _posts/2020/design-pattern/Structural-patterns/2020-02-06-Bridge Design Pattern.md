@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 ## Intent
 
@@ -183,7 +183,7 @@ Use the Bridge if you need to be able to switch implementations at runtime.
 
 Although it’s optional, the Bridge pattern lets you replace the implementation object inside the abstraction. It’s as easy as assigning a new value to a field.
 
-_By the way, this last item is the main reason why so many people confuse the Bridge with the  [Strategy](https://refactoring.guru/design-patterns/strategy)  pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed._
+_By the way, this last item is the main reason why so many people confuse the Bridge with the  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed._
 
 ## How to Implement
 
@@ -213,20 +213,20 @@ _By the way, this last item is the main reason why so many people confuse the Br
 
 ## Relations with Other Patterns
 
--   [Bridge](https://refactoring.guru/design-patterns/bridge)  is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand,  [Adapter](https://refactoring.guru/design-patterns/adapter)  is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern)  is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand,  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
     
--   [Bridge](https://refactoring.guru/design-patterns/bridge),  [State](https://refactoring.guru/design-patterns/state),  [Strategy](https://refactoring.guru/design-patterns/strategy)  (and to some degree  [Adapter](https://refactoring.guru/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern),  [State](https://algamza.github.io/2020-02-06/State-Design-Pattern),  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  (and to some degree  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
     
--   You can use  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  along with  [Bridge](https://refactoring.guru/design-patterns/bridge). This pairing is useful when some abstractions defined by  _Bridge_  can only work with specific implementations. In this case,  _Abstract Factory_  can encapsulate these relations and hide the complexity from the client code.
+-   You can use  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  along with  [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern). This pairing is useful when some abstractions defined by  _Bridge_  can only work with specific implementations. In this case,  _Abstract Factory_  can encapsulate these relations and hide the complexity from the client code.
     
--   You can combine  [Builder](https://refactoring.guru/design-patterns/builder)  with  [Bridge](https://refactoring.guru/design-patterns/bridge): the  _director_  class plays the role of the abstraction, while different  _builders_  act as  _implementations_.
+-   You can combine  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  with  [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern): the  _director_  class plays the role of the abstraction, while different  _builders_  act as  _implementations_.
 
 ## Code Example
 **Bridge**  is a structural design pattern that divides business logic or huge class into separate class hierarchies that can be developed independently.
 
 One of these hierarchies (often called the Abstraction) will get a reference to an object of the second hierarchy (Implementation). The abstraction will be able to delegate some (sometimes, most) of its calls to the implementations object. Since all implementations will have a common interface, they’d be interchangeable inside the abstraction.
 
-[Learn more about Bridge](https://refactoring.guru/design-patterns/bridge)
+[Learn more about Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -246,9 +246,9 @@ Remotes act as abstractions, and devices are their implementations. Thanks to th
 
 The Bridge pattern allows changing or even creating new classes without touching the code of the opposite hierarchy.
 
-## [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--devices)**devices**
+## [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices)**devices**
 
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--devices-Device-java)**devices/Device.java:**  Common interface of all devices
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Device-java)**devices/Device.java:**  Common interface of all devices
 ```java
 package refactoring_guru.bridge.example.devices;
 
@@ -270,7 +270,7 @@ public interface Device {
     void printStatus();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--devices-Radio-java)**devices/Radio.java:**  Radio
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Radio-java)**devices/Radio.java:**  Radio
 ```java
 package refactoring_guru.bridge.example.devices;
 
@@ -331,7 +331,7 @@ public class Radio implements Device {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--devices-Tv-java)**devices/Tv.java:**  TV
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Tv-java)**devices/Tv.java:**  TV
 ```java
 package refactoring_guru.bridge.example.devices;
 
@@ -392,9 +392,9 @@ public class Tv implements Device {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--remotes)**remotes**
+## [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes)**remotes**
 
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--remotes-Remote-java)**remotes/Remote.java:**  Common interface for all remotes
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-Remote-java)**remotes/Remote.java:**  Common interface for all remotes
 ```java
 package refactoring_guru.bridge.example.remotes;
 
@@ -410,7 +410,7 @@ public interface Remote {
     void channelUp();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--remotes-BasicRemote-java)**remotes/BasicRemote.java:**  Basic remote control
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-BasicRemote-java)**remotes/BasicRemote.java:**  Basic remote control
 ```java
 package refactoring_guru.bridge.example.remotes;
 
@@ -460,7 +460,7 @@ public class BasicRemote implements Remote {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--remotes-AdvancedRemote-java)**remotes/AdvancedRemote.java:**  Advanced remote control
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-AdvancedRemote-java)**remotes/AdvancedRemote.java:**  Advanced remote control
 ```java
 package refactoring_guru.bridge.example.remotes;
 
@@ -478,7 +478,7 @@ public class AdvancedRemote extends BasicRemote {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.bridge.example;
 
@@ -508,7 +508,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/bridge/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Tests with basic remote.
 Remote: power toggle

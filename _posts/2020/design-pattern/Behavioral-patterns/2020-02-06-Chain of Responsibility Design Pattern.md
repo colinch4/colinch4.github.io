@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 #### Also known as:  CoR,­Chain of Command
 
@@ -253,19 +253,19 @@ If you provide setters for a reference field inside the handler classes, you’l
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern),  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern),  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_  establishes unidirectional connections between senders and receivers.
     -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  is often used in conjunction with  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+-   Handlers in  [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  can be implemented as  [Commands](https://algamza.github.io/2020-02-06/Command-Design-Pattern). In this case, you can execute a lot of different operations over the same context object, represented by a request.
     
     However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
     
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
     
     The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
 
@@ -273,7 +273,7 @@ If you provide setters for a reference field inside the handler classes, you’l
 
 The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -298,9 +298,9 @@ This example shows how a request containing user data passes a sequential chain 
 
 This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
 
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
+## [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware)**middleware**
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
 ```java
 package refactoring_guru.chain_of_responsibility.example.middleware;
 
@@ -335,7 +335,7 @@ public abstract class Middleware {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
 ```java
 package refactoring_guru.chain_of_responsibility.example.middleware;
 
@@ -376,7 +376,7 @@ public class ThrottlingMiddleware extends Middleware {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
 ```java
 package refactoring_guru.chain_of_responsibility.example.middleware;
 
@@ -405,7 +405,7 @@ public class UserExistsMiddleware extends Middleware {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
 ```java
 package refactoring_guru.chain_of_responsibility.example.middleware;
 
@@ -423,9 +423,9 @@ public class RoleCheckMiddleware extends Middleware {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
+## [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--server)**server**
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
 ```java
 package refactoring_guru.chain_of_responsibility.example.server;
 
@@ -477,7 +477,7 @@ public class Server {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.chain_of_responsibility.example;
 
@@ -527,7 +527,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Enter email: admin@example.com
 Input password: admin_pass

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 
 ## Intent
@@ -61,7 +61,7 @@ foreach (Node node in graph)
 ```
 You might ask, why don’t we use method overloading? That’s when you give all methods the same name, even if they support different sets of parameters. Unfortunately, even assuming that our programming language supports it at all (as Java and C# do), it won’t help us. Since the exact class of a node object is unknown in advance, the overloading mechanism won’t be able to determine the correct method to execute. It’ll default to the method that takes an object of the base  `Node`  class.
 
-However, the Visitor pattern addresses this problem. It uses a technique called  [Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch), which helps to execute the proper method on an object without cumbersome conditionals. Instead of letting the client select a proper version of the method to call, how about we delegate this choice to objects we’re passing to the visitor as an argument? Since the objects know their own classes, they’ll be able to pick a proper method on the visitor less awkwardly. They “accept” a visitor and tell it what visiting method should be executed.
+However, the Visitor pattern addresses this problem. It uses a technique called  [Double Dispatch](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern-double-dispatch), which helps to execute the proper method on an object without cumbersome conditionals. Instead of letting the client select a proper version of the method to call, how about we delegate this choice to objects we’re passing to the visitor as an argument? Since the objects know their own classes, they’ll be able to pick a proper method on the visitor less awkwardly. They “accept” a visitor and tell it what visiting method should be executed.
 ```java
 // Client code
 foreach (Node node in graph)
@@ -107,7 +107,7 @@ Imagine a seasoned insurance agent who’s eager to get new customers. He can vi
     
 4.  Each  **Concrete Element**  must implement the acceptance method. The purpose of this method is to redirect the call to the proper visitor’s method corresponding to the current element class. Be aware that even if a base element class implements this method, all subclasses must still override this method in their own classes and call the appropriate method on the visitor object.
     
-5.  The  **Client**  usually represents a collection or some other complex object (for example, a  [Composite](https://refactoring.guru/design-patterns/composite)  tree). Usually, clients aren’t aware of all the concrete element classes because they work with objects from that collection via some abstract interface.
+5.  The  **Client**  usually represents a collection or some other complex object (for example, a  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  tree). Usually, clients aren’t aware of all the concrete element classes because they work with objects from that collection via some abstract interface.
     
 
 ## Pseudocode
@@ -199,7 +199,7 @@ class Application is
         foreach (shape in allShapes) do
             shape.accept(exportVisitor)
 ```
-If you wonder why we need the  `accept`  method in this example, my article  [Visitor and Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch)  addresses this question in detail.
+If you wonder why we need the  `accept`  method in this example, my article  [Visitor and Double Dispatch](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern-double-dispatch)  addresses this question in detail.
 
 ## Applicability
 
@@ -243,18 +243,18 @@ You can extract this behavior into a separate visitor class and implement only t
 
 ## Relations with Other Patterns
 
--   You can treat  [Visitor](https://refactoring.guru/design-patterns/visitor)  as a powerful version of the  [Command](https://refactoring.guru/design-patterns/command)  pattern. Its objects can execute operations over various objects of different classes.
+-   You can treat  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  as a powerful version of the  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  pattern. Its objects can execute operations over various objects of different classes.
     
--   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  to execute an operation over an entire  [Composite](https://refactoring.guru/design-patterns/composite)  tree.
+-   You can use  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  to execute an operation over an entire  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  tree.
     
--   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
+-   You can use  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  along with  [Iterator](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
 
 ## Code Example
 **Visitor**  is a behavioral design pattern that allows adding new behaviors to existing class hierarchy without altering any existing code.
 
-> Read why Visitors can’t be simply replaced with method overloading in our article  [Visitor and Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch).
+> Read why Visitors can’t be simply replaced with method overloading in our article  [Visitor and Double Dispatch](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern-double-dispatch).
 
-[Learn more about Visitor](https://refactoring.guru/design-patterns/visitor)
+[Learn more about Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -278,9 +278,9 @@ In this example, we would want to export a set of geometric shapes into XML. The
 
 In the end, the Visitor pattern establishes an infrastructure that allows us to add any behaviors to the shapes hierarchy without changing the existing code of those classes.
 
-## [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes)**shapes**
+## [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes)**shapes**
 
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
 package refactoring_guru.visitor.example.shapes;
 
@@ -292,7 +292,7 @@ public interface Shape {
     String accept(Visitor visitor);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
 ```java
 package refactoring_guru.visitor.example.shapes;
 
@@ -339,7 +339,7 @@ public class Dot implements Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
 ```java
 package refactoring_guru.visitor.example.shapes;
 
@@ -363,7 +363,7 @@ public class Circle extends Dot {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
 ```java
 package refactoring_guru.visitor.example.shapes;
 
@@ -420,7 +420,7 @@ public class Rectangle implements Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  A compound shape
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  A compound shape
 ```java
 package refactoring_guru.visitor.example.shapes;
 
@@ -461,9 +461,9 @@ public class CompoundShape implements Shape {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor)**visitor**
+## [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--visitor)**visitor**
 
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor-Visitor-java)**visitor/Visitor.java:**  Common visitor interface
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--visitor-Visitor-java)**visitor/Visitor.java:**  Common visitor interface
 ```java
 package refactoring_guru.visitor.example.visitor;
 
@@ -482,7 +482,7 @@ public interface Visitor {
     String visitCompoundGraphic(CompoundShape cg);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor-XMLExportVisitor-java)**visitor/XMLExportVisitor.java:**  Concrete visitor, exports all shapes into XML
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--visitor-XMLExportVisitor-java)**visitor/XMLExportVisitor.java:**  Concrete visitor, exports all shapes into XML
 ```java
 package refactoring_guru.visitor.example.visitor;
 
@@ -548,7 +548,7 @@ public class XMLExportVisitor implements Visitor {
 
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.visitor.example;
 
@@ -579,7 +579,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <circle>

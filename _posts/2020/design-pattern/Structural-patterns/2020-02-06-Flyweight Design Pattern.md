@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 #### Also known as:  Cache
 
@@ -184,11 +184,11 @@ The benefit of applying the pattern depends heavily on how and where it’s used
 
 ## Relations with Other Patterns
 
--   You can implement shared leaf nodes of the  [Composite](https://refactoring.guru/design-patterns/composite)  tree as  [Flyweights](https://refactoring.guru/design-patterns/flyweight)  to save some RAM.
+-   You can implement shared leaf nodes of the  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  tree as  [Flyweights](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  to save some RAM.
     
--   [Flyweight](https://refactoring.guru/design-patterns/flyweight)  shows how to make lots of little objects, whereas  [Facade](https://refactoring.guru/design-patterns/facade)  shows how to make a single object that represents an entire subsystem.
+-   [Flyweight](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  shows how to make lots of little objects, whereas  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  shows how to make a single object that represents an entire subsystem.
     
--   [Flyweight](https://refactoring.guru/design-patterns/flyweight)  would resemble  [Singleton](https://refactoring.guru/design-patterns/singleton)  if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
+-   [Flyweight](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  would resemble  [Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern)  if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
     
     1.  There should be only one Singleton instance, whereas a  _Flyweight_  class can have multiple instances with different intrinsic states.
     2.  The  _Singleton_  object can be mutable. Flyweight objects are immutable.
@@ -198,7 +198,7 @@ The benefit of applying the pattern depends heavily on how and where it’s used
 
 Pattern achieves it by sharing parts of object state between multiple objects. In other words, the Flyweight saves RAM by caching the same data used by different objects.
 
-[Learn more about Flyweight](https://refactoring.guru/design-patterns/flyweight)
+[Learn more about Flyweight](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -222,9 +222,9 @@ The reason is simple: too many tree objects contain duplicate data (name, textur
 
 The client code isn’t going to notice anything since the complexity of reusing flyweight objects is buried inside a flyweight factory.
 
-## [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--trees)**trees**
+## [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees)**trees**
 
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--trees-Tree-java)**trees/Tree.java:**  Contains state unique for each tree
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-Tree-java)**trees/Tree.java:**  Contains state unique for each tree
 ```java
 package refactoring_guru.flyweight.example.trees;
 
@@ -246,7 +246,7 @@ public class Tree {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--trees-TreeType-java)**trees/TreeType.java:**  Contains state shared by several trees
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-TreeType-java)**trees/TreeType.java:**  Contains state shared by several trees
 ```java
 package refactoring_guru.flyweight.example.trees;
 
@@ -271,7 +271,7 @@ public class TreeType {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--trees-TreeFactory-java)**trees/TreeFactory.java:**  Encapsulates complexity of flyweight creation
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-TreeFactory-java)**trees/TreeFactory.java:**  Encapsulates complexity of flyweight creation
 ```java
 package refactoring_guru.flyweight.example.trees;
 
@@ -292,9 +292,9 @@ public class TreeFactory {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--forest)**forest**
+## [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--forest)**forest**
 
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--forest-Forest-java)**forest/Forest.java:**  Forest, which we draw
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--forest-Forest-java)**forest/Forest.java:**  Forest, which we draw
 ```java
 package refactoring_guru.flyweight.example.forest;
 
@@ -324,7 +324,7 @@ public class Forest extends JFrame {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.flyweight.example;
 
@@ -363,11 +363,11 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
 
 ![](https://refactoring.guru/images/patterns/examples/java/flyweight/OutputDemo.png)
 
-#### [](https://refactoring.guru/design-patterns/flyweight/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  RAM usage stats
+#### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  RAM usage stats
 ```java
 1000000 trees drawn
 ---------------------

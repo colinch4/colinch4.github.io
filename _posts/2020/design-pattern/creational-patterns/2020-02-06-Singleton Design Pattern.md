@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Creational Patterns](https://algamza.github.io/2020-02-06/Creational-Design-patterns)
 
 ## Intent
 
@@ -152,13 +152,13 @@ Note that you can always adjust this limitation and allow creating any number of
 
 ## Relations with Other Patterns
 
--   A  [Facade](https://refactoring.guru/design-patterns/facade)  class can often be transformed into a  [Singleton](https://refactoring.guru/design-patterns/singleton)  since a single facade object is sufficient in most cases.
+-   A  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  class can often be transformed into a  [Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern)  since a single facade object is sufficient in most cases.
     
--   [Flyweight](https://refactoring.guru/design-patterns/flyweight)  would resemble  [Singleton](https://refactoring.guru/design-patterns/singleton)  if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
+-   [Flyweight](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  would resemble  [Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern)  if you somehow managed to reduce all shared states of the objects to just one flyweight object. But there are two fundamental differences between these patterns:
     
     1.  There should be only one Singleton instance, whereas a  _Flyweight_  class can have multiple instances with different intrinsic states.
     2.  The  _Singleton_  object can be mutable. Flyweight objects are immutable.
--   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+-   [Abstract Factories](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Builders](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  and  [Prototypes](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can all be implemented as  [Singletons](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern).
 
 ## Code Example
 
@@ -168,7 +168,7 @@ Singleton has almost the same pros and cons as global variables. Although they�
 
 You can just use a class, which depends on Singleton, in some other context. You’ll have to carry the Singleton class as well. Most of the time, this limitation comes up during the creation of unit tests.
 
-[Learn more about Singleton](https://refactoring.guru/design-patterns/singleton)
+[Learn more about Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -186,13 +186,13 @@ Despite this, there are quite a lot of Singleton examples in Java core libraries
 
 **Identification:**  Singleton can be recognized by a static creation method, which returns the same cached object.
 
-[Naïve Singleton](https://refactoring.guru/design-patterns/singleton/java/example#example-0)[Naïve Singleton](https://refactoring.guru/design-patterns/singleton/java/example#example-1)[Thread-safe Singleton with lazy loading](https://refactoring.guru/design-patterns/singleton/java/example#example-2)[Want more?](https://refactoring.guru/design-patterns/singleton/java/example#example-3)
+[Naïve Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0)[Naïve Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-1)[Thread-safe Singleton with lazy loading](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-2)[Want more?](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-3)
 
 ## Naïve Singleton (single-threaded)
 
 It’s pretty easy to implement a sloppy Singleton. You just need to hide constructor and implement a static creation method.
 
-#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--Singleton-java)**Singleton.java:**  Singleton
+#### [](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0--Singleton-java)**Singleton.java:**  Singleton
 ```java
 package refactoring_guru.singleton.example.non_thread_safe;
 
@@ -218,7 +218,7 @@ public final class Singleton {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--DemoSingleThread-java)**DemoSingleThread.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0--DemoSingleThread-java)**DemoSingleThread.java:**  Client code
 ```java
 package refactoring_guru.singleton.example.non_thread_safe;
 
@@ -234,7 +234,7 @@ public class DemoSingleThread {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/singleton/java/example#example-0--OutputDemoSingleThread-txt)**OutputDemoSingleThread.txt:**  Execution results
+#### [](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0--OutputDemoSingleThread-txt)**OutputDemoSingleThread.txt:**  Execution results
 ```java
 If you see the same value, then singleton was reused (yay!)
 If you see different values, then 2 singletons were created (booo!!)

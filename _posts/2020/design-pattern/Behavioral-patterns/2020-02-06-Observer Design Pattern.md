@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 #### Also known as:  Event-Subscriber,­Listener
 
@@ -224,13 +224,13 @@ The subscription list is dynamic, so subscribers can join or leave the list when
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern),  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern),  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_  establishes unidirectional connections between senders and receivers.
     -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   The difference between  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
+-   The difference between  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
     
     The primary goal of  _Mediator_  is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of  _Observer_  is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
     
@@ -245,7 +245,7 @@ The subscription list is dynamic, so subscribers can join or leave the list when
 
 The Observer pattern provides a way to subscribe and unsubscribe to and from these events for any object that implements a subscriber interface.
 
-[Learn more about Observer](https://refactoring.guru/design-patterns/observer)
+[Learn more about Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -271,9 +271,9 @@ In this example, the Observer pattern establishes indirect collaboration between
 
 Subscriber classes aren’t coupled to the editor class and can be reused in other apps if needed. The  `Editor`  class depends only on the abstract subscriber interface. This allows adding new subscriber types without changing the editor’s code.
 
-## [](https://refactoring.guru/design-patterns/observer/java/example#example-0--publisher)**publisher**
+## [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--publisher)**publisher**
 
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--publisher-EventManager-java)**publisher/EventManager.java:**  Basic publisher
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--publisher-EventManager-java)**publisher/EventManager.java:**  Basic publisher
 ```java
 package refactoring_guru.observer.example.publisher;
 
@@ -312,9 +312,9 @@ public class EventManager {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/observer/java/example#example-0--editor)**editor**
+## [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--editor)**editor**
 
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Concrete publisher, tracked by other objects
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Concrete publisher, tracked by other objects
 ```java
 package refactoring_guru.observer.example.editor;
 
@@ -344,9 +344,9 @@ public class Editor {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/observer/java/example#example-0--listeners)**listeners**
+## [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners)**listeners**
 
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--listeners-EventListener-java)**listeners/EventListener.java:**  Common observer interface
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-EventListener-java)**listeners/EventListener.java:**  Common observer interface
 ```java
 package refactoring_guru.observer.example.listeners;
 
@@ -356,7 +356,7 @@ public interface EventListener {
     void update(String eventType, File file);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--listeners-EmailNotificationListener-java)**listeners/EmailNotificationListener.java:**  Sends emails upon receiving notification
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-EmailNotificationListener-java)**listeners/EmailNotificationListener.java:**  Sends emails upon receiving notification
 ```java
 package refactoring_guru.observer.example.listeners;
 
@@ -375,7 +375,7 @@ public class EmailNotificationListener implements EventListener {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--listeners-LogOpenListener-java)**listeners/LogOpenListener.java:**  Writes a message to a log upon receiving notification
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-LogOpenListener-java)**listeners/LogOpenListener.java:**  Writes a message to a log upon receiving notification
 ```java
 package refactoring_guru.observer.example.listeners;
 
@@ -394,7 +394,7 @@ public class LogOpenListener implements EventListener {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
 package refactoring_guru.observer.example;
 
@@ -417,7 +417,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/observer/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Save to log \path\to\log\file.txt: Someone has performed open operation with the following file: test.txt
 Email to admin@example.com: Someone has performed save operation with the following file: test.txt

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Creational Patterns](https://algamza.github.io/2020-02-06/Creational-Design-patterns)
 
 #### Also known as:  Clone
 
@@ -216,19 +216,19 @@ Instead of instantiating a subclass that matches some configuration, the client 
 
 ## Relations with Other Patterns
 
--   Many designs start by using  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory),  [Prototype](https://refactoring.guru/design-patterns/prototype), or  [Builder](https://refactoring.guru/design-patterns/builder)  (more flexible, but more complicated).
+-   Many designs start by using  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern), or  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  (more flexible, but more complicated).
     
--   [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  classes are often based on a set of  [Factory Methods](https://refactoring.guru/design-patterns/factory-method), but you can also use  [Prototype](https://refactoring.guru/design-patterns/prototype)  to compose the methods on these classes.
+-   [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  classes are often based on a set of  [Factory Methods](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern), but you can also use  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  to compose the methods on these classes.
     
--   [Prototype](https://refactoring.guru/design-patterns/prototype)  can help when you need to save copies of  [Commands](https://refactoring.guru/design-patterns/command)  into history.
+-   [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can help when you need to save copies of  [Commands](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  into history.
     
--   Designs that make heavy use of  [Composite](https://refactoring.guru/design-patterns/composite)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  can often benefit from using  [Prototype](https://refactoring.guru/design-patterns/prototype). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
+-   Designs that make heavy use of  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  and  [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  can often benefit from using  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
     
--   [Prototype](https://refactoring.guru/design-patterns/prototype)  isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand,  _Prototype_  requires a complicated initialization of the cloned object.  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  is based on inheritance but doesn’t require an initialization step.
+-   [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  isn’t based on inheritance, so it doesn’t have its drawbacks. On the other hand,  _Prototype_  requires a complicated initialization of the cloned object.  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  is based on inheritance but doesn’t require an initialization step.
     
--   Sometimes  [Prototype](https://refactoring.guru/design-patterns/prototype)  can be a simpler alternative to  [Memento](https://refactoring.guru/design-patterns/memento). This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
+-   Sometimes  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can be a simpler alternative to  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern). This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
     
--   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+-   [Abstract Factories](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Builders](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  and  [Prototypes](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can all be implemented as  [Singletons](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern).
 
 ## Code Example
 
@@ -236,7 +236,7 @@ Instead of instantiating a subclass that matches some configuration, the client 
 
 All prototype classes should have a common interface that makes it possible to copy objects even if their concrete classes are unknown. Prototype objects can produce full copies since objects of the same class can access each other’s private fields.
 
-[Learn more about Prototype](https://refactoring.guru/design-patterns/prototype)
+[Learn more about Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -256,9 +256,9 @@ Any class can implement this interface to become cloneable.
 
 Let’s take a look at how the Prototype can be implemented without the standard  `Cloneable`  interface.
 
-## [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--shapes)**shapes:**  Shape list
+## [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes)**shapes:**  Shape list
 
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
 package refactoring_guru.prototype.example.shapes;
 
@@ -290,7 +290,7 @@ public abstract class Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  Simple shape
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  Simple shape
 ```java
 package refactoring_guru.prototype.example.shapes;
 
@@ -320,7 +320,7 @@ public class Circle extends Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  Another shape
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  Another shape
 ```java
 package refactoring_guru.prototype.example.shapes;
 
@@ -352,7 +352,7 @@ public class Rectangle extends Shape {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
 ```java
 package refactoring_guru.prototype.example;
 
@@ -407,7 +407,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
 ```java
 0: Shapes are different objects (yay!)
 0: And they are identical (yay!)
@@ -420,9 +420,9 @@ public class Demo {
 
 You could implement a centralized prototype registry (or factory), which would contain a set of pre-defined prototype objects. This way you could retrieve new objects from the factory by passing its name or other parameters. The factory would search for an appropriate prototype, clone it and return you a copy.
 
-## [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--cache)**cache**
+## [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--cache)**cache**
 
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--cache-BundledShapeCache-java)**cache/BundledShapeCache.java:**  Prototype factory
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--cache-BundledShapeCache-java)**cache/BundledShapeCache.java:**  Prototype factory
 ```java
 package refactoring_guru.prototype.caching.cache;
 
@@ -464,7 +464,7 @@ public class BundledShapeCache {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
 ```java
 package refactoring_guru.prototype.caching;
 
@@ -498,7 +498,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/prototype/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
+#### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
 ```java
 Big green circle != Medium blue rectangle (yay!)
 Medium blue rectangles are two different objects (yay!)

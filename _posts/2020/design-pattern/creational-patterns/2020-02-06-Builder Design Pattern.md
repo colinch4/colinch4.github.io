@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Creational Patterns](https://algamza.github.io/2020-02-06/Creational-Design-patterns)
 
 
 ## Intent
@@ -268,7 +268,7 @@ The Builder pattern can be applied when construction of various representations 
 
 The base builder interface defines all possible construction steps, and concrete builders implement these steps to construct particular representations of the product. Meanwhile, the director class guides the order of construction.
 
-Use the Builder to construct  [Composite](https://refactoring.guru/design-patterns/composite)  trees or other complex objects.
+Use the Builder to construct  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  trees or other complex objects.
 
 The Builder pattern lets you construct products step-by-step. You could defer execution of some steps without breaking the final product. You can even call steps recursively, which comes in handy when you need to build an object tree.
 
@@ -301,15 +301,15 @@ A builder doesn’t expose the unfinished product while running construction ste
 
 ## Relations with Other Patterns
 
--   Many designs start by using  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory),  [Prototype](https://refactoring.guru/design-patterns/prototype), or  [Builder](https://refactoring.guru/design-patterns/builder)  (more flexible, but more complicated).
+-   Many designs start by using  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern), or  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  (more flexible, but more complicated).
     
--   [Builder](https://refactoring.guru/design-patterns/builder)  focuses on constructing complex objects step by step.  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  specializes in creating families of related objects.  _Abstract Factory_  returns the product immediately, whereas  _Builder_  lets you run some additional construction steps before fetching the product.
+-   [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  focuses on constructing complex objects step by step.  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  specializes in creating families of related objects.  _Abstract Factory_  returns the product immediately, whereas  _Builder_  lets you run some additional construction steps before fetching the product.
     
--   You can use  [Builder](https://refactoring.guru/design-patterns/builder)  when creating complex  [Composite](https://refactoring.guru/design-patterns/composite)  trees because you can program its construction steps to work recursively.
+-   You can use  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  when creating complex  [Composite](https://algamza.github.io/2020-02-06/Composite-Design-Pattern)  trees because you can program its construction steps to work recursively.
     
--   You can combine  [Builder](https://refactoring.guru/design-patterns/builder)  with  [Bridge](https://refactoring.guru/design-patterns/bridge): the  _director_  class plays the role of the abstraction, while different  _builders_  act as  _implementations_.
+-   You can combine  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  with  [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern): the  _director_  class plays the role of the abstraction, while different  _builders_  act as  _implementations_.
     
--   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+-   [Abstract Factories](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Builders](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  and  [Prototypes](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can all be implemented as  [Singletons](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern).
 
 ## Code Example
 
@@ -317,7 +317,7 @@ A builder doesn’t expose the unfinished product while running construction ste
 
 Unlike other creational patterns, Builder doesn’t require products to have a common interface. That makes it possible to produce different products using the same construction process.
 
-[Learn more about Builder](https://refactoring.guru/design-patterns/builder)
+[Learn more about Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -347,9 +347,9 @@ The Director controls the order of the construction. It knows which building ste
 
 The end result is retrieved from the builder object because the director can’t know the type of resulting product. Only the Builder object knows what exactly does it builds.
 
-## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders)**builders**
+## [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders)**builders**
 
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-Builder-java)**builders/Builder.java:**  Common builder interface
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-Builder-java)**builders/Builder.java:**  Common builder interface
 ```java
 package refactoring_guru.builder.example.builders;
 
@@ -371,7 +371,7 @@ public interface Builder {
     void setGPSNavigator(GPSNavigator gpsNavigator);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-CarBuilder-java)**builders/CarBuilder.java:**  Builder of car
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-CarBuilder-java)**builders/CarBuilder.java:**  Builder of car
 ```java
 package refactoring_guru.builder.example.builders;
 
@@ -428,7 +428,7 @@ public class CarBuilder implements Builder {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--builders-CarManualBuilder-java)**builders/CarManualBuilder.java:**  Builder of a car manual
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-CarManualBuilder-java)**builders/CarManualBuilder.java:**  Builder of a car manual
 ```java
 package refactoring_guru.builder.example.builders;
 
@@ -490,9 +490,9 @@ public class CarManualBuilder implements Builder{
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars)**cars**
+## [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars)**cars**
 
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Car-java)**cars/Car.java:**  Car product
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Car-java)**cars/Car.java:**  Car product
 ```java
 package refactoring_guru.builder.example.cars;
 
@@ -557,7 +557,7 @@ public class Car {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Manual-java)**cars/Manual.java:**  Manual product
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Manual-java)**cars/Manual.java:**  Manual product
 ```java
 package refactoring_guru.builder.example.cars;
 
@@ -608,7 +608,7 @@ public class Manual {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--cars-Type-java)**cars/Type.java**
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Type-java)**cars/Type.java**
 ```java
 package refactoring_guru.builder.example.cars;
 
@@ -616,9 +616,9 @@ public enum Type {
     CITY_CAR, SPORTS_CAR, SUV
 }
 ```
-## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components)**components**
+## [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components)**components**
 
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-Engine-java)**components/Engine.java:**  Product feature 1
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-Engine-java)**components/Engine.java:**  Product feature 1
 ```java
 package refactoring_guru.builder.example.components;
 
@@ -664,7 +664,7 @@ public class Engine {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-GPSNavigator-java)**components/GPSNavigator.java:**  Product feature 2
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-GPSNavigator-java)**components/GPSNavigator.java:**  Product feature 2
 ```java
 package refactoring_guru.builder.example.components;
 
@@ -687,7 +687,7 @@ public class GPSNavigator {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-Transmission-java)**components/Transmission.java:**  Product feature 3
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-Transmission-java)**components/Transmission.java:**  Product feature 3
 ```java
 package refactoring_guru.builder.example.components;
 
@@ -698,7 +698,7 @@ public enum Transmission {
     SINGLE_SPEED, MANUAL, AUTOMATIC, SEMI_AUTOMATIC
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--components-TripComputer-java)**components/TripComputer.java:**  Product feature 4
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-TripComputer-java)**components/TripComputer.java:**  Product feature 4
 ```java
 package refactoring_guru.builder.example.components;
 
@@ -728,9 +728,9 @@ public class TripComputer {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/builder/java/example#example-0--director)**director**
+## [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--director)**director**
 
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--director-Director-java)**director/Director.java:**  Director controls builders
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--director-Director-java)**director/Director.java:**  Director controls builders
 ```java
 package refactoring_guru.builder.example.director;
 
@@ -775,7 +775,7 @@ public class Director {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.builder.example;
 
@@ -816,7 +816,7 @@ public class Demo {
 
 }
 ```
-#### [](https://refactoring.guru/design-patterns/builder/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
+#### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
 ```java
 Car built:
 SPORTS_CAR

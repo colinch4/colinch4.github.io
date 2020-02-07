@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 ## Intent
 
@@ -187,14 +187,14 @@ When you turn such an algorithm into a template method, you can also pull up the
 
 ## Relations with Other Patterns
 
--   [Factory Method](https://refactoring.guru/design-patterns/factory-method)  is a specialization of  [Template Method](https://refactoring.guru/design-patterns/template-method). At the same time, a  _Factory Method_  may serve as a step in a large  _Template Method_.
+-   [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  is a specialization of  [Template Method](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern). At the same time, a  _Factory Method_  may serve as a step in a large  _Template Method_.
     
--   [Template Method](https://refactoring.guru/design-patterns/template-method)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://refactoring.guru/design-patterns/strategy)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
+-   [Template Method](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
 
 ## Code Example
 **Template Method**  is a behavioral design pattern that allows you to defines a skeleton of an algorithm in a base class and let subclasses override the steps without changing the overall algorithm’s structure.
 
-[Learn more about Template Method](https://refactoring.guru/design-patterns/template-method)
+[Learn more about Template Method](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -219,9 +219,9 @@ Here are some examples of Template Methods in core Java libraries:
 
 In this example, the Template Method pattern defines an algorithm of working with a social network. Subclasses that match a particular social network, implement these steps according to the API provided by the social network.
 
-## [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks)**networks**
+## [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks)**networks**
 
-#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Network-java)**networks/Network.java:**  Base social network class
+#### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Network-java)**networks/Network.java:**  Base social network class
 ```java
 package refactoring_guru.template_method.example.networks;
 
@@ -254,7 +254,7 @@ public abstract class Network {
     abstract void logOut();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Facebook-java)**networks/Facebook.java:**  Concrete social network
+#### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Facebook-java)**networks/Facebook.java:**  Concrete social network
 ```java
 package refactoring_guru.template_method.example.networks;
 
@@ -308,7 +308,7 @@ public class Facebook extends Network {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Twitter-java)**networks/Twitter.java:**  One more social network
+#### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Twitter-java)**networks/Twitter.java:**  One more social network
 ```java
 package refactoring_guru.template_method.example.networks;
 
@@ -363,7 +363,7 @@ public class Twitter extends Network {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.template_method.example;
 
@@ -406,7 +406,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Input user name: Jhonatan
 Input password: qswe

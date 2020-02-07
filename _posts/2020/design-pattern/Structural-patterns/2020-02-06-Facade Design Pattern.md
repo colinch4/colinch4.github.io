@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Structural Patterns](https://refactoring.guru/design-patterns/structural-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Structural Patterns](https://algamza.github.io/2020-02-06/Structural-Design-Patterns)
 
 ## Intent
 
@@ -121,7 +121,7 @@ Use the Facade when you want to structure a subsystem into layers.
 
 Create facades to define entry points to each level of a subsystem. You can reduce coupling between multiple subsystems by requiring them to communicate only through facades.
 
-For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the  [Mediator](https://refactoring.guru/design-patterns/mediator)  pattern.
+For example, let’s return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each another via those facades. This approach looks very similar to the  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  pattern.
 
 ## How to Implement
 
@@ -142,26 +142,26 @@ For example, let’s return to our video conversion framework. It can be broken 
 
 ## Relations with Other Patterns
 
--   [Facade](https://refactoring.guru/design-patterns/facade)  defines a new interface for existing objects, whereas  [Adapter](https://refactoring.guru/design-patterns/adapter)  tries to make the existing interface usable.  _Adapter_  usually wraps just one object, while  _Facade_  works with an entire subsystem of objects.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  defines a new interface for existing objects, whereas  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)  tries to make the existing interface usable.  _Adapter_  usually wraps just one object, while  _Facade_  works with an entire subsystem of objects.
     
--   [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  can serve as an alternative to  [Facade](https://refactoring.guru/design-patterns/facade)  when you only want to hide the way the subsystem objects are created from the client code.
+-   [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  can serve as an alternative to  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  when you only want to hide the way the subsystem objects are created from the client code.
     
--   [Flyweight](https://refactoring.guru/design-patterns/flyweight)  shows how to make lots of little objects, whereas  [Facade](https://refactoring.guru/design-patterns/facade)  shows how to make a single object that represents an entire subsystem.
+-   [Flyweight](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern)  shows how to make lots of little objects, whereas  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  shows how to make a single object that represents an entire subsystem.
     
--   [Facade](https://refactoring.guru/design-patterns/facade)  and  [Mediator](https://refactoring.guru/design-patterns/mediator)  have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  and  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
     
     -   _Facade_  defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
     -   _Mediator_  centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
--   A  [Facade](https://refactoring.guru/design-patterns/facade)  class can often be transformed into a  [Singleton](https://refactoring.guru/design-patterns/singleton)  since a single facade object is sufficient in most cases.
+-   A  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  class can often be transformed into a  [Singleton](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern)  since a single facade object is sufficient in most cases.
     
--   [Facade](https://refactoring.guru/design-patterns/facade)  is similar to  [Proxy](https://refactoring.guru/design-patterns/proxy)  in that both buffer a complex entity and initialize it on its own. Unlike  _Facade_,  _Proxy_  has the same interface as its service object, which makes them interchangeable.
+-   [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  is similar to  [Proxy](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern)  in that both buffer a complex entity and initialize it on its own. Unlike  _Facade_,  _Proxy_  has the same interface as its service object, which makes them interchangeable.
 
 ## Code Example
 **Facade**  is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework.
 
 While Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.
 
-[Learn more about Facade](https://refactoring.guru/design-patterns/facade)
+[Learn more about Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -186,9 +186,9 @@ In this example, the Facade simplifies communication with a complex video conver
 
 The Facade provides a single class with a single method that handles all the complexity of configuring the right classes of the framework and retrieving result in a correct format.
 
-## [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library)**some_complex_media_library:**  Complex video conversion library
+## [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library)**some_complex_media_library:**  Complex video conversion library
 
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-VideoFile-java)**some_complex_media_library/VideoFile.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-VideoFile-java)**some_complex_media_library/VideoFile.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -210,14 +210,14 @@ public class VideoFile {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-Codec-java)**some_complex_media_library/Codec.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-Codec-java)**some_complex_media_library/Codec.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
 public interface Codec {
 }
 
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-MPEG4CompressionCodec-java)**some_complex_media_library/MPEG4CompressionCodec.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-MPEG4CompressionCodec-java)**some_complex_media_library/MPEG4CompressionCodec.java**
 
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -226,7 +226,7 @@ public class MPEG4CompressionCodec implements Codec {
 
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-OggCompressionCodec-java)**some_complex_media_library/OggCompressionCodec.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-OggCompressionCodec-java)**some_complex_media_library/OggCompressionCodec.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -234,7 +234,7 @@ public class OggCompressionCodec implements Codec {
     public String type = "ogg";
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-CodecFactory-java)**some_complex_media_library/CodecFactory.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-CodecFactory-java)**some_complex_media_library/CodecFactory.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -252,7 +252,7 @@ public class CodecFactory {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-BitrateReader-java)**some_complex_media_library/BitrateReader.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-BitrateReader-java)**some_complex_media_library/BitrateReader.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -268,7 +268,7 @@ public class BitrateReader {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--some_complex_media_library-AudioMixer-java)**some_complex_media_library/AudioMixer.java**
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-AudioMixer-java)**some_complex_media_library/AudioMixer.java**
 ```java
 package refactoring_guru.facade.example.some_complex_media_library;
 
@@ -281,9 +281,9 @@ public class AudioMixer {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/facade/java/example#example-0--facade)**facade**
+## [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--facade)**facade**
 
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--facade-VideoConversionFacade-java)**facade/VideoConversionFacade.java:**  Facade provides simple interface of video conversion
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--facade-VideoConversionFacade-java)**facade/VideoConversionFacade.java:**  Facade provides simple interface of video conversion
 ```java
 package refactoring_guru.facade.example.facade;
 
@@ -310,7 +310,7 @@ public class VideoConversionFacade {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.facade.example;
 
@@ -326,7 +326,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/facade/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 VideoConversionFacade: conversion started.
 CodecFactory: extracting ogg audio...

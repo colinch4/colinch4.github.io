@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 
 ## Intent
@@ -194,26 +194,26 @@ The Strategy pattern lets you do away with such a conditional by extracting all 
 
 ## Relations with Other Patterns
 
--   [Bridge](https://refactoring.guru/design-patterns/bridge),  [State](https://refactoring.guru/design-patterns/state),  [Strategy](https://refactoring.guru/design-patterns/strategy)  (and to some degree  [Adapter](https://refactoring.guru/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
+-   [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern),  [State](https://algamza.github.io/2020-02-06/State-Design-Pattern),  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  (and to some degree  [Adapter](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
     
--   [Command](https://refactoring.guru/design-patterns/command)  and  [Strategy](https://refactoring.guru/design-patterns/strategy)  may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
+-   [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  and  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
     
     -   You can use  _Command_  to convert any operation into an object. The operation’s parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
         
     -   On the other hand,  _Strategy_  usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
         
--   [Decorator](https://refactoring.guru/design-patterns/decorator)  lets you change the skin of an object, while  [Strategy](https://refactoring.guru/design-patterns/strategy)  lets you change the guts.
+-   [Decorator](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern)  lets you change the skin of an object, while  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  lets you change the guts.
     
--   [Template Method](https://refactoring.guru/design-patterns/template-method)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://refactoring.guru/design-patterns/strategy)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
+-   [Template Method](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
     
--   [State](https://refactoring.guru/design-patterns/state)  can be considered as an extension of  [Strategy](https://refactoring.guru/design-patterns/strategy). Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects.  _Strategy_  makes these objects completely independent and unaware of each other. However,  _State_  doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
+-   [State](https://algamza.github.io/2020-02-06/State-Design-Pattern)  can be considered as an extension of  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern). Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects.  _Strategy_  makes these objects completely independent and unaware of each other. However,  _State_  doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
 
 ## Code Example
 **Strategy**  is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
 The original object, called context, holds a reference to a strategy object and delegates it executing the behavior. In order to change the way the context performs its work, other objects may replace the currently linked strategy object with another one.
 
-[Learn more about Strategy](https://refactoring.guru/design-patterns/strategy)
+[Learn more about Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -242,9 +242,9 @@ In this example, the Strategy pattern is used to implement the various payment m
 
 Concrete strategies not only perform the actual payment but also alter the behavior of the checkout form, providing appropriate fields to record payment details.
 
-## [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies)**strategies**
+## [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies)**strategies**
 
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayStrategy-java)**strategies/PayStrategy.java:**  Common interface of payment methods
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayStrategy-java)**strategies/PayStrategy.java:**  Common interface of payment methods
 ```java
 package refactoring_guru.strategy.example.strategies;
 
@@ -256,7 +256,7 @@ public interface PayStrategy {
     void collectPaymentDetails();
 }
 ``
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayByPayPal-java)**strategies/PayByPayPal.java:**  Payment via PayPal
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayByPayPal-java)**strategies/PayByPayPal.java:**  Payment via PayPal
 ```java
 package refactoring_guru.strategy.example.strategies;
 
@@ -326,7 +326,7 @@ public class PayByPayPal implements PayStrategy {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayByCreditCard-java)**strategies/PayByCreditCard.java:**  Payment via credit card
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayByCreditCard-java)**strategies/PayByCreditCard.java:**  Payment via credit card
 ```java
 package refactoring_guru.strategy.example.strategies;
 
@@ -381,7 +381,7 @@ public class PayByCreditCard implements PayStrategy {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-CreditCard-java)**strategies/CreditCard.java:**  A credit card class
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-CreditCard-java)**strategies/CreditCard.java:**  A credit card class
 ```java
 package refactoring_guru.strategy.example.strategies;
 
@@ -410,7 +410,7 @@ public class CreditCard {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--order-Order-java)**order/Order.java:**  Order class
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--order-Order-java)**order/Order.java:**  Order class
 ```java
 package refactoring_guru.strategy.example.order;
 
@@ -447,7 +447,7 @@ public class Order {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.strategy.example;
 
@@ -533,7 +533,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
 Please, select a product:
 1 - Mother board

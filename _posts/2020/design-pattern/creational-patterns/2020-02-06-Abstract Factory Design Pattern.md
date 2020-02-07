@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Creational Patterns](https://refactoring.guru/design-patterns/creational-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Creational Patterns](https://algamza.github.io/2020-02-06/Creational-Design-patterns)
 
 ## Intent
 
@@ -193,7 +193,7 @@ Use the Abstract Factory when your code needs to work with various families of r
 
 The Abstract Factory provides you with an interface for creating objects from each class of the product family. As long as your code creates objects via this interface, you don’t have to worry about creating the wrong variant of a product which doesn’t match the products already created by your app.
 
--   Consider implementing the Abstract Factory when you have a class with a set of  [Factory Methods](https://refactoring.guru/design-patterns/factory-method)  that blur its primary responsibility.
+-   Consider implementing the Abstract Factory when you have a class with a set of  [Factory Methods](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  that blur its primary responsibility.
     
 -   In a well-designed program  _each class is responsible only for one thing_. When a class deals with multiple product types, it may be worth extracting its factory methods into a stand-alone factory class or a full-blown Abstract Factory implementation.
     
@@ -224,17 +224,17 @@ The Abstract Factory provides you with an interface for creating objects from ea
 
 ## Relations with Other Patterns
 
--   Many designs start by using  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory),  [Prototype](https://refactoring.guru/design-patterns/prototype), or  [Builder](https://refactoring.guru/design-patterns/builder)  (more flexible, but more complicated).
+-   Many designs start by using  [Factory Method](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern)  (less complicated and more customizable via subclasses) and evolve toward  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern), or  [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  (more flexible, but more complicated).
     
--   [Builder](https://refactoring.guru/design-patterns/builder)  focuses on constructing complex objects step by step.  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  specializes in creating families of related objects.  _Abstract Factory_  returns the product immediately, whereas  _Builder_  lets you run some additional construction steps before fetching the product.
+-   [Builder](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  focuses on constructing complex objects step by step.  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  specializes in creating families of related objects.  _Abstract Factory_  returns the product immediately, whereas  _Builder_  lets you run some additional construction steps before fetching the product.
     
--   [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  classes are often based on a set of  [Factory Methods](https://refactoring.guru/design-patterns/factory-method), but you can also use  [Prototype](https://refactoring.guru/design-patterns/prototype)  to compose the methods on these classes.
+-   [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  classes are often based on a set of  [Factory Methods](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern), but you can also use  [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  to compose the methods on these classes.
     
--   [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  can serve as an alternative to  [Facade](https://refactoring.guru/design-patterns/facade)  when you only want to hide the way the subsystem objects are created from the client code.
+-   [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  can serve as an alternative to  [Facade](https://algamza.github.io/2020-02-06/Facade-Design-Pattern)  when you only want to hide the way the subsystem objects are created from the client code.
     
--   You can use  [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)  along with  [Bridge](https://refactoring.guru/design-patterns/bridge). This pairing is useful when some abstractions defined by  _Bridge_  can only work with specific implementations. In this case,  _Abstract Factory_  can encapsulate these relations and hide the complexity from the client code.
+-   You can use  [Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)  along with  [Bridge](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern). This pairing is useful when some abstractions defined by  _Bridge_  can only work with specific implementations. In this case,  _Abstract Factory_  can encapsulate these relations and hide the complexity from the client code.
     
--   [Abstract Factories](https://refactoring.guru/design-patterns/abstract-factory),  [Builders](https://refactoring.guru/design-patterns/builder)  and  [Prototypes](https://refactoring.guru/design-patterns/prototype)  can all be implemented as  [Singletons](https://refactoring.guru/design-patterns/singleton).
+-   [Abstract Factories](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern),  [Builders](https://algamza.github.io/2020-02-06/Builder-Design-Pattern)  and  [Prototypes](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can all be implemented as  [Singletons](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern).
 
 
 ## Code Example
@@ -247,9 +247,9 @@ The client code calls the creation methods of a factory object instead of creati
 
 Client code works with factories and products only through their abstract interfaces. It allows the same client code to work with different products. You just create a new concrete factory class and pass it to the client code.
 
-> -   If you can’t figure out the difference between various factory patterns and concepts, then read our  [Factory Comparison](https://refactoring.guru/design-patterns/factory-comparison).
+> -   If you can’t figure out the difference between various factory patterns and concepts, then read our  [Factory Comparison](https://algamza.github.io/2020-02-06/Factory Comparison).
 
-[Learn more about Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+[Learn more about Abstract Factory](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -278,9 +278,9 @@ The abstract factory defines an interface for creating buttons and checkboxes. T
 
 Client code works with factories and products using abstract interfaces. It makes the same client code working with many product variants, depending on the type of factory object.
 
-## [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--buttons)**buttons:**  First product hierarchy
+## [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons)**buttons:**  First product hierarchy
 
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--buttons-Button-java)**buttons/Button.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-Button-java)**buttons/Button.java**
 ```java
 package refactoring_guru.abstract_factory.example.buttons;
 
@@ -295,7 +295,7 @@ public interface Button {
     void paint();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--buttons-MacOSButton-java)**buttons/MacOSButton.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-MacOSButton-java)**buttons/MacOSButton.java**
 ```java
 package refactoring_guru.abstract_factory.example.buttons;
 
@@ -312,7 +312,7 @@ public class MacOSButton implements Button {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java**
 ```java
 package refactoring_guru.abstract_factory.example.buttons;
 
@@ -329,9 +329,9 @@ public class WindowsButton implements Button {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--checkboxes)**checkboxes:**  Second product hierarchy
+## [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes)**checkboxes:**  Second product hierarchy
 
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--checkboxes-Checkbox-java)**checkboxes/Checkbox.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-Checkbox-java)**checkboxes/Checkbox.java**
 ```java
 package refactoring_guru.abstract_factory.example.checkboxes;
 
@@ -342,7 +342,7 @@ public interface Checkbox {
     void paint();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--checkboxes-MacOSCheckbox-java)**checkboxes/MacOSCheckbox.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-MacOSCheckbox-java)**checkboxes/MacOSCheckbox.java**
 ```java
 package refactoring_guru.abstract_factory.example.checkboxes;
 
@@ -359,7 +359,7 @@ public class MacOSCheckbox implements Checkbox {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--checkboxes-WindowsCheckbox-java)**checkboxes/WindowsCheckbox.java**
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-WindowsCheckbox-java)**checkboxes/WindowsCheckbox.java**
 ```java
 package refactoring_guru.abstract_factory.example.checkboxes;
 
@@ -376,9 +376,9 @@ public class WindowsCheckbox implements Checkbox {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--factories)**factories**
+## [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories)**factories**
 
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--factories-GUIFactory-java)**factories/GUIFactory.java:**  Abstract factory
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-GUIFactory-java)**factories/GUIFactory.java:**  Abstract factory
 ```java
 package refactoring_guru.abstract_factory.example.factories;
 
@@ -393,7 +393,7 @@ public interface GUIFactory {
     Checkbox createCheckbox();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--factories-MacOSFactory-java)**factories/MacOSFactory.java:**  Concrete factory (macOS)
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-MacOSFactory-java)**factories/MacOSFactory.java:**  Concrete factory (macOS)
 ```java
 package refactoring_guru.abstract_factory.example.factories;
 
@@ -419,7 +419,7 @@ public class MacOSFactory implements GUIFactory {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--factories-WindowsFactory-java)**factories/WindowsFactory.java:**  Concrete factory (Windows)
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-WindowsFactory-java)**factories/WindowsFactory.java:**  Concrete factory (Windows)
 ```java
 package refactoring_guru.abstract_factory.example.factories;
 
@@ -445,9 +445,9 @@ public class WindowsFactory implements GUIFactory {
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--app)**app**
+## [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--app)**app**
 
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--app-Application-java)**app/Application.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--app-Application-java)**app/Application.java:**  Client code
 ```java
 package refactoring_guru.abstract_factory.example.app;
 
@@ -474,7 +474,7 @@ public class Application {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--Demo-java)**Demo.java:**  App configuration
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  App configuration
 ```java
 package refactoring_guru.abstract_factory.example;
 
@@ -513,7 +513,7 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/abstract-factory/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
+#### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution results
 ```java
 You create WindowsButton.
 You created WindowsCheckbox.

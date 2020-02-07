@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-/  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+/  [Design Patterns](https://algamza.github.io/2020-02-06/Design-Patterns)  /  [Behavioral Patterns](https://algamza.github.io/2020-02-06/Behavioral-Design-Patterns)
 
 #### Also known as:  Action,­Transaction
 
@@ -266,7 +266,7 @@ Although there are many ways to implement undo/redo, the Command pattern is perh
 
 To be able to revert operations, you need to implement the history of performed operations. The command history is a stack that contains all executed command objects along with related backups of the application’s state.
 
-This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the  [Memento](https://refactoring.guru/design-patterns/memento)  pattern.
+This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)  pattern.
 
 Second, the state backups may consume quite a lot of RAM. Therefore, sometimes you can resort to an alternative implementation: instead of restoring the past state, the command performs the inverse operation. The reverse operation also has a price: it may turn out to be hard or even impossible to implement.
 
@@ -298,34 +298,34 @@ Second, the state backups may consume quite a lot of RAM. Therefore, sometimes y
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern),  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern),  [Mediator](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern)  and  [Observer](https://algamza.github.io/2020-02-06/Observer-Design-Pattern)  address various ways of connecting senders and receivers of requests:
     
     -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
     -   _Command_  establishes unidirectional connections between senders and receivers.
     -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+-   Handlers in  [Chain of Responsibility](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern)  can be implemented as  [Commands](https://algamza.github.io/2020-02-06/Command-Design-Pattern). In this case, you can execute a lot of different operations over the same context object, represented by a request.
     
     However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
     
--   You can use  [Command](https://refactoring.guru/design-patterns/command)  and  [Memento](https://refactoring.guru/design-patterns/memento)  together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
+-   You can use  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  and  [Memento](https://algamza.github.io/2020-02-06/Memento-Design-Pattern)  together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
     
--   [Command](https://refactoring.guru/design-patterns/command)  and  [Strategy](https://refactoring.guru/design-patterns/strategy)  may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
+-   [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  and  [Strategy](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern)  may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
     
     -   You can use  _Command_  to convert any operation into an object. The operation’s parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
         
     -   On the other hand,  _Strategy_  usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
         
--   [Prototype](https://refactoring.guru/design-patterns/prototype)  can help when you need to save copies of  [Commands](https://refactoring.guru/design-patterns/command)  into history.
+-   [Prototype](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern)  can help when you need to save copies of  [Commands](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  into history.
     
--   You can treat  [Visitor](https://refactoring.guru/design-patterns/visitor)  as a powerful version of the  [Command](https://refactoring.guru/design-patterns/command)  pattern. Its objects can execute operations over various objects of different classes.
+-   You can treat  [Visitor](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern)  as a powerful version of the  [Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)  pattern. Its objects can execute operations over various objects of different classes.
 
 ## Code Example 
 **Command**  is behavioral design pattern that converts requests or simple operations into objects.
 
 The conversion allows deferred or remote execution of commands, storing command history, etc.
 
-[Learn more about Command](https://refactoring.guru/design-patterns/command)
+[Learn more about Command](https://algamza.github.io/2020-02-06/Command-Design-Pattern)
 
 ## Usage of the pattern in Java
 
@@ -350,9 +350,9 @@ The text editor in this example creates new command objects each time a user int
 
 Now, to perform the undo operation, the application takes the last executed command from the history and either performs an inverse action or restores the past state of the editor, saved by that command.
 
-## [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands)**commands**
+## [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands)**commands**
 
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands-Command-java)**commands/Command.java:**  Abstract base command
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-Command-java)**commands/Command.java:**  Abstract base command
 ```java
 package refactoring_guru.command.example.commands;
 
@@ -377,7 +377,7 @@ public abstract class Command {
     public abstract boolean execute();
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands-CopyCommand-java)**commands/CopyCommand.java:**  Copy selected text to clipboard
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CopyCommand-java)**commands/CopyCommand.java:**  Copy selected text to clipboard
 ```java
 package refactoring_guru.command.example.commands;
 
@@ -396,7 +396,7 @@ public class CopyCommand extends Command {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands-PasteCommand-java)**commands/PasteCommand.java:**  Paste text from clipboard
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-PasteCommand-java)**commands/PasteCommand.java:**  Paste text from clipboard
 ```java
 package refactoring_guru.command.example.commands;
 
@@ -418,7 +418,7 @@ public class PasteCommand extends Command {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands-CutCommand-java)**commands/CutCommand.java:**  Cut text to clipboard
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CutCommand-java)**commands/CutCommand.java:**  Cut text to clipboard
 ```java
 package refactoring_guru.command.example.commands;
 
@@ -448,7 +448,7 @@ public class CutCommand extends Command {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--commands-CommandHistory-java)**commands/CommandHistory.java:**  Command history
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CommandHistory-java)**commands/CommandHistory.java:**  Command history
 ```java
 package refactoring_guru.command.example.commands;
 
@@ -468,9 +468,9 @@ public class CommandHistory {
     public boolean isEmpty() { return history.isEmpty(); }
 }
 ```
-## [](https://refactoring.guru/design-patterns/command/java/example#example-0--editor)**editor**
+## [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--editor)**editor**
 
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  GUI of text editor
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  GUI of text editor
 ```java
 package refactoring_guru.command.example.editor;
 
@@ -551,7 +551,7 @@ public class Editor {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
 package refactoring_guru.command.example;
 
@@ -564,6 +564,6 @@ public class Demo {
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/command/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
+#### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
 
 ![](https://refactoring.guru/images/patterns/examples/java/command/OutputDemo.png)
