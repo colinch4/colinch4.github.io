@@ -282,9 +282,9 @@ In the end, the Visitor pattern establishes an infrastructure that allows us to 
 
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
-package refactoring_guru.visitor.example.shapes;
+package algamza.visitor.example.shapes;
 
-import refactoring_guru.visitor.example.visitor.Visitor;
+import algamza.visitor.example.visitor.Visitor;
 
 public interface Shape {
     void move(int x, int y);
@@ -294,9 +294,9 @@ public interface Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
 ```java
-package refactoring_guru.visitor.example.shapes;
+package algamza.visitor.example.shapes;
 
-import refactoring_guru.visitor.example.visitor.Visitor;
+import algamza.visitor.example.visitor.Visitor;
 
 public class Dot implements Shape {
     private int id;
@@ -341,9 +341,9 @@ public class Dot implements Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
 ```java
-package refactoring_guru.visitor.example.shapes;
+package algamza.visitor.example.shapes;
 
-import refactoring_guru.visitor.example.visitor.Visitor;
+import algamza.visitor.example.visitor.Visitor;
 
 public class Circle extends Dot {
     private int radius;
@@ -365,9 +365,9 @@ public class Circle extends Dot {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
 ```java
-package refactoring_guru.visitor.example.shapes;
+package algamza.visitor.example.shapes;
 
-import refactoring_guru.visitor.example.visitor.Visitor;
+import algamza.visitor.example.visitor.Visitor;
 
 public class Rectangle implements Shape {
     private int id;
@@ -422,9 +422,9 @@ public class Rectangle implements Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  A compound shape
 ```java
-package refactoring_guru.visitor.example.shapes;
+package algamza.visitor.example.shapes;
 
-import refactoring_guru.visitor.example.visitor.Visitor;
+import algamza.visitor.example.visitor.Visitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -465,12 +465,12 @@ public class CompoundShape implements Shape {
 
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--visitor-Visitor-java)**visitor/Visitor.java:**  Common visitor interface
 ```java
-package refactoring_guru.visitor.example.visitor;
+package algamza.visitor.example.visitor;
 
-import refactoring_guru.visitor.example.shapes.Circle;
-import refactoring_guru.visitor.example.shapes.CompoundShape;
-import refactoring_guru.visitor.example.shapes.Dot;
-import refactoring_guru.visitor.example.shapes.Rectangle;
+import algamza.visitor.example.shapes.Circle;
+import algamza.visitor.example.shapes.CompoundShape;
+import algamza.visitor.example.shapes.Dot;
+import algamza.visitor.example.shapes.Rectangle;
 
 public interface Visitor {
     String visitDot(Dot dot);
@@ -484,9 +484,9 @@ public interface Visitor {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--visitor-XMLExportVisitor-java)**visitor/XMLExportVisitor.java:**  Concrete visitor, exports all shapes into XML
 ```java
-package refactoring_guru.visitor.example.visitor;
+package algamza.visitor.example.visitor;
 
-import refactoring_guru.visitor.example.shapes.*;
+import algamza.visitor.example.shapes.*;
 
 public class XMLExportVisitor implements Visitor {
 
@@ -550,10 +550,10 @@ public class XMLExportVisitor implements Visitor {
 ```
 #### [](https://algamza.github.io/2020-02-06/Visitor-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.visitor.example;
+package algamza.visitor.example;
 
-import refactoring_guru.visitor.example.shapes.*;
-import refactoring_guru.visitor.example.visitor.XMLExportVisitor;
+import algamza.visitor.example.shapes.*;
+import algamza.visitor.example.visitor.XMLExportVisitor;
 
 public class Demo {
     public static void main(String[] args) {

@@ -288,7 +288,7 @@ Now, each dialog type will instantiate proper button classes. Base dialog works 
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-Button-java)**buttons/Button.java:**  Common product interface
 
 ```java
-package refactoring_guru.factory_method.example.buttons;
+package algamza.factory_method.example.buttons;
 
 /**
  * Common interface for all buttons.
@@ -300,7 +300,7 @@ public interface Button {
 ```
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-HtmlButton-java)**buttons/HtmlButton.java:**  Concrete product
 ```java
-package refactoring_guru.factory_method.example.buttons;
+package algamza.factory_method.example.buttons;
 
 /**
  * HTML button implementation.
@@ -319,7 +319,7 @@ public class HtmlButton implements Button {
 ```
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java:**  One more concrete product
 ```java
-package refactoring_guru.factory_method.example.buttons;
+package algamza.factory_method.example.buttons;
 
 import javax.swing.*;
 import java.awt.*;
@@ -367,9 +367,9 @@ public class WindowsButton implements Button {
 
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-Dialog-java)**factory/Dialog.java:**  Base creator
 ```java
-package refactoring_guru.factory_method.example.factory;
+package algamza.factory_method.example.factory;
 
-import refactoring_guru.factory_method.example.buttons.Button;
+import algamza.factory_method.example.buttons.Button;
 
 /**
  * Base factory class. Note that "factory" is merely a role for the class. It
@@ -394,10 +394,10 @@ public abstract class Dialog {
 ```
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-HtmlDialog-java)**factory/HtmlDialog.java:**  Concrete creator
 ```java
-package refactoring_guru.factory_method.example.factory;
+package algamza.factory_method.example.factory;
 
-import refactoring_guru.factory_method.example.buttons.Button;
-import refactoring_guru.factory_method.example.buttons.HtmlButton;
+import algamza.factory_method.example.buttons.Button;
+import algamza.factory_method.example.buttons.HtmlButton;
 
 /**
  * HTML Dialog will produce HTML buttons.
@@ -412,10 +412,10 @@ public class HtmlDialog extends Dialog {
 ```
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--factory-WindowsDialog-java)**factory/WindowsDialog.java:**  One more concrete creator
 ```java
-package refactoring_guru.factory_method.example.factory;
+package algamza.factory_method.example.factory;
 
-import refactoring_guru.factory_method.example.buttons.Button;
-import refactoring_guru.factory_method.example.buttons.WindowsButton;
+import algamza.factory_method.example.buttons.Button;
+import algamza.factory_method.example.buttons.WindowsButton;
 
 /**
  * Windows Dialog will produce Windows buttons.
@@ -430,11 +430,11 @@ public class WindowsDialog extends Dialog {
 ```
 #### [](https://algamza.github.io/2020-02-06/Factory-Method-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.factory_method.example;
+package algamza.factory_method.example;
 
-import refactoring_guru.factory_method.example.factory.Dialog;
-import refactoring_guru.factory_method.example.factory.HtmlDialog;
-import refactoring_guru.factory_method.example.factory.WindowsDialog;
+import algamza.factory_method.example.factory.Dialog;
+import algamza.factory_method.example.factory.HtmlDialog;
+import algamza.factory_method.example.factory.WindowsDialog;
 
 /**
  * Demo class. Everything comes together here.

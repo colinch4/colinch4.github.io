@@ -226,7 +226,7 @@ The client code isn’t going to notice anything since the complexity of reusing
 
 #### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-Tree-java)**trees/Tree.java:**  Contains state unique for each tree
 ```java
-package refactoring_guru.flyweight.example.trees;
+package algamza.flyweight.example.trees;
 
 import java.awt.*;
 
@@ -248,7 +248,7 @@ public class Tree {
 ```
 #### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-TreeType-java)**trees/TreeType.java:**  Contains state shared by several trees
 ```java
-package refactoring_guru.flyweight.example.trees;
+package algamza.flyweight.example.trees;
 
 import java.awt.*;
 
@@ -273,7 +273,7 @@ public class TreeType {
 ```
 #### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--trees-TreeFactory-java)**trees/TreeFactory.java:**  Encapsulates complexity of flyweight creation
 ```java
-package refactoring_guru.flyweight.example.trees;
+package algamza.flyweight.example.trees;
 
 import java.awt.*;
 import java.util.HashMap;
@@ -296,11 +296,11 @@ public class TreeFactory {
 
 #### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--forest-Forest-java)**forest/Forest.java:**  Forest, which we draw
 ```java
-package refactoring_guru.flyweight.example.forest;
+package algamza.flyweight.example.forest;
 
-import refactoring_guru.flyweight.example.trees.Tree;
-import refactoring_guru.flyweight.example.trees.TreeFactory;
-import refactoring_guru.flyweight.example.trees.TreeType;
+import algamza.flyweight.example.trees.Tree;
+import algamza.flyweight.example.trees.TreeFactory;
+import algamza.flyweight.example.trees.TreeType;
 
 import javax.swing.*;
 import java.awt.*;
@@ -326,9 +326,9 @@ public class Forest extends JFrame {
 ```
 #### [](https://algamza.github.io/2020-02-06/Flyweight-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.flyweight.example;
+package algamza.flyweight.example;
 
-import refactoring_guru.flyweight.example.forest.Forest;
+import algamza.flyweight.example.forest.Forest;
 
 import java.awt.*;
 

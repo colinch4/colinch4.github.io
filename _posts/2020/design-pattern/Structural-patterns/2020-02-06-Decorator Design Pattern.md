@@ -342,7 +342,7 @@ You can even combine these wrappers by wrapping one decorator with another.
 
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-DataSource-java)**decorators/DataSource.java:**  A common data interface, which defines read and write operations
 ```java
-package refactoring_guru.decorator.example.decorators;
+package algamza.decorator.example.decorators;
 
 public interface DataSource {
     void writeData(String data);
@@ -352,7 +352,7 @@ public interface DataSource {
 ```
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-FileDataSource-java)**decorators/FileDataSource.java:**  Simple data reader-writer
 ```java
-package refactoring_guru.decorator.example.decorators;
+package algamza.decorator.example.decorators;
 
 import java.io.*;
 
@@ -389,7 +389,7 @@ public class FileDataSource implements DataSource {
 ```
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-DataSourceDecorator-java)**decorators/DataSourceDecorator.java:**  Abstract base decorator
 ```java
-package refactoring_guru.decorator.example.decorators;
+package algamza.decorator.example.decorators;
 
 public class DataSourceDecorator implements DataSource {
     private DataSource wrappee;
@@ -411,7 +411,7 @@ public class DataSourceDecorator implements DataSource {
 ```
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-EncryptionDecorator-java)**decorators/EncryptionDecorator.java:**  Encryption decorator
 ```java
-package refactoring_guru.decorator.example.decorators;
+package algamza.decorator.example.decorators;
 
 import java.util.Base64;
 
@@ -450,7 +450,7 @@ public class EncryptionDecorator extends DataSourceDecorator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--decorators-CompressionDecorator-java)**decorators/CompressionDecorator.java:**  Compression decorator
 ```java
-package refactoring_guru.decorator.example.decorators;
+package algamza.decorator.example.decorators;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -522,9 +522,9 @@ public class CompressionDecorator extends DataSourceDecorator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Decorator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.decorator.example;
+package algamza.decorator.example;
 
-import refactoring_guru.decorator.example.decorators.*;
+import algamza.decorator.example.decorators.*;
 
 public class Demo {
     public static void main(String[] args) {

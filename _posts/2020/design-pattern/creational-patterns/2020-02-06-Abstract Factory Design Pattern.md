@@ -283,7 +283,7 @@ Client code works with factories and products using abstract interfaces. It make
 
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-Button-java)**buttons/Button.java**
 ```java
-package refactoring_guru.abstract_factory.example.buttons;
+package algamza.abstract_factory.example.buttons;
 
 /**
  * Abstract Factory assumes that you have several families of products,
@@ -298,7 +298,7 @@ public interface Button {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-MacOSButton-java)**buttons/MacOSButton.java**
 ```java
-package refactoring_guru.abstract_factory.example.buttons;
+package algamza.abstract_factory.example.buttons;
 
 /**
  * All products families have the same varieties (MacOS/Windows).
@@ -315,7 +315,7 @@ public class MacOSButton implements Button {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--buttons-WindowsButton-java)**buttons/WindowsButton.java**
 ```java
-package refactoring_guru.abstract_factory.example.buttons;
+package algamza.abstract_factory.example.buttons;
 
 /**
  * All products families have the same varieties (MacOS/Windows).
@@ -334,7 +334,7 @@ public class WindowsButton implements Button {
 
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-Checkbox-java)**checkboxes/Checkbox.java**
 ```java
-package refactoring_guru.abstract_factory.example.checkboxes;
+package algamza.abstract_factory.example.checkboxes;
 
 /**
  * Checkboxes is the second product family. It has the same variants as buttons.
@@ -345,7 +345,7 @@ public interface Checkbox {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-MacOSCheckbox-java)**checkboxes/MacOSCheckbox.java**
 ```java
-package refactoring_guru.abstract_factory.example.checkboxes;
+package algamza.abstract_factory.example.checkboxes;
 
 /**
  * All products families have the same varieties (MacOS/Windows).
@@ -362,7 +362,7 @@ public class MacOSCheckbox implements Checkbox {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--checkboxes-WindowsCheckbox-java)**checkboxes/WindowsCheckbox.java**
 ```java
-package refactoring_guru.abstract_factory.example.checkboxes;
+package algamza.abstract_factory.example.checkboxes;
 
 /**
  * All products families have the same varieties (MacOS/Windows).
@@ -381,10 +381,10 @@ public class WindowsCheckbox implements Checkbox {
 
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-GUIFactory-java)**factories/GUIFactory.java:**  Abstract factory
 ```java
-package refactoring_guru.abstract_factory.example.factories;
+package algamza.abstract_factory.example.factories;
 
-import refactoring_guru.abstract_factory.example.buttons.Button;
-import refactoring_guru.abstract_factory.example.checkboxes.Checkbox;
+import algamza.abstract_factory.example.buttons.Button;
+import algamza.abstract_factory.example.checkboxes.Checkbox;
 
 /**
  * Abstract factory knows about all (abstract) product types.
@@ -396,12 +396,12 @@ public interface GUIFactory {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-MacOSFactory-java)**factories/MacOSFactory.java:**  Concrete factory (macOS)
 ```java
-package refactoring_guru.abstract_factory.example.factories;
+package algamza.abstract_factory.example.factories;
 
-import refactoring_guru.abstract_factory.example.buttons.Button;
-import refactoring_guru.abstract_factory.example.buttons.MacOSButton;
-import refactoring_guru.abstract_factory.example.checkboxes.Checkbox;
-import refactoring_guru.abstract_factory.example.checkboxes.MacOSCheckbox;
+import algamza.abstract_factory.example.buttons.Button;
+import algamza.abstract_factory.example.buttons.MacOSButton;
+import algamza.abstract_factory.example.checkboxes.Checkbox;
+import algamza.abstract_factory.example.checkboxes.MacOSCheckbox;
 
 /**
  * Each concrete factory extends basic factory and responsible for creating
@@ -422,12 +422,12 @@ public class MacOSFactory implements GUIFactory {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--factories-WindowsFactory-java)**factories/WindowsFactory.java:**  Concrete factory (Windows)
 ```java
-package refactoring_guru.abstract_factory.example.factories;
+package algamza.abstract_factory.example.factories;
 
-import refactoring_guru.abstract_factory.example.buttons.Button;
-import refactoring_guru.abstract_factory.example.buttons.WindowsButton;
-import refactoring_guru.abstract_factory.example.checkboxes.Checkbox;
-import refactoring_guru.abstract_factory.example.checkboxes.WindowsCheckbox;
+import algamza.abstract_factory.example.buttons.Button;
+import algamza.abstract_factory.example.buttons.WindowsButton;
+import algamza.abstract_factory.example.checkboxes.Checkbox;
+import algamza.abstract_factory.example.checkboxes.WindowsCheckbox;
 
 /**
  * Each concrete factory extends basic factory and responsible for creating
@@ -450,11 +450,11 @@ public class WindowsFactory implements GUIFactory {
 
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--app-Application-java)**app/Application.java:**  Client code
 ```java
-package refactoring_guru.abstract_factory.example.app;
+package algamza.abstract_factory.example.app;
 
-import refactoring_guru.abstract_factory.example.buttons.Button;
-import refactoring_guru.abstract_factory.example.checkboxes.Checkbox;
-import refactoring_guru.abstract_factory.example.factories.GUIFactory;
+import algamza.abstract_factory.example.buttons.Button;
+import algamza.abstract_factory.example.checkboxes.Checkbox;
+import algamza.abstract_factory.example.factories.GUIFactory;
 
 /**
  * Factory users don't care which concrete factory they use since they work with
@@ -477,12 +477,12 @@ public class Application {
 ```
 #### [](https://algamza.github.io/2020-02-06/Abstract-Factory-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  App configuration
 ```java
-package refactoring_guru.abstract_factory.example;
+package algamza.abstract_factory.example;
 
-import refactoring_guru.abstract_factory.example.app.Application;
-import refactoring_guru.abstract_factory.example.factories.GUIFactory;
-import refactoring_guru.abstract_factory.example.factories.MacOSFactory;
-import refactoring_guru.abstract_factory.example.factories.WindowsFactory;
+import algamza.abstract_factory.example.app.Application;
+import algamza.abstract_factory.example.factories.GUIFactory;
+import algamza.abstract_factory.example.factories.MacOSFactory;
+import algamza.abstract_factory.example.factories.WindowsFactory;
 
 /**
  * Demo class. Everything comes together here.

@@ -256,13 +256,13 @@ Reverted commands are kept in history until the user makes some modifications to
 
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Editor code
 ```java
-package refactoring_guru.memento.example.editor;
+package algamza.memento.example.editor;
 
-import refactoring_guru.memento.example.commands.Command;
-import refactoring_guru.memento.example.history.History;
-import refactoring_guru.memento.example.history.Memento;
-import refactoring_guru.memento.example.shapes.CompoundShape;
-import refactoring_guru.memento.example.shapes.Shape;
+import algamza.memento.example.commands.Command;
+import algamza.memento.example.history.History;
+import algamza.memento.example.history.Memento;
+import algamza.memento.example.shapes.CompoundShape;
+import algamza.memento.example.shapes.Shape;
 
 import javax.swing.*;
 import java.io.*;
@@ -331,11 +331,11 @@ public class Editor extends JComponent {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--editor-Canvas-java)**editor/Canvas.java:**  Canvas code
 ```java
-package refactoring_guru.memento.example.editor;
+package algamza.memento.example.editor;
 
-import refactoring_guru.memento.example.commands.ColorCommand;
-import refactoring_guru.memento.example.commands.MoveCommand;
-import refactoring_guru.memento.example.shapes.Shape;
+import algamza.memento.example.commands.ColorCommand;
+import algamza.memento.example.commands.MoveCommand;
+import algamza.memento.example.shapes.Shape;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -507,9 +507,9 @@ class Canvas extends java.awt.Canvas {
 
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--history-History-java)**history/History.java:**  History stores commands and mementos
 ```java
-package refactoring_guru.memento.example.history;
+package algamza.memento.example.history;
 
-import refactoring_guru.memento.example.commands.Command;
+import algamza.memento.example.commands.Command;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -583,9 +583,9 @@ public class History {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--history-Memento-java)**history/Memento.java:**  Memento class
 ```java
-package refactoring_guru.memento.example.history;
+package algamza.memento.example.history;
 
-import refactoring_guru.memento.example.editor.Editor;
+import algamza.memento.example.editor.Editor;
 
 public class Memento {
     private String backup;
@@ -605,7 +605,7 @@ public class Memento {
 
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-Command-java)**commands/Command.java:**  Base command class
 ```java
-package refactoring_guru.memento.example.commands;
+package algamza.memento.example.commands;
 
 public interface Command {
     String getName();
@@ -614,10 +614,10 @@ public interface Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-ColorCommand-java)**commands/ColorCommand.java:**  Changes color of selected shape
 ```java
-package refactoring_guru.memento.example.commands;
+package algamza.memento.example.commands;
 
-import refactoring_guru.memento.example.editor.Editor;
-import refactoring_guru.memento.example.shapes.Shape;
+import algamza.memento.example.editor.Editor;
+import algamza.memento.example.shapes.Shape;
 
 import java.awt.*;
 
@@ -645,10 +645,10 @@ public class ColorCommand implements Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--commands-MoveCommand-java)**commands/MoveCommand.java:**  Moves selected shape
 ```java
-package refactoring_guru.memento.example.commands;
+package algamza.memento.example.commands;
 
-import refactoring_guru.memento.example.editor.Editor;
-import refactoring_guru.memento.example.shapes.Shape;
+import algamza.memento.example.editor.Editor;
+import algamza.memento.example.shapes.Shape;
 
 public class MoveCommand implements Command {
     private Editor editor;
@@ -698,7 +698,7 @@ public class MoveCommand implements Command {
 
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 import java.io.Serializable;
@@ -723,7 +723,7 @@ public interface Shape extends Serializable {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 
@@ -846,7 +846,7 @@ public abstract class BaseShape implements Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 
@@ -877,7 +877,7 @@ public class Circle extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 
@@ -907,7 +907,7 @@ public class Dot extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 
@@ -940,7 +940,7 @@ public class Rectangle extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java**
 ```java
-package refactoring_guru.memento.example.shapes;
+package algamza.memento.example.shapes;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -1129,13 +1129,13 @@ public class CompoundShape extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Memento-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.memento.example;
+package algamza.memento.example;
 
-import refactoring_guru.memento.example.editor.Editor;
-import refactoring_guru.memento.example.shapes.Circle;
-import refactoring_guru.memento.example.shapes.CompoundShape;
-import refactoring_guru.memento.example.shapes.Dot;
-import refactoring_guru.memento.example.shapes.Rectangle;
+import algamza.memento.example.editor.Editor;
+import algamza.memento.example.shapes.Circle;
+import algamza.memento.example.shapes.CompoundShape;
+import algamza.memento.example.shapes.Dot;
+import algamza.memento.example.shapes.Rectangle;
 
 import java.awt.*;
 

@@ -250,7 +250,7 @@ This example shows how to create complex graphical shapes, composed of simpler s
 
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 
@@ -269,7 +269,7 @@ public interface Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java:**  Abstract shape with basic functionality
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 
@@ -365,7 +365,7 @@ abstract class BaseShape implements Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 
@@ -395,7 +395,7 @@ public class Dot extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 
@@ -425,7 +425,7 @@ public class Circle extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 
@@ -458,7 +458,7 @@ public class Rectangle extends BaseShape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  Compound shape, which consists of other shape objects
 ```java
-package refactoring_guru.composite.example.shapes;
+package algamza.composite.example.shapes;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -592,7 +592,7 @@ public class CompoundShape extends BaseShape {
             disableSelectionStyle(graphics);
         }
 
-        for (refactoring_guru.composite.example.shapes.Shape child : children) {
+        for (algamza.composite.example.shapes.Shape child : children) {
             child.paint(graphics);
         }
     }
@@ -602,10 +602,10 @@ public class CompoundShape extends BaseShape {
 
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--editor-ImageEditor-java)**editor/ImageEditor.java:**  Shape editor
 ```java
-package refactoring_guru.composite.example.editor;
+package algamza.composite.example.editor;
 
-import refactoring_guru.composite.example.shapes.CompoundShape;
-import refactoring_guru.composite.example.shapes.Shape;
+import algamza.composite.example.shapes.CompoundShape;
+import algamza.composite.example.shapes.Shape;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -681,13 +681,13 @@ public class ImageEditor {
 ```
 #### [](https://algamza.github.io/2020-02-06/Composite-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.composite.example;
+package algamza.composite.example;
 
-import refactoring_guru.composite.example.editor.ImageEditor;
-import refactoring_guru.composite.example.shapes.Circle;
-import refactoring_guru.composite.example.shapes.CompoundShape;
-import refactoring_guru.composite.example.shapes.Dot;
-import refactoring_guru.composite.example.shapes.Rectangle;
+import algamza.composite.example.editor.ImageEditor;
+import algamza.composite.example.shapes.Circle;
+import algamza.composite.example.shapes.CompoundShape;
+import algamza.composite.example.shapes.Dot;
+import algamza.composite.example.shapes.Rectangle;
 
 import java.awt.*;
 

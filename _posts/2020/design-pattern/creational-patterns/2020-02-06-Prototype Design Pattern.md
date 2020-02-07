@@ -260,7 +260,7 @@ Let’s take a look at how the Prototype can be implemented without the standard
 
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
-package refactoring_guru.prototype.example.shapes;
+package algamza.prototype.example.shapes;
 
 import java.util.Objects;
 
@@ -292,7 +292,7 @@ public abstract class Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  Simple shape
 ```java
-package refactoring_guru.prototype.example.shapes;
+package algamza.prototype.example.shapes;
 
 public class Circle extends Shape {
     public int radius;
@@ -322,7 +322,7 @@ public class Circle extends Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  Another shape
 ```java
-package refactoring_guru.prototype.example.shapes;
+package algamza.prototype.example.shapes;
 
 public class Rectangle extends Shape {
     public int width;
@@ -354,11 +354,11 @@ public class Rectangle extends Shape {
 ```
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
 ```java
-package refactoring_guru.prototype.example;
+package algamza.prototype.example;
 
-import refactoring_guru.prototype.example.shapes.Circle;
-import refactoring_guru.prototype.example.shapes.Rectangle;
-import refactoring_guru.prototype.example.shapes.Shape;
+import algamza.prototype.example.shapes.Circle;
+import algamza.prototype.example.shapes.Rectangle;
+import algamza.prototype.example.shapes.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -424,11 +424,11 @@ You could implement a centralized prototype registry (or factory), which would c
 
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--cache-BundledShapeCache-java)**cache/BundledShapeCache.java:**  Prototype factory
 ```java
-package refactoring_guru.prototype.caching.cache;
+package algamza.prototype.caching.cache;
 
-import refactoring_guru.prototype.example.shapes.Circle;
-import refactoring_guru.prototype.example.shapes.Rectangle;
-import refactoring_guru.prototype.example.shapes.Shape;
+import algamza.prototype.example.shapes.Circle;
+import algamza.prototype.example.shapes.Rectangle;
+import algamza.prototype.example.shapes.Shape;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -466,10 +466,10 @@ public class BundledShapeCache {
 ```
 #### [](https://algamza.github.io/2020-02-06/Prototype-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Cloning example
 ```java
-package refactoring_guru.prototype.caching;
+package algamza.prototype.caching;
 
-import refactoring_guru.prototype.caching.cache.BundledShapeCache;
-import refactoring_guru.prototype.example.shapes.Shape;
+import algamza.prototype.caching.cache.BundledShapeCache;
+import algamza.prototype.example.shapes.Shape;
 
 public class Demo {
     public static void main(String[] args) {

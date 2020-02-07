@@ -261,9 +261,9 @@ This example shows how to organize lots of GUI elements so that they cooperate w
 
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Component-java)**components/Component.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Mediator;
 
 /**
  * Common component interface.
@@ -275,10 +275,10 @@ public interface Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-AddButton-java)**components/AddButton.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
-import refactoring_guru.mediator.example.mediator.Note;
+import algamza.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Note;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -312,9 +312,9 @@ public class AddButton extends JButton implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-DeleteButton-java)**components/DeleteButton.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -348,10 +348,10 @@ public class DeleteButton extends JButton  implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Filter-java)**components/Filter.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
-import refactoring_guru.mediator.example.mediator.Note;
+import algamza.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Note;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -413,10 +413,10 @@ public class Filter extends JTextField implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-List-java)**components/List.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
-import refactoring_guru.mediator.example.mediator.Note;
+import algamza.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Note;
 
 import javax.swing.*;
 
@@ -495,9 +495,9 @@ public class List extends JList implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-SaveButton-java)**components/SaveButton.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -531,9 +531,9 @@ public class SaveButton extends JButton implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-TextBox-java)**components/TextBox.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -563,9 +563,9 @@ public class TextBox extends JTextArea implements Component {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--components-Title-java)**components/Title.java**
 ```java
-package refactoring_guru.mediator.example.components;
+package algamza.mediator.example.components;
 
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.mediator.Mediator;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -597,9 +597,9 @@ public class Title extends JTextField implements Component {
 
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Mediator-java)**mediator/Mediator.java:**  Defines common mediator interface
 ```java
-package refactoring_guru.mediator.example.mediator;
+package algamza.mediator.example.mediator;
 
-import refactoring_guru.mediator.example.components.Component;
+import algamza.mediator.example.components.Component;
 
 import javax.swing.*;
 
@@ -622,11 +622,11 @@ public interface Mediator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Editor-java)**mediator/Editor.java:**  Concrete mediator
 ```java
-package refactoring_guru.mediator.example.mediator;
+package algamza.mediator.example.mediator;
 
-import refactoring_guru.mediator.example.components.*;
-import refactoring_guru.mediator.example.components.Component;
-import refactoring_guru.mediator.example.components.List;
+import algamza.mediator.example.components.*;
+import algamza.mediator.example.components.Component;
+import algamza.mediator.example.components.List;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -819,7 +819,7 @@ public class Editor implements Mediator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--mediator-Note-java)**mediator/Note.java:**  A note’s class
 ```java
-package refactoring_guru.mediator.example.mediator;
+package algamza.mediator.example.mediator;
 
 /**
  * Note class.
@@ -856,11 +856,11 @@ public class Note {
 ```
 #### [](https://algamza.github.io/2020-02-06/Mediator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.mediator.example;
+package algamza.mediator.example;
 
-import refactoring_guru.mediator.example.components.*;
-import refactoring_guru.mediator.example.mediator.Editor;
-import refactoring_guru.mediator.example.mediator.Mediator;
+import algamza.mediator.example.components.*;
+import algamza.mediator.example.mediator.Editor;
+import algamza.mediator.example.mediator.Mediator;
 
 import javax.swing.*;
 

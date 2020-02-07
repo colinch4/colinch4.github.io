@@ -302,7 +302,7 @@ This example is a bit different from the canonical version of the pattern given 
 
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package algamza.chain_of_responsibility.example.middleware;
 
 /**
  * Base middleware class.
@@ -337,7 +337,7 @@ public abstract class Middleware {
 ```
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package algamza.chain_of_responsibility.example.middleware;
 
 /**
  * ConcreteHandler. Checks whether there are too many failed login requests.
@@ -378,9 +378,9 @@ public class ThrottlingMiddleware extends Middleware {
 ```
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package algamza.chain_of_responsibility.example.middleware;
 
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import algamza.chain_of_responsibility.example.server.Server;
 
 /**
  * ConcreteHandler. Checks whether a user with the given credentials exists.
@@ -407,7 +407,7 @@ public class UserExistsMiddleware extends Middleware {
 ```
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package algamza.chain_of_responsibility.example.middleware;
 
 /**
  * ConcreteHandler. Checks a user's role.
@@ -427,9 +427,9 @@ public class RoleCheckMiddleware extends Middleware {
 
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
 ```java
-package refactoring_guru.chain_of_responsibility.example.server;
+package algamza.chain_of_responsibility.example.server;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
+import algamza.chain_of_responsibility.example.middleware.Middleware;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -479,13 +479,13 @@ public class Server {
 ```
 #### [](https://algamza.github.io/2020-02-06/Chain-of-Responsibility-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.chain_of_responsibility.example;
+package algamza.chain_of_responsibility.example;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import algamza.chain_of_responsibility.example.middleware.Middleware;
+import algamza.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
+import algamza.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
+import algamza.chain_of_responsibility.example.middleware.UserExistsMiddleware;
+import algamza.chain_of_responsibility.example.server.Server;
 
 import java.io.BufferedReader;
 import java.io.IOException;

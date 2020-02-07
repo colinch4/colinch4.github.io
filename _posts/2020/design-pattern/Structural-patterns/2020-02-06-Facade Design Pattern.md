@@ -190,7 +190,7 @@ The Facade provides a single class with a single method that handles all the com
 
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-VideoFile-java)**some_complex_media_library/VideoFile.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public class VideoFile {
     private String name;
@@ -212,14 +212,14 @@ public class VideoFile {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-Codec-java)**some_complex_media_library/Codec.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public interface Codec {
 }
 
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-MPEG4CompressionCodec-java)**some_complex_media_library/MPEG4CompressionCodec.java**
 
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public class MPEG4CompressionCodec implements Codec {
     public String type = "mp4";
@@ -228,7 +228,7 @@ public class MPEG4CompressionCodec implements Codec {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-OggCompressionCodec-java)**some_complex_media_library/OggCompressionCodec.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public class OggCompressionCodec implements Codec {
     public String type = "ogg";
@@ -236,7 +236,7 @@ public class OggCompressionCodec implements Codec {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-CodecFactory-java)**some_complex_media_library/CodecFactory.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public class CodecFactory {
     public static Codec extract(VideoFile file) {
@@ -254,7 +254,7 @@ public class CodecFactory {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-BitrateReader-java)**some_complex_media_library/BitrateReader.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 public class BitrateReader {
     public static VideoFile read(VideoFile file, Codec codec) {
@@ -270,7 +270,7 @@ public class BitrateReader {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--some_complex_media_library-AudioMixer-java)**some_complex_media_library/AudioMixer.java**
 ```java
-package refactoring_guru.facade.example.some_complex_media_library;
+package algamza.facade.example.some_complex_media_library;
 
 import java.io.File;
 
@@ -285,9 +285,9 @@ public class AudioMixer {
 
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--facade-VideoConversionFacade-java)**facade/VideoConversionFacade.java:**  Facade provides simple interface of video conversion
 ```java
-package refactoring_guru.facade.example.facade;
+package algamza.facade.example.facade;
 
-import refactoring_guru.facade.example.some_complex_media_library.*;
+import algamza.facade.example.some_complex_media_library.*;
 
 import java.io.File;
 
@@ -312,9 +312,9 @@ public class VideoConversionFacade {
 ```
 #### [](https://algamza.github.io/2020-02-06/Facade-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.facade.example;
+package algamza.facade.example;
 
-import refactoring_guru.facade.example.facade.VideoConversionFacade;
+import algamza.facade.example.facade.VideoConversionFacade;
 
 import java.io.File;
 

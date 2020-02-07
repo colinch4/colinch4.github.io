@@ -223,7 +223,7 @@ In this example, the Template Method pattern defines an algorithm of working wit
 
 #### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Network-java)**networks/Network.java:**  Base social network class
 ```java
-package refactoring_guru.template_method.example.networks;
+package algamza.template_method.example.networks;
 
 /**
  * Base class of social network.
@@ -256,7 +256,7 @@ public abstract class Network {
 ```
 #### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Facebook-java)**networks/Facebook.java:**  Concrete social network
 ```java
-package refactoring_guru.template_method.example.networks;
+package algamza.template_method.example.networks;
 
 /**
  * Class of social network
@@ -310,7 +310,7 @@ public class Facebook extends Network {
 ```
 #### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--networks-Twitter-java)**networks/Twitter.java:**  One more social network
 ```java
-package refactoring_guru.template_method.example.networks;
+package algamza.template_method.example.networks;
 
 /**
  * Class of social network
@@ -365,11 +365,11 @@ public class Twitter extends Network {
 ```
 #### [](https://algamza.github.io/2020-02-06/Template-Method-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.template_method.example;
+package algamza.template_method.example;
 
-import refactoring_guru.template_method.example.networks.Facebook;
-import refactoring_guru.template_method.example.networks.Network;
-import refactoring_guru.template_method.example.networks.Twitter;
+import algamza.template_method.example.networks.Facebook;
+import algamza.template_method.example.networks.Network;
+import algamza.template_method.example.networks.Twitter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

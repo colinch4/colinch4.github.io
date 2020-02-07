@@ -307,9 +307,9 @@ In this example, the State pattern lets the same media player controls behave di
 
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-State-java)**states/State.java:**  Common state interface
 ```java
-package refactoring_guru.state.example.states;
+package algamza.state.example.states;
 
-import refactoring_guru.state.example.ui.Player;
+import algamza.state.example.ui.Player;
 
 /**
  * Common interface for all states.
@@ -333,9 +333,9 @@ public abstract class State {
 ```
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-LockedState-java)**states/LockedState.java**
 ```java
-package refactoring_guru.state.example.states;
+package algamza.state.example.states;
 
-import refactoring_guru.state.example.ui.Player;
+import algamza.state.example.ui.Player;
 
 /**
  * Concrete states provide the special implementation for all interface methods.
@@ -376,9 +376,9 @@ public class LockedState extends State {
 ```
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-ReadyState-java)**states/ReadyState.java**
 ```java
-package refactoring_guru.state.example.states;
+package algamza.state.example.states;
 
-import refactoring_guru.state.example.ui.Player;
+import algamza.state.example.ui.Player;
 
 /**
  * They can also trigger state transitions in the context.
@@ -415,9 +415,9 @@ public class ReadyState extends State {
 ```
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--states-PlayingState-java)**states/PlayingState.java**
 ```java
-package refactoring_guru.state.example.states;
+package algamza.state.example.states;
 
-import refactoring_guru.state.example.ui.Player;
+import algamza.state.example.ui.Player;
 
 public class PlayingState extends State {
 
@@ -453,10 +453,10 @@ public class PlayingState extends State {
 
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--ui-Player-java)**ui/Player.java:**  Player primary code
 ```java
-package refactoring_guru.state.example.ui;
+package algamza.state.example.ui;
 
-import refactoring_guru.state.example.states.ReadyState;
-import refactoring_guru.state.example.states.State;
+import algamza.state.example.states.ReadyState;
+import algamza.state.example.states.State;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -518,7 +518,7 @@ public class Player {
 ```
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--ui-UI-java)**ui/UI.java:**  Player’s GUI
 ```java
-package refactoring_guru.state.example.ui;
+package algamza.state.example.ui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -563,10 +563,10 @@ public class UI {
 ```
 #### [](https://algamza.github.io/2020-02-06/State-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.state.example;
+package algamza.state.example;
 
-import refactoring_guru.state.example.ui.Player;
-import refactoring_guru.state.example.ui.UI;
+import algamza.state.example.ui.Player;
+import algamza.state.example.ui.UI;
 
 /**
  * Demo class. Everything comes together here.

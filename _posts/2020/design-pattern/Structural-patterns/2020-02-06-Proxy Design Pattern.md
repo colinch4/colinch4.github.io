@@ -255,7 +255,7 @@ Proxy is invaluable when you have to add some additional behaviors to a class wh
 
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeLib-java)**some_cool_media_library/ThirdPartyYoutubeLib.java:**  Remote service interface
 ```java
-package refactoring_guru.proxy.example.some_cool_media_library;
+package algamza.proxy.example.some_cool_media_library;
 
 import java.util.HashMap;
 
@@ -267,7 +267,7 @@ public interface ThirdPartyYoutubeLib {
 ```
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-ThirdPartyYoutubeClass-java)**some_cool_media_library/ThirdPartyYoutubeClass.java:**  Remote service implementation
 ```java
-package refactoring_guru.proxy.example.some_cool_media_library;
+package algamza.proxy.example.some_cool_media_library;
 
 import java.util.HashMap;
 
@@ -338,7 +338,7 @@ public class ThirdPartyYoutubeClass implements ThirdPartyYoutubeLib {
 ```
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--some_cool_media_library-Video-java)**some_cool_media_library/Video.java:**  Video file
 ```java
-package refactoring_guru.proxy.example.some_cool_media_library;
+package algamza.proxy.example.some_cool_media_library;
 
 public class Video {
     public String id;
@@ -356,11 +356,11 @@ public class Video {
 
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--proxy-YoutubeCacheProxy-java)**proxy/YoutubeCacheProxy.java:**  Caching proxy
 ```java
-package refactoring_guru.proxy.example.proxy;
+package algamza.proxy.example.proxy;
 
-import refactoring_guru.proxy.example.some_cool_media_library.ThirdPartyYoutubeClass;
-import refactoring_guru.proxy.example.some_cool_media_library.ThirdPartyYoutubeLib;
-import refactoring_guru.proxy.example.some_cool_media_library.Video;
+import algamza.proxy.example.some_cool_media_library.ThirdPartyYoutubeClass;
+import algamza.proxy.example.some_cool_media_library.ThirdPartyYoutubeLib;
+import algamza.proxy.example.some_cool_media_library.Video;
 
 import java.util.HashMap;
 
@@ -405,10 +405,10 @@ public class YoutubeCacheProxy implements ThirdPartyYoutubeLib {
 
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--downloader-YoutubeDownloader-java)**downloader/YoutubeDownloader.java:**  Media downloader app
 ```java
-package refactoring_guru.proxy.example.downloader;
+package algamza.proxy.example.downloader;
 
-import refactoring_guru.proxy.example.some_cool_media_library.ThirdPartyYoutubeLib;
-import refactoring_guru.proxy.example.some_cool_media_library.Video;
+import algamza.proxy.example.some_cool_media_library.ThirdPartyYoutubeLib;
+import algamza.proxy.example.some_cool_media_library.Video;
 
 import java.util.HashMap;
 
@@ -442,11 +442,11 @@ public class YoutubeDownloader {
 ```
 #### [](https://algamza.github.io/2020-02-06/Proxy-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.proxy.example;
+package algamza.proxy.example;
 
-import refactoring_guru.proxy.example.downloader.YoutubeDownloader;
-import refactoring_guru.proxy.example.proxy.YoutubeCacheProxy;
-import refactoring_guru.proxy.example.some_cool_media_library.ThirdPartyYoutubeClass;
+import algamza.proxy.example.downloader.YoutubeDownloader;
+import algamza.proxy.example.proxy.YoutubeCacheProxy;
+import algamza.proxy.example.some_cool_media_library.ThirdPartyYoutubeClass;
 
 public class Demo {
 

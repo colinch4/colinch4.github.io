@@ -269,9 +269,9 @@ In this example, the Iterator pattern is used to go over social profiles of a re
 
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-ProfileIterator-java)**iterators/ProfileIterator.java:**  Defines profile interface
 ```java
-package refactoring_guru.iterator.example.iterators;
+package algamza.iterator.example.iterators;
 
-import refactoring_guru.iterator.example.profile.Profile;
+import algamza.iterator.example.profile.Profile;
 
 public interface ProfileIterator {
     boolean hasNext();
@@ -283,10 +283,10 @@ public interface ProfileIterator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-FacebookIterator-java)**iterators/FacebookIterator.java:**  Implements iteration over Facebook profiles
 ```java
-package refactoring_guru.iterator.example.iterators;
+package algamza.iterator.example.iterators;
 
-import refactoring_guru.iterator.example.profile.Profile;
-import refactoring_guru.iterator.example.social_networks.Facebook;
+import algamza.iterator.example.profile.Profile;
+import algamza.iterator.example.social_networks.Facebook;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -345,10 +345,10 @@ public class FacebookIterator implements ProfileIterator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--iterators-LinkedInIterator-java)**iterators/LinkedInIterator.java:**  Implements iteration over LinkedIn profiles
 ```java
-package refactoring_guru.iterator.example.iterators;
+package algamza.iterator.example.iterators;
 
-import refactoring_guru.iterator.example.profile.Profile;
-import refactoring_guru.iterator.example.social_networks.LinkedIn;
+import algamza.iterator.example.profile.Profile;
+import algamza.iterator.example.social_networks.LinkedIn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -409,9 +409,9 @@ public class LinkedInIterator implements ProfileIterator {
 
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-SocialNetwork-java)**social_networks/SocialNetwork.java:**  Defines common social network interface
 ```java
-package refactoring_guru.iterator.example.social_networks;
+package algamza.iterator.example.social_networks;
 
-import refactoring_guru.iterator.example.iterators.ProfileIterator;
+import algamza.iterator.example.iterators.ProfileIterator;
 
 public interface SocialNetwork {
     ProfileIterator createFriendsIterator(String profileEmail);
@@ -421,11 +421,11 @@ public interface SocialNetwork {
 
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-Facebook-java)**social_networks/Facebook.java:**  Facebook
 
-package refactoring_guru.iterator.example.social_networks;
+package algamza.iterator.example.social_networks;
 
-import refactoring_guru.iterator.example.iterators.FacebookIterator;
-import refactoring_guru.iterator.example.iterators.ProfileIterator;
-import refactoring_guru.iterator.example.profile.Profile;
+import algamza.iterator.example.iterators.FacebookIterator;
+import algamza.iterator.example.iterators.ProfileIterator;
+import algamza.iterator.example.profile.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -498,11 +498,11 @@ public class Facebook implements SocialNetwork {
 ```
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--social_networks-LinkedIn-java)**social_networks/LinkedIn.java:**  LinkedIn
 ```java
-package refactoring_guru.iterator.example.social_networks;
+package algamza.iterator.example.social_networks;
 
-import refactoring_guru.iterator.example.iterators.LinkedInIterator;
-import refactoring_guru.iterator.example.iterators.ProfileIterator;
-import refactoring_guru.iterator.example.profile.Profile;
+import algamza.iterator.example.iterators.LinkedInIterator;
+import algamza.iterator.example.iterators.ProfileIterator;
+import algamza.iterator.example.profile.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -576,7 +576,7 @@ public class LinkedIn implements SocialNetwork {
 
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--profile-Profile-java)**profile/Profile.java:**  Social profiles
 ```java
-package refactoring_guru.iterator.example.profile;
+package algamza.iterator.example.profile;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -630,11 +630,11 @@ public class Profile {
 
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--spammer-SocialSpammer-java)**spammer/SocialSpammer.java:**  Message sending app
 ```java
-package refactoring_guru.iterator.example.spammer;
+package algamza.iterator.example.spammer;
 
-import refactoring_guru.iterator.example.iterators.ProfileIterator;
-import refactoring_guru.iterator.example.profile.Profile;
-import refactoring_guru.iterator.example.social_networks.SocialNetwork;
+import algamza.iterator.example.iterators.ProfileIterator;
+import algamza.iterator.example.profile.Profile;
+import algamza.iterator.example.social_networks.SocialNetwork;
 
 public class SocialSpammer {
     public SocialNetwork network;
@@ -669,13 +669,13 @@ public class SocialSpammer {
 ```
 #### [](https://algamza.github.io/2020-02-06/Iterator-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.iterator.example;
+package algamza.iterator.example;
 
-import refactoring_guru.iterator.example.profile.Profile;
-import refactoring_guru.iterator.example.social_networks.Facebook;
-import refactoring_guru.iterator.example.social_networks.LinkedIn;
-import refactoring_guru.iterator.example.social_networks.SocialNetwork;
-import refactoring_guru.iterator.example.spammer.SocialSpammer;
+import algamza.iterator.example.profile.Profile;
+import algamza.iterator.example.social_networks.Facebook;
+import algamza.iterator.example.social_networks.LinkedIn;
+import algamza.iterator.example.social_networks.SocialNetwork;
+import algamza.iterator.example.spammer.SocialSpammer;
 
 import java.util.ArrayList;
 import java.util.List;

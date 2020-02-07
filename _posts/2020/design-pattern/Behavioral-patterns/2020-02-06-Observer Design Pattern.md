@@ -275,9 +275,9 @@ Subscriber classes aren’t coupled to the editor class and can be reused in oth
 
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--publisher-EventManager-java)**publisher/EventManager.java:**  Basic publisher
 ```java
-package refactoring_guru.observer.example.publisher;
+package algamza.observer.example.publisher;
 
-import refactoring_guru.observer.example.listeners.EventListener;
+import algamza.observer.example.listeners.EventListener;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -316,9 +316,9 @@ public class EventManager {
 
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Concrete publisher, tracked by other objects
 ```java
-package refactoring_guru.observer.example.editor;
+package algamza.observer.example.editor;
 
-import refactoring_guru.observer.example.publisher.EventManager;
+import algamza.observer.example.publisher.EventManager;
 
 import java.io.File;
 
@@ -348,7 +348,7 @@ public class Editor {
 
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-EventListener-java)**listeners/EventListener.java:**  Common observer interface
 ```java
-package refactoring_guru.observer.example.listeners;
+package algamza.observer.example.listeners;
 
 import java.io.File;
 
@@ -358,7 +358,7 @@ public interface EventListener {
 ```
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-EmailNotificationListener-java)**listeners/EmailNotificationListener.java:**  Sends emails upon receiving notification
 ```java
-package refactoring_guru.observer.example.listeners;
+package algamza.observer.example.listeners;
 
 import java.io.File;
 
@@ -377,7 +377,7 @@ public class EmailNotificationListener implements EventListener {
 ```
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--listeners-LogOpenListener-java)**listeners/LogOpenListener.java:**  Writes a message to a log upon receiving notification
 ```java
-package refactoring_guru.observer.example.listeners;
+package algamza.observer.example.listeners;
 
 import java.io.File;
 
@@ -396,11 +396,11 @@ public class LogOpenListener implements EventListener {
 ```
 #### [](https://algamza.github.io/2020-02-06/Observer-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.observer.example;
+package algamza.observer.example;
 
-import refactoring_guru.observer.example.editor.Editor;
-import refactoring_guru.observer.example.listeners.EmailNotificationListener;
-import refactoring_guru.observer.example.listeners.LogOpenListener;
+import algamza.observer.example.editor.Editor;
+import algamza.observer.example.listeners.EmailNotificationListener;
+import algamza.observer.example.listeners.LogOpenListener;
 
 public class Demo {
     public static void main(String[] args) {

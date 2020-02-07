@@ -246,7 +246,7 @@ Concrete strategies not only perform the actual payment but also alter the behav
 
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayStrategy-java)**strategies/PayStrategy.java:**  Common interface of payment methods
 ```java
-package refactoring_guru.strategy.example.strategies;
+package algamza.strategy.example.strategies;
 
 /**
  * Common interface for all strategies.
@@ -258,7 +258,7 @@ public interface PayStrategy {
 ``
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayByPayPal-java)**strategies/PayByPayPal.java:**  Payment via PayPal
 ```java
-package refactoring_guru.strategy.example.strategies;
+package algamza.strategy.example.strategies;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -328,7 +328,7 @@ public class PayByPayPal implements PayStrategy {
 ```
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-PayByCreditCard-java)**strategies/PayByCreditCard.java:**  Payment via credit card
 ```java
-package refactoring_guru.strategy.example.strategies;
+package algamza.strategy.example.strategies;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -383,7 +383,7 @@ public class PayByCreditCard implements PayStrategy {
 ```
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--strategies-CreditCard-java)**strategies/CreditCard.java:**  A credit card class
 ```java
-package refactoring_guru.strategy.example.strategies;
+package algamza.strategy.example.strategies;
 
 /**
  * Dummy credit card class.
@@ -412,9 +412,9 @@ public class CreditCard {
 ```
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--order-Order-java)**order/Order.java:**  Order class
 ```java
-package refactoring_guru.strategy.example.order;
+package algamza.strategy.example.order;
 
-import refactoring_guru.strategy.example.strategies.PayStrategy;
+import algamza.strategy.example.strategies.PayStrategy;
 
 /**
  * Order class. Doesn't know the concrete payment method (strategy) user has
@@ -449,12 +449,12 @@ public class Order {
 ```
 #### [](https://algamza.github.io/2020-02-06/Stategy-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.strategy.example;
+package algamza.strategy.example;
 
-import refactoring_guru.strategy.example.order.Order;
-import refactoring_guru.strategy.example.strategies.PayByCreditCard;
-import refactoring_guru.strategy.example.strategies.PayByPayPal;
-import refactoring_guru.strategy.example.strategies.PayStrategy;
+import algamza.strategy.example.order.Order;
+import algamza.strategy.example.strategies.PayByCreditCard;
+import algamza.strategy.example.strategies.PayByPayPal;
+import algamza.strategy.example.strategies.PayStrategy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

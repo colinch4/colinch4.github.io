@@ -354,9 +354,9 @@ Now, to perform the undo operation, the application takes the last executed comm
 
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-Command-java)**commands/Command.java:**  Abstract base command
 ```java
-package refactoring_guru.command.example.commands;
+package algamza.command.example.commands;
 
-import refactoring_guru.command.example.editor.Editor;
+import algamza.command.example.editor.Editor;
 
 public abstract class Command {
     public Editor editor;
@@ -379,9 +379,9 @@ public abstract class Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CopyCommand-java)**commands/CopyCommand.java:**  Copy selected text to clipboard
 ```java
-package refactoring_guru.command.example.commands;
+package algamza.command.example.commands;
 
-import refactoring_guru.command.example.editor.Editor;
+import algamza.command.example.editor.Editor;
 
 public class CopyCommand extends Command {
 
@@ -398,9 +398,9 @@ public class CopyCommand extends Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-PasteCommand-java)**commands/PasteCommand.java:**  Paste text from clipboard
 ```java
-package refactoring_guru.command.example.commands;
+package algamza.command.example.commands;
 
-import refactoring_guru.command.example.editor.Editor;
+import algamza.command.example.editor.Editor;
 
 public class PasteCommand extends Command {
 
@@ -420,9 +420,9 @@ public class PasteCommand extends Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CutCommand-java)**commands/CutCommand.java:**  Cut text to clipboard
 ```java
-package refactoring_guru.command.example.commands;
+package algamza.command.example.commands;
 
-import refactoring_guru.command.example.editor.Editor;
+import algamza.command.example.editor.Editor;
 
 public class CutCommand extends Command {
 
@@ -450,7 +450,7 @@ public class CutCommand extends Command {
 ```
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--commands-CommandHistory-java)**commands/CommandHistory.java:**  Command history
 ```java
-package refactoring_guru.command.example.commands;
+package algamza.command.example.commands;
 
 import java.util.Stack;
 
@@ -472,9 +472,9 @@ public class CommandHistory {
 
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  GUI of text editor
 ```java
-package refactoring_guru.command.example.editor;
+package algamza.command.example.editor;
 
-import refactoring_guru.command.example.commands.*;
+import algamza.command.example.commands.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -553,9 +553,9 @@ public class Editor {
 ```
 #### [](https://algamza.github.io/2020-02-06/Command-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.command.example;
+package algamza.command.example;
 
-import refactoring_guru.command.example.editor.Editor;
+import algamza.command.example.editor.Editor;
 
 public class Demo {
     public static void main(String[] args) {

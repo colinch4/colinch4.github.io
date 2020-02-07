@@ -194,7 +194,7 @@ It’s pretty easy to implement a sloppy Singleton. You just need to hide constr
 
 #### [](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0--Singleton-java)**Singleton.java:**  Singleton
 ```java
-package refactoring_guru.singleton.example.non_thread_safe;
+package algamza.singleton.example.non_thread_safe;
 
 public final class Singleton {
     private static Singleton instance;
@@ -220,7 +220,7 @@ public final class Singleton {
 ```
 #### [](https://algamza.github.io/2020-02-06/Singleton-Design-Pattern/java/example#example-0--DemoSingleThread-java)**DemoSingleThread.java:**  Client code
 ```java
-package refactoring_guru.singleton.example.non_thread_safe;
+package algamza.singleton.example.non_thread_safe;
 
 public class DemoSingleThread {
     public static void main(String[] args) {

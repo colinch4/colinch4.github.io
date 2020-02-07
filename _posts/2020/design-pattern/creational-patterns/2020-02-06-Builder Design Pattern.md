@@ -351,13 +351,13 @@ The end result is retrieved from the builder object because the director can’t
 
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-Builder-java)**builders/Builder.java:**  Common builder interface
 ```java
-package refactoring_guru.builder.example.builders;
+package algamza.builder.example.builders;
 
-import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.cars.Type;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Builder interface defines all possible ways to configure a product.
@@ -373,14 +373,14 @@ public interface Builder {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-CarBuilder-java)**builders/CarBuilder.java:**  Builder of car
 ```java
-package refactoring_guru.builder.example.builders;
+package algamza.builder.example.builders;
 
-import refactoring_guru.builder.example.cars.Car;
-import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.cars.Car;
+import algamza.builder.example.cars.Type;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Concrete builders implement steps defined in the common interface.
@@ -430,14 +430,14 @@ public class CarBuilder implements Builder {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--builders-CarManualBuilder-java)**builders/CarManualBuilder.java:**  Builder of a car manual
 ```java
-package refactoring_guru.builder.example.builders;
+package algamza.builder.example.builders;
 
-import refactoring_guru.builder.example.cars.Manual;
-import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.cars.Manual;
+import algamza.builder.example.cars.Type;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Unlike other creational patterns, Builder can construct unrelated products,
@@ -494,12 +494,12 @@ public class CarManualBuilder implements Builder{
 
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Car-java)**cars/Car.java:**  Car product
 ```java
-package refactoring_guru.builder.example.cars;
+package algamza.builder.example.cars;
 
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Car is a product class.
@@ -559,12 +559,12 @@ public class Car {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Manual-java)**cars/Manual.java:**  Manual product
 ```java
-package refactoring_guru.builder.example.cars;
+package algamza.builder.example.cars;
 
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Car manual is another product. Note that it does not have the same ancestor
@@ -610,7 +610,7 @@ public class Manual {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--cars-Type-java)**cars/Type.java**
 ```java
-package refactoring_guru.builder.example.cars;
+package algamza.builder.example.cars;
 
 public enum Type {
     CITY_CAR, SPORTS_CAR, SUV
@@ -620,7 +620,7 @@ public enum Type {
 
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-Engine-java)**components/Engine.java:**  Product feature 1
 ```java
-package refactoring_guru.builder.example.components;
+package algamza.builder.example.components;
 
 /**
  * Just another feature of a car.
@@ -666,7 +666,7 @@ public class Engine {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-GPSNavigator-java)**components/GPSNavigator.java:**  Product feature 2
 ```java
-package refactoring_guru.builder.example.components;
+package algamza.builder.example.components;
 
 /**
  * Just another feature of a car.
@@ -689,7 +689,7 @@ public class GPSNavigator {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-Transmission-java)**components/Transmission.java:**  Product feature 3
 ```java
-package refactoring_guru.builder.example.components;
+package algamza.builder.example.components;
 
 /**
  * Just another feature of a car.
@@ -700,9 +700,9 @@ public enum Transmission {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--components-TripComputer-java)**components/TripComputer.java:**  Product feature 4
 ```java
-package refactoring_guru.builder.example.components;
+package algamza.builder.example.components;
 
-import refactoring_guru.builder.example.cars.Car;
+import algamza.builder.example.cars.Car;
 
 /**
  * Just another feature of a car.
@@ -732,14 +732,14 @@ public class TripComputer {
 
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--director-Director-java)**director/Director.java:**  Director controls builders
 ```java
-package refactoring_guru.builder.example.director;
+package algamza.builder.example.director;
 
-import refactoring_guru.builder.example.builders.Builder;
-import refactoring_guru.builder.example.cars.Type;
-import refactoring_guru.builder.example.components.Engine;
-import refactoring_guru.builder.example.components.GPSNavigator;
-import refactoring_guru.builder.example.components.Transmission;
-import refactoring_guru.builder.example.components.TripComputer;
+import algamza.builder.example.builders.Builder;
+import algamza.builder.example.cars.Type;
+import algamza.builder.example.components.Engine;
+import algamza.builder.example.components.GPSNavigator;
+import algamza.builder.example.components.Transmission;
+import algamza.builder.example.components.TripComputer;
 
 /**
  * Director defines the order of building steps. It works with a builder object
@@ -777,13 +777,13 @@ public class Director {
 ```
 #### [](https://algamza.github.io/2020-02-06/Builder-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.builder.example;
+package algamza.builder.example;
 
-import refactoring_guru.builder.example.builders.CarBuilder;
-import refactoring_guru.builder.example.builders.CarManualBuilder;
-import refactoring_guru.builder.example.cars.Car;
-import refactoring_guru.builder.example.cars.Manual;
-import refactoring_guru.builder.example.director.Director;
+import algamza.builder.example.builders.CarBuilder;
+import algamza.builder.example.builders.CarManualBuilder;
+import algamza.builder.example.cars.Car;
+import algamza.builder.example.cars.Manual;
+import algamza.builder.example.director.Director;
 
 /**
  * Demo class. Everything comes together here.

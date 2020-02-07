@@ -250,7 +250,7 @@ The Bridge pattern allows changing or even creating new classes without touching
 
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Device-java)**devices/Device.java:**  Common interface of all devices
 ```java
-package refactoring_guru.bridge.example.devices;
+package algamza.bridge.example.devices;
 
 public interface Device {
     boolean isEnabled();
@@ -272,7 +272,7 @@ public interface Device {
 ```
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Radio-java)**devices/Radio.java:**  Radio
 ```java
-package refactoring_guru.bridge.example.devices;
+package algamza.bridge.example.devices;
 
 public class Radio implements Device {
     private boolean on = false;
@@ -333,7 +333,7 @@ public class Radio implements Device {
 ```
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--devices-Tv-java)**devices/Tv.java:**  TV
 ```java
-package refactoring_guru.bridge.example.devices;
+package algamza.bridge.example.devices;
 
 public class Tv implements Device {
     private boolean on = false;
@@ -396,7 +396,7 @@ public class Tv implements Device {
 
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-Remote-java)**remotes/Remote.java:**  Common interface for all remotes
 ```java
-package refactoring_guru.bridge.example.remotes;
+package algamza.bridge.example.remotes;
 
 public interface Remote {
     void power();
@@ -412,9 +412,9 @@ public interface Remote {
 ```
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-BasicRemote-java)**remotes/BasicRemote.java:**  Basic remote control
 ```java
-package refactoring_guru.bridge.example.remotes;
+package algamza.bridge.example.remotes;
 
-import refactoring_guru.bridge.example.devices.Device;
+import algamza.bridge.example.devices.Device;
 
 public class BasicRemote implements Remote {
     protected Device device;
@@ -462,9 +462,9 @@ public class BasicRemote implements Remote {
 ```
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--remotes-AdvancedRemote-java)**remotes/AdvancedRemote.java:**  Advanced remote control
 ```java
-package refactoring_guru.bridge.example.remotes;
+package algamza.bridge.example.remotes;
 
-import refactoring_guru.bridge.example.devices.Device;
+import algamza.bridge.example.devices.Device;
 
 public class AdvancedRemote extends BasicRemote {
 
@@ -480,13 +480,13 @@ public class AdvancedRemote extends BasicRemote {
 ```
 #### [](https://algamza.github.io/2020-02-06/Bridge-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.bridge.example;
+package algamza.bridge.example;
 
-import refactoring_guru.bridge.example.devices.Device;
-import refactoring_guru.bridge.example.devices.Radio;
-import refactoring_guru.bridge.example.devices.Tv;
-import refactoring_guru.bridge.example.remotes.AdvancedRemote;
-import refactoring_guru.bridge.example.remotes.BasicRemote;
+import algamza.bridge.example.devices.Device;
+import algamza.bridge.example.devices.Radio;
+import algamza.bridge.example.devices.Tv;
+import algamza.bridge.example.remotes.AdvancedRemote;
+import algamza.bridge.example.remotes.BasicRemote;
 
 public class Demo {
     public static void main(String[] args) {

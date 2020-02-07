@@ -234,7 +234,7 @@ This simple example shows how an Adapter can make incompatible objects work toge
 
 #### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--round-RoundHole-java)**round/RoundHole.java:**  Round holes
 ```java
-package refactoring_guru.adapter.example.round;
+package algamza.adapter.example.round;
 
 /**
  * RoundHoles are compatible with RoundPegs.
@@ -259,7 +259,7 @@ public class RoundHole {
 ```
 #### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--round-RoundPeg-java)**round/RoundPeg.java:**  Round pegs
 ```java
-package refactoring_guru.adapter.example.round;
+package algamza.adapter.example.round;
 
 /**
  * RoundPegs are compatible with RoundHoles.
@@ -282,7 +282,7 @@ public class RoundPeg {
 
 #### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--square-SquarePeg-java)**square/SquarePeg.java:**  Square pegs
 ```java
-package refactoring_guru.adapter.example.square;
+package algamza.adapter.example.square;
 
 /**
  * SquarePegs are not compatible with RoundHoles (they were implemented by
@@ -310,10 +310,10 @@ public class SquarePeg {
 
 #### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--adapters-SquarePegAdapter-java)**adapters/SquarePegAdapter.java:**  Adapter of square pegs to round holes
 ```java
-package refactoring_guru.adapter.example.adapters;
+package algamza.adapter.example.adapters;
 
-import refactoring_guru.adapter.example.round.RoundPeg;
-import refactoring_guru.adapter.example.square.SquarePeg;
+import algamza.adapter.example.round.RoundPeg;
+import algamza.adapter.example.square.SquarePeg;
 
 /**
  * Adapter allows fitting square pegs into round holes.
@@ -336,12 +336,12 @@ public class SquarePegAdapter extends RoundPeg {
 ```
 #### [](https://algamza.github.io/2020-02-06/Adapter-Design-Pattern/java/example#example-0--Demo-java)**Demo.java:**  Client code
 ```java
-package refactoring_guru.adapter.example;
+package algamza.adapter.example;
 
-import refactoring_guru.adapter.example.adapters.SquarePegAdapter;
-import refactoring_guru.adapter.example.round.RoundHole;
-import refactoring_guru.adapter.example.round.RoundPeg;
-import refactoring_guru.adapter.example.square.SquarePeg;
+import algamza.adapter.example.adapters.SquarePegAdapter;
+import algamza.adapter.example.round.RoundHole;
+import algamza.adapter.example.round.RoundPeg;
+import algamza.adapter.example.square.SquarePeg;
 
 /**
  * Somewhere in client code...
