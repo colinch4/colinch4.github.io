@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Mediator"
+description: "Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object."
+date: 2020-02-06 14:04
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,246 +10,203 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
+#### Also known as:  Intermediary,­Controller
 
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Mediator**  is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Mediator design pattern](https://refactoring.guru/images/patterns/content/mediator/mediator.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+Say you have a dialog for creating and editing customer profiles. It consists of various form controls such as text fields, checkboxes, buttons, etc.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+![Chaotic relations between elements of the user interface](https://refactoring.guru/images/patterns/diagrams/mediator/problem1.png)
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+Relations between elements of the user interface can become chaotic as the application evolves.
 
-The request must pass a series of checks before the ordering system itself can handle it.
+Some of the form elements may interact with others. For instance, selecting the “I have a dog” checkbox may reveal a hidden text field for entering the dog’s name. Another example is the submit button that has to validate values of all fields before saving the data.
 
-During the next few months, you implemented several more of those sequential checks.
+![Elements of the UI are interdependent](https://refactoring.guru/images/patterns/diagrams/mediator/problem2.png)
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
+Elements can have lots of relations with other elements. Hence, changes to some elements may affect the others.
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
-
-The bigger the code grew, the messier it became.
-
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
-
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+By having this logic implemented directly inside the code of the form elements you make these elements’ classes much harder to reuse in other forms of the app. For example, you won’t be able to use that checkbox class inside another form, because it’s coupled to the dog’s text field. You can use either all the classes involved in rendering the profile form, or none at all.
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+The Mediator pattern suggests that you should cease all direct communication between the components which you want to make independent of each other. Instead, these components must collaborate indirectly, by calling a special mediator object that redirects the calls to appropriate components. As a result, the components depend only on a single mediator class instead of being coupled to dozens of their colleagues.
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+In our example with the profile editing form, the dialog class itself may act as the mediator. Most likely, the dialog class is already aware of all of its sub-elements, so you won’t even need to introduce new dependencies into this class.
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+![UI elements should communicate via the mediator.](https://refactoring.guru/images/patterns/diagrams/mediator/solution1.png)
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+UI elements should communicate indirectly, via the mediator object.
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+The most significant change happens to the actual form elements. Let’s consider the submit button. Previously, each time a user clicked the button, it had to validate the values of all individual form elements. Now its single job is to notify the dialog about the click. Upon receiving this notification, the dialog itself performs the validations or passes the task to the individual elements. Thus, instead of being tied to a dozen form elements, the button is only dependent on the dialog class.
 
-Handlers are lined up one by one, forming a chain.
+You can go further and make the dependency even looser by extracting the common interface for all types of dialogs. The interface would declare the notification method which all form elements can use to notify the dialog about events happening to those elements. Thus, our submit button should now be able to work with any dialog that implements that interface.
 
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
-
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
-
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
+This way, the Mediator pattern lets you encapsulate a complex web of relations between various objects inside a single mediator object. The fewer dependencies a class has, the easier it becomes to modify, extend or reuse that class.
 
 ## Real-World Analogy
 
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
+![Air traffic control tower](https://refactoring.guru/images/patterns/diagrams/mediator/live-example.png)
 
-A call to tech support can go through multiple operators.
+Aircraft pilots don’t talk to each other directly when deciding who gets to land their plane next. All communication goes through the control tower.
 
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
+Pilots of aircraft that approach or depart the airport control area don’t communicate directly with each other. Instead, they speak to an air traffic controller, who sits in a tall tower somewhere near the airstrip. Without the air traffic controller, pilots would need to be aware of every plane in the vicinity of the airport, discussing landing priorities with a committee of dozens of other pilots. That would probably skyrocket the airplane crash statistics.
 
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
-
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
-
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+The tower doesn’t need to control the whole flight. It exists only to enforce constraints in the terminal area because the number of involved actors there might be overwhelming to a pilot.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+![Structure of the Mediator design pattern](https://refactoring.guru/images/patterns/diagrams/mediator/structure.png)
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1.  **Components**  are various classes that contain some business logic. Each component has a reference to a mediator, declared with the type of the mediator interface. The component isn’t aware of the actual class of the mediator, so you can reuse the component in other programs by linking it to a different mediator.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
+2.  The  **Mediator**  interface declares methods of communication with components, which usually include just a single notification method. Components may pass any context as arguments of this method, including their own objects, but only in such a way that no coupling occurs between a receiving component and the sender’s class.
     
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
+3.  **Concrete Mediators**  encapsulate relations between various components. Concrete mediators often keep references to all components they manage and sometimes even manage their lifecycle.
     
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+4.  Components must not be aware of other components. If something important happens within or to a component, it must only notify the mediator. When the mediator receives the notification, it can easily identify the sender, which might be just enough to decide what component should be triggered in return.
     
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
-    
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+    From a component’s perspective, it all looks like a total black box. The sender doesn’t know who’ll end up handling its request, and the receiver doesn’t know who sent the request in the first place.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
+In this example, the  **Mediator**  pattern helps you eliminate mutual dependencies between various UI classes: buttons, checkboxes and text labels.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
+![Structure of the Mediator pattern example](https://refactoring.guru/images/patterns/diagrams/mediator/example.png)
 
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
+Structure of the UI dialog classes.
 
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
+An element, triggered by a user, doesn’t communicate with other elements directly, even if it looks like it’s supposed to. Instead, the element only needs to let its mediator know about the event, passing any contextual info along with that notification.
 
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
+In this example, the whole authentication dialog acts as the mediator. It knows how concrete elements are supposed to collaborate and facilitates their indirect communication. Upon receiving a notification about an event, the dialog decides what element should address the event and redirects the call accordingly.
 
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The mediator interface declares a method used by components
+// to notify the mediator about various events. The mediator may
+// react to these events and pass the execution to other
+// components.
+interface Mediator is
+    method notify(sender: Component, event: string)
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
+// The concrete mediator class. The intertwined web of
+// connections between individual components has been untangled
+// and moved into the mediator.
+class AuthenticationDialog implements Mediator is
+    private field title: string
+    private field loginOrRegisterChkBx: Checkbox
+    private field loginUsername, loginPassword: Textbox
+    private field registrationUsername, registrationPassword
+    private field registrationEmail: Textbox
+    private field okBtn, cancelBtn: Button
 
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
+    constructor AuthenticationDialog() is
+        // Create all component objects and pass the current
+        // mediator into their constructors to establish links.
 
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
-        else
-            container.showHelp()
+    // When something happens with a component, it notifies the
+    // mediator. Upon receiving a notification, the mediator may
+    // do something on its own or pass the request to another
+    // component.
+    method notify(sender, event) is
+        if (sender == loginOrRegisterChkBx and event == "check")
+            if (loginOrRegisterChkBx.checked)
+                title = "Log  in"
+                // 1. Show login form components.
+                // 2. Hide registration form components.
+            else
+                title = "Register"
+                // 1. Show registration form components.
+                // 2. Hide login form components
 
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
+        if (sender == okBtn && event == "click")
+            if (loginOrRegister.checked)
+                // Try to find a user using login credentials.
+                if (!found)
+                    // Show an error message above the login
+                    // field.
+            else
+                // 1. Create a user account using data from the
+                // registration fields.
+                // 2. Log that user in.
+                // ...
 
-    method add(child) is
-        children.add(child)
-        child.container = this
+// Components communicate with a mediator using the mediator
+// interface. Thanks to that, you can use the same components in
+// other contexts by linking them with different mediator
+// objects.
+class Component is
+    field dialog: Mediator
 
-// Primitive components may be fine with default help
-// implementation...
+    constructor Component(dialog) is
+        this.dialog = dialog
+
+    method click() is
+        dialog.notify(this, "click")
+
+    method keypress() is
+        dialog.notify(this, "keypress")
+
+// Concrete components don't talk to each other. They have only
+// one communication channel, which is sending notifications to
+// the mediator.
 class Button extends Component is
     // ...
 
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
+class Textbox extends Component is
+    // ...
 
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
-
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
-
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
-
-// Client code.
-class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
-
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
+class Checkbox extends Component is
+    method check() is
+        dialog.notify(this, "check")
+    // ...
 ```
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Mediator pattern when it’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The pattern lets you extract all the relationships between classes into a separate class, isolating any changes to a specific component from the rest of the components.
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the pattern when you can’t reuse a component in a different program because it’s too dependent on other components.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
+After you apply the Mediator, individual components become unaware of the other components. They could still communicate with each other, albeit indirectly, through a mediator object. To reuse a component in a different app, you need to provide it with a new mediator class.
 
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
+Use the Mediator when you find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
 
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+Since all relations between components are contained within the mediator, it’s easy to define entirely new ways for these components to collaborate by introducing new mediator classes, without having to change the components themselves.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  Identify a group of tightly coupled classes which would benefit from being more independent (e.g., for easier maintenance or simpler reuse of these classes).
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Declare the mediator interface and describe the desired communication protocol between mediators and various components. In most cases, a single method for receiving notifications from components is sufficient.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+    This interface is crucial when you want to reuse component classes in different contexts. As long as the component works with its mediator via the generic interface, you can link the component with a different implementation of the mediator.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+3.  Implement the concrete mediator class. This class would benefit from storing references to all of the components it manages.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a  [factory](https://refactoring.guru/design-patterns/abstract-factory)  or a  [facade](https://refactoring.guru/design-patterns/facade).
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
+5.  Components should store a reference to the mediator object. The connection is usually established in the component’s constructor, where a mediator object is passed as an argument.
     
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
+6.  Change the components’ code so that they call the mediator’s notification method instead of methods on other components. Extract the code that involves calling other components into the mediator class. Execute this code whenever the mediator receives notifications from that component.
     
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
-    
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
-    
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   _Single Responsibility Principle_. You can extract the communications between various components into a single place, making it easier to comprehend and maintain.
+-   _Open/Closed Principle_. You can introduce new mediators without having to change the actual components.
+-   You can reduce coupling between various components of a program.
+-   You can reuse individual components more easily.
 
--   Some requests may end up unhandled.
+-   Over time a mediator can evolve into a  [God Object](https://refactoring.guru/antipatterns/god-object).
 
 ## Relations with Other Patterns
 
@@ -259,21 +216,26 @@ If you provide setters for a reference field inside the handler classes, you’l
     -   _Command_  establishes unidirectional connections between senders and receivers.
     -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
     -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   [Facade](https://refactoring.guru/design-patterns/facade)  and  [Mediator](https://refactoring.guru/design-patterns/mediator)  have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+    -   _Facade_  defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
+    -   _Mediator_  centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
+-   The difference between  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
     
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
+    The primary goal of  _Mediator_  is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of  _Observer_  is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
     
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
+    There’s a popular implementation of the Mediator pattern that relies on  _Observer_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When  _Mediator_  is implemented this way, it may look very similar to  _Observer_.
     
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+    When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble  _Observer_  but will still be an instance of the Mediator pattern.
+    
+    Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example
+**Mediator**  is a behavioral design pattern that reduces coupling between components of a program by making them communicate indirectly, through a special mediator object.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+The Mediator makes it easy to modify, extend and reuse individual components because they’re no longer dependent on the dozens of other classes.
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Mediator](https://refactoring.guru/design-patterns/mediator)
 
 ## Usage of the pattern in Java
 
@@ -281,262 +243,646 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
-
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+**Usage examples:**  The most popular usage of the Mediator pattern in Java code is facilitating communications between GUI components of an app. The synonym of the Mediator is the Controller part of MVC pattern.
 
 Here are some examples of the pattern in core Java libraries:
 
--   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+-   [`java.util.Timer`](http://docs.oracle.com/javase/8/docs/api/java/util/Timer.html)  (all  `scheduleXXX()`  methods)
+-   [`java.util.concurrent.Executor#execute()`](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html#execute-java.lang.Runnable-)
+-   [`java.util.concurrent.ExecutorService`](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html)  (`invokeXXX()`  and  `submit()`  methods)
+-   [`java.util.concurrent.ScheduledExecutorService`](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html)  (all  `scheduleXXX()`  methods)
+-   [`java.lang.reflect.Method#invoke()`](http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html#invoke-java.lang.Object-java.lang.Object...-)
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+## Notes app
 
-## Filtering access
+This example shows how to organize lots of GUI elements so that they cooperate with the help of a mediator but don’t depend on each other.
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+## [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components)**components:**  Colleague classes
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
-
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Component-java)**components/Component.java**
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
 
 /**
- * Base middleware class.
+ * Common component interface.
  */
-public abstract class Middleware {
-    private Middleware next;
+public interface Component {
+    void setMediator(Mediator mediator);
+    String getName();
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-AddButton-java)**components/AddButton.java**
+```java
+package refactoring_guru.mediator.example.components;
 
-    /**
-     * Builds chains of middleware objects.
-     */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
+import refactoring_guru.mediator.example.mediator.Mediator;
+import refactoring_guru.mediator.example.mediator.Note;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+public class AddButton extends JButton implements Component {
+    private Mediator mediator;
+
+    public AddButton() {
+        super("Add");
     }
 
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
 
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
-        }
-        return next.check(email, password);
+    @Override
+    protected void fireActionPerformed(ActionEvent actionEvent) {
+        mediator.addNewNote(new Note());
+    }
+
+    @Override
+    public String getName() {
+        return "AddButton";
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-DeleteButton-java)**components/DeleteButton.java**
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 /**
- * ConcreteHandler. Checks whether there are too many failed login requests.
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
  */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
+public class DeleteButton extends JButton  implements Component {
+    private Mediator mediator;
 
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
+    public DeleteButton() {
+        super("Del");
+    }
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    @Override
+    protected void fireActionPerformed(ActionEvent actionEvent) {
+        mediator.deleteNote();
+    }
+
+    @Override
+    public String getName() {
+        return "DelButton";
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Filter-java)**components/Filter.java**
+```java
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+import refactoring_guru.mediator.example.mediator.Note;
+
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+public class Filter extends JTextField implements Component {
+    private Mediator mediator;
+    private ListModel listModel;
+
+    public Filter() {}
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    @Override
+    protected void processComponentKeyEvent(KeyEvent keyEvent) {
+        String start = getText();
+        searchElements(start);
+    }
+
+    public void setList(ListModel listModel) {
+        this.listModel = listModel;
+    }
+
+    private void searchElements(String s) {
+        if (listModel == null) {
+            return;
+        }
+
+        if (s.equals("")) {
+            mediator.setElementsList(listModel);
+            return;
+        }
+
+        ArrayList<Note> notes = new ArrayList<>();
+        for (int i = 0; i < listModel.getSize(); i++) {
+            notes.add((Note) listModel.getElementAt(i));
+        }
+        DefaultListModel<Note> listModel = new DefaultListModel<>();
+        for (Note note : notes) {
+            if (note.getName().contains(s)) {
+                listModel.addElement(note);
+            }
+        }
+        mediator.setElementsList(listModel);
+    }
+
+    @Override
+    public String getName() {
+        return "Filter";
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-List-java)**components/List.java**
+```java
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+import refactoring_guru.mediator.example.mediator.Note;
+
+import javax.swing.*;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+@SuppressWarnings("unchecked")
+public class List extends JList implements Component {
+    private Mediator mediator;
+    private final DefaultListModel LIST_MODEL;
+
+    public List(DefaultListModel listModel) {
+        super(listModel);
+        this.LIST_MODEL = listModel;
+        setModel(listModel);
+        this.setLayoutOrientation(JList.VERTICAL);
+        Thread thread = new Thread(new Hide(this));
+        thread.start();
+    }
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    public void addElement(Note note) {
+        LIST_MODEL.addElement(note);
+        int index = LIST_MODEL.size() - 1;
+        setSelectedIndex(index);
+        ensureIndexIsVisible(index);
+        mediator.sendToFilter(LIST_MODEL);
+    }
+
+    public void deleteElement() {
+        int index = this.getSelectedIndex();
+        try {
+            LIST_MODEL.remove(index);
+            mediator.sendToFilter(LIST_MODEL);
+        } catch (ArrayIndexOutOfBoundsException ignored) {}
+    }
+
+    public Note getCurrentElement() {
+        return (Note)getSelectedValue();
+    }
+
+    @Override
+    public String getName() {
+        return "List";
+    }
+
+    private class Hide implements Runnable {
+        private List list;
+
+        Hide(List list) {
+            this.list = list;
+        }
+
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+                if (list.isSelectionEmpty()) {
+                    mediator.hideElements(true);
+                } else {
+                    mediator.hideElements(false);
+                }
+            }
+        }
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-SaveButton-java)**components/SaveButton.java**
+```java
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+public class SaveButton extends JButton implements Component {
+    private Mediator mediator;
+
+    public SaveButton() {
+        super("Save");
+    }
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    @Override
+    protected void fireActionPerformed(ActionEvent actionEvent) {
+        mediator.saveChanges();
+    }
+
+    @Override
+    public String getName() {
+        return "SaveButton";
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-TextBox-java)**components/TextBox.java**
+```java
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+public class TextBox extends JTextArea implements Component {
+    private Mediator mediator;
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    @Override
+    protected void processComponentKeyEvent(KeyEvent keyEvent) {
+        mediator.markNote();
+    }
+
+    @Override
+    public String getName() {
+        return "TextBox";
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--components-Title-java)**components/Title.java**
+```java
+package refactoring_guru.mediator.example.components;
+
+import refactoring_guru.mediator.example.mediator.Mediator;
+
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+
+/**
+ * Concrete components don't talk with each other. They have only one
+ * communication channel–sending requests to the mediator.
+ */
+public class Title extends JTextField implements Component {
+    private Mediator mediator;
+
+    @Override
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    @Override
+    protected void processComponentKeyEvent(KeyEvent keyEvent) {
+        mediator.markNote();
+    }
+
+    @Override
+    public String getName() {
+        return "Title";
+    }
+}
+```
+## [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator)**mediator**
+
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Mediator-java)**mediator/Mediator.java:**  Defines common mediator interface
+```java
+package refactoring_guru.mediator.example.mediator;
+
+import refactoring_guru.mediator.example.components.Component;
+
+import javax.swing.*;
+
+/**
+ * Common mediator interface.
+ */
+public interface Mediator {
+    void addNewNote(Note note);
+    void deleteNote();
+    void getInfoFromList(Note note);
+    void saveChanges();
+    void markNote();
+    void clear();
+    void sendToFilter(ListModel listModel);
+    void setElementsList(ListModel list);
+    void registerComponent(Component component);
+    void hideElements(boolean flag);
+    void createGUI();
+}
+```
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Editor-java)**mediator/Editor.java:**  Concrete mediator
+```java
+package refactoring_guru.mediator.example.mediator;
+
+import refactoring_guru.mediator.example.components.*;
+import refactoring_guru.mediator.example.components.Component;
+import refactoring_guru.mediator.example.components.List;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+import java.awt.*;
+
+/**
+ * Concrete mediator. All chaotic communications between concrete components
+ * have been extracted to the mediator. Now components only talk with the
+ * mediator, which knows who has to handle a request.
+ */
+public class Editor implements Mediator {
+    private Title title;
+    private TextBox textBox;
+    private AddButton add;
+    private DeleteButton del;
+    private SaveButton save;
+    private List list;
+    private Filter filter;
+
+    private JLabel titleLabel = new JLabel("Title:");
+    private JLabel textLabel = new JLabel("Text:");
+    private JLabel label = new JLabel("Add or select existing note to proceed...");
+  
+    /**
+     * Here the registration of components by the mediator.
+     */
+    @Override
+    public void registerComponent(Component component) {
+        component.setMediator(this);
+        switch (component.getName()) {
+            case "AddButton":
+                add = (AddButton)component;
+                break;
+            case "DelButton":
+                del = (DeleteButton)component;
+                break;
+            case "Filter":
+                filter = (Filter)component;
+                break;
+            case "List":
+                list = (List)component;
+                this.list.addListSelectionListener(listSelectionEvent -> {
+                    Note note = (Note)list.getSelectedValue();
+                    if (note != null) {
+                        getInfoFromList(note);
+                    } else {
+                        clear();
+                    }
+                });
+                break;
+            case "SaveButton":
+                save = (SaveButton)component;
+                break;
+            case "TextBox":
+                textBox = (TextBox)component;
+                break;
+            case "Title":
+                title = (Title)component;
+                break;
+        }
     }
 
     /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
+     * Various methods to handle requests from particular components.
      */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
-        }
+    @Override
+    public void addNewNote(Note note) {
+        title.setText("");
+        textBox.setText("");
+        list.addElement(note);
+    }
 
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
-        }
-        return checkNext(email, password);
+    @Override
+    public void deleteNote() {
+        list.deleteElement();
+    }
+
+    @Override
+    public void getInfoFromList(Note note) {
+        title.setText(note.getName().replace('*', ' '));
+        textBox.setText(note.getText());
+    }
+
+    @Override
+    public void saveChanges() {
+        try {
+            Note note = (Note) list.getSelectedValue();
+            note.setName(title.getText());
+            note.setText(textBox.getText());
+            list.repaint();
+        } catch (NullPointerException ignored) {}
+    }
+
+    @Override
+    public void markNote() {
+        try {
+            Note note = list.getCurrentElement();
+            String name = note.getName();
+            if (!name.endsWith("*")) {
+                note.setName(note.getName() + "*");
+            }
+            list.repaint();
+        } catch (NullPointerException ignored) {}
+    }
+
+    @Override
+    public void clear() {
+        title.setText("");
+        textBox.setText("");
+    }
+
+    @Override
+    public void sendToFilter(ListModel listModel) {
+        filter.setList(listModel);
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public void setElementsList(ListModel list) {
+        this.list.setModel(list);
+        this.list.repaint();
+    }
+
+    @Override
+    public void hideElements(boolean flag) {
+        titleLabel.setVisible(!flag);
+        textLabel.setVisible(!flag);
+        title.setVisible(!flag);
+        textBox.setVisible(!flag);
+        save.setVisible(!flag);
+        label.setVisible(flag);
+    }
+
+    @Override
+    public void createGUI() {
+        JFrame notes = new JFrame("Notes");
+        notes.setSize(960, 600);
+        notes.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        JPanel left = new JPanel();
+        left.setBorder(new LineBorder(Color.BLACK));
+        left.setSize(320, 600);
+        left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
+        JPanel filterPanel = new JPanel();
+        filterPanel.add(new JLabel("Filter:"));
+        filter.setColumns(20);
+        filterPanel.add(filter);
+        filterPanel.setPreferredSize(new Dimension(280, 40));
+        JPanel listPanel = new JPanel();
+        list.setFixedCellWidth(260);
+        listPanel.setSize(320, 470);
+        JScrollPane scrollPane = new JScrollPane(list);
+        scrollPane.setPreferredSize(new Dimension(275, 410));
+        listPanel.add(scrollPane);
+        JPanel buttonPanel = new JPanel();
+        add.setPreferredSize(new Dimension(85, 25));
+        buttonPanel.add(add);
+        del.setPreferredSize(new Dimension(85, 25));
+        buttonPanel.add(del);
+        buttonPanel.setLayout(new FlowLayout());
+        left.add(filterPanel);
+        left.add(listPanel);
+        left.add(buttonPanel);
+        JPanel right = new JPanel();
+        right.setLayout(null);
+        right.setSize(640, 600);
+        right.setLocation(320, 0);
+        right.setBorder(new LineBorder(Color.BLACK));
+        titleLabel.setBounds(20, 4, 50, 20);
+        title.setBounds(60, 5, 555, 20);
+        textLabel.setBounds(20, 4, 50, 130);
+        textBox.setBorder(new LineBorder(Color.DARK_GRAY));
+        textBox.setBounds(20, 80, 595, 410);
+        save.setBounds(270, 535, 80, 25);
+        label.setFont(new Font("Verdana", Font.PLAIN, 22));
+        label.setBounds(100, 240, 500, 100);
+        right.add(label);
+        right.add(titleLabel);
+        right.add(title);
+        right.add(textLabel);
+        right.add(textBox);
+        right.add(save);
+        notes.setLayout(null);
+        notes.getContentPane().add(left);
+        notes.getContentPane().add(right);
+        notes.setResizable(false);
+        notes.setLocationRelativeTo(null);
+        notes.setVisible(true);
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Note-java)**mediator/Note.java:**  A note’s class
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+package refactoring_guru.mediator.example.mediator;
 
 /**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
+ * Note class.
  */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
+public class Note {
+    private String name;
+    private String text;
 
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
+    public Note() {
+        name = "New note";
     }
 
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
-            return false;
-        }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
-            return false;
-        }
-        return checkNext(email, password);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.mediator.example;
 
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
-        }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
-    }
-}
-```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
+import refactoring_guru.mediator.example.components.*;
+import refactoring_guru.mediator.example.mediator.Editor;
+import refactoring_guru.mediator.example.mediator.Mediator;
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
-```java
-package refactoring_guru.chain_of_responsibility.example.server;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-
-import java.util.HashMap;
-import java.util.Map;
-
-/**
- * Server class.
- */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
-
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
-    }
-
-    /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
-     */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
-
-            // Do something useful here for authorized users.
-
-            return true;
-        }
-        return false;
-    }
-
-    public void register(String email, String password) {
-        users.put(email, password);
-    }
-
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
-    }
-
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
-```java
-package refactoring_guru.chain_of_responsibility.example;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import javax.swing.*;
 
 /**
  * Demo class. Everything comes together here.
  */
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
+    public static void main(String[] args) {
+        Mediator mediator = new Editor();
 
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
+        mediator.registerComponent(new Title());
+        mediator.registerComponent(new TextBox());
+        mediator.registerComponent(new AddButton());
+        mediator.registerComponent(new DeleteButton());
+        mediator.registerComponent(new SaveButton());
+        mediator.registerComponent(new List(new DefaultListModel()));
+        mediator.registerComponent(new Filter());
 
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
-
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
-    }
-
-    public static void main(String[] args) throws IOException {
-        init();
-
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+        mediator.createGUI();
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
-```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+#### [](https://refactoring.guru/design-patterns/mediator/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Execution result
 
-
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
-```
+![](https://refactoring.guru/images/patterns/examples/java/mediator/OutputDemo.png)

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Strategy"
+description: "Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable."
+date: 2020-02-06 14:08
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,270 +10,210 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
 
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Strategy**  is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Strategy design pattern](https://refactoring.guru/images/patterns/content/strategy/strategy.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+One day you decided to create a navigation app for casual travelers. The app was centered around a beautiful map which helped users quickly orient themselves in any city.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+One of the most requested features for the app was automatic route planning. A user should be able to enter an address and see the fastest route to that destination displayed on the map.
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+The first version of the app could only build the routes over roads. People who traveled by car were bursting with joy. But apparently, not everybody likes to drive on their vacation. So with the next update, you added an option to build walking routes. Right after that, you added another option to let people use public transport in their routes.
 
-The request must pass a series of checks before the ordering system itself can handle it.
+However, that was only the beginning. Later you planned to add route building for cyclists. And even later, another option for building routes through all of a city’s tourist attractions.
 
-During the next few months, you implemented several more of those sequential checks.
+![The code of the navigator became very bloated](https://refactoring.guru/images/patterns/diagrams/strategy/problem.png)
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
+The code of the navigator became bloated.
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
+While from a business perspective the app was a success, the technical part caused you many headaches. Each time you added a new routing algorithm, the main class of the navigator doubled in size. At some point, the beast became too hard to maintain.
 
-The bigger the code grew, the messier it became.
+Any change to one of the algorithms, whether it was a simple bug fix or a slight adjustment of the street score, affected the whole class, increasing the chance of creating an error in already-working code.
 
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
-
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+In addition, teamwork became inefficient. Your teammates, who had been hired right after the successful release, complain that they spend too much time resolving merge conflicts. Implementing a new feature requires you to change the same huge class, conflicting with the code produced by other people.
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+The Strategy pattern suggests that you take a class that does something specific in a lot of different ways and extract all of these algorithms into separate classes called  _strategies_.
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+The original class, called  _context_, must have a field for storing a reference to one of the strategies. The context delegates the work to a linked strategy object instead of executing it on its own.
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+The context isn’t responsible for selecting an appropriate algorithm for the job. Instead, the client passes the desired strategy to the context. In fact, the context doesn’t know much about strategies. It works with all strategies through the same generic interface, which only exposes a single method for triggering the algorithm encapsulated within the selected strategy.
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+This way the context becomes independent of concrete strategies, so you can add new algorithms or modify existing ones without changing the code of the context or other strategies.
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+![Route planning strategies](https://refactoring.guru/images/patterns/diagrams/strategy/solution.png)
 
-Handlers are lined up one by one, forming a chain.
+Route planning strategies.
 
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
+In our navigation app, each routing algorithm can be extracted to its own class with a single  `buildRoute`  method. The method accepts an origin and destination and returns a collection of the route’s checkpoints.
 
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
-
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
+Even though given the same arguments, each routing class might build a different route, the main navigator class doesn’t really care which algorithm is selected since its primary job is to render a set of checkpoints on the map. The class has a method for switching the active routing strategy, so its clients, such as the buttons in the user interface, can replace the currently selected routing behavior with another one.
 
 ## Real-World Analogy
 
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
+![Various transportation strategies](https://refactoring.guru/images/patterns/content/strategy/strategy-comic-1.png)
 
-A call to tech support can go through multiple operators.
+Various strategies for getting to the airport.
 
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
-
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
-
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
-
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+Imagine that you have to get to the airport. You can catch a bus, order a cab, or get on your bicycle. These are your transportation strategies. You can pick one of the strategies depending on factors such as budget or time constraints.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+![Structure of the Strategy design pattern](https://refactoring.guru/images/patterns/diagrams/strategy/structure.png)
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1.  The  **Context**  maintains a reference to one of the concrete strategies and communicates with this object only via the strategy interface.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
+2.  The  **Strategy**  interface is common to all concrete strategies. It declares a method the context uses to execute a strategy.
     
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
+3.  **Concrete Strategies**  implement different variations of an algorithm the context uses.
     
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+4.  The context calls the execution method on the linked strategy object each time it needs to run the algorithm. The context doesn’t know what type of strategy it works with or how the algorithm is executed.
     
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
-    
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+5.  The  **Client**  creates a specific strategy object and passes it to the context. The context exposes a setter which lets clients replace the strategy associated with the context at runtime.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
-
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
-
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
-
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
+In this example, the context uses multiple  **strategies**  to execute various arithmetic operations.
 
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The strategy interface declares operations common to all
+// supported versions of some algorithm. The context uses this
+// interface to call the algorithm defined by the concrete
+// strategies.
+interface Strategy is
+    method execute(a, b)
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
+// Concrete strategies implement the algorithm while following
+// the base strategy interface. The interface makes them
+// interchangeable in the context.
+class ConcreteStrategyAdd implements Strategy is
+    method execute(a, b) is
+        return a + b
 
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
+class ConcreteStrategySubtract implements Strategy is
+    method execute(a, b) is
+        return a - b
 
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
-        else
-            container.showHelp()
+class ConcreteStrategyMultiply implements Strategy is
+    method execute(a, b) is
+        return a * b
 
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
+// The context defines the interface of interest to clients.
+class Context is
+    // The context maintains a reference to one of the strategy
+    // objects. The context doesn't know the concrete class of a
+    // strategy. It should work with all strategies via the
+    // strategy interface.
+    private strategy: Strategy
 
-    method add(child) is
-        children.add(child)
-        child.container = this
+    // Usually the context accepts a strategy through the
+    // constructor, and also provides a setter so that the
+    // strategy can be switched at runtime.
+    method setStrategy(Strategy strategy) is
+        this.strategy = strategy
 
-// Primitive components may be fine with default help
-// implementation...
-class Button extends Component is
-    // ...
+    // The context delegates some work to the strategy object
+    // instead of implementing multiple versions of the
+    // algorithm on its own.
+    method executeStrategy(int a, int b) is
+        return strategy.execute(a, b)
 
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
+// The client code picks a concrete strategy and passes it to
+// the context. The client should be aware of the differences
+// between strategies in order to make the right choice.
+class ExampleApplication is
+    method main() is
+        Create context object.
 
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
+        Read first number.
+        Read last number.
+        Read the desired action from user input.
 
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
+        if (action == addition) then
+            context.setStrategy(new ConcreteStrategyAdd())
 
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
+        if (action == subtraction) then
+            context.setStrategy(new ConcreteStrategySubtract())
 
-// Client code.
-class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
+        if (action == multiplication) then
+            context.setStrategy(new ConcreteStrategyMultiply())
 
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
+        result = context.executeStrategy(First number, Second number)
+
+        Print result.
 ```
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Strategy pattern when you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime.
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The Strategy pattern lets you indirectly alter the object’s behavior at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways.
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the Strategy when you have a lot of similar classes that only differ in the way they execute some behavior.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
+The Strategy pattern lets you extract the varying behavior into a separate class hierarchy and combine the original classes into one, thereby reducing duplicate code.
 
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
+Use the pattern to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
 
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+The Strategy pattern lets you isolate the code, internal data, and dependencies of various algorithms from the rest of the code. Various clients get a simple interface to execute the algorithms and switch them at runtime.
+
+Use the pattern when your class has a massive conditional operator that switches between different variants of the same algorithm.
+
+The Strategy pattern lets you do away with such a conditional by extracting all algorithms into separate classes, all of which implement the same interface. The original object delegates execution to one of these objects, instead of implementing all variants of the algorithm.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  In the context class, identify an algorithm that’s prone to frequent changes. It may also be a massive conditional that selects and executes a variant of the same algorithm at runtime.
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Declare the strategy interface common to all variants of the algorithm.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+3.  One by one, extract all algorithms into their own classes. They should all implement the strategy interface.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+4.  In the context class, add a field for storing a reference to a strategy object. Provide a setter for replacing values of that field. The context should work with the strategy object only via the strategy interface. The context may define an interface which lets the strategy access its data.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+5.  Clients of the context must associate it with a suitable strategy that matches the way they expect the context to perform its primary job.
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
-    
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
-    
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
-    
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
-    
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   You can swap algorithms used inside an object at runtime.
+-   You can isolate the implementation details of an algorithm from the code that uses it.
+-   You can replace inheritance with composition.
+-   _Open/Closed Principle_. You can introduce new strategies without having to change the context.
 
--   Some requests may end up unhandled.
+-   If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.
+-   Clients must be aware of the differences between strategies to be able to select a proper one.
+-   A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Bridge](https://refactoring.guru/design-patterns/bridge),  [State](https://refactoring.guru/design-patterns/state),  [Strategy](https://refactoring.guru/design-patterns/strategy)  (and to some degree  [Adapter](https://refactoring.guru/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn’t just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
     
-    -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    -   _Command_  establishes unidirectional connections between senders and receivers.
-    -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   [Command](https://refactoring.guru/design-patterns/command)  and  [Strategy](https://refactoring.guru/design-patterns/strategy)  may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+    -   You can use  _Command_  to convert any operation into an object. The operation’s parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
+        
+    -   On the other hand,  _Strategy_  usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
+        
+-   [Decorator](https://refactoring.guru/design-patterns/decorator)  lets you change the skin of an object, while  [Strategy](https://refactoring.guru/design-patterns/strategy)  lets you change the guts.
     
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
+-   [Template Method](https://refactoring.guru/design-patterns/template-method)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://refactoring.guru/design-patterns/strategy)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
     
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
-    
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+-   [State](https://refactoring.guru/design-patterns/state)  can be considered as an extension of  [Strategy](https://refactoring.guru/design-patterns/strategy). Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects.  _Strategy_  makes these objects completely independent and unaware of each other. However,  _State_  doesn’t restrict dependencies between concrete states, letting them alter the state of the context at will.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example
+**Strategy**  is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+The original object, called context, holds a reference to a strategy object and delegates it executing the behavior. In order to change the way the context performs its work, other objects may replace the currently linked strategy object with another one.
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Strategy](https://refactoring.guru/design-patterns/strategy)
 
 ## Usage of the pattern in Java
 
@@ -281,262 +221,347 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
+**Usage examples:**  The Strategy pattern is very common in Java code. It’s often used in various frameworks to provide users a way to change the behavior of a class without extending it.
 
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+Java 8 brought the support of lambda functions, which can serve as simpler alternatives to the Strategy pattern.
 
-Here are some examples of the pattern in core Java libraries:
+Here some examples of Strategy in core Java libraries:
 
+-   [`java.util.Comparator#compare()`](http://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare-T-T-)  called from  `Collections#sort()`.
+    
+-   [`javax.servlet.http.HttpServlet`](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html):  `service()`  method, plus all of the  `doXXX()`  methods that accept  `HttpServletRequest`  and  `HttpServletResponse`  objects as arguments.
+    
 -   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+    
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+**Identification:**  Strategy pattern can be recognized by a method that lets nested object do the actual work, as well as the setter that allows replacing that object with a different one.
 
-## Filtering access
+## Payment method in an e-commerce app
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+In this example, the Strategy pattern is used to implement the various payment methods in an e-commerce application. After selecting a product to purchase, a customer picks a payment method: either Paypal or credit card.
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
+Concrete strategies not only perform the actual payment but also alter the behavior of the checkout form, providing appropriate fields to record payment details.
 
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
+## [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies)**strategies**
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayStrategy-java)**strategies/PayStrategy.java:**  Common interface of payment methods
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.strategy.example.strategies;
 
 /**
- * Base middleware class.
+ * Common interface for all strategies.
  */
-public abstract class Middleware {
-    private Middleware next;
-
-    /**
-     * Builds chains of middleware objects.
-     */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
-    }
-
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
-
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
-        }
-        return next.check(email, password);
-    }
+public interface PayStrategy {
+    boolean pay(int paymentAmount);
+    void collectPaymentDetails();
 }
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+``
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayByPayPal-java)**strategies/PayByPayPal.java:**  Payment via PayPal
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.strategy.example.strategies;
 
-/**
- * ConcreteHandler. Checks whether there are too many failed login requests.
- */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
-
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
-    }
-
-    /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
-     */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
-        }
-
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
-        }
-        return checkNext(email, password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-import refactoring_guru.chain_of_responsibility.example.server.Server;
-
-/**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
- */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
-
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
-    }
-
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
-            return false;
-        }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
-            return false;
-        }
-        return checkNext(email, password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
-        }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
-    }
-}
-```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
-```java
-package refactoring_guru.chain_of_responsibility.example.server;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Server class.
+ * Concrete strategy. Implements PayPal payment method.
  */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
+public class PayByPayPal implements PayStrategy {
+    private static final Map<String, String> DATA_BASE = new HashMap<>();
+    private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
+    private String email;
+    private String password;
+    private boolean signedIn;
 
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
+    static {
+        DATA_BASE.put("amanda1985", "amanda@ya.com");
+        DATA_BASE.put("qwerty", "john@amazon.eu");
     }
 
     /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
+     * Collect customer's data.
      */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
-
-            // Do something useful here for authorized users.
-
-            return true;
+    @Override
+    public void collectPaymentDetails() {
+        try {
+            while (!signedIn) {
+                System.out.print("Enter the user's email: ");
+                email = READER.readLine();
+                System.out.print("Enter the password: ");
+                password = READER.readLine();
+                if (verify()) {
+                    System.out.println("Data verification has been successful.");
+                } else {
+                    System.out.println("Wrong email or password!");
+                }
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
-        return false;
     }
 
-    public void register(String email, String password) {
-        users.put(email, password);
+    private boolean verify() {
+        setSignedIn(email.equals(DATA_BASE.get(password)));
+        return signedIn;
     }
 
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
+    /**
+     * Save customer data for future shopping attempts.
+     */
+    @Override
+    public boolean pay(int paymentAmount) {
+        if (signedIn) {
+            System.out.println("Paying " + paymentAmount + " using PayPal.");
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
+    private void setSignedIn(boolean signedIn) {
+        this.signedIn = signedIn;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-PayByCreditCard-java)**strategies/PayByCreditCard.java:**  Payment via credit card
 ```java
-package refactoring_guru.chain_of_responsibility.example;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+package refactoring_guru.strategy.example.strategies;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Demo class. Everything comes together here.
+ * Concrete strategy. Implements credit card payment method.
  */
-public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
+public class PayByCreditCard implements PayStrategy {
+    private final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
+    private CreditCard card;
 
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
+    /**
+     * Collect credit card data.
+     */
+    @Override
+    public void collectPaymentDetails() {
+        try {
+            System.out.print("Enter the card number: ");
+            String number = READER.readLine();
+            System.out.print("Enter the card expiration date 'mm/yy': ");
+            String date = READER.readLine();
+            System.out.print("Enter the CVV code: ");
+            String cvv = READER.readLine();
+            card = new CreditCard(number, date, cvv);
 
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
+            // Validate credit card number...
 
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
-    public static void main(String[] args) throws IOException {
-        init();
+    /**
+     * After card validation we can charge customer's credit card.
+     */
+    @Override
+    public boolean pay(int paymentAmount) {
+        if (cardIsPresent()) {
+            System.out.println("Paying " + paymentAmount + " using Credit Card.");
+            card.setAmount(card.getAmount() - paymentAmount);
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+    private boolean cardIsPresent() {
+        return card != null;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--strategies-CreditCard-java)**strategies/CreditCard.java:**  A credit card class
 ```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+package refactoring_guru.strategy.example.strategies;
 
+/**
+ * Dummy credit card class.
+ */
+public class CreditCard {
+    private int amount;
+    private String number;
+    private String date;
+    private String cvv;
 
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
+    CreditCard(String number, String date, String cvv) {
+        this.amount = 100_000;
+        this.number = number;
+        this.date = date;
+        this.cvv = cvv;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--order-Order-java)**order/Order.java:**  Order class
+```java
+package refactoring_guru.strategy.example.order;
+
+import refactoring_guru.strategy.example.strategies.PayStrategy;
+
+/**
+ * Order class. Doesn't know the concrete payment method (strategy) user has
+ * picked. It uses common strategy interface to delegate collecting payment data
+ * to strategy object. It can be used to save order to database.
+ */
+public class Order {
+    private int totalCost = 0;
+    private boolean isClosed = false;
+
+    public void processOrder(PayStrategy strategy) {
+        strategy.collectPaymentDetails();
+        // Here we could collect and store payment data from the strategy.
+    }
+
+    public void setTotalCost(int cost) {
+        this.totalCost += cost;
+    }
+
+    public int getTotalCost() {
+        return totalCost;
+    }
+
+    public boolean isClosed() {
+        return isClosed;
+    }
+
+    public void setClosed() {
+        isClosed = true;
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--Demo-java)**Demo.java:**  Client code
+```java
+package refactoring_guru.strategy.example;
+
+import refactoring_guru.strategy.example.order.Order;
+import refactoring_guru.strategy.example.strategies.PayByCreditCard;
+import refactoring_guru.strategy.example.strategies.PayByPayPal;
+import refactoring_guru.strategy.example.strategies.PayStrategy;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * World first console e-commerce application.
+ */
+public class Demo {
+    private static Map<Integer, Integer> priceOnProducts = new HashMap<>();
+    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static Order order = new Order();
+    private static PayStrategy strategy;
+
+    static {
+        priceOnProducts.put(1, 2200);
+        priceOnProducts.put(2, 1850);
+        priceOnProducts.put(3, 1100);
+        priceOnProducts.put(4, 890);
+    }
+
+    public static void main(String[] args) throws IOException {
+        while (!order.isClosed()) {
+            int cost;
+
+            String continueChoice;
+            do {
+                System.out.print("Please, select a product:" + "\n" +
+                        "1 - Mother board" + "\n" +
+                        "2 - CPU" + "\n" +
+                        "3 - HDD" + "\n" +
+                        "4 - Memory" + "\n");
+                int choice = Integer.parseInt(reader.readLine());
+                cost = priceOnProducts.get(choice);
+                System.out.print("Count: ");
+                int count = Integer.parseInt(reader.readLine());
+                order.setTotalCost(cost * count);
+                System.out.print("Do you wish to continue selecting products? Y/N: ");
+                continueChoice = reader.readLine();
+            } while (continueChoice.equalsIgnoreCase("Y"));
+
+            if (strategy == null) {
+                System.out.println("Please, select a payment method:" + "\n" +
+                        "1 - PalPay" + "\n" +
+                        "2 - Credit Card");
+                String paymentMethod = reader.readLine();
+
+                // Client creates different strategies based on input from user,
+                // application configuration, etc.
+                if (paymentMethod.equals("1")) {
+                    strategy = new PayByPayPal();
+                } else {
+                    strategy = new PayByCreditCard();
+                }
+
+                // Order object delegates gathering payment data to strategy
+                // object, since only strategies know what data they need to
+                // process a payment.
+                order.processOrder(strategy);
+
+                System.out.print("Pay " + order.getTotalCost() + " units or Continue shopping? P/C: ");
+                String proceed = reader.readLine();
+                if (proceed.equalsIgnoreCase("P")) {
+                    // Finally, strategy handles the payment.
+                    if (strategy.pay(order.getTotalCost())) {
+                        System.out.println("Payment has been successful.");
+                    } else {
+                        System.out.println("FAIL! Please, check your data.");
+                    }
+                    order.setClosed();
+                }
+            }
+        }
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/strategy/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+```java
+Please, select a product:
+1 - Mother board
+2 - CPU
+3 - HDD
+4 - Memory
+1
+Count: 2
+Do you wish to continue selecting products? Y/N: y
+Please, select a product:
+1 - Mother board
+2 - CPU
+3 - HDD
+4 - Memory
+2
+Count: 1
+Do you wish to continue selecting products? Y/N: n
+Please, select a payment method:
+1 - PalPay
+2 - Credit Card
+1
+Enter the user's email: user@example.com
+Enter the password: qwerty
+Wrong email or password!
+Enter user email: amanda@ya.com
+Enter password: amanda1985
+Data verification has been successful.
+Pay 6250 units or Continue shopping?  P/C: p
+Paying 6250 using PayPal.
+Payment has been successful.
 ```

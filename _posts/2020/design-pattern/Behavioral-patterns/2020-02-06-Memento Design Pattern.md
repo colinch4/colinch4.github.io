@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Memento"
+description: "Memento is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation."
+date: 2020-02-06 14:05
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,270 +10,224 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
+#### Also known as:  Snapshot
 
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Memento**  is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Memento design pattern](https://refactoring.guru/images/patterns/content/memento/memento.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+Imagine that you’re creating a text editor app. In addition to simple text editing, your editor can format text, insert inline images, etc.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+At some point, you decided to let users undo any operations carried out on the text. This feature has become so common over the years that nowadays people expect every app to have it. For the implementation, you chose to take the direct approach. Before performing any operation, the app records the state of all objects and saves it in some storage. Later, when a user decides to revert an action, the app fetches the latest snapshot from the history and uses it to restore the state of all objects.
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+![Reverting operations in the editor](https://refactoring.guru/images/patterns/diagrams/memento/problem1-en.png)
 
-The request must pass a series of checks before the ordering system itself can handle it.
+Before executing an operation, the app saves a snapshot of the objects’ state, which can later be used to restore objects to their previous state.
 
-During the next few months, you implemented several more of those sequential checks.
+Let’s think about those state snapshots. How exactly would you produce one? You’d probably need to go over all the fields in an object and copy their values into storage. However, this would only work if the object had quite relaxed access restrictions to its contents. Unfortunately, most real objects won’t let others peek inside them that easily, hiding all significant data in private fields.
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
+Ignore that problem for now and let’s assume that our objects behave like hippies: preferring open relations and keeping their state public. While this approach would solve the immediate problem and let you produce snapshots of objects’ states at will, it still has some serious issues. In the future, you might decide to refactor some of the editor classes, or add or remove some of the fields. Sounds easy, but this would also require chaining the classes responsible for copying the state of the affected objects.
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
+![How to make a copy of the object’s private state?](https://refactoring.guru/images/patterns/diagrams/memento/problem2-en.png)
 
-The bigger the code grew, the messier it became.
+How to make a copy of the object’s private state?
 
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
+But there’s more. Let’s consider the actual “snapshots” of the editor’s state. What data does it contain? At a bare minimum, it must contain the actual text, cursor coordinates, current scroll position, etc. To make a snapshot, you’d need to collect these values and put them into some kind of container.
 
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+Most likely, you’re going to store lots of these container objects inside some list that would represent the history. Therefore the containers would probably end up being objects of one class. The class would have almost no methods, but lots of fields that mirror the editor’s state. To allow other objects to write and read data to and from a snapshot, you’d probably need to make its fields public. That would expose all the editor’s states, private or not. Other classes would become dependent on every little change to the snapshot class, which would otherwise happen within private fields and methods without affecting outer classes.
+
+It looks like we’ve reached a dead end: you either expose all internal details of classes, making them too fragile, or restrict access to their state, making it impossible to produce snapshots. Is there any other way to implement the "undo"?
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+All problems that we’ve just experienced are caused by broken encapsulation. Some objects try to do more than they are supposed to. To collect the data required to perform some action, they invade the private space of other objects instead of letting these objects perform the actual action.
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+The Memento pattern delegates creating the state snapshots to the actual owner of that state, the  _originator_  object. Hence, instead of other objects trying to copy the editor’s state from the “outside,” the editor class itself can make the snapshot since it has full access to its own state.
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+The pattern suggests storing the copy of the object’s state in a special object called  _memento_. The contents of the memento aren’t accessible to any other object except the one that produced it. Other objects must communicate with mementos using a limited interface which may allow fetching the snapshot’s metadata (creation time, the name of the performed operation, etc.), but not the original object’s state contained in the snapshot.
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+![The originator has full access to the memento, whereas the caretaker can only access the metadata](https://refactoring.guru/images/patterns/diagrams/memento/solution-en.png)
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+The originator has full access to the memento, whereas the caretaker can only access the metadata.
 
-Handlers are lined up one by one, forming a chain.
+Such a restrictive policy lets you store mementos inside other objects, usually called  _caretakers_. Since the caretaker works with the memento only via the limited interface, it’s not able to tamper with the state stored inside the memento. At the same time, the originator has access to all fields inside the memento, allowing it to restore its previous state at will.
 
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
+In our text editor example, we can create a separate history class to act as the caretaker. A stack of mementos stored inside the caretaker will grow each time the editor is about to execute an operation. You could even render this stack within the app’s UI, displaying the history of previously performed operations to a user.
 
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
-
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
-
-## Real-World Analogy
-
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
-
-A call to tech support can go through multiple operators.
-
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
-
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
-
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
-
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+When a user triggers the undo, the history grabs the most recent memento from the stack and passes it back to the editor, requesting a roll-back. Since the editor has full access to the memento, it changes its own state with the values taken from the memento.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+#### Implementation based on nested classes
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+The classic implementation of the pattern relies on support for nested classes, available in many popular programming languages (such as C++, C#, and Java).
+
+![Memento based on nested classes](https://refactoring.guru/images/patterns/diagrams/memento/structure1.png)
+
+1.  The  **Originator**  class can produce snapshots of its own state, as well as restore its state from snapshots when needed.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
+2.  The  **Memento**  is a value object that acts as a snapshot of the originator’s state. It’s a common practice to make the memento immutable and pass it the data only once, via the constructor.
     
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
+3.  The  **Caretaker**  knows not only “when” and “why” to capture the originator’s state, but also when the state should be restored.
     
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+    A caretaker can keep track of the originator’s history by storing a stack of mementos. When the originator has to travel back in history, the caretaker fetches the topmost memento from the stack and passes it to the originator’s restoration method.
     
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
+4.  In this implementation, the memento class is nested inside the originator. This lets the originator access the fields and methods of the memento, even though they’re declared private. On the other hand, the caretaker has very limited access to the memento’s fields and methods, which lets it store mementos in a stack but not tamper with their state.
     
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+
+#### Implementation based on an intermediate interface
+
+There’s an alternative implementation, suitable for programming languages that don’t support nested classes (yeah, PHP, I’m talking about you).
+
+![Memento without nested classes](https://refactoring.guru/images/patterns/diagrams/memento/structure2.png)
+
+1.  In the absence of nested classes, you can restrict access to the memento’s fields by establishing a convention that caretakers can work with a memento only through an explicitly declared intermediary interface, which would only declare methods related to the memento’s metadata.
+    
+2.  On the other hand, originators can work with a memento object directly, accessing fields and methods declared in the memento class. The downside of this approach is that you need to declare all members of the memento public.
+    
+
+#### Implementation with even stricter encapsulation
+
+There’s another implementation which is useful when you don’t want to leave even the slightest chance of other classes accessing the state of the originator through the memento.
+
+![Memento with strict encapsulation](https://refactoring.guru/images/patterns/diagrams/memento/structure3.png)
+
+1.  This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
+    
+2.  Caretakers are now explicitly restricted from changing the state stored in mementos. Moreover, the caretaker class becomes independent from the originator because the restoration method is now defined in the memento class.
+    
+3.  Each memento becomes linked to the originator that produced it. The originator passes itself to the memento’s constructor, along with the values of its state. Thanks to the close relationship between these classes, a memento can restore the state of its originator, given that the latter has defined the appropriate setters.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
+In this example uses the Memento pattern alongside the  [Command](https://refactoring.guru/design-patterns/command)  pattern for storing snapshots of the complex text editor’s state and restoring an earlier state from these snapshots when needed.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
+![Structure of the Memento example](https://refactoring.guru/images/patterns/diagrams/memento/example.png)
 
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
+Saving snapshots of the text editor’s state.
 
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
+The command objects act as caretakers. They fetch the editor’s memento before executing operations related to commands. When a user attempts to undo the most recent command, the editor can use the memento stored in that command to revert itself to the previous state.
 
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
-
+The memento class doesn’t declare any public fields, getters or setters. Therefore no object can alter its contents. Mementos are linked to the editor object that created them. This lets a memento restore the linked editor’s state by passing the data via setters on the editor object. Since mementos are linked to specific editor objects, you can make your app support several independent editor windows with a centralized undo stack.
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The originator holds some important data that may change over
+// time. It also defines a method for saving its state inside a
+// memento and another method for restoring the state from it.
+class Editor is
+    private field text, curX, curY, selectionWidth
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
+    method setText(text) is
+        this.text = text
 
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
+    method setCursor(x, y) is
+        this.curX = curX
+        this.curY = curY
 
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
-        else
-            container.showHelp()
+    method setSelectionWidth(width) is
+        this.selectionWidth = width
 
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
+    // Saves the current state inside a memento.
+    method createSnapshot():Snapshot is
+        // Memento is an immutable object; that's why the
+        // originator passes its state to the memento's
+        // constructor parameters.
+        return new Snapshot(this, text, curX, curY, selectionWidth)
 
-    method add(child) is
-        children.add(child)
-        child.container = this
+// The memento class stores the past state of the editor.
+class Snapshot is
+    private field editor: Editor
+    private field text, curX, curY, selectionWidth
 
-// Primitive components may be fine with default help
-// implementation...
-class Button extends Component is
+    constructor Snapshot(editor, text, curX, curY, selectionWidth) is
+        this.editor = editor
+        this.text = text
+        this.curX = curX
+        this.curY = curY
+        this.selectionWidth = selectionWidth
+
+    // At some point, a previous state of the editor can be
+    // restored using a memento object.
+    method restore() is
+        editor.setText(text)
+        editor.setCursor(curX, curY)
+        editor.setSelectionWidth(selectionWidth)
+
+// A command object can act as a caretaker. In that case, the
+// command gets a memento just before it changes the
+// originator's state. When undo is requested, it restores the
+// originator's state from a memento.
+class Command is
+    private field backup: Snapshot
+
+    method makeBackup() is
+        backup = editor.createSnapshot()
+
+    method undo() is
+        if (backup != null)
+            backup.restore()
     // ...
-
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
-
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
-
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
-
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
-
-// Client code.
-class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
-
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
 ```
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Memento pattern when you want to produce snapshots of the object’s state to be able to restore a previous state of the object.
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The Memento pattern lets you make full copies of an object’s state, including private fields, and store them separately from the object. While most people remember this pattern thanks to the “undo” use case, it’s also indispensable when dealing with transactions (i.e., if you need to roll back an operation on error).
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the pattern when direct access to the object’s fields/getters/setters violates its encapsulation.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
-
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
-
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+The Memento makes the object itself responsible for creating a snapshot of its state. No other object can read the snapshot, making the original object’s state data safe and secure.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  Determine what class will play the role of the originator. It’s important to know whether the program uses one central object of this type or multiple smaller ones.
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Create the memento class. One by one, declare a set of fields that mirror the fields declared inside the originator class.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+3.  Make the memento class immutable. A memento should accept the data just once, via the constructor. The class should have no setters.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+4.  If your programming language supports nested classes, nest the memento inside the originator. If not, extract a blank interface from the memento class and make all other objects use it to refer to the memento. You may add some metadata operations to the interface, but nothing that exposes the originator’s state.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+5.  Add a method for producing mementos to the originator class. The originator should pass its state to the memento via one or multiple arguments of the memento’s constructor.
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
+    The return type of the method should be of the interface you extracted in the previous step (assuming that you extracted it at all). Under the hood, the memento-producing method should work directly with the memento class.
     
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
+6.  Add a method for restoring the originator’s state to its class. It should accept a memento object as an argument. If you extracted an interface in the previous step, make it the type of the parameter. In this case, you need to typecast the incoming object to the mediator class, since the originator needs full access to that object.
     
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
+7.  The caretaker, whether it represents a command object, a history, or something entirely different, should know when to request new mementos from the originator, how to store them and when to restore the originator with a particular memento.
     
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
+8.  The link between caretakers and originators may be moved into the memento class. In this case, each memento must be connected to the originator that had created it. The restoration method would also move to the memento class. However, this would all make sense only if the memento class is nested into originator or the originator class provides sufficient setters for overriding its state.
     
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   You can produce snapshots of the object’s state without violating its encapsulation.
+-   You can simplify the originator’s code by letting the caretaker maintain the history of the originator’s state.
 
--   Some requests may end up unhandled.
+-   The app might consume lots of RAM if clients create mementos too often.
+-   Caretakers should track the originator’s lifecycle to be able to destroy obsolete mementos.
+-   Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched.
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   You can use  [Command](https://refactoring.guru/design-patterns/command)  and  [Memento](https://refactoring.guru/design-patterns/memento)  together when implementing “undo”. In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
     
-    -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    -   _Command_  establishes unidirectional connections between senders and receivers.
-    -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   You can use  [Memento](https://refactoring.guru/design-patterns/memento)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to capture the current iteration state and roll it back if necessary.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
-    
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
-    
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
-    
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+-   Sometimes  [Prototype](https://refactoring.guru/design-patterns/prototype)  can be a simpler alternative to  [Memento](https://refactoring.guru/design-patterns/memento). This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn’t have links to external resources, or the links are easy to re-establish.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example 
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+**Memento**  is a behavioral design pattern that allows making snapshots of an object’s state and restoring it in future.
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+The Memento doesn’t compromise the internal structure of the object it works with, as well as data kept inside the snapshots.
+
+[Learn more about Memento](https://refactoring.guru/design-patterns/memento)
 
 ## Usage of the pattern in Java
 
@@ -281,262 +235,932 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
-
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+**Usage examples:**  The Memento’s principle can be achieved using the serialization, which is quite common in Java. While it’s not the only and the most efficient way to make snapshots of an object’s state, it still allows storing state backups while protecting the originator’s structure from other objects.
 
 Here are some examples of the pattern in core Java libraries:
 
--   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+-   All  [`java.io.Serializable`](http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)  implementations can simulate the Memento.
+-   All  [`javax.faces.component.StateHolder`](http://docs.oracle.com/javaee/7/api/javax/faces/component/StateHolder.html)  implementations.
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+## Shape editor and complex undo/redo
 
-## Filtering access
+This graphical editor allows changing the color and position of the shapes on the screen. Any modification can be undone and repeated, though.
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+The “undo” is based on the collaboration between the Memento and Command patterns. The editor tracks a history of performed commands. Before executing any command, it makes a backup and connects it to the command object. After the execution, it pushes the executed command into history.
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
+When a user requests the undo, the editor fetches a recent command from the history and restores the state from the backup kept inside that command. If the user requests another undo, the editor takes a following command from the history and so on.
 
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
+Reverted commands are kept in history until the user makes some modifications to the shapes on the screen. This is crucial for redoing undone commands.
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor)**editor**
+
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor-Editor-java)**editor/Editor.java:**  Editor code
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.memento.example.editor;
 
-/**
- * Base middleware class.
- */
-public abstract class Middleware {
-    private Middleware next;
+import refactoring_guru.memento.example.commands.Command;
+import refactoring_guru.memento.example.history.History;
+import refactoring_guru.memento.example.history.Memento;
+import refactoring_guru.memento.example.shapes.CompoundShape;
+import refactoring_guru.memento.example.shapes.Shape;
 
-    /**
-     * Builds chains of middleware objects.
-     */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
+import javax.swing.*;
+import java.io.*;
+import java.util.Base64;
+
+public class Editor extends JComponent {
+    private Canvas canvas;
+    private CompoundShape allShapes = new CompoundShape();
+    private History history;
+
+    public Editor() {
+        canvas = new Canvas(this);
+        history = new History();
     }
 
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
+    public void loadShapes(Shape... shapes) {
+        allShapes.clear();
+        allShapes.add(shapes);
+        canvas.refresh();
+    }
 
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
+    public CompoundShape getShapes() {
+        return allShapes;
+    }
+
+    public void execute(Command c) {
+        history.push(c, new Memento(this));
+        c.execute();
+    }
+
+    public void undo() {
+        if (history.undo())
+            canvas.repaint();
+    }
+
+    public void redo() {
+        if (history.redo())
+            canvas.repaint();
+    }
+
+    public String backup() {
+        try {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+            oos.writeObject(this.allShapes);
+            oos.close();
+            return Base64.getEncoder().encodeToString(baos.toByteArray());
+        } catch (IOException e) {
+            return "";
         }
-        return next.check(email, password);
+    }
+
+    public void restore(String state) {
+        try {
+            byte[] data = Base64.getDecoder().decode(state);
+            ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(data));
+            this.allShapes = (CompoundShape) ois.readObject();
+            ois.close();
+        } catch (ClassNotFoundException e) {
+            System.out.print("ClassNotFoundException occurred.");
+        } catch (IOException e) {
+            System.out.print("IOException occurred.");
+        }
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--editor-Canvas-java)**editor/Canvas.java:**  Canvas code
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.memento.example.editor;
 
-/**
- * ConcreteHandler. Checks whether there are too many failed login requests.
- */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
+import refactoring_guru.memento.example.commands.ColorCommand;
+import refactoring_guru.memento.example.commands.MoveCommand;
+import refactoring_guru.memento.example.shapes.Shape;
 
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+
+class Canvas extends java.awt.Canvas {
+    private Editor editor;
+    private JFrame frame;
+    private static final int PADDING = 10;
+
+    Canvas(Editor editor) {
+        this.editor = editor;
+        createFrame();
+        attachKeyboardListeners();
+        attachMouseListeners();
+        refresh();
     }
 
-    /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
-     */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
-        }
+    private void createFrame() {
+        frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
 
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
-        }
-        return checkNext(email, password);
+        JPanel contentPanel = new JPanel();
+        Border padding = BorderFactory.createEmptyBorder(PADDING, PADDING, PADDING, PADDING);
+        contentPanel.setBorder(padding);
+        contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
+        frame.setContentPane(contentPanel);
+
+        contentPanel.add(new JLabel("Select and drag to move."), BorderLayout.PAGE_END);
+        contentPanel.add(new JLabel("Right click to change color."), BorderLayout.PAGE_END);
+        contentPanel.add(new JLabel("Undo: Ctrl+Z, Redo: Ctrl+R"), BorderLayout.PAGE_END);
+        contentPanel.add(this);
+        frame.setVisible(true);
+        contentPanel.setBackground(Color.LIGHT_GRAY);
+    }
+
+    private void attachKeyboardListeners() {
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if ((e.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
+                    switch (e.getKeyCode()) {
+                        case KeyEvent.VK_Z:
+                            editor.undo();
+                            break;
+                        case KeyEvent.VK_R:
+                            editor.redo();
+                            break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void attachMouseListeners() {
+        MouseAdapter colorizer = new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (e.getButton() != MouseEvent.BUTTON3) {
+                    return;
+                }
+                Shape target = editor.getShapes().getChildAt(e.getX(), e.getY());
+                if (target != null) {
+                    editor.execute(new ColorCommand(editor, new Color((int) (Math.random() * 0x1000000))));
+                    repaint();
+                }
+            }
+        };
+        addMouseListener(colorizer);
+
+        MouseAdapter selector = new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (e.getButton() != MouseEvent.BUTTON1) {
+                    return;
+                }
+
+                Shape target = editor.getShapes().getChildAt(e.getX(), e.getY());
+                boolean ctrl = (e.getModifiers() & ActionEvent.CTRL_MASK) == ActionEvent.CTRL_MASK;
+
+                if (target == null) {
+                    if (!ctrl) {
+                        editor.getShapes().unSelect();
+                    }
+                } else {
+                    if (ctrl) {
+                        if (target.isSelected()) {
+                            target.unSelect();
+                        } else {
+                            target.select();
+                        }
+                    } else {
+                        if (!target.isSelected()) {
+                            editor.getShapes().unSelect();
+                        }
+                        target.select();
+                    }
+                }
+                repaint();
+            }
+        };
+        addMouseListener(selector);
+
+
+        MouseAdapter dragger = new MouseAdapter() {
+            MoveCommand moveCommand;
+
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                if ((e.getModifiersEx() & MouseEvent.BUTTON1_DOWN_MASK) != MouseEvent.BUTTON1_DOWN_MASK) {
+                    return;
+                }
+                if (moveCommand == null) {
+                    moveCommand = new MoveCommand(editor);
+                    moveCommand.start(e.getX(), e.getY());
+                }
+                moveCommand.move(e.getX(), e.getY());
+                repaint();
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (e.getButton() != MouseEvent.BUTTON1 || moveCommand == null) {
+                    return;
+                }
+                moveCommand.stop(e.getX(), e.getY());
+                editor.execute(moveCommand);
+                this.moveCommand = null;
+                repaint();
+            }
+        };
+        addMouseListener(dragger);
+        addMouseMotionListener(dragger);
+    }
+
+    public int getWidth() {
+        return editor.getShapes().getX() + editor.getShapes().getWidth() + PADDING;
+    }
+
+    public int getHeight() {
+        return editor.getShapes().getY() + editor.getShapes().getHeight() + PADDING;
+    }
+
+    void refresh() {
+        this.setSize(getWidth(), getHeight());
+        frame.pack();
+    }
+
+    public void update(Graphics g) {
+        paint(g);
+    }
+
+    public void paint(Graphics graphics) {
+        BufferedImage buffer = new BufferedImage(this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_RGB);
+        Graphics2D ig2 = buffer.createGraphics();
+        ig2.setBackground(Color.WHITE);
+        ig2.clearRect(0, 0, this.getWidth(), this.getHeight());
+
+        editor.getShapes().paint(buffer.getGraphics());
+
+        graphics.drawImage(buffer, 0, 0, null);
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
+## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history)**history**
+
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history-History-java)**history/History.java:**  History stores commands and mementos
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.memento.example.history;
 
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.memento.example.commands.Command;
 
-/**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
- */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
+import java.util.ArrayList;
+import java.util.List;
 
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
+public class History {
+    private List<Pair> history = new ArrayList<Pair>();
+    private int virtualSize = 0;
+
+    private class Pair {
+        Command command;
+        Memento memento;
+        Pair(Command c, Memento m) {
+            command = c;
+            memento = m;
+        }
+
+        private Command getCommand() {
+            return command;
+        }
+
+        private Memento getMemento() {
+            return memento;
+        }
     }
 
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
+    public void push(Command c, Memento m) {
+        if (virtualSize != history.size() && virtualSize > 0) {
+            history = history.subList(0, virtualSize - 1);
+        }
+        history.add(new Pair(c, m));
+        virtualSize = history.size();
+    }
+
+    public boolean undo() {
+        Pair pair = getUndo();
+        if (pair == null) {
             return false;
         }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
+        System.out.println("Undoing: " + pair.getCommand().getName());
+        pair.getMemento().restore();
+        return true;
+    }
+
+    public boolean redo() {
+        Pair pair = getRedo();
+        if (pair == null) {
             return false;
         }
-        return checkNext(email, password);
+        System.out.println("Redoing: " + pair.getCommand().getName());
+        pair.getMemento().restore();
+        pair.getCommand().execute();
+        return true;
     }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
 
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
+    private Pair getUndo() {
+        if (virtualSize == 0) {
+            return null;
         }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
+        virtualSize = Math.max(0, virtualSize - 1);
+        return history.get(virtualSize);
+    }
+
+    private Pair getRedo() {
+        if (virtualSize == history.size()) {
+            return null;
+        }
+        virtualSize = Math.min(history.size(), virtualSize + 1);
+        return history.get(virtualSize - 1);
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--history-Memento-java)**history/Memento.java:**  Memento class
 ```java
-package refactoring_guru.chain_of_responsibility.example.server;
+package refactoring_guru.memento.example.history;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
+import refactoring_guru.memento.example.editor.Editor;
 
-import java.util.HashMap;
-import java.util.Map;
+public class Memento {
+    private String backup;
+    private Editor editor;
 
-/**
- * Server class.
- */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
-
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
+    public Memento(Editor editor) {
+        this.editor = editor;
+        this.backup = editor.backup();
     }
 
-    /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
-     */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
+    public void restore() {
+        editor.restore(backup);
+    }
+}
+```
+## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands)**commands**
 
-            // Do something useful here for authorized users.
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-Command-java)**commands/Command.java:**  Base command class
+```java
+package refactoring_guru.memento.example.commands;
 
+public interface Command {
+    String getName();
+    void execute();
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-ColorCommand-java)**commands/ColorCommand.java:**  Changes color of selected shape
+```java
+package refactoring_guru.memento.example.commands;
+
+import refactoring_guru.memento.example.editor.Editor;
+import refactoring_guru.memento.example.shapes.Shape;
+
+import java.awt.*;
+
+public class ColorCommand implements Command {
+    private Editor editor;
+    private Color color;
+
+    public ColorCommand(Editor editor, Color color) {
+        this.editor = editor;
+        this.color = color;
+    }
+
+    @Override
+    public String getName() {
+        return "Colorize: " + color.toString();
+    }
+
+    @Override
+    public void execute() {
+        for (Shape child : editor.getShapes().getSelected()) {
+            child.setColor(color);
+        }
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--commands-MoveCommand-java)**commands/MoveCommand.java:**  Moves selected shape
+```java
+package refactoring_guru.memento.example.commands;
+
+import refactoring_guru.memento.example.editor.Editor;
+import refactoring_guru.memento.example.shapes.Shape;
+
+public class MoveCommand implements Command {
+    private Editor editor;
+    private int startX, startY;
+    private int endX, endY;
+
+    public MoveCommand(Editor editor) {
+        this.editor = editor;
+    }
+
+    @Override
+    public String getName() {
+        return "Move by X:" + (endX - startX) + " Y:" + (endY - startY);
+    }
+
+    public void start(int x, int y) {
+        startX = x;
+        startY = y;
+        for (Shape child : editor.getShapes().getSelected()) {
+            child.drag();
+        }
+    }
+
+    public void move(int x, int y) {
+        for (Shape child : editor.getShapes().getSelected()) {
+            child.moveTo(x - startX, y - startY);
+        }
+    }
+
+    public void stop(int x, int y) {
+        endX = x;
+        endY = y;
+        for (Shape child : editor.getShapes().getSelected()) {
+            child.drop();
+        }
+    }
+
+    @Override
+    public void execute() {
+        for (Shape child : editor.getShapes().getSelected()) {
+            child.moveBy(endX - startX, endY - startY);
+        }
+    }
+}
+```
+## [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes)**shapes:**  Various shapes
+
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Shape-java)**shapes/Shape.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+import java.io.Serializable;
+
+public interface Shape extends Serializable {
+    int getX();
+    int getY();
+    int getWidth();
+    int getHeight();
+    void drag();
+    void drop();
+    void moveTo(int x, int y);
+    void moveBy(int x, int y);
+    boolean isInsideBounds(int x, int y);
+    Color getColor();
+    void setColor(Color color);
+    void select();
+    void unSelect();
+    boolean isSelected();
+    void paint(Graphics graphics);
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-BaseShape-java)**shapes/BaseShape.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+
+public abstract class BaseShape implements Shape {
+    int x, y;
+    private int dx = 0, dy = 0;
+    private Color color;
+    private boolean selected = false;
+
+    BaseShape(int x, int y, Color color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    }
+
+    @Override
+    public int getX() {
+        return x;
+    }
+
+    @Override
+    public int getY() {
+        return y;
+    }
+
+    @Override
+    public int getWidth() {
+        return 0;
+    }
+
+    @Override
+    public int getHeight() {
+        return 0;
+    }
+
+    @Override
+    public void drag() {
+        dx = x;
+        dy = y;
+    }
+
+    @Override
+    public void moveTo(int x, int y) {
+        this.x = dx + x;
+        this.y = dy + y;
+    }
+
+    @Override
+    public void moveBy(int x, int y) {
+        this.x += x;
+        this.y += y;
+    }
+
+    @Override
+    public void drop() {
+        this.x = dx;
+        this.y = dy;
+    }
+
+    @Override
+    public boolean isInsideBounds(int x, int y) {
+        return x > getX() && x < (getX() + getWidth()) &&
+                y > getY() && y < (getY() + getHeight());
+    }
+
+    @Override
+    public Color getColor() {
+        return color;
+    }
+
+    @Override
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    @Override
+    public void select() {
+        selected = true;
+    }
+
+    @Override
+    public void unSelect() {
+        selected = false;
+    }
+
+    @Override
+    public boolean isSelected() {
+        return selected;
+    }
+
+    void enableSelectionStyle(Graphics graphics) {
+        graphics.setColor(Color.LIGHT_GRAY);
+
+        Graphics2D g2 = (Graphics2D) graphics;
+        float dash1[] = {2.0f};
+        g2.setStroke(new BasicStroke(1.0f,
+                BasicStroke.CAP_BUTT,
+                BasicStroke.JOIN_MITER,
+                2.0f, dash1, 0.0f));
+    }
+
+    void disableSelectionStyle(Graphics graphics) {
+        graphics.setColor(color);
+        Graphics2D g2 = (Graphics2D) graphics;
+        g2.setStroke(new BasicStroke());
+    }
+
+    @Override
+    public void paint(Graphics graphics) {
+        if (isSelected()) {
+            enableSelectionStyle(graphics);
+        }
+        else {
+            disableSelectionStyle(graphics);
+        }
+
+        // ...
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Circle-java)**shapes/Circle.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+
+public class Circle extends BaseShape {
+    private int radius;
+
+    public Circle(int x, int y, int radius, Color color) {
+        super(x, y, color);
+        this.radius = radius;
+    }
+
+    @Override
+    public int getWidth() {
+        return radius * 2;
+    }
+
+    @Override
+    public int getHeight() {
+        return radius * 2;
+    }
+
+    @Override
+    public void paint(Graphics graphics) {
+        super.paint(graphics);
+        graphics.drawOval(x, y, getWidth() - 1, getHeight() - 1);
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Dot-java)**shapes/Dot.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+
+public class Dot extends BaseShape {
+    private final int DOT_SIZE = 3;
+
+    public Dot(int x, int y, Color color) {
+        super(x, y, color);
+    }
+
+    @Override
+    public int getWidth() {
+        return DOT_SIZE;
+    }
+
+    @Override
+    public int getHeight() {
+        return DOT_SIZE;
+    }
+
+    @Override
+    public void paint(Graphics graphics) {
+        super.paint(graphics);
+        graphics.fillRect(x - 1, y - 1, getWidth(), getHeight());
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+
+public class Rectangle extends BaseShape {
+    private int width;
+    private int height;
+
+    public Rectangle(int x, int y, int width, int height, Color color) {
+        super(x, y, color);
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public int getWidth() {
+        return width;
+    }
+
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    @Override
+    public void paint(Graphics graphics) {
+        super.paint(graphics);
+        graphics.drawRect(x, y, getWidth() - 1, getHeight() - 1);
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java**
+```java
+package refactoring_guru.memento.example.shapes;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CompoundShape extends BaseShape {
+    private List<Shape> children = new ArrayList<>();
+
+    public CompoundShape(Shape... components) {
+        super(0, 0, Color.BLACK);
+        add(components);
+    }
+
+    public void add(Shape component) {
+        children.add(component);
+    }
+
+    public void add(Shape... components) {
+        children.addAll(Arrays.asList(components));
+    }
+
+    public void remove(Shape child) {
+        children.remove(child);
+    }
+
+    public void remove(Shape... components) {
+        children.removeAll(Arrays.asList(components));
+    }
+
+    public void clear() {
+        children.clear();
+    }
+
+    @Override
+    public int getX() {
+        if (children.size() == 0) {
+            return 0;
+        }
+        int x = children.get(0).getX();
+        for (Shape child : children) {
+            if (child.getX() < x) {
+                x = child.getX();
+            }
+        }
+        return x;
+    }
+
+    @Override
+    public int getY() {
+        if (children.size() == 0) {
+            return 0;
+        }
+        int y = children.get(0).getY();
+        for (Shape child : children) {
+            if (child.getY() < y) {
+                y = child.getY();
+            }
+        }
+        return y;
+    }
+
+    @Override
+    public int getWidth() {
+        int maxWidth = 0;
+        int x = getX();
+        for (Shape child : children) {
+            int childsRelativeX = child.getX() - x;
+            int childWidth = childsRelativeX + child.getWidth();
+            if (childWidth > maxWidth) {
+                maxWidth = childWidth;
+            }
+        }
+        return maxWidth;
+    }
+
+    @Override
+    public int getHeight() {
+        int maxHeight = 0;
+        int y = getY();
+        for (Shape child : children) {
+            int childsRelativeY = child.getY() - y;
+            int childHeight = childsRelativeY + child.getHeight();
+            if (childHeight > maxHeight) {
+                maxHeight = childHeight;
+            }
+        }
+        return maxHeight;
+    }
+
+    @Override
+    public void drag() {
+        for (Shape child : children) {
+            child.drag();
+        }
+    }
+
+    @Override
+    public void drop() {
+        for (Shape child : children) {
+            child.drop();
+        }
+    }
+
+    @Override
+    public void moveTo(int x, int y) {
+        for (Shape child : children) {
+            child.moveTo(x, y);
+        }
+    }
+
+    @Override
+    public void moveBy(int x, int y) {
+        for (Shape child : children) {
+            child.moveBy(x, y);
+        }
+    }
+
+    @Override
+    public boolean isInsideBounds(int x, int y) {
+        for (Shape child : children) {
+            if (child.isInsideBounds(x, y)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void setColor(Color color) {
+        super.setColor(color);
+        for (Shape child : children) {
+            child.setColor(color);
+        }
+    }
+
+    @Override
+    public void unSelect() {
+        super.unSelect();
+        for (Shape child : children) {
+            child.unSelect();
+        }
+    }
+
+    public Shape getChildAt(int x, int y) {
+        for (Shape child : children) {
+            if (child.isInsideBounds(x, y)) {
+                return child;
+            }
+        }
+        return null;
+    }
+
+    public boolean selectChildAt(int x, int y) {
+        Shape child = getChildAt(x,y);
+        if (child != null) {
+            child.select();
             return true;
         }
         return false;
     }
 
-    public void register(String email, String password) {
-        users.put(email, password);
+    public List<Shape> getSelected() {
+        List<Shape> selected = new ArrayList<>();
+        for (Shape child : children) {
+            if (child.isSelected()) {
+                selected.add(child);
+            }
+        }
+        return selected;
     }
 
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
-    }
+    @Override
+    public void paint(Graphics graphics) {
+        if (isSelected()) {
+            enableSelectionStyle(graphics);
+            graphics.drawRect(getX() - 1, getY() - 1, getWidth() + 1, getHeight() + 1);
+            disableSelectionStyle(graphics);
+        }
 
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
+        for (Shape child : children) {
+            child.paint(graphics);
+        }
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--Demo-java)**Demo.java:**  Initialization code
 ```java
-package refactoring_guru.chain_of_responsibility.example;
+package refactoring_guru.memento.example;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.memento.example.editor.Editor;
+import refactoring_guru.memento.example.shapes.Circle;
+import refactoring_guru.memento.example.shapes.CompoundShape;
+import refactoring_guru.memento.example.shapes.Dot;
+import refactoring_guru.memento.example.shapes.Rectangle;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.awt.*;
 
-/**
- * Demo class. Everything comes together here.
- */
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
+    public static void main(String[] args) {
+        Editor editor = new Editor();
+        editor.loadShapes(
+                new Circle(10, 10, 10, Color.BLUE),
 
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
+                new CompoundShape(
+                        new Circle(110, 110, 50, Color.RED),
+                        new Dot(160, 160, Color.RED)
+                ),
 
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
-
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
-    }
-
-    public static void main(String[] args) throws IOException {
-        init();
-
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+                new CompoundShape(
+                        new Rectangle(250, 250, 100, 100, Color.GREEN),
+                        new Dot(240, 240, Color.GREEN),
+                        new Dot(240, 360, Color.GREEN),
+                        new Dot(360, 360, Color.GREEN),
+                        new Dot(360, 240, Color.GREEN)
+                )
+        );
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
-```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+#### [](https://refactoring.guru/design-patterns/memento/java/example#example-0--OutputDemo-png)**OutputDemo.png:**  Screenshot
 
-
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
-```
+![](https://refactoring.guru/images/patterns/examples/java/memento/OutputDemo.png)

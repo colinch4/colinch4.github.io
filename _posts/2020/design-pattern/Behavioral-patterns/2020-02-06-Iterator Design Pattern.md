@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Iterator"
+description: "Iterator is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.)."
+date: 2020-02-06 14:03
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,270 +10,239 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
-
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Iterator**  is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Iterator design pattern](https://refactoring.guru/images/patterns/content/iterator/iterator.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+Collections are one of the most used data types in programming. Nonetheless, a collection is just a container for a group of objects.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+![Various types of collections](https://refactoring.guru/images/patterns/diagrams/iterator/problem1.png)
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+Various types of collections.
 
-The request must pass a series of checks before the ordering system itself can handle it.
+Most collections store their elements in simple lists. However, some of them are based on stacks, trees, graphs and other complex data structures.
 
-During the next few months, you implemented several more of those sequential checks.
+But no matter how a collection is structured, it must provide some way of accessing its elements so that other code can use these elements. There should be a way to go through each element of the collection without accessing the same elements over and over.
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
+This may sound like an easy job if you have a collection based on a list. You just loop over all of the elements. But how do you sequentially traverse elements of a complex data structure, such as a tree? For example, one day you might be just fine with depth-first traversal of a tree. Yet the next day you might require breadth-first traversal. And the next week, you might need something else, like random access to the tree elements.
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
+![Various traversal algorithms](https://refactoring.guru/images/patterns/diagrams/iterator/problem2.png)
 
-The bigger the code grew, the messier it became.
+The same collection can be traversed in several different ways.
 
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
+Adding more and more traversal algorithms to the collection gradually blurs its primary responsibility, which is efficient data storage. Additionally, some algorithms might be tailored for a specific application, so including them into a generic collection class would be weird.
 
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+On the other hand, the client code that’s supposed to work with various collections may not even care how they store their elements. However, since collections all provide different ways of accessing their elements, you have no option other than to couple your code to the specific collection classes.
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an  _iterator_.
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+![Iterators implement various traversal algorithms](https://refactoring.guru/images/patterns/diagrams/iterator/solution1.png)
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+Iterators implement various traversal algorithms. Several iterator objects can traverse the same collection at the same time.
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+In addition to implementing the algorithm itself, an iterator object encapsulates all of the traversal details, such as the current position and how many elements are left till the end. Because of this, several iterators can go through the same collection at the same time, independently of each other.
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+Usually, iterators provide one primary method for fetching elements of the collection. The client can keep running this method until it doesn’t return anything, which means that the iterator has traversed all of the elements.
 
-Handlers are lined up one by one, forming a chain.
-
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
-
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
-
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
+All iterators must implement the same interface. This makes the client code compatible with any collection type or any traversal algorithm as long as there’s a proper iterator. If you need a special way to traverse a collection, you just create a new iterator class, without having to change the collection or the client.
 
 ## Real-World Analogy
 
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
+![Various ways to walk around Rome](https://refactoring.guru/images/patterns/content/iterator/iterator-comic-1.png)
 
-A call to tech support can go through multiple operators.
+Various ways to walk around Rome.
 
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
+You plan to visit Rome for a few days and visit all of its main sights and attractions. But once there, you could waste a lot of time walking in circles, unable to find even the Colosseum.
 
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
+On the other hand, you could buy a virtual guide app for your smartphone and use it for navigation. It’s smart and inexpensive, and you could be staying at some interesting places for as long as you want.
 
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
+A third alternative is that you could spend some of the trip’s budget and hire a local guide who knows the city like the back of his hand. The guide would be able to tailor the tour to your likings, show you every attraction and tell a lot of exciting stories. That’ll be even more fun; but, alas, more expensive, too.
 
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+All of these options—the random directions born in your head, the smartphone navigator or the human guide—act as iterators over the vast collection of sights and attractions located in Rome.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+![Structure of the Iterator design pattern](https://refactoring.guru/images/patterns/diagrams/iterator/structure.png)
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1.  The  **Iterator**  interface declares the operations required for traversing a collection: fetching the next element, retrieving the current position, restarting iteration, etc.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
+2.  **Concrete Iterators**  implement specific algorithms for traversing a collection. The iterator object should track the traversal progress on its own. This allows several iterators to traverse the same collection independently of each other.
     
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
+3.  The  **Collection**  interface declares one or multiple methods for getting iterators compatible with the collection. Note that the return type of the methods must be declared as the iterator interface so that the concrete collections can return various kinds of iterators.
     
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+4.  **Concrete Collections**  return new instances of a particular concrete iterator class each time the client requests one. You might be wondering, where’s the rest of the collection’s code? Don’t worry, it should be in the same class. It’s just that these details aren’t crucial to the actual pattern, so we’re omitting them.
     
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
+5.  The  **Client**  works with both collections and iterators via their interfaces. This way the client isn’t coupled to concrete classes, allowing you to use various collections and iterators with the same client code.
     
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+    Typically, clients don’t create iterators on their own, but instead get them from collections. Yet, in certain cases, the client can create one directly; for example, when the client defines its own special iterator.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
+In this example, the  **Iterator**  pattern is used to walk through a special kind of collection which encapsulates access to Facebook’s social graph. The collection provides several iterators that can traverse profiles in various ways.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
+![Structure of the Iterator pattern example](https://refactoring.guru/images/patterns/diagrams/iterator/example.png)
 
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
+Example of iterating over social profiles.
 
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
+The ‘friends’ iterator can be used to go over the friends of a given profile. The ‘colleagues’ iterator does the same, except it omits friends who don’t work at the same company as a target person. Both iterators implement a common interface which allows clients to fetch profiles without diving into implementation details such as authentication and sending REST requests.
 
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
+The client code isn’t coupled to concrete classes because it works with collections and iterators only through interfaces. If you decide to connect your app to a new social network, you simply need to provide new collection and iterator classes without changing the existing code.
 
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The collection interface must declare a factory method for
+// producing iterators. You can declare several methods if there
+// are different kinds of iteration available in your program.
+interface SocialNetwork is
+    method createFriendsIterator(profileId):ProfileIterator
+    method createCoworkersIterator(profileId):ProfileIterator
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
+// Each concrete collection is coupled to a set of concrete
+// iterator classes it returns. But the client isn't, since the
+// signature of these methods returns iterator interfaces.
+class Facebook implements SocialNetwork is
+    // ... The bulk of the collection's code should go here ...
 
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
+    // Iterator creation code.
+    method createFriendsIterator(profileId) is
+        return new FacebookIterator(this, profileId, "friends")
+    method createCoworkersIterator(profileId) is
+        return new FacebookIterator(this, profileId, "coworkers")
 
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
-        else
-            container.showHelp()
+// The common interface for all iterators.
+interface ProfileIterator is
+    method getNext():Profile
+    method hasMore():bool
 
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
+// The concrete iterator class.
+class FacebookIterator implements ProfileIterator is
+    // The iterator needs a reference to the collection that it
+    // traverses.
+    private field facebook: Facebook
+    private field profileId, type: string
 
-    method add(child) is
-        children.add(child)
-        child.container = this
+    // An iterator object traverses the collection independently
+    // from other iterators. Therefore it has to store the
+    // iteration state.
+    private field currentPosition
+    private field cache: array of Profile
 
-// Primitive components may be fine with default help
-// implementation...
-class Button extends Component is
-    // ...
+    constructor FacebookIterator(facebook, profileId, type) is
+        this.facebook = facebook
+        this.profileId = profileId
+        this.type = type
 
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
+    private method lazyInit() is
+        if (cache == null)
+            cache = facebook.socialGraphRequest(profileId, type)
 
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
+    // Each concrete iterator class has its own implementation
+    // of the common iterator interface.
+    method getNext() is
+        if (hasMore())
+            currentPosition++
+            return cache[currentPosition]
 
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
+    method hasMore() is
+        lazyInit()
+        return cache.length < currentPosition
 
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
+// Here is another useful trick: you can pass an iterator to a
+// client class instead of giving it access to a whole
+// collection. This way, you don't expose the collection to the
+// client.
+//
+// And there's another benefit: you can change the way the
+// client works with the collection at runtime by passing it a
+// different iterator. This is possible because the client code
+// isn't coupled to concrete iterator classes.
+class SocialSpammer is
+    method send(iterator: ProfileIterator, message: string) is
+        while (iterator.hasNext())
+            profile = iterator.getNext()
+            System.sendEmail(profile.getEmail(), message)
 
-// Client code.
+// The application class configures collections and iterators
+// and then passes them to the client code.
 class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
+    field network: SocialNetwork
+    field spammer: SocialSpammer
 
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
+    method config() is
+        if working with Facebook
+            this.network = new Facebook()
+        if working with LinkedIn
+            this.network = new LinkedIn()
+        this.spammer = new SocialSpammer()
+
+    method sendSpamToFriends(profile) is
+        iterator = network.createFriendsIterator(profile.getId())
+        spammer.send(iterator, "Very  important  message")
+
+    method sendSpamToCoworkers(profile) is
+        iterator = network.createCoworkersIterator(profile.getId())
+        spammer.send(iterator, "Very  important  message")
 ```
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Iterator pattern when your collection has a complex data structure under the hood, but you want to hide its complexity from clients (either for convenience or security reasons).
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The iterator encapsulates the details of working with a complex data structure, providing the client with several simple methods of accessing the collection elements. While this approach is very convenient for the client, it also protects the collection from careless or malicious actions which the client would be able to perform if working with the collection directly.
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the pattern to reduce duplication of the traversal code across your app.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
+The code of non-trivial iteration algorithms tends to be very bulky. When placed within the business logic of an app, it may blur the responsibility of the original code and make it less maintainable. Moving the traversal code to designated iterators can help you make the code of the application more lean and clean.
 
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
+Use the Iterator when you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
 
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+The pattern provides a couple of generic interfaces for both collections and iterators. Given that your code now uses these interfaces, it’ll still work if you pass it various kinds of collections and iterators that implement these interfaces.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  Declare the iterator interface. At the very least, it must have a method for fetching the next element from a collection. But for the sake of convenience you can add a couple of other methods, such as fetching the previous element, tracking the current position, and checking the end of the iteration.
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Declare the collection interface and describe a method for fetching iterators. The return type should be equal to that of the iterator interface. You may declare similar methods if you plan to have several distinct groups of iterators.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+3.  Implement concrete iterator classes for the collections that you want to be traversable with iterators. An iterator object must be linked with a single collection instance. Usually, this link is established via the iterator’s constructor.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+4.  Implement the collection interface in your collection classes. The main idea is to provide the client with a shortcut for creating iterators, tailored for a particular collection class. The collection object must pass itself to the iterator’s constructor to establish a link between them.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+5.  Go over the client code to replace all of the collection traversal code with the use of iterators. The client fetches a new iterator object each time it needs to iterate over the collection elements.
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
-    
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
-    
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
-    
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
-    
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   _Single Responsibility Principle_. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.
+-   _Open/Closed Principle_. You can implement new types of collections and iterators and pass them to existing code without breaking anything.
+-   You can iterate over the same collection in parallel because each iterator object contains its own iteration state.
+-   For the same reason, you can delay an iteration and continue it when needed.
 
--   Some requests may end up unhandled.
+-   Applying the pattern can be an overkill if your app only works with simple collections.
+-   Using an iterator may be less efficient than going through elements of some specialized collections directly.
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   You can use  [Iterators](https://refactoring.guru/design-patterns/iterator)  to traverse  [Composite](https://refactoring.guru/design-patterns/composite)  trees.
     
-    -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    -   _Command_  establishes unidirectional connections between senders and receivers.
-    -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   You can use  [Factory Method](https://refactoring.guru/design-patterns/factory-method)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to let collection subclasses return different types of iterators that are compatible with the collections.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
+-   You can use  [Memento](https://refactoring.guru/design-patterns/memento)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to capture the current iteration state and roll it back if necessary.
     
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
-    
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
-    
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+-   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example 
+**Iterator**  is a behavioral design pattern that allows sequential traversal through a complex data structure without exposing its internal details.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+Thanks to the Iterator, clients can go over elements of different collections in a similar fashion using a single iterator interface.
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Iterator](https://refactoring.guru/design-patterns/iterator)
 
 ## Usage of the pattern in Java
 
@@ -281,262 +250,494 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
+**Usage examples:**  The pattern is very common in Java code. Many frameworks and libraries use it to provide a standard way for traversing their collections.
 
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+Here are some examples from core Java libraries:
 
-Here are some examples of the pattern in core Java libraries:
+-   All implementations of  [`java.util.Iterator`](http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html)  (also  [`java.util.Scanner`](http://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)).
+    
+-   All implementations of  [`java.util.Enumeration`](http://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html)
+    
 
--   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+**Identification:**  Iterator is easy to recognize by the navigation methods (such as  `next`,  `previous`  and others). Client code that uses iterators might not have direct access to the collection being traversed.
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+## Iterating over social network profiles
 
-## Filtering access
+In this example, the Iterator pattern is used to go over social profiles of a remote social network collection without exposing any of the communication details to the client code.
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators)**iterators**
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
-
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-ProfileIterator-java)**iterators/ProfileIterator.java:**  Defines profile interface
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.iterator.example.iterators;
 
-/**
- * Base middleware class.
- */
-public abstract class Middleware {
-    private Middleware next;
+import refactoring_guru.iterator.example.profile.Profile;
 
-    /**
-     * Builds chains of middleware objects.
-     */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
+public interface ProfileIterator {
+    boolean hasNext();
+
+    Profile getNext();
+
+    void reset();
+}
+```
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-FacebookIterator-java)**iterators/FacebookIterator.java:**  Implements iteration over Facebook profiles
+```java
+package refactoring_guru.iterator.example.iterators;
+
+import refactoring_guru.iterator.example.profile.Profile;
+import refactoring_guru.iterator.example.social_networks.Facebook;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FacebookIterator implements ProfileIterator {
+    private Facebook facebook;
+    private String type;
+    private String email;
+    private int currentPosition = 0;
+    private List<String> emails = new ArrayList<>();
+    private List<Profile> profiles = new ArrayList<>();
+
+    public FacebookIterator(Facebook facebook, String type, String email) {
+        this.facebook = facebook;
+        this.type = type;
+        this.email = email;
     }
 
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
-
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
+    private void lazyLoad() {
+        if (emails.size() == 0) {
+            List<String> profiles = facebook.requestProfileFriendsFromFacebook(this.email, this.type);
+            for (String profile : profiles) {
+                this.emails.add(profile);
+                this.profiles.add(null);
+            }
         }
-        return next.check(email, password);
+    }
+
+    @Override
+    public boolean hasNext() {
+        lazyLoad();
+        return currentPosition < emails.size();
+    }
+
+    @Override
+    public Profile getNext() {
+        if (!hasNext()) {
+            return null;
+        }
+
+        String friendEmail = emails.get(currentPosition);
+        Profile friendProfile = profiles.get(currentPosition);
+        if (friendProfile == null) {
+            friendProfile = facebook.requestProfileFromFacebook(friendEmail);
+            profiles.set(currentPosition, friendProfile);
+        }
+        currentPosition++;
+        return friendProfile;
+    }
+
+    @Override
+    public void reset() {
+        currentPosition = 0;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--iterators-LinkedInIterator-java)**iterators/LinkedInIterator.java:**  Implements iteration over LinkedIn profiles
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.iterator.example.iterators;
 
-/**
- * ConcreteHandler. Checks whether there are too many failed login requests.
- */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
+import refactoring_guru.iterator.example.profile.Profile;
+import refactoring_guru.iterator.example.social_networks.LinkedIn;
 
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkedInIterator implements ProfileIterator {
+    private LinkedIn linkedIn;
+    private String type;
+    private String email;
+    private int currentPosition = 0;
+    private List<String> emails = new ArrayList<>();
+    private List<Profile> contacts = new ArrayList<>();
+
+    public LinkedInIterator(LinkedIn linkedIn, String type, String email) {
+        this.linkedIn = linkedIn;
+        this.type = type;
+        this.email = email;
     }
 
-    /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
-     */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
+    private void lazyLoad() {
+        if (emails.size() == 0) {
+            List<String> profiles = linkedIn.requestRelatedContactsFromLinkedInAPI(this.email, this.type);
+            for (String profile : profiles) {
+                this.emails.add(profile);
+                this.contacts.add(null);
+            }
+        }
+    }
+
+    @Override
+    public boolean hasNext() {
+        lazyLoad();
+        return currentPosition < emails.size();
+    }
+
+    @Override
+    public Profile getNext() {
+        if (!hasNext()) {
+            return null;
         }
 
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
+        String friendEmail = emails.get(currentPosition);
+        Profile friendContact = contacts.get(currentPosition);
+        if (friendContact == null) {
+            friendContact = linkedIn.requestContactInfoFromLinkedInAPI(friendEmail);
+            contacts.set(currentPosition, friendContact);
         }
-        return checkNext(email, password);
+        currentPosition++;
+        return friendContact;
+    }
+
+    @Override
+    public void reset() {
+        currentPosition = 0;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
+## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks)**social_networks**
+
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-SocialNetwork-java)**social_networks/SocialNetwork.java:**  Defines common social network interface
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.iterator.example.social_networks;
 
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.iterator.example.iterators.ProfileIterator;
 
-/**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
- */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
+public interface SocialNetwork {
+    ProfileIterator createFriendsIterator(String profileEmail);
 
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
+    ProfileIterator createCoworkersIterator(String profileEmail);
+}
+
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-Facebook-java)**social_networks/Facebook.java:**  Facebook
+
+package refactoring_guru.iterator.example.social_networks;
+
+import refactoring_guru.iterator.example.iterators.FacebookIterator;
+import refactoring_guru.iterator.example.iterators.ProfileIterator;
+import refactoring_guru.iterator.example.profile.Profile;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Facebook implements SocialNetwork {
+    private List<Profile> profiles;
+
+    public Facebook(List<Profile> cache) {
+        if (cache != null) {
+            this.profiles = cache;
+        } else {
+            this.profiles = new ArrayList<>();
+        }
     }
 
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
-            return false;
+    public Profile requestProfileFromFacebook(String profileEmail) {
+        // Here would be a POST request to one of the Facebook API endpoints.
+        // Instead, we emulates long network connection, which you would expect
+        // in the real life...
+        simulateNetworkLatency();
+        System.out.println("Facebook: Loading profile '" + profileEmail + "' over the network...");
+
+        // ...and return test data.
+        return findProfile(profileEmail);
+    }
+
+    public List<String> requestProfileFriendsFromFacebook(String profileEmail, String contactType) {
+        // Here would be a POST request to one of the Facebook API endpoints.
+        // Instead, we emulates long network connection, which you would expect
+        // in the real life...
+        simulateNetworkLatency();
+        System.out.println("Facebook: Loading '" + contactType + "' list of '" + profileEmail + "' over the network...");
+
+        // ...and return test data.
+        Profile profile = findProfile(profileEmail);
+        if (profile != null) {
+            return profile.getContacts(contactType);
         }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
-            return false;
+        return null;
+    }
+
+    private Profile findProfile(String profileEmail) {
+        for (Profile profile : profiles) {
+            if (profile.getEmail().equals(profileEmail)) {
+                return profile;
+            }
         }
-        return checkNext(email, password);
+        return null;
+    }
+
+    private void simulateNetworkLatency() {
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public ProfileIterator createFriendsIterator(String profileEmail) {
+        return new FacebookIterator(this, "friends", profileEmail);
+    }
+
+    @Override
+    public ProfileIterator createCoworkersIterator(String profileEmail) {
+        return new FacebookIterator(this, "coworkers", profileEmail);
+    }
+
+}
+```
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--social_networks-LinkedIn-java)**social_networks/LinkedIn.java:**  LinkedIn
+```java
+package refactoring_guru.iterator.example.social_networks;
+
+import refactoring_guru.iterator.example.iterators.LinkedInIterator;
+import refactoring_guru.iterator.example.iterators.ProfileIterator;
+import refactoring_guru.iterator.example.profile.Profile;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkedIn implements SocialNetwork {
+    private List<Profile> contacts;
+
+    public LinkedIn(List<Profile> cache) {
+        if (cache != null) {
+            this.contacts = cache;
+        } else {
+            this.contacts = new ArrayList<>();
+        }
+    }
+
+    public Profile requestContactInfoFromLinkedInAPI(String profileEmail) {
+        // Here would be a POST request to one of the LinkedIn API endpoints.
+        // Instead, we emulates long network connection, which you would expect
+        // in the real life...
+        simulateNetworkLatency();
+        System.out.println("LinkedIn: Loading profile '" + profileEmail + "' over the network...");
+
+        // ...and return test data.
+        return findContact(profileEmail);
+    }
+
+    public List<String> requestRelatedContactsFromLinkedInAPI(String profileEmail, String contactType) {
+        // Here would be a POST request to one of the LinkedIn API endpoints.
+        // Instead, we emulates long network connection, which you would expect
+        // in the real life.
+        simulateNetworkLatency();
+        System.out.println("LinkedIn: Loading '" + contactType + "' list of '" + profileEmail + "' over the network...");
+
+        // ...and return test data.
+        Profile profile = findContact(profileEmail);
+        if (profile != null) {
+            return profile.getContacts(contactType);
+        }
+        return null;
+    }
+
+    private Profile findContact(String profileEmail) {
+        for (Profile profile : contacts) {
+            if (profile.getEmail().equals(profileEmail)) {
+                return profile;
+            }
+        }
+        return null;
+    }
+
+    private void simulateNetworkLatency() {
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public ProfileIterator createFriendsIterator(String profileEmail) {
+        return new LinkedInIterator(this, "friends", profileEmail);
+    }
+
+    @Override
+    public ProfileIterator createCoworkersIterator(String profileEmail) {
+        return new LinkedInIterator(this, "coworkers", profileEmail);
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
+## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--profile)**profile**
+
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--profile-Profile-java)**profile/Profile.java:**  Social profiles
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.iterator.example.profile;
 
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
-        }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
-    }
-}
-```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
-```java
-package refactoring_guru.chain_of_responsibility.example.server;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-/**
- * Server class.
- */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
+public class Profile {
+    private String name;
+    private String email;
+    private Map<String, List<String>> contacts = new HashMap<>();
 
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
-    }
+    public Profile(String email, String name, String... contacts) {
+        this.email = email;
+        this.name = name;
 
-    /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
-     */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
-
-            // Do something useful here for authorized users.
-
-            return true;
+        // Parse contact list from a set of "friend:email@gmail.com" pairs.
+        for (String contact : contacts) {
+            String[] parts = contact.split(":");
+            String contactType = "friend", contactEmail;
+            if (parts.length == 1) {
+                contactEmail = parts[0];
+            }
+            else {
+                contactType = parts[0];
+                contactEmail = parts[1];
+            }
+            if (!this.contacts.containsKey(contactType)) {
+                this.contacts.put(contactType, new ArrayList<>());
+            }
+            this.contacts.get(contactType).add(contactEmail);
         }
-        return false;
     }
 
-    public void register(String email, String password) {
-        users.put(email, password);
+    public String getEmail() {
+        return email;
     }
 
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
+    public String getName() {
+        return name;
     }
 
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
+    public List<String> getContacts(String contactType) {
+        if (!this.contacts.containsKey(contactType)) {
+            this.contacts.put(contactType, new ArrayList<>());
+        }
+        return contacts.get(contactType);
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+## [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--spammer)**spammer**
+
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--spammer-SocialSpammer-java)**spammer/SocialSpammer.java:**  Message sending app
 ```java
-package refactoring_guru.chain_of_responsibility.example;
+package refactoring_guru.iterator.example.spammer;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.iterator.example.iterators.ProfileIterator;
+import refactoring_guru.iterator.example.profile.Profile;
+import refactoring_guru.iterator.example.social_networks.SocialNetwork;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+public class SocialSpammer {
+    public SocialNetwork network;
+    public ProfileIterator iterator;
+
+    public SocialSpammer(SocialNetwork network) {
+        this.network = network;
+    }
+
+    public void sendSpamToFriends(String profileEmail, String message) {
+        System.out.println("\nIterating over friends...\n");
+        iterator = network.createFriendsIterator(profileEmail);
+        while (iterator.hasNext()) {
+            Profile profile = iterator.getNext();
+            sendMessage(profile.getEmail(), message);
+        }
+    }
+
+    public void sendSpamToCoworkers(String profileEmail, String message) {
+        System.out.println("\nIterating over coworkers...\n");
+        iterator = network.createCoworkersIterator(profileEmail);
+        while (iterator.hasNext()) {
+            Profile profile = iterator.getNext();
+            sendMessage(profile.getEmail(), message);
+        }
+    }
+
+    public void sendMessage(String email, String message) {
+        System.out.println("Sent message to: '" + email + "'. Message body: '" + message + "'");
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--Demo-java)**Demo.java:**  Client code
+```java
+package refactoring_guru.iterator.example;
+
+import refactoring_guru.iterator.example.profile.Profile;
+import refactoring_guru.iterator.example.social_networks.Facebook;
+import refactoring_guru.iterator.example.social_networks.LinkedIn;
+import refactoring_guru.iterator.example.social_networks.SocialNetwork;
+import refactoring_guru.iterator.example.spammer.SocialSpammer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  * Demo class. Everything comes together here.
  */
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
+    public static Scanner scanner = new Scanner(System.in);
 
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
+    public static void main(String[] args) {
+        System.out.println("Please specify social network to target spam tool (default:Facebook):");
+        System.out.println("1. Facebook");
+        System.out.println("2. LinkedIn");
+        String choice = scanner.nextLine();
 
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
+        SocialNetwork network;
+        if (choice.equals("2")) {
+            network = new LinkedIn(createTestProfiles());
+        }
+        else {
+            network = new Facebook(createTestProfiles());
+        }
 
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
+        SocialSpammer spammer = new SocialSpammer(network);
+        spammer.sendSpamToFriends("anna.smith@bing.com",
+                "Hey! This is Anna's friend Josh. Can you do me a favor and like this post [link]?");
+        spammer.sendSpamToCoworkers("anna.smith@bing.com",
+                "Hey! This is Anna's boss Jason. Anna told me you would be interested in [link].");
     }
 
-    public static void main(String[] args) throws IOException {
-        init();
-
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+    public static List<Profile> createTestProfiles() {
+        List<Profile> data = new ArrayList<Profile>();
+        data.add(new Profile("anna.smith@bing.com", "Anna Smith", "friends:mad_max@ya.com", "friends:catwoman@yahoo.com", "coworkers:sam@amazon.com"));
+        data.add(new Profile("mad_max@ya.com", "Maximilian", "friends:anna.smith@bing.com", "coworkers:sam@amazon.com"));
+        data.add(new Profile("bill@microsoft.eu", "Billie", "coworkers:avanger@ukr.net"));
+        data.add(new Profile("avanger@ukr.net", "John Day", "coworkers:bill@microsoft.eu"));
+        data.add(new Profile("sam@amazon.com", "Sam Kitting", "coworkers:anna.smith@bing.com", "coworkers:mad_max@ya.com", "friends:catwoman@yahoo.com"));
+        data.add(new Profile("catwoman@yahoo.com", "Liza", "friends:anna.smith@bing.com", "friends:sam@amazon.com"));
+        return data;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://refactoring.guru/design-patterns/iterator/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+Please specify social network to target spam tool (default:Facebook):
+1. Facebook
+2. LinkedIn
+> 1
 
+Iterating over friends...
 
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
+Facebook: Loading 'friends' list of 'anna.smith@bing.com' over the network...
+Facebook: Loading profile 'mad_max@ya.com' over the network...
+Sent message to: 'mad_max@ya.com'. Message body: 'Hey! This is Anna's friend Josh. Can you do me a favor and like this post [link]?'
+Facebook: Loading profile 'catwoman@yahoo.com' over the network...
+Sent message to: 'catwoman@yahoo.com'. Message body: 'Hey! This is Anna's friend Josh. Can you do me a favor and like this post [link]?'
+
+Iterating over coworkers...
+
+Facebook: Loading 'coworkers' list of 'anna.smith@bing.com' over the network...
+Facebook: Loading profile 'sam@amazon.com' over the network...
+Sent message to: 'sam@amazon.com'. Message body: 'Hey! This is Anna's boss Jason. Anna told me you
 ```

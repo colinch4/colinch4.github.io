@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Chain of Responsibility"
 description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+date: 2020-02-06 14:01
 tags: [디자인패턴]
 comments: true
 share: true

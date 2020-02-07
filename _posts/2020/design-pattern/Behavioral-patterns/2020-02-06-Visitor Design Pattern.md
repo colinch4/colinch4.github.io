@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Visitor"
+description: "Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate."
+date: 2020-02-06 14:10
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,270 +10,251 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
 
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Visitor**  is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Visitor Design Pattern](https://refactoring.guru/images/patterns/content/visitor/visitor.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+Imagine that your team develops an app which works with geographic information structured as one colossal graph. Each node of the graph may represent a complex entity such as a city, but also more granular things like industries, sightseeing areas, etc. The nodes are connected with others if there’s a road between the real objects that they represent. Under the hood, each node type is represented by its own class, while each specific node is an object.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+![Exporting the graph into XML](https://refactoring.guru/images/patterns/diagrams/visitor/problem1.png)
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+Exporting the graph into XML.
 
-The request must pass a series of checks before the ordering system itself can handle it.
+At some point, you got a task to implement exporting the graph into XML format. At first, the job seemed pretty straightforward. You planned to add an export method to each node class and then leverage recursion to go over each node of the graph, executing the export method. The solution was simple and elegant: thanks to polymorphism, you weren’t coupling the code which called the export method to concrete classes of nodes.
 
-During the next few months, you implemented several more of those sequential checks.
+Unfortunately, the system architect refused to allow you to alter existing node classes. He said that the code was already in production and he didn’t want to risk breaking it because of a potential bug in your changes.
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
+![The XML export method had to be added into all node classes](https://refactoring.guru/images/patterns/diagrams/visitor/problem2-en.png)
 
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
+The XML export method had to be added into all node classes, which bore the risk of breaking the whole application if any bugs slipped through along with the change.
 
-The bigger the code grew, the messier it became.
+Besides, he questioned whether it makes sense to have the XML export code within the node classes. The primary job of these classes was to work with geodata. The XML export behavior would look alien there.
 
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
-
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+There was another reason for the refusal. It was highly likely that after this feature was implemented, someone from the marketing department would ask you to provide the ability to export into a different format, or request some other weird stuff. This would force you to change those precious and fragile classes again.
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+The Visitor pattern suggests that you place the new behavior into a separate class called  _visitor_, instead of trying to integrate it into existing classes. The original object that had to perform the behavior is now passed to one of the visitor’s methods as an argument, providing the method access to all necessary data contained within the object.
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+Now, what if that behavior can be executed over objects of different classes? For example, in our case with XML export, the actual implementation will probably be a little bit different across various node classes. Thus, the visitor class may define not one, but a set of methods, each of which could take arguments of different types, like this:
+```java
+class ExportVisitor implements Visitor is
+    method doForCity(City c) { ... }
+    method doForIndustry(Industry f) { ... }
+    method doForSightSeeing(SightSeeing ss) { ... }
+    // ...
+```
+But how exactly would we call these methods, especially when dealing with the whole graph? These methods have different signatures, so we can’t use polymorphism. To pick a proper visitor method that’s able to process a given object, we’d need to check its class. Doesn’t this sound like a nightmare?
+```java
+foreach (Node node in graph)
+    if (node instanceof City)
+        exportVisitor.doForCity((City) node)
+    if (node instanceof Industry)
+        exportVisitor.doForIndustry((Industry) node)
+    // ...
+}
+```
+You might ask, why don’t we use method overloading? That’s when you give all methods the same name, even if they support different sets of parameters. Unfortunately, even assuming that our programming language supports it at all (as Java and C# do), it won’t help us. Since the exact class of a node object is unknown in advance, the overloading mechanism won’t be able to determine the correct method to execute. It’ll default to the method that takes an object of the base  `Node`  class.
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+However, the Visitor pattern addresses this problem. It uses a technique called  [Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch), which helps to execute the proper method on an object without cumbersome conditionals. Instead of letting the client select a proper version of the method to call, how about we delegate this choice to objects we’re passing to the visitor as an argument? Since the objects know their own classes, they’ll be able to pick a proper method on the visitor less awkwardly. They “accept” a visitor and tell it what visiting method should be executed.
+```java
+// Client code
+foreach (Node node in graph)
+    node.accept(exportVisitor)
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+// City
+class City is
+    method accept(Visitor v) is
+        v.doForCity(this)
+    // ...
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+// Industry
+class Industry is
+    method accept(Visitor v) is
+        v.doForIndustry(this)
+    // ...
+```
+I confess. We had to change the node classes after all. But at least the change is trivial and it lets us add further behaviors without altering the code once again.
 
-Handlers are lined up one by one, forming a chain.
-
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
-
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
-
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
+Now, if we extract a common interface for all visitors, all existing nodes can work with any visitor you introduce into the app. If you find yourself introducing a new behavior related to nodes, all you have to do is implement a new visitor class.
 
 ## Real-World Analogy
 
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
+![Insurance agent](https://refactoring.guru/images/patterns/content/visitor/visitor-comic-1.png)
 
-A call to tech support can go through multiple operators.
+A good insurance agent is always ready to offer different policies to various types of organizations.
 
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
+Imagine a seasoned insurance agent who’s eager to get new customers. He can visit every building in a neighborhood, trying to sell insurance to everyone he meets. Depending on the type of organization that occupies the building, he can offer specialized insurance policies:
 
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
-
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
-
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+-   If it’s a residential building, he sells medical insurance.
+-   If it’s a bank, he sells theft insurance.
+-   If it’s a coffee shop, he sells fire and flood insurance.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+![Structure of the Visitor design pattern](https://refactoring.guru/images/patterns/diagrams/visitor/structure.png)
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1.  The  **Visitor**  interface declares a set of visiting methods that can take concrete elements of an object structure as arguments. These methods may have the same names if the program is written in a language that supports overloading, but the type of their parameters must be different.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
+2.  Each  **Concrete Visitor**  implements several versions of the same behaviors, tailored for different concrete element classes.
     
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
+3.  The  **Element**  interface declares a method for “accepting” visitors. This method should have one parameter declared with the type of the visitor interface.
     
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+4.  Each  **Concrete Element**  must implement the acceptance method. The purpose of this method is to redirect the call to the proper visitor’s method corresponding to the current element class. Be aware that even if a base element class implements this method, all subclasses must still override this method in their own classes and call the appropriate method on the visitor object.
     
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
-    
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+5.  The  **Client**  usually represents a collection or some other complex object (for example, a  [Composite](https://refactoring.guru/design-patterns/composite)  tree). Usually, clients aren’t aware of all the concrete element classes because they work with objects from that collection via some abstract interface.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
+In this example, the  **Visitor**  pattern adds XML export support to the class hierarchy of geometric shapes.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
+![Structure of the Visitor pattern example](https://refactoring.guru/images/patterns/diagrams/visitor/example.png)
 
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
-
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
-
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
-
+Exporting various types of objects into XML format via a visitor object.
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The element interface declares an `accept` method that takes
+// the base visitor interface as an argument.
+interface Shape is
+    method move(x, y)
+    method draw()
+    method accept(v: Visitor)
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
-
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
-
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
-        else
-            container.showHelp()
-
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
-
-    method add(child) is
-        children.add(child)
-        child.container = this
-
-// Primitive components may be fine with default help
-// implementation...
-class Button extends Component is
+// Each concrete element class must implement the `accept`
+// method in such a way that it calls the visitor's method that
+// corresponds to the element's class.
+class Dot extends Shape is
     // ...
 
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
+    // Note that we're calling `visitDot`, which matches the
+    // current class name. This way we let the visitor know the
+    // class of the element it works with.
+    method accept(v: Visitor) is
+        v.visitDot(this)
 
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
+class Circle extends Dot is
+    // ...
+    method accept(v: Visitor) is
+        v.visitCircle(this)
 
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
+class Rectangle extends Shape is
+    // ...
+    method accept(v: Visitor) is
+        v.visitRectangle(this)
 
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
+class CompoundShape implements Shape is
+    // ...
+    method accept(v: Visitor) is
+        v.visitCompoundShape(this)
 
-// Client code.
+// The Visitor interface declares a set of visiting methods that
+// correspond to element classes. The signature of a visiting
+// method lets the visitor identify the exact class of the
+// element that it's dealing with.
+interface Visitor is
+    method visitDot(d: Dot)
+    method visitCircle(c: Circle)
+    method visitRectangle(r: Rectangle)
+    method visitCompoundShape(cs: CompoundShape)
+
+// Concrete visitors implement several versions of the same
+// algorithm, which can work with all concrete element classes.
+//
+// You can experience the biggest benefit of the Visitor pattern
+// when using it with a complex object structure such as a
+// Composite tree. In this case, it might be helpful to store
+// some intermediate state of the algorithm while executing the
+// visitor's methods over various objects of the structure.
+class XMLExportVisitor implements Visitor is
+    method visitDot(d: Dot) is
+        // Export the dot's ID and center coordinates.
+
+    method visitCircle(c: Circle) is
+        // Export the circle's ID, center coordinates and
+        // radius.
+
+    method visitRectangle(r: Rectangle) is
+        // Export the rectangle's ID, left-top coordinates,
+        // width and height.
+
+    method visitCompoundShape(cs: CompoundShape) is
+        // Export the shape's ID as well as the list of its
+        // children's IDs.
+
+// The client code can run visitor operations over any set of
+// elements without figuring out their concrete classes. The
+// accept operation directs a call to the appropriate operation
+// in the visitor object.
 class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
+    field allShapes: array of Shapes
 
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
+    method export() is
+        exportVisitor = new XMLExportVisitor()
+
+        foreach (shape in allShapes) do
+            shape.accept(exportVisitor)
 ```
+If you wonder why we need the  `accept`  method in this example, my article  [Visitor and Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch)  addresses this question in detail.
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The Visitor pattern lets you execute an operation over a set of objects with different classes by having a visitor object implement several variants of the same operation, which correspond to all target classes.
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the Visitor to clean up the business logic of auxiliary behaviors.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
+The pattern lets you make the primary classes of your app more focused on their main jobs by extracting all other behaviors into a set of visitor classes.
 
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
+Use the pattern when a behavior makes sense only in some classes of a class hierarchy, but not in others.
 
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+You can extract this behavior into a separate visitor class and implement only those visiting methods that accept objects of relevant classes, leaving the rest empty.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  Declare the visitor interface with a set of “visiting” methods, one per each concrete element class that exists in the program.
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Declare the element interface. If you’re working with an existing element class hierarchy, add the abstract “acceptance” method to the base class of the hierarchy. This method should accept a visitor object as an argument.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+3.  Implement the acceptance methods in all concrete element classes. These methods must simply redirect the call to a visiting method on the incoming visitor object which matches the class of the current element.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+4.  The element classes should only work with visitors via the visitor interface. Visitors, however, must be aware of all concrete element classes, referenced as parameter types of the visiting methods.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+5.  For each behavior that can’t be implemented inside the element hierarchy, create a new concrete visitor class and implement all of the visiting methods.
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
+    You might encounter a situation where the visitor will need access to some private members of the element class. In this case, you can either make these fields or methods public, violating the element’s encapsulation, or nest the visitor class in the element class. The latter is only possible if you’re lucky to work with a programming language that supports nested classes.
     
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
+6.  The client must create visitor objects and pass them into elements via “acceptance” methods.
     
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
-    
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
-    
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   _Open/Closed Principle_. You can introduce a new behavior that can work with objects of different classes without changing these classes.
+-   _Single Responsibility Principle_. You can move multiple versions of the same behavior into the same class.
+-   A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.
 
--   Some requests may end up unhandled.
+-   You need to update all visitors each time a class gets added to or removed from the element hierarchy.
+-   Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   You can treat  [Visitor](https://refactoring.guru/design-patterns/visitor)  as a powerful version of the  [Command](https://refactoring.guru/design-patterns/command)  pattern. Its objects can execute operations over various objects of different classes.
     
-    -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    -   _Command_  establishes unidirectional connections between senders and receivers.
-    -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+-   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  to execute an operation over an entire  [Composite](https://refactoring.guru/design-patterns/composite)  tree.
     
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
-    
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
-    
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
-    
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+-   You can use  [Visitor](https://refactoring.guru/design-patterns/visitor)  along with  [Iterator](https://refactoring.guru/design-patterns/iterator)  to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example
+**Visitor**  is a behavioral design pattern that allows adding new behaviors to existing class hierarchy without altering any existing code.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+> Read why Visitors can’t be simply replaced with method overloading in our article  [Visitor and Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch).
 
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Visitor](https://refactoring.guru/design-patterns/visitor)
 
 ## Usage of the pattern in Java
 
@@ -281,262 +262,361 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
+**Usage examples:**  Visitor isn’t a very common pattern because of its complexity and narrow applicability.
 
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+Here are some examples of pattern in code Java libraries:
 
-Here are some examples of the pattern in core Java libraries:
+-   [`javax.lang.model.element.AnnotationValue`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValue.html)  and  [`AnnotationValueVisitor`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValueVisitor.html)
+-   [`javax.lang.model.element.Element`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/Element.html)  and  [`ElementVisitor`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/ElementVisitor.html)
+-   [`javax.lang.model.type.TypeMirror`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/type/TypeMirror.html)  and  [`TypeVisitor`](http://docs.oracle.com/javase/8/docs/api/javax/lang/model/type/TypeVisitor.html)
+-   [`java.nio.file.FileVisitor`](http://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html)  and  [`SimpleFileVisitor`](http://docs.oracle.com/javase/8/docs/api/java/nio/file/SimpleFileVisitor.html)
+-   [`javax.faces.component.visit.VisitContext`](http://docs.oracle.com/javaee/7/api/javax/faces/component/visit/VisitContext.html)  and  [`VisitCallback`](http://docs.oracle.com/javaee/7/api/javax/faces/component/visit/VisitCallback.html)
 
--   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+## Exporting shapes into XML
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+In this example, we would want to export a set of geometric shapes into XML. The catch is that we don’t want to change the code of shapes directly or at least keep it to the minimum.
 
-## Filtering access
+In the end, the Visitor pattern establishes an infrastructure that allows us to add any behaviors to the shapes hierarchy without changing the existing code of those classes.
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+## [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes)**shapes**
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
-
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Shape-java)**shapes/Shape.java:**  Common shape interface
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.visitor.example.shapes;
 
-/**
- * Base middleware class.
- */
-public abstract class Middleware {
-    private Middleware next;
+import refactoring_guru.visitor.example.visitor.Visitor;
 
-    /**
-     * Builds chains of middleware objects.
-     */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
+public interface Shape {
+    void move(int x, int y);
+    void draw();
+    String accept(Visitor visitor);
+}
+```
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Dot-java)**shapes/Dot.java:**  A dot
+```java
+package refactoring_guru.visitor.example.shapes;
+
+import refactoring_guru.visitor.example.visitor.Visitor;
+
+public class Dot implements Shape {
+    private int id;
+    private int x;
+    private int y;
+
+    public Dot() {
     }
 
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
+    public Dot(int id, int x, int y) {
+        this.id = id;
+        this.x = x;
+        this.y = y;
+    }
 
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
-        }
-        return next.check(email, password);
+    @Override
+    public void move(int x, int y) {
+        // move shape
+    }
+
+    @Override
+    public void draw() {
+        // draw shape
+    }
+
+    public String accept(Visitor visitor) {
+        return visitor.visitDot(this);
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getId() {
+        return id;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Circle-java)**shapes/Circle.java:**  A circle
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.visitor.example.shapes;
 
-/**
- * ConcreteHandler. Checks whether there are too many failed login requests.
- */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
+import refactoring_guru.visitor.example.visitor.Visitor;
 
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
+public class Circle extends Dot {
+    private int radius;
+
+    public Circle(int id, int x, int y, int radius) {
+        super(id, x, y);
+        this.radius = radius;
     }
 
-    /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
-     */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
-        }
+    @Override
+    public String accept(Visitor visitor) {
+        return visitor.visitCircle(this);
+    }
 
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
-        }
-        return checkNext(email, password);
+    public int getRadius() {
+        return radius;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-Rectangle-java)**shapes/Rectangle.java:**  A rectangle
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.visitor.example.shapes;
 
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.visitor.example.visitor.Visitor;
 
-/**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
- */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
+public class Rectangle implements Shape {
+    private int id;
+    private int x;
+    private int y;
+    private int width;
+    private int height;
 
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
+    public Rectangle(int id, int x, int y, int width, int height) {
+        this.id = id;
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
     }
 
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
-            return false;
-        }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
-            return false;
-        }
-        return checkNext(email, password);
+    @Override
+    public String accept(Visitor visitor) {
+        return visitor.visitRectangle(this);
+    }
+
+    @Override
+    public void move(int x, int y) {
+        // move shape
+    }
+
+    @Override
+    public void draw() {
+        // draw shape
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--shapes-CompoundShape-java)**shapes/CompoundShape.java:**  A compound shape
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.visitor.example.shapes;
 
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
-        }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
+import refactoring_guru.visitor.example.visitor.Visitor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CompoundShape implements Shape {
+    public int id;
+    public List<Shape> children = new ArrayList<>();
+
+    public CompoundShape(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public void move(int x, int y) {
+        // move shape
+    }
+
+    @Override
+    public void draw() {
+        // draw shape
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String accept(Visitor visitor) {
+        return visitor.visitCompoundGraphic(this);
+    }
+
+    public void add(Shape shape) {
+        children.add(shape);
     }
 }
 ```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
+## [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor)**visitor**
 
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor-Visitor-java)**visitor/Visitor.java:**  Common visitor interface
 ```java
-package refactoring_guru.chain_of_responsibility.example.server;
+package refactoring_guru.visitor.example.visitor;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
+import refactoring_guru.visitor.example.shapes.Circle;
+import refactoring_guru.visitor.example.shapes.CompoundShape;
+import refactoring_guru.visitor.example.shapes.Dot;
+import refactoring_guru.visitor.example.shapes.Rectangle;
 
-import java.util.HashMap;
-import java.util.Map;
+public interface Visitor {
+    String visitDot(Dot dot);
 
-/**
- * Server class.
- */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
+    String visitCircle(Circle circle);
 
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
-    }
+    String visitRectangle(Rectangle rectangle);
 
-    /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
-     */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
-
-            // Do something useful here for authorized users.
-
-            return true;
-        }
-        return false;
-    }
-
-    public void register(String email, String password) {
-        users.put(email, password);
-    }
-
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
-    }
-
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
-    }
+    String visitCompoundGraphic(CompoundShape cg);
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--visitor-XMLExportVisitor-java)**visitor/XMLExportVisitor.java:**  Concrete visitor, exports all shapes into XML
 ```java
-package refactoring_guru.chain_of_responsibility.example;
+package refactoring_guru.visitor.example.visitor;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+import refactoring_guru.visitor.example.shapes.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+public class XMLExportVisitor implements Visitor {
 
-/**
- * Demo class. Everything comes together here.
- */
+    public String export(Shape... args) {
+        StringBuilder sb = new StringBuilder();
+        for (Shape shape : args) {
+            sb.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>" + "\n");
+            sb.append(shape.accept(this)).append("\n");
+            System.out.println(sb.toString());
+            sb.setLength(0);
+        }
+        return sb.toString();
+    }
+
+    public String visitDot(Dot d) {
+        return "<dot>" + "\n" +
+                "    <id>" + d.getId() + "</id>" + "\n" +
+                "    <x>" + d.getX() + "</x>" + "\n" +
+                "    <y>" + d.getY() + "</y>" + "\n" +
+                "</dot>";
+    }
+
+    public String visitCircle(Circle c) {
+        return "<circle>" + "\n" +
+                "    <id>" + c.getId() + "</id>" + "\n" +
+                "    <x>" + c.getX() + "</x>" + "\n" +
+                "    <y>" + c.getY() + "</y>" + "\n" +
+                "    <radius>" + c.getRadius() + "</radius>" + "\n" +
+                "</circle>";
+    }
+
+    public String visitRectangle(Rectangle r) {
+        return "<rectangle>" + "\n" +
+                "    <id>" + r.getId() + "</id>" + "\n" +
+                "    <x>" + r.getX() + "</x>" + "\n" +
+                "    <y>" + r.getY() + "</y>" + "\n" +
+                "    <width>" + r.getWidth() + "</width>" + "\n" +
+                "    <height>" + r.getHeight() + "</height>" + "\n" +
+                "</rectangle>";
+    }
+
+    public String visitCompoundGraphic(CompoundShape cg) {
+        return "<compound_graphic>" + "\n" +
+                "   <id>" + cg.getId() + "</id>" + "\n" +
+                _visitCompoundGraphic(cg) +
+                "</compound_graphic>";
+    }
+
+    private String _visitCompoundGraphic(CompoundShape cg) {
+        StringBuilder sb = new StringBuilder();
+        for (Shape shape : cg.children) {
+            String obj = shape.accept(this);
+            // Proper indentation for sub-objects.
+            obj = "    " + obj.replace("\n", "\n    ") + "\n";
+            sb.append(obj);
+        }
+        return sb.toString();
+    }
+
+}
+```
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--Demo-java)**Demo.java:**  Client code
+```java
+package refactoring_guru.visitor.example;
+
+import refactoring_guru.visitor.example.shapes.*;
+import refactoring_guru.visitor.example.visitor.XMLExportVisitor;
+
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
+    public static void main(String[] args) {
+        Dot dot = new Dot(1, 10, 55);
+        Circle circle = new Circle(2, 23, 15, 10);
+        Rectangle rectangle = new Rectangle(3, 10, 17, 20, 30);
 
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
+        CompoundShape compoundShape = new CompoundShape(4);
+        compoundShape.add(dot);
+        compoundShape.add(circle);
+        compoundShape.add(rectangle);
 
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
+        CompoundShape c = new CompoundShape(5);
+        c.add(dot);
+        compoundShape.add(c);
 
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
+        export(circle, compoundShape);
     }
 
-    public static void main(String[] args) throws IOException {
-        init();
-
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+    private static void export(Shape... shapes) {
+        XMLExportVisitor exportVisitor = new XMLExportVisitor();
+        System.out.println(exportVisitor.export(shapes));
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
-```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+#### [](https://refactoring.guru/design-patterns/visitor/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<circle>
+    <id>2</id>
+    <x>23</x>
+    <y>15</y>
+    <radius>10</radius>
+</circle>
 
-
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
+<?xml version="1.0" encoding="utf-8"?>
+<compound_graphic>
+   <id>4</id>
+    <dot>
+        <id>1</id>
+        <x>10</x>
+        <y>55</y>
+    </dot>
+    <circle>
+        <id>2</id>
+        <x>23</x>
+        <y>15</y>
+        <radius>10</radius>
+    </circle>
+    <rectangle>
+        <id>3</id>
+        <x>10</x>
+        <y>17</y>
+        <width>20</width>
+        <height>30</height>
+    </rectangle>
+    <compound_graphic>
+       <id>5</id>
+        <dot>
+            <id>1</id>
+            <x>10</x>
+            <y>55</y>
+        </dot>
+    </compound_graphic>
+</compound_graphic>
 ```

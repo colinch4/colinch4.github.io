@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Chain of Responsibility"
-description: "Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain."
-date: 2020-02-06 14:00
+title: "[Design Pattern] Template Method"
+description: "Template Method is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure."
+date: 2020-02-06 14:09
 tags: [디자인패턴]
 comments: true
 share: true
@@ -10,270 +10,191 @@ share: true
 
 /  [Design Patterns](https://refactoring.guru/design-patterns)  /  [Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
-#### Also known as:  CoR,­Chain of Command
-
 ## Intent
 
-**Chain of Responsibility**  is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+**Template Method**  is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
-![Chain of Responsibility design pattern](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility.png)
+![Template method design pattern](https://refactoring.guru/images/patterns/content/template-method/template-method.png)
 
 ## Problem
 
-Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
+Imagine that you’re creating a data mining application that analyzes corporate documents. Users feed the app documents in various formats (PDF, DOC, CSV), and it tries to extract meaningful data from these docs in a uniform format.
 
-After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
+The first version of the app could work only with DOC files. In the following version, it was able to support CSV files. A month later, you “taught” it to extract data from PDF files.
 
-![Problem, solved by Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem1-en.png)
+![Data mining classes contained a lot of duplicate code](https://refactoring.guru/images/patterns/diagrams/template-method/problem.png)
 
-The request must pass a series of checks before the ordering system itself can handle it.
+Data mining classes contained a lot of duplicate code.
 
-During the next few months, you implemented several more of those sequential checks.
+At some point, you noticed that all three classes have a lot of similar code. While the code for dealing with various data formats was entirely different in all classes, the code for data processing and analysis is almost identical. Wouldn’t it be great to get rid of the code duplication, leaving the algorithm structure intact?
 
--   One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
-    
--   Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
-    
--   Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
-    
-
-![With each new check the code became bigger, messier, and uglier](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/problem2-en.png)
-
-The bigger the code grew, the messier it became.
-
-The code of the checks, which had already looked like a mess, became more and more bloated as you added each new feature. Changing one check sometimes affected the others. Worst of all, when you tried to reuse the checks to protect other components of the system, you had to duplicate some of the code since those components required some of the checks, but not all of them.
-
-The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
+There was another problem related to client code that used these classes. It had lots of conditionals that picked a proper course of action depending on the class of the processing object. If all three processing classes had a common interface or a base class, you’d be able to eliminate the conditionals in client code and use polymorphism when calling methods on a processing object.
 
 ## Solution
 
-Like many other behavioral design patterns, the  **Chain of Responsibility**  relies on transforming particular behaviors into stand-alone objects called  _handlers_. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
+The Template Method pattern suggests that you break down an algorithm into a series of steps, turn these steps into methods, and put a series of calls to these methods inside a single “template method.” The steps may either be  `abstract`, or have some default implementation. To use the algorithm, the client is supposed to provide its own subclass, implement all abstract steps, and override some of the optional ones if needed (but not the template method itself).
 
-The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
+Let’s see how this will play out in our data mining app. We can create a base class for all three parsing algorithms. This class defines a template method consisting of a series of calls to various document-processing steps.
 
-Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
+![Template method defines the skeleton of the algorithm](https://refactoring.guru/images/patterns/diagrams/template-method/solution-en.png)
 
-In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
+Template method breaks the algorithm into steps, allowing subclasses to override these steps but not the actual method.
 
-![Handlers are lined-up one by one, forming a chain](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-en.png)
+At first, we can declare all steps  `abstract`, forcing the subclasses to provide their own implementations for these methods. In our case, subclasses already have all necessary implementations, so the only thing we might need to do is adjust signatures of the methods to match the methods of the superclass.
 
-Handlers are lined up one by one, forming a chain.
+Now, let’s see what we can do to get rid of the duplicate code. It looks like the code for opening/closing files and extracting/parsing data is different for various data formats, so there’s no point in touching those methods. However, implementation of other steps, such as analyzing the raw data and composing reports, is very similar, so it can be pulled up into the base class, where subclasses can share that code.
 
-However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
+As you can see, we’ve got two types of steps:
 
-For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
+-   _abstract steps_  must be implemented by every subclass
+-   _optional steps_  already have some default implementation, but still can be overridden if needed
 
-![A chain can be formed from a branch of an object tree](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution2-en.png)
-
-A chain can be formed from a branch of an object tree.
-
-It’s crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the  `execute`  method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
+There’s another type of step, called  _hooks_. A hook is an optional step with an empty body. A template method would work even if a hook isn’t overridden. Usually, hooks are placed before and after crucial steps of algorithms, providing subclasses with additional extension points for an algorithm.
 
 ## Real-World Analogy
 
-![Talking with tech support can be hard](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-en.png)
+![Mass housing construction](https://refactoring.guru/images/patterns/diagrams/template-method/live-example.png)
 
-A call to tech support can go through multiple operators.
+A typical architectural plan can be slightly altered to better fit the client’s needs.
 
-You’ve just bought and installed a new piece of hardware on your computer. Since you’re a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
+The template method approach can be used in mass housing construction. The architectural plan for building a standard house may contain several extension points that would let a potential owner adjust some details of the resulting house.
 
-The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
-
-Alas, the operator isn’t able to suggest anything specific either. He keeps quoting lengthy excerpts from the manual, refusing to listen to your comments. After hearing the phrase “have you tried turning the computer off and on again?” for the 10th time, you demand to be connected to a proper engineer.
-
-Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
+Each building step, such as laying the foundation, framing, building walls, installing plumbing and wiring for water and electricity, etc., can be slightly changed to make the resulting house a little bit different from others.
 
 ## Structure
 
-![Structure of the Chain Of Responsibility design pattern](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png)
+![Structure of the Template Method design pattern](https://refactoring.guru/images/patterns/diagrams/template-method/structure.png)
 
-1.  The  **Handler**  declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1.  The  **Abstract Class**  declares methods that act as steps of an algorithm, as well as the actual template method which calls these methods in a specific order. The steps may either be declared  `abstract`  or have some default implementation.
     
-2.  The  **Base Handler**  is an optional class where you can put the boilerplate code that’s common to all handler classes.
-    
-    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
-    
-3.  **Concrete Handlers**  contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
-    
-    Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
-    
-4.  The  **Client**  may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
+2.  **Concrete Classes**  can override all of the steps, but not the template method itself.
     
 
 ## Pseudocode
 
-In this example, the  **Chain of Responsibility**  pattern is responsible for displaying contextual help information for active GUI elements.
+In this example, the  **Template Method**  pattern provides a “skeleton” for various branches of artificial intelligence in a simple strategy video game.
 
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example-en.png)
+![Structure of the Template Method pattern example](https://refactoring.guru/images/patterns/diagrams/template-method/example.png)
 
-The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
+AI classes of a simple video game.
 
-The application’s GUI is usually structured as an object tree. For example, the  `Dialog`  class, which renders the main window of the app, would be the root of the object tree. The dialog contains  `Panels`, which might contain other panels or simple low-level elements like  `Buttons`  and  `TextFields`.
-
-A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
-
-![Structure of the Chain of Responsibility example](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/example2-en.png)
-
-That’s how a help request traverses GUI objects.
-
-When a user points the mouse cursor at an element and presses the  `F1`  key, the application detects the component under the pointer and sends it a help request. The request bubbles up through all the element’s containers until it reaches the element that’s capable of displaying the help information.
+All races in the game have almost the same types of units and buildings. Therefore you can reuse the same AI structure for various races, while being able to override some of the details. With this approach, you can override the orcs’ AI to make it more aggressive, make humans more defense-oriented, and make monsters unable to build anything. Adding a new race to the game would require creating a new AI subclass and overriding the default methods declared in the base AI class.
 
 ```java
-// The handler interface declares a method for building a chain
-// of handlers. It also declares a method for executing a
-// request.
-interface ComponentWithContextualHelp is
-    method showHelp()
+// The abstract class defines a template method that contains a
+// skeleton of some algorithm composed of calls, usually to
+// abstract primitive operations. Concrete subclasses implement
+// these operations, but leave the template method itself
+// intact.
+class GameAI is
+    // The template method defines the skeleton of an algorithm.
+    method turn() is
+        collectResources()
+        buildStructures()
+        buildUnits()
+        attack()
 
-// The base class for simple components.
-abstract class Component implements ComponentWithContextualHelp is
-    field tooltipText: string
+    // Some of the steps may be implemented right in a base
+    // class.
+    method collectResources() is
+        foreach (s in this.builtStructures) do
+            s.collect()
 
-    // The component's container acts as the next link in the
-    // chain of handlers.
-    protected field container: Container
+    // And some of them may be defined as abstract.
+    abstract method buildStructures()
+    abstract method buildUnits()
 
-    // The component shows a tooltip if there's help text
-    // assigned to it. Otherwise it forwards the call to the
-    // container, if it exists.
-    method showHelp() is
-        if (tooltipText != null)
-            // Show tooltip.
+    // A class can have several template methods.
+    method attack() is
+        enemy = closestEnemy()
+        if (enemy == null)
+            sendScouts(map.center)
         else
-            container.showHelp()
+            sendWarriors(enemy.position)
 
-// Containers can contain both simple components and other
-// containers as children. The chain relationships are
-// established here. The class inherits showHelp behavior from
-// its parent.
-abstract class Container extends Component is
-    protected field children: array of Component
+    abstract method sendScouts(position)
+    abstract method sendWarriors(position)
 
-    method add(child) is
-        children.add(child)
-        child.container = this
+// Concrete classes have to implement all abstract operations of
+// the base class but they must not override the template method
+// itself.
+class OrcsAI extends GameAI is
+    method buildStructures() is
+        if (there are some resources) then
+            // Build farms, then barracks, then stronghold.
 
-// Primitive components may be fine with default help
-// implementation...
-class Button extends Component is
+    method buildUnits() is
+        if (there are plenty of resources) then
+            if (there are no scouts)
+                // Build peon, add it to scouts group.
+            else
+                // Build grunt, add it to warriors group.
+
     // ...
 
-// But complex components may override the default
-// implementation. If the help text can't be provided in a new
-// way, the component can always call the base implementation
-// (see Component class).
-class Panel extends Container is
-    field modalHelpText: string
+    method sendScouts(position) is
+        if (scouts.length > 0) then
+            // Send scouts to position.
 
-    method showHelp() is
-        if (modalHelpText != null)
-            // Show a modal window with the help text.
-        else
-            super.showHelp()
+    method sendWarriors(position) is
+        if (warriors.length > 5) then
+            // Send warriors to position.
 
-// ...same as above...
-class Dialog extends Container is
-    field wikiPageURL: string
+// Subclasses can also override some operations with a default
+// implementation.
+class MonstersAI extends GameAI is
+    method collectResources() is
+        // Monsters don't collect resources.
 
-    method showHelp() is
-        if (wikiPageURL != null)
-            // Open the wiki help page.
-        else
-            super.showHelp()
+    method buildStructures() is
+        // Monsters don't build structures.
 
-// Client code.
-class Application is
-    // Every application configures the chain differently.
-    method createUI() is
-        dialog = new Dialog("Budget  Reports")
-        dialog.wikiPageURL = "http://..."
-        panel = new Panel(0, 0, 400, 800)
-        panel.modalHelpText = "This  panel  does..."
-        ok = new Button(250, 760, 50, 20, "OK")
-        ok.tooltipText = "This  is  an  OK  button  that..."
-        cancel = new Button(320, 760, 50, 20, "Cancel")
-        // ...
-        panel.add(ok)
-        panel.add(cancel)
-        dialog.add(panel)
-
-    // Imagine what happens here.
-    method onF1KeyPress() is
-        component = this.getComponentAtMouseCoords()
-        component.showHelp()
+    method buildUnits() is
+        // Monsters don't build units.
 ```
 
 ## Applicability
 
-Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
+Use the Template Method pattern when you want to let clients extend only particular steps of an algorithm, but not the whole algorithm or its structure.
 
-The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+The Template Method lets you turn a monolithic algorithm into a series of individual steps which can be easily extended by subclasses while keeping intact the structure defined in a superclass.
 
-Use the pattern when it’s essential to execute several handlers in a particular order.
+Use the pattern when you have several classes that contain almost identical algorithms with some minor differences. As a result, you might need to modify all classes when the algorithm changes.
 
-Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
-
-Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.
-
-If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
+When you turn such an algorithm into a template method, you can also pull up the steps with similar implementations into a superclass, eliminating code duplication. Code that varies between subclasses can remain in subclasses.
 
 ## How to Implement
 
-1.  Declare the handler interface and describe the signature of a method for handling requests.
+1.  Analyze the target algorithm to see whether you can break it into steps. Consider which steps are common to all subclasses and which ones will always be unique.
     
-    Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
+2.  Create the abstract base class and declare the template method and a set of abstract methods representing the algorithm’s steps. Outline the algorithm’s structure in the template method by executing corresponding steps. Consider making the template method  `final`  to prevent subclasses from overriding it.
     
-2.  To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
+3.  It’s okay if all the steps end up being abstract. However, some steps might benefit from having a default implementation. Subclasses don’t have to implement those methods.
     
-    This class should have a field for storing a reference to the next handler in the chain. Consider making the class immutable. However, if you plan to modify chains at runtime, you need to define a setter for altering the value of the reference field.
+4.  Think of adding hooks between the crucial steps of the algorithm.
     
-    You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there’s none left. Concrete handlers will be able to use this behavior by calling the parent method.
+5.  For each variation of the algorithm, create a new concrete subclass. It  _must_  implement all of the abstract steps, but  _may_  also override some of the optional ones.
     
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
-    
-    -   Whether it’ll process the request.
-    -   Whether it’ll pass the request along the chain.
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
-    
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
-    
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
-    
-    -   The chain may consist of a single link.
-    -   Some requests may not reach the end of the chain.
-    -   Others may reach the end of the chain unhandled.
 
 ## Pros and Cons
 
--   You can control the order of request handling.
--   _Single Responsibility Principle_. You can decouple classes that invoke operations from classes that perform operations.
--   _Open/Closed Principle_. You can introduce new handlers into the app without breaking the existing client code.
+-   You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm.
+-   You can pull the duplicate code into a superclass.
 
--   Some requests may end up unhandled.
+-   Some clients may be limited by the provided skeleton of an algorithm.
+-   You might violate the  _Liskov Substitution Principle_  by suppressing a default step implementation via a subclass.
+-   Template methods tend to be harder to maintain the more steps they have.
 
 ## Relations with Other Patterns
 
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility),  [Command](https://refactoring.guru/design-patterns/command),  [Mediator](https://refactoring.guru/design-patterns/mediator)  and  [Observer](https://refactoring.guru/design-patterns/observer)  address various ways of connecting senders and receivers of requests:
+-   [Factory Method](https://refactoring.guru/design-patterns/factory-method)  is a specialization of  [Template Method](https://refactoring.guru/design-patterns/template-method). At the same time, a  _Factory Method_  may serve as a step in a large  _Template Method_.
     
-    -   _Chain of Responsibility_  passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    -   _Command_  establishes unidirectional connections between senders and receivers.
-    -   _Mediator_  eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -   _Observer_  lets receivers dynamically subscribe to and unsubscribe from receiving requests.
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  is often used in conjunction with  [Composite](https://refactoring.guru/design-patterns/composite). In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
-    
--   Handlers in  [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  can be implemented as  [Commands](https://refactoring.guru/design-patterns/command). In this case, you can execute a lot of different operations over the same context object, represented by a request.
-    
-    However, there’s another approach, where the request itself is a  _Command_  object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
-    
--   [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)  and  [Decorator](https://refactoring.guru/design-patterns/decorator)  have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
-    
-    The  _CoR_  handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various  _Decorators_  can extend the object’s behavior while keeping it consistent with the base interface. In addition, decorators aren’t allowed to break the flow of the request.
+-   [Template Method](https://refactoring.guru/design-patterns/template-method)  is based on inheritance: it lets you alter parts of an algorithm by extending those parts in subclasses.  [Strategy](https://refactoring.guru/design-patterns/strategy)  is based on composition: you can alter parts of the object’s behavior by supplying it with different strategies that correspond to that behavior.  _Template Method_  works at the class level, so it’s static.  _Strategy_  works on the object level, letting you switch behaviors at runtime.
 
-**Chain of Responsibility**  is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+## Code Example
+**Template Method**  is a behavioral design pattern that allows you to defines a skeleton of an algorithm in a base class and let subclasses override the steps without changing the overall algorithm’s structure.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
-
-[Learn more about Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+[Learn more about Template Method](https://refactoring.guru/design-patterns/template-method)
 
 ## Usage of the pattern in Java
 
@@ -281,211 +202,174 @@ The pattern allows multiple objects to handle the request without coupling sende
 
 **Popularity:**
 
-**Usage examples:**  The Chain of Responsibility pattern isn’t a frequent guest in a Java program since it’s only relevant when code operates with chains of objects.
+**Usage examples:**  The Template Method pattern is quite common in Java frameworks. Developers often use it to provide framework users with a simple means of extending standard functionality using inheritance.
 
-One of the most popular use cases for the pattern is bubbling events to the parent components in GUI classes. Another notable use case is sequential access filters.
+Here are some examples of Template Methods in core Java libraries:
 
-Here are some examples of the pattern in core Java libraries:
+-   All non-abstract methods of  [`java.io.InputStream`](http://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html),  [`java.io.OutputStream`](http://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html),  [`java.io.Reader`](http://docs.oracle.com/javase/8/docs/api/java/io/Reader.html)  and  [`java.io.Writer`](http://docs.oracle.com/javase/8/docs/api/java/io/Writer.html).
+    
+-   All non-abstract methods of  [`java.util.AbstractList`](http://docs.oracle.com/javase/8/docs/api/java/util/AbstractList.html),  [`java.util.AbstractSet`](http://docs.oracle.com/javase/8/docs/api/java/util/AbstractSet.html)  and  [`java.util.AbstractMap`](http://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html).
+    
+-   [`javax.servlet.http.HttpServlet`](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html), all the  `doXXX()`  methods by default send a HTTP 405 “Method Not Allowed” error as a response. You’re free to override any of them.
+    
 
--   [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
--   [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+**Identification:**  Template Method can be recognized by behavioral methods that already have a “default” behavior defined by the base class.
 
-**Identification:**  The pattern is recognizable by behavioral methods of one group of objects indirectly call the same methods in other objects, while all the objects follow the common interface.
+## Overriding standard steps of an algorithm
 
-## Filtering access
+In this example, the Template Method pattern defines an algorithm of working with a social network. Subclasses that match a particular social network, implement these steps according to the API provided by the social network.
 
-This example shows how a request containing user data passes a sequential chain of handlers that perform various things such as authentification, authorization, and validation.
+## [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks)**networks**
 
-This example is a bit different from the canonical version of the pattern given by various authors. Most of the pattern examples are built on the notion of looking for the right handler, launching it and exiting the chain after that. But here we execute every handler until there’s one that  **can’t handle**  a request. Be aware that this still is the Chain of Responsibility pattern, even though the flow is a bit different.
-
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware)**middleware**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-Middleware-java)**middleware/Middleware.java:**  Basic validation interface
+#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Network-java)**networks/Network.java:**  Base social network class
 ```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
+package refactoring_guru.template_method.example.networks;
 
 /**
- * Base middleware class.
+ * Base class of social network.
  */
-public abstract class Middleware {
-    private Middleware next;
+public abstract class Network {
+    String userName;
+    String password;
+
+    Network() {}
 
     /**
-     * Builds chains of middleware objects.
+     * Publish the data to whatever network.
      */
-    public Middleware linkWith(Middleware next) {
-        this.next = next;
-        return next;
-    }
-
-    /**
-     * Subclasses will implement this method with concrete checks.
-     */
-    public abstract boolean check(String email, String password);
-
-    /**
-     * Runs check on the next object in chain or ends traversing if we're in
-     * last object in chain.
-     */
-    protected boolean checkNext(String email, String password) {
-        if (next == null) {
-            return true;
-        }
-        return next.check(email, password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-ThrottlingMiddleware-java)**middleware/ThrottlingMiddleware.java:**  Check request amount limit
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-/**
- * ConcreteHandler. Checks whether there are too many failed login requests.
- */
-public class ThrottlingMiddleware extends Middleware {
-    private int requestPerMinute;
-    private int request;
-    private long currentTime;
-
-    public ThrottlingMiddleware(int requestPerMinute) {
-        this.requestPerMinute = requestPerMinute;
-        this.currentTime = System.currentTimeMillis();
-    }
-
-    /**
-     * Please, not that checkNext() call can be inserted both in the beginning
-     * of this method and in the end.
-     *
-     * This gives much more flexibility than a simple loop over all middleware
-     * objects. For instance, an element of a chain can change the order of
-     * checks by running its check after all other checks.
-     */
-    public boolean check(String email, String password) {
-        if (System.currentTimeMillis() > currentTime + 60_000) {
-            request = 0;
-            currentTime = System.currentTimeMillis();
-        }
-
-        request++;
-        
-        if (request > requestPerMinute) {
-            System.out.println("Request limit exceeded!");
-            Thread.currentThread().stop();
-        }
-        return checkNext(email, password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-UserExistsMiddleware-java)**middleware/UserExistsMiddleware.java:**  Check user’s credentials
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-import refactoring_guru.chain_of_responsibility.example.server.Server;
-
-/**
- * ConcreteHandler. Checks whether a user with the given credentials exists.
- */
-public class UserExistsMiddleware extends Middleware {
-    private Server server;
-
-    public UserExistsMiddleware(Server server) {
-        this.server = server;
-    }
-
-    public boolean check(String email, String password) {
-        if (!server.hasEmail(email)) {
-            System.out.println("This email is not registered!");
-            return false;
-        }
-        if (!server.isValidPassword(email, password)) {
-            System.out.println("Wrong password!");
-            return false;
-        }
-        return checkNext(email, password);
-    }
-}
-```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--middleware-RoleCheckMiddleware-java)**middleware/RoleCheckMiddleware.java:**  Check user’s role
-```java
-package refactoring_guru.chain_of_responsibility.example.middleware;
-
-/**
- * ConcreteHandler. Checks a user's role.
- */
-public class RoleCheckMiddleware extends Middleware {
-    public boolean check(String email, String password) {
-        if (email.equals("admin@example.com")) {
-            System.out.println("Hello, admin!");
-            return true;
-        }
-        System.out.println("Hello, user!");
-        return checkNext(email, password);
-    }
-}
-```
-## [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server)**server**
-
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--server-Server-java)**server/Server.java:**  Authorization target
-```java
-package refactoring_guru.chain_of_responsibility.example.server;
-
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-
-import java.util.HashMap;
-import java.util.Map;
-
-/**
- * Server class.
- */
-public class Server {
-    private Map<String, String> users = new HashMap<>();
-    private Middleware middleware;
-
-    /**
-     * Client passes a chain of object to server. This improves flexibility and
-     * makes testing the server class easier.
-     */
-    public void setMiddleware(Middleware middleware) {
-        this.middleware = middleware;
-    }
-
-    /**
-     * Server gets email and password from client and sends the authorization
-     * request to the chain.
-     */
-    public boolean logIn(String email, String password) {
-        if (middleware.check(email, password)) {
-            System.out.println("Authorization have been successful!");
-
-            // Do something useful here for authorized users.
-
-            return true;
+    public boolean post(String message) {
+        // Authenticate before posting. Every network uses a different
+        // authentication method.
+        if (logIn(this.userName, this.password)) {
+            // Send the post data.
+            boolean result =  sendData(message.getBytes());
+            logOut();
+            return result;
         }
         return false;
     }
 
-    public void register(String email, String password) {
-        users.put(email, password);
+    abstract boolean logIn(String userName, String password);
+    abstract boolean sendData(byte[] data);
+    abstract void logOut();
+}
+```
+#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Facebook-java)**networks/Facebook.java:**  Concrete social network
+```java
+package refactoring_guru.template_method.example.networks;
+
+/**
+ * Class of social network
+ */
+public class Facebook extends Network {
+    public Facebook(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
     }
 
-    public boolean hasEmail(String email) {
-        return users.containsKey(email);
+    public boolean logIn(String userName, String password) {
+        System.out.println("\nChecking user's parameters");
+        System.out.println("Name: " + this.userName);
+        System.out.print("Password: ");
+        for (int i = 0; i < this.password.length(); i++) {
+            System.out.print("*");
+        }
+        simulateNetworkLatency();
+        System.out.println("\n\nLogIn success on Facebook");
+        return true;
     }
 
-    public boolean isValidPassword(String email, String password) {
-        return users.get(email).equals(password);
+    public boolean sendData(byte[] data) {
+        boolean messagePosted = true;
+        if (messagePosted) {
+            System.out.println("Message: '" + new String(data) + "' was posted on Facebook");
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void logOut() {
+        System.out.println("User: '" + userName + "' was logged out from Facebook");
+    }
+
+    private void simulateNetworkLatency() {
+        try {
+            int i = 0;
+            System.out.println();
+            while (i < 10) {
+                System.out.print(".");
+                Thread.sleep(500);
+                i++;
+            }
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--Demo-java)**Demo.java:**  Client code
+#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--networks-Twitter-java)**networks/Twitter.java:**  One more social network
 ```java
-package refactoring_guru.chain_of_responsibility.example;
+package refactoring_guru.template_method.example.networks;
 
-import refactoring_guru.chain_of_responsibility.example.middleware.Middleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.RoleCheckMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.ThrottlingMiddleware;
-import refactoring_guru.chain_of_responsibility.example.middleware.UserExistsMiddleware;
-import refactoring_guru.chain_of_responsibility.example.server.Server;
+/**
+ * Class of social network
+ */
+public class Twitter extends Network {
+
+    public Twitter(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
+    }
+
+    public boolean logIn(String userName, String password) {
+        System.out.println("\nChecking user's parameters");
+        System.out.println("Name: " + this.userName);
+        System.out.print("Password: ");
+        for (int i = 0; i < this.password.length(); i++) {
+            System.out.print("*");
+        }
+        simulateNetworkLatency();
+        System.out.println("\n\nLogIn success on Twitter");
+        return true;
+    }
+
+    public boolean sendData(byte[] data) {
+        boolean messagePosted = true;
+        if (messagePosted) {
+            System.out.println("Message: '" + new String(data) + "' was posted on Twitter");
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void logOut() {
+        System.out.println("User: '" + userName + "' was logged out from Twitter");
+    }
+
+    private void simulateNetworkLatency() {
+        try {
+            int i = 0;
+            System.out.println();
+            while (i < 10) {
+                System.out.print(".");
+                Thread.sleep(500);
+                i++;
+            }
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+}
+```
+#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--Demo-java)**Demo.java:**  Client code
+```java
+package refactoring_guru.template_method.example;
+
+import refactoring_guru.template_method.example.networks.Facebook;
+import refactoring_guru.template_method.example.networks.Network;
+import refactoring_guru.template_method.example.networks.Twitter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -495,48 +379,50 @@ import java.io.InputStreamReader;
  * Demo class. Everything comes together here.
  */
 public class Demo {
-    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static Server server;
-
-    private static void init() {
-        server = new Server();
-        server.register("admin@example.com", "admin_pass");
-        server.register("user@example.com", "user_pass");
-
-        // All checks are linked. Client can build various chains using the same
-        // components.
-        Middleware middleware = new ThrottlingMiddleware(2);
-        middleware.linkWith(new UserExistsMiddleware(server))
-                .linkWith(new RoleCheckMiddleware());
-
-        // Server gets a chain from client code.
-        server.setMiddleware(middleware);
-    }
-
     public static void main(String[] args) throws IOException {
-        init();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Network network = null;
+        System.out.print("Input user name: ");
+        String userName = reader.readLine();
+        System.out.print("Input password: ");
+        String password = reader.readLine();
 
-        boolean success;
-        do {
-            System.out.print("Enter email: ");
-            String email = reader.readLine();
-            System.out.print("Input password: ");
-            String password = reader.readLine();
-            success = server.logIn(email, password);
-        } while (!success);
+        // Enter the message.
+        System.out.print("Input message: ");
+        String message = reader.readLine();
+
+        System.out.println("\nChoose social network for posting message.\n" +
+                "1 - Facebook\n" +
+                "2 - Twitter");
+        int choice = Integer.parseInt(reader.readLine());
+
+        // Create proper network object and send the message.
+        if (choice == 1) {
+            network = new Facebook(userName, password);
+        } else if (choice == 2) {
+            network = new Twitter(userName, password);
+        }
+        network.post(message);
     }
 }
 ```
-#### [](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
+#### [](https://refactoring.guru/design-patterns/template-method/java/example#example-0--OutputDemo-txt)**OutputDemo.txt:**  Execution result
 ```java
-Enter email: admin@example.com
-Input password: admin_pass
-Hello, admin!
-Authorization have been successful!
+Input user name: Jhonatan
+Input password: qswe
+Input message: Hello, World!
 
+Choose social network for posting message.
+1 - Facebook
+2 - Twitter
+2
 
-Enter email: user@example.com
-Input password: user_pass
-Hello, user!
-Authorization have been successful!
+Checking user's parameters
+Name: Jhonatan
+Password: ****
+..........
+
+LogIn success on Twitter
+Message: 'Hello, World!' was posted on Twitter
+User: 'Jhonatan' was logged out from Twitter
 ```
