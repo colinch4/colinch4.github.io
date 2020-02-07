@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] What’s a design pattern?"
 description: "Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code."
-date: 2020-02-06 13:01
+date: 2020-02-06 12:00
 tags: [디자인패턴]
 comments: true
 share: true

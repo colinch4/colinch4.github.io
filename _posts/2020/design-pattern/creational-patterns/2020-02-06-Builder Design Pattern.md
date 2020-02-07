@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Builder"
 description: "Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code."
-date: 2020-02-06 13:04
+date: 2020-02-06 13:03
 tags: [디자인패턴]
 comments: true
 share: true

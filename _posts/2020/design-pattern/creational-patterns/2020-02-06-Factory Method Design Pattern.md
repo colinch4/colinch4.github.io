@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Factory Method"
 description: "Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created."
-date: 2020-02-06 13:05
+date: 2020-02-06 13:01
 tags: [디자인패턴]
 comments: true
 share: true

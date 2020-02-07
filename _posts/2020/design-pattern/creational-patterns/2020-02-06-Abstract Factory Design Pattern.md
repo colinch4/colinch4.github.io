@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Abstract Factory"
 description: "Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes."
-date: 2020-02-06 13:03
+date: 2020-02-06 13:02
 tags: [디자인패턴]
 comments: true
 share: true

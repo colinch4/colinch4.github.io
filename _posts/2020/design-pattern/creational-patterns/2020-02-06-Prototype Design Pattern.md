@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Prototype"
 description: "Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes."
-date: 2020-02-06 13:07
+date: 2020-02-06 13:04
 tags: [디자인패턴]
 comments: true
 share: true

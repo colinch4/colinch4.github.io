@@ -2,7 +2,7 @@
 layout: post
 title: "[Design Pattern] Singleton"
 description: "Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance."
-date: 2020-02-06 13:08
+date: 2020-02-06 13:05
 tags: [디자인패턴]
 comments: true
 share: true

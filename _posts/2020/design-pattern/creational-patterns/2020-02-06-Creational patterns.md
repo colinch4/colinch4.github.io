@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[Design Pattern] Creational patterns"
+title: "[Design Pattern] Creational Design Patterns"
 description: "Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code."
-date: 2020-02-06 13:02
+date: 2020-02-06 13:00
 tags: [디자인패턴]
 comments: true
 share: true
