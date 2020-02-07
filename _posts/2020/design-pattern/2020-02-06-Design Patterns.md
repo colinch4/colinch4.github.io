@@ -2,7 +2,7 @@
 layout: post
 title: "Design Patterns"
 description: "In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations."
-date: 2020-02-06 13:00
+date: 2020-02-06 13:01
 tags: [디자인패턴]
 comments: true
 share: true

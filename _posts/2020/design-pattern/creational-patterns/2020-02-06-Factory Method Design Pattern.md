@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Factory Method Design Pattern"
-description: "Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. Defining a "virtual" constructor. The  `new`  operator considered harmful."
-date: 2020-02-06 13:00
+description: "Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. Defining a virtual constructor. The  new  operator considered harmful."
+date: 2020-02-06 13:05
 tags: [디자인패턴]
 comments: true
 share: true

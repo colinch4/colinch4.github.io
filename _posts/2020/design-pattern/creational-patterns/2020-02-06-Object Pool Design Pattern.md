@@ -2,7 +2,7 @@
 layout: post
 title: "Object Pool Design Pattern"
 description: "Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instantiations in use at any one time is low."
-date: 2020-02-06 13:00
+date: 2020-02-06 13:06
 tags: [디자인패턴]
 comments: true
 share: true

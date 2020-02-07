@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Singleton Design Pattern"
-description: "Ensure a class has only one instance, and provide a global point of access to it. Encapsulated "just-in-time initialization" or "initialization on first use"."
-date: 2020-02-06 13:00
+description: "Ensure a class has only one instance, and provide a global point of access to it. Encapsulated just-in-time initialization or initialization on first use."
+date: 2020-02-06 13:08
 tags: [디자인패턴]
 comments: true
 share: true

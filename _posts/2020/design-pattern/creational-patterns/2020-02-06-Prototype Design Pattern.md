@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Prototype Design Pattern"
-description: "Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype. Co-opt one instance of a class for use as a breeder of all future instances. The  `new`  operator considered harmful."
-date: 2020-02-06 13:00
+description: "Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype. Co-opt one instance of a class for use as a breeder of all future instances. The  new  operator considered harmful."
+date: 2020-02-06 13:07
 tags: [디자인패턴]
 comments: true
 share: true

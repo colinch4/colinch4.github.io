@@ -2,7 +2,7 @@
 layout: post
 title: "Creational patterns"
 description: "In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation."
-date: 2020-02-06 13:00
+date: 2020-02-06 13:02
 tags: [디자인패턴]
 comments: true
 share: true

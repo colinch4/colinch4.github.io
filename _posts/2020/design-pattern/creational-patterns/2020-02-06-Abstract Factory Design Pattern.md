@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Abstract Factory Design Pattern"
-description: "Provide an interface for creating families of related or dependent objects without specifying their concrete classes. A hierarchy that encapsulates: many possible "platforms", and the construction of a suite of "products". The  `new`  operator considered harmful."
-date: 2020-02-06 13:00
+description: "Provide an interface for creating families of related or dependent objects without specifying their concrete classes. A hierarchy that encapsulates: many possible platforms, and the construction of a suite of products. The  new  operator considered harmful."
+date: 2020-02-06 13:03
 tags: [디자인패턴]
 comments: true
 share: true

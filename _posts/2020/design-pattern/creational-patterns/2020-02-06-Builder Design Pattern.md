@@ -2,7 +2,7 @@
 layout: post
 title: "Builder Design Pattern"
 description: "Separate the construction of a complex object from its representation so that the same construction process can create different representations. Parse a complex representation, create one of several targets."
-date: 2020-02-06 13:00
+date: 2020-02-06 13:04
 tags: [디자인패턴]
 comments: true
 share: true
