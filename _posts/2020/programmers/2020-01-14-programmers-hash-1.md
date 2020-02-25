@@ -4,7 +4,7 @@ title: "[programmers][hash] 전화번호 목록"
 description: "전화번호부에 적힌 전화번호 중, 한 번호가 다른 번호의 접두어인 경우가 있는지 확인하려 합니다.
 전화번호가 다음과 같을 경우, 구조대 전화번호는 영석이의 전화번호의 접두사입니다."
 date: 2020-01-14
-tags: [programmers, 알고리즘, hash]
+tags: [programmers, hash]
 comments: true
 share: true
 ---

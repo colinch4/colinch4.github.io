@@ -4,7 +4,7 @@ title: "[programmers][알고리즘][level2] 소수 찾기"
 description: "numberOfPrime 메소드는 정수 n을 매개변수로 입력받습니다.
 1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하도록 numberOfPrime 메소드를 만들어 보세요."
 date: 2018-05-14
-tags: [programmers, 알고리즘]
+tags: [programmers]
 comments: true
 share: true
 ---
