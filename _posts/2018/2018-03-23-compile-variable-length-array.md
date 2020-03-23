@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "가변 배열(VLA : Variable-Length Arrays)의 초기화"
+title: "[C++] 가변 배열(VLA : Variable-Length Arrays)의 초기화"
 description: "가변 배열이란 무엇인가?"
 date: 2018-03-23
 tags: [c++]
