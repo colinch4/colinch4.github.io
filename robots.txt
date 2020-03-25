@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://algamza.github.io/sitemap.xml
+Sitemap: https://algamza.github.io/sitemap.xml
