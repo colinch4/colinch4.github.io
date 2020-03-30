@@ -4,9 +4,9 @@ title: "ViewModels and LiveData: Patterns + AntiPatterns"
 date: 2020-03-30 10:10
 category: 
 author: kskim2
-tags: [architecture]
+tags: [architecture, mvvm]
 summary: 
-description: "Typical interaction of entities in an app built with Architecture Components"
+description: "Ideally, ViewModels shouldn’t know anything about Android. This improves testability, leak safety and modularity. A general rule of thumb is to make sure there are no android.* imports in your ViewModels (with exceptions like android.arch.*). The same applies to presenters."
 comments: true
 share: true
 ---
