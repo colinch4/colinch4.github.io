@@ -465,7 +465,7 @@ instanceof
 삼항 연산자 ?:
 </pre>
 
-<예시>
+예시 
 
 ```xml
 android:text="@{String.valueOf(index + 1)}"
