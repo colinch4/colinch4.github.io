@@ -286,7 +286,7 @@ class FriendManager {
 
 # 레이아웃 세부 정보
 
-## ● Import
+## Import
 
 레이아웃에서 import 를 통해 해당 클래스를 참조 할 수 있습니다. 예를들어 View 클래스를 참조하려면 아래와 같이 추가 하여 사용 합니다.
 ```xml
@@ -338,7 +338,7 @@ class Utils {
 </data>
 ```
 
-## ● Variables
+## Variables
 ```xml
 <data>
     <import type="android.graphics.drawable.Drawable"/>
@@ -369,7 +369,7 @@ class Utils {
 color resource 를 바로 설정해도 되지만 레이아웃 파일에서 context variable 사용 예제를 위해 작성해보았습니다.
 변수선언에 있어 유의사항은 가로/세로 모드에 따른 별도의 binding 구현 시 변수이름이 충돌되지 않게 선언하여 사용해야 한다는 점입니다.
 
-## ● Binding class
+## Binding class
 
 위에서 한번 언급하였지만 빌드 시 레이아웃 파일 이름을 기준으로 binding 클래스가 생성 됩니다.
 이때 파일이름 기준으로 대문자로 시작하고  "_" 가 제거 되고 다음문자를 대문자로 바꾼다음 "Binding" 이 접미사로 붙습니다.
@@ -394,7 +394,7 @@ binding 클래스는 임의로 정의 할수도 있는데, 아래와 같이 원�
 ```
 이렇게 하면 해당 레이아웃 파일에 대한 binding 클래스는 지정한 이름으로 생성 되게 됩니다.
 
-## ● Include
+## Include
 
 레이아웃 파일에서 include 태그를 사용 시 include 하려는 레이아웃 파일로 변수를 전달 할 수 있습니다.
 ```xml
@@ -435,7 +435,7 @@ include 한 name.xml 과 contact.xml 에 bind:variable 속성을 통해 user 변
 </layout>
 ```
 
-## ● 공통 표현식
+## 공통 표현식
 
 아래와 같은 표현은 java 와 동일하게 사용 할 수 있습니다
 
@@ -471,7 +471,7 @@ android:text="@{user.diaplyName != null ? user.displayName : user.lastName}"
 ```
 왼쪽 피연산자가 null 이 아니면 왼쪽 피연산자가 선택 되고 오른쪽 피연산자가 null 이 아니면 오른쪽 피연산자가 선택 됩니다.
 
-## ● Collection
+## Collection
 
 편의상 [] 를 통해 collection 에 접근 할 수 있습니다.
 ```xml
@@ -493,7 +493,7 @@ android:text="@{sparse[index]}"
 android:text="@{map[key]}"
 ```
 
-## ● 문자 리터럴
+## 문자 리터럴
 참조 값이 아닌 문자열을 바로 사용해야 하는 경우가 있습니다.
 이때는 다음과 같은 형태로 바인딩을 표현하여 사용합니다.
 ```xml
@@ -501,7 +501,7 @@ android:text='@{map["firstName"]}' //작은 따옴표로 묶고 특성 값을 �
 android:text="@{map[`firstName`]}" //큰 따옴표로 묶고 역따옴표를 사용
 android:text="@{map[&quot;firstName&quot;]}" //큰 따옴표로 묶고 작은 따옴표 사용 (이때 xml 상에서 인식 되기 위해 &quot; 로 표현
 ```
-## ● Resource
+## Resource
 
 다음과 같이 바인딩 구문에 리소스를 직접 참조 할 수 있습니다.
 ```xml
@@ -531,7 +531,7 @@ android:text="@{@plurals/banana(bananaCount)}"
 기본적으로는 databinding 에서 임의의 데이터 객체를 사용하여 레이아웃과 바인딩을 구현 할 수 있지만 바인딩 하고 있는 객체의 값이 변경 되어도 UI  가 업데이트 되진 않습니다. 데이터가 변경 되었을 때 이를 알려주는 기능을 데이터 객체에 부여하면 databinding 의 장점을 극대화 시킬 수 있습니다.
 databinding 은 데이터 변경에 대응하기 위한 세 가지 메커니즘을 제공 합니다. 차례대로 살펴보도록 하겠습니다.
 
-## ● Observable Objects
+## Observable Objects
 
 바인딩 하려는 객체에 android.databinding.Observable 인터페이스를 구현하면 해당 객체에 단일 리스너를 연결하여 그 객체에 모든 속성의 변경사항을 수신 할 수 있게 됩니다. 편의를 위해 BaseObservable 클래스를 제공하고 있으며, 원하는 객체에 BaseObservable 클래스를 확장하여 사용 할 수 있습니다.
 내부적으로 리스너를 추가/해제 하는 메커니즘을 갖고 있지만 최종적으로 데이터 변경에 대해 처리를 하기 위해서는 해당 필드의 접근자 메소드에 android.databinding.Bindable annotation 을 추가하고 설정자 메소드에서 이를 알림으로써 구현 할 수 있습니다. 예제코드를 살펴보겠습니다.
@@ -582,7 +582,7 @@ class User(firstName: String, lastName: String) : BaseObservable() {
 }
 ```
 
-## ● Observable Fields
+## Observable Fields
 
 위에서 데이터 객체에 Observable interface 를 구현하여 사용하는 방식을 알아보았습니다.
 두번째로 Databinding library 에서는 각 필드단위로 Observable 를 구현 할 수 있는 Observable Fileds 를 제공 합니다.
@@ -618,7 +618,7 @@ binding.user?.apply{
 
 val userAge = binding.user?.age?.get()
 ```
-## ● Observable Collection
+## Observable Collection
 마지막으로 databinding librar 는 Observable Collection 을 제공 합니다. 제공하는 Collection 은 아래와 같습니다.
 ```kotlin
 ObservableArrayList<T>
@@ -680,7 +680,7 @@ kotlin 에서는 Object 대신 Any 라는 이름을 사용하지만 레이아웃
 
 앞서 언급했듯이 컴파일 단계에서 자동으로 바인딩 클래스가 생성 됩니다. 레이아웃 파일 이름을 기준으로 생성되며, 원하는 이름으로 지정 할 수 있는 방법도 알아 보았습니다. 생성 되는 바인딩 클래스들은 모두 android.databinding.ViewDataBinding 클래스를 확장 합니다.
 
-## ● binding 생성
+## binding 생성
 
 Activity 의 contentview 로 설정함과 동시에 binding 을 하기 위해 아래의 메소드를 사용했었습니다.
 ```kotlin
@@ -702,7 +702,7 @@ val binding : ViewDataBinding = DataBindingUtil.inflate(layoutInflater, layoutId
 val binding : ViewDataBinding = DataBindingUtil.bindTo(viewRoot, layoutId)
 ```
 
-## ● ID 가 있는 view 에 대한 binding
+## ID 가 있는 view 에 대한 binding
 databinding 은 id 가 있는 view 에 대해서는 자동으로 해당 view 에 대한 필드를 생성하여 findViewById 를 사용하지 않아도 view 에 바로 엑세스 할 수 있습니다.(또한 이 메커니즘이 findViewById 를 사용하는것 보다 더 빠를 수 있습니다)
 kotlin 의 경우 kotlin-extension 을 통해 layout id 로 생성 되어지는 view 에 바로 엑세스가 가능한 맥락과 유사한 내용입니다.
 예를들어 아래와 같은 id 를 갖는 view 들에 대해서 binding 클래스는 다음과 같이 필드를 생성 합니다.
@@ -728,7 +728,7 @@ public final android.widget.TextView firstNameTextView;
 public final android.widget.TextView lastNameTextView;
 ```
 
-## ● 변수
+## 변수
 레이아웃에 binding 을 위해 선언한 변수들에 대해서 binding class 에서는 접근자/생성자 메소드를 제공 합니다.
 ```xml
 <data>
@@ -746,12 +746,12 @@ public abstract void setImage(Drawable image);
 public abstract String getNote();
 public abstract void setNote(String note);
 ```
-## ● ViewStub 과 함께 사용하기 & 고급 바인딩
+## ViewStub 과 함께 사용하기 & 고급 바인딩
 이 내용은 따로 포스팅 할 예정입니다. 포스팅 후 링크를 첨부 하도록 하겠습니다.
 
 # 속성 값 설정 
 
-## ● layout 속성에 대한 자동 메소드 선택
+## layout 속성에 대한 자동 메소드 선택
 layout 속성에는 여러 종류가 있습니다. TextView 를 예로 들면 android:textColor, android:text 등이 있죠.
 데이터 바인딩을 사용하면 바인딩 식이 적용 된 xml 속성에 대해 자동으로 setter 메소드를 찾아서 선택하고, 호출 합니다. 속성의 namespace 는 중요하지 않고 속성 이름만 정확하게 사용 하면 됩니다. 만약 android:text 속성에 바인딩 식이 적용 되어있다면 TextView 의 setText() 를 찾아서 binding 되는 것이 그 예 입니다.
 
@@ -780,7 +780,7 @@ app:scrimColor 와 app:drawerListener는 기본으로 제공하는 XML 속성이
 ```
 가이드 문서에 따르면 framework 쪽에는 이미 위와같은 처리가 되있기 때문에 개발자가 직접 위와 같은 처리를 할 일은 거의 없을 것이라고 하네요.
 
-## ● 커스텀 바인딩 로직
+## 커스텀 바인딩 로직
 일부 XML 속성에 대해서는 별도의 바인딩 로직이 필요 할 수 있습니다. 예를 들어 android:paddingLeft 의 경우 제공하는 특정 setter 메소드가 없습니다.
 그대신 setPadding() 이라는 setter 가 있으며 이 메소드를 이용하여 커스텀 바인딩 메소드를 생성하여 XML 속성과 연결 할 수 있습니다.
 framework 에는 이미 이러한 처리가 되어 있는데 예시를 보도록 하겠습니다.
@@ -979,7 +979,7 @@ View.OnAttachStateChangeListener 는 setter 메소드 대신에 add, remove를 �
 # 객체 변환
 
 
-## ● 자동 객체 형 변환
+## 자동 객체 형 변환
 바인딩 식에서 객체가 리턴 될때, 데이터바인딩 라이브러리 내부에서 속성에 값을 설정할 적절한 메소드를 선택하게 됩니다.
 객체는 선택 된 메소드의 매개변수 타입으로 캐스팅 되는데, 이것은 ObservableMap 을 사용하여 데이터를 관리할 경우 편리합니다.
 예제를 보겠습니다. 
