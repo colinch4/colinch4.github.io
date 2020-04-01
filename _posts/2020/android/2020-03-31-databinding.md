@@ -354,10 +354,10 @@ class Utils {
 예를들어 "@{user.age}" 일 때 user 가 null 인 경우 age(Int) 의 기본 값인 0 이 할당되게 됩니다.
 
 또한 기본적으로 binding 클래스가 생성 될때 root view 의 context 를 가져오게 되는데, 레이아웃 파일에서 "context" 라는 이름으로 context 를 사용 할 수도 있습니다. context 를 사용하여 color resource 를 가져온 뒤 textColor 를 설정해 보겠습니다.
+
 ```xml
 <data>
     <import type="android.support.v4.content.ContextCompat"/>
-    ...
 </data>
 
 <TextView
@@ -366,6 +366,7 @@ class Utils {
     android:layout_height="wrap_content"
     android:textColor="@{ContextCompat.getColor(context, android.R.color.holo_green_light)}" />
 ```
+
 color resource 를 바로 설정해도 되지만 레이아웃 파일에서 context variable 사용 예제를 위해 작성해보았습니다.
 변수선언에 있어 유의사항은 가로/세로 모드에 따른 별도의 binding 구현 시 변수이름이 충돌되지 않게 선언하여 사용해야 한다는 점입니다.
 
@@ -376,6 +377,7 @@ color resource 를 바로 설정해도 되지만 레이아웃 파일에서 conte
 이 클래스는 모듈 패키지 하위에 databinding 패키지에 배치 되게 됩니다. 예를들어 모듈 패키지가 "com.example" 인 경우 "com.example.databinding" 패키지에 binding 클래스가 생성되어 배치되게 됩니다.
 
 binding 클래스는 임의로 정의 할수도 있는데, 아래와 같이 원하는 이름을 지정합니다.
+
 ```xml
 //type1 모듈패키지 하위 databinding 패키지에 생성
 <data class="임의의클래스명">
@@ -392,11 +394,13 @@ binding 클래스는 임의로 정의 할수도 있는데, 아래와 같이 원�
 ...
 </data>
 ```
+
 이렇게 하면 해당 레이아웃 파일에 대한 binding 클래스는 지정한 이름으로 생성 되게 됩니다.
 
 ## Include
 
 레이아웃 파일에서 include 태그를 사용 시 include 하려는 레이아웃 파일로 변수를 전달 할 수 있습니다.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -415,10 +419,12 @@ binding 클래스는 임의로 정의 할수도 있는데, 아래와 같이 원�
    </LinearLayout>
 </layout>
 ```
+
 include 한 name.xml 과 contact.xml 에 bind:variable 속성을 통해 user 변수를 전달 하였습니다.
 이렇게 사용하기 위해서는 전달 받고자 하는 레이아웃 파일에서 같은 이름의 변수가 선언 되어있어야 합니다
 
 그러나 merge 태그의 하위요소로서 include 를 허용하지 않습니다. 예를들어 다음과 같은 형태는 지원하지 않습니다
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -458,22 +464,27 @@ instanceof
 </pre>
 
 <예시>
+
 ```xml
 android:text="@{String.valueOf(index + 1)}"
 android:visibility="@{age < 13 ? View.GONE : View.VISIBLE}"
 android:transitionName='@{"image_" + id}'
 ```
+
 또한 null 병합 연산자(??) 를 지원하는데 다음과 같이 사용합니다
+
 ```xml
 android:text="@{user.displayName ?? user.lastName}"
 //아래와 같은 표현식으로 사용 됩니다
 android:text="@{user.diaplyName != null ? user.displayName : user.lastName}"
 ```
+
 왼쪽 피연산자가 null 이 아니면 왼쪽 피연산자가 선택 되고 오른쪽 피연산자가 null 이 아니면 오른쪽 피연산자가 선택 됩니다.
 
 ## Collection
 
 편의상 [] 를 통해 collection 에 접근 할 수 있습니다.
+
 ```xml
 <data>
     <import type="android.util.SparseArray"/>
@@ -496,22 +507,28 @@ android:text="@{map[key]}"
 ## 문자 리터럴
 참조 값이 아닌 문자열을 바로 사용해야 하는 경우가 있습니다.
 이때는 다음과 같은 형태로 바인딩을 표현하여 사용합니다.
+
 ```xml
 android:text='@{map["firstName"]}' //작은 따옴표로 묶고 특성 값을 큰 따옴표를 사용
 android:text="@{map[`firstName`]}" //큰 따옴표로 묶고 역따옴표를 사용
 android:text="@{map[&quot;firstName&quot;]}" //큰 따옴표로 묶고 작은 따옴표 사용 (이때 xml 상에서 인식 되기 위해 &quot; 로 표현
 ```
+
 ## Resource
 
 다음과 같이 바인딩 구문에 리소스를 직접 참조 할 수 있습니다.
+
 ```xml
 android:padding="@{large? @dimen/largePadding : @dimen/smallPadding}"
 ```
+
 또한 특정 리소스가 매개변수를 필요로 할 경우 아래와 같이 표현하여 사용합니다
+
 ```xml
 android:text="@{@string/nameFormat(firstName, lastName)}"
 android:text="@{@plurals/banana(bananaCount)}"
 ```
+
 그러나 일부 리소스 참조의 경우, 아래와 같은 명시적인 사용이 필요 합니다.
 		
 | 형식 | 일반참조 | 바인딩 표현 상에서 참조 | 
@@ -535,6 +552,7 @@ databinding 은 데이터 변경에 대응하기 위한 세 가지 메커니즘�
 
 바인딩 하려는 객체에 android.databinding.Observable 인터페이스를 구현하면 해당 객체에 단일 리스너를 연결하여 그 객체에 모든 속성의 변경사항을 수신 할 수 있게 됩니다. 편의를 위해 BaseObservable 클래스를 제공하고 있으며, 원하는 객체에 BaseObservable 클래스를 확장하여 사용 할 수 있습니다.
 내부적으로 리스너를 추가/해제 하는 메커니즘을 갖고 있지만 최종적으로 데이터 변경에 대해 처리를 하기 위해서는 해당 필드의 접근자 메소드에 android.databinding.Bindable annotation 을 추가하고 설정자 메소드에서 이를 알림으로써 구현 할 수 있습니다. 예제코드를 살펴보겠습니다.
+
 ```kotlin
 data class User(private var firstName: String,
                 private var lastName: String) : BaseObservable() { //BaseObservable 상속
@@ -559,10 +577,12 @@ data class User(private var firstName: String,
     }
 }
 ```
+
 getFirstName() , getLastName() 에 Bindable annotation 을 설정 하였습니다. Bindable annotation 을 설정한 필드는 컴파일 시 BR 이라는 클래스에 filedId 를 자동 생성하게 되는데, 이후 데이터 변경 알림을 위해 notifyPropertyChanged(filedId : Int) 를 호출 할 때 파라미터로 사용 됩니다. (BR 클래스 파일은 모듈 패키지 내에 생성 됩니다)
 그리고 setFirstName() , setLastName() 내에서 notifyPropertyChanged() 를 호출하여 값이 변경 되었음을 알리게 됩니다.
 
 위 에제코드에서는 data class 로 작성하였는데 만약 일반 class 로 작성한다면 아래와 같은 방법으로도 사용 할 수 있겠네요. 참고하시기 바랍니다.
+
 ```kotlin
 class User(firstName: String, lastName: String) : BaseObservable() {
     var firstName = firstName
@@ -587,6 +607,7 @@ class User(firstName: String, lastName: String) : BaseObservable() {
 위에서 데이터 객체에 Observable interface 를 구현하여 사용하는 방식을 알아보았습니다.
 두번째로 Databinding library 에서는 각 필드단위로 Observable 를 구현 할 수 있는 Observable Fileds 를 제공 합니다.
 제공하는 Observable Fileds 목록은 아래와 같습니다.
+
 ```kotlin
 ObservableField<T>
 ObservableBoolean
@@ -599,7 +620,9 @@ ObservableFloat
 ObservableDouble
 ObservableParcelable
 ```
+
 예제 코드를 보겠습니다.
+
 ```kotlin
 class User {
     val firstName: ObservableField<String> = ObservableField()
@@ -607,7 +630,9 @@ class User {
     val age: ObservableInt = ObservableInt()
 }
 ```
+
 이렇게 Observable 을 구현하려는 필드에 위와 같이 선언 해서 사용 할 수 있습니다.  값에 엑세스 하려면 set() , get() 메소드를 사용합니다.
+
 ```kotlin
 val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 binding.user?.apply{
@@ -618,21 +643,28 @@ binding.user?.apply{
 
 val userAge = binding.user?.age?.get()
 ```
+
 ## Observable Collection
+
 마지막으로 databinding librar 는 Observable Collection 을 제공 합니다. 제공하는 Collection 은 아래와 같습니다.
+
 ```kotlin
 ObservableArrayList<T>
 ObservableArrayMap<K,V>
 ObservableMap<K,V>
 ```
+
 ObservableArrayMap 을 사용해보겠습니다. 키가 String 과 같은 참조 형식 일때 사용하기 적절합니다
+
 ```kotlin
 ObservableArrayMap<String, Object> user = new ObservableArrayMap<>();
 user.put("firstName", "Google");
 user.put("lastName", "Inc.");
 user.put("age", 17);
 ```
+
 이제 레이아웃을 아래와 같이 수정하여 바인딩 할 수 있습니다.
+
 ```xml
 <data>
     <import type="android.databinding.ObservableMap"/>
@@ -648,7 +680,9 @@ user.put("age", 17);
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"/>
 ```
+
 ObservableList 의 예제도 한번 살펴 보겠습니다. List 에 값을 저장하고 바인딩 식에서 index 를 통해 바인딩이 가능합니다.
+
 ```xml
 <data>
     <import type="android.databinding.ObservableList"/>
@@ -666,6 +700,7 @@ ObservableList 의 예제도 한번 살펴 보겠습니다. List 에 값을 저�
     android:layout_height="wrap_content"
     android:text="@{user[1]}" />
 ```
+
 ```kotlin
 val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 binding.user = ObservableArrayList<Any>().apply{
@@ -674,6 +709,7 @@ binding.user = ObservableArrayList<Any>().apply{
     add(17)
 }
 ```
+
 kotlin 에서는 Object 대신 Any 라는 이름을 사용하지만 레이아웃에 variable 을 생성할때는 Object 로 선언해야 하는 점을 주의 하시기 바랍니다.
 
 # 생성되는 바인딩 클래스 
@@ -683,20 +719,27 @@ kotlin 에서는 Object 대신 Any 라는 이름을 사용하지만 레이아웃
 ## binding 생성
 
 Activity 의 contentview 로 설정함과 동시에 binding 을 하기 위해 아래의 메소드를 사용했었습니다.
+
 ```kotlin
 DataBindingUtil.setContentView(this, R.layout.레이아웃이름)
 ```
+
 레이아웃에 바인딩하는 추가적인 방법은 여러 방식이 있으나 가장 일반적인 방법은 binding class 의 정적 메소드를 사용하는 것입니다 inflate() 를 사용하면 View 계층을 확장함과 동시에 data binding 이 이뤄집니다
+
 ```kotlin
 val binding : MyLayoutBinding = MyLayoutBinding.inflate(layoutInflater)
 val binding : MyLayoutBinding = MyLayoutBinding.inflate(layoutInflater, viewGroup, false)
 ```
+
 이미 다른 메커니즘으로 infalte() 된 view 에 대해서는 아래와 같이 binding 작업만 따로 수행 할 수도 있습니다
+
 ```kotlin
 //여기서 viewroot 는 이미 infalte 되어있는 view 입니다
 val binding : MyLayoutBinding = MyLayoutBinding.bind(viewRoot)
 ```
+
 바인딩클래스를 미리 알 수 없을떄도 있습니다. 이때는 DataBindingUtil 클래스를 사용하여 바인딩을 생성 할 수 있습니다.
+
 ```kotlin
 val binding : ViewDataBinding = DataBindingUtil.inflate(layoutInflater, layoutId, parent, attachToParent)
 val binding : ViewDataBinding = DataBindingUtil.bindTo(viewRoot, layoutId)
@@ -706,6 +749,7 @@ val binding : ViewDataBinding = DataBindingUtil.bindTo(viewRoot, layoutId)
 databinding 은 id 가 있는 view 에 대해서는 자동으로 해당 view 에 대한 필드를 생성하여 findViewById 를 사용하지 않아도 view 에 바로 엑세스 할 수 있습니다.(또한 이 메커니즘이 findViewById 를 사용하는것 보다 더 빠를 수 있습니다)
 kotlin 의 경우 kotlin-extension 을 통해 layout id 로 생성 되어지는 view 에 바로 엑세스가 가능한 맥락과 유사한 내용입니다.
 예를들어 아래와 같은 id 를 갖는 view 들에 대해서 binding 클래스는 다음과 같이 필드를 생성 합니다.
+
 ```xml
 <TextView
     android:id="@+id/lastNameTextView"
@@ -718,7 +762,6 @@ kotlin 의 경우 kotlin-extension 을 통해 layout id 로 생성 되어지는 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@{user[1]}" />
-
 ```
 
 ```java
@@ -730,6 +773,7 @@ public final android.widget.TextView lastNameTextView;
 
 ## 변수
 레이아웃에 binding 을 위해 선언한 변수들에 대해서 binding class 에서는 접근자/생성자 메소드를 제공 합니다.
+
 ```xml
 <data>
     <import type="android.graphics.drawable.Drawable"/>
@@ -738,6 +782,7 @@ public final android.widget.TextView lastNameTextView;
     <variable name="note"  type="String"/>
 </data>
 ```
+
 ```java
 public abstract com.example.User getUser();
 public abstract void setUser(com.example.User user);
@@ -746,6 +791,7 @@ public abstract void setImage(Drawable image);
 public abstract String getNote();
 public abstract void setNote(String note);
 ```
+
 ## ViewStub 과 함께 사용하기 & 고급 바인딩
 이 내용은 따로 포스팅 할 예정입니다. 포스팅 후 링크를 첨부 하도록 하겠습니다.
 
@@ -758,6 +804,7 @@ layout 속성에는 여러 종류가 있습니다. TextView 를 예로 들면 an
 또한 별도의 xml 속성을 제공하지 않는 특정 setter 메소드와 바인딩 하여 사용 할 수 있습니다.
 DrawerLayout 을 예로 들어 보겠습니다. DrawerLayout 의 경우에는 해당 위젯에 대한 어떠한 XML attribute 도 제공하지 않습니다.
 하지만 다양한 setter 메소드를 제공 하고 있죠. 여기서 setScrimColor(int color), setDrawerListener(DrawerLayout.DrawerListener listener) 이 두개의 setter 메소드로 예제를 살펴보겠습니다.
+
 ```xml
 <android.support.v4.widget.DrawerLayout
     android:layout_width="wrap_content"
@@ -765,12 +812,14 @@ DrawerLayout 을 예로 들어 보겠습니다. DrawerLayout 의 경우에는 �
     app:scrimColor="@{@color/scrim}"
     app:drawerListener="@{fragment.drawerListener}"/>
 ```
+
 app:scrimColor 와 app:drawerListener는 기본으로 제공하는 XML 속성이 아니지만,  
 데이터바인딩 라이브러리를 사용하면 scrimColor 와 drawerListener 에 대한 setter 메소드를 찾아서 자동으로 적용 하게 됩니다
 앞서 언급한 것과 같이 namespace 는 중요하지 않으며, setter 의 이름과 매개변수 타입을 동일하게 설정해주면 됩니다.
 
 그러나 setter 와 속성 이름이 일치하지 않는 경우가 있을 것입니다. android:tint 의 경우 매핑 되는 setter 메소드는 setTint() 가 아닌 setImageTintList() 인데요.
 이런 경우에는 BindingMethod annotation 을 사용하여 속성과 setter 를 연결 할 수 있습니다.
+
 ```kotlin
 @BindingMethods({
        @BindingMethod(type = "android.widget.ImageView",
@@ -778,12 +827,14 @@ app:scrimColor 와 app:drawerListener는 기본으로 제공하는 XML 속성이
                       method = "setImageTintList"),
 })
 ```
+
 가이드 문서에 따르면 framework 쪽에는 이미 위와같은 처리가 되있기 때문에 개발자가 직접 위와 같은 처리를 할 일은 거의 없을 것이라고 하네요.
 
 ## 커스텀 바인딩 로직
 일부 XML 속성에 대해서는 별도의 바인딩 로직이 필요 할 수 있습니다. 예를 들어 android:paddingLeft 의 경우 제공하는 특정 setter 메소드가 없습니다.
 그대신 setPadding() 이라는 setter 가 있으며 이 메소드를 이용하여 커스텀 바인딩 메소드를 생성하여 XML 속성과 연결 할 수 있습니다.
 framework 에는 이미 이러한 처리가 되어 있는데 예시를 보도록 하겠습니다.
+
 ```java
 @BindingAdapter("android:paddingLeft")
 public static void setPaddingLeft(View view, int padding) {
@@ -793,8 +844,10 @@ public static void setPaddingLeft(View view, int padding) {
                    view.getPaddingBottom());
 }
 ```
+
 setPadding(int left, int top, int right, int bottom) 메소드를 이용해서 커스텀 바인딩 메소드가 구현 된 예시입니다.
 커스텀 바인딩 로직 구현을 위해서는 BindingAdapter annotation 을 사용 합니다. 괄호안에는 연결시키고자 하는 xml 속성 이름이 들어가고, namespace 는 중요하지 않습니다. 또한 여러개의 속성과 연결 시킬 수도 있습니다. 이번에는 직접 커스텀 바인딩 메소드를 구현해보겠습니다.
+
 ```kotlin
 class MyBindingAdapter {
     companion object {
@@ -806,6 +859,7 @@ class MyBindingAdapter {
     }
 }
 ```
+
 1. BindingAdapter 메소드는 접근자가 public 이고 static 메소드로 작성해야 합니다. 따라서 kotlin 에서 사용하기 위해 @JvmStatic 을 추가로 정의 하였습니다.
 2. @BindingAdapter annotation 을 작성 합니다. 여기서는 "imageUrl", "error" 속성과 매핑 하였습니다. "bind:imageUrl" 과 같이 특정 namespace 로 작성       할 수 있으나 xml 에서 꼭 namespace 를 동일하게 사용할 필요는 없습니다. "android" namespace 의 경우에는 동일한 namespace 를 사용해야 합니다.
 3. 여러개의 속성을 적용 할때는 XML 에서 해당 속성들을 모두 사용해야 해당 BindingAdapter를 사용 할 수 있습니다.
@@ -816,13 +870,16 @@ class MyBindingAdapter {
     Drawable 로 작성 되었습니다
 
 XML 에서는 아래와 같이 사용하면 됩니다.
+
 ```xml
 <ImageView
     ...
     app:imageUrl="@{user.profileImgUrl}"
     app:error="@{@drawable/profile_load_error}"/>
 ```
+
 또한 BindingAdapter 는 선택적으로 기존 값을 취할 수도 있습니다. 기존 값과 새 값을 취하는 메서드는 속성의 모든 기존 값을 먼저 가진 후 새 값을 가져 와야 합니다.
+
 ```kotlin
 companion object{
     @JvmStatic
@@ -834,10 +891,12 @@ companion object{
     }
 }
 ```
+
 이렇게 BindingAdapter 메소드를 작성하면 두번째 인자는 기존 값, 세번째 인자는 새 값을 취하게 됩니다.
 
 이벤트 핸들러의 경우 오직 한개의 추상메서드를 가진 추상클래스 혹은 인터페이스와 사용 할 수 있습니다.
 framework 에 처리 되어있는 메소드를 보겠습니다.
+
 ```java
 @BindingAdapter("android:onLayoutChange")
 public static void setOnLayoutChangeListener(View view, View.OnLayoutChangeListener oldValue,
@@ -852,6 +911,7 @@ public static void setOnLayoutChangeListener(View view, View.OnLayoutChangeListe
     }
 }
 ```
+
 ```kotlin
 //for kotlin
 companion object{
@@ -865,9 +925,11 @@ companion object{
     }
 }
 ```
+
 그렇다면 두개 이상의 추상메소드를 갖는 이벤트핸들러는 어떻게 처리할 수 있을까요?
 예를들어 View.OnAttachStateChangeListener 에는 onViewAttachedToWindow() 와 onViewDetachedFromWindow() 두 메소드가 있습니다.
 그러면 이들 메소드의 속성과 핸들러를 구분하기 위해 두개의 인터페이스를 생성해야 합니다. 계속해서 framework 에 처리 된 것을 예시로 보겠습니다
+
 ```java
 @TargetApi(VERSION_CODES.HONEYCOMB_MR1)
 public interface OnViewDetachedFromWindow {
@@ -888,8 +950,10 @@ interface OnViewAttachedToWindow {
     fun onViewAttachedToWindow(v: View)
 }
 ```
+
 한 listener 를 변경 할 경우 다른 listener 에도 영향을 미칠 것이므로 아래와 같이 세가지의 각각 다른 BindingAdapter 가 필요 합니다.
 즉 각 속성을 위한 BindingAdapter 하나와 두 listener 에 대한 각각의 BindingAdapter 가 필요 합니다.
+
 ```java
 @BindingAdapter("android:onViewAttachedToWindow")
 public static void setListener(View view, OnViewAttachedToWindow attached) {
@@ -973,6 +1037,7 @@ fun setListener(view: View, detach: OnViewDetachedFromWindow?, attach: OnViewAtt
     }
 }
 ```
+
 View.OnAttachStateChangeListener 는 setter 메소드 대신에 add, remove를 사용하기 때문에 위 예시의 경우는 일반적인 경우보다 복잡합니다.
 위 예제코드에서 ListenerUtil 클래스를 볼수 있는데, 이것은 BindingAdapter 에서 이전의 listener 를 제거할 수 있도록 이들을 계속 찾는데 사용 할 수 있는 클래스 입니다.
 
@@ -980,9 +1045,11 @@ View.OnAttachStateChangeListener 는 setter 메소드 대신에 add, remove를 �
 
 
 ## 자동 객체 형 변환
+
 바인딩 식에서 객체가 리턴 될때, 데이터바인딩 라이브러리 내부에서 속성에 값을 설정할 적절한 메소드를 선택하게 됩니다.
 객체는 선택 된 메소드의 매개변수 타입으로 캐스팅 되는데, 이것은 ObservableMap 을 사용하여 데이터를 관리할 경우 편리합니다.
 예제를 보겠습니다. 
+
 ```xml
 //xml
 <layout>
@@ -991,13 +1058,12 @@ View.OnAttachStateChangeListener 는 setter 메소드 대신에 add, remove를 �
     <variable name="map" type="ObservableMap&lt;String, Object&gt;" />
 </data>
 
-..
-
 <TextView
     ....
     android:text="@{map[`firstName`]}" />
 </layout>
 ```
+
 ```kotlin
 //MainActivity.kt
 val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -1006,26 +1072,34 @@ binding.map = ObservableArrayMap<String, Any>().apply {
             put("age", 20)
         }
 ```
+
 layout 에 TextView 가 있고 android:text 속성에 @{map['firstName']} 바인딩 식이 적용 되어 있습니다.
 MainActivity.kt 에서 map 은 ObservableArrayMap 이고, firstName 에 대한 값은 hong 이며 String type 인것을 볼 수 있습니다.
 xml 에서 map 변수에 대한 type 이 ObservableMap<String, Object> 로 되어있지만 라이브러리 내에서 setText(text : CharSequence) 를 선택하기 때문에 매개변수인 CharSequence 로 캐스팅 되어 적용 되는 것입니다. 그렇다면 만약 @{map[`age`]} 로 바꾸면 어떻게 될까요?
 age 에 대한 값은 20 즉, Int 형이기 떄문에 java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.CharSequence 가 발생하게 됩니다.
 
 이렇게 객체 타입이 불확실할 경우 별도의 캐스팅 동작을 바인딩 식에 적절히 추가해줘야 합니다. 아래와 같이 바인딩 식을 바꿔볼수 있겠네요.
+
 ```xml
 <TextView
     ....
     android:text="@{String.valueOf(map[`firstName`])}" />
-● 커스텀 형 변환 로직
+
+## 커스텀 형 변환 로직
+
 하지만 특정 형식 간에 자동으로 변환이 이루어져야 할 상황이 있을 수 있습니다. background 속성을 지정할때를 예로 들면 아래와 같습니다
+
+```xml
 <View
    android:background="@{isError ? @color/red : @color/white}"
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"/>
 ```
+
 android:background 속성은 Drawable 을 취하지만 color 는 정수 형태 입니다.
 정수가 반환 될 때 int 가 ColorDrawable 로 변환 되어야 합니다. 이 변환은 BindingConversion annotation 을 통해 적용 할 수 있습니다.
 아래 예제코드는 Drawable 이 필요한 속성에 int 값이 들어올 경우 자동으로 형변환을 해주는 BindingConversion 메소드이며, Databinding library 에서 기본적으로 제공하고 있습니다.
+
 ```java
 @BindingConversion
 public static ColorDrawable convertColorToDrawable(int color) {
