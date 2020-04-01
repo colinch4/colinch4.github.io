@@ -347,13 +347,15 @@ class Utils {
     <variable name="note"  type="String"/>
 </data>
 ```
-<data> 안에 선언되는 variable 은 빌드 시 binding 클래스가 생성 되면서 각각의 setter/getter 메소드를 갖게 됩니다.
+
+data 안에 선언되는 variable 은 빌드 시 binding 클래스가 생성 되면서 각각의 setter/getter 메소드를 갖게 됩니다.
 이때 setter 가 호출 되기 전 기본 값은 참조 형식의 variable 은 null, int 의 경우 0, boolean 의 경우 false 를 갖습니다.
 
 만약 참조하려는 variable 이 null일 경우 NullpointerException 을 방지 하기 위해 위와 같은 기본 값이 return 됩니다.
 예를들어 "@{user.age}" 일 때 user 가 null 인 경우 age(Int) 의 기본 값인 0 이 할당되게 됩니다.
 
 또한 기본적으로 binding 클래스가 생성 될때 root view 의 context 를 가져오게 되는데, 레이아웃 파일에서 "context" 라는 이름으로 context 를 사용 할 수도 있습니다. context 를 사용하여 color resource 를 가져온 뒤 textColor 를 설정해 보겠습니다.
+
 
 ```xml
 <data>
