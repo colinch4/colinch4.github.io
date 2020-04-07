@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-![프로필](images/2018-03-28-1_1.PNG)
+![프로필](images/2018-03-28-1.PNG)
 
 ### Kwson Sik Kim ( Colin ) 
 b. 1984 Paju-si, Gyeonggi-do, KR  
