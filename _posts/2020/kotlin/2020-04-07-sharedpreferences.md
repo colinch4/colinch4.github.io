@@ -16,7 +16,7 @@ summary:
 
 `MainActivity`의  `onCreate`에서 쓸 수 있는 SharedPreferences 예제는 다음과 같다.
 
-```Kotlin
+```kotlin
 val pref = this.getPreferences(0)
 val editor = pref.edit()
 /* context.getPreferences의 SharedPreferences 인스턴스를 저장.
@@ -66,7 +66,7 @@ val editor = pref.edit()
 
 우선 클래스 파일을 만들어 SharedPreferences에 필요한 변수를 만든다.
 
-```Kotlin
+```kotlin
 /* MySharedPreferences.kt */
 
 class MySharedPreferences(context: Context) {
@@ -89,7 +89,7 @@ class MySharedPreferences(context: Context) {
 
 주의할 점! 이 SharedPreferences 클래스는 앱에 있는 다른 액티비티보다 먼저 생성되어야 다른 곳에 데이터를 넘겨줄 수 있다. 이 설정을 해주기 위해서는 App에 해당하는 Class 파일 또한 생성해주어야 한다.
 
-```Kotlin
+```kotlin
 /* App.kt */
 
 class App : Application() {
@@ -124,7 +124,7 @@ class App : Application() {
 
 여기까지 했으면 SharedPreferences를 사용할 준비가 끝났다. 메인 액티비티로 돌아가 프리퍼런스를 사용해보았다.
 
-```Kotlin
+```kotlin
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
