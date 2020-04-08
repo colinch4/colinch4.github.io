@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SharedPreferences 데이터 공유"
+title: "[Kotlin] SharedPreferences 데이터 공유"
 date: 2020-04-07 15:15
 category: 
 author: kskim2

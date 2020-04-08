@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MVVM AAC Databinding 사용법"
+title: "[Kotlin] MVVM AAC Databinding 사용법"
 date: 2020-03-26 14:36
 category: 
 author: kskim2

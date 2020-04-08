@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transformations로 LiveData 변형하기"
+title: "[Kotlin] Transformations로 LiveData 변형하기"
 date: 2020-04-07 15:07
 category: 
 author: kskim2
