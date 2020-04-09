@@ -996,6 +996,7 @@ AnotherBean [myBean=MyBean [name=xmlBean]]
 
 -   **@Component**(value=“myBean2″) : this will enable Spring to detect this bean when scanning and instantiate a bean named “**myBean2**“
 -   **@Value**(value=“AnnotationBean”) : this equivalent to mybean2.setName(“AnnotationBean”);
+
 ```java
 package com.hmkcode.spring.beans;
 
@@ -1034,11 +1035,15 @@ return "MyBean [name=" + name + "]";
 }
 ```
 
+
 -   **AnotherBean.java**
 
 -   **@Component**(value=“anotherBean”) : this will enable Spring to detect this bean when scanning and instantiate a bean named “anotherBean”
 -   **@Autowired**  **@Qalifier**(“myBean2″): this equivalent to anotherBean.setMyBean(mybean2)
+
+
 ```java
+
 package com.hmkcode.spring.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -1085,6 +1090,7 @@ return "AnotherBean [myBean=" + myBean + "]";
 _단지 어노테이션을 활성화 하기위해 XML 이 필요하다. XML 안에 따로 <bean> 같은 태그를 사용하지 않았다._
 
 -   **XMLConfig-Annotation.xml**
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -1110,7 +1116,9 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 ```
 
 **Run:**
+
 ```java
+
 package com.hmkcode;
 
 import org.springframework.context.ApplicationContext;
@@ -1137,8 +1145,11 @@ System.out.println( anotherBean);
 
 }
 ```
+
 **Output:**
+
 ```java
+
 AnotherBean [myBean=MyBean [name=AnnotationBean]]
 ```
 
@@ -1147,7 +1158,9 @@ AnotherBean [myBean=MyBean [name=AnnotationBean]]
 **Beans:**
 
 -   **MyBean.java**
+  
 ```java
+
 package com.hmkcode.spring.beans;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -1179,9 +1192,13 @@ return "MyBean [name=" + name + "]";
 }
 
 }
+
 ```
+
 **AnotherBean.java**
+
 ```java
+
 package com.hmkcode.spring.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -1213,17 +1230,17 @@ return "AnotherBean [myBean=" + myBean + "]";
 }
 
 }
+
 ```
+
 **Cofiguration:**
+
 ```java
+
 package com.hmkcode.spring.config;
-
 import org.springframework.context.annotation.Bean;
-
 import org.springframework.context.annotation.Configuration;
-
 import com.hmkcode.spring.beans.AnotherBean;
-
 import com.hmkcode.spring.beans.MyBean;
 
 @Configuration
@@ -1247,17 +1264,18 @@ return new AnotherBean();
 }
 
 }
+
 ```
+
 **Run:**
+
 ```java
+
 package com.hmkcode;
-
 import org.springframework.context.ApplicationContext;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.hmkcode.spring.beans.AnotherBean;
-
 import com.hmkcode.spring.config.JavaConfig;
 
 public class App
@@ -1278,13 +1296,19 @@ System.out.println( anotherBean);
 
 }
 ```
+
 **Output:**
+
 ```java
+
 AnotherBean [myBean=MyBean [name=JavaConfigBean]]
+
 ```
 
 **AnnotationConfigApplicationContext 분석**
+
 ```java
+
 @Configuration  
 public class AnnotatedHelloConfig{  
 @bean  
@@ -1300,6 +1324,7 @@ return new AnnotatedHello();
 ApplicationContext ctx=new **AnnotationConfigApplicationContext**(AnnotatedHelloConfig.class);
 
 AnnotatedHello  hello =ctx.getBean("annotatedHello", AnnotatedHello .class);
+
 ```
 위의 코드는 @Configuration 으로 <beans> 를 대신하고  
 @bean 으로 자바코드에 의한 빈등록을 하게 해주는 예이다.
