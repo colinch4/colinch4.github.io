@@ -3,7 +3,6 @@ layout: post
 title: "The Clean Architecture"
 date: 2020-04-17 13:27
 description: "Over the last several years we’ve seen a whole range of ideas regarding the architecture of systems. These include: Though these architectures all vary somewhat in their details, they are very similar. They all have the same objective, which is the separation of concerns. They all achieve this separation by dividing the software into layers. Each has at least one layer for business rules, and another for interfaces."
-date: 2020-04-09 10:15
 tags: [architecture]
 comments: true
 share: true

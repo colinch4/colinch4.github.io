@@ -3,7 +3,6 @@ layout: post
 title: "보일러 플레이트 코드 ( Boilerplate code ) 란?" 
 date: 2020-04-09 10:12
 description: "웹 개발 쪽을 하다 보니 여기선 개발을 시작할 수 있는 기초가 되는 주춧돌, template을 boilerplate라고 부르더라. boilerplate이 뭐냐면, "
-date: 2020-04-09 10:15
 tags: [programing]
 comments: true
 share: true
