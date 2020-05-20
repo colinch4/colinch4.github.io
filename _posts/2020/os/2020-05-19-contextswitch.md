@@ -4,7 +4,7 @@ title: "Context Switch(컨텍스트 스위치)가 무엇인가?"
 date: 2020-05-19 13:47
 category: 
 author: kskim2
-tags: [os]
+tags: [android]]
 summary: 
 description: 
 comments: true
