@@ -3,7 +3,7 @@ layout: post
 title: "[Kotlin] android DataBinding Library for kotlin"
 date: 2020-03-31 10:14
 category: 
-author: colinch3
+author: colinch4
 tags: [kotlin]
 description: "DataBinding Library 는 유연성과 폭넓은 호환성을 제공하여 선언적 레이아웃을 작성 가능하게끔 지원해줌으로써, 어플리케이션 로직과 레이아웃을 바인딩 하는데 유용하게 사용 할 수 있습니다."
 comments: true
