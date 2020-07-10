@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://algamza.github.io/sitemap.xml
+Sitemap: https://colinch3.github.io/sitemap.xml

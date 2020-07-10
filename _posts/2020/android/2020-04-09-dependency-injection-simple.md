@@ -3,7 +3,7 @@ layout: post
 title: "[Android] Dependency Injection이란?"
 date: 2020-04-09 15:30
 category: 
-author: algamza
+author: colinch3
 tags: [Android]
 description: "객체 간의 의존관계를 객체-객체 가 아닌 외부에서 객체를 생성하고 전달해 줌으로 써 객체간의 의존성 제거 및 결합도를 낮추는 것"
 comments: true

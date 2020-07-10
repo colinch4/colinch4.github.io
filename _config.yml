@@ -10,17 +10,17 @@ author:
   youtubeUser:      your-id
   youtubeChannel:   your-id
   twitter:          kw_on
-  github:           algamza
+  github:           colinch3
   stackoverflow:    your-id
   quora:            your-id
   linkedin:         kim-kwonsik-a3489517
   pinterest:        your-id
-  googlePlus:       algamza1
+  googlePlus:       colinch3
   instagram:        niloc2colin
   reddit:           your-id
   medium:           your-id
   tumblr:           your-id
-  email:            algamza1@gmail.com
+  email:            colinch3@gmail.com
 
 copyright:
   year:             2018
@@ -28,14 +28,14 @@ copyright:
 
 # Google-analytics
 google-analytics:
-  id:               "algamza1"
+  id:               "colinch3"
 
 # Disqus
 disqus:
   id:               "algamza"
 
 # URL
-url:                "https://algamza.github.io" # the base hostname & protocol for your site
+url:                "https://colinch3.github.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
 baseurl:            "/" # the subpath of your site, e.g. /blog
 
@@ -62,7 +62,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/algamza/algamza.github.io"
+    url:            "https://github.com/colinch3/colinch3.github.io"
 
 # Sass
 sass:

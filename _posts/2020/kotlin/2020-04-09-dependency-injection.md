@@ -3,7 +3,7 @@ layout: post
 title: "[Android] 종속성 주입 (Dependency injection) "
 date: 2020-04-09 09:39
 category: 
-author: algamza
+author: colinch3
 tags: [Android]
 description: "Dependency injection (DI) is a technique widely used in programming and well suited to Android development. By following the principles of DI, you lay the groundwork for good app architecture. Implementing dependency injection provides you with the following advantages: Reusability of code, Ease of refactoring, Ease of testing"
 comments: true
