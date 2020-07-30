@@ -196,7 +196,7 @@ var binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout
 
 # 5. 커스텀 바인딩 어댑터
 
-이미지를 넣기위해 저는  [Picaaso](https://github.com/square/picasso)  혹은  [Glide](http://glide/)라이브러리를 이용합니다. 하지만 매번 Activity, Fragment등 에서 Glide를 이용해서 프로필 사진을 세팅하기 귀찮습니다. 뭔가 객체로 한번에 세팅을 하고 싶습니다. 그럴때 사용하는 방법이 커스텀 바인딩 어댑터입니다. 데이터 바인딩 프레임워크에는 값을 설정하기 위해 호출할 메서드를 사용자 지정하는 방법이 있습니다.
+이미지를 넣기위해 저는  [Picaaso](https://github.com/square/picasso)  혹은  [Glide](http://glide/)라이브러리를 이용합니다. 하지만 매번 Activity, Fragment등 에서 Glide를 이용해서 프로필 사진을 세팅하기 귀찮습니다. 뭔가 객체로 한번에 세팅을 하고 싶습니다. 그럴때 사용하는 방법이 커스텀 바인딩 어댑터입니다. 데이터 바인딩 프레임워크에는 값을 설정하기 위해 호출할 함수를 사용자 지정하는 방법이 있습니다.
 
 먼저 User클래스에 profileURL이라는 변수를 선언해줍니다.  
 drawable res을 이용할 것이기때문에 Int형으로 선언해주었습니다.
@@ -271,7 +271,7 @@ CustomBindingAdapterKt.bindImage(this._mboundView2_, userProfileURL);
 
 # 6. 리스너 바인딩
 
-안드로이드에는 여러가지 리스너가 있습니다. 대표적으로 View.OnClickListener가 있으며 이러한 SAM(Single Abstract Method)들은 메서드 이름을 따라서 어트리뷰트 이름이 정해집니다. 추상메소드가 많은 리스너들은 변칙적으로 이름이 적용됩니다. 예를들어 TextWatcher의 경우 세가지의 추상메소드가 있지만 변칙적으로 하나의 메소드만 이용합니다.
+안드로이드에는 여러가지 리스너가 있습니다. 대표적으로 View.OnClickListener가 있으며 이러한 SAM(Single Abstract Method)들은 함수 이름을 따라서 어트리뷰트 이름이 정해집니다. 추상메소드가 많은 리스너들은 변칙적으로 이름이 적용됩니다. 예를들어 TextWatcher의 경우 세가지의 추상메소드가 있지만 변칙적으로 하나의 메소드만 이용합니다.
 
 android:onClick=""//OnClickListener  
 android:onTextChanged=""//TextWatcher
@@ -570,7 +570,7 @@ notifyDataSetChanged()와 기능적으로 유사합니다.
 -   그룹화  `**() (ex> @{(i + 1) + (j + 1)})**`
 -   리터럴 — 문자, 문자열, 숫자,  `**null**`
 -   형변환  `**(ex> @{(String)i})**`
--   메서드 호출  `**(ex> @{i.toString()})**`
+-   함수 호출  `**(ex> @{i.toString()})**`
 -   필드 액세스  `**(ex> @{i.field})**`
 -   배열 액세스  `**[] (ex> @{i[0]})**`
 -   삼항 연산자  `**?: (ex> @{i > j ? i : j})**`

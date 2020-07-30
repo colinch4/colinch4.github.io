@@ -29,7 +29,7 @@ fun <T> lock(lock: Lock, body: () -> T): T {
 lock 함수에 포함된 파라메터 중  `body: () -> T`는 Higher-Order Functions에 해당합니다.  `body`와  `:`  뒷부분을 아래와 같이 나누어 설명하겠습니다.
 
 -   `body`  : 파라메터 이름
--   `() -> T`  :  `()`  파라메터가 없는 메서드를 정의하였고,  `-> T`는 return 타입을 정의합니다. 여기에서는 Generics  `T`를 사용하였기에  `T`를 Generics T를 리턴합니다.
+-   `() -> T`  :  `()`  파라메터가 없는 함수를 정의하였고,  `-> T`는 return 타입을 정의합니다. 여기에서는 Generics  `T`를 사용하였기에  `T`를 Generics T를 리턴합니다.
 
 body 변수는 파라메터가 없고, T를 리턴하는 메소드를 넘겨주도록 정의하였습니다.
 
