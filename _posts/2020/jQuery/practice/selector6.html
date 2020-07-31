@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let array = [
+                { name: 'Naver', link: 'https://www.naver.com' },
+                { name: 'Google', link: 'https://www.google.com' },
+                { name: 'Daum', link: 'https://www.daum.com' },
+            ]
+            let output = '';
+            $.each(array, function (i, e) {
+                output += '<li>' + e.name + '(' + e.link + ')</li>';
+            });
+            output += '</ul>'
+            //document.getElementById('contents').innerHTML = output;
+            $('#contents').append(output);
+        })
+    </script>
+</head>
+
+<body>
+    <div id='contents'>
+    </div>
+</body>
+
+</html>

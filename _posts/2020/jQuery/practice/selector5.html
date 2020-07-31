@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        setInterval(function(){
+            let selectedItem=$('select > option:selected').val();
+            let checkedRadio = $('input:checked[name="myRadio"]').val();
+            console.log(selectedItem);
+            console.log(checkedRadio);
+            $('input:checked[name="myCheckbox"]').each(function() { 
+                console.log($(this).val()); })
+        }, 5000);
+    })
+</script>
+</head>
+<body>
+    <select id="mySelect">
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+        <option value="strawberry">딸기</option>
+        <option value="watermelon">수박</option>
+        <option value="melon">메론</option>
+    </select>
+    <br/>
+    <input type="radio" name="myRadio" value="A">A</input>
+    <input type="radio" name="myRadio" value="B">B</input>
+    <input type="radio" name="myRadio" value="C">C</input>
+    <input type="radio" name="myRadio" value="D">D</input>
+    <br/>
+    <input type="checkbox" name="myCheckbox" value="ㄱ">ㄱ</input>
+    <input type="checkbox" name="myCheckbox" value="ㄴ">ㄴ</input>
+    <input type="checkbox" name="myCheckbox" value="ㄷ">ㄷ</input>
+    <input type="checkbox" name="myCheckbox" value="ㄹ">ㄹ</input>
+</body>
+</html>

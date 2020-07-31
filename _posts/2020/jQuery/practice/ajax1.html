@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            $.ajax("./forecast.json",{
+                success:function(data){
+                    console.log("success");
+                    console.log(data.city.name);
+                    console.log(data.city.country);
+                },
+                error:function(){
+                    console.log("fail");
+                }
+            });
+
+        })
+
+    </script>
+</head>
+<body>
+    <div id='forecast'>
+    </div>
+</body>
+</html>
