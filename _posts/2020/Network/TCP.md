@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[Network기초] 7. TCP"
+description: " "
+date: 2020-01-12
+tags: [Network기초]
+comments: true
+share: true
+---
+
 ## TCP
 
 - TCP(Transport Control Protocol)는 IP프로토콜 위에서 **연결형 서비스를 지원하는 전소 계층의 프로토콜**이다.

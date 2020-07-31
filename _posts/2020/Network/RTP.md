@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[Network기초] 6. RTP"
+description: " "
+date: 2020-01-12
+tags: [Network기초]
+comments: true
+share: true
+---
+
 ## RTP 개요
 - RTP는 Real-time Transport Protocol의 약어로 실시간 음성, 영상 및 데이터를 IP네 트워크로 전송하는 표준 프로토콜이다
 - RTP는 IETF RFC 3350 A Transport Ptorocol for Real-Time Application권고안에서 정의

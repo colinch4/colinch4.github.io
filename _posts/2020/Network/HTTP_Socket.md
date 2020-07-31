@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[Network기초] 4. HTTP Socket"
+description: " "
+date: 2020-01-12
+tags: [Network기초]
+comments: true
+share: true
+---
+
 ## HTTP통신
 
 - Client의 요청이 있을 때만 서버가 응답하여 해당 정보르 ㄹ전송하고 곧바로 연결을 종료하는 방식

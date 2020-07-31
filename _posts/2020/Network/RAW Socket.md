@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[Network기초] 5. RAW Socket"
+description: " "
+date: 2020-01-12
+tags: [Network기초]
+comments: true
+share: true
+---
+
 ## RAW Socket
 
 - **어느 특정한 프로토콜의 용의 전송 계층 포매팅 없이 인터넷 프로토콜 패킷을 직접적으로 주고 받게 해주는 소켓**
