@@ -282,7 +282,7 @@ public class MyStack<String> {
 
 아래의 그림은 집합과 일반화의 관계를 보여준다.
 
-![집합론](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/group.png)
+![집합론](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/group.png)
 
 부모클래스 A는 전체 집합 A에 해당하고 그 부분 집합 A1, A2, A3는 각각 A의 자식 클래스에 해당한다. 이 때 아래와 같은 관계가 성립되어야 한다.
 
@@ -291,7 +291,7 @@ public class MyStack<String> {
 
 아래와 같은 제약 조건도 존재한다.
 
-![일반화 관계에서의 제약조건](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/contraint.png)
+![일반화 관계에서의 제약조건](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/contraint.png)
 
 위 제약 조건을 일반화 관계에 적용하려면 제약조건 `{disjoint, complete}`를 사용한다. 제약 `{disjoint}`는 자식 클래스 객체가 동시에 두 클래스에 속할 수 없다는 의미고, `{complete}`는 자식 클래스의 객체에 해당하는 부모 클래스의 객체와 부모 클래스의 객체에 해당하는 자식 클래스의 객체가 하나만 존재한다는 의미다.
 
@@ -299,12 +299,12 @@ public class MyStack<String> {
 VIP회원과 일반회원 각각을 자식 클래스로 생각하여 상품과 연관관계를 맺게 할 수 있지만 기본적으로 회원은 상품을 회원등급에 관계없이 구매가 가능하다.
 즉, 다시말하자면 상품클래스와 연관관계는 모든 자식클래스에서 공통적으로 갖는 연관관계이므로 아래와 같이 부모 클래스인 회원 클래스로 연관관계를 이동하는 것이 클래스 다이어그램을 간결하게 만들 수 있다.
 
-![집합론을 통한 연관관계의 일반화](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/group-relation.png)
+![집합론을 통한 연관관계의 일반화](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/group-relation.png)
 
 집합론적인 관점에서 일반화는 상호배타적인 부분 집합으로 나누는 과정으로 간주할 수 있다. 이를 통해 상호 배타적인 특성이 요구되는 상황에서 일반화 관계를 적용할 수 있다.
 예를 들어 학생은 "놀기"와 "공부하기" 중에서 어느 한 상태에만 있을 수 있다면 학생이 "공부하기" 상태라면 책만 볼 수 있고, "놀기"상태라면 장난감만 다룰 수 있다. 이런 경우에는 전형적으로 상호 배타적인 두 상태를 모델링 해야하며 이때 일반화 관계가 유용하게 사용된다.
 
-![일반화 관계를 이용한 상호 배타적 관계 모델링](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/mutually-exclusive-relation.png)
+![일반화 관계를 이용한 상호 배타적 관계 모델링](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/mutually-exclusive-relation.png)
 
 또한 집합을 여러 기준에서 분류할 수도 있다.
 예를 들어 앞서 살펴본 쇼핑몰의 회원등급에 따라 VIP와 일반회원을 분류했지만 쇼핑몰의 동일한 지역주민이냐, 아니냐에 따라 분류할 수도 있다.
@@ -320,7 +320,7 @@ UML에서는 이러한 분류를 변별자(discriminator)라고 하며 일반화
 연관 관계를 위한 속성을 Ordinary Member 클래스에 두면 비지역민에게도 경품이 제공될 수도 있고, Local 클래스에 두면 VIP 회원에게도 경품이 제공되기 때문이다.
 이는 의도한 바와 잘못된 모델링이다.
 
-![변별자와 다중 분류](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/discriminator.png)
+![변별자와 다중 분류](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/discriminator.png)
 
 이를 처리하기위한 방법으로 모든 분류 가능한 조합으로 대응하는 클래스를 만드는 방법이 있다.
 Member클래스의 자식 클래스로 아래와 같은 4개의 클래스를 만들수 있다.
@@ -332,7 +332,7 @@ Member클래스의 자식 클래스로 아래와 같은 4개의 클래스를 만
 
 아래의 그림은 집합론 관점에서 클래스 관계를 최종적으로 수정한 것이다.
 
-![변별자와 다중분류 변경](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/group-generalization.png)
+![변별자와 다중분류 변경](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/group-generalization.png)
 
 위의 그림을 토대로 최종적으로 다음과 같이 클래스를 6가지로 분류할 수 있다.
 
@@ -487,7 +487,7 @@ public class Parrot extends Pet {
 
 아래의 클래스 다이어그램을 통해 피터 코드의 규칙을 살펴보자
 
-![상속으로 표현한 역할 수행관계](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram.png)
+![상속으로 표현한 역할 수행관계](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram.png)
 
 #### 1. 첫번째 규칙 : 자식 클래스와 부모 클래스 사이는 역할 수행 관계가 아니어야 한다. 
 운전자는 어떤 순간 사람이 수행하는 역할이고, 회사원도 사람이 어떤 순간 수행하는 역할이다. 그래서 운전자나 회사원이 사람과 상속관계로 표현되어서는 안되므로 규칙에 위배된다.  
@@ -507,12 +507,12 @@ public class Parrot extends Pet {
 따라서 위의 클래스 다이어그램은 아래의 클래스 다이어그램처럼 상속을 사용하지 않고, 연관 관계를 사용해 클래스 사이의 관계를 표현하는 편이 좋다. 
 이렇게 설계하면 사람은 종업원 역할과 운전자 역할을 수행한다는 사실이 드러나고, 어느 순간에도 두 역할도 수행하지 않을 수 있다는 다중성도 표현할 수 있다.
 
-![연관 관계를 이용한 역할 수행 표현](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram2.png)
+![연관 관계를 이용한 역할 수행 표현](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram2.png)
 
 아래의 클래스 다이어그램들의 차이점에 대해 알아보자.
 
-![상속으로 표현한 역할 수행관계](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram.png)
-![관계를 이용한 역할 수행](https://raw.githubusercontent.com/walbatrossw/java-design-patterns/master/ch02-oop-principles/img/class-diagram.png)
+![상속으로 표현한 역할 수행관계](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/peter-coad-class-diagram.png)
+![관계를 이용한 역할 수행](https://raw.githubusercontent.com/colinch4/java-design-patterns/master/ch02-oop-principles/img/class-diagram.png)
  
 첫번째 클래스 다이어그램은 사람의 역할이 운전자와 회사원으로 고정되어 있다. 따라서 사람에게 새로운 역할이 부가되면 클래스 코드도 변경되어야 한다.
 그러나 두번째 클래스 다이어그램은 역할이라는 추상클래스를 상속받는 구조로 구체적인 역할 클래스들을 캡슐화하기 때문에 새로운 역할이 추가되더라도 기존의 코드는 영향을 받지 않는다.
