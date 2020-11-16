@@ -1,3 +1,14 @@
+---
+layout: post
+title: "1. JQuery 기초"
+description: " "
+date: 2020-11-16
+tags: [JQuery]
+comments: true
+share: true
+---
+
+
 ## jQuery란?
 
 * 자바스크립트를 쉽게 사용하기 위한 라이브러리

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 6. 싱글턴 패턴 ( Singleton Pattern ) "
+title: "6. 싱글턴 패턴 ( Singleton Pattern ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[swift] 17. 제네릭(Generic)"
+title: "17. 제네릭(Generic)"
 description: " "
 date: 2020-07-30
 tags: [swift]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 12. 팩토리 메서드 패턴 ( Factory Method Pattern )"
+title: "12. 팩토리 메서드 패턴 ( Factory Method Pattern )"
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

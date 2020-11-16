@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 10. 데커레이터 패턴 ( Decorator Pattern )"
+title: "10. 데커레이터 패턴 ( Decorator Pattern )"
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 4. 디자인 패턴 ( Design Patttern ) "
+title: "4. 디자인 패턴 ( Design Patttern ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

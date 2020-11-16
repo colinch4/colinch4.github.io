@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 8. 커맨드 패턴 ( Command Pattern )"
+title: "8. 커맨드 패턴 ( Command Pattern )"
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

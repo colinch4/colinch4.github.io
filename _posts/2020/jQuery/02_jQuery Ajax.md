@@ -1,3 +1,12 @@
+---
+layout: post
+title: "2. JQuery Ajax"
+description: " "
+date: 2020-11-16
+tags: [JQuery]
+comments: true
+share: true
+---
 
 
 

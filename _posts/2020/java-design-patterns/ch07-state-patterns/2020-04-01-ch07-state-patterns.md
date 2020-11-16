@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 7. 스테이트 패턴 ( State Pattern ) "
+title: "7. 스테이트 패턴 ( State Pattern ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

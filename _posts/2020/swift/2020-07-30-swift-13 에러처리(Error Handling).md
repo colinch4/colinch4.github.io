@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[swift] 13. 에러처리(Error Handling)"
+title: "13. 에러처리(Error Handling)"
 description: " "
 date: 2020-07-30
 tags: [swift]

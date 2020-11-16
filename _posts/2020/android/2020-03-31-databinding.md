@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] android DataBinding Library for kotlin"
+title: "android DataBinding Library for kotlin"
 date: 2020-03-31 10:14
 category: 
 author: colinch4

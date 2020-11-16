@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] startactivity, putextra"
+title: "startactivity, putextra"
 date: 2020-04-01 14:21
 category: 
 author: kskim2

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Android] Dependency Injection이란?"
+title: "Dependency Injection이란?"
 date: 2020-04-09 15:30
 category: 
 author: colinch4

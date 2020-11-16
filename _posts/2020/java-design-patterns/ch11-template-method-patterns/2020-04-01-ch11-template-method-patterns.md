@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 11. 템플릿 메서트 패턴 ( Template Method Pattern )"
+title: "11. 템플릿 메서트 패턴 ( Template Method Pattern )"
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

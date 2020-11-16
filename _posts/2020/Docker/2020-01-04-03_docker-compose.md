@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Docker] 3. docker-compose"
+title: "3. docker-compose"
 description: " "
 date: 2020-01-04
 tags: [Docker]

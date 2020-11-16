@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] Experimenting with Coroutines"
+title: "Experimenting with Coroutines"
 date: 2020-04-17 09:46
 category: kotlin
 author: kskim2

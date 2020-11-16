@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Network기초] 7. TCP"
+title: "7. TCP"
 description: " "
 date: 2020-01-12
 tags: [Network기초]

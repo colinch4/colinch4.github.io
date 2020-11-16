@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[swift] 11. 옵셔널 체이닝(Optional Chaining) "
+title: "11. 옵셔널 체이닝(Optional Chaining) "
 description: " "
 date: 2020-07-30
 tags: [swift]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 2. 객체지향 원리 ( OOP Principles ) "
+title: "2. 객체지향 원리 ( OOP Principles ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

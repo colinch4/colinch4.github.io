@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[디자인패턴] 9. 옵저버 패턴 ( Observer Pattern )"
+title: "9. 옵저버 패턴 ( Observer Pattern )"
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

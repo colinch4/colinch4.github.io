@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Network기초] 4. HTTP Socket"
+title: "4. HTTP Socket"
 description: " "
 date: 2020-01-12
 tags: [Network기초]
