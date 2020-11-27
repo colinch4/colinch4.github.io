@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 데커레이터 패턴
 
 ## 1. 데커레이터 패턴이란?
 

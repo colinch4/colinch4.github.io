@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 싱글턴 패턴(Singleton Pattern)
 
 ## 1. 싱글턴 패턴이란?
 

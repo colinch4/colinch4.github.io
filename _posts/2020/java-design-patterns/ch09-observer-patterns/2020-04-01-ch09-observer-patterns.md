@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 옵서버 패턴(Observer pattern)
 
 ## 1. 옵서버 패턴이란?
 

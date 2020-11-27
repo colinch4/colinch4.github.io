@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 템플릿 메서드 패턴
 
 ## 1. 템플릿 메서드 패턴이란?
 

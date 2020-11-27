@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 스테이트 패턴(State Pattern)
 
 ## 1. 스테이트 패턴이란?
 

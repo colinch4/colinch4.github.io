@@ -8,7 +8,6 @@ comments: true
 share: true
 ---
 
-# 팩토리 메서드 패턴
 
 ## 1. 팩토리 메서드 패턴이란?
 
