@@ -67,7 +67,7 @@ export default Movie;
 - deploy 는 build 폴더를 업로드 해준다 .( build 폴더를 얻기 위해서는 $npm run build)
 - deploy 를 호출하면, predeploy가 자동으로 실행된다.(이름이 같아야 함)
 
-<img src="https://github.com/jina95/TIL/blob/master/images/react/react_deploy.png" width="50%">
+<img src="https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/React/images/react_deploy.png" width="50%">
 
 #### 5 - 1. Are we done?
 - state를 갖기 위해 class component를 가질 필요가 없다 ( react 의 새로운 부분..? react hook 때문이라고 함!)

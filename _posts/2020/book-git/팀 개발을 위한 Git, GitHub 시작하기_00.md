@@ -3,7 +3,7 @@ layout: post
 title: "팀 개발을 위한 Git, GitHub 시작하기 - 0"
 description: " "
 date: 2020-08-12
-tags: [git]]
+tags: [git]
 comments: true
 share: true
 ---
