@@ -2,7 +2,7 @@
 layout: post
 title: "Svelte 입문 강의 - A부터 Z까지 2"
 description: " "
-date: 2020-08-17
+date: 2020-11-17
 tags: [Svelte]
 comments: true
 share: true

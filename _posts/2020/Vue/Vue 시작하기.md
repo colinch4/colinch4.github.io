@@ -2,7 +2,7 @@
 layout: post
 title: "Vue 시작하기 1"
 description: " "
-date: 2020-08-16
+date: 2020-11-16
 tags: [vue]
 comments: true
 share: true

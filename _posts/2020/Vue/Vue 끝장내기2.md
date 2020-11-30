@@ -2,7 +2,7 @@
 layout: post
 title: "Vue 끝장내기 2"
 description: " "
-date: 2020-08-16
+date: 2020-11-16
 tags: [vue]
 comments: true
 share: true
