@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "1. 객체지향 모델링 ( OOP Modeling ) "
+title: "[디자인패턴] 1. 객체지향 모델링 ( OOP Modeling ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

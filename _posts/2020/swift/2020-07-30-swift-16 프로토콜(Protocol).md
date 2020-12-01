@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "16. 프로토콜(Protocol)"
+title: "[swift] 16. 프로토콜(Protocol)"
 description: " "
 date: 2020-07-30
 tags: [swift]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "18. 참조, Retain Cycle"
+title: "[swift] 18. 참조, Retain Cycle"
 description: " "
 date: 2020-07-30
 tags: [swift]

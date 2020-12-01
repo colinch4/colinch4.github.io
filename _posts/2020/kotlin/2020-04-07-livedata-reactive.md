@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transformations와 MediatorLiveData를 이용한 Reactive 패턴"
+title: "[Kotlin] Transformations와 MediatorLiveData를 이용한 Reactive 패턴"
 date: 2020-04-07 15:13
 category: 
 author: kskim2

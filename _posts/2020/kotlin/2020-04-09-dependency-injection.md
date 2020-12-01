@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "종속성 주입 (Dependency injection) "
+title: "[Kotlin] 종속성 주입 (Dependency injection) "
 date: 2020-04-09 09:39
 category: 
 author: colinch4

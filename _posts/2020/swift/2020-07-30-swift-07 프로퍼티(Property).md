@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "07. 프로퍼티(property)"
+title: "[swift] 07. 프로퍼티(property)"
 description: " "
 date: 2020-07-30
 tags: [swift]

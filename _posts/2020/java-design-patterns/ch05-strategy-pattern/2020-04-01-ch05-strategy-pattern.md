@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5. 전략 패턴 ( Strategy Pattern ) "
+title: "[디자인패턴] 5. 전략 패턴 ( Strategy Pattern ) "
 description: " "
 date: 2020-04-01
 tags: [디자인패턴]

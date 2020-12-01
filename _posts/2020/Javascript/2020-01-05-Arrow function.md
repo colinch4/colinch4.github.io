@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Arrow function"
+title: "[Javascript기초] Arrow function"
 description: " "
 date: 2020-01-05
 tags: [Javascript]

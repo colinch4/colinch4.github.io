@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "6. RTP"
+title: "[Network기초] 6. RTP"
 description: " "
 date: 2020-01-12
 tags: [Network기초]

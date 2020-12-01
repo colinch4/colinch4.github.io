@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Higher-Order-Function 이란 ?"
+title: "[Kotlin] Higher-Order-Function 이란 ?"
 date: 2020-02-21 10:05
 category: kotlin
 author: kwonsik 

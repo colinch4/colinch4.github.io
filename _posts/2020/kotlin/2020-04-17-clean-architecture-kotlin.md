@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kotlin Clean Architecture"
+title: "[Kotlin] Kotlin Clean Architecture"
 date: 2020-04-17 09:49
 category: kotlin
 author: kskim2
