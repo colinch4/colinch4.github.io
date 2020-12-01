@@ -62,7 +62,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/colinch4/colinch4.github.io"
+    url:            "https://colinch4.github.io"
 
 # Sass
 sass:
