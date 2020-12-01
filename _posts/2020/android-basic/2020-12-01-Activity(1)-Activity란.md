@@ -15,7 +15,7 @@ share: true
 
 안드로이드 앱을 개발할 때 주로 사용하는 Activity Class에는 **Activity, FragmentActivity, AppCompatActivity**가 있다.
 
-![](Screen_Shot_2019-07-10_at_5-355fe374-873d-4ae0-a4db-1c154fcca8c7.36.01_PM.png)
+![](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/android-basic/images/Screen_Shot_2019-07-10_at_5-355fe374-873d-4ae0-a4db-1c154fcca8c7.36.01_PM.png?raw=true)
 
 **Activity Class** - 안드로이드 버전의 기본 라이브러리 액티비티 클래스이며, 모든 다른 액티비티 클래스는 해당 클래스의 서브 클래스가 된다.
 
