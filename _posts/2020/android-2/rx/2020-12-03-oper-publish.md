@@ -19,6 +19,7 @@ share: true
 
 ```java
 
+
 getNetwork().publish(new Function<Observable<List<Repository>>, Observable<List<Repository>>>() {
                 @Override
                 public Observable<List<Repository>> apply(Observable<List<Repository>> listObservable) throws Exception {
@@ -39,6 +40,7 @@ getNetwork().publish(new Function<Observable<List<Repository>>, Observable<List<
                         mTextAdapter.setTextItems(getMapToList(repositoryHashMap));
                     });
 ```java
+
 
 위의 코드는 publish를 통헤서 seletor를 구현하고 Observable.merge에서 캐시 값을 가져올 때 takeuntil을 사용하여 network에서 작업한 결과물이 내려온 경우 캐시에서 값을 불러오는 것을 그만두고, 바로 네트워크의 값으로 대체한다. 
 

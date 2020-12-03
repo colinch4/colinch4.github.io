@@ -18,6 +18,7 @@ Java8을 경험하는 초보자들에게 .map() 과 .flatMap()의 차이는 단�
 .map()은 단일 스트림의 원소를 매핑시킨 후 매핑시킨 값을 다시 스트림으로 반환하는 중간 연산을 담당한다.
 
 ```java
+
 class Person {
     int age;
   	String name;
@@ -46,11 +47,14 @@ Stream<String> mapStream = sample.stream()
 stream2.forEach(System.out::println);
 ```java
 
+
 ```java
+
 //output
 park
 park
 ```java
+
 
 
 ### .flatMap()
@@ -63,6 +67,7 @@ park
 
 
 ```java
+
 String[][] sample = new String[][]{
   {"a", "b"}, {"c", "d"}, {"e", "a"}, {"a", "h"}, {"i", "j"}
 };
@@ -73,9 +78,12 @@ Stream<String> stream = sample.stream()
 stream.forEach(alpha -> System.out.println("{"+x[0]+", "+x[1]+"}"));
 ```java
 
+
 ```java
+
 //output
 {a, b}
 {e, a}
 {a, h}
 ```java
+

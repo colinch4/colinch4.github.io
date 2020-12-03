@@ -26,7 +26,8 @@ Observable.concat(
 		   	Observable.interval(1, TimeUnit.SECONDS).map(id -> "A" + id),
          	Observable.interval(1, TimeUnit.SECONDS).map(id -> "B" + id))
            .subscribe(System.out::println);
-```java
+```
+
 ###### 결과 :A0 A1 A2 A3 A4 A5 A6 A7 A8 ...
 
 
@@ -40,8 +41,8 @@ concat을 보완하여 첫번째 Observable과 함께 다른 Observable도 함�
 
         Observable.concatEager(observables)
                 .subscribe();
+```
 
-```java
 ###### 결과 :A0 A1 A2 A3 A4 A5 A6 A7 A8 ...
 
 
@@ -55,7 +56,8 @@ Observable.merge(
             Observable.interval(1, TimeUnit.SECONDS).map(id -> "A" + id),
             Observable.interval(1, TimeUnit.SECONDS).map(id -> "B" + id))
     .subscribe(System.out::println);
-```java
+```
+
 ###### 결과 :A0 B0 A1 B1 B2 A2 B3 A3 B4 A4
 
 

@@ -12,6 +12,7 @@ share: true
 Rx에선 쉽게 오해하는 것이 그냥 subscribeOn을하면 알아서 병렬처리가 된다고 생각하는데 실제론 그렇지 않다.
 
 ```java
+
 Observable<Integer> vals = Observable.range(1,10);
 
 vals.subscribeOn(Schedulers.computation())
@@ -21,7 +22,9 @@ vals.subscribeOn(Schedulers.computation())
                   + Thread.currentThread().getName()));
 ```java
 
+
 ```java
+
 // 결과
 Calculating 1 on RxComputationThreadPool-1
 Subscriber received 1 on RxComputationThreadPool-1
@@ -33,11 +36,13 @@ Calculating 4 on RxComputationThreadPool-1
 ....
 ```java
 
+
 그렇다면 하나 이상의 스레드에서 병렬처리를 하려면 어떻게 해할까?그리고 옵저버블의 계약에 어긋나지 않으려면?
 
 방법은 바로 FlatMap에 있다.
 
 ```java
+
 Observable<Integer> vals = Observable.range(1,10);
 
 vals.flatMap(val -> Observable.just(val)
@@ -46,7 +51,9 @@ vals.flatMap(val -> Observable.just(val)
 ).subscribe(val -> System.out.println(val));
 ```java
 
+
 ```java
+
 //결과
 Calculating 1 on RxComputationThreadPool-3
 Calculating 4 on RxComputationThreadPool-2
@@ -56,6 +63,7 @@ Subscriber received 3 on RxComputationThreadPool-1
 Calculating 7 on RxComputationThreadPool-1
 ....
 ```java
+
 
 Observable의 계약은 중 하나는 Observable은 동시에 여러개의 onNext를 호출할 수 없다는 것인데, flatMap에서 필요한 모든 처리를 하게 되면 각각의 Observable에서 onNext를 호출하기 때문에 Observable의 계약을 어기지 않으면서 병렬처리를 쉽게 할 수 있다.
 

@@ -29,6 +29,7 @@ Moshi를 검토하게 된 이유가 Gson을 잘 쓰다가 kotlin도 지원되고
 또 모쉬의 다른 특징으로는 함수에 ```@ToJson``` , ```@FromJson```을 지정해서  원하는 클래스의 Adpter를 원하는대로 구성할 수 있다.
 
 ```java
+
 class CardAdapter {
   @ToJson String toJson(Card card) {
     return card.rank + card.suit.name().substring(0, 1);
@@ -50,6 +51,7 @@ class CardAdapter {
 ```
 
 ```java
+
 Moshi moshi = new Moshi.Builder()
     .add(new CardAdapter())
     .build();

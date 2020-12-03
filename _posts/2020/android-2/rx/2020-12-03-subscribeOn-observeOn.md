@@ -26,6 +26,7 @@ ObserveOn : 위치 밑에부터 스케쥴러 적용
 
 
 ```java
+
 just("Some String") // Computation
   .map(str -> str.length()) // Computation
   .map(length -> 2 * length) // Computation
@@ -33,14 +34,17 @@ just("Some String") // Computation
   .subscribe(number -> Log.d("", "Number " + number));// Computation
 ```java
 
+
 #### 다중 subscribeOn
 
 subscribeOn스트림에 여러 인스턴스가 있는 경우 첫번 째만 유효하다.
 
 ```java
+
 just("Some String")
   .map(str -> str.length())
   .subscribeOn(Schedulers.computation()) // changing to computation
   .subscribeOn(Schedulers.io()) // won’t change the thread to IO
   .subscribe(number -> Log.d("", "Number " + number));
 ```java
+

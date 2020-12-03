@@ -29,6 +29,7 @@ Message = Couldn't find com.google.gson.annotations.SerializedName.value
 
 
 ```java
+
 at  libcore.reflect.AnnotationAccess.toAnnotationInstance(AnnotationAccess.java:659)
 at  libcore.reflect.AnnotationAccess.toAnnotationInstance(AnnotationAccess.java:641)
 at  libcore.reflect.AnnotationAccess.getDeclaredAnnotation(AnnotationAccess.java:170)
@@ -71,6 +72,7 @@ Gson에도 [관련된 이슈](https://github.com/google/gson/issues/726#issuecom
 
 해당 라인에서 찍힌 에러 메시지가 "Couldn't find com.google.gson.annotations.SerializedName.value"이고
 ```java
+
             try {
                 method = annotationClass.getMethod(nameString, NO_ARGUMENTS);
             } catch (NoSuchMethodException e) {
@@ -82,6 +84,7 @@ Gson에도 [관련된 이슈](https://github.com/google/gson/issues/726#issuecom
 class.java에서 getMethod로 찾을 때 못찾아서 에러가 발생했는데.. 에러가 발생한 지점의 class.java를 찾기는 쉽지 않아보인다..
 
 ```java
+
     public Method getMethod(String name, Class<?>... parameterTypes)
         throws NoSuchMethodException, SecurityException {
         return getMethod(name, parameterTypes, true);

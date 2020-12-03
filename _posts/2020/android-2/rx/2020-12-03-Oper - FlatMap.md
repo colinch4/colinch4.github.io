@@ -18,6 +18,7 @@ RxSwift에서 제공하는 예제를 살펴보면 좀 더 쉽게 이해할 수 �
 
 ```java
 
+
 let sequenceInt = Observable.of(1, 2, 3)	// Int 타입 시퀀스
 let sequenceString = Observable.of("A", "B", "C", "D")	// String 타입 시퀀스
 
@@ -49,6 +50,7 @@ Emit String Item : D
 
 ```java
 
+
 위의 코드에서 sequenceInt는 Int 아이템을 발생을 하며, flatMap을 통해 새로운 String 타입 Observable 시퀀스를 반환합니다.
 
 즉, sequenceInt에서 발행한 아이템에서 새로운 Observable을 만들고, 발행한 아이템을 구독하여 출력합니다.
@@ -58,6 +60,7 @@ Emit String Item : D
 
 다음은 타이머 Observable을 만드는 코드입니다.
 ```java
+
 	let t = Observable<Int>
 		.interval(0.5, scheduler: MainScheduler.instance)	// 0.5초마다 발행
 		.take(4)		// 4번 발행

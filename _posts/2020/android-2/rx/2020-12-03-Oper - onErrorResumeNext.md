@@ -20,6 +20,7 @@ onErrorResumeNext는 Rx에서 Observable이나 Completable,Single(노올랍구�
 예제는 아래 코드와 같은데 memory에서 data를 가져올 때 없으면 remote에서 가져오는 코드이다. 
 
 ```java
+
  fun getData(success : (result : Result) -> Unit, error : (it: Throwable) -> Unit) : Disposable{
  return memoryDataSource.getData() //1
  		 .onErrorResumeNext (remoteDataSource.getData)//2
@@ -32,13 +33,16 @@ onErrorResumeNext는 Rx에서 Observable이나 Completable,Single(노올랍구�
   
 ```java
 
+
 간단하게 알아보기 쉽게 번호로 정리하자면 이렇게 나올 수 있다.
 
 ```java
+
 1(success) -> 3 -> done
 1(error) -> 2(success) -> 3 -> done
 1(error) -> 2(error) -> 4 -> done
 ```java
+
 
 
 ##### 유사제품

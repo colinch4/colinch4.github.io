@@ -25,6 +25,7 @@ Flowable 을 사용하면 default buffer size(128) 이상 backpressure buffer �
 기존에 없던 개념이 새로 추가된 것은 아니다. 기존 rxJava 1.xx 의 경우 Observable 에 backpressure buffer 를 직접 생성해 주면 사용이 가능하다.
 
 ```java
+
 //흐름제어를 통해 정상 동작하는 코드
 
 public class example01 {
@@ -52,7 +53,9 @@ public class example01 {
 }
 ```java
 
+
 ```java
+
 //Observable을 backpressure buffer 생성 없이 사용하면 OutOfMemoryException
 
 public class example02 {
