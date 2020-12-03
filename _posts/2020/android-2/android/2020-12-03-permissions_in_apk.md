@@ -16,9 +16,9 @@ apk에 추가된 퍼미션들은 비단 내가 AndroidManifast에 추가한 권�
 요렇게 권한이 추가되면 play store에서 권한이 추가되었으며 자동업데이트가 될 수 없을 수 있다는 경고 메시지가 뜨게 되는데 아래와 같은 메시지가 나타난다.
 (아마도 6.0이상은 자동업데이트될 것같고 그 이하는 안될 것같은데 확인이 필요하다)
 
-![](./images/permissions_in_apk_1.png)
+![](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/android-2/android/images/permissions_in_apk_1.png?raw=true)
 
-![](./images/permissions_in_apk_2.png)
+![](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/android-2/android/images/permissions_in_apk_2.png?raw=true)
 
 이럴 때 어떤 라이브러리에서 권한을 추가했는지 확인하는게 여러 가지 방법이 있다.
 
