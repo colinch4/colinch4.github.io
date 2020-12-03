@@ -12,7 +12,7 @@ share: true
 Sealed Class는 enum class의 확장판이라고 말할 수 있는데, sealed class,enum class 모두 타입을 제한하고 추상화 하는데 유용한데, 다른점이 있다면 kotlin에서 enum class는 모두 같은 타입의 변수와 같은 타입의 함수를 가져야하는데, sealed class는 서로다른 타입의 변수나 함수를 가질 수 있다.
 
 
-```
+```kotlin
 sealed class Option<out T> {
     object None : Option<Nothing>()
     data class Some<out T>(val value: T) : Option<T>()
@@ -31,7 +31,7 @@ sealed class List<out A> {
 
 sealed class도 대수적 타입이기 때문에 타입을 추상화할 수 있어서 이를 통한 패턴 매칭이 가능!!
 
-```
+```kotlin
 val some5 = Option.Some(5)
 val none = Option.None
 

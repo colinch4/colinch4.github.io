@@ -22,7 +22,7 @@ Reference
 
 Utils 클래스 TUtils 과 해당 클래스를 사용하는 TUse 가 있습니다.
 
-```
+```java
 class TUtils {
     public static void method1() {
         System.out.println("Print");
@@ -30,7 +30,7 @@ class TUtils {
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtils.method1();
@@ -43,7 +43,7 @@ TUse.java는 java 파일로 유지한채 TUtils 클래스를 Kotlin으로 변환
 ### 1. TUse를 object Class로 변환
 기본적인 Convert Java to Kotlin File 사용시 변환되는 형태입니다.
 
-```
+```kotlin
 object TUtils {
     fun method1() {
         println("Print")
@@ -51,7 +51,7 @@ object TUtils {
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtils.INSTANCE.method1();
@@ -63,7 +63,7 @@ object 지정자를 가진 TUtils 클래스는 싱글톤이 되며, TUse 에서�
 
 ### 2. TUse를 일반 class로 한 후 companion object 처리
 
-```
+```kotlin
 class TUtils {
     companion object {
         fun method1() {
@@ -73,7 +73,7 @@ class TUtils {
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtils.Companion.method1();
@@ -85,13 +85,13 @@ class TUse {
 
 하지만, TUse 에서 아래와 같은이, {class명}.Companion.{method명} 형태로 사용되고 있네요.
 
-```
+```java
 TUtils.Companion.method1();
 ```
 
 기존 java 코드가 바뀌는 형태다보니, @JvmStatic을 이용해서 java에서 해당 메소드를 static 하게 접근하도록 변경가능합니다.
 
-```
+```kotlin
 class TUtils {
     companion object {
         @JvmStatic
@@ -102,7 +102,7 @@ class TUtils {
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtils.method1();
@@ -114,13 +114,13 @@ class TUse {
 
 Kotlin에는 static method 개념이 없습니다. 대신 package level method 가 있지요. 그 이것을 이용하도록 하겠습니다.
 
-```
+```kotlin
 fun method1() {
     println("Print")
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtilsKt.method1();
@@ -131,7 +131,7 @@ Kotlin 코드가 package level method로 변경되었고, java에서도 접근�
 
 하지만, java 쪽 코드가 바뀌었네요... 우리들이 원하는 형태는 TUtils 입니다. @file:JvmName(name: String)을 이용해 원하는 명칭으로 수정이 가능합니다.
 
-```
+```kotlin
 @file:JvmName("TUtils")
 
 fun method1() {
@@ -139,7 +139,7 @@ fun method1() {
 }
 ```
 
-```
+```java
 class TUse {
     public static void main(String[] args) {
         TUtils.method1();
@@ -156,7 +156,7 @@ class TUse {
 
 최종 형태의 Kotlin 코드를 Kotlin Byte -> Decompile 했을때 아래처럼 됩니다.
 
-```
+```java
 package aa;
 
 import kotlin.Metadata;

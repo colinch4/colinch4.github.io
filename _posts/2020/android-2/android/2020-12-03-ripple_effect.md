@@ -16,7 +16,7 @@ share: true
  
 1 . 아래의 내용을 이벤트를 주고자하는 view xml에 넣는다.
 
-```
+```java
 android:clickable="true"
 android:background="?attr/selectableItemBackground"
 ```
@@ -26,7 +26,7 @@ android:background="?attr/selectableItemBackground"
 ripple_effect.xml 예제 소스는 다음과 같다
 
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -42,7 +42,7 @@ ripple_effect.xml 예제 소스는 다음과 같다
 
 원하는 색상과 모양 타겟버전 등을 커스텀 할수 있다.
 
-```
+```java
 android:background="@drawable/ripple_effect"
 ```
 

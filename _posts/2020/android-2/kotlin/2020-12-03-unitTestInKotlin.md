@@ -14,7 +14,7 @@ share: true
 
 의존성에 jUnit을 추가해야합니다. 프로젝트를 만들 때 이미 기본적으로 포함되어있을 가능성이 있습니다. 나중에 사용할 것이므로 Mockito도 추가 할 것입니다.
 
-```
+```java
 
 testCompile "junit:junit:4.12"
 testCompile "org.mockito:mockito-core:1.10.19"
@@ -28,7 +28,7 @@ testCompile "org.mockito:mockito-core:1.10.19"
 
 에서 app/src/test폴더 (아직 존재하지 않는 경우 당신이 그것을 만들 수 있습니다), 당신은라는 새로운 클래스를 만들 수 있습니다 MyTest다음과 같습니다 :
 
-```
+```kotlin
 class MyTest {
 
     @Test
@@ -38,7 +38,7 @@ class MyTest {
 }
 ```
 
-```
+```kotlin
 class MyTest {
  
     @Test
@@ -54,7 +54,7 @@ class MyTest {
 #### Mockito 사용 방법
 Kotlin의 Mockito는 다른 라이브러리와 마찬가지로 사용할 수 있지만 해결해야 할 몇 가지 문제를 발견 할 수 있습니다.
 
-```
+```kotlin
 @Test 
 fun emptyDatabaseReturnsServerValue() {
     val db = Mockito.mock(ForecastDataSource::class.java)
@@ -71,7 +71,7 @@ fun emptyDatabaseReturnsServerValue() {
 
 이 단어 when는 Kotlin에서 예약어이므로 쉼표를 사용하거나 심지어 이름을 바꿀 수 있으며 import원하는 이름을 지정할 수도 있습니다.
 
-```
+```kotlin
 import org.mockito.Mockito.`when` as _when
 ```
 

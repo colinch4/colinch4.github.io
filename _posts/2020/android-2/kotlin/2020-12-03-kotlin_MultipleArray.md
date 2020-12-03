@@ -14,7 +14,7 @@ kotlin에서는 자바처럼 int[][] array = new int[5][5]형식으로 간단하
 
 우선 kotlin에서는 기본적으로 초기 값을 가지는 원하는 크기의 array는 다음과 같이 사용할 수 있다.(사실 이런 식으로 사용하는 것은 처음이다)
 
-```
+```kotlin
 //Array(size: Int, init: (Int) -> T)
 val array =Array(5, i -> i+2)
 //[2,3,4,5,6]
@@ -22,7 +22,7 @@ val array =Array(5, i -> i+2)
 
 그래서 Multiple Array는 다음과 같이 만들 수 있다
 
-```
+```kotlin
 //2D
 val array = Array(5, {Array(5,{i -> i * 2})})
 /*
@@ -36,7 +36,7 @@ val array = Array(5, {Array(5,{i -> i * 2})})
 
 를 좀 더 코틀린스럽게 바꾸면
 
-```
+```kotlin
 val array = Array(5){Array(5){i -> i * 2}}
 
 ```
@@ -47,7 +47,7 @@ val array = Array(5){Array(5){i -> i * 2}}
 
 코틀린에서 정의된 Array는 다음과 같다 
 
-```
+```kotlin
 
 /**
  * Represents an array (specifically, a Java array when targeting the JVM platform).

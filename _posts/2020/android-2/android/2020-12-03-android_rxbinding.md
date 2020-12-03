@@ -19,7 +19,7 @@ share: true
 
 &nbsp;아래와 같이 굉장히 다양한 기능들을 보유 하고 있는데 아마 다 알아가려면 시간이 걸릴 것같다.
 
-```
+```java
 Platform
 
 implementation 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
@@ -49,7 +49,7 @@ implementation 'com.jakewharton.rxbinding3:rxbinding-material:3.1.0'
 
 activity_main.xml
 
-```
+```XML
     <Button
         android:id="@+id/tv_btn"
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```kotlin
     val view = findViewById<Button>(R.id.tv_btn)
     view.clicks()
         .subscribe {
@@ -101,7 +101,7 @@ MainActivity.kt
 
 &nbsp;가장 심플한 [View.clicks()](https://github.com/JakeWharton/RxBinding/blob/master/rxbinding/src/main/java/com/jakewharton/rxbinding3/view/ViewClickObservable.kt)에 대한 구현을 보자
 
-```
+```kotlin
 @CheckResult
 fun View.clicks(): Observable<Unit> {
   return ViewClickObservable(this)
@@ -147,7 +147,7 @@ private class ViewClickObservable(
 
 &nbsp;이걸 보다보니 또 궁금한게 Listener가 구현하고 있는 MainThreadDisposable이라는 것도 있는데 요게 뭔지 궁금하네요.
 
-```
+```java
 public abstract class MainThreadDisposable implements Disposable {
 
     public static void verifyMainThread() {
@@ -188,7 +188,7 @@ public abstract class MainThreadDisposable implements Disposable {
 
 &nbsp; P.S - 뭔가 간단하게 MainThread에서 작업할 일이 있으면 그냥 Handler를 통해서 자주 작업했는데 dispose쪽 코드를 보면 
 
-```
+```java
 AndroidSchedulers.mainThread().scheduleDirect(new Runnable())
 ```
 

@@ -16,7 +16,7 @@ Fragment안에 Fragment는 getChildFragmentManager()메서드를 이용하여야
 
 아래와 같은 오류가 발생되었을 때
 
-```
+```java
 IllegalStateException: Fragment does not have a view
 ```
 
@@ -28,7 +28,7 @@ IllegalStateException: Fragment does not have a view
 
 부가적으로 dialog 배경 투명하기 만들기
 
-```
+```java
   Dialog dialog = new Dialog(getActivity());
 
     dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);

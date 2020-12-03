@@ -54,7 +54,7 @@ adb shell dumpsys activity ${packageName}
 
 아래와 같이 현재 떠있는 activity나 fragment를 확인할 수 있고 View Hierarchy도 함께 확인 할 수 있다.
 
-```
+```java
 TASK com.kakao.talk id=595 userId=0
   ACTIVITY com.kakao.talk/.activity.main.MainTabFragmentActivity 451df53 pid=23007
     Local Activity b5337ad State:
@@ -95,7 +95,7 @@ dumpsys ${service}
 
 context.java에서 스트럭쳐를 보면 아래와 같이 서비스 이름들이 상수로 들어간 것을 확인할 수 있는데
 
-```
+```java
     public static final String POWER_SERVICE = "power";
 
     public static final String RECOVERY_SERVICE = "recovery";
@@ -138,7 +138,7 @@ device = 0
  
 으로 시작하는데, 이 내용은 AudioService.java에 dump 메서드에 있다.
 
-```
+```java
 //AudioService
 
 
@@ -155,7 +155,7 @@ device = 0
 
 코드에서 'mMediaFocusControl'의 dump를 실행하는데 해당 메서드에서 audioService dumpsys의 맨 윗줄인 'MediaFocusControl dump time: 오후 3:49:21'를 출력하는걸 볼 수 있다.
 
-```
+```java
     protected void dump(PrintWriter pw) {
         pw.println("\nMediaFocusControl dump time: "
                 + DateFormat.getTimeInstance().format(new Date()));

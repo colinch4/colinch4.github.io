@@ -9,7 +9,13 @@ share: true
 ---
 
 
- Gson에서 IncompatibleClassChangeError라는 익셉션이 떨어졌고, 메시지가 ```Couldn't find com.google.gson.annotations.SerializedName.value```라고 프린되는데, 요건 Reflection을 사용해서 annotation을 처리하는 와중에 "value"라는 이름의 Method를 찾을 수없어서 발생하는 크래시가 발생했었다.
+ Gson에서 IncompatibleClassChangeError라는 익셉션이 떨어졌고, 메시지가 
+
+ ```java
+ Couldn't find com.google.gson.annotations.SerializedName.value
+ ```
+
+ 라고 프린되는데, 요건 Reflection을 사용해서 annotation을 처리하는 와중에 "value"라는 이름의 Method를 찾을 수없어서 발생하는 크래시가 발생했었다.
  
 ## 발생환경
  
@@ -30,7 +36,6 @@ Message = Couldn't find com.google.gson.annotations.SerializedName.value
 
 
 ```java
-
 at  libcore.reflect.AnnotationAccess.toAnnotationInstance(AnnotationAccess.java:659)
 at  libcore.reflect.AnnotationAccess.toAnnotationInstance(AnnotationAccess.java:641)
 at  libcore.reflect.AnnotationAccess.getDeclaredAnnotation(AnnotationAccess.java:170)
@@ -74,7 +79,6 @@ Gson에도 [관련된 이슈](https://github.com/google/gson/issues/726#issuecom
 해당 라인에서 찍힌 에러 메시지가 "Couldn't find com.google.gson.annotations.SerializedName.value"이고
 
 ```java
-
             try {
                 method = annotationClass.getMethod(nameString, NO_ARGUMENTS);
             } catch (NoSuchMethodException e) {
@@ -87,12 +91,11 @@ class.java에서 getMethod로 찾을 때 못찾아서 에러가 발생했는데.
 
 
 ```java
-
     public Method getMethod(String name, Class<?>... parameterTypes)
         throws NoSuchMethodException, SecurityException {
         return getMethod(name, parameterTypes, true);
     }
-    ```
+```
     
 하지만 위에 에러메시지가의 nameString이 "value"인 것을 보아(다른 크래시 레포트도 동일) SerializedName 이름이 "value"라서 나는 이슈일 것같다는 추론을 해볼 수는 있을 것같다.
 

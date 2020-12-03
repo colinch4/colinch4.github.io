@@ -12,7 +12,7 @@ share: true
 
 잘 짜여진 예제를 줍줍했다!
 
-```
+```kotlin
 object PreferenceHelper {
 
     fun defaultPrefs(context: Context): SharedPreferences

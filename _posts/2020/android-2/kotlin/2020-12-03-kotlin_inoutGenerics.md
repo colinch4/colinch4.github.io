@@ -16,7 +16,7 @@ share: true
 무공변성이란 상속 관계에 상관없이, 자기 타입만 허용하는 것을 말합니다.
 
 
-```
+```kotlin
 object Main {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -67,7 +67,8 @@ test라는 함수는 Some<JVM> 타입만을 입력받습니다. 따라서 langua
 #### 공변성(covariant)
 
 공변성은 타입생성자에게 리스코프 치환 법칙을 허용한다는 의미입니다. 코드로 살펴보겠습니다.
-```
+
+```kotlin
 object Main {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -118,7 +119,7 @@ object Main {
 
 공변성의 반대 개념을 생각하면 쉽습니다. 자기 자신과 부모 객체만 허용하는 것을 말합니다.
 
-```
+```kotlin
 object Main {
     @JvmStatic
     fun main(args: Array<String>) {

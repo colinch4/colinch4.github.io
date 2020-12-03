@@ -13,7 +13,7 @@ share: true
 
 이 data키워드는 소멸 선언 을 허용하는 함수를 제공합니다 . 즉, 모든 속성에 대해 함수를 생성하므로 다음과 같은 작업을 수행 할 수 있습니다.
 
-```
+```kotlin
 val steveJobs= User("Steve Jobs", 56)
 
 fun print() {
@@ -29,7 +29,7 @@ fun print() {
 
 이 data키워드는 클래스의 일부 속성 값을 변경하는 편리한 복사 방법을 제공합니다. 연령을 변경하는 사용자의 복사본을 만들고 싶다면 다음과 같이하십시오.
 
-```
+```kotlin
 val steveJobs= User("Steve Jobs", 56)
 val steveJobsToday= steveJobs.copy(age = 63)
 ```
@@ -38,7 +38,7 @@ val steveJobsToday= steveJobs.copy(age = 63)
 
 컴파일러는 자동 생성 함수에 대해 기본 생성자 내부에서 정의 된 속성 만 사용합니다.
 
-```
+```kotlin
 data class User(val name: String, val age: Int) {
   var address : String = ""
 }

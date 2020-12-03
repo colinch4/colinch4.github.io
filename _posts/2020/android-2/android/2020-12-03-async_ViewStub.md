@@ -24,7 +24,7 @@ share: true
 
 비동기 스텁은 ViewStub 및 AsyncLayoutInflater를 사용해서 만들어지게 된다. 기존의 inflate()랑은 다른 방법으로!
 
-```@kotlin
+```kotlin
 class AsyncViewStub @JvmOverloads constructor(
         context: Context, set: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, set, defStyleAttr) {
@@ -98,14 +98,13 @@ class AsyncViewStub @JvmOverloads constructor(
         else addView(child, index, params)
     }
 }
-
 ```
 
 우리가 자세하게 봐야하는 부분은 바로 inflate()이다. 
 
 사용 방법은 다음과 같다. xml에서 아래와 같이 추가해주고, 기존의 ViewStub이랑 비슷하게 layout을 지정해줘야 한다.
 
-```
+```XML
 <widgets.AsyncViewStub
     android:id="@+id/avs_stub"
     android:layout_width="match_parent"
@@ -116,7 +115,7 @@ class AsyncViewStub @JvmOverloads constructor(
 
 그 후 아래와 같이 해당 callback을 달아서 호출하면 된다! 멋져!
 
-```
+```kotlin
 private inline fun <T : View> prepareStubView(
         stub: AsyncViewStub, 
         crossinline prepareBlock: T.() -> Unit

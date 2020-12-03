@@ -78,7 +78,7 @@ out T : Java의 ? extends T와 같음. output의 약자이며 read 만 가능
 
 kotlin에서도 java처럼 테스트하기 위해 generics interface을 아래와 같이 정의하였다.
 
-```
+```kotlin
 interface Output<T> {
     fun isArgument(argument: T): Boolean
 }
@@ -86,7 +86,7 @@ interface Output<T> {
 
 사용하는 ArrayList의 아이템을 다음과 같이 2개 정의할 수 있다.
 
-```
+```kotlin
 
 class ExampleUnitTest {
 

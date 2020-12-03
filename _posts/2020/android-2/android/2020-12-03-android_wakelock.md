@@ -65,8 +65,6 @@ release 하기 위해서, wakeLock객체에 release()메소드를 사용해주�
 
 
 ```java
-
-
 PowerManager powerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
 PowerManager.WakeLock wl = powerManager.newWakeLock(WaklockFlag, "pushLibrary tag");
 wl.acquire(10000);

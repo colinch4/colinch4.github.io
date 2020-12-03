@@ -15,7 +15,7 @@ Kotlin의 String에 대해서 작은 의문과 그 것을 이해함을 기반으
 
 우선 String은 프리미티브 타입이 아니므로 오브젝트를 가지게 된다. 그래서 자바에서는 '==' 과 '.equals()'를 구분해서 사용하고 있었는데, 
 
-```
+```java
 String temp = "Temp";
 String temp2 = "Temp";
 
@@ -26,7 +26,7 @@ System.out.println(temp == temp2); // true
 이렇게 둘다 트루가 나온다. 그 이유는, Jvm에서 String을 저장하는 특수 메모리 영역인 Java String Pool에 저장하고 별도로 오브젝트를 만들지 않기 때문이다. 별도로 생성자를 통해 만들어진 경우는 새로 오브젝트를 생성하기 때문에 아래와 같이 다른 레퍼런스를 가지게 된다.
 
 
-```
+```java
 String temp = "Temp";
 String temp2 = new String("Baeldung");
 
@@ -37,7 +37,7 @@ System.out.println(temp == temp2); // false
 
 때문에 같은 JVM위에서 올라가는 Kotlin도 마찬가지로 Java String Pool을 사용해서 아래와 같은 특성을 띄게 된다.
 
-```
+```kotlin
 val temp = "Temp"
 val temp2 = "Temp"
 

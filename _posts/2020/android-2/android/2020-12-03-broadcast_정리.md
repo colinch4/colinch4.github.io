@@ -18,7 +18,7 @@ share: true
 
 ##### 예제코드
 
-```
+```java
 @Override
 
 protected void onCreate(Bundle savedInstanceState) {

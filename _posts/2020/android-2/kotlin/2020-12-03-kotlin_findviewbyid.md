@@ -14,17 +14,17 @@ API 레벨 26이상은 사용 방법이 약간 다르다. 자세한건 [여기](
 
 1. 변경
 
-```
+```kotlin
 val listView = findViewById(R.id.list) as ListView 에
 ```
 
-```
+```kotlin
 val listView = findViewById<ListView>(R.id.list)
 ```
 
 또 이렇게 하나하나 findviewbyid대신 kotlin extention을 사용하면된다.
 
-```
+```kotlin
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions' // 익스텐션 플러그인 적용

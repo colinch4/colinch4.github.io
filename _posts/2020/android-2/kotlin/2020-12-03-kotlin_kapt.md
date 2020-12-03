@@ -16,7 +16,7 @@ Java6부터 도입되었으며 Pluggable Annotation Processing API (JSR 269)를 
 
 코틀린에서 Annotation Processing를 지원하기 위해서는 kapt를 사용해야 하고, build.gradle에 플러인을 추가하면 된다.
 
-#####apply plugin: 'kotlin-kapt'
+##### apply plugin: 'kotlin-kapt'
 
 kapt를 사용하면 의존성에 annotationProcessor로 설정된 부분은 모두 kapt로 변경해야 하고, 마찬가지로 testAnnotationProcessor는 kaptTest로 변경해야 한다.
 

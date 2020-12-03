@@ -112,9 +112,7 @@ Moshi는 @Json(name = "name")을 활용해서 json에 이름과 변수의 이름
 아래와 같이 colorItem에 다같은 int값인데 다르게 처리하고 싶을 때 CustomAdapter를 만들어서 Moshi빌드할 때 넣어주고 adapter를 빼면 된다. 여기서 헷갈릴 수 있는게 CustomAdapter가 ColorItem에 대한 encoding이나 decoding을 해주는 것이 아니고 하나의 어노테이션에 대해서만 특별하게 처리해준다.
 
 
-```kotlin
-
-
+```java
 @JsonClass(generateAdapter = true)
 data class ColorItem(val width : Int, val height : Int, @HexColor val color : Int)
 
@@ -151,7 +149,7 @@ kotlin에서의 사용 방법은 크게 2가지로 [Reflection](https://github.c
 
 1. 우선 Code Gen을 활용하기 위해서 Gradle에 디펜던시를 추가해준다. 
 
-```
+```java
 implementation("com.squareup.moshi:moshi:1.9.3") // moshi
 kapt("com.squareup.moshi:moshi-kotlin-codegen:1.9.3") // for code-gen
 ```
@@ -159,7 +157,6 @@ kapt("com.squareup.moshi:moshi-kotlin-codegen:1.9.3") // for code-gen
 2. toJson / fromJson을 원하는 클래스에 ```@JsonClass(generateAdapter = true)```를 넣어주어 adapter가 제너레이트 되도록 한다. (작성하지 않으면 기본 reflection인데 관련 디펜던시가 없으면 크래시가 날 것이다.)
 
 ```kotlin
-
 @JsonClass(generateAdapter = true)
 data class Item(val id: String?, val id2: String?)
 ```
@@ -177,7 +174,7 @@ data class Item(val id: String?, val id2: String?)
 
 5. 특정 클래스에 대한 커스텀 어뎁터가 필요한 경우 Adapter를 만들고 Moshi에 넣어준다.
 
-```
+```java
 class CardAdapter {
     @ToJson
     fun toJson(card: Card): String {
@@ -197,8 +194,8 @@ class CardAdapter {
         }
     }
 }
-
 ```
+
 ```kotlin
 //create Moshi
     private val moshi: Moshi =
@@ -209,7 +206,7 @@ class CardAdapter {
 
 6. retrofit에서 사용하기 위해서 제공해주는 MoshiConverterFactory를 넣어준다
 
-```
+```java
 	 Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
 		...
@@ -262,7 +259,7 @@ fun getApiResult() : Single<B<C>>
 
 ## 제약 사항
 
-```
+```java
 com.squareup.moshi.JsonClass
 public abstract boolean generateAdapter
 True to trigger the annotation processor to generate an adapter for this type.

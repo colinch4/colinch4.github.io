@@ -35,7 +35,7 @@ EM은 활자인쇄(Typography) 분야에서 사용하는 단위인데, 현재 �
 
 
 아래의 예제를 통해 ems 속성이 어떻게 동작하는지 확인할 수 있습니다.
-```
+```XML
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

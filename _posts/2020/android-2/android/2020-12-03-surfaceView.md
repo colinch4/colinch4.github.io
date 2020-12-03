@@ -26,7 +26,7 @@ SurfaceView는 자기 영역 부분의 Window를 뚫어서(punch) 자신이 보�
 ### 예제 코드
 
 
-```
+```java
 
 public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback {
     Context mContext;

@@ -23,7 +23,7 @@ share: true
 
 현재 theme의 windowTitleStyle 속성의 resouce id를 가져와보자. xml로 따지자면 ?attr:windowTitleStyle 에 해당한다.
 
-```
+```java
 TypedValue outValue = new TypedValue();
 getContext().getTheme().resolveAttribute(android.R.attr.windowTitleStyle, outValue, true);
 int resId = outValue.resouceId; 
@@ -31,7 +31,7 @@ int resId = outValue.resouceId;
 
 ##### TextAppearance.DialogWindowTitle 라는 style의 textSize 와 textColor를 가져와보자.
 
-```
+```java
 TypedArray a = getContext().getTheme().obtainStyledAttributes( android.R.style.TextAppearance_DialogWindowTitle, new int[]{android.R.attr.textSize,android.R.attr.textColor});
 int textSize = a.getDimensionPixelSize(0,0);
 int textColor = a.getColor(1,0);
@@ -45,7 +45,7 @@ a.recycle();
 
 우선 theme에 커스텀 속성을 하나 만들어둬야 한다. theme에 커스텀 속성을 추가하는 방법은 커스텀 뷰에 커스텀 속성을 추가하는 방법과 동일하다. values/ 에 attribute 정의하는 xml을 하나 만들고 거기 아무 이름이나 styleable을 하나 만들어 둔 다음 attr을 정의하면 된다.
 
-```
+```XML
 <declare-styleable
  name="CustomTheme"
 >
@@ -62,7 +62,7 @@ a.recycle();
 
 theme에선 이렇게 사용하면 된다.
 
-```
+```XML
 <style
  name="MyAppTheme" parent="@style/Theme"
 >
@@ -81,7 +81,7 @@ theme에선 이렇게 사용하면 된다.
 
 자, 이제 MyImageView 라는 커스텀 뷰에 myCustomViewDefaultStyle 을 적용할 차례다.
 
-```
+```java
 public MyImageView(Context context, AttributeSet attrs) {
     super(context, attrs, R.attr.myCustomView);
 }
@@ -91,7 +91,7 @@ public MyImageView(Context context, AttributeSet attrs) {
 
 이 부분은 많이들 해 봤을 것이다. 이건 딱히 스타일이랑 관련은 없으니… 바로 위의 절과 연관지어서, 커스텀 뷰에 theme의 기본 스타일을 적용하고, 이 기본 스타일에 정의된 커스텀 속성을 적용하는 방법까지 엮어서 만들면 다음과 같다.
 
-```
+```java
 public MyImageView(Context context, AttributeSet attrs) {
     super(context, attrs, R.attr.myCustomView);
     init(attrs, R.attr.myCustomView);

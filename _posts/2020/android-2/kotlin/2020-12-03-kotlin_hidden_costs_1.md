@@ -257,7 +257,7 @@ public final class MyClass {
 
 Koltin에서는 일반적으로 클래스에서 사용하는 static 상수를 companion object안에 선언하는데 보통 다음과 같이 사용했다고 가정했을 때
 
-```
+```kotlin
 class MyClass {
 
     companion object {
@@ -272,7 +272,7 @@ class MyClass {
 
 위에서 언급했던 것과 마찬가지로 companion object에 private으로 선언된 상수에 companion object안에 추가적인 synthetic getter가 생성되는 것을 확인할 수 있습니다.
 
-```
+```kotlin
 GETSTATIC be/myapplication/MyClass.Companion : Lbe/myapplication/MyClass$Companion;
 INVOKESTATIC be/myapplication/MyClass$Companion.access$getTAG$p (Lbe/myapplication/MyClass$Companion;)Ljava/lang/String;
 ASTORE 1
@@ -280,7 +280,7 @@ ASTORE 1
 
 하지만 synthetic mothed는 실제로 값을 반환하지 않기 때문에 kotlin이 만든 getter method를 부르게 됩니다.
 
-```
+```kotlin
 ALOAD 0
 INVOKESPECIAL be/myapplication/MyClass$Companion.getTAG ()Ljava/lang/String;
 ARETURN
@@ -290,14 +290,14 @@ ARETURN
 
 kotlin에선 상수 값을 저장하기 위해서 companion object가 아닌 myclass에 ```private static final```로 상수를 생성하게 됩니다. 하지만 이 상수는 private으로 선언 되어있기 때문에, companion object에서 접근하기 위해서는 synthetic method가 필요하게 됩니다.
 
-```
+```kotlin
 INVOKESTATIC be/myapplication/MyClass.access$getTAG$cp ()Ljava/lang/String;
 ARETURN
 ```
 
 그리고 syntehtic method는 값을 읽을 수 있게 됩니다.
 
-```
+```kotlin
 GETSTATIC be/myapplication/MyClass.TAG : Ljava/lang/String;
 ARETURN
 ```
@@ -311,7 +311,7 @@ ARETURN
 
 이 코드를 자바로 전환해보면 다음과 같습니다.
 
-```
+```java
 public final class MyClass {
     private static final String TAG = "TAG";
     public static final Companion companion = new Companion();
@@ -344,7 +344,7 @@ public final class MyClass {
 
 	이렇게 하면 직접적으로 접근할 수 있지만 이것은 primitive type이나 String에서만 사용할 수 있습니다.
 
-```
+```kotlin
 class MyClass {
 
     companion object {
@@ -361,7 +361,7 @@ class MyClass {
 
 	Android에서 예를 들면 ```Parcelable```을 구현하는데 주로 사용될 수 있습니다.
 
-```
+```kotlin
 class MyClass() : Parcelable {
 
     companion object {

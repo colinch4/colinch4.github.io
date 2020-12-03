@@ -16,7 +16,7 @@ Kotlin의 숨겨진 코스트들이 뭐가 있는지 정리해보자  2탄의 �
  
  local funciton이란 다른 function 내부에 선언된 function을 말하며 function 내부에서만 접근할 수 있다.
  
- ```
+ ```kotlin
 //example 1
  
 fun someMath(a: Int): Int {
@@ -31,7 +31,7 @@ fun someMath(a: Int): Int {
  
  컴파일 후에 local function들은 ```Function``` Object로 변환되고, 람다와 마찬가지로 inline이 아닌 함수와 관련해서 [이전 설명](https://github.com/sk392/TIL/blob/master/kotlin/kotlin_hidden_costs.md)에서 설명한 것과 같은 제한이 생깁니다. Java로 Decompile하면 다음과 같습니다.
  
- ```
+ ```java
  //example 1 - Decompile
 
  public static final int someMath(final int a) {
@@ -55,7 +55,7 @@ fun someMath(a: Int): Int {
  
  즉, 외부에서 local function을 호출할 때 primitive Type의 casting이나 boxing이 발생하지 않는다는 것을 의미합니다. 바이트코드로 보면 다음과 같습니다.
  
- ```
+ ```java
  ALOAD 1
 ICONST_1
 INVOKEVIRTUAL be/myapplication/MyClassKt$someMath$1.invoke (I)I
@@ -70,7 +70,7 @@ IRETURN
 
 하지만 여전히 각 메서드가 호출 될 때마다 ```Function``` Object가 생성되는 비용이 있고,   함수를 수정함으로서 capturing되지 않게 회피할 수 있습니다.
 
-```
+```kotlin
 //example 2
 
 fun someMath(a: Int): Int {
@@ -82,7 +82,7 @@ fun someMath(a: Int): Int {
 
 위와 같이 수정한다면 같은 Function Instance를 재사용하는 것을 알 수 있습니다. 이런 경우  local function의 패널티는 다른 function에 비해서 몇 개의 method가 있는 extra class를 사용한다는 것을 알 수 있습니다.
 
-```
+```java
 //example 2 - Decompile
 
 public final class MyClass {
@@ -105,7 +105,7 @@ public final class MyClass {
 
 non-null형태로 String argument를 선언해보면 
 
-```
+```kotlin
 fun someMath(a: String) {
     println("hello $a")
 }    
@@ -113,7 +113,7 @@ fun someMath(a: String) {
 
 다음과 같은데 이걸 java로 decompile을 하게되면 아래와 같이 표현된다.
 
-```
+```java
 public final class MyClass {
    public final void someMath(@NotNull String a) {
       Intrinsics.checkParameterIsNotNull(a, "a");
@@ -131,7 +131,7 @@ kotlin의 non-null type은  @NotNull annotation을 붙여서 Java에서 해당 f
 
 static function을 호출하는 일은 performance에 큰 영향을 미치진 않으며 디버깅이나 테스트에 유용하기 때문에 필요하다면 사용하는 것이 더 좋습니다. 하지만 이런 것들은 relese build할 때 필요하지 않다고 생각할 수 도 있고(검증이 완료되었기 때문에) 그렇다면 runtime null checks를 끌 수 있도록 compiler option을 ProGuard 옵션에 ```-Xno-param-assertions```를 넣어주면 됩니다.
 
-```
+```java
 -assumenosideeffects class kotlin.jvm.internal.Intrinsics {
     static void checkParameterIsNotNull(java.lang.Object, java.lang.String);
 }
@@ -145,7 +145,7 @@ static function을 호출하는 일은 performance에 큰 영향을 미치진 �
  
  자바와는 달리 autoboxing과 null에 대한 걱정 없이 **```int```** 와 거의 똑같이 ```Interger``` 변수를 사용할 수 있습니다. 
  
-```
+```kotlin
 fun add(a: Int, b: Int): Int {
     return a + b
 }
@@ -174,7 +174,7 @@ kotlin에는 3가지 type의 arrays가 있는데요,
 
  kotlin에는 Java처럼 [가변 개수의 argmuments](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs)를 사용할 수 있습니다.
  
-```
+```kotlin
 fun printDouble(vararg values: Int) {
     values.forEach { println(it * 2) }
 }
@@ -185,13 +185,13 @@ fun printDouble(vararg values: Int) {
 
 1. **Passing multiple arguments**
 
-```
+```kotlin
 printDouble(1, 2, 3)
 ```
 
 kotlin compiler가 compile한 코드를 Java로 Decompile하면 다음과 같이 됩니다.
 
-```
+```java
 printDouble(new int[]{1, 2, 3});
 ```
 
@@ -201,14 +201,14 @@ printDouble(new int[]{1, 2, 3});
 
 이 방법에서는 조금 다른데, Java에서는 vararg argument에 array reference를 직접적으로 넣을 수 있었지만, kotlin에서는 spread operator가 필요합니다.
 
-```
+```kotlin
 val values = intArrayOf(1, 2, 3)
 printDouble(*values)
 ```
 
 java에서는 array reference를 별도의 array allocation을 사용하지 않고 있는 그대로 넣을 수 있습니다. 하지만 kotlin에서는 spread operator를 사용해서 컴파일하면 다른 결과가 나오게 됩니다. 위 코드를 Java로 Decompile하게 되면 다음과 같이 나옵니다.
 
-```
+```java
 int[] values = new int[]{1, 2, 3};
 printDouble(Arrays.copyOf(values, values.length));
 ```
@@ -222,14 +222,14 @@ printDouble(Arrays.copyOf(values, values.length));
 
 spread operator의 가장 큰 장점은 바로 array와 arguments를 섞어서 쓸 수 있다는 것입니다.
 
-```
+```kotlin
 val values = intArrayOf(1, 2, 3)
 printDouble(0, *values, 42)
 ```
 
 compile된 것을 Java로 Decompile하면 다음과 같이 노출됩니다.
 
-```
+```java
 int[] values = new int[]{1, 2, 3};
 IntSpreadBuilder var10000 = new IntSpreadBuilder(3);
 var10000.add(0);

@@ -49,8 +49,7 @@ Testable은 응용프로그램의 부분을 분리와 개발을 유지관리할 
 
 ##### TDD만들어보기
 
-```
-
+```java
 @runWith(moktieo)
 class loginPresenterTest{
 	@mock
@@ -59,7 +58,6 @@ class loginPresenterTest{
 	inOrder
 	//순서정할 수 있음.
 }
-
 ```
 
 테스트 코드 작성원칭
@@ -67,14 +65,13 @@ given = 테스트를 위한 특정상황
 when - 특정 액션이 바생했을떼ㅐ
 then - 변화된 상태나 수행되는 행동을 검증한다.
 
-```
+```kotlin
 @test
 fun test_fail(){
 
 	'when'(view.)...
 	
 }
-
 ```
 
 위와같은 테스트 코드를 먼저 작성한 후에 interface에 해당 메소드를 추가한다(인터페이스에 먼저 메소드를 만들지않는다)

@@ -8,8 +8,6 @@ comments: true
 share: true
 ---
 
-
-
 1. 기본 내용은 커널에서 네이티브 단을 거쳐서 앱에 입력 이벤트가 전달되는 것
 
 2. InputReader에서 EventHub를 통해 커널에서 이벤트를 가져오고 

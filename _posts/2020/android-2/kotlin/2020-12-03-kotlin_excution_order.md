@@ -21,7 +21,7 @@ share: true
 
  가장 기본적인 프로퍼티 선언과 동시에 초기화 할 수 있다. function을 콜하거나 by를 통해 delegation도 가능!
  
-```
+```kotlin
 val count : Int = 0
 
 val data = getData()
@@ -31,7 +31,7 @@ val data = getData()
 
  보통 객체 상단에 넣으며 여러 개를 넣어도 모두 호출된다.
  
-```
+```kotlin
 init{
  //something
 }
@@ -45,7 +45,7 @@ init{
 
 class정의와 함께 붙는 primary constructor가 있으며, parameter에 따라 달라지는 secondary constructor를 여러개 만들수도 있다.
  
-```
+```kotlin
 class Person(val name: String ) { //primary constructor
   constructor (age: Int, address: String) { 
   //do something 
@@ -68,7 +68,7 @@ class Person(val name: String ) { //primary constructor
 4. 생성자 블럭 내부의 코드들이 수행
 
 
-```
+```kotlin
 //Example Code
 
 open class Parent {
@@ -111,7 +111,7 @@ class Child : Parent {
 
 출력 순서는 다음과 같다.
 
-```
+```kotlin
 
 Child secondary constructor default argument - #1
 

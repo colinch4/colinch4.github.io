@@ -22,8 +22,7 @@ BottomSheet는 별도의 위젯으로 존재 하지는 않는다. CoordinatorLay
 
 CoordinatorLayout을 사용해본 적이 있다면 레이아웃에 layout_behavior속성을 사용해본 적이 있을 것이다. 속성의 값으로 appbar_scrolling_view_behavior를 사용한적이 있을 것이다. 이는 툴바와 스크롤 되는 뷰간의 상호 작용을 위해 구현된 behavior이다. BottomSheet또한 CoordinatorLayout의 하나의 behavior이며, bottom_sheet_behavior를 사용하면 된다. bottom_sheet_behavior는 스트링 이름이며 값은 클래스명으로 지정되어 있으며 해당 클래스가 로드되어 수행되는 구조이다.
 
-```
-
+```HTML
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -96,7 +95,7 @@ BottomSheet높이는 자식뷰의 크기에 따라 변하게 되며 기본적으
 BottomSheetDialogFragment를 활용한 두 번째 예제
 
 
-```
+```java
 public class BottomSheetFragment extends BottomSheetDialogFragment {
 
     private View contentView;

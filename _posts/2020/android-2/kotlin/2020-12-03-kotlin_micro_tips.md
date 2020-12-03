@@ -13,7 +13,7 @@ share: true
 
 코틀린에서는 기본 확장 함수들이 있는데, 예를들어 apply는 해당 표현식에 대한 오브젝트를 참조하고, 또 반환도 오브젝트로 이루어 진다. 
 
-```
+```kotlin
 val textView = findViewById<TextView>(R.id.textView)
 
 textView?.apply{
@@ -25,7 +25,7 @@ textView?.apply{
 
 또 내부 text 세팅을 위해 apply를 쓰면 불필요한 func콜이 늘어나게된다.apply 내부 코드는 다음과 같은데 (다른 let,also,run 비슷하다)
 
-```
+```kotlin
 public inline fun <T> T.apply(block: T.() -> Unit): T {
     contract {
         callsInPlace(block, InvocationKind.EXACTLY_ONCE)
@@ -37,7 +37,7 @@ public inline fun <T> T.apply(block: T.() -> Unit): T {
 
 내부적으로 callsInPlace 함수를 콜하고 들어온 함수를 한번 더 콜하게 된다. 성능에 큰 이슈는 아니지만 불필요한 함수 콜을 한번 하는 것이므로 다음과 같이 짜는 게 좋다.
 
-```
+```kotlin
 val textView :TextView = findViewById(R.id.textView)
 
 textView.text = "블라블라"
@@ -61,7 +61,7 @@ kotlin을 사용하다보면 비슷비슷한데 구분하기 애매한 것들이
 
 사용 예시 : 함수를 호출한 객체를 인자로 받으므로, 이를 사용하여 다른 메서드를 실행하거나 연산을 수행해야하는 경우 사용
 
-```
+```kotlin
  setOnClickListener{
 	 item.link?.let{
 	 	openLink(link)
@@ -79,7 +79,7 @@ kotlin을 사용하다보면 비슷비슷한데 구분하기 애매한 것들이
 사용 예시 : 특정 객체를 생성하면서 함께 호출해야 하는 초기화 코드가 있는 경우 사용할 수 있다. 
 
 
-```
+```kotlin
 val textView = findViewById<TextView>(R.id.textView)
 
 textView?.apply{
@@ -96,7 +96,7 @@ textView?.apply{
 
 사용 예시 : 객체에서 이 함수를 호출하는 경우 객체를 리시버로 전달받으므로, 특정 객체의 메서드나 필드를 연속적으로 호출하거나 값을 할당할 때 사용한다. 주의할 점은 apply랑 비슷하지만, apply는 새로운객체를 생성함과 동시에 연속된 작업을 할 때사용하고 run은 이미 생성된 객체에 연속된 작업을 할 때 필요하다.
 
-```
+```kotlin
 
 link?.run { url.isNotBlankOrNull() || androidScheme.isNotBlankOrNull() } == true
 ```
@@ -111,7 +111,7 @@ run()함수는 with()함수를 좀 더 편리하게 사용하기 위해 let()함
 
 사용 예시 : Non-nullable (Null 이 될수 없는) 수신 객체 이고 결과가 필요하지 않은 경우에만 with 를 사용한다!
 
-```
+```kotlin
  val configuration = Configuration() 
     with(configuration) {
         host = "127.0.0.1"
@@ -126,7 +126,7 @@ run()함수는 with()함수를 좀 더 편리하게 사용하기 위해 let()함
 
 사용 예시 : 수신 객체 람다가 전달된 수신 객체를 전혀 사용 하지 않거나 수신 객체의 속성을 변경하지 않고 사용하는 경우 also 를 사용한다. 예를 들면 유효성 검사를 할 때 아주 유용하다!
 
-```
+```kotlin
  extraInfoView.visibility = extraInfoItem.visibility.also {
                 if (it == View.VISIBLE) {
                     extraInfoView.layoutParams.width = viewSize.imageWidth
@@ -139,7 +139,7 @@ run()함수는 with()함수를 좀 더 편리하게 사용하기 위해 let()함
 #### 코드로 보는 간단한 정리
 
 
-```
+```kotlin
 class MyClass {
     fun test() {
         val str: String = "..."

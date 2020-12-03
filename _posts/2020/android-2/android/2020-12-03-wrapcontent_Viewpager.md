@@ -19,8 +19,7 @@ share: true
 2번은 아래와 같은 코드를 사용하면 된다.
 
 
-```
-
+```java
 public class WrapContentViewPager extends ViewPager {
         public WrapContentViewPager(Context context) {
             super(context);

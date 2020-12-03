@@ -31,7 +31,7 @@ apk에 추가된 퍼미션들은 비단 내가 AndroidManifast에 추가한 권�
 
 ```app -> build -> outputs -> apk -> AndroidManifast``` 를 확인해본다면 최종적으로 빌드에 추가된 권한을 확인 해볼 수 있고, 정확히 어디서 추가했는지 알려면 ```app -> build -> outputs -> log -> manifast-report.txt``` 를확인한다면
 
-```
+```java
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from /home/jack/AndroidProject/ApiDemos/app/src/main/AndroidManifest.xml:45:5-71
     android:name
