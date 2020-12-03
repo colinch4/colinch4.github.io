@@ -17,6 +17,7 @@ share: true
 ###Example 1
 
 
+
 ```java
 
 
@@ -39,6 +40,7 @@ getNetwork().publish(new Function<Observable<List<Repository>>, Observable<List<
                         }
                         mTextAdapter.setTextItems(getMapToList(repositoryHashMap));
                     });
+
 ```java
 
 

@@ -21,6 +21,7 @@ share: true
 
 물론 # 2를 더 복잡한 것으로 만들 수 있습니다. 다른 Observables은 같은 작업을 merge()하고 flatMap(). 그러나 모든 Observable것이이 구조를 따라야합니다. 가장 간단한 예는 고정 된 String값 집합을 내보내고 길이를 매핑 한 다음 인쇄하는 것입니다.
 
+
 ```java
 
 //Source
@@ -31,10 +32,12 @@ Observable<Integer> lengths = values.map(String::length);
 
 //Subscriber 
 Subscription printSubscription = lengths.subscribe(System.out::println);
+
 ```java
 
 
 Source, Operators, Subscriber 의 세 가지 구성 요소는 위에 명시 되어 있지만 이를 하나의 문장으로 표현할 수 있다..
+
 
 ```java
 
@@ -43,6 +46,7 @@ Observable.just("Alpha", "Beta", "Gamma")
     .map(String::length)
     .subscribe(System.out::println);
     
+
 ```java
 
 

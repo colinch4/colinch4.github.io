@@ -16,6 +16,7 @@ Rx에서 Observable에서 발행한 아이템을 다른 Observable로 만들며,
 
 RxSwift에서 제공하는 예제를 살펴보면 좀 더 쉽게 이해할 수 있습니다.
 
+
 ```java
 
 
@@ -48,6 +49,7 @@ Emit String Item : B
 Emit String Item : C
 Emit String Item : D
 
+
 ```java
 
 
@@ -59,6 +61,7 @@ Emit String Item : D
 그렇다면 flatMap으로 비동기 Observable을 반환하면 어떻게 될까요?
 
 다음은 타이머 Observable을 만드는 코드입니다.
+
 ```java
 
 	let t = Observable<Int>

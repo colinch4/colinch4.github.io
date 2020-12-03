@@ -25,6 +25,7 @@ ObserveOn : 위치 밑에부터 스케쥴러 적용
 이것은 Observable를 Subscribe을 할 때 사용되는 스레드에만 영향을 미치며 다운 스트림에 남아있으며 위치는 중요하지 않다.
 
 
+
 ```java
 
 just("Some String") // Computation
@@ -32,12 +33,14 @@ just("Some String") // Computation
   .map(length -> 2 * length) // Computation
   .subscribeOn(Schedulers.computation()) // -- changing the thread
   .subscribe(number -> Log.d("", "Number " + number));// Computation
+
 ```java
 
 
 #### 다중 subscribeOn
 
 subscribeOn스트림에 여러 인스턴스가 있는 경우 첫번 째만 유효하다.
+
 
 ```java
 
@@ -46,5 +49,6 @@ just("Some String")
   .subscribeOn(Schedulers.computation()) // changing to computation
   .subscribeOn(Schedulers.io()) // won’t change the thread to IO
   .subscribe(number -> Log.d("", "Number " + number));
+
 ```java
 

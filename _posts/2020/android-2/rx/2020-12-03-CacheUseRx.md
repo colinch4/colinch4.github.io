@@ -21,6 +21,7 @@ share: true
 단, 첫번째 Observable이 끝나지 않으면 다음이 시작되지 않는다.
 
 
+
 ```java
 Observable.concat(            
 		   	Observable.interval(1, TimeUnit.SECONDS).map(id -> "A" + id),
@@ -33,6 +34,7 @@ Observable.concat(
 
 #### concatEager
 concat을 보완하여 첫번째 Observable과 함께 다른 Observable도 함께 시작되지만, 반환한 결과는 첫번째 Observable이 끝난 후에 다음 Observable이 출력된다. 단, 두번째가 먼저 끝나더라도 버퍼로 기다림.
+
 
 ```java
         List<Observable<String>> observables = new ArrayList<>();
@@ -50,6 +52,7 @@ concat을 보완하여 첫번째 Observable과 함께 다른 Observable도 함�
 
 Observable이 먼저 끝난 순서대로 방출하게 된다. 더 빠르게 결과가 나온 쪽으로 바로 반영할 수 있음.
 단, 새로운 데이터가 생겼을 때, 기존에 캐싱되어 있는 값(디스크)이 새로운 데이터(네트워크) 보다 느릴 경우 새 값을 기존의 캐시 값으로 덮어쓸 수 있다.
+
 
 ```java
 Observable.merge(

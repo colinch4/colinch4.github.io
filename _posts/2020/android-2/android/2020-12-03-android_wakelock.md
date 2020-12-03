@@ -63,6 +63,7 @@ WakeLock을 얻어서  Cpu가 깨어있도록 하는 것은 배터리를 소모�
 release 하기 위해서, wakeLock객체에 release()메소드를 사용해주면 됩니다.
 
 
+
 ```java
 
 

@@ -21,6 +21,7 @@ share: true
 
 ### Example 1
 
+
 ```java
 
 public static <T, S> Observable<Map<T, S>> zipMaps(final Map<T, Observable<S>> tasks) {
@@ -40,11 +41,13 @@ public static <T, S> Observable<Map<T, S>> zipMaps(final Map<T, Observable<S>> t
                 .collect(ImmutableMap.toImmutableMap(Pair::getValue0, Pair::getValue1)));
     }
  
+
 ```java
 
  
 ###Example 2
 
+
 ```java
 
 private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) {
@@ -65,11 +68,13 @@ private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) 
     return new ProductDetail(product, inShoppingCart);
   });
 }
+
 ```java
 
  
 ###Example 3
 
+
 ```java
 
 private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) {
@@ -90,10 +95,12 @@ private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) 
     return new ProductDetail(product, inShoppingCart);
   });
 }
+
 ```java
 
 
 ### Example 4
+
 
 ```java
 
@@ -118,6 +125,7 @@ public RxCommand<String> captchaCommand() {
 
  
 ### Example 5
+
 
 ```java
 

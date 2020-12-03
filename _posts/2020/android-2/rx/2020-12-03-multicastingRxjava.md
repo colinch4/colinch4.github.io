@@ -22,6 +22,7 @@ share: true
  
 #### 잘못된 코드
 
+
 ```java
 
 Observable<String> observable = Observable.just("Event")  
@@ -41,6 +42,7 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 // Expensive operation for Event
 // Sub2 got: Event
 
+
 ```java
 
 
@@ -51,6 +53,7 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 이를 수정하면 아래와 같아 지는데 멀티캐스트를 하는 시점에 따라 리소스 사용이 다르니 주의해야 한다.
 
 #### 적절한 코드
+
 
 ```java
 
@@ -69,6 +72,7 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 // Expensive operation for Event
 // Sub1 received: Event
 // Sub2 received: Event
+
 ```java
 
 
