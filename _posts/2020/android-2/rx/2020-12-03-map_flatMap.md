@@ -19,7 +19,6 @@ Java8을 경험하는 초보자들에게 .map() 과 .flatMap()의 차이는 단�
 
 
 ```java
-
 class Person {
     int age;
   	String name;
@@ -46,18 +45,15 @@ Stream<String> mapStream = sample.stream()
   .filter(person -> "park".equals(person);
 
 stream2.forEach(System.out::println);
+```
+
+
 
 ```java
-
-
-
-```java
-
 //output
 park
 park
-
-```java
+```
 
 
 
@@ -72,7 +68,6 @@ park
 
 
 ```java
-
 String[][] sample = new String[][]{
   {"a", "b"}, {"c", "d"}, {"e", "a"}, {"a", "h"}, {"i", "j"}
 };
@@ -81,17 +76,14 @@ String[][] sample = new String[][]{
 Stream<String> stream = sample.stream()
   .filter(alpha -> "a".equals(alpha[0].toString() || "a".equals(alpha[1].toString())))
 stream.forEach(alpha -> System.out.println("{"+x[0]+", "+x[1]+"}"));
+```
+
+
 
 ```java
-
-
-
-```java
-
 //output
 {a, b}
 {e, a}
 {a, h}
-
-```java
+```
 

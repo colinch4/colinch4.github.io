@@ -23,7 +23,6 @@ share: true
 
 
 ```java
-
 //Source
 Observable<String> values = Observable.just("Alpha", "Beta", "Gamma");
 
@@ -32,22 +31,18 @@ Observable<Integer> lengths = values.map(String::length);
 
 //Subscriber 
 Subscription printSubscription = lengths.subscribe(System.out::println);
-
-```java
+```
 
 
 Source, Operators, Subscriber 의 세 가지 구성 요소는 위에 명시 되어 있지만 이를 하나의 문장으로 표현할 수 있다..
 
 
 ```java
-
 //Source, Operators, Subscriber
 Observable.just("Alpha", "Beta", "Gamma")
     .map(String::length)
     .subscribe(System.out::println);
-    
-
-```java
+```
 
 
 이 모든 Observable작업은 유연한 동시성에 대한 좋은 것은 예약 된 스레드에 observeOn()와 subscribeOn()를 쉽게 작동을 시킬 수 있다.  읽기하지만 먼저 자신을 관찰 가능한 그냥 소스를 살펴 보자 자신의 성격을 분석한다.

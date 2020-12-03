@@ -23,7 +23,6 @@ share: true
 
 
 ```java
-
 public static <T, S> Observable<Map<T, S>> zipMaps(final Map<T, Observable<S>> tasks) {
 
         Objects.requireNonNull(tasks, "tasks is null");
@@ -40,16 +39,13 @@ public static <T, S> Observable<Map<T, S>> zipMaps(final Map<T, Observable<S>> t
                 .map(x -> (Pair<T, S>)x)
                 .collect(ImmutableMap.toImmutableMap(Pair::getValue0, Pair::getValue1)));
     }
- 
-
-```java
+```
 
  
-###Example 2
+### Example 2
 
 
 ```java
-
 private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) {
   List<Observable<?>> observables =
       Arrays.asList(backendApi.getProduct(productId), shoppingCart.itemsInShoppingCart());
@@ -68,15 +64,12 @@ private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) 
     return new ProductDetail(product, inShoppingCart);
   });
 }
+```
 
-```java
-
- 
-###Example 3
+### Example 3
 
 
 ```java
-
 private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) {
   List<Observable<?>> observables =
       Arrays.asList(backendApi.getProduct(productId), shoppingCart.itemsInShoppingCart());
@@ -95,15 +88,12 @@ private Observable<ProductDetail> getProductWithShoppingCartInfo(int productId) 
     return new ProductDetail(product, inShoppingCart);
   });
 }
-
-```java
-
+```
 
 ### Example 4
 
 
 ```java
-
 public RxCommand<String> captchaCommand() {
     if (_captchaCommand == null) {
         Observable<Boolean> enabled = Observable.combineLatest(
@@ -126,9 +116,7 @@ public RxCommand<String> captchaCommand() {
  
 ### Example 5
 
-
 ```java
-
 public RxCommand<Boolean> loginCommand() {
     if (_loginCommand == null) {
         Observable<Boolean> loginInputValid = Observable.combineLatest(

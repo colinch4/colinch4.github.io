@@ -26,9 +26,7 @@ Flowable 을 사용하면 default buffer size(128) 이상 backpressure buffer �
 
 
 ```java
-
 //흐름제어를 통해 정상 동작하는 코드
-
 public class example01 {
  
     public static void main(String... args) throws InterruptedException {
@@ -52,15 +50,12 @@ public class example01 {
         }
     }
 }
+```
+
+
 
 ```java
-
-
-
-```java
-
 //Observable을 backpressure buffer 생성 없이 사용하면 OutOfMemoryException
-
 public class example02 {
  
     public static void main(String... args) throws InterruptedException {
@@ -84,5 +79,4 @@ public class example02 {
         }
     }
 }
-
-```java
+```

@@ -24,7 +24,6 @@ share: true
 
 
 ```java
-
 Observable<String> observable = Observable.just("Event")  
     .publish()
     .autoConnect(2)
@@ -41,9 +40,7 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 // Sub1 got: Event
 // Expensive operation for Event
 // Sub2 got: Event
-
-
-```java
+```
 
 
 위의 코드는 커다란 리소스를 잡아 먹는 map을 2번이나 사용하게 된다 이를 그림으로 나타내면 다음과 같다
@@ -56,7 +53,6 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 
 
 ```java
-
 Observable<String> observable = Observable.just("Event")  
     .map(s -> {
       System.out.println("Expensive operation for " + s);
@@ -72,8 +68,7 @@ observable.subscribe(s -> System.out.println("Sub2 got: " + s));
 // Expensive operation for Event
 // Sub1 received: Event
 // Sub2 received: Event
-
-```java
+```
 
 
 ![good](http://i.imgur.com/Yf1C8vu.png)

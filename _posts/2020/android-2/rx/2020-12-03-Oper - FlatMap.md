@@ -17,9 +17,7 @@ Rx에서 Observable에서 발행한 아이템을 다른 Observable로 만들며,
 RxSwift에서 제공하는 예제를 살펴보면 좀 더 쉽게 이해할 수 있습니다.
 
 
-```java
-
-
+```swift
 let sequenceInt = Observable.of(1, 2, 3)	// Int 타입 시퀀스
 let sequenceString = Observable.of("A", "B", "C", "D")	// String 타입 시퀀스
 
@@ -48,9 +46,7 @@ Emit String Item : A
 Emit String Item : B
 Emit String Item : C
 Emit String Item : D
-
-
-```java
+```
 
 
 위의 코드에서 sequenceInt는 Int 아이템을 발생을 하며, flatMap을 통해 새로운 String 타입 Observable 시퀀스를 반환합니다.
@@ -62,8 +58,7 @@ Emit String Item : D
 
 다음은 타이머 Observable을 만드는 코드입니다.
 
-```java
-
+```swift
 	let t = Observable<Int>
 		.interval(0.5, scheduler: MainScheduler.instance)	// 0.5초마다 발행
 		.take(4)		// 4번 발행
@@ -97,7 +92,7 @@ Emit String Item : D
 	Result : Next(3)
 	Result : Next(3)
 	Result : Completed
-
+```
 
 위의 코드가 실행되면, flatMap으로 만들어진 타이머 Observable로 인해 0.5초 간격으로 여러 개의 Observable이 동시에 수행하게 됩니다.
 
