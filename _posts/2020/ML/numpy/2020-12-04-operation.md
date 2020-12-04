@@ -3,7 +3,7 @@ layout: post
 title: "[numpy] ndarray의 연산"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [numpy]
 comments: true
 share: true
 ---

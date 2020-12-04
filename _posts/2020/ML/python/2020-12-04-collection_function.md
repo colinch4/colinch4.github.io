@@ -3,7 +3,7 @@ layout: post
 title: "[python] 컬렉션 관리 함수(enumerate, zip, any, all, filter,  map)"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [python]
 comments: true
 share: true
 ---

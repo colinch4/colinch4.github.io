@@ -3,7 +3,7 @@ layout: post
 title: "[Tensorflow] Tensorflow 기본 프로그래밍"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [Tensorflow]
 comments: true
 share: true
 ---

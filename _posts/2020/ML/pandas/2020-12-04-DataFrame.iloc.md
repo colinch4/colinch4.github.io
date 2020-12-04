@@ -3,7 +3,7 @@ layout: post
 title: "[pandas] DataFrame iloc"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [pandas]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[python] sys.stdin.readline()"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [python]
 comments: true
 share: true
 ---

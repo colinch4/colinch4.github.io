@@ -3,7 +3,7 @@ layout: post
 title: "[python] python method, function 정리"
 description: " "
 date: 2020-12-04
-tags: [머신러닝]
+tags: [python]
 comments: true
 share: true
 ---
