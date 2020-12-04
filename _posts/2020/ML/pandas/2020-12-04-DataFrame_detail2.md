@@ -30,7 +30,7 @@ df = pd.DataFrame(data,
 display(df)
 ```
 
-![dataFrame_detail](markdown-images/dataFrame_detail.PNG)
+![dataFrame_detail](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail.png?raw=true)
 
 
 
@@ -45,7 +45,7 @@ df['나이'] = pd.Series([20, 21, 22, 23, 24])
 display(df)
 ```
 
-![dataFrame_add1](markdown-images/dataFrame_add1.PNG)
+![dataFrame_add1](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_add1.png?raw=true)
 
 이렇게 그냥 `Series`값을 대입해 버리면 `NaN` (Not a Number) 값으로 나와버린다.
 
@@ -57,7 +57,7 @@ df['나이'] = pd.Series([20, 21, 22, 23, 24],
 display(df)
 ```
 
-![dataFrame_add2](markdown-images/dataFrame_add2.PNG)
+![dataFrame_add2](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_add2.png?raw=true)
 
 
 
@@ -69,7 +69,7 @@ df['나이'] = pd.Series([20, 22,  24],
 display(df)
 ```
 
-![dataFrame_add3](markdown-images/dataFrame_add3.PNG)
+![dataFrame_add3](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_add3.png?raw=true)
 
 
 
@@ -89,7 +89,7 @@ df['장학생여부'] = df['학점'] > 3.0
 display(df)
 ```
 
-![dataFrame_add4](markdown-images/dataFrame_add4.PNG)
+![dataFrame_add4](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_add4.png?raw=true)
 
 
 
@@ -105,11 +105,11 @@ display(df)
 display(df.drop('등급', axis=1, inplace=False)) # 등급이 사라진다.
 ```
 
-![dataFrame_add5](markdown-images/dataFrame_add5.PNG)
+![dataFrame_add5](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_add5.png?raw=true)
 
 ```python
 df.drop(['학년', '등급'], axis=1, inplace=True)
 display(df)
 ```
 
-![dataFrame_detail6](markdown-images/dataFrame_detail6-1599838174568.PNG)
+![dataFrame_detail6](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail6-1599838174568.png?raw=true)

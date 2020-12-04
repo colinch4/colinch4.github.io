@@ -23,7 +23,7 @@ t_data = np.array([5,7,20,31,40,44,46,49,60,62,70,80,85,91,92,97,98]).reshape(-1
 
 ```
 
-![image-20200925022833967](markdown-images/image-20200925022833967.png)
+![image-20200925022833967](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200925022833967.png?raw=true)
 
 ## 2. weight, bias정의
 
@@ -100,7 +100,7 @@ plt.plot(x_data.ravel(),x_data.ravel()*var[0]+var[1],'r')
 plt.show()
 ```
 
-![image-20200925022811813](markdown-images/image-20200925022811813.png)
+![image-20200925022811813](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200925022811813.png?raw=true)
 
 
 

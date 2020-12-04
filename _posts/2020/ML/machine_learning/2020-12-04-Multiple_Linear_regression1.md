@@ -50,7 +50,7 @@ df = pd.read_csv('./data/ozone.csv')
 display(df.head())
 ```
 
-![image-20201004164614496](markdown-images/image-20201004164614496.png)
+![image-20201004164614496](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004164614496.png?raw=true)
 
 ```python
 training_data = df.copy().loc[:,['Solar.R', 'Wind', 'Temp', 'Ozone']]
@@ -58,7 +58,7 @@ print(training_data.shape)  # (153, 4)
 display(training_data.head())
 ```
 
-![image-20201004164755764](markdown-images/image-20201004164755764.png)
+![image-20201004164755764](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004164755764.png?raw=true)
 
 
 
@@ -78,7 +78,7 @@ print(training_data.shape)                      # (111, 4)
 display(training_data.head())
 ```
 
-  ![image-20201004165048838](markdown-images/image-20201004165048838.png)
+  ![image-20201004165048838](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004165048838.png?raw=true)
 
 #### 이상치 제거
 
@@ -98,7 +98,7 @@ plt.boxplot(training_data.iloc[:,3])
 plt.show()
 ```
 
- ![image-20201004165410794](markdown-images/image-20201004165410794.png)
+ ![image-20201004165410794](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004165410794.png?raw=true)
 
 ```python
 zscore_threshold = 1.8
@@ -118,7 +118,7 @@ plt.boxplot(training_data.iloc[:,3])
 plt.show()    
 ```
 
-![image-20201004165717268](markdown-images/image-20201004165717268.png)
+![image-20201004165717268](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004165717268.png?raw=true)
 
 #### 정규화 과정
 
@@ -137,4 +137,4 @@ training_data.iloc[:, -1]  = scaler_t.transform(training_data.iloc[:, 3].values.
 display(trainig_data)
 ```
 
-![image-20201004170448245](markdown-images/image-20201004170448245.png)
+![image-20201004170448245](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201004170448245.png?raw=true)

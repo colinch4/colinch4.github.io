@@ -22,7 +22,7 @@ df = pd.DataFrame({'k1':['one']* 3 +['two']*4+['three'],
 display(df)
 ```
 
-![image-20200917153219940](markdown-images/image-20200917153219940.png)
+![image-20200917153219940](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917153219940.png?raw=true)
 
 
 
@@ -49,7 +49,7 @@ print(df.duplicated())
 display(df.loc[df.duplicated(),:]) # 중복행만 추출한다.
 ```
 
-![image-20200917153414890](markdown-images/image-20200917153414890.png)
+![image-20200917153414890](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917153414890.png?raw=true)
 
 
 
@@ -61,5 +61,5 @@ display(df.loc[df.duplicated(),:]) # 중복행만 추출한다.
 display(df.drop_duplicates())
 ```
 
-![image-20200917153133432](markdown-images/image-20200917153133432.png)
+![image-20200917153133432](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917153133432.png?raw=true)
 

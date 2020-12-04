@@ -20,7 +20,7 @@ share: true
 
 > 날씨에 다른 경기 여부에 대한 다음 표를 통해 분기방법에 대해서 알아본다.
 
-![캡처](markdown-images/캡처-1603298161778.PNG)
+![캡처](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/캡처-1603298161778.png?raw=true)
 
 위의 표를 보면 `OUTLOOK`, `HUMIDITY`, `WIND` 의 3가지의 독립변수와 `PLAY` 라는 종속 변수가 하나 있다.
 
@@ -105,7 +105,7 @@ plt.scatter(x_data_blue[:,0],x_data_blue[:,1], color='b')
 plt.show()
 ```
 
-![image-20201022022026082](markdown-images/image-20201022022026082.png)
+![image-20201022022026082](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201022022026082.png?raw=true)
 
 ```python
 x_data_sample = np.concatenate((x_data_red, x_data_blue, x_data_green), axis=0)
@@ -118,7 +118,7 @@ plot_decision_regions(X = x_data_sample, y= t_data_sample, clf=model, legend=2)
 plt.show()
 ```
 
-![image-20201022022201790](markdown-images/image-20201022022201790.png)
+![image-20201022022201790](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201022022201790.png?raw=true)
 
 * 분류하는데 있어서 **SVM** 과 확실한 차이를 볼 수 있다.
 

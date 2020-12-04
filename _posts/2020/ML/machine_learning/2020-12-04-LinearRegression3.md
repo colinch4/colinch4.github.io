@@ -136,7 +136,7 @@ plt.plot(x_data, W_val*x_data+b_val, color='r')
 plt.show()
 ```
 
-![image-20201003034529254](markdown-images/image-20201003034529254.png)
+![image-20201003034529254](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201003034529254.png?raw=true)
 
 
 

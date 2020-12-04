@@ -23,7 +23,7 @@ share: true
 
 
 
-<img src="markdown-images/confusion_matrix.png" alt="confusion_matrix" style="zoom:80%;" />
+<img src="https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/confusion_matrix.png" alt="confusion_matrix" style="zoom:80%;" />
 
 여기서 True는 정답을 맞춘것을 의미하고 Positive, Negative는 분류결과가 True, False인지를 의미한다.
 
@@ -52,7 +52,7 @@ share: true
 >  **True 라고 예측**( → Positive )해서 정답( → True)인 비율, 
 
 
-![image-20201123161700506](markdown-images/image-20201123161700506.png)
+![image-20201123161700506](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201123161700506.png?raw=true)
 
 
 
@@ -62,16 +62,16 @@ share: true
 >
 > **정답이 True** 인것중에 모델이 True 라고 예측한 비율
 
-![image-20201123204544691](markdown-images/image-20201123204544691.png)
+![image-20201123204544691](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201123204544691.png?raw=true)
 
-<img src="markdown-images/confusion_matrix1.png" alt="confusion_matrix1" style="zoom: 67%;" />
+<img src="https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/confusion_matrix1.png" alt="confusion_matrix1" style="zoom: 67%;" />
 
 
 #### (벤다이어그램)
 
-<img src="markdown-images/ven-1606133328173.png" alt="ven" style="zoom: 50%;" />
+<img src="https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/ven-1606133328173.png" alt="ven" style="zoom: 50%;" />
 
-![image-20201124002627225](markdown-images/image-20201124002627225.png)
+![image-20201124002627225](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201124002627225.png?raw=true)
 
 
 
@@ -79,7 +79,7 @@ share: true
 
 > 가장 직관적으로 모델의 성능을 나타낼 수 있는 평가 지표이다. 하지만 데이터의 불균형이 있을 때 한쪽 측면만 잘 맞추는 단점이 있다.
 
-![image-20201124002949834](markdown-images/image-20201124002949834.png)
+![image-20201124002949834](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201124002949834.png?raw=true)
 
 
 
@@ -87,7 +87,7 @@ share: true
 
 > Precision과 Recall의 조화평균이다. 데이터셋이 불균형일 때 자주 사용된다.
 
-![image-20201124003621665](markdown-images/image-20201124003621665.png)
+![image-20201124003621665](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201124003621665.png?raw=true)
 
 
 

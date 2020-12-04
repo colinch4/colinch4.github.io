@@ -79,7 +79,7 @@ df = pd.concat([s1, s2, s3], axis=1, sort=False)
 display(df)
 ```
 
-![image-20200917004048185](markdown-images/image-20200917004048185.png)
+![image-20200917004048185](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917004048185.png?raw=true)
 
 * `sort= True` 인 경우
 
@@ -88,7 +88,7 @@ df = pd.concat([s1, s2, s3], axis=1, sort= True)
 display(df)  # index를 기준으로 sorting한다.
 ```
 
-![image-20200917004110058](markdown-images/image-20200917004110058.png)
+![image-20200917004110058](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917004110058.png?raw=true)
 
 
 
@@ -110,7 +110,7 @@ display(df1)
 display(df2)
 ```
 
-![image-20200917005127889](markdown-images/image-20200917005127889.png)
+![image-20200917005127889](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917005127889.png?raw=true)
 
 * `ignore_index`를 입력하지 않은경우 또는 `ignore_index=False`인 경우
 
@@ -119,7 +119,7 @@ result = pd.concat([df1,df2],axis=0)
 dispaly(result)
 ```
 
-![image-20200917010626722](markdown-images/image-20200917010626722.png)
+![image-20200917010626722](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917010626722.png?raw=true)
 
 * `ignore_index = True` 인 경우
 
@@ -128,7 +128,7 @@ result = pd.concat([df1,df2],axis=0, ignore_index=True)
 dispaly(result)
 ```
 
-![image-20200917010910225](markdown-images/image-20200917010910225.png)
+![image-20200917010910225](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917010910225.png?raw=true)
 
 
 
@@ -143,11 +143,11 @@ result = pd.concat([df1, df2],axis=1, sort=False)
 display(result)
 ```
 
-![image-20200917011127441](markdown-images/image-20200917011127441.png)
+![image-20200917011127441](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917011127441.png?raw=true)
 
 * `sort=True`인 경우
 
-![image-20200917011153023](markdown-images/image-20200917011153023.png)
+![image-20200917011153023](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917011153023.png?raw=true)
 
 * `ignore_index = True` 이고 `sort=True`인 경우 :  `index`가 아닌 `column`이 sorting 된다.
 
@@ -156,4 +156,4 @@ result = pd.concat([df1, df2],axis=1, sort=True, ignore_index = True)
 display(result)
 ```
 
-![image-20200917011451398](markdown-images/image-20200917011451398.png)
+![image-20200917011451398](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200917011451398.png?raw=true)

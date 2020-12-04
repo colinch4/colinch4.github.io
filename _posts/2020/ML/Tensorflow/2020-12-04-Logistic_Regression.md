@@ -49,7 +49,7 @@ df = pd.read_csv('./data/titanic/train.csv')
 display(df.head())
 ```
 
-![image-20201015021637370](markdown-images/image-20201015021637370.png)
+![image-20201015021637370](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015021637370.png?raw=true)
 
 
 
@@ -59,7 +59,7 @@ display(df.head())
 training_data = df.drop(['PassengerId','Cabin','Ticket', 'Fare', 'Name'], axis=1)
 ```
 
-![image-20201015021841745](markdown-images/image-20201015021841745.png)
+![image-20201015021841745](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015021841745.png?raw=true)
 
 
 
@@ -87,7 +87,7 @@ training_data['Sex'] = training_data['Sex'].map(sex_mapping)
 head
 ```
 
-![image-20201015023532983](markdown-images/image-20201015023532983.png)
+![image-20201015023532983](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015023532983.png?raw=true)
 
 
 
@@ -98,7 +98,7 @@ training_data['Family'] = training_data[['SibSp', 'Parch']].values.sum(axis=1)
 training_data = training_data.drop(['SibSp', 'Parch'], axis=1)
 ```
 
-![image-20201015023640286](markdown-images/image-20201015023640286.png)
+![image-20201015023640286](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015023640286.png?raw=true)
 
 
 
@@ -115,7 +115,7 @@ training_data.loc[(training_data['Age']>=25) & (training_data['Age']<50),'Age'] 
 training_data.loc[(training_data['Age']>=50),'Age'] = 2
 ```
 
-![image-20201015024431687](markdown-images/image-20201015024431687.png)
+![image-20201015024431687](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015024431687.png?raw=true)
 
 
 
@@ -127,7 +127,7 @@ embarked_mapping = {'S':0, 'C':1, 'Q':2}
 training_data['Embarked'] = training_data['Embarked'].map(embarked_mapping)
 ```
 
-![image-20201015030014939](markdown-images/image-20201015030014939.png)
+![image-20201015030014939](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015030014939.png?raw=true)
 
 
 
@@ -213,7 +213,7 @@ plt.plot(result.history['val_accuracy'], color='r')
 plt.show()
 ```
 
-![image-20201015032402799](markdown-images/image-20201015032402799.png)
+![image-20201015032402799](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015032402799.png?raw=true)
 
 
 

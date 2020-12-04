@@ -29,7 +29,7 @@ df = pd.DataFrame(data,
 display(df)
 ```
 
-![image-20200913211043928](markdown-images/image-20200913211043928.png)
+![image-20200913211043928](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913211043928.png?raw=true)
 
 
 
@@ -84,7 +84,7 @@ df.pd.DataFrame(np.random.randint(0, 10, (6, 4)), columns = ['A','B','C','D'])
 display(df)
 ```
 
-![image-20200913203121515](markdown-images/image-20200913203121515.png)
+![image-20200913203121515](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913203121515.png?raw=true)
 
 아래와 같이 날짜형식의 `index`를 `date_range`를 이용해 생성 가능하다.
 
@@ -96,7 +96,7 @@ print(df.index)
 #               dtype='datetime64[ns]', freq='D')
 ```
 
-![image-20200913203225377](markdown-images/image-20200913203225377.png)
+![image-20200913203225377](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913203225377.png?raw=true)
 
 
 
@@ -111,7 +111,7 @@ df2 = df.reindex(index = np.random.permutation(df.index), columns = ['B','C','D'
 display(df2)
 ```
 
-![image-20200913220444780](markdown-images/image-20200913220444780.png)
+![image-20200913220444780](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913220444780.png?raw=true)
 
 * 참고로 `np.random.permutation`에서 `np.random.shuffle`을 사용하면 Error가 발생한다.
 

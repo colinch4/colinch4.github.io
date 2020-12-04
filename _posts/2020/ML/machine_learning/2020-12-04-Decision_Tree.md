@@ -24,7 +24,7 @@ share: true
   * 말단 node들을 terminal node 또는leaf node라고 말한다. **( Ex. Unit, Fit )**
   * 중간 단계에 있는 node들은 intermediate node라고 한다. **( Ex. Eats lots of fast, Exercise regularly? )**
 
-![Classification Algorithms - Decision Tree - Tutorialspoint](markdown-images/decision_tree_introduction.jpg)
+![Classification Algorithms - Decision Tree - Tutorialspoint](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/decision_tree_introduction.jpg?raw=true)
 
 * 장점
 
@@ -54,9 +54,9 @@ share: true
 
     : 정보의 양,가치를 나타내는 정보함수는 다음과 같이 정의 된다.  
 
-    ![image-20201021181732431](markdown-images/image-20201021181732431.png)
+    ![image-20201021181732431](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021181732431.png?raw=true)
 
-    ![image-20201021182031186](markdown-images/image-20201021182031186.png)
+    ![image-20201021182031186](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021182031186.png?raw=true)
 
   * 그래프를 살펴보면 항상 일어나는 사건(확률=1)인 경우 정보의 양은 0이고
 
@@ -72,26 +72,26 @@ share: true
        * 불확실한 상황(정보량이 많음 → Entropy가 높음)
        * 확실한 상황(정보량이 적다→ Entropy가 낮음)
 
-     * 정의 :![image-20201021204125121](markdown-images/image-20201021204125121.png)
+     * 정의 :![image-20201021204125121](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021204125121.png?raw=true)
 
-       여기서 ![image-20201021204234731](markdown-images/image-20201021204234731.png)는 ***A***영역에 속하는 데이터의 비율을 나타낸다.
+       여기서 ![image-20201021204234731](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021204234731.png?raw=true)는 ***A***영역에 속하는 데이터의 비율을 나타낸다.
 
        * **예제 **
 
-     ​                  ![image-20201021205120530](markdown-images/image-20201021205120530.png)
+     ​                  ![image-20201021205120530](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021205120530.png?raw=true)
 
-     ​                   ![image-20201021212446491](markdown-images/image-20201021212446491.png)
+     ​                   ![image-20201021212446491](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021212446491.png?raw=true)
      
-     * 두 개 이상의 영역에 대한 Entropy 정의 : ![image-20201021213027530](markdown-images/image-20201021213027530.png)
+     * 두 개 이상의 영역에 대한 Entropy 정의 : ![image-20201021213027530](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021213027530.png?raw=true)
      
-       여기서![image-20201021212151874](markdown-images/image-20201021212151874.png)는 분할 전 데이터 와 분할 후 i영역에 속하는 데이터의 비율이다.
+       여기서![image-20201021212151874](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021212151874.png?raw=true)는 분할 전 데이터 와 분할 후 i영역에 속하는 데이터의 비율이다.
             
      
         * **예제**
      
-      ![image-20201021204933573](markdown-images/image-20201021204933573.png)
+      ![image-20201021204933573](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021204933573.png?raw=true)
 
-![image-20201021212722620](markdown-images/image-20201021212722620.png)     
+![image-20201021212722620](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201021212722620.png?raw=true)     
 
 **결과적으로** 0.9544 →0.7489 로 Entropy 가 분기 후 감소했다. 즉, 불확실성 감소, 순도 증가, 0.9544-0.7489 만큼의 정보 획득량이 발생했다.
 

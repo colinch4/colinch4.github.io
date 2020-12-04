@@ -29,7 +29,7 @@ plt.scatter(x_data.ravel(),t_data.ravel())
 plt.show()
 ```
 
-![image-20200925011317985](markdown-images/image-20200925011317985.png)
+![image-20200925011317985](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200925011317985.png?raw=true)
 
 
 
@@ -127,4 +127,4 @@ plt.plot(x_data,np.dot(x_data,W)+b,'r')
 plt.show()
 ```
 
-![image-20200926015943128](markdown-images/image-20200926015943128.png)
+![image-20200926015943128](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200926015943128.png?raw=true)

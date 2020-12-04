@@ -65,7 +65,7 @@ print(df.iloc[1])      # Series
 display(df.iloc[[1]])   # DataFrame
 ```
 
-![image-20200913012002630](markdown-images/image-20200913012002630.png)
+![image-20200913012002630](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913012002630.png?raw=true)
 
 ## 원하는 열 DataFrame으로 추출하기
 
@@ -89,4 +89,4 @@ display(df.loc[:,'학점'])    # Series
 display(df.loc[:,['학점']])
 ```
 
-![image-20200913012425896](markdown-images/image-20200913012425896.png)
+![image-20200913012425896](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913012425896.png?raw=true)

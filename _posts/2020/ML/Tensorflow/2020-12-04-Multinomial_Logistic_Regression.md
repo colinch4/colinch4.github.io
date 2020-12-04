@@ -43,7 +43,7 @@ df = pd.read_csv('./data/mnist/train.csv')
 display(df.head())
 ```
 
-![image-20201015035329729](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20201015035329729.png)
+![image-20201015035329729](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20201015035329729.png?raw=true)
 
 ```python
 x_data = df.drop(['label'], axis=1, inplace=False)
@@ -135,7 +135,7 @@ plt.plot(history.history['val_sparse_categorical_accuracy'], color='r')
 plt.show()
 ```
 
-![image-20201015215233998](markdown-images/image-20201015215233998.png)
+![image-20201015215233998](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201015215233998.png?raw=true)
 
 ## sklearn과 비교
 

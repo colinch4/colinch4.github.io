@@ -71,7 +71,7 @@ print(tf.__version__)
 
 > **TF2.xx**에서의 Logistic Regression 에 대해서 알아본다.
 
-![image-20201013024438217](markdown-images/image-20201013024438217.png)
+![image-20201013024438217](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201013024438217.png?raw=true)
 
 * 위의 그림은 간단한 <u>**Multiple Linear Regression**</u> 원리이다.
 
@@ -79,7 +79,7 @@ print(tf.__version__)
 
 
 
-![image-20201013033015246](markdown-images/image-20201013033015246.png)
+![image-20201013033015246](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201013033015246.png?raw=true)
 
 * 이때 **TF2.xx** 는 위와 같이 **layer**를 통해 구현된다.
 
@@ -91,7 +91,7 @@ print(tf.__version__)
 
 
 
-![image-20201014024813498](markdown-images/image-20201014024813498.png)
+![image-20201014024813498](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201014024813498.png?raw=true)
 
 
 

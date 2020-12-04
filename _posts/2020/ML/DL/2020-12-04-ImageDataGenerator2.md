@@ -243,4 +243,4 @@ plt.legend()
 plt.show()
 ```
 
-![image-20201107132124100](markdown-images/image-20201107132124100.png)
+![image-20201107132124100](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201107132124100.png?raw=true)

@@ -21,7 +21,7 @@ share: true
 * 이를 영상 인식 (recognition)이라 한다.
 * 하지만 그냥 object detection 이라고 말한다.
 
-<img src="markdown-images/image-20201202103226773.png" alt="image-20201202103226773" style="zoom: 67%;" />
+<img src="https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202103226773.png" alt="image-20201202103226773" style="zoom: 67%;" />
 
 
 
@@ -48,7 +48,7 @@ share: true
 
 * 영상 인식 : 위치탐지와 대상의 분류
 
-![image-20201202103750833](markdown-images/image-20201202103750833.png)
+![image-20201202103750833](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202103750833.png?raw=true)
 
 
 
@@ -60,19 +60,19 @@ share: true
 *  영역 찾기와 분류를 동시에 하는 모델들 : 속도가 빠른 반면 정확도가 상대적으로 떨어짐
   * YOLO,  SSD
 
-![image-20201202104132763](markdown-images/image-20201202104132763.png)
+![image-20201202104132763](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202104132763.png?raw=true)
 
 
 
 * R-CNN 방법들 : 영역을 먼저 찾고, 해당 영역에 대하여 분류한다.
 
-![image-20201202104410235](markdown-images/image-20201202104410235.png)
+![image-20201202104410235](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202104410235.png?raw=true)
 
 
 
 * YOLO, SSD의 방법 : 영역 찾기와 분류를 동시에
 
-![image-20201202104815802](markdown-images/image-20201202104815802.png)
+![image-20201202104815802](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202104815802.png?raw=true)
 
 
 
@@ -86,7 +86,7 @@ share: true
 
 * Intersection over Union : 정답과 탐지해낸 결과의 영역 일치 정도
 
-![image-20201202105123308](markdown-images/image-20201202105123308.png)
+![image-20201202105123308](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201202105123308.png?raw=true)
 
 
 

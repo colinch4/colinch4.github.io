@@ -19,7 +19,7 @@ share: true
 
 > 직접 정의한 `lambda`를 이용해 `행 ` 또는 `열`에 관한 `Series`를 **return**한다.
 
-![image-20200913231606212](markdown-images/image-20200913231606212.png)
+![image-20200913231606212](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913231606212.png?raw=true)
 
 ```python
 my_func = lambda c : c.max()-c.min()

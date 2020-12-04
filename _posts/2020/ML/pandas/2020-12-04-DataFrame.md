@@ -45,7 +45,7 @@ print(df)
 	display(df)
 	```
 
-![dict_dataframe](markdown-images/dict_dataframe-1599670078274.PNG)
+![dict_dataframe](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dict_dataframe-1599670078274.png?raw=true)
 
 * `DataFrame`은 기본적인 크기속성 `shape`, `size`, `ndim`을 지닌다.
 
@@ -79,7 +79,7 @@ print(df)
   display(df)
   ```
 
-  ![dict_dataframe1](markdown-images/dict_dataframe1.PNG)
+  ![dict_dataframe1](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dict_dataframe1.png?raw=true)
 
 
 
@@ -111,7 +111,7 @@ print(df)
   display(df)
   ```
   
-  ![csv_dataframe](markdown-images/csv_dataframe.PNG)
+  ![csv_dataframe](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/csv_dataframe.png?raw=true)
 
 #####  참고 : 자료의 크기가 클때 `display(df.head())`와 `display(df.tail())` 을 이용해 위에서 5개, 아래에서 5개 자료를 확인할 수 있다.
 

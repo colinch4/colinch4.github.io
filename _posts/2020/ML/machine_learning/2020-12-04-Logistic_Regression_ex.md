@@ -160,5 +160,5 @@ plt.scatter(x_data, t_data, color='red')
 plt.show()
 ```
 
-![image-20201012033930539](markdown-images/image-20201012033930539.png)
+![image-20201012033930539](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201012033930539.png?raw=true)
 

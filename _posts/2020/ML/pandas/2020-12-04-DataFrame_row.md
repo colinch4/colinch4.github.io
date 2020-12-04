@@ -30,7 +30,7 @@ df = pd.DataFrame(data,
 display(df)
 ```
 
-![dataFrame_detail](markdown-images/dataFrame_detail.PNG)
+![dataFrame_detail](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail.png?raw=true)
 
 ## 기본적인 column 추출 방법
 
@@ -49,13 +49,13 @@ print(df[0])	   # Error
 display(df['one':'three'])
 ```
 
-![image-20200912015639818](markdown-images/image-20200912015639818.png)
+![image-20200912015639818](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200912015639818.png?raw=true)
 
 ```python
 display(df[0:3])   # 위와 동일한 값을 추출한다.(column에 대해서 하지 않는다.)
 ```
 
-![image-20200912015724200](markdown-images/image-20200912015724200.png)
+![image-20200912015724200](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200912015724200.png?raw=true)
 
 * fancy indexing : 지원하지 않는다.
 

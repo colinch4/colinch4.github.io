@@ -30,7 +30,7 @@ df = pd.DataFrame(data,
 display(df)
 ```
 
-![dataFrame_detail](markdown-images/dataFrame_detail.PNG)
+![dataFrame_detail](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail.png?raw=true)
 
 
 
@@ -74,7 +74,7 @@ name['one'] = '아이유'
 display(df)
 ```
 
-![dataFrame_detail1](markdown-images/dataFrame_detail1.PNG)
+![dataFrame_detail1](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail1.png?raw=true)
 
 
 
@@ -88,7 +88,7 @@ column을 추출할때 가능한 방법이 있고 불가능한 방법들이 있�
 display(df[['학과','학점']])
 ```
 
-  ![dataFrame_detail2](markdown-images/dataFrame_detail2.PNG)
+  ![dataFrame_detail2](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail2.png?raw=true)
 
 * index 명을 이용한 slicing : 가능하지 않다
 
@@ -102,7 +102,7 @@ display(df['학과':'학점'])   # KeyError: '학과'
 
 > column을 추출해 **scalar, array, list**를 이용해서 수정할 수 있다.
 
-![dataFrame_detail](markdown-images/dataFrame_detail.PNG)
+![dataFrame_detail](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail.png?raw=true)
 
 위의 `DataFrame`이 계속 주어져 있다고 가정하자.
 
@@ -113,7 +113,7 @@ df['등급']='A'
 display(df)
 ```
 
-![dataFrame_detail3](markdown-images/dataFrame_detail3.PNG)
+![dataFrame_detail3](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail3.png?raw=true)
 
 
 
@@ -124,7 +124,7 @@ df['등급'] = np.array(['A', 'B', 'A', 'D', 'F'])
 display(df)
 ```
 
-![dataFrame_detail4](markdown-images/dataFrame_detail4.PNG)
+![dataFrame_detail4](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail4.png?raw=true)
 
 * python `list`를 이용 : 알맞은 크기의 list를 입력해준다.
 
@@ -133,7 +133,7 @@ df['등급'] = ['A', 'B', 'A', 'D', 'F']
 display(df)
 ```
 
-![dataFrame_detail4](markdown-images/dataFrame_detail4.PNG)
+![dataFrame_detail4](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail4.png?raw=true)
 
 
 
@@ -141,7 +141,7 @@ display(df)
 
 > 단일 column 수정과 다르지 않다.  마찬가지로 scalar, array, list**를 이용해서 수정할 수 있다.
 
-![dataFrame_detail](markdown-images/dataFrame_detail.PNG)
+![dataFrame_detail](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail.png?raw=true)
 
 * 단일값 이용 :  : `broadcasting` 되서 모두에게 적용된다.
 
@@ -150,7 +150,7 @@ df[['학과','등급']] = 'A'
 display(df)
 ```
 
-![dataFrame_detail5](markdown-images/dataFrame_detail5.PNG)
+![dataFrame_detail5](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail5.png?raw=true)
 
 * python `list`를 이용 :  대체로 이중 `list`를 이용한다.
 
@@ -163,7 +163,7 @@ df[['학과','등급']] = [['영어영문','A'],
 display(df)
 ```
 
-![dataFrame_detail6](markdown-images/dataFrame_detail6.PNG)
+![dataFrame_detail6](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail6.png?raw=true)
 
 * `numpy`의 `ndarray`를 이용
 
@@ -176,4 +176,4 @@ df[['학과','등급']] = np.array([['영어영문','A'],
 display(df)
 ```
 
-![dataFrame_detail6](markdown-images/dataFrame_detail6.PNG)
+![dataFrame_detail6](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/dataFrame_detail6.png?raw=true)

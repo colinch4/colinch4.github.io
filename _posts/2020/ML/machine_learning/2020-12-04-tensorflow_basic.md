@@ -18,7 +18,7 @@ share: true
 * node : 수식연산(+, -,  x, /) , 데이터의 입출력
 * Edge : node 와 node를 연결하는 선이다. 이 edge를 따라서 Tensor가 이동한다.
 
-![image-20201001222542600](markdown-images/image-20201001222542600.png)
+![image-20201001222542600](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201001222542600.png?raw=true)
 
 
 

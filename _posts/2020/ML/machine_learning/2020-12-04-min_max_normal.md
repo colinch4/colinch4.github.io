@@ -23,7 +23,7 @@ share: true
 >
 > (최댓값=1, 최솟값=0)
 
-![image-20201005183635131](markdown-images/image-20201005183635131.png)
+![image-20201005183635131](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005183635131.png?raw=true)
 
 
 

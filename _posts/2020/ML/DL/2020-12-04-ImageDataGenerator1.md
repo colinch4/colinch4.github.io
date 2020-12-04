@@ -95,7 +95,7 @@ for x_data, t_data in train_generator:
     break
 ```
 
-![image-20201107144516477](markdown-images/image-20201107144516477.png)
+![image-20201107144516477](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201107144516477.png?raw=true)
 
 
 
@@ -125,7 +125,7 @@ plt.imshow(img)
 plt.show()
 ```
 
-![image-20201107165006652](markdown-images/image-20201107165006652.png)
+![image-20201107165006652](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201107165006652.png?raw=true)
 
 * 이미지 array로 바꿔 한번 더 확인 및 차원 증가시키기 
 
@@ -141,7 +141,7 @@ plt.show()
 x = x.reshape((1,) + x.shape)
 ```
 
-![image-20201107165745422](markdown-images/image-20201107165745422.png)
+![image-20201107165745422](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201107165745422.png?raw=true)
 
 * ImageDataGenerator 및 data 증식
 
@@ -165,4 +165,4 @@ fig.tight_layout()
 plt.show()
 ```
 
-![image-20201107172032692](markdown-images/image-20201107172032692.png)
+![image-20201107172032692](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201107172032692.png?raw=true)

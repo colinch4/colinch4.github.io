@@ -39,13 +39,13 @@ share: true
 
 > Logistic Regression은 classification 방법 중 하나로 정확도가 상당히 높고 Deep Learning의 기본모델이다.
 
-![image-20201005014945703](markdown-images/image-20201005014945703.png)
+![image-20201005014945703](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005014945703.png?raw=true)
 
 * Q. Linear Regression으로 Classification 하도록 학습과 예측을 할 수 있지 않을까?
 
 ​        A. 직선이기 때문에 1이상의 값이 도출하는 등의 문제가 발생한다. 
 
-![image-20201005022930513](markdown-images/image-20201005022930513.png)
+![image-20201005022930513](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005022930513.png?raw=true)
 
 
 
@@ -53,15 +53,15 @@ share: true
 
 > 위의 문제점 때문에 Sigmoid 함수를 도입한다.
 
-![image-20201005183401720](markdown-images/image-20201005183401720.png)
+![image-20201005183401720](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005183401720.png?raw=true)
 
-![image-20201005023426783](markdown-images/image-20201005023426783.png)
+![image-20201005023426783](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005023426783.png?raw=true)
 
 ## 회귀 모델(Hypothesis, predictive Model)
 
 > Logistic Regression의 회귀 함수를 정의한다.
 
-![image-20201005183431592](markdown-images/image-20201005183431592.png)
+![image-20201005183431592](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005183431592.png?raw=true)
 
 
 
@@ -69,4 +69,4 @@ share: true
 
 > Linear Regression에서 사용하던 Loss function을 사용하면 Loss의 convex 성질이 사라지게 된다. 따라서 Cross Entropy를 사용하게 된다.
 
-![image-20201005183501246](markdown-images/image-20201005183501246.png)
+![image-20201005183501246](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20201005183501246.png?raw=true)

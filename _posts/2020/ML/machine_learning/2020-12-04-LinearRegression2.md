@@ -31,7 +31,7 @@ training_data=df[['Temp','Ozone']]
 display(training_data)
 ```
 
-![image-20200926031405480](markdown-images/image-20200926031405480.png)
+![image-20200926031405480](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200926031405480.png?raw=true)
 
 
 
@@ -44,7 +44,7 @@ training_data = training_data.dropna(how='any')
 display(training_data)
 ```
 
-![s](markdown-images/image-20200926031905552.png)
+![s](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200926031905552.png?raw=true)
 
 
 
@@ -100,7 +100,7 @@ plt.plot(x_data, np.dot(x_data,W) + b , color='r')
 plt.show()
 ```
 
-![image-20200928010603728](markdown-images/image-20200928010603728.png)
+![image-20200928010603728](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200928010603728.png?raw=true)
 
 
 

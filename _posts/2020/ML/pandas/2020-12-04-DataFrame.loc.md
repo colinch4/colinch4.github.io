@@ -64,7 +64,7 @@ print(df.loc['three'])      # Series
 display(df.loc[['three']])  # DataFrame
 ```
 
-![image-20200913000920671](markdown-images/image-20200913000920671.png)
+![image-20200913000920671](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913000920671.png?raw=true)
 
 
 
@@ -74,7 +74,7 @@ display(df.loc[['three']])  # DataFrame
 display(df.loc[df['이름']=='홍길동'])
 ```
 
-![image-20200913000920671](markdown-images/image-20200913000920671.png)
+![image-20200913000920671](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913000920671.png?raw=true)
 
 
 
@@ -102,7 +102,7 @@ display(df.loc[:,'학점'])    # Series
 display(df.loc[:,['학점']])
 ```
 
-![image-20200913002339558](markdown-images/image-20200913002339558.png)
+![image-20200913002339558](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913002339558.png?raw=true)
 
 
 
@@ -114,7 +114,7 @@ display(df.loc[:,['학점']])
 display(df.loc[df['학점']>1.5, ['학점','이름']])
 ```
 
-![image-20200913003615336](markdown-images/image-20200913003615336.png)
+![image-20200913003615336](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913003615336.png?raw=true)
 
 ##### Q2. 이름이 '박동훈'인 사람을 찾아 이름과 학점을 DataFrame으로 출력하세요.
 
@@ -122,7 +122,7 @@ display(df.loc[df['학점']>1.5, ['학점','이름']])
 display(df.loc[df['이름']=='박동훈',['학점', '이름']])
 ```
 
-![image-20200913003848319](markdown-images/image-20200913003848319.png)
+![image-20200913003848319](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913003848319.png?raw=true)
 
 ##### Q2. 이름이 '박동훈'인 사람을 찾아 이름과 학점을 DataFrame으로 출력하세요.
 
@@ -138,7 +138,7 @@ display(df.loc[df['이름']=='박동훈',['학점', '이름']])
 display(df.loc[(df['학점']>1.5) & (df['학점']<2.5),'학과':'학점'])
 ```
 
-![image-20200913004836096](markdown-images/image-20200913004836096.png)
+![image-20200913004836096](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913004836096.png?raw=true)
 
 
 
@@ -149,4 +149,4 @@ df.loc[df['학점']>3.0,'등급']='A'
 display(df)
 ```
 
-![image-20200913005041434](markdown-images/image-20200913005041434.png)
+![image-20200913005041434](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913005041434.png?raw=true)
