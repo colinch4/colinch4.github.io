@@ -66,7 +66,7 @@ cout << get<2>t1; // 3
 
 vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 #include <vector> 를 선언해주면 된다. 예제를 통하여 알아보자. 
 
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -107,7 +107,7 @@ int main(){
 ```
 
 
-```c++
+```cpp
 vector<int> v1 = {1,2,3,4};
 cout << "size : " << v1.size(); // 4
 cout << "front = " << v1.front(); // 1
@@ -149,7 +149,7 @@ v3.erase(a.begin()+1, a.begin()+3); // 1 5 6 7 왜냐하면 [begin, end) 이기 
 
 자료구조 중 HashMap과 파이썬의 dictionary와 비슷한 개념. key와 value로 이루어져 있다.
 
-```c++
+```cpp
 map<int, int> m1;
 map<char, int> m2 = {{a,1},{b,2},{c,3}};
 map<int, int> m3 = {{4,1}, {2,5}, {5,7}};
