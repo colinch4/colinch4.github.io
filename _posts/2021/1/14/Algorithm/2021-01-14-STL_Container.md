@@ -151,8 +151,8 @@ v3.erase(a.begin()+1, a.begin()+3); // 1 5 6 7 왜냐하면 [begin, end) 이기 
 
 ```cpp
 map<int, int> m1;
-map<char, int> m2 = {{a,1},{b,2},{c,3}};
-map<int, int> m3 = {{4,1}, {2,5}, {5,7}};
+map<char, int> m2;
+map<int, int> m3; 
 
 cout << "m1 size : " << m1.size(); // 0
 cout << "m2 size : " << m2.size(); // 3
