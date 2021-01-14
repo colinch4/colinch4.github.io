@@ -17,9 +17,9 @@ STL은 Standard Template Library의 약자로, **알고리즘, 컨테이너, 함
 
 ## Pair
 
-자료형 pair를 사용하면 두 자료형 V1, V2를 한꺼번에 묶을 수 있다. Pair이라는 이름과 같이 반드시 두 개씩 묶어야 한다.<br>첫 번째 자료는 `first `, 두 번째 자료는 `second` 로 접근할 수 있다. 
+자료형 pair를 사용하면 두 자료형 V1, V2를 한꺼번에 묶을 수 있다. Pair이라는 이름과 같이 반드시 두 개씩 묶어야 한다. 첫 번째 자료는 `first `, 두 번째 자료는 `second` 로 접근할 수 있다. 
 
-`#include <utility>`에 존재하지만 다른 헤더파일들에 이미 존재하고 있기 때문에 따로 include하는 일은 없다.<br>pair을 선언하는 방법은 `생성자` 와 `make_pair` 를 사용하는 방법 두 가지가 있다.
+#include <utility>에 존재하지만 다른 헤더파일들에 이미 존재하고 있기 때문에 따로 include하는 일은 없다. pair을 선언하는 방법은 `생성자` 와 `make_pair` 를 사용하는 방법 두 가지가 있다.
 
 ```c++
 // Pair를 선언하는 다양한 방법들
@@ -49,7 +49,7 @@ cout << p3.second.first << ' ' << p3.second.second; // 30 forty
 
 기존의 Pair가 두 개의 자료형을 묶을 수 있었다면 Tuple은 여러 개를 묶을 수 있다.
 
-접근방식은 .first .second .third …가 아닌, `get` 을 이용해 인덱스에 접근하여야 한다.<br> tuple을 사용하기 위해선 `#include <tuple>`을 정의해야 한다. tuple을 선언하는 방식은 다음과 같다.
+접근방식은 .first .second .third …가 아닌, `get` 을 이용해 인덱스에 접근하여야 한다.tuple을 사용하기 위해선 `#include <tuple>`을 정의해야 한다. tuple을 선언하는 방식은 다음과 같다.
 
 ```c++
 tuple<int, int, int> t1 = make_tuple(1,2,3);
@@ -64,7 +64,7 @@ cout << get<2>t1; // 3
 
 ## ⭐️ Vector
 
-vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 `#include <vector>` 를 선언해주면 된다. 예제를 통하여 알아보자.<br>  
+vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 `#include <vector>` 를 선언해주면 된다. 예제를 통하여 알아보자. 
 
 ```c++
 #include <iostream>
@@ -147,7 +147,7 @@ v3.erase(a.begin()+1, a.begin()+3); // 1 5 6 7 왜냐하면 [begin, end) 이기 
 
 ## MAP
 
-> [https://github.com/Shinye/Algorithm-Study/blob/master/cracking_1_5_v1.cpp](https://github.com/Shinye/Algorithm-Study/blob/master/cracking_1_5_v1.cpp) <br>map을 이용해 푼 알고리즘 문제
+> [https://github.com/Shinye/Algorithm-Study/blob/master/cracking_1_5_v1.cpp](https://github.com/Shinye/Algorithm-Study/blob/master/cracking_1_5_v1.cpp) map을 이용해 푼 알고리즘 문제
 
 자료구조 중 HashMap과 파이썬의 dictionary와 비슷한 개념. key와 value로 이루어져 있다.
 
