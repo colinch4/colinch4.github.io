@@ -49,7 +49,7 @@ cout << p3.second.first << ' ' << p3.second.second; // 30 forty
 
 기존의 Pair가 두 개의 자료형을 묶을 수 있었다면 Tuple은 여러 개를 묶을 수 있다.
 
-접근방식은 .first .second .third …가 아닌, `get` 을 이용해 인덱스에 접근하여야 한다.tuple을 사용하기 위해선 `#include <tuple>`을 정의해야 한다. tuple을 선언하는 방식은 다음과 같다.
+접근방식은 .first .second .third …가 아닌, get 을 이용해 인덱스에 접근하여야 한다.tuple을 사용하기 위해선 #include <tuple>을 정의해야 한다. tuple을 선언하는 방식은 다음과 같다.
 
 ```c++
 tuple<int, int, int> t1 = make_tuple(1,2,3);
@@ -64,7 +64,7 @@ cout << get<2>t1; // 3
 
 ## ⭐️ Vector
 
-vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 `#include <vector>` 를 선언해주면 된다. 예제를 통하여 알아보자. 
+vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 #include <vector> 를 선언해주면 된다. 예제를 통하여 알아보자. 
 
 ```c++
 #include <iostream>
