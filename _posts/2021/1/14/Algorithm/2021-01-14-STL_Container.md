@@ -71,14 +71,14 @@ vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면
 #include <vector>
 using namespace std;
 
-int main(){
+int main() {
   // 다양한 선언방식들
   vector<int> v1; // 길이 0
   vector<int> v2(10); // 길이 10
   vector<int> v3(20,3); // 길이 20의 벡터, 벡터 v3의 모든 원소값들이 3으로 초기화되어 있다.
   vector<int> v4 = {1,2,3,4}; // 벡터 v4에 각각 원소 초기화
   vector<pair<int,int>> v5; // 벡터 원소의 자료형에 pair도 쓸 수 있다.
-  vector<pair<int,int>> v6 = {{1,2},{3,4}};
+  vector<pair<int,int>> v6;
   int n=10, m=20;
   vector<vector<int>> v8(n, vector<int>(m)); // 이차원 배열 설정과 동일. int v8[n][m]; 
   
