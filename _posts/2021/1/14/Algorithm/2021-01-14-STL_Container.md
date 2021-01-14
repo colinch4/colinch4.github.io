@@ -61,3 +61,7 @@ cout << get<2>t1; // 3
 ```
 
 
+
+## Vector
+
+vector는 길이를 변경할 수 있는 배열이다. vector를 사용하려면 코드 상단에 #include <vector> 를 선언해주면 된다. 예제를 통하여 알아보자. 
