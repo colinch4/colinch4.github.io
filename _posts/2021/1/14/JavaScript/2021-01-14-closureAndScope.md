@@ -2,7 +2,7 @@
 layout: post
 title: "[javascript] 유효범위와 클로져 정리"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [javascript]
 comments: true
 share: true

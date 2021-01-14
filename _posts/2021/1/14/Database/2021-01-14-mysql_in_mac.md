@@ -2,7 +2,7 @@
 layout: post
 title: "[데이터베이스] 맥에서 MySQL 설치 후 환경설정하기"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [데이터베이스]
 comments: true
 share: true

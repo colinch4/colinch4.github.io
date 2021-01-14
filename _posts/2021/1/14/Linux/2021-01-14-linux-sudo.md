@@ -2,7 +2,7 @@
 layout: post
 title: "[리눅스] SUDO 정리"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [리눅스]
 comments: true
 share: true

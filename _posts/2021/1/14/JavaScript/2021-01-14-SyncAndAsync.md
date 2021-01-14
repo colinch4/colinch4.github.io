@@ -2,7 +2,7 @@
 layout: post
 title: "[javascript] Sync / Async @JavaScript"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [javascript]
 comments: true
 share: true

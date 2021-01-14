@@ -2,7 +2,7 @@
 layout: post
 title: "[git] Git 원격 저장소 URL 변경하기"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [git]
 comments: true
 share: true

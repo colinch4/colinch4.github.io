@@ -2,7 +2,7 @@
 layout: post
 title: "[자료구조] Array vs LinkedList"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [자료구조]
 comments: true
 share: true

@@ -2,7 +2,7 @@
 layout: post
 title: "[머신러닝] Tensorflow Basic #2"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [머신러닝]
 comments: true
 share: true

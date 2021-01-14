@@ -2,7 +2,7 @@
 layout: post
 title: "[css] display 속성"
 description: " "
-date: 2020-01-14
+date: 2021-01-14
 tags: [css]
 comments: true
 share: true
