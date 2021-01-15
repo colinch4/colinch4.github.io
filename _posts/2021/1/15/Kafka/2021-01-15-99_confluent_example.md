@@ -20,8 +20,6 @@ share: true
 
     
 
-#### 🏠 [**돌아가기**](https://github.com/3457soso/TIL/tree/master/Kafka)
-
 
 
 ___

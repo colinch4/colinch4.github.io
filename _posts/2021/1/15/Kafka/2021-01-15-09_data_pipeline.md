@@ -15,14 +15,14 @@ share: true
 
 #### 목차
 
-1. [카프카 훑어보기](https://github.com/3457soso/TIL/blob/master/Kafka/01_Introduction.md)
-2. [범용 메시지 큐와 비교하기](https://github.com/3457soso/TIL/blob/master/Kafka/02_compare.md)
-3. [카프카 프로듀서 : 카프카에 메시지 쓰기](https://github.com/3457soso/TIL/blob/master/Kafka/03_producer.md)
-4. [카프카 컨슈머 : 중요 개념](https://github.com/3457soso/TIL/blob/master/Kafka/04_consumer_core.md)
-5. [카프카 컨슈머 : 카프카에서 데이터 읽기](https://github.com/3457soso/TIL/blob/master/Kafka/05_consumer_use.md)
-6. [스키마 레지스트리](https://github.com/3457soso/TIL/blob/master/Kafka/06_schema_registry.md)
-7. [카프카 내부 메커니즘](https://github.com/3457soso/TIL/blob/master/Kafka/07_inside.md)
-8. [신뢰성 있는 데이터 전달](https://github.com/3457soso/TIL/blob/master/Kafka/08_reliability.md)
+1. [카프카 훑어보기](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-01_Introduction.md)
+2. [범용 메시지 큐와 비교하기](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-02_compare.md)
+3. [카프카 프로듀서 : 카프카에 메시지 쓰기](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-03_producer.md)
+4. [카프카 컨슈머 : 중요 개념](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-04_consumer_core.md)
+5. [카프카 컨슈머 : 카프카에서 데이터 읽기](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-05_consumer_use.md)
+6. [스키마 레지스트리](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-06_schema_registry.md)
+7. [카프카 내부 메커니즘](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-07_inside.md)
+8. [신뢰성 있는 데이터 전달](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-08_reliability.md)
 9. **데이터 파이프라인 구축하기**
 
    - [**데이터 파이프라인 구축 시 고려사항**](#1-데이터-파이프라인-구축-시-고려사항)
@@ -31,8 +31,8 @@ share: true
    - [**구성 요소**](#4-구성-오쇼)
    - [**대안**](#5-대안)
 
-- [confluent 예제](https://github.com/3457soso/TIL/blob/master/Kafka/99_confluent_example)
-- [schema registry 예제](https://github.com/3457soso/TIL/blob/master/Kafka/99_schema_registry_example)
+- [confluent 예제](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-99_confluent_example)
+- [schema registry 예제](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2021/1/15/Kafka/2021-01-15-99_schema_registry_example)
 
 
 
