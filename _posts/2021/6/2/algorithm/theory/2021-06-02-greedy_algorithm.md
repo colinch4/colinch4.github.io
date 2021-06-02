@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[알고리즘] Greedy Algorithm"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
 # Greedy Algorithm
 
 미래를 내다보지 않고, 당장 눈 앞에 보이는 최적의 선택을 하는 방식

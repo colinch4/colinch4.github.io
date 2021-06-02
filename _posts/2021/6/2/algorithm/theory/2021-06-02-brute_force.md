@@ -1,3 +1,14 @@
+---
+layout: post
+title: "[알고리즘] Brute Force"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
+
 # Brute Force
 
 - 완벽탐색 알고리즘

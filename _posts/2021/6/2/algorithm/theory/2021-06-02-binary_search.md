@@ -1,3 +1,14 @@
+---
+layout: post
+title: "[알고리즘] Binary Search (이진 탐색)"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
+
 # Binary Search (이진 탐색)
 
 이진 탐색(Binary Search) 알고리즘은 반씩 나누어 반은 보고 반은 보지않는 탐색법인데요 이진탐색은 반씩 보기때문에 데이터가 이미 정렬되어 있다는 가정하에 탐색을 합니다.

@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[알고리즘] Dynamic Programming"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
 # Dynamic Programming
 
 중복을 피하여 효율적인 알고리즘 짜는 법

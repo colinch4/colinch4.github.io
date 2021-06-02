@@ -1,3 +1,14 @@
+---
+layout: post
+title: "[알고리즘] Divide And Conquer (분할 정복)"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
+
 # Divide And Conquer (분할 정복)
 
 한 문제에대해서 너무 풀기에 크다고 생각되어질 때 나눠서 문제를 푸는 것

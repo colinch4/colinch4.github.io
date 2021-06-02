@@ -1,3 +1,13 @@
+---
+layout: post
+title: "[알고리즘] Quick Sort"
+description: " "
+date: 2021-06-02
+tags: [알고리즘]
+comments: true
+share: true
+---
+
 # Quick Sort
 
 ## 단계
