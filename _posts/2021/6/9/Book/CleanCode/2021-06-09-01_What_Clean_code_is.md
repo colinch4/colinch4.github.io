@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Clean Code] "
+title: "[Clean Code] 1장 깨끗한 코드"
 description: " "
 date: 2021-06-09
 tags: [Book]
