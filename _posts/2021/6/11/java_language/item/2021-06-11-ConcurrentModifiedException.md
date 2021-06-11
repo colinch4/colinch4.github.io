@@ -86,7 +86,7 @@ share: true
     
         System.out.println("===========================");
     
-        System.out.println("after:");
+        System.out.println("after: ");
         for(String str: list)
             System.out.print(str+" ");
         System.out.println();

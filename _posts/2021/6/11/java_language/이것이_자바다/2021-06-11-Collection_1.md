@@ -99,7 +99,7 @@ public class ArrayListExample2 {
 
         for(int i=0; i<list.size(); i++){
             String str = list.get(i);
-            System.out.println(i +":" + str);
+            System.out.println(i +": " + str);
         }
         System.out.println();
 

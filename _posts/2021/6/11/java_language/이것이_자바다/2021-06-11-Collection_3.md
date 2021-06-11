@@ -138,7 +138,7 @@ public class HashMapExample1 {
 
         //객체 전체 삭제
         map.clear();
-        System.out.println("총 Entry 수:" +map.size());
+        System.out.println("총 Entry 수: " +map.size());
     }
 }
 ```

@@ -243,7 +243,7 @@ public class TreeMapExample1 {
         System.out.println();
         while(!scores.isEmpty()){
            entry = scores.pollFirstEntry(); // 오름차순
-           System.out.println("받은 점수: "+entry.getKey()+ " 사람:"+entry.getValue());
+           System.out.println("받은 점수: "+entry.getKey()+ " 사람: "+entry.getValue());
             System.out.println("남은 객체 수: " + scores.size());
         }
     }
@@ -407,8 +407,8 @@ ClassCastException<br>
 ```java
 Exception in thread "main" java.lang.ClassCastException: class CollectionFramework.Compare.Person cannot be cast to class java.lang.Comparable (CollectionFramework.Compare.Person is in unnamed module of loader 'app'; java.lang.Comparable is in module java.base of loader 'bootstrap')
 	at java.base/java.util.TreeMap.compare(TreeMap.java:1291)
-	at java.base/java.util.TreeMap.put(TreeMap.java:536)
-	at java.base/java.util.TreeSet.add(TreeSet.java:255)
+	at java.base/java.util.TreeMap.put(TreeMap.java: 536)
+	at java.base/java.util.TreeSet.add(TreeSet.java: 255)
 	at CollectionFramework.Compare.ComparableExample.main(ComparableExample.java:9)
 ```
 
