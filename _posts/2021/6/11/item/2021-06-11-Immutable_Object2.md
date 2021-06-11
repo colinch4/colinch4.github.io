@@ -9,12 +9,6 @@ share: true
 ---
 
 
-**: String은 이미 불변 객체로 정의 되어 있다.** 
-
-**Java의 클래스 = 레퍼런스 타입**
-
-**: 객체는 힙(heap)에 생성된다.**
-
 ## Immutable Object(불변 객체)
 
 ### 장점
@@ -24,7 +18,7 @@ share: true
 
 "특별한 이유가 없다면 객체를 불변 객체로 설계해야 한다."<br>
 
-: Effective Java, Effective Objective-C<br>
+Effective Java, Effective Objective-C<br>
 
 ## 단점
 

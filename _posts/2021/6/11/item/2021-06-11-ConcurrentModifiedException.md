@@ -17,7 +17,7 @@ share: true
 
       3. 병렬 반복(parallel iteration)
 
-(1)하나의 스레드로 컬렉션에 요소를 계속 추가하고, 또 다른 스레드로 같은 컬렉션을 순회하면 Concurrent Modification Exception이 발생한다. 
+( 1 )  하나의 스레드로 컬렉션에 요소를 계속 추가하고, 또 다른 스레드로 같은 컬렉션을 순회하면 Concurrent Modification Exception이 발생한다. 
 
 ```java
     public class ConcurrentModificationExceptionExample1 {

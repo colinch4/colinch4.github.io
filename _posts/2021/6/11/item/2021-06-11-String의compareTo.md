@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[java] String의 compareTo()"
+title: "[java] String의 compareTo"
 description: " "
 date: 2021-06-11
 tags: [java]
