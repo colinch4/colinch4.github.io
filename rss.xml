@@ -3,49 +3,49 @@
 <rss version="2.0">
   <channel>
     <title>Colin's Blog</title>
-    <link>http://colinch4.github.io</link>
+    <link>https://colinch4.github.io</link>
     <description><![CDATA[Colin's Blog]]></description>
-    <lastBuildDate>Tue, 14 Sep 2021 04:58:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Sep 2021 05:03:38 GMT</lastBuildDate>
     <generator>Feed43 Proxy/1.0 (www.feed43.com)</generator>
     <ttl>360</ttl>
 
 <item>
 <guid isPermaLink="false">713540481ade6a6061c3f0141b527884</guid>
-<pubDate>Tue, 14 Sep 2021 04:58:10 GMT</pubDate>
+<pubDate>Tue, 14 Sep 2021 05:03:38 GMT</pubDate>
 <title>[VSCode] Vscode Keyboard Shortcuts</title>
 <link>https://colinch4.github.io</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">d2849c8274367a7938ee1237085b6fdc</guid>
-<pubDate>Tue, 14 Sep 2021 04:58:09 GMT</pubDate>
+<guid isPermaLink="false">2d48d5f9875ff4856a122f66161fa007</guid>
+<pubDate>Tue, 14 Sep 2021 05:03:37 GMT</pubDate>
 <title>[VSCode] vscode 단축키 오류 해결하기</title>
-<link>http://colinch4.github.io/2021-09-09/resolve-vscode-shortcut-err/</link>
+<link>https://colinch4.github.io/2021-09-09/resolve-vscode-shortcut-err/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">f622b80802e53a3b4e569b63066dcbbc</guid>
-<pubDate>Tue, 14 Sep 2021 04:58:08 GMT</pubDate>
+<guid isPermaLink="false">4227f1e63ca77a308326c459155ca030</guid>
+<pubDate>Tue, 14 Sep 2021 05:03:36 GMT</pubDate>
 <title>[VSCode] VSCode로 Sass 컴파일하기</title>
-<link>http://colinch4.github.io/2021-09-09/compiling-sass-with-vscode/</link>
+<link>https://colinch4.github.io/2021-09-09/compiling-sass-with-vscode/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">6b83c681e9e1f54cadde1b7f77fca635</guid>
-<pubDate>Tue, 14 Sep 2021 04:58:07 GMT</pubDate>
+<guid isPermaLink="false">b55b8c81983e7d1922291cc76c62d5a5</guid>
+<pubDate>Tue, 14 Sep 2021 05:03:35 GMT</pubDate>
 <title>[sketch] 스케치 작업 환경 설정하기</title>
-<link>http://colinch4.github.io/2021-09-09/workplace-hygiene-in-sketch/</link>
+<link>https://colinch4.github.io/2021-09-09/workplace-hygiene-in-sketch/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">810d0a3d1440be6d8bb4af0fff475bde</guid>
-<pubDate>Tue, 14 Sep 2021 04:58:06 GMT</pubDate>
+<guid isPermaLink="false">4571647eb23a401a15c4b75412d61017</guid>
+<pubDate>Tue, 14 Sep 2021 05:03:34 GMT</pubDate>
 <title>[sketch] 레이어 복제시 자동으로 붙는 Copy 해제하기</title>
-<link>http://colinch4.github.io/2021-09-09/unset-duplicated-layer-named-copy/</link>
+<link>https://colinch4.github.io/2021-09-09/unset-duplicated-layer-named-copy/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
