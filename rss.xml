@@ -3,44 +3,49 @@
 <rss version="2.0">
   <channel>
     <title>Colin's Blog</title>
-    <link>https://colinch4.github.io/</link>
+    <link>http://colinch4.github.io</link>
     <description><![CDATA[Colin's Blog]]></description>
-    <lastBuildDate>Tue, 14 Sep 2021 04:39:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Sep 2021 04:58:10 GMT</lastBuildDate>
     <generator>Feed43 Proxy/1.0 (www.feed43.com)</generator>
     <ttl>360</ttl>
 
 <item>
-<guid isPermaLink="false">7de0ed46c3a90be0239af6eff1988c57</guid>
-<pubDate>Tue, 14 Sep 2021 04:39:00 GMT</pubDate>
-<link>https://colinch4.github.io/[VSCode]&#37;20Vscode&#37;20Keyboard&#37;20Shortcuts</link>
+<guid isPermaLink="false">713540481ade6a6061c3f0141b527884</guid>
+<pubDate>Tue, 14 Sep 2021 04:58:10 GMT</pubDate>
+<title>[VSCode] Vscode Keyboard Shortcuts</title>
+<link>https://colinch4.github.io</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">1bcad34aa553d162a6b88dab6dcd019b</guid>
-<pubDate>Tue, 14 Sep 2021 04:38:59 GMT</pubDate>
-<link>https://colinch4.github.io/[VSCode]&#37;20vscode&#37;20&#37;EB&#37;8B&#37;A8&#37;EC&#37;B6&#37;95&#37;ED&#37;82&#37;A4&#37;20&#37;EC&#37;98&#37;A4&#37;EB&#37;A5&#37;98&#37;20&#37;ED&#37;95&#37;B4&#37;EA&#37;B2&#37;B0&#37;ED&#37;95&#37;98&#37;EA&#37;B8&#37;B0</link>
+<guid isPermaLink="false">d2849c8274367a7938ee1237085b6fdc</guid>
+<pubDate>Tue, 14 Sep 2021 04:58:09 GMT</pubDate>
+<title>[VSCode] vscode 단축키 오류 해결하기</title>
+<link>http://colinch4.github.io/2021-09-09/resolve-vscode-shortcut-err/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">001ae6db2eaabce46e673330e7cb7e11</guid>
-<pubDate>Tue, 14 Sep 2021 04:38:58 GMT</pubDate>
-<link>https://colinch4.github.io/[VSCode]&#37;20VSCode&#37;EB&#37;A1&#37;9C&#37;20Sass&#37;20&#37;EC&#37;BB&#37;B4&#37;ED&#37;8C&#37;8C&#37;EC&#37;9D&#37;BC&#37;ED&#37;95&#37;98&#37;EA&#37;B8&#37;B0</link>
+<guid isPermaLink="false">f622b80802e53a3b4e569b63066dcbbc</guid>
+<pubDate>Tue, 14 Sep 2021 04:58:08 GMT</pubDate>
+<title>[VSCode] VSCode로 Sass 컴파일하기</title>
+<link>http://colinch4.github.io/2021-09-09/compiling-sass-with-vscode/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">c45cd0c602c47b4199d3fd03f3f28b08</guid>
-<pubDate>Tue, 14 Sep 2021 04:38:57 GMT</pubDate>
-<link>https://colinch4.github.io/[sketch]&#37;20&#37;EC&#37;8A&#37;A4&#37;EC&#37;BC&#37;80&#37;EC&#37;B9&#37;98&#37;20&#37;EC&#37;9E&#37;91&#37;EC&#37;97&#37;85&#37;20&#37;ED&#37;99&#37;98&#37;EA&#37;B2&#37;BD&#37;20&#37;EC&#37;84&#37;A4&#37;EC&#37;A0&#37;95&#37;ED&#37;95&#37;98&#37;EA&#37;B8&#37;B0</link>
+<guid isPermaLink="false">6b83c681e9e1f54cadde1b7f77fca635</guid>
+<pubDate>Tue, 14 Sep 2021 04:58:07 GMT</pubDate>
+<title>[sketch] 스케치 작업 환경 설정하기</title>
+<link>http://colinch4.github.io/2021-09-09/workplace-hygiene-in-sketch/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
 <item>
-<guid isPermaLink="false">7cd8cb634cd74c4690c7164f8543f874</guid>
-<pubDate>Tue, 14 Sep 2021 04:38:56 GMT</pubDate>
-<link>https://colinch4.github.io/[sketch]&#37;20&#37;EB&#37;A0&#37;88&#37;EC&#37;9D&#37;B4&#37;EC&#37;96&#37;B4&#37;20&#37;EB&#37;B3&#37;B5&#37;EC&#37;A0&#37;9C&#37;EC&#37;8B&#37;9C&#37;20&#37;EC&#37;9E&#37;90&#37;EB&#37;8F&#37;99&#37;EC&#37;9C&#37;BC&#37;EB&#37;A1&#37;9C&#37;20&#37;EB&#37;B6&#37;99&#37;EB&#37;8A&#37;94&#37;20Copy&#37;20&#37;ED&#37;95&#37;B4&#37;EC&#37;A0&#37;9C&#37;ED&#37;95&#37;98&#37;EA&#37;B8&#37;B0</link>
+<guid isPermaLink="false">810d0a3d1440be6d8bb4af0fff475bde</guid>
+<pubDate>Tue, 14 Sep 2021 04:58:06 GMT</pubDate>
+<title>[sketch] 레이어 복제시 자동으로 붙는 Copy 해제하기</title>
+<link>http://colinch4.github.io/2021-09-09/unset-duplicated-layer-named-copy/</link>
 <description><![CDATA[<p><sub><i>-- Delivered by <a href="http://feed43.com/">Feed43</a> service</i></sub></p>
 ]]></description>
 </item>
