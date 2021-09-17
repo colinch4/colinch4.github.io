@@ -82,7 +82,7 @@ For simplicity, and because that view is usually hidden, it is not included in F
 ## View Hierarchies and Subview Management
 
 자체 컨텐츠를 제공하는 것 외에도 뷰는 다른 뷰의 컨테이너 역할을 할 수 있습니다. 한 뷰에 다른 뷰가 포함 된 경우 두 뷰 사이에 부모-자식 관계가 생성됩니다.
-이 관계에서 자식 뷰를 subview라고 부르고 그리고 부모 뷰를 superview라고 부릅니다. 이 관계 유형의 생성은 앱의 시각적 모양과 앱의 동작 둘 다에 영향을 끼칩니다. 
+이 관계에서 자식 뷰를 subview라고 부르고 그리고 부모 뷰를 superview라고 부릅니다. 이 관계 유형의 생성은 앱의 시각적 모양과 앱의 동작 둘 다에 영향을 끼칩니다.
 
 시각적으로, 한 subview 의 콘텐츠는 부모 뷰의 콘텐츠의 일부이거나 전부를 가립니다. 만약에 subview가 100% 불투명하다면, subview에 의해 차지하는 영역은 그에 해당하는 부모 뷰의 영역을 가립니다. 
 
