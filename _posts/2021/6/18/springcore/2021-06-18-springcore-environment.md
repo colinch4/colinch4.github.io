@@ -49,7 +49,7 @@ share: true
   - ServletContext 매개변수
   - JNDI(java:comp/env/);
   - JVM 시스템 프로퍼티 (-Dkey=value)
-  - JVM 시스템 환경변수 (운영체제 환경변수)
+  - JVM 시스템 환경변수 (운영체제 환경변수)
 
 - @PropertySource
   - `Environment`를 통해 프로퍼티를 추가하는 방법

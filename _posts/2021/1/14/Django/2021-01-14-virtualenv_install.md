@@ -81,7 +81,7 @@ virtualenvwrapper는 virtualenv의 사용을 보다 편리하게 해주는 도�
 VirtualEnv를 사용하기 위해서는 `source`[^source] 를 이용해 가상환경에 진입한다. 그러나, 이 진입 방법은 가상환경이 설치된 위치로 이동해야되는 것 뿐 아니라 가상환경이 어느 폴더에 있는지 일일이 사용자가 기억해야 하는 단점이 있다. 이를 보완하기 위해 virtualenvwrapper를 사용한다.<br>
 
 또한, VirtualenvWrapper를 사용할 경우 **터미널이 현재 위치한 경로와 관계없이** 가상환경을 활성화할 수 있다는 장점이 있다. <br>
-VirtualenvWrapper는 `.bashrc` 나 `.zshrc` 에 약간의 설정과정을 거쳐야 한다. 본인의 터미널 환경이 bash이냐 zsh이냐에 따라 알맞는 것을 선택하면 된다. <br>(나는 zsh를 쓰는데 그걸 잊고 무작정 .bashrc에 가서 고치려고 했었다...바부-_-;;)
+VirtualenvWrapper는 `.bashrc` 나 `.zshrc` 에 약간의 설정과정을 거쳐야 한다. 본인의 터미널 환경이 bash이냐 zsh이냐에 따라 알맞는 것을 선택하면 된다. <br>(나는 zsh를 쓰는데 그걸 잊고 무작정 .bashrc에 가서 고치려고 했었다...바부-_-;;)
 
 우선, 홈 디렉토리로 이동한다.<br>
 
