@@ -7,7 +7,7 @@ layout: null
     <title>{{ site.name | xml_escape }}</title>
     <link>{{ site.url }}{{ site.baseurl }}</link>
     <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:500 %}
+    {% for post in site.posts limit:300 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | strip_html | truncatewords: 200 | xml_escape }}</description>
