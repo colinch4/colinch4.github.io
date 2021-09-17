@@ -64,7 +64,7 @@ https://perfectacle.github.io/2019/04/21/non-stop-deployment/
 6. 서버2의 배포가 끝나면, 다시 로드밸런서에 넣는다.
 
 단점은 배포 시간이 오래걸리고,  
-누구는 이전 버전을 서비스 받고 누구는 다음 버전을 서비스받는 문제가 생긴다.
+누구는 이전 버전을 서비스 받고 누구는 다음 버전을 서비스받는 문제가 생긴다.
 
 ### 2. Blue / Green Deployment
 ![thumbs](https://user-images.githubusercontent.com/26560119/63571233-98d20380-c5ba-11e9-8142-76f762ce3feb.jpg)

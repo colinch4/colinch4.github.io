@@ -35,7 +35,7 @@ public Someclass someClass() {
 ~~~java
 @Bean(name="myClass")
 ~~~
-위처럼 해당 라이브러리 객체를 반환하는 method를 만들고,  
+위처럼 해당 라이브러리 객체를 반환하는 method를 만들고,  
 그 위에 @Bean 어노테이션을 붙여 놓으면 된다.  
 @Bean에 name을 따로 설정하지 않았으면 메서드가 Bean id로 등록된다.  
 (위에서는 Bean ID가 'someClass')
