@@ -32,7 +32,7 @@ var til='today i learned'
 - boolean
 - symbol (ES6+)
 
-그리고 객체(Object) 데이터 유형 (일반 객체, 배열 객체, 함수 객체)
+그리고 객체(Object) 데이터 유형 (일반 객체, 배열 객체, 함수 객체)
 
 - function object
 - array object
