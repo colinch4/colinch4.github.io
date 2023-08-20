@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Switch Focus <small>(MacOS)</small>
+## Switch Focus <small>(MacOS)</small>
 > 듀얼모니터 유저를 위한 마우스 없이 마우스 자유자재로 다루는 법
 
 1. 마우스 옮기기

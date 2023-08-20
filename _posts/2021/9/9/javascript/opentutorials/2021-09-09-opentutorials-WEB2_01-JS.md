@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# JavaScript - event
+## JavaScript - event
 
 [강의실 바로가기](https://opentutorials.org/course/3085)
 

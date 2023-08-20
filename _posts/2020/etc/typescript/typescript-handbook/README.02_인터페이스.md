@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 타입스크립트 인터페이스
+## 타입스크립트 인터페이스
 
 -   [타입스크립트 핸드북 - 기본타입](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 -

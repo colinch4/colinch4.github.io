@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Moshi 적용 검토하기.
+## Moshi 적용 검토하기.
 
 Moshi를 검토하게 된 이유가 Gson을 잘 쓰다가 kotlin도 지원되고, 좋다는 얘기를 많이 들어서 한번 검토해보려고 간을 보고 있는 와중에 Gson에서 IncompatibleClassChangeError라는 익셉션이 발생했는데 Reflection을 사용해서 발생한거라 code gen 을 활용하는 Moshi로 이동해보려고 [Moshi](https://github.com/square/moshi) 와[Gson](https://github.com/google/gson)의 특징과 차이를 정리해봐야겠다.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] collection 모듈"
+title: "[파이썬] collection 모듈"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# collection 모듈
+## collection 모듈
 
 collection.Counter()
 
@@ -113,7 +113,7 @@ print(sorted(c.elements()))
 -----------------------------------------------------------
 ['h', 'h', 'e', 'l', 'l', 'o', 'o', 'w', ' ', 'p', 'y', 't', 'n']
 [' ', 'e', 'h', 'h', 'l', 'l', 'n', 'o', 'o', 'p', 't', 'w', 'y']
-# 띄어 쓰기도 포함
+## 띄어 쓰기도 포함
 ```
 
 

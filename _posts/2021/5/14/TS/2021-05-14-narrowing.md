@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Narrowing / 타입 가드
+## Narrowing / 타입 가드
 
 type을 check 하는 것은 type guard
 

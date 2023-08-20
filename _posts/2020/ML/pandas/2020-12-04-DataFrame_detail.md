@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 기본 DataFrame column (1)
+## 기본 DataFrame column (1)
 
 > `pandas` 의 `DataFrame` 에 관한 `row`와 `column` 추출,수정등에 관한 내용에 대해서 알아본다.
 
@@ -40,22 +40,22 @@ display(df)
 
 ```python
 print(df['이름'])
-# one      이지은
-# two      박동훈
-# three    홍길동
-# four     강감찬
-# five     오해영
-# Name: 이름, dtype: object
+## one      이지은
+## two      박동훈
+## three    홍길동
+## four     강감찬
+## five     오해영
+## Name: 이름, dtype: object
 ```
 
 ```python
 print(df.이름)
-# one      이지은
-# two      박동훈
-# three    홍길동
-# four     강감찬
-# five     오해영
-# Name: 이름, dtype: object
+## one      이지은
+## two      박동훈
+## three    홍길동
+## four     강감찬
+## five     오해영
+## Name: 이름, dtype: object
 ```
 
 위의 예제를 살펴보면 `df['이름']` 과 같이 일반적인 방법으로도 `column`을 추출할수 있지만 `df`의 속성으로 생각해 `df.이름`와 같이 입력해서도 추출할 수 있다.

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Tensorflow 2.xx 기초
+## Tensorflow 2.xx 기초
 
 > 지금까지 **ML**에서 **TF1.15** 버전을 이용해서 구현했다. **TF1.15**는 **TF2.xx** 보다 하위 API로 즉, **ML**을 low level로 구현을 진행했다.
 >
@@ -45,10 +45,10 @@ share: true
 
 
 ```python
-# 버전 확인
+## 버전 확인
 import tensorflow as tf
 print(tf.__version__)
-# 2.1.0
+## 2.1.0
 ```
 
 ​    

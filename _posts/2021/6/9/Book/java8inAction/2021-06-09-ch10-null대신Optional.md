@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# null 대신 Optioanl
+## null 대신 Optioanl
 
 - null 래퍼런스의 문제점과 null을 멀리해야 하는 이유
 - null 대신 Optioanl: null로부터 안전한 도메인 모델 재구현하기.
@@ -164,7 +164,7 @@ flatmap메서드로 전달된 함수는 각각의 정사각형을 두 개의 삼
 
 
 
-# 활용 예시
+## 활용 예시
 
 ## 잠재적으로 null이 될 수 있는 대상을 Optional로 감싸기.
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 화면에 TOC 표시하기
+## 화면에 TOC 표시하기
 
 긴 글을 읽을 때, 화면 옆에 TOC와 함께 위치를 보여주는 사이트가 많이 보이는데, 막상 적용해보질 못했다.
 오늘 [개발환경 구축하기](https://subicura.com/2017/11/22/mac-os-development-environment-setup.html)라는 글을 보다가, 완전 꽂혀버렸다.

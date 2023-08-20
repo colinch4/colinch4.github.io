@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DataFrame.loc
+## DataFrame.loc
 
 > 위의 목차에서 [DataFrame의 row와 column 차이](./pandas/r_c_difference.md)를 보면 `DataFrame`의 `row`와 `column`을 다룰 때 작동하는것이 있고 작동하지 않는 방법이 있었다. 이를 해결해 주는 방법이 `pandas` `DataFrame`의 `loc`나 `iloc`를 이용하는 방법이 있다. 여기서는 `loc`에 대해서 다루기로 한다.
 
@@ -48,12 +48,12 @@ display(df)
 
 ```python
 print(df.loc['three'])      # Series
-# 학과     철학
-# 이름    홍길동
-# 학점    3.1
-# 학년      2
-# 등급    NaN
-# Name: three, dtype: object
+## 학과     철학
+## 이름    홍길동
+## 학점    3.1
+## 학년      2
+## 등급    NaN
+## Name: three, dtype: object
 ```
 
 
@@ -86,12 +86,12 @@ display(df.loc[df['이름']=='홍길동'])
 
 ```python
 display(df.loc[:,'학점'])    # Series
-# one      1.5
-# two      2.0
-# three    3.1
-# four     1.1
-# five     2.7
-# Name: 학점, dtype: float64
+## one      1.5
+## two      2.0
+## three    3.1
+## four     1.1
+## five     2.7
+## Name: 학점, dtype: float64
 ```
 
 

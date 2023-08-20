@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 10장 시퀀스 해킹, 해시, 슬라이스
+## 10장 시퀀스 해킹, 해시, 슬라이스
 
 벡터 공간 모델은 주로 정보 검색 분야에서 이용되며, 핵심 연관성 척도는 코사인 유사도이다. 실제 벡터 연산을 위해서는 NumPy와 SciPy 패키지가 유용하다. [gensim PyPI](https://pypi.python.org/pypi/gensim)은 이 둘을 이용하여 자연어 처리 및 정보 검색을 위한 벡터 공간 모델링을 보여준다.
 

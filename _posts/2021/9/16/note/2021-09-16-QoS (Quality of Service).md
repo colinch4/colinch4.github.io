@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# QoS (Quality of Service)
+## QoS (Quality of Service)
 
 사용자 또는 어플리케이션에 대해 중요도에 따라 서비스 수준을 차등화하여 한정된 WAN 대역폭에서 트래픽과 대역폭을 정책적으로 관리하는 제반 기술 및 개념을 말한다.
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Greedy Algorithm
+## Greedy Algorithm
 
 미래를 내다보지 않고, 당장 눈 앞에 보이는 최적의 선택을 하는 방식
 
@@ -69,7 +69,7 @@ def min_fee(pages_to_print):
     return result
 
 
-# 테스트
+## 테스트
 print(min_fee([6, 11, 4, 1]))
 print(min_fee([3, 2, 1]))
 ```
@@ -108,7 +108,7 @@ def course_selection(course_list):
 
     return result
 
-# 테스트
+## 테스트
 print(course_selection([(6, 10), (2, 3), (4, 5), (1, 7), (6, 8), (9, 10)]))
 print(course_selection([(1, 2), (3, 4), (0, 6), (5, 7), (8, 9), (5, 9)]))
 print(course_selection([(4, 7), (2, 5), (1, 3), (8, 10), (5, 9), (2, 5), (13, 16), (9, 11), (1, 8)]))

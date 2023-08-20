@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# JS와 브라우저
+## JS와 브라우저
 ## 브라우저의 기본 구조
 1. UI
 2. 브라우저 엔진

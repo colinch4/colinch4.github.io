@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 호출 규약(Calling Convention)
+## 호출 규약(Calling Convention)
 
 => 호출 규약은 **함수를 호출하는 방식에 대한 약속**이다. 인수는 어떻게 전달하고 리턴값은 어떻게 반환하며 함수 호출을 위해 사용한 메모리는 누가 정리할 것인가를 규정한다.<br> 
 

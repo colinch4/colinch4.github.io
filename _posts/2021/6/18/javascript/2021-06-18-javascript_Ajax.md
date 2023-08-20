@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# JS - 비동기처리
+## JS - 비동기처리
 
 > - 자바스크립트는 싱글쓰레드이다?
 >   - 브라우저가 싱글쓰레드이다. ( Tab 단위 )
@@ -83,16 +83,16 @@ json 등장 이전에는 xml 이 가장 널리 사용되어서 관습적으로 �
 **:cupid: 설치**
 
 ```shell
-# npm
+## npm
 $ npm install axios
 
-# bower
+## bower
 $ bower install axios
 
-# yarn
+## yarn
 $ yarn add axios
 
-# CDN
+## CDN
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 ```
 

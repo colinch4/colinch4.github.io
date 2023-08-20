@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Crashlytics 
+## Crashlytics 
 ## 사용법
 1. 앱등록
 - 앱 번들 아이디, 앱 이름(선택), 앱스토어 아이디(선택) 등 입력

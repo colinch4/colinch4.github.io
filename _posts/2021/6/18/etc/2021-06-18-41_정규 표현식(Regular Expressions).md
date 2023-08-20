@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 정규 표현식 (Regular Expressions)
+## 정규 표현식 (Regular Expressions)
 
 > - **정규식 (Regex 또는 Regexp)** 이란?
 >   - 특정 검색 패턴(ASCII 또는 Unicode 문자의 시퀀스)에 대한 하나 이상의 일치 항목을 검색
@@ -67,7 +67,7 @@ for line in data.split("\n"):
     result.append(" ".join(word_result))
 print("\n".join(result))
 
-# 결과값:
+## 결과값:
 park 800905-*******
 kim  700905-*******
 ```
@@ -87,7 +87,7 @@ kim  700905-1059119
 pat = re.compile("(\d{6})[-]\d{7}")
 print(pat.sub("\g<1>-*******", data))
 
-# 결과값:
+## 결과값:
 park 800905-*******
 kim  700905-*******
 ```

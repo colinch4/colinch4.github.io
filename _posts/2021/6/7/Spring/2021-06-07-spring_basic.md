@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🌱 Spring 프레임워크 기초
+## 🌱 Spring 프레임워크 기초
 
 <br >
 

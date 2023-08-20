@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# IntelliJ Commands
+## IntelliJ Commands
 IntelliJ 명령어 모음  
 Key Map : macOS
 

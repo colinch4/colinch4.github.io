@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Design System Handbook
+## Design System Handbook
 
 ## Designing your design system
 

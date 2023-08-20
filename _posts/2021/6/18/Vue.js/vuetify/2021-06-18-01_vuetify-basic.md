@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Vuetify
+## Vuetify
 
 > Vue.js 에서 사용하는 `Bootstrap4` 같은 `UI 프레임워크` 라고 생각하면 편하다..
 >

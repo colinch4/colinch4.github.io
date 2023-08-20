@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Function Declration(함수선언) & Function Expressions(함수표현)
+## Function Declration(함수선언) & Function Expressions(함수표현)
 
 함수는 독립적으로 분리된 로직으로서 프로그램 수준에서 미리 정의되어 있거나 사용자정의에 의해 만들어진 실행단위를 일컫는 말이다. 함수는  `Function` 키워드를 통해 정의될 수 있다.
 
@@ -112,7 +112,7 @@ var foo = function AFunc(){
 
 
 
-# 호이스팅(Hoisting)
+## 호이스팅(Hoisting)
 
 > 인터프리터가 자바스크립트 코드를 해석할 때 Global 영역에 있는 코드블럭을 최상의 Scope로 끌어올리는 것. 
 
@@ -184,7 +184,7 @@ foo();
 
 
 
-# 내부 함수 / 함수를 리턴하는 함수
+## 내부 함수 / 함수를 리턴하는 함수
 
 
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Scheduling
+## Scheduling
 Scheduling 을 통해 CPU를 효율적으로 사용할 수 있다.  
 
 ### Table of Contents

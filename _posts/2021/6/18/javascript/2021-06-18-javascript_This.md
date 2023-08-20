@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# javscript => This
+## javscript => This
 
 > - JS 는 OOP 언어이다? 객체 지향 언어 (O)
 > - this => 무조건 '어떤' object 를 지칭

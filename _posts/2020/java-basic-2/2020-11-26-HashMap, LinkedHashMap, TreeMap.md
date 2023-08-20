@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# HashMap  
+## HashMap  
 
 데이터를 키와 값의 페어로 저장  
 

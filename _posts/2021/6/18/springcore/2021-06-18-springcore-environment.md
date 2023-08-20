@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Environment
+## Environment
 - applicationContext가 BeanFactory 역할만 하는 것은 아님
 - 다른 것 중 하나가 EnvironmentCapable
 - Environment는 프로파일과 프로퍼티를 다루는 인터페이스

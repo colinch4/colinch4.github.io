@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 코멘트 / 디버깅
+## 코멘트 / 디버깅
 
 Debug = 문제 해결
 

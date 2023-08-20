@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Cold Observable
+## Cold Observable
   
   
   Observable을 선언하고 just, fromIterable 함수를 호출해도 옵서버가 subscribe함수를 호출하지 않으면
@@ -21,7 +21,7 @@ share: true
   Cold Observable이다. 
   
   
-# Hot Observable
+## Hot Observable
   
   
   (= Connectable Observable)

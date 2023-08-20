@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Html 과 CSS를 이용하여 Messenger Website를 만들면서 배운 것들
+## Html 과 CSS를 이용하여 Messenger Website를 만들면서 배운 것들
 
 ## .gitignore
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# hashChange, pushState 차이
+## hashChange, pushState 차이
 
 웹팩으로 SPA 프로젝트를 만드는 과정에서 라우터를 구성할 때 hashChange, pushState 중 어떤 것을 사용할지 고민하다가 정리해보려고 한다.
 

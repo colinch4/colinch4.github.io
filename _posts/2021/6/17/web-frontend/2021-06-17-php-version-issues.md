@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# PHP 버전 이슈
+## PHP 버전 이슈
 
 ## 악명 높은 php
 

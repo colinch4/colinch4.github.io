@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# vscode 단축키 오류 해결하기
+## vscode 단축키 오류 해결하기
 
 현재 커서가 있는 한 줄을 선택하는 단축키가 분명히 있을 것 같았다. vscode shortcut select line... 와 같은 검색어로 서칭했을 때 아래와 같은 결과가 나온다.
 

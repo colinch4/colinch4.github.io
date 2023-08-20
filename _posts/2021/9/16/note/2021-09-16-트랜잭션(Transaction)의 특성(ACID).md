@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 트랜잭션(Transaction)의 특성(ACID)
+## 트랜잭션(Transaction)의 특성(ACID)
 
 트랜잭션 : 여러 개의 오퍼레이션을 하나의 작업 단위로 묶어 주는 것
 

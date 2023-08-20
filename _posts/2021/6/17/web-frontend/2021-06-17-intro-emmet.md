@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Emmet를 배우자
+## Emmet를 배우자
 
 ## 배경
 

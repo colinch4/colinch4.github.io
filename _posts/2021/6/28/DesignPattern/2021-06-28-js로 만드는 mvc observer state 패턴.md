@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# js로 만드는 mvc+observer+state 패턴
+## js로 만드는 mvc+observer+state 패턴
 
 일련의 규칙에 따라 객체의 상태를 변화시켜 객체가 할 수 있는 행위를 바꾸는 패턴이다.
 

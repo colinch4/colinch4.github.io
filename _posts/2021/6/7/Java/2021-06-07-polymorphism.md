@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 👯‍♂️ Polymorphism 다형성
+## 👯‍♂️ Polymorphism 다형성
 
 > 다양한 객체를 동일한 사용방법으로 접근할 수 있는 것
 > 동일한 방식으로 다양한 실행 결과를 얻어낼 수 있다.

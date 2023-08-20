@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 어간 추출(stemming), 표제어 추출(lemmatization)"
+title: "[파이썬] 어간 추출(stemming), 표제어 추출(lemmatization)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 어간 추출(stemming), 표제어 추출(lemmatization)
+## 어간 추출(stemming), 표제어 추출(lemmatization)
 
 위 두개는 서로 다른 언어들이지만 하나로 일반화 할 수 있으면 일반화하자는 의의, 
 

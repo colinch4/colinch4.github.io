@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Javascript Theory
+## Javascript Theory
 
 > Nomad Coders 바닐라JS강의를 들으면서 학습한 내용입니다.
 

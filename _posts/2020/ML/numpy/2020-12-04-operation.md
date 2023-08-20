@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# ndarray의 연산
+## ndarray의 연산
 
 > 사칙연산, 행렬곱, 전치행렬을 알아본다.
 

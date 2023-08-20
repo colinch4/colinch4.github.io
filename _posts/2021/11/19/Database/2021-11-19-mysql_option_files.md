@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# MySQL Option Files  
+## MySQL Option Files  
 > Connection Parameters 입력 자동화 하기  
 
 MySQL DB 사용시 입력하게 되는 연결 파라미터를 매번 수동으로 입력하는 수고를 덜어줄 수 있다.  
@@ -31,14 +31,14 @@ MySQL 의 Option File 명칭은 `my.cnf` 이다.
 ### Example  
 `key:value` 형태로 적어준다.  
 ```shell
-# Default Homebrew MySQL server config
+## Default Homebrew MySQL server config
 
 [mysqld]
-# Only allow connections from localhost
+## Only allow connections from localhost
 bind-address = 127.0.0.1
 mysqlx-bind-address = 127.0.0.1
 
-# personal setup
+## personal setup
 [client]
 host=xxx.x.x.x
 user=XOXO

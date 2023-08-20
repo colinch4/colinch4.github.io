@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 데이터 유형과 리터럴
+## 데이터 유형과 리터럴
 
 데이터 유형(Data Types): JavaScript 변수에 할당/참조 가능한 값
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Bootstrap 테마 설정
+## Bootstrap 테마 설정
 
 테마와 구성 요소의 변경을 쉽게 하기 위한 글로벌 스타일 설정이 가능합니다. 새로운 빌트인 Sass 변수를 사용하여 Bootstrap 4를 정의하세요.
 

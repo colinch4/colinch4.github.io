@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# AI, ML, DL 분류
+## AI, ML, DL 분류
 
 > AI, Machine Learning, Deep Learning 과 관련한 용어들을 정리한다.
 

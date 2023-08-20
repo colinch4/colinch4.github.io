@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 상속(inheritance)
+## 상속(inheritance)
 
 ### 상속(inheritance)이란?
 

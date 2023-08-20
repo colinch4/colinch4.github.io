@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 웹서버에서 디렉토리 보이는 것 감추기
+## 웹서버에서 디렉토리 보이는 것 감추기
 
 apache 설정파일에서 Indexes 옵션을 지우고, apache를 다시 시작한다.
 

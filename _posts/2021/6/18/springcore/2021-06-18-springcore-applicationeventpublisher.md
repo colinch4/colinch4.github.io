@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# ApplicationEventPublisher
+## ApplicationEventPublisher
 
 - 이벤트 기반 프로그래밍에 필요한 인터페이스 제공
 - 옵저버 패턴의 구현체

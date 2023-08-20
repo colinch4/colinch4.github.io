@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# NavigationBar 설정
+## NavigationBar 설정
 
 **네비게이션바 숨기기**   
 ![f1](https://user-images.githubusercontent.com/45002556/108619393-ebb6a080-7467-11eb-92d0-fa3bdbcd4161.png)

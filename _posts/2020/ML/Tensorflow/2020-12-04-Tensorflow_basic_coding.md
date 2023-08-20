@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Tensorflow 기본 프로그래밍
+## Tensorflow 기본 프로그래밍
 
 >**TF2.x**의 기본 구현 방법에 대해서 알아본다.
 
@@ -17,7 +17,7 @@ share: true
 ```python
 import tensorflow as tf
 print(tf.__version__)
-# 2.1.0
+## 2.1.0
 ```
 
 
@@ -27,9 +27,9 @@ print(tf.__version__)
 ```python
 random = tf.random.normal([1], dtype=tf.float32)
 print(random)
-# tf.Tensor([-1.5870395], shape=(1,), dtype=float32)
+## tf.Tensor([-1.5870395], shape=(1,), dtype=float32)
 print(random.numpy())
-# [-1.5870395]
+## [-1.5870395]
 ```
 
 
@@ -42,9 +42,9 @@ b = tf.constant(20, dtype=tf.float32)
 
 c = a+b
 print(c)
-# tf.Tensor(30.0, shape=(), dtype=float32)
+## tf.Tensor(30.0, shape=(), dtype=float32)
 print(c.numpy())
-# 30.0
+## 30.0
 ```
 
 
@@ -66,7 +66,7 @@ print((a+tensor_d).numpy()) # 40
 ```python
 w = tf.Variable(tf.random.normal([1]), name='weight')
 print(w.numpy())
-# [0.966355]
+## [0.966355]
 ```
 
 

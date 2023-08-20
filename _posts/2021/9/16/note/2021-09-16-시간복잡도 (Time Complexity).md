@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 시간복잡도 (Time Complexity)
+## 시간복잡도 (Time Complexity)
 
 - 작성한 코드가 시간이 얼마나 걸리는지 나타내는 방법
 - 표기법으로는 Big O Notation

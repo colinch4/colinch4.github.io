@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 나이브 베이즈(Naive Bayes)"
+title: "[파이썬] 나이브 베이즈(Naive Bayes)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 나이브 베이즈(Naive Bayes)
+## 나이브 베이즈(Naive Bayes)
 
 - 베이지안 기법을 사용해 발전한 분류 방법임
 - 베이즈 정리는 먼저 알아야함

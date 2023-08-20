@@ -10,7 +10,7 @@ comments: true
 share: true
 ---
 
-# Introduction
+## Introduction
 
 A little over two years ago, I was working on  [Android for Beginners](https://www.udacity.com/course/android-development-for-beginners--ud837); a class that takes students from zero programming to their first Android app. As part of the course, students build a very simple one screen app called  [Court-Counter](https://github.com/udacity/Court-Counter).
 
@@ -34,7 +34,7 @@ This post is the first in a series exploring the ins and outs of ViewModel. In t
 -   Solve the rotation issue by changing the Court-Counter code to use a ViewModel
 -   Take a closer look at ViewModel and UI Component association
 
-# The underlying problem
+## The underlying problem
 
 The underlying challenge is that the  [Android Activity lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle.html)  has a lot of states and a single Activity might cycle through these different states many times due to configuration changes.
 
@@ -54,7 +54,7 @@ In the diagram below, you can see the lifecycle of an Activity which undergoes a
 
 The ViewModel exists from when the you first request a ViewModel (usually in the  `onCreate`  the Activity) until the Activity is finished and destroyed.  `onCreate`  may be called several times during the life of an Activity, such as when the app is rotated, but the ViewModel survives throughout.
 
-# A very simple example
+## A very simple example
 
 There are three steps to setting up and using a ViewModel:
 
@@ -92,7 +92,7 @@ To access or change UI data, you can now use the data in your ViewModel. Here’
 
 **Pro tip:**  ViewModel also works very nicely with another Architecture Component,  [LiveData](https://developer.android.com/reference/android/arch/lifecycle/LiveData.html), which I won’t be exploring deeply in this series. The added bonus here of using LiveData is that it’s observable: it can trigger UI updates when the data changes. You can learn more about LiveData  [here](https://developer.android.com/topic/libraries/architecture/livedata.html).
 
-# A closer look at  `ViewModelsProviders.of`
+## A closer look at  `ViewModelsProviders.of`
 
 The first time the  `[ViewModelProviders.of](https://developer.android.com/reference/android/arch/lifecycle/ViewModelProviders.html#of(android.support.v4.app.Fragment))`  method is called by MainActivity, it creates a new ViewModel instance. When this method is called again, which happens whenever  `onCreate`  is called, it will return the pre-existing ViewModel associated with the specific Court-Counter MainActivity. This is what preserves the data.
 
@@ -112,7 +112,7 @@ All of this logic is done for you by calling  `ViewModelProviders.of(<Your UI co
 
 **A final thought**: ViewModels are very nifty for separating out your UI controller code from the data which fills your UI. That said, they are not a cure all for data persistence and saving app state. In the next post I’ll explore the subtler interactions of the Activity lifecycle with ViewModels and how ViewModels compare to  `onSaveInstanceState`.
 
-# Conclusion and further learning
+## Conclusion and further learning
 
 In this post, I explored the very basics of the new ViewModel class. The key takeaways are:
 

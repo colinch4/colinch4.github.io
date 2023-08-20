@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] Jupyter"
+title: "[파이썬] Jupyter"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Jupyter
+## Jupyter
 
 IPython에서 notebook기능이 강화되면서 단일 프로젝트로 독립한 형태
 .ipynb 확장자를 갖으며, 데이터 사이언스 분야의 연구를 수행하기에 적합한 환경을 제공해준다.

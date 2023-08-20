@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 기본 DataFrame row
+## 기본 DataFrame row
 
 > Dataframe의 `row`와 `column` 처리 방법에는 어느정도 차이가 존재한다. 
 

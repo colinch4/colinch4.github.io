@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# iTerm2로 강력한 터미널 설정하기
+## iTerm2로 강력한 터미널 설정하기
 
 터미널을 좀더 편리하고 강력하게 사용하기 위해 iterm2와 homebrew, zsh(Z Shell), oh-my-zsh을 설치하고 사용한다.
 

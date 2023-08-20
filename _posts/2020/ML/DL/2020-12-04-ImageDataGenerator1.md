@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# ImageDataGenerator1의 사용(개와 고양이)
+## ImageDataGenerator1의 사용(개와 고양이)
 
 > TF2.X 에서 이미지 증식을 위해서 사용하는 ImageDataGenerator를 간단히 알아보고 image를 확인해 본다.
 
@@ -37,10 +37,10 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 train_dir      = './data/cat_dog_full/train'
 validation_dir = './data/cat_dog_full/validation'
 
-# 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
-# 댕댕이 이미지 train      : 7,000장
-# 댕댕이 이미지 validation : 3,000장
-# 댕댕이 이미지 test       : 2,500장
+## 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
+## 댕댕이 이미지 train      : 7,000장
+## 댕댕이 이미지 validation : 3,000장
+## 댕댕이 이미지 test       : 2,500장
 ```
 
 
@@ -134,7 +134,7 @@ x = image.img_to_array(img)
 print('x_shape : ',x.shape)  # x_shape :  (150, 150, 3)
 print('x_type : ',type(x))   # x_type :  <class 'numpy.ndarray'>
 print(x.dtype)               # float32
-# plt.imshow(x) : error 발생, 원인 : imshow는 0-1 float 또는 0-255 int 값을 input값으로 받음
+## plt.imshow(x) : error 발생, 원인 : imshow는 0-1 float 또는 0-255 int 값을 input값으로 받음
 plt.imshow(np.unit8(x))
 plt.show()
 

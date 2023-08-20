@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Status & Log
+## Status & Log
 
 ## Git Status
 status 는 깃의 파일에 대한 상태를 보기 위한 것이다.

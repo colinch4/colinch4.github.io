@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Sketch Keyboard Shortcuts
+## Sketch Keyboard Shortcuts
 
 ## 단축키 커스텀하기
 

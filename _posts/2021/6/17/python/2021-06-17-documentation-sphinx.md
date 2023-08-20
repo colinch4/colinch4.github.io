@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] Sphinx를 이용하여 파이썬 코드 문서화하기"
+title: "[파이썬] Sphinx를 이용하여 파이썬 코드 문서화하기"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Sphinx를 이용하여 파이썬 코드 문서화하기
+## Sphinx를 이용하여 파이썬 코드 문서화하기
 
 [이 링크](https://tech.ssut.me/start-python-documentation-using-sphinx/)를 참조하자. 스핑크스의 간단한 사용법과 함께 깃헙 페이지 셋팅하는 방법도 같이 기술되어 있다.
 
@@ -20,8 +20,8 @@ $ git init
 $ git add -A
 $ git commit -m "Deploy"
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+## if you are deploying to https://<USERNAME>.github.io/<REPO>
+## git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 ```
 
 ## 히스토리

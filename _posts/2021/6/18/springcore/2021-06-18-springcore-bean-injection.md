@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 빈 주입 방법
+## 빈 주입 방법
 - 빈 주입 방법 2가지
 	- @Autowired
 	- setter 주입

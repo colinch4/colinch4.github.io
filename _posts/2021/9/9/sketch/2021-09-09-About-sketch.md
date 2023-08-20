@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# About sketch
+## About sketch
 
 Adobe Photoshop에서 Sketch로 전환하는데 필요한 내용을 정리합니다. 비용, 두 응용 프로그램 간의 주요 차이점 및 변경에 대한 장단점에 대해 설명합니다.
 

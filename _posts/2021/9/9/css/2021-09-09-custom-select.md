@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 셀렉트박스 커스텀하기
+## 셀렉트박스 커스텀하기
 
 [Codepen 예제](https://codepen.io/onlyeon/pen/RwWWWWW)
 

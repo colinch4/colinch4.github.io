@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# @Autowired vs @Inject vs @Resource
+## @Autowired vs @Inject vs @Resource
 
 > 공통점은 의존 주입
 

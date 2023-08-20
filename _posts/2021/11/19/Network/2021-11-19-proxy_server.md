@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Proxy Server
+## Proxy Server
 서버와 클라이언트의 연결을 중계해 주는 서버
 
 ### Table of Contents

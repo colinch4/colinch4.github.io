@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# aspect ratio image
+## aspect ratio image
 이미지를 특정 비율로 만드는 방법.
 
 padding과 margin property는 `%` 값이  containing block의 `width`에 의해서 계산된다.

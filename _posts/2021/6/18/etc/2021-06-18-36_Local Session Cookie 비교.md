@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Local & Cookie & Session 비교
+## Local & Cookie & Session 비교
 
 > - ref
 >   - [1. 쿠키 vs 로컬스토리지 vs 세션스토리지](https://kadamon.tistory.com/8)

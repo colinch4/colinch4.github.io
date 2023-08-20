@@ -12,7 +12,7 @@ share: true
 ---
 
 
-# Introduction
+## Introduction
 
 In the  [last blog post](https://medium.com/google-developers/viewmodels-a-simple-example-ed5ac416317e)  I explored a simple use case with the new  [ViewModel](https://developer.android.com/reference/android/arch/lifecycle/ViewModel.html)  class for saving basketball score data during a configuration change. ViewModels are designed to hold and manage UI-related data in a life-cycle conscious way. ViewModels allow data to survive configuration changes such as screen rotations.
 
@@ -25,7 +25,7 @@ At this point, you might have a few questions about the breadth of what ViewMode
 
 **UPDATED 5/15/2019 for the new ViewModel Saved State module.** Note that the section “How do I use ViewModels to save and restore UI state efficiently?” has an update at the top for the  [ViewModel Saved State module](https://developer.android.com/topic/libraries/architecture/viewmodel-savedstate)  currently in alpha.
 
-# Do ViewModels persist my data?
+## Do ViewModels persist my data?
 
 **TL;DR No.** Persist as normal!
 
@@ -41,7 +41,7 @@ Data used over multiple runs of the application should be persisted like normal 
 
 As a reminder, when an app processes is stopped due to resource constraints, it’s stopped without ceremony and  **no additional lifecycle callbacks are called.** This means that you can’t rely on  `[onDestroy](https://developer.android.com/reference/android/app/Activity.html#onDestroy())`  being called. You  **do not**  have a chance to persist data at the time of process shutdown. Therefore, if you want to be the  _most_  sure that you won’t lose data, persist it as soon as the user enters it. This means that even if your app process is shut down due to resource constraints or if the device runs out of battery, the data will be saved. If you’re willing to concede losing data in instances of sudden device shutdown, you can save the data in the  `[onStop()](https://developer.android.com/reference/android/app/Activity.html#onStop())`  callback**,** which happens right as the activity is going into the background.
 
-# Are ViewModels a replacement for onSaveInstanceState?
+## Are ViewModels a replacement for onSaveInstanceState?
 
 **TL;DR No,** but they are related so keep reading.
 
@@ -72,7 +72,7 @@ ViewModels and  `onSaveInstanceState()`  address UI data in very different ways.
 -   `onSaveInstanceState()`  is designed to save a small amount of transient data, but not complex lists of objects or media data. **A ViewModel can delegate the loading of complex data and also act as temporary storage once this data is loaded**.
 -   `onSaveInstanceState()`  is called during configuration changes and when the activity goes into the background; in both of these cases you actually do  **not**  need to reload or process the data if you keep it in a ViewModel.
 
-# How do I use ViewModels to save and restore UI state efficiently?
+## How do I use ViewModels to save and restore UI state efficiently?
 
 ----------
 
@@ -149,7 +149,7 @@ Additionally, when you open an activity from an intent, the bundle of extras is 
 
 In both of these scenarios, though, you’d still use a ViewModel to avoid wasting cycles reloading data from the database during a configuration change!
 
-# Are ViewModels a replacement for Loaders?
+## Are ViewModels a replacement for Loaders?
 
 **TL;DR.**  Yes, ViewModels used in conjunction with a few other classes can replace Loaders.
 
@@ -176,7 +176,7 @@ There are a few approaches to using ViewModels and LiveData to load data:
 
 > “Repository modules are responsible for handling data operations. They provide a clean API to the rest of the app. They know where to get the data from and what API calls to make when data is updated. You can consider them as mediators between different data sources (persistent model, web service, cache, etc.).” —  [Guide to App Architecture](https://developer.android.com/topic/libraries/architecture/guide.html#fetching_data)
 
-# Conclusion and further learning
+## Conclusion and further learning
 
 In this post, I answered a few questions about what the ViewModel class is and what it’s not. The key takeaways are:
 

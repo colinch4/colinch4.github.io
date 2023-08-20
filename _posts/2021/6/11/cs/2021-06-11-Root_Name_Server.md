@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Root Name Server
+## Root Name Server
 
 * Root Name Server 는 **교통정리**를 한다. 
 <br>=> 쿼리가 오면 자기가 하는 것(Do Not Resolution)이 아니라, 쿼리를 알것 같은 TLD 서버에 연결해준다.  ( TLD 서버의 주소를 알려주거나(iterative) 자신이 TLD에 쿼리 메시지를 날리거나(recursive))

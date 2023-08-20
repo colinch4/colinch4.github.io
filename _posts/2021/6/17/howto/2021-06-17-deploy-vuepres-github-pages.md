@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Vuepress와 GitHub Pages로 웹 호스팅하기
+## Vuepress와 GitHub Pages로 웹 호스팅하기
 
 지인의 권유로 TIL 저장소를 조금 더 보기 편하게 웹페이지로 전환하는 작업을 수행하였고, 이 과정을 다시 글로 남긴다.
 
@@ -72,9 +72,9 @@ GitHub Actions를 이용하면, 앞서 수작업으로 `build.bat`를 실행해�
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
-# You will get 2 files:
-#   gh-pages.pub (public key)
-#   gh-pages     (private key)
+## You will get 2 files:
+##   gh-pages.pub (public key)
+##   gh-pages     (private key)
 ```
 
 프로젝트 저장소로 가서, 저장소 설정으로 가면 배포키와 보안문자열을 저장할 수 있다.

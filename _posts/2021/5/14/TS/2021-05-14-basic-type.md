@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Type
+## Type
 - 기본 타입
 - 함수
 ##  함수

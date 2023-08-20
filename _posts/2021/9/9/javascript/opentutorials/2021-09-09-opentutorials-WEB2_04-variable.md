@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# **변수와 대입 연산자**
+## **변수와 대입 연산자**
 
 변수: variable
 

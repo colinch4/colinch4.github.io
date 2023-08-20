@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Structs and mutation in Swift
+## Structs and mutation in Swift
 
 > 번역본 입니다. 
 

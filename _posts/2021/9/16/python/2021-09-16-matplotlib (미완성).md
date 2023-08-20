@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] matplotlib"
+title: "[파이썬] matplotlib"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# matplotlib
+## matplotlib
 
 ```python
 import pandas as pd

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Data Types
+## Data Types
 Go의 자료형에 대하여.
 
 ### Table of Contents

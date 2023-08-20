@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Tensorflow 기초
+## Tensorflow 기초
 
 > 제일 먼저 Tensorflow를 이용한 **Linear Regression** 구현에 목표를 둔다.  
 >
@@ -51,9 +51,9 @@ node = tf.constant('Hello World')
 
 sess = tf.Session()
 print(sess.run(node))
-# b'Hello World'
+## b'Hello World'
 print(sess.run(node).decode())
-# Hello World
+## Hello World
 ```
 
 * 10+20 덧셈 연산
@@ -68,7 +68,7 @@ node3 = node1 + node2
 
 sess = tf.Session()
 print(sess.run(node3))
-# 30.0
+## 30.0
 ```
 
 
@@ -89,7 +89,7 @@ node3 = node1 + node2
 
 sess = tf.Session()
 print(sess.run(node3, feed_dict={node1:10, node2:20}))
-# 30.0
+## 30.0
 ```
 
 
@@ -111,8 +111,8 @@ node = tf.constant([[2., 3.], [4., 4.]])
 
 sess = tf.Session()
 print(sess.run(node))
-# [[2. 3.]
-#  [4. 4.]]
+## [[2. 3.]
+##  [4. 4.]]
 
 print(sess.run(tf.reduce_mean(node)))    # 3.25
 print(sess.run(tf.reduce_mean(node, 0))) # [3.  3.5]
@@ -133,7 +133,7 @@ node2 = tf.square(node1)
 
 sess = tf.Session()
 print(sess.run(node2))
-# [ 1  4  9 16]
+## [ 1  4  9 16]
 ```
 
 
@@ -152,7 +152,7 @@ C = tf.matmul(A,B)
 
 sess = tf.Session()
 print(sess.run(C))
-# [[ 3  3  3]
-#  [ 9 12 15]]
+## [[ 3  3  3]
+##  [ 9 12 15]]
 ```
 

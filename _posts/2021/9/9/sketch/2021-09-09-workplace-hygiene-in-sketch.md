@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 스케치 작업 환경 설정하기
+## 스케치 작업 환경 설정하기
 
 [원문보기](https://uxdesign.cc/workplace-hygiene-in-sketch-dc8184c0dc8f)
 

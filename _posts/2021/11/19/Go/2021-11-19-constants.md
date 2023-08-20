@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Constants
+## Constants
 Go 에서 상수를 선언할 때는 <code>const</code> 키워드를 사용한다.  
 상수 명명 규칙은 변수와 동일하다. 다른점이라면 상수는 선언과 초기화를 함께 해야 한다는 것이다.  
 

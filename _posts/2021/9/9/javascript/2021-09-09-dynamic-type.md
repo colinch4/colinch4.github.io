@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 동적 형 지정 / 자동 형 변환
+## 동적 형 지정 / 자동 형 변환
 
 ## JavaScript 데이터 유형 변환
 

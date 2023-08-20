@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Setup environment  
+## Setup environment  
 Go 컴파일러를 설치해보자. (for Mac User)
 ## Install Go
 download link : https://golang.org/dl/  

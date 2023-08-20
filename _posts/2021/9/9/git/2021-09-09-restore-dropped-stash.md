@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# git stash drop 으로 사라진 변경사항 복구하기
+## git stash drop 으로 사라진 변경사항 복구하기
 
 비가 오고 싱숭생숭한 기분으로 stash 해둔 내용을 `git stash drop` 시켰을 때! 앞이 캄캄해져 다시 작업 해야하나 파일을 뒤적이다가 git stash drop 복구하기를 구글링했다. 천만 다행으로 drop 된 내용을 다시 복구하는 방법을 찾았다.
 

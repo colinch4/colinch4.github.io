@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DNS Overview 
+## DNS Overview 
 
 > 도메인이란 ? 
 

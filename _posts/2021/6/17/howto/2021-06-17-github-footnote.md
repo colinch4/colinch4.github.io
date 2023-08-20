@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Github에서 각주 넣기
+## Github에서 각주 넣기
 
 ## 배경
 

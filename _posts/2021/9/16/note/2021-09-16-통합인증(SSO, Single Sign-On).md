@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 통합인증(SSO, Single Sign-On)
+## 통합인증(SSO, Single Sign-On)
 
 한 번의 인증 과정으로 여러 컴퓨터 상의 자원을 이용 가능하게 하는 인증 기능이다. 
 

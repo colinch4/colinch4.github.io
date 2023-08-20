@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🥎 Collection Framework 컬렉션 프레임워크 🏈
+## 🥎 Collection Framework 컬렉션 프레임워크 🏈
 
 ## 컬렉션 프레임워크란?
 

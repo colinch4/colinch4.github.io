@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Multiple Linear Regression(3)-Sklearn
+## Multiple Linear Regression(3)-Sklearn
 
 > 앞에서 Preprocessing DataSet을 가지고 **Sklearn**를 가지고 Multiple Linear Regression 모델을 만들어 본다.
 
@@ -52,7 +52,7 @@ model.fit(x_data, t_data)
 W = model.coef_
 b = model.intercept_
 print('W : {}, b : {}'.format(W,b))
-# W : [[ 0.24999232 -0.33513494  0.71641872]], b : [0.01870675]
+## W : [[ 0.24999232 -0.33513494  0.71641872]], b : [0.01870675]
 ```
 
 
@@ -68,6 +68,6 @@ predict_data_x = scaler_x.transform(predict_data_x)
 predict_val = model.predict(predict_data_x)
 result = scaler_t.inverse_transform(predict_val)
 print(result)
-# [[10.56936901]]
+## [[10.56936901]]
 ```
 

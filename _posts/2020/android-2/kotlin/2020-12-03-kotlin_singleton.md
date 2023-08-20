@@ -156,7 +156,7 @@ public final class TempClass {
 ``` 
 
 
-# 뭐가 더 좋아?
+## 뭐가 더 좋아?
 
 음.. 결론 부터 얘기하면 Object가  미세하지만 더 좋다.
 

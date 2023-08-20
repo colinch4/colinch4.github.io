@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# ImageDataGenerator2의 사용(개와 고양이)
+## ImageDataGenerator2의 사용(개와 고양이)
 
 > TF2.X 에서 이미지 증식을 위해서 사용하는 ImageDataGenerator를 사용해 CNN 학습을 해본다.
 
@@ -39,10 +39,10 @@ from tensorflow.keras.optimizers import Adam
 train_dir      = './data/cat_dog_full/train'
 validation_dir = './data/cat_dog_full/validation'
 
-# 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
-# 댕댕이 이미지 train      : 7,000장
-# 댕댕이 이미지 validation : 3,000장
-# 댕댕이 이미지 test       : 2,500장
+## 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
+## 댕댕이 이미지 train      : 7,000장
+## 댕댕이 이미지 validation : 3,000장
+## 댕댕이 이미지 test       : 2,500장
 ```
 
 
@@ -67,14 +67,14 @@ validation_datgen = ImageDataGenerator(resize=1/255)
 * `preprocessing_function` : 각 input에 적용되는 함수이다. 이미지가 크기 재조절 되고 증강된 후에 함수가 작동한다.
 
 ```python
-# flow_from_directory 사용
+## flow_from_directory 사용
 train_generator = train_datagen.flow_from_directory(train_dir,
                                                     classes=['cats', 'dogs'],
                                                     target_size = (150, 150),
                                                     batch_size = 20,
                                                     class_mode = 'binary'
                                                    )
-# validation도 비슷하게 입력한다.
+## validation도 비슷하게 입력한다.
 validation_generator = validation_datagen.flow_from_directory(validataion_dir,
                                                              classes=['cats', 'dogs'],
                                                              target_size = (150, 150),

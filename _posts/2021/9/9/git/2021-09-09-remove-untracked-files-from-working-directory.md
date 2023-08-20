@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Git에서 Untracked 상태인 파일 삭제하기
+## Git에서 Untracked 상태인 파일 삭제하기
 
 프로젝트를 진행하다보면 워킹 디렉토리에 Git에서 관리하지 않을 파일들이 생성된다. 저장소에 넣고 버전 관리 할 필요가 없는 build된 CSS파일이나(내가 진행하는 프로젝트는 배포시에 최종 빌드된 CSS만 버전을 관리하기 때문에), 테스트용 이미지등이 생긴다. 이런 파일들은 `git checkout <file path>`로도 지워지지 않는 Untracked 상태이다.
 

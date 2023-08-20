@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 안드로이드 - MediaStore
+## 안드로이드 - MediaStore
 
 
 

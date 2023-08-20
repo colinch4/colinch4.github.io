@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# javascript
+## javascript
 
 > - VScode 에서 js 파일 실행시키기
 >   - `pip install node`
@@ -178,11 +178,11 @@ liTag.innerHTML // Hello world
 liTag.classList // ['my', 'new', 'class', 'here']
 liTag.classList.add('hihi') // ['my', 'new', 'class', 'here', 'hihi']
 
-# 수정
+## 수정
 liTag.innerText = "B"
 liTag.innerHTML // B
 
-# 생성
+## 생성
 
 ```
 

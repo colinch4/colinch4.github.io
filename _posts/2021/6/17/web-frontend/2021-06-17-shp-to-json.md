@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Shape file 웹페이지에 띄우기
+## Shape file 웹페이지에 띄우기
 
 d3 라이브러리를 이용하여 지도를 띄우기 위해서는 shape 파일을 json 파일로 변환할 필요가 있다.
 본인은 topoJson 라이브러리를 이용하여 작성하였으므로, topoJson 파일로 변환하였다.

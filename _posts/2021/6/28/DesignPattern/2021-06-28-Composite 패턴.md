@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Composite 패턴
+## Composite 패턴
 
 컴포지트의 의미는 일부 또는 그룹을 표현하는 객체들을 트리 구조로 구성하여 관계를 표현한다는 의미이다.
 

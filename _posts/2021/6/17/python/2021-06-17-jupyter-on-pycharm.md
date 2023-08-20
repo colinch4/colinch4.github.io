@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[python] PyCharm를 이용해서 Jupyter 노트북 만들기"
+title: "[파이썬] PyCharm를 이용해서 Jupyter 노트북 만들기"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
 
-# PyCharm를 이용해서 Jupyter 노트북 만들기
+## PyCharm를 이용해서 Jupyter 노트북 만들기
 
 ## 업데이트
 

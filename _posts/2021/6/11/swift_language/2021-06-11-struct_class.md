@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# struct vs class 
+## struct vs class 
 
 ## 구조체는 언제 사용하나? 
 

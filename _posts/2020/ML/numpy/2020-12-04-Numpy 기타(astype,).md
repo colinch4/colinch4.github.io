@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Numpy 기타(astype,)
+## Numpy 기타(astype,)
 
 >  `numpy` 에 대한 나머지 사항들에 알아본다.
 

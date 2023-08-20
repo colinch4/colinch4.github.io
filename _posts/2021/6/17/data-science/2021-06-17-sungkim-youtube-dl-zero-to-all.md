@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 모두를 위한 딥러닝 강좌 시즌 1 by 김성훈 교수
+## 모두를 위한 딥러닝 강좌 시즌 1 by 김성훈 교수
 
 홍콩과기대 김성훈 교수의 [유투브 강의](https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm)를 뒤늦게 몰아보고 있다. 생각보다 훨씬 초급자 수준에 맞추어져 있어서 진입장벽이 매우 낮다고 하겠다. 영상목록의 제목처럼, 정말 "모두를 위한" 강의가 아닌가 싶다.
 

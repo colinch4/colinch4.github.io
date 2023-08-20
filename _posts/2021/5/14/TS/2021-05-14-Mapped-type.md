@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Mapped type
+## Mapped type
 ## Basic
 Mapped type 예제.
 

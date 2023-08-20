@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 집계함수
+## 집계함수
 
 > Numpy에서 제공해주는 집계함수와 이를 사용할때 필요한 axis에 대하여 서술한다.
 
@@ -48,8 +48,8 @@ share: true
 ```python
 print(arr)
 #[[1 2 3]
-# [4 5 6]
-# [7 8 9]]
+## [4 5 6]
+## [7 8 9]]
 #----------------------------------------
 print(np.sum(arr))         # 45
 print(np.sum(arr, axis=0)) # [12 15 18]
@@ -65,17 +65,17 @@ print(np.sum(arr, axis=1)) # [ 6 15 24]
 ```python
 print(arr)
 #[[1 2 3]
-# [4 5 6]
-# [7 8 9]]
+## [4 5 6]
+## [7 8 9]]
 #----------------------------------------
 print(np.cumsum(arr))             # [ 1  3  6 10 15 21 28 36 45]
 print(np.cumsum(arr, axis=0))     # [[ 1  2  3]
 								  #  [ 5  7  9]
                                   #  [12 15 18]]							
 print(np.cumsum(arr, axis=1))     
-# [[ 1  3  6]
-#  [ 4  9 15]]
-#  [ 7 15 24]]
+## [[ 1  3  6]
+##  [ 4  9 15]]
+##  [ 7 15 24]]
 ```
 
 
@@ -87,8 +87,8 @@ print(np.cumsum(arr, axis=1))
 ```python
 print(arr)
 #[[1 2 3]
-# [4 5 6]
-# [7 8 9]]
+## [4 5 6]
+## [7 8 9]]
 print(np.mean(arr))    # 5.0
 print(np.std(arr))     # 2.581988897471611
 ```
@@ -102,8 +102,8 @@ print(np.std(arr))     # 2.581988897471611
 ```python
 print(arr)
 #[[1 2 3]
-# [4 5 6]
-# [7 8 9]]
+## [4 5 6]
+## [7 8 9]]
 print(np.max(arr))          # 9
 print(np.max(arr, axis=0))  # [7 8 9]
 print(np.max(arr, axis=1))  # [3 6 9]
@@ -118,8 +118,8 @@ print(np.max(arr, axis=1))  # [3 6 9]
 ```python
 print(arr)
 #[[1 2 3]
-# [4 5 6]
-# [7 8 9]]
+## [4 5 6]
+## [7 8 9]]
 print(np.argmax(arr))         # 8
 print(np.argmax(arr, axis=0)) # [2 2 2]
 print(np.argmax(arr, axis=1)) # [2 2 2]
@@ -141,8 +141,8 @@ print(np.argmax(arr, axis=1)) # [2 2 2]
 np.random.seed(3)
 arr = np.random.randint(0,10,(2,4))
 print(arr)
-# [[8 9 3 8]
-#  [8 0 5 3]]
+## [[8 9 3 8]
+##  [8 0 5 3]]
 print(np.unique(arr))  # [0 3 5 8 9]
 ```
 

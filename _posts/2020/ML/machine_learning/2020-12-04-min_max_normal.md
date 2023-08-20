@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Min-Max Normalization
+## Min-Max Normalization
 
 >데이터가 가진 feature들의 scale이 심하게 차이나는경우 scale의 조정이 필요하다.
 >
@@ -36,12 +36,12 @@ share: true
 * data
 
 ```python
-# data
+## data
 import numpy as np
 
 data = np.array([1,2,3,4,5,6,7, 8,9, 10,11,12,13,14, 22.1])
 print(data)
-# [ 1.   2.   3.   4.   5.   6.   7.   8.   9.  10.  11.  12.  13.  14. 22.1]
+## [ 1.   2.   3.   4.   5.   6.   7.   8.   9.  10.  11.  12.  13.  14. 22.1]
 ```
 
 * scaling
@@ -52,29 +52,29 @@ from sklearn.preprocessing import MinMaxScaler()
 scaler_data = MinMaxScaler()
 scaler_data.fit(data.reshape(-1,1))  # Nx1 shape으로 바꾸어 주어야 한다.
 
-# scaler_data 정보
+## scaler_data 정보
 print(scaler_data.n_sample_seen_)    # 15
 print(scaler_data.data_min_)         # [1.]
 print(scaler_data.data_max_)         # [22.1]
 
-# scaling
+## scaling
 scaled_data = scaler_data.transform(data.reshape(-1,1))
 print(scaled_data)
-# [[0.        ]
-#  [0.04739336]
-#  [0.09478673]
-#  [0.14218009]
-#  [0.18957346]
-#  [0.23696682]
-#  [0.28436019]
-#  [0.33175355]
-#  [0.37914692]
-#  [0.42654028]
-#  [0.47393365]
-#  [0.52132701]
-#  [0.56872038]
-#  [0.61611374]
-#  [1.        ]]
+## [[0.        ]
+##  [0.04739336]
+##  [0.09478673]
+##  [0.14218009]
+##  [0.18957346]
+##  [0.23696682]
+##  [0.28436019]
+##  [0.33175355]
+##  [0.37914692]
+##  [0.42654028]
+##  [0.47393365]
+##  [0.52132701]
+##  [0.56872038]
+##  [0.61611374]
+##  [1.        ]]
 
 ```
 

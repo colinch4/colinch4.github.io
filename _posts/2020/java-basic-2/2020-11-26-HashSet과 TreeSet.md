@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# HashSet  
+## HashSet  
 
 데이터의 순서와 중복이 없는 Set . 내부적으로 해싱을 이용하여 구현됨.
 
@@ -17,12 +17,12 @@ share: true
 저장할 객체의 equals와 hashCode를 호출하여 같은 객체가 있는지 확인한다.  고로 오버라이딩 해놔야한다. 
 
 
-# LinkedHashSet  
+## LinkedHashSet  
 
 데이터의 순서가 있는 Set. 
 
   
-# TreeSet  
+## TreeSet  
   
 범위 검색과 정렬에 유리한 이진 트리로 구현됨 (레드-블랙 트리)
 
@@ -42,7 +42,7 @@ TreeSet은 문자열 검색, 자동완성 등과 같은 곳에 활용할 수 있
 
 + 중위 순회시에 오름차순으로 정렬할 수 있다.
 
-# HashSet vs TreeSet  
+## HashSet vs TreeSet  
 
 구현 방식은 각각  해싱과 이진트리이다.  
 

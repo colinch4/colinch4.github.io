@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DataFrame의 분석을 위한 함수들(1)
+## DataFrame의 분석을 위한 함수들(1)
 
 > `Pandas`에 있는 `DataFrame`에 관한 함수들에 대해서 알아본다.
 
@@ -43,27 +43,27 @@ display(df)
 
 ```python
 print(df.sum())
-# one    10.0
-# two    -5.0
-# dtype: float64
+## one    10.0
+## two    -5.0
+## dtype: float64
 ```
 
 * axis = 1
 
 ```python
 print(df.sum(axis=1))
-# one    10.0
-# two    -5.0
-# dtype: float64
+## one    10.0
+## two    -5.0
+## dtype: float64
 ```
 
 * 원하는 행의 합
 
 ```python
 print(df.iloc[1:3,:].sum(axis=1))
-# b    4.0
-# c    0.0
-# dtype: float64
+## b    4.0
+## c    0.0
+## dtype: float64
 ```
 
 
@@ -91,9 +91,9 @@ display(df)
 ```python
 df.index = pd.date_range('20200913',periods=6)
 print(df.index)
-# DatetimeIndex(['2020-09-13', '2020-09-14', '2020-09-15', '2020-09-16',
-#                '2020-09-17', '2020-09-18'],
-#               dtype='datetime64[ns]', freq='D')
+## DatetimeIndex(['2020-09-13', '2020-09-14', '2020-09-15', '2020-09-16',
+##                '2020-09-17', '2020-09-18'],
+##               dtype='datetime64[ns]', freq='D')
 ```
 
 ![image-20200913203225377](https://github.com/colinch4/colinch4.github.io/blob/master/_posts/2020/ML/markdown-images/image-20200913203225377.png?raw=true)
@@ -117,6 +117,6 @@ display(df2)
 
 ```python
 np.random.shuffle(df.index)
-# TypeError: Index does not support mutable operations
+## TypeError: Index does not support mutable operations
 ```
 

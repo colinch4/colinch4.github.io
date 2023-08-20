@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Mac OS에서 사전 사용하기
+## Mac OS에서 사전 사용하기
 
 ## 사용법
 

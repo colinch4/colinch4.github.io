@@ -10,7 +10,7 @@ share: true
 
 
 
-# VIM Commands
+## VIM Commands
 > I'am currently using 
 * VIM Editor for Python <small>(iTerm)</small>
 * IdeaVim for Golang <small>(IntellJ)</small>

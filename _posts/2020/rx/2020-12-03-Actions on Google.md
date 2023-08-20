@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Actions on Google
+## Actions on Google
 
 ## Overview
 Actions on Google은 Google assistant 기반의 대화형 앱(3rd party action)을 생성할 수 있도록 해주는 플랫폼이라고 볼 수 있음.

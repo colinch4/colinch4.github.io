@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# input tpe="search"일 경우 safari에서 스타일링 문제 해결
+## input tpe="search"일 경우 safari에서 스타일링 문제 해결
 
 `<input>` 태그에 값이 입력되면 삭제(cancel) 버튼이 자동으로 보여지기 위해 속성을 `type="search"` 로 선언했다.
 

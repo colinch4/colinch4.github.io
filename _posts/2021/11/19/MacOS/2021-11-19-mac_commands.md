@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# MacOS Commands
+## MacOS Commands
 MacOS 명령어에 대해 알아보자.
 
 <code>⌘</code>  Command  

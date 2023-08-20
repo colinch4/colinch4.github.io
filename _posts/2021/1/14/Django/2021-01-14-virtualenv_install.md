@@ -53,8 +53,8 @@ pip가 올바르게 설치되어 있는지 확인하기 위해선 다음과 같�
 
 ```shell
 $ pip -V
-# 대문자 V 이다.
-# python3의 pip의 경우 pip3 -V 라고 작성하면 된다.
+## 대문자 V 이다.
+## python3의 pip의 경우 pip3 -V 라고 작성하면 된다.
 ```
 
 
@@ -98,7 +98,7 @@ $ mkdir ~/.virtualenvs
 그리고 홈 디렉토리의 `.bashrc`나 `.zshrc`의 파일 제일 마지막에 아래 코드를 복사해 붙여넣어준다. (파일이 없다면 만들어 사용하시면 된다.)
 
 ```shell
-# python virtualenv settings
+## python virtualenv settings
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON='$(command \which python3)' # Usage of python3!!
 source /usr/local/bin/virtualenvwrapper.sh
@@ -118,15 +118,15 @@ $ find /usr -name virtualenvwrapper.sh
 
 ```shell
 $ mkvirtualenv 가상환경이름
-# 예시
-# mkvirtualenv test_env1
+## 예시
+## mkvirtualenv test_env1
 ```
 mkvirtualenv 명령어를 사용할 경우 홈 디렉토리의 `.virtualenvs` 폴더 안에 가상환경이름을 가진 폴더`test_env1` 가 생긴다.
 
 1-2) Python2.X가 디폴트인 환경에서 `Python3.X` 버전의 가상환경 만들기
 
 ```shell
-# 파이썬2가 기본인 환경에서 파이썬3을 기본으로 하는 환경을 만들고 싶은 경우
+## 파이썬2가 기본인 환경에서 파이썬3을 기본으로 하는 환경을 만들고 싶은 경우
 $ virtualenv -p python3 [env_name] 
 ```
 
@@ -136,8 +136,8 @@ $ virtualenv -p python3 [env_name]
 
 ```shell
 $ rmvirtualenv 가상환경이름
-# 예시
-# rmvirtualenv test_env1
+## 예시
+## rmvirtualenv test_env1
 ```
 
 rmvirtualenv 명령어를 사용할 경우 mkvirtualenv로 만든 가상환경을 지워준다.
@@ -146,11 +146,11 @@ rmvirtualenv 명령어를 사용할 경우 mkvirtualenv로 만든 가상환경�
 
 ```shell
 $ workon 가상환경이름
-# 가상환경으로 진입시 앞에 (가상환경이름)이 붙는다.
+## 가상환경으로 진입시 앞에 (가상환경이름)이 붙는다.
 (가상환경이름) $
-# 예시
-# $ workon test_env3
-# (test_env3) $
+## 예시
+## $ workon test_env3
+## (test_env3) $
 ```
 workon명령어를 통해 mkvirtualenv로 만든 가상환경으로 진입할 수 있다.<br>
 workon명령어를 가상환경이름 없이 단순하게 칠 경우, 현재 만들어져있는 가상환경의 전체 목록을 불러온다.
@@ -174,9 +174,9 @@ test_env3 test_env5
 ```shell
 (가상환경이름) $ deactivate
 $
-# 예시
-# (test_env3) $ deactivate
-# $
+## 예시
+## (test_env3) $ deactivate
+## $
 ```
 
 <br><br>

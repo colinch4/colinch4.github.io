@@ -10,7 +10,7 @@ share: true
 
 `아카이빙: https://mygumi.tistory.com/281`
 
-# DOMContentLoaded, load, unload
+## DOMContentLoaded, load, unload
 
 - DOMContentLoaded - HTML 이 모두 로드되고, DOM 트리가 완성되었지만, 외부 리소스(img etc) 가 아직 로드되어지지 않았을 때
 

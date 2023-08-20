@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 스케줄링(Scheduling)
+## 스케줄링(Scheduling)
 
 일반적인 스케줄링이란 처리할 일들의 진행순서를 정하는 일이다. 
 

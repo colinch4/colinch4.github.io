@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# VOIP (Voice Over Internet Protocol)
+## VOIP (Voice Over Internet Protocol)
 
 인터넷을 기반으로하는 음성 통화를 의미한다. 
 

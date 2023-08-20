@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# SpEL (스프링 Expression Language)
+## SpEL (스프링 Expression Language)
 - 객체 그래프를 조회하고 조작하는 기능
 - Unified EL과 비슷하지만, 메소드 호출을 지원하고, 문자열 템플릿을 제공함
 - 스프링 3.0부터 지원

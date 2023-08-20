@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Arrow function
+## Arrow function
 ES6부터 새로 추가 된 Arrow function은 기존의 함수 문법을 보다 간결하게 쓸 수 있는 `익명함수` 이다.<br>익명함수이기 때문에 객체 내의 메서드가 아닌 일반적인 함수로 쓰는 것이 권장되며(안되는 건 아님), 생성자로 사용할 수 없다.
 
 ## 기본 문법

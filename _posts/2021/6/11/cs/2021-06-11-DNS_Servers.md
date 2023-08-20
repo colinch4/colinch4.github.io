@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DNS Servers 
+## DNS Servers 
 
 * 세 개 클래스의 DNS Servers : a distributed , hierarchical database
 

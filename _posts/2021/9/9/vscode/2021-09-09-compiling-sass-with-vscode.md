@@ -10,7 +10,7 @@ share: true
 
 
 
-# VSCode로 Sass 컴파일하기
+## VSCode로 Sass 컴파일하기
 
 Sass를 컴파일하기 위해 프롬프트에 직접 명령을 입력하는 방법, 기타 확장 프로그램을 사용하는 방법이 있다. VSCode의 확장 프로그램을 이용하면 버튼 한번으로 Sass파일의 변경을 지켜볼 수 있으니 훨씬 편한 작업 환경을 구축할 수 있다. 내가 사용하는 VScode의 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)를 사용한 컴파일 방법과 설정을 정리한다.
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 이진 탐색(Binary Search)
+## 이진 탐색(Binary Search)
 
 > 정렬된 리스트에서 특정한 값을 찾는 알고리즘
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Logistic Regression 쉬운 예제(1)(python구현)
+## Logistic Regression 쉬운 예제(1)(python구현)
 
 > Logistic Regression의 쉬운 예제를 통해 구현을 해본다.
 
@@ -108,7 +108,7 @@ for step in range(30000):
     if stage%3000 == 0:
         print('W : {}, b : {}, loss : {}'.format(input_var[0],input_var[1], loss(input_var)))
 
-# 결과
+## 결과
 W : [0.98832513], b:[0.54972081], loss : 44.869531753345434
 W : [0.04402015], b:[-0.13461262], loss : 6.453814777928654
 W : [0.08159956], b:[-0.64914488], loss : 5.564879557034531

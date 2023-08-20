@@ -8,9 +8,9 @@ comments: true
 share: true
 ---
 
-# HTTP Overview  
+## HTTP Overview  
 
-# Web Page and Objects
+## Web Page and Objects
 
 * Web page
   * 객체들(objects)로 구성됨.
@@ -25,7 +25,7 @@ share: true
     * mmcn.ajou.ac.kr 은 host name 
     * someDir/pic.gif 은 path name 
 
-# HTTP 
+## HTTP 
 
 * HTTP 
   * **H**yper**T**ext **T**ransfer **P**rotocol

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 성능평가 지표(Evaluation Metrics)
+## 성능평가 지표(Evaluation Metrics)
 
 > 기계학습에서 모델의 분류 성능 평가에 사용되는 지표에 대해서 언급한다.
 >

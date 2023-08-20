@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# ImageDataGenerator3의 사용(개와 고양이)
+## ImageDataGenerator3의 사용(개와 고양이)
 
  > TF2.X 에서 이미지 증식을 사용해 개와 고양이 문제를 CNN 을 통해 확인해 본다.
 
@@ -38,10 +38,10 @@ from tensorflow.keras.optimizers import Adam
 train_dir      = './data/cat_dog_full/train'
 validation_dir = './data/cat_dog_full/validation'
 
-# 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
-# 댕댕이 이미지 train      : 7,000장
-# 댕댕이 이미지 validation : 3,000장
-# 댕댕이 이미지 test       : 2,500장
+## 전체 데이터가 25,000장 (고양이 : 12,500, 개 : 12,500)
+## 댕댕이 이미지 train      : 7,000장
+## 댕댕이 이미지 validation : 3,000장
+## 댕댕이 이미지 test       : 2,500장
 ```
 
 

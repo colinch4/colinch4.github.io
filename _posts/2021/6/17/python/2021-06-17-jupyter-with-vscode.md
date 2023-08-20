@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] VS Code에서 Jupyter 돌리기"
+title: "[파이썬] VS Code에서 Jupyter 돌리기"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# VS Code에서 Jupyter 돌리기
+## VS Code에서 Jupyter 돌리기
 
 ## 배경
 

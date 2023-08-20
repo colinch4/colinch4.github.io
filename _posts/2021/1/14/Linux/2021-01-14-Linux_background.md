@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Linux 백그라운드 실행
+## Linux 백그라운드 실행
 
 
 
@@ -76,8 +76,8 @@ kill  -l
 - 메모리상에 있는 데이터와 각종 설정/환경 파일을 안전하게 저장한 후 프로세스를 종료한다.<br>
 
 ```
-# kill PID 
-# kill -15 PID
+## kill PID 
+## kill -15 PID
 ```
 
 **(2) -9**
@@ -87,7 +87,7 @@ kill  -l
 - 저장되지 않은 데이터는 소멸된다.<br>
 
 ```
-# kill -9 PID
+## kill -9 PID
 ```
 
 <br><br>참고 URL<br>

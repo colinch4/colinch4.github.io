@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# reserved word(예약어) 
+## reserved word(예약어) 
 ## 아래의 reserved word(예약어)로 변수이름을 만들면 컴파일 오류가 나기 때문에 주의하자.
 
 | 분류 | 예약어|

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Comparable과 Comparator Interface
+## Comparable과 Comparator Interface
 
 > 배열이나 리스트의 정렬을 돕기 위한 Comparable과 Comparator, 두가지 Interface를 제공
 

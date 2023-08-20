@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Serializable
+## Serializable
   
   Android sdk가 아닌 표준 java의 인터페이스
   
@@ -29,7 +29,7 @@ share: true
   이때 Reflection은 처리 과정 중에 많은 추가 객체가 생성되며, 이는 GC의 타겟이 된다.
   
   
-# Parcelable
+## Parcelable
   
   Parcelable은 직렬화를 위한 또다른 인터페이스. Android의 인터페이스 이다.
   
@@ -71,7 +71,7 @@ share: true
   }
   ```
   
-# Serializable vs Parcelable
+## Serializable vs Parcelable
   
   
   Serializable 이 Parcelable 보다 일반적으로 reflection 때문에 느리다.

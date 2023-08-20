@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# SEM (전략적 기업 경영, Strategic Enterprise Management)
+## SEM (전략적 기업 경영, Strategic Enterprise Management)
 
 **가. SEM(Strategic Enterprise Management)의 개념**
 

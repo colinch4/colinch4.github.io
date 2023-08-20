@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Stability 
+## Stability 
 **안정성 (Stability)** <code>==</code> **고가용성 (High Availability)**
 * 네트워크 고가용성
 * 로드벨런싱 고가용성

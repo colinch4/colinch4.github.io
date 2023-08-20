@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# js로 만드는 mvc+observer 패턴
+## js로 만드는 mvc+observer 패턴
 
 기존 mvc 패턴은 view를 통해 컨트롤러로 들어온 Action에 따라 모델이 변경되고 이 변경된 모델은 컨트롤러를 통해 뷰를 변경시킨다.
 

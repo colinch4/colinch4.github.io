@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[python] PyCharm 구동시 에러 해결"
+title: "[파이썬] PyCharm 구동시 에러 해결"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
 
-# PyCharm 구동시 에러 해결
+## PyCharm 구동시 에러 해결
 
 오늘 (2019.12.08 현재) 갑자기 JetBrains 계열 프로그램이 모두 구동이 되지 않는 문제가 있었다. 대수롭지 않게 생각하고 있었는데, 리부팅을 해도 해결이 되지 않고, 설정파일을 지우고 새롭게 만들기도 하고, PyCharm를 새로 설치하기도 하였지만 문제가 해결되지 않았다.
 

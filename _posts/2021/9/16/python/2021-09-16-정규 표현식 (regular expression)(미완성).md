@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 정규 표현식 (regular expression)"
+title: "[파이썬] 정규 표현식 (regular expression)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 정규 표현식 (regular expression)
+## 정규 표현식 (regular expression)
 
 텍스트 데이터를 전처리에서 아주 유용한 방식
 

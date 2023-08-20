@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Quick Sort
+## Quick Sort
 
 ## 단계
 
@@ -27,13 +27,13 @@ share: true
 ### Code
 
 ```python
-# 두 요소의 위치를 바꿔주는 helper function
+## 두 요소의 위치를 바꿔주는 helper function
 def swap_elements(my_list, index1, index2):
     # my_list[index1], my_list[index2] = my_list[index2], my_list[index1]
 
     return my_list
 
-# 퀵 정렬에서 사용되는 partition 함수
+## 퀵 정렬에서 사용되는 partition 함수
 def partition(my_list, start, end):
     # 리스트 값 확인과 기준점 이하 값들의 위치 확인을 위한 변수 정의
     i, b = start, start
@@ -54,13 +54,13 @@ def partition(my_list, start, end):
     return b
 
 
-# 테스트 1
+## 테스트 1
 list1 = [4, 3, 6, 2, 7, 1, 5]
 pivot_index1 = partition(list1, 0, len(list1) - 1)
 print(list1)
 print(pivot_index1)
 
-# 테스트 2
+## 테스트 2
 list2 = [6, 1, 2, 6, 3, 5, 4]
 pivot_index2 = partition(list2, 0, len(list2) - 1)
 print(list2)
@@ -75,13 +75,13 @@ print(pivot_index2)
 ### code
 
 ```python
-# 두 요소의 위치를 바꿔주는 helper function
+## 두 요소의 위치를 바꿔주는 helper function
 def swap_elements(my_list, index1, index2):
     my_list[index1], my_list[index2] = my_list[index2], my_list[index1]
     return my_list
 
 
-# 퀵 정렬에서 사용되는 partition 함수
+## 퀵 정렬에서 사용되는 partition 함수
 def partition(my_list, start, end):
     i, b = start, start
     p = end
@@ -96,7 +96,7 @@ def partition(my_list, start, end):
     return b
 
 
-# 퀵 정렬
+## 퀵 정렬
 def quicksort(my_list, start=0, end=None):
     if end == None:
         end = len(my_list) - 1
@@ -122,17 +122,17 @@ def quicksort(my_list, start=0, end=None):
 
 
 
-# 테스트 1
+## 테스트 1
 list1 = [1, 3, 5, 7, 9, 11, 13, 11]
 quicksort(list1) # start, end 파라미터 없이 호출
 print(list1)
 
-# 테스트 2
+## 테스트 2
 list2 = [28, 13, 9, 30, 1, 48, 5, 7, 15]
 quicksort(list2) # start, end 파라미터 없이 호출
 print(list2)
 
-# 테스트 3
+## 테스트 3
 list3 = [2, 5, 6, 7, 1, 2, 4, 7, 10, 11, 4, 15, 13, 1, 6, 4]
 quicksort(list3) # start, end 파라미터 없이 호출
 print(list3)

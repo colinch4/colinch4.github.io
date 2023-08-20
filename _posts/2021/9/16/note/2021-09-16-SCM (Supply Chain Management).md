@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# SCM (Supply Chain Management)
+## SCM (Supply Chain Management)
 
 고객의 요구를 만족시키기 위해 협력업체에서 고객까지의 supply chain (공급망)상의 물품, 자금의 흐름을 총체적 관점에서 chain 간의 interface를 통합하고 관리함으로써 효율성을 극대화하는 전략적 기법과 그 솔류션
 

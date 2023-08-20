@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Dynamic Programming
+## Dynamic Programming
 
 중복을 피하여 효율적인 알고리즘 짜는 법
 
@@ -67,7 +67,7 @@ def fib(n):
     return fib_memo(n, fib_cache)
 
 
-# 테스트
+## 테스트
 print(fib(10))
 print(fib(50))
 print(fib(100))
@@ -94,14 +94,14 @@ def fib_optimized(n):
         cur, pre = pre+cur, cur
     return cur
 
-# 테스트
+## 테스트
 print(fib_optimized(16))
 print(fib_optimized(53))
 print(fib_optimized(213))
 
-# 987
-# 53316291173
-# 146178119651438213260386312206974243796773058
+## 987
+## 53316291173
+## 146178119651438213260386312206974243796773058
 ```
 
 모든 값을 계산하고 저장하면 공간을 많이 차지하여 메모리를 많이 차지함 그래서 previous 와 current를 활용하여 공간복잡도 O(1)으로 풀이
@@ -147,10 +147,10 @@ def max_profit(price_list, count):
     return max_profit_memo(price_list, count, max_profit_cache)
 
 
-# 테스트
+## 테스트
 print(max_profit([0, 100, 400, 800, 900, 1000], 5))
-# print(max_profit([0, 100, 400, 800, 900, 1000], 10))
-# print(max_profit([0, 100, 400, 800, 900, 1000, 1400, 1600, 2100, 2200], 9))
+## print(max_profit([0, 100, 400, 800, 900, 1000], 10))
+## print(max_profit([0, 100, 400, 800, 900, 1000, 1400, 1600, 2100, 2200], 9))
 ```
 
 - 다이나믹프로그래밍의 Memoization 방식으로 푼 코드이다.
@@ -188,7 +188,7 @@ def max_profit(price_list, count):
     return profit_table[count]
 
 
-# 테스트
+## 테스트
 print(max_profit([0, 200, 600, 900, 1200, 2000], 5))
 print(max_profit([0, 300, 600, 700, 1100, 1400], 8))
 print(max_profit([0, 100, 200, 400, 600, 900, 1200, 1300, 1500, 1800], 9))

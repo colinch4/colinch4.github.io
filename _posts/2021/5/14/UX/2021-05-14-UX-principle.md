@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# UX 원칙
+## UX 원칙
 
 ## 버튼
 

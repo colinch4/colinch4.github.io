@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# associatedType
+## associatedType
 - associated type 은 protocal에서 사용될 임의의 타입이름을 주는것 -> 프로토콜을 정의하면서 그 때 타입을 정의 (제네릭과 비슷한 개념)     
 
 ## 사용법

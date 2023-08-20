@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] 에러&예외 (Errors and Exceptions)"
+title: "[파이썬] 에러&예외 (Errors and Exceptions)"
 description: " "
 date: 2021-06-18
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# 에러&예외 (Errors and Exceptions)
+## 에러&예외 (Errors and Exceptions)
 
 2020/02/17
 

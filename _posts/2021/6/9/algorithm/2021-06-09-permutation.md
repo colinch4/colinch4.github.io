@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Permutation(순열)
+## Permutation(순열)
 
 >순열이란 n 개의 값 중에서 r 개의 숫자를 모든 순서대로 뽑는 경우를 말함
 >

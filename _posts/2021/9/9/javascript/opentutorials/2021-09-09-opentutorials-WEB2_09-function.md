@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 함수
+## 함수
 
 ## 함수 예고
 

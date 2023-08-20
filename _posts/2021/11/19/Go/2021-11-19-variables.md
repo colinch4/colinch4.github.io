@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Variables
+## Variables
 Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.  
 변수를 초기화할때는 <code>=</code> 혹은 <code>:=</code> 를 사용할 수 있다.
 

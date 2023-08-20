@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Add 취소하기
+## Add 취소하기
 
 작업 도중 실수로 수정내역을 Add했을 때 Add 상태를 되돌릴 수 있다. 
 

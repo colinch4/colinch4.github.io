@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 데이터사이언스 인터뷰
+## 데이터사이언스 인터뷰
 
 * [애플,MS,구글,페이스북의 데이터 사이언스 인터뷰 질문들](https://news.hada.io/topic?id=2458)
 

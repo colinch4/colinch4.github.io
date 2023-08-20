@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Validation 추상화
+## Validation 추상화
 
 - 애플리케이션에서 사용하는 객체 검증용 인터페이스
 - 특징

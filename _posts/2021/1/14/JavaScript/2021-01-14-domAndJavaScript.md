@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DOM과 자바스크립트
+## DOM과 자바스크립트
 
 ### [DOM이란?](https://github.com/Shinye/TIL/blob/master/HTML%2CCSS/DOM.md) 
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# DataFrame row와 column 차이
+## DataFrame row와 column 차이
 
 |    추출 방법     | row(행) | column(열) |
 | :--------------: | :-----: | :--------: |

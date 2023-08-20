@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 커밋 수정하기
+## 커밋 수정하기
 
 ## 최근 커밋 수정
 
@@ -55,23 +55,23 @@ pick f7f3f6d changed my name a bit
 pick 310154e updated README formatting and added blame
 pick a5f4a0d added cat-file
 
-# Rebase 710f0f8..a5f4a0d onto 710f0f8
+## Rebase 710f0f8..a5f4a0d onto 710f0f8
 #
-# Commands:
-#  p, pick = use commit
-#  r, reword = use commit, but edit the commit message
-#  e, edit = use commit, but stop for amending
-#  s, squash = use commit, but meld into previous commit
-#  f, fixup = like "squash", but discard this commit's log message
-#  x, exec = run command (the rest of the line) using shell
+## Commands:
+##  p, pick = use commit
+##  r, reword = use commit, but edit the commit message
+##  e, edit = use commit, but stop for amending
+##  s, squash = use commit, but meld into previous commit
+##  f, fixup = like "squash", but discard this commit's log message
+##  x, exec = run command (the rest of the line) using shell
 #
-# These lines can be re-ordered; they are executed from top to bottom.
+## These lines can be re-ordered; they are executed from top to bottom.
 #
-# If you remove a line here THAT COMMIT WILL BE LOST.
+## If you remove a line here THAT COMMIT WILL BE LOST.
 #
-# However, if you remove everything, the rebase will be aborted.
+## However, if you remove everything, the rebase will be aborted.
 #
-# Note that empty commits are commented out
+## Note that empty commits are commented out
 ```
 
 이 내용은 `git log` 명령어와는 반대로 HEAD 기준 역순으로 커밋을 나열해 보여준다.`rebase`는 명령에 입력된대로  `HEAD~3` 부터 적용하기 때문이다.

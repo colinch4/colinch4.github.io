@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Daemon
+## Daemon
 
 > 사전적인 뜻으로는 유령, 악마, 혹은 신화 속의 반신반인의 존재. 우리 **눈에 보이지 않는 곳**(background작업 특징) 에<br>**항상 존재** (항상 실행되고 있다는 특징) 하고 있음을 상징하기 위해 네이밍 했다고 추정된다..!
 
@@ -22,7 +22,7 @@ Daemon의 대표적인 사례로는 클라이언트의 요청을 항상 받을 �
 
 
 
-# Cron
+## Cron
 
 유닉스 계열 컴퓨터 운영체제 기반의 "잡 스케쥴러"이다. 원하는 작업을 고정된 시간, 날짜, 간격에 주기적으로 실행할 수 있도록 스케줄링해야 할 때 Cron을 통해 할 수 있다.
 
@@ -48,49 +48,49 @@ Crontab 파일의 문법은 다음과 같다.<br>
 
 ```shell
 * * * * * /root/every_1min.sh
-# 매 1분마다 /root/every_1min.sh 를 수행 (하루에 1440회)
+## 매 1분마다 /root/every_1min.sh 를 수행 (하루에 1440회)
 ```
 
 
 ```shell
 15,45 * * * * /root/every_30min.sh
-# 매시 15분, 45분에 /root/every_30min.sh 를 수행 (하루에 48회)
+## 매시 15분, 45분에 /root/every_30min.sh 를 수행 (하루에 48회)
 ```
 
 
 ```shell
 */10 * * * * /root/every_10min.sh
-# 10분마다 /root/every_10min.sh 를 수행 (하루에 144회)
+## 10분마다 /root/every_10min.sh 를 수행 (하루에 144회)
 ```
 
 
 ```shell
 0 2 * * * /root/backup.sh
-# 매일 02:00에/root/backup.sh 를 수행 (하루에 1회)
+## 매일 02:00에/root/backup.sh 를 수행 (하루에 1회)
 ```
 
 
 ```shell
 30 */6 * * * /root/every_6hours.sh
-# 매 6시간마다 수행(00:30, 06:30, 12:30, 18:30)
+## 매 6시간마다 수행(00:30, 06:30, 12:30, 18:30)
 ```
 
 
 ```shell
 30 1-23/6 * * * /root/every_6hours.sh
-# 1시부터 매 6시간마다 수행(01:30, 07:30, 13:30, 19:30)
+## 1시부터 매 6시간마다 수행(01:30, 07:30, 13:30, 19:30)
 ```
 
 
 ```shell
 0 8 * * 1-5 /root/weekday.sh
-# 평일(월요일~금요일) 08:00
+## 평일(월요일~금요일) 08:00
 ```
 
 
 ```shell
 0 8 * * 0,6 /root/weekend.sh
-# 주말(일요일, 토요일) 08:00
+## 주말(일요일, 토요일) 08:00
 ```
 
 
@@ -107,12 +107,12 @@ crontab파일은 `crontab -e` 명령어를 통하여  수정할 수 있다. (처
 
 ```shell
 $ */1 * * * * date >> date.log 2> &1
-# 1분에 한 번씩
-# 명령어 date를 실행시킨 결과값(Standard Output)을 date.log에 저장하며
-# 만약 명령어 date 실행 시 오류(Standard Error)가 나도(2>)
-# 그대로 표준출력 로그(date.log)에 기록하게 한다. (&1)
-# Output에서 숫자 1은 표준출력, 숫자 2는 표준오류를 의미한다.
-# 만약 &1 대신 1을 입력하면 1이라는 이름의 파일이 만들어져 그 파일에 에러 메세지가 저장되게 되므로 숫자 앞에 &를 붙여주자.
+## 1분에 한 번씩
+## 명령어 date를 실행시킨 결과값(Standard Output)을 date.log에 저장하며
+## 만약 명령어 date 실행 시 오류(Standard Error)가 나도(2>)
+## 그대로 표준출력 로그(date.log)에 기록하게 한다. (&1)
+## Output에서 숫자 1은 표준출력, 숫자 2는 표준오류를 의미한다.
+## 만약 &1 대신 1을 입력하면 1이라는 이름의 파일이 만들어져 그 파일에 에러 메세지가 저장되게 되므로 숫자 앞에 &를 붙여주자.
 ```
 
 ![https://68.media.tumblr.com/33417ff9b4d6b5287c208cd2326fe9ca/tumblr_oks1ptextW1v80c66o2_500.png](https://68.media.tumblr.com/33417ff9b4d6b5287c208cd2326fe9ca/tumblr_oks1ptextW1v80c66o2_500.png)

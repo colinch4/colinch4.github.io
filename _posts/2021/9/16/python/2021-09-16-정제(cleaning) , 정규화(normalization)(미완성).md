@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 정제(cleaning) , 정규화(normalization)"
+title: "[파이썬] 정제(cleaning) , 정규화(normalization)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 정제(cleaning) , 정규화(normalization)
+## 정제(cleaning) , 정규화(normalization)
 
 토큰화 작업 전후에서 함께 이루어지며 텍스트 용도에 맞게 정제, 정규화를 함
 
@@ -60,7 +60,7 @@ share: true
 수 있다.
 
 ```python
-# 길이가 1~2인 단어들을 정규 표현식을 이용하여 삭제
+## 길이가 1~2인 단어들을 정규 표현식을 이용하여 삭제
 import re
 text = "I was wondering if anyone out there could enlighten me on this car."
 shortword = re.compile(r'\W*\b\w{1,2}\b')

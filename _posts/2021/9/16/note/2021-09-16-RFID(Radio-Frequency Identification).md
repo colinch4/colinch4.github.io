@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# RFID(Radio-Frequency Identification)
+## RFID(Radio-Frequency Identification)
 
 
 **RFID**(Radio-Frequency Identification)는 주파수를 이용해 ID를 식별하는 방식으로 일명 전자태그로 불린다. RFID 기술이란 [전파](https://ko.wikipedia.org/wiki/전파)를 이용해 먼 거리에서 정보를 인식하는 기술을 말한다. 여기에는 RFID 태그(이하 태그)와, RFID 판독기(이하 판독기)가 필요하다. 태그는 [안테나](https://ko.wikipedia.org/wiki/안테나)와 [집적 회로](https://ko.wikipedia.org/wiki/집적_회로)로 이루어지는데, 집적 회로 안에 정보를 기록하고 안테나를 통해 판독기에게 정보를 송신한다. 이 정보는 태그가 부착된 대상을 식별하는 데 이용된다. 쉽게 말해, [바코드](https://ko.wikipedia.org/wiki/바코드)와 비슷한 기능을 하는 것이다. RFID가 바코드 시스템과 다른 점은 빛을 이용해 판독하는 대신 전파를 이용한다는 것이다. 따라서 바코드 판독기처럼 짧은 거리에서만 작동하지 않고 먼 거리에서도 태그를 읽을 수 있으며, 심지어 사이에 있는 물체를 통과해서 정보를 수신할 수도 있다.

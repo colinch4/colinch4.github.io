@@ -10,7 +10,7 @@ share: true
 
 
 
-# React Basics1
+## React Basics1
 
 ### 목차
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# CSS 선언 순서
+## CSS 선언 순서
 
 ## NHN 코딩 컨벤션
 

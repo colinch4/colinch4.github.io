@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 📢 Spring Boot Acturator로 프로젝트 관리하기
+## 📢 Spring Boot Acturator로 프로젝트 관리하기
 
 [목표]
 

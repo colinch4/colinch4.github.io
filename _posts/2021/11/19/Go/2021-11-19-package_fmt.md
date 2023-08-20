@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Package fmt
+## Package fmt
 
 서식화된 문자열의 입출력 패키지 fmt.
 

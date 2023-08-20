@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🕹 JDBC 오라클 연동하기
+## 🕹 JDBC 오라클 연동하기
 
 ### JDBC란?
 

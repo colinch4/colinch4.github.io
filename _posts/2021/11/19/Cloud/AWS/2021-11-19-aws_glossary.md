@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# AWS Glossary 
+## AWS Glossary 
 AWS 용어를 간략하게 알아보자.  
 세부적인 내용은 각각의 개별적 Markdown file에서 참고 가능하다.  
 

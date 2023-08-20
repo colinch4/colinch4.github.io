@@ -10,7 +10,7 @@ share: true
 
 출처 : <https://developer.apple.com/documentation/swift/choosing_between_structures_and_classes>
 
-# Choosing Between Structures and Classes
+## Choosing Between Structures and Classes
 
 데이터 및 모델 동작 저장 방법을 결정하십시오. (Decide how to store data and model behavior.)
 

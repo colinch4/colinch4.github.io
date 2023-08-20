@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Disjoint-Set(서로수 집합) 알고리즘
+## Disjoint-Set(서로수 집합) 알고리즘
 
 > - Union-Find 알고리즘 이라고도 불린다.
 >

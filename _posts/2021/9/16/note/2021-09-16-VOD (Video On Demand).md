@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# VOD (Video On Demand)
+## VOD (Video On Demand)
 
 직역하면 **주문형 비디오** 사용자가 방송을 요청만 하면 동영상을 마음대로 볼 수 있는 서비스를 의미한다. 주로 PC를 단말기로 삼아 연결된 인터넷을 기반으로 서비스한다.
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Outline 둥글게 만들기
+## Outline 둥글게 만들기
 
 `<div>` 에 CSS로 `border-radous` 를 적용하면, 엘리먼트의 사방 모서리가 곡률을 갖고 둥글게 표현된다. 이 상태의 엘리먼트에 `outline` 을 주면 요소의 곡률을 잊고 직각 사각형으로 보여진다.
 

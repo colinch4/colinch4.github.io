@@ -259,7 +259,7 @@ api> yarn add -D eslint eslint-import-resolver-typescript
 ```sh
 api> ./node_modules/.bin/eslint --init
 
-# .eslintrc.json 파일이 생성되었다
+## .eslintrc.json 파일이 생성되었다
 api> cat .eslintrc.json
 ```
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Switch문과 Label
+## Switch문과 Label
 
 ### switch
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Object creation / Part4
+## Object creation / Part4
 ## Object.create()
 > "Static method on the object prototype"
 

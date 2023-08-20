@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# In-App Receipt Fields
+## In-App Receipt Fields
 
 ## Quantity
 

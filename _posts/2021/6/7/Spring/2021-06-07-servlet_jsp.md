@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🔗 Servlet 서블릿 & JSP ⚙️
+## 🔗 Servlet 서블릿 & JSP ⚙️
 
 > - 동적인 처리가 가능한 웹 어플리케이션을 만들 수 있는 라이브러리
 > - Java 언어를 기반으로 작성되어 서버사이드에서 동작함

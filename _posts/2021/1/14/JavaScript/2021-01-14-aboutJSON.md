@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# All about JSON
+## All about JSON
 
 전에 면접에서 JSON을 왜 쓰는지(왜 JSON이여야만 하는지), MySQL과 같은 데이터베이스와 차이점은 무엇인지 에 대한 질문을 들었었는데 깊게 생각해본 적이 없어서 (일단 둘이 비교대상이 된다는 것 부터가 당황스러웠다.) 제대로 된 대답을 하지 못했던 기억이 나서 다시 정리해본다.
 

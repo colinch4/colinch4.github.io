@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Figma Keyboard Shortcuts
+## Figma Keyboard Shortcuts
 
 `Opt + Cmd + R `: 텍스트 오른쪽 정렬
 

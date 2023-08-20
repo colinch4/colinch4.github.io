@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Multiple Linear Regression(1)-Preprocessing
+## Multiple Linear Regression(1)-Preprocessing
 
 > **온도**, **태양광**, **바람**에 따른 **오존량**을 Multiple Linear regression model을 통해 추측하는 model을 만들어 본다. 단원은 다음과 같은 순서로 진행된다. 
 >

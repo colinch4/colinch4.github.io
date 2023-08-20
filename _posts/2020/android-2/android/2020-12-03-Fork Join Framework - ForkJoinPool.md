@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Fork Join Framework - ForkJoinPool
+## Fork Join Framework - ForkJoinPool
 
 ForkJoinFramework는 쓰레드 풀의 일종이다. 보통의 쓰레드 풀과 다른 점은 ForkJoinPool은 큰 작업을 작은 작업 단위로 쪼개고, 그 것을 다른 CPU에서 병렬로 처리한 후에 결과를 취하는 방식을 가지고 있다는 점이다. (비슷한 것으로 [분할정복알고리즘](https://ko.wikipedia.org/wiki/%EB%B6%84%ED%95%A0_%EC%A0%95%EB%B3%B5_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)이 있다.)
 

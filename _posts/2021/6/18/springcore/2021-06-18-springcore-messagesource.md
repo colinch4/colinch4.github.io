@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# MessageSource
+## MessageSource
 - 국제화(i18n) 기능 제공 인터페이스
 - 스프링 부트를 사용하면 별다른 설정없이 `message.properties`로 사용 가능
 - 다른 언어의 메세지를 설정하려면 `message_언어_properties`로 가능

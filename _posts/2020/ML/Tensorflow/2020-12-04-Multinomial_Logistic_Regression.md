@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Multinomial Logistic Regression
+## Multinomial Logistic Regression
 
 > **TF2.x**를 가지고 **Multinomial Logistic Regression** 모델을 `MNIST` 예제를 통해 구현해 본다.
 
@@ -102,28 +102,28 @@ history = keras_model.fit(x_data_train_norm, t_data_train,
 
 ```python
 print(keras_model.evaluate(x_data_test_norm,t_data_test))
-# [0.28793775080688416, 0.9206349]  : loss, sparse_categorical_accuracy
+## [0.28793775080688416, 0.9206349]  : loss, sparse_categorical_accuracy
 ```
 
 ```python
 print(classification_report(t_data_test, 
                             (tf.argmax(keras_model.predict(x_data_test_norm), axis=1)).numpy()))
-#               precision    recall  f1-score   support
-# 
-#            0       0.95      0.96      0.95      1242
-#            1       0.96      0.97      0.97      1429
-#            2       0.93      0.90      0.92      1276
-#            3       0.91      0.90      0.90      1298
-#            4       0.92      0.92      0.92      1236
-#            5       0.89      0.88      0.88      1119
-#            6       0.92      0.97      0.94      1243
-#            7       0.94      0.92      0.93      1334
-#            8       0.89      0.88      0.89      1204
-#            9       0.88      0.89      0.89      1219
-# 
-#     accuracy                           0.92     12600
-#    macro avg       0.92      0.92      0.92     12600
-# weighted avg       0.92      0.92      0.92     12600
+##               precision    recall  f1-score   support
+## 
+##            0       0.95      0.96      0.95      1242
+##            1       0.96      0.97      0.97      1429
+##            2       0.93      0.90      0.92      1276
+##            3       0.91      0.90      0.90      1298
+##            4       0.92      0.92      0.92      1236
+##            5       0.89      0.88      0.88      1119
+##            6       0.92      0.97      0.94      1243
+##            7       0.94      0.92      0.93      1334
+##            8       0.89      0.88      0.89      1204
+##            9       0.88      0.89      0.89      1219
+## 
+##     accuracy                           0.92     12600
+##    macro avg       0.92      0.92      0.92     12600
+## weighted avg       0.92      0.92      0.92     12600
 
 ```
 
@@ -145,22 +145,22 @@ plt.show()
 sklearn_model = LogisticRegression(solver='saga')
 sklearn_model.fit(x_data_train_norm, t_data_train)
 sklearn_model.score(x_data_train_norm, t_data_train)
-# 0.9448639455782313
+## 0.9448639455782313
 classification_report(t_data_test, sklearn_model.predict(x_data_test_norm))
-#               precision    recall  f1-score   support
-# 
-#            0       0.96      0.96      0.96      1242
-#            1       0.95      0.97      0.96      1429
-#            2       0.92      0.90      0.91      1276
-#            3       0.91      0.90      0.90      1298
-#            4       0.92      0.92      0.92      1236
-#            5       0.88      0.88      0.88      1119
-#            6       0.93      0.96      0.94      1243
-#            7       0.94      0.93      0.94      1334
-#            8       0.89      0.88      0.88      1204
-#            9       0.89      0.89      0.89      1219
-# 
-#     accuracy                           0.92     12600
-#    macro avg       0.92      0.92      0.92     12600
-# weighted avg       0.92      0.92      0.92     12600
+##               precision    recall  f1-score   support
+## 
+##            0       0.96      0.96      0.96      1242
+##            1       0.95      0.97      0.96      1429
+##            2       0.92      0.90      0.91      1276
+##            3       0.91      0.90      0.90      1298
+##            4       0.92      0.92      0.92      1236
+##            5       0.88      0.88      0.88      1119
+##            6       0.93      0.96      0.94      1243
+##            7       0.94      0.93      0.94      1334
+##            8       0.89      0.88      0.88      1204
+##            9       0.89      0.89      0.89      1219
+## 
+##     accuracy                           0.92     12600
+##    macro avg       0.92      0.92      0.92     12600
+## weighted avg       0.92      0.92      0.92     12600
 ```

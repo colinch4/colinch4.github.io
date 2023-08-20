@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Decision Tree(예제)
+## Decision Tree(예제)
 
 > 독립변수가 여러개 있을 때 선택 방법과 `sklearn`을 통해 간단히 구현해본다.
 
@@ -81,7 +81,7 @@ import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier
 from mlxtend.plotting import plot_decision_regions # machine learning extend
 
-# training data set
+## training data set
 df= pd.read_csv('./data/bmi.csv', skiprows=3)
 
 x_data = df[['height', 'weight']].values
@@ -141,10 +141,10 @@ from sklearn.metrics import classification_report
 
 df = pd.read_csv('./data/mnist/train.csv')
 
-# Data Split
+## Data Split
 x_data_train, x_data_test, t_data_train, t_data_test = \
 train_test_split(df.drop('label', axis=1, inplace=False), df['label'], test_size=0.3, random_state=0)
-# Min-Max Normalization
+## Min-Max Normalization
 scaler = MinMaxScaler()   
 scaler.fit(x_data_train)
 x_data_train_norm = scaler.transform(x_data_train)
@@ -158,22 +158,22 @@ model.fit(x_data_train_norm, t_data_train)
 
 result = model.predict(x_data_test_norm)
 print(classification_report(t_data_test, result))
-#               precision    recall  f1-score   support
-# 
-#            0       0.90      0.91      0.91      1242
-#            1       0.93      0.95      0.94      1429
-#            2       0.83      0.79      0.81      1276
-#            3       0.80      0.81      0.81      1298
-#            4       0.85      0.85      0.85      1236
-#            5       0.78      0.80      0.79      1119
-#            6       0.88      0.89      0.89      1243
-#            7       0.89      0.87      0.88      1334
-#            8       0.80      0.76      0.78      1204
-#            9       0.80      0.83      0.81      1219
-# 
-#     accuracy                           0.85     12600
-#    macro avg       0.85      0.85      0.85     12600
-# weighted avg       0.85      0.85      0.85     12600
+##               precision    recall  f1-score   support
+## 
+##            0       0.90      0.91      0.91      1242
+##            1       0.93      0.95      0.94      1429
+##            2       0.83      0.79      0.81      1276
+##            3       0.80      0.81      0.81      1298
+##            4       0.85      0.85      0.85      1236
+##            5       0.78      0.80      0.79      1119
+##            6       0.88      0.89      0.89      1243
+##            7       0.89      0.87      0.88      1334
+##            8       0.80      0.76      0.78      1204
+##            9       0.80      0.83      0.81      1219
+## 
+##     accuracy                           0.85     12600
+##    macro avg       0.85      0.85      0.85     12600
+## weighted avg       0.85      0.85      0.85     12600
 ```
 
 * 정확도가 다른 classifier에 비해 낮은것을 알 수 있다. 이유는 yes/no 와 같이 이분적이기 보다 결과 값이 너무 많기 때문이다.

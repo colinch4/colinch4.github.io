@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# CSS 방법론
+## CSS 방법론
 
 한 2년전에 공부했던 내용이지만, 복기하는 차원에서 TIL에 올려본다.
 이중 BEM을 제일 유용하게 활용했고 Atomic을 추가로 학습했으며 최근에는 Utility-first CSS에 대해 관심을 갖고 있다.

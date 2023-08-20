@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Web Server 와 WAS 차이
+## Web Server 와 WAS 차이
 
 > - ref
 >   - [출처1](https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html) [출처2]([https://medium.com/@chrisjune_13837/web-%EC%9B%B9%EC%84%9C%EB%B2%84-%EC%95%B1%EC%84%9C%EB%B2%84-was-app%EC%9D%B4%EB%9E%80-692909a0d363](https://medium.com/@chrisjune_13837/web-웹서버-앱서버-was-app이란-692909a0d363)) [출처3](https://jeong-pro.tistory.com/84) [출처4](https://victorydntmd.tistory.com/121) [출처5](https://windosakacastle.tistory.com/5) [출처6](https://sungks.tistory.com/195) [출처7](http://melonicedlatte.com/web/2019/06/23/210300.html) 

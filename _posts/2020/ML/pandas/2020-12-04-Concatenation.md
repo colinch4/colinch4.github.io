@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Concatenation
+## Concatenation
 
 > `Series`를 1차원, 2차원으로 연결하는 방법 또는 `DataFrame`들에 대한 연결 하는 방법에 대해서 알아본다.
 >
@@ -32,14 +32,14 @@ s2 = pd.Series([4, 3, 2], index=['b', 'c', 'e'])
 s3 = pd.Series([0, 1]) 
 
 pd.concat([s1, s2, s3], axis=0)
-# a    0
-# c    1
-# b    4
-# c    3
-# e    2
-# 0    5
-# 1    6
-# dtype: int64
+## a    0
+## c    1
+## b    4
+## c    3
+## e    2
+## 0    5
+## 1    6
+## dtype: int64
 ```
 
 
@@ -51,12 +51,12 @@ s1 = pd.Series([0, 1])
 s2 = pd.Series([4, 3, 2])
 s = pd.concat([s1, s2], axis=0, sort= True)
 print(s)
-# 0    0
-# 1    1
-# 0    4
-# 1    3
-# 2    2
-# dtype: int64
+## 0    0
+## 1    1
+## 0    4
+## 1    3
+## 2    2
+## dtype: int64
 ```
 
 

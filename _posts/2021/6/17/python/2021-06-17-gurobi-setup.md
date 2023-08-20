@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] Gurobi 셋팅하기"
+title: "[파이썬] Gurobi 셋팅하기"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Gurobi 셋팅하기
+## Gurobi 셋팅하기
 
 최적화 분석방법인 선형 계획법(Linear Programming, LP) 라이브러리인 Gurobi를 셋팅하는 방법을 정리하고자 한다.
 

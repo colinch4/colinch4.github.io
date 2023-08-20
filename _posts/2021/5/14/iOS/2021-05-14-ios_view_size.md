@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# iOS 실제 화면 크기의 서브 뷰 추가
+## iOS 실제 화면 크기의 서브 뷰 추가
 
 ```swift
 // 디바이스의 실제 화면 크기

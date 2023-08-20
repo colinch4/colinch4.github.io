@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# ArrayList  
+## ArrayList  
 
 arraylist는 기존의 vector를 개선한 것으로, 구현원리와 기능이 동일하다.  
 
@@ -48,14 +48,14 @@ arraylist는 기존의 vector를 개선한 것으로, 구현원리와 기능이 
 
 2. 데이터의 중간에서 삽입 및 삭제에 시간이 걸림.
 
-# LinkedList  
+## LinkedList  
 
 배열과 달리 링크드리스트는 불연속적으로 존재하는 데이터를 연결한다.  
 
 단일 링크드리스트, 더블 링크드리스트, 더블리 써큘러 링크드 리스트가 있음  
 
 
-# ArrayList vs LinkedList  
+## ArrayList vs LinkedList  
 
 순차적으로 데이터를 추가/삭제 -> ArrayList  
 

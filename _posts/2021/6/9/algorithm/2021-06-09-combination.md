@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Combination(조합)
+## Combination(조합)
 
 > 조합이란 n 개의 숫자 중에서 r 개의 수를 순서 없이 뽑는 경우를 말함
 >

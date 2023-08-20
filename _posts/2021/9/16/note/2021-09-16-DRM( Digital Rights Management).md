@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DRM( Digital Rights Management)
+## DRM( Digital Rights Management)
 
 디지털 권리 관리는 출판자 또는 저작권자가 그들이 배포한 디지털 자료나 하드웨어의 사용을 제어하고 이를 의도한 용도로만 사용하도록 제한하는 데 사용되는 모든 기술들을 지칭하는 용어이다.
 

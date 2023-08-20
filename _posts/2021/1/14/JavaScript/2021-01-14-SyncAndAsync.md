@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Sync / Async @JavaScript
+## Sync / Async @JavaScript
 
 Node.js는 대체로 코드를 실행시킬 때 비동기적으로 실행시키는 것을 권장한다. 따라서 동기적, 비동기적 프로그래밍이 뭔지 짚고 넘어갈 필요가 있다.
 

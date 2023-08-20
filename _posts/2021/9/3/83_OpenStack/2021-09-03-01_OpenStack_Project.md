@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# # OpenStack Project
+## # OpenStack Project
 
 ## 0. 용어
 

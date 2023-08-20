@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] context manager를 이용하여 프로파일용 타이머 쉽게 구현하기"
+title: "[파이썬] context manager를 이용하여 프로파일용 타이머 쉽게 구현하기"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# context manager를 이용하여 프로파일용 타이머 쉽게 구현하기
+## context manager를 이용하여 프로파일용 타이머 쉽게 구현하기
 
 Kaggle를 둘러보다가 프로파일을 위해서 계산시간을 출력하는 아래 코드를 발견하고, 좋아보여서 메모해둔다.
 

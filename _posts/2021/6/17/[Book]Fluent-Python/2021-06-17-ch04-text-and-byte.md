@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 4장 텍스트와 바이트
+## 4장 텍스트와 바이트
 
 ## 문자 문제
 

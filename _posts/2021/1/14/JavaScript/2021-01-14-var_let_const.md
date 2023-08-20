@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# var / let / const
+## var / let / const
 
 기존의 ES5까지는 변수를 선언할 때 var을 이용하여 선언하였다.(물론 var이 없어도 선언은 가능하다.)<br>하지만 ES6이 도입되며 var이 가지는 한계를 보완하는 `let`과 `const` 가 새로 추가되었다.
 

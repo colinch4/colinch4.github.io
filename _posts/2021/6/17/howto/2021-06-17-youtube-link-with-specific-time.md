@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# YouTube 클립의 특정시간에 링크 걸어주기
+## YouTube 클립의 특정시간에 링크 걸어주기
 
 ## 배경
 

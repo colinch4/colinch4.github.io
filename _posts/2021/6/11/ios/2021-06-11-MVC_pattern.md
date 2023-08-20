@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# MVC Pattern - Apple Document 번역 
+## MVC Pattern - Apple Document 번역 
 
 출처 : <https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html>
 

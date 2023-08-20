@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Decision Tree(이론)
+## Decision Tree(이론)
 
 > Decision Tree(결정 트리)는 분류와 회귀 모두 가능한 ML 모델 중 하나이다.  
 

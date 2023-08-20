@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# MySQL 원격 접속하기
+## MySQL 원격 접속하기
 
 ## 작업배경
 
@@ -31,11 +31,11 @@ bind-address        = xxx.xxx.xxx.xxx
 1) MySQL에 외부 접속가능한 계정추가
 
 ```sql
-# 계정 생성 접속은 모든 곳(@)
+## 계정 생성 접속은 모든 곳(@)
 CREATE USER 'myuser'@'%' IDENTIFIED BY 'mypass';
-# 데이터베이스 권한 할당
+## 데이터베이스 권한 할당
 GRANT ALL ON *.* TO 'myuser'@'%';
-# 권한 갱신
+## 권한 갱신
 FLUSH PRIVILEGES;
 ```
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 중복행 처리
+## 중복행 처리
 
 > `duplicated`를 통해 boolean mask를 추출해 중복행 처리하는 방법에 대해서 알아본다. 다음의 예제를 사용한다.
 
@@ -32,17 +32,17 @@ display(df)
 
 ```python
 print(df.duplicated())
-# 0    False
-# 1     True
-# 2    False
-# 3    False
-# 4     True
-# 5    False
-# 6     True
-# 7    False
-# dtype: bool
+## 0    False
+## 1     True
+## 2    False
+## 3    False
+## 4     True
+## 5    False
+## 6     True
+## 7    False
+## dtype: bool
 
-# 1행 부터 내려가면서 중복값이 있었으면 True 없었으면 False 값을 갖는다.
+## 1행 부터 내려가면서 중복값이 있었으면 True 없었으면 False 값을 갖는다.
 ```
 
 ```python

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# DataFrame의 분석을 위한 함수들(2)
+## DataFrame의 분석을 위한 함수들(2)
 
 > `Pandas`에 있는 `DataFrame`에 관한 함수들에 대해서 알아본다.
 
@@ -65,9 +65,9 @@ display(df.sort_values(by=['B','D'])) # B값 다음으로 D값들의 기준으�
 
 ```python
 print(df.iloc[1,:].unique())
-# [0 1 7]
+## [0 1 7]
 print(df['B'].unique())
-# [8 0 9 2 7]
+## [8 0 9 2 7]
 ```
 
 
@@ -78,13 +78,13 @@ print(df['B'].unique())
 
 ```python
 print(df['A'].isin([1]))
-# 2020-09-13    False
-# 2020-09-14    False
-# 2020-09-15    False
-# 2020-09-16    False
-# 2020-09-17    False
-# 2020-09-18     True
-# Freq: D, Name: A, dtype: bool
+## 2020-09-13    False
+## 2020-09-14    False
+## 2020-09-15    False
+## 2020-09-16    False
+## 2020-09-17    False
+## 2020-09-18     True
+## Freq: D, Name: A, dtype: bool
 ```
 
 
@@ -97,8 +97,8 @@ print(df['A'].isin([1]))
 
 ```python
 print(df.iloc[1].value_counts())
-# 0    2
-# 7    1
-# 1    1
-# Name: 2020-09-14 00:00:00, dtype: int64
+## 0    2
+## 7    1
+## 1    1
+## Name: 2020-09-14 00:00:00, dtype: int64
 ```

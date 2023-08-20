@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DataFrame.iloc
+## DataFrame.iloc
 
 > `loc`와 달리 `iloc`를 사용하면 숫자 `index`를 사용해서 `DataFrame`의 정보를 불러올 수 있다.
 
@@ -50,11 +50,11 @@ display(df)
 ```python
 print(df.iloc[1])      # Series
 학과     기계
-# 이름    박동훈
-# 학점      2
-# 학년      2
-# 등급    NaN
-# Name: two, dtype: object
+## 이름    박동훈
+## 학점      2
+## 학년      2
+## 등급    NaN
+## Name: two, dtype: object
 ```
 
 
@@ -75,12 +75,12 @@ display(df.iloc[[1]])   # DataFrame
 
 ```python
 display(df.loc[:,'학점'])    # Series
-# # one      이지은
-# two      박동훈
-# three    홍길동
-# four     강감찬
-# five     오해영
-# Name: 이름, dtype: object
+## # one      이지은
+## two      박동훈
+## three    홍길동
+## four     강감찬
+## five     오해영
+## Name: 이름, dtype: object
 ```
 
 * fancy indexing

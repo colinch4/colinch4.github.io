@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 데이터 바인딩 추상화
+## 데이터 바인딩 추상화
 
 ## PropertyEditor
 - 프로퍼티 값을 타겟 객체에 설정하는 기능

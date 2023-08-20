@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# JS ( Browswer)
+## JS ( Browswer)
 
 ## :one: ES ( JS 코어 문법 )
 

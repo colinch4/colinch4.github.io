@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# RAID(Redundant Array of Inexpensive Disks)
+## RAID(Redundant Array of Inexpensive Disks)
 
 여러 개의 디스크를 배열하여 속도의 증대, 안정성 증대, 효율성, 가용성의 증대를 하는데 쓰이는 기술 이다.
 

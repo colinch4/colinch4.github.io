@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Linear Regression(sklearn)
+## Linear Regression(sklearn)
 
 > ` sklearn`(사이킷런) 을 이용한 linear regression 방법에 대해서 알아본다. `sklearn` 은 데이터분석, ML library 중 하나로 굉장히 유명하고 효율적인 library이다.
 
@@ -87,7 +87,7 @@ model.fit(x_data, t_data)
 W = model.coef_
 b = model.intercept_
 print('W : {}, b : {}'.format(W,b))
-# W : [[2.4287033]], b : [-146.99549097]
+## W : [[2.4287033]], b : [-146.99549097]
 ```
 
 
@@ -109,7 +109,7 @@ plt.show()
 ```python
 predict_val = model.predict([[80]])  # 이중 list가 아니면 error
 print(predict_val)  
-# [[47.30077342]]
+## [[47.30077342]]
 ```
 
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Middleware
+## Middleware
 
 미들웨어란 소프트웨어의 일종으로써 OS와 Application 사이에서 중재하는 역할을 담당한다.  
 

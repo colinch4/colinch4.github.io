@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Spring IoC (Inversion of Control)
+## Spring IoC (Inversion of Control)
 
 제어권이 뒤바뀌었다!
 

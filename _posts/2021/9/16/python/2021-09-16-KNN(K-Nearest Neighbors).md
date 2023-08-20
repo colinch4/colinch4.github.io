@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] KNN(K-Nearest Neighbors)"
+title: "[파이썬] KNN(K-Nearest Neighbors)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# KNN(K-Nearest Neighbors)
+## KNN(K-Nearest Neighbors)
 
 **최근접 이웃 알고리즘이라 불리며 , 특정 공간내에서 입력과 제일 근접한 k개의 요소를 찾아, 더 많이 일치하는 것으로 분류하는 알고리즘.**
 

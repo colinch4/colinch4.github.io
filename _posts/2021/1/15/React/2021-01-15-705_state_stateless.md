@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# React.js 기초 다지기
+## React.js 기초 다지기
 
 #### 목차
 

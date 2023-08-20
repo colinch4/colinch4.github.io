@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# ☘️ Thymeleaf 사용하기
+## ☘️ Thymeleaf 사용하기
 
 [목표]
 

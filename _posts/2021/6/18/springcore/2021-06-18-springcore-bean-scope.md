@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 빈 스코프
+## 빈 스코프
 - 싱글톤 : 객체 하나만 생성 (기본값)
 - 프로토 타입 : 매번 객체 생성
 	- Request

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# View Programming Guide for iOS 번역
+## View Programming Guide for iOS 번역
 
 출처 : <https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503-CH1-SW2>
 
@@ -51,7 +51,7 @@ Interface Builder는 응용 프로그램의 window와 view를 그래픽적으로
 interface builder는 당신이 당신의 앱의 user inferface을 만드는데 해야 하는 당신의 일들을 매우 단순화 합니다. 왜냐하면 interface Builder 편집기와 nib 파일을 위한 지원이 ios를 통틀어서 통합되어 있기 때문에, 당신의 앱 디자인 안에 nib file들을 통합하는데 적은 노력만이 요구되어 집니다.   
 
 
-# View and Window Architecture
+## View and Window Architecture
  
 시스템 뷰를 사용하든 커스텀 뷰를 생성해서 작성하든, 당신은 **UIView 및 UIWindow 클래스가 제공하는 인프라를 이해해야합니다.이 클래스는 뷰의 보기 및 레이아웃을 관리하기위한 정교한 기능을 제공합니다.**
 **이러한 기능이 작동하는 방식을 이해하는 것**은 애플리케이션에서 변경이 발생할 때 뷰가 올바르게 작동하도록 하는데 중요합니다.

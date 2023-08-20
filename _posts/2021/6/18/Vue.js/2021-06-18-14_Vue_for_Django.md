@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Vue for Django
+## Vue for Django
 
 > Django 백앤드 서버 API 는 이미 만들어져있는 상태이다.
 >

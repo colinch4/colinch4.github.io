@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Alias에 대하여
+## Alias에 대하여
 
 `alias` 란, 리눅스 bash/zsh 에서 단축 별칭을 지정 및 조회 할 수 있는 명령어이다.
 

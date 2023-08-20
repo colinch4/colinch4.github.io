@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[python] 2. 깃허브 보충"
+title: "[파이썬] 2. 깃허브 보충"
 description: " "
 date: 2021-06-18
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
 
-# 파이썬(2) 0121
+## 파이썬(2) 0121
 
 ## Github
 
@@ -78,8 +78,8 @@ share: true
 - 숙제 받아오기
 
 ```shell
-# master_pyhton 에서 pull 해서 파일 받아오고
-# /python 파일로 옮겨서 사용한다.
+## master_pyhton 에서 pull 해서 파일 받아오고
+## /python 파일로 옮겨서 사용한다.
 
 $ cd ~/master_pyhton
 $ ls    # 현재 디렉토리에 파일 확인

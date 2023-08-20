@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# AWS CHEAT SHEET
+## AWS CHEAT SHEET
 > Reference : [AWS CLI](#https://docs.aws.amazon.com/cli/latest/index.html)
 
 ### Table of Contents
@@ -78,7 +78,7 @@ ADD PARTITION (year='yyyy',month='MM', day='dd')
 LOCATION 's3://bucketName/path/distributionID/yyyy/MM/dd/hh'
 ```
 ```sql
-# example code
+## example code
 ALTER TABLE default.cloudfront-test
 ADD PARTITION (year='2020',month='10', day='05') 
 LOCATION 's3://cloudfront-test/logs/abcdeabcded/2020/10/05/00'
@@ -447,7 +447,7 @@ Remove multiple files by `--exclude` and `--include` arguments
 `aws s3 rm s3://bucketName/path --recursive --exclude "*" --include "pattern*"`
 
 ```
-# example code
+## example code
 aws s3 rm s3://cloudfront-test/logs --recursive --exclude "*" --include "abcdefghijklmnopqr/2020/10/04/*"
 ```
 

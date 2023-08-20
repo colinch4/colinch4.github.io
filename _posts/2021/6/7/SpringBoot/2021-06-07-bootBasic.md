@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🎁 Spring Boot 스프링 부트 기초
+## 🎁 Spring Boot 스프링 부트 기초
 
 [목표]
 

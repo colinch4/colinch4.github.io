@@ -11,7 +11,7 @@ share: true
 ---
 
 
-# Dependency injection in Android
+## Dependency injection in Android
 
 Dependency injection (DI) is a technique widely used in programming and well suited to Android development. By following the principles of DI, you lay the groundwork for good app architecture.
 
@@ -200,7 +200,7 @@ To fully understand the benefits of dependency injection, you should try it manu
 
 [Dependency Injection - Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)
 
-# Manual dependency injection
+## Manual dependency injection
 
 [Android's recommended app architecture](https://developer.android.com/jetpack/docs/guide?hl=ko#recommended-app-arch)  encourages dividing your code into classes to benefit from separation of concerns, a principle where each class of the hierarchy has a single defined responsibility. This leads to more, smaller classes that need to be connected together to fulfill each other's dependencies.
 

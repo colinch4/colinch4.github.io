@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Data Transmission Modes
+## Data Transmission Modes
 
 `데이터 전송 방식`은 총 세가지로 나뉘는데, 이는 데이터가 전송되는 방향을 기준으로 나눈 것이다.
 

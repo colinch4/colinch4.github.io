@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Connect Database From Commandline
+## Connect Database From Commandline
 > MySQL 또는 MariaDB에 접속하기  
 
 터미널을 통해 Database에 접속하는 법을 알아보자.  

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# QR 코드와 URL 단축하기
+## QR 코드와 URL 단축하기
 
 QR코드와 URL 단축 서비스는 URL 주소를 좀 더 접근이 편리하도록 변환하는 데 목적이 있다.
 QR코드는 코드에 직접 URL를 삽입할 수도 있지만, 관리목적으로 URL 단축 서비스와 동일하게 동작한다.

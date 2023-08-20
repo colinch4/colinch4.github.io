@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# **1. 자바 어노테이션 기본 문법**
+## **1. 자바 어노테이션 기본 문법**
 
   
 
@@ -313,7 +313,7 @@ public class MySuperClass { ... }
 ```
 
 
-# **2. 자바 어노테이션 이야기**
+## **2. 자바 어노테이션 이야기**
 
 ##   
 
@@ -575,7 +575,7 @@ The output of this program would be:
 In the program above we can see the usage of the method `getAnnotations()` in order to retrieve all annotations for a given object (a method or a class). We also showed how to check if an specific annotation is present and to retrieve it in positive case using the methods `isAnnotationPresent()` and `getAnnotation()`.
 
 
-# 3. 자바 리플렉션으로 어노테이션 다루기
+## 3. 자바 리플렉션으로 어노테이션 다루기
 
   
 
@@ -868,7 +868,7 @@ public class AnnotationParsing {
 ```
 
 
-# 4. 스프링 설정 : 어노테이션 vs XML
+## 4. 스프링 설정 : 어노테이션 vs XML
 
   
 

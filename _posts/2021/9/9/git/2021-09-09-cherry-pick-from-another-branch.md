@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 다른 브랜치의 특정 commit 반영하기
+## 다른 브랜치의 특정 commit 반영하기
 
  Cherry-pick은 다른 브랜치에 있는 특정 commit만 반영할 때 사용한다.
 

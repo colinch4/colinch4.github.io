@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DataFrame
+## DataFrame
 
 > `DataFrame`은 `Series`의 집합으로 구성된다. 각각의 `column`이 `Series`에 해당한다. 또한 2차원이다.
 
@@ -26,15 +26,15 @@ data = {'name' : ['홍길동','김연아','홍길동','강감찬','이순신'],
         'year' : [2015, 2019, 2020, 2013, 2017],
         'point': [3.5, 1.5, 2.0, 3.4, 4.0]  }
 
-# DataFrame 생성
+## DataFrame 생성
 df = pd.DataFrame(data)
 print(df)
-#  name  year  point
-# 0  홍길동  2015    3.5
-# 1  김연아  2019    1.5
-# 2  홍길동  2020    2.0
-# 3  강감찬  2013    3.4
-# 4  이순신  2017    4.0  
+##  name  year  point
+## 0  홍길동  2015    3.5
+## 1  김연아  2019    1.5
+## 2  홍길동  2020    2.0
+## 3  강감찬  2013    3.4
+## 4  이순신  2017    4.0  
 ```
 
 * `DataFrame`을 출력할때 `print`를 사용하면  형태가 별로 좋지 않다.

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# IE에서 initial 대응하기
+## IE에서 initial 대응하기
 
 IE 크로스브라우징시 레이아웃이 깨지는 현상의 많은 경우가 CSS의 `initial` 값을 사용했을 때 발생했다. `initial`은 부모요소가 주는 모든 상속값을 건너뛰어 CSS 초기값을 되돌리는데 사용할 수 있다.
 

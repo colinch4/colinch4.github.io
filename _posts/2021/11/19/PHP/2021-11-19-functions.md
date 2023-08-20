@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# A
+## A
 
 ## array_merge
 
@@ -46,7 +46,7 @@ $pets = array_merge(json_decode($toms_pet),json_decode($johns_pet));
       )
       ```
 
-# D
+## D
 
 ## define
 
@@ -81,7 +81,7 @@ define('ICECREAM', $icecream)
   - Failure ⇒ `false`
 
 
-# E
+## E
 
 ## end
 
@@ -130,7 +130,7 @@ echo $result[4]; // Undefined array key
     나뉜 문자열들이 배열에 담겨 리턴된다.
 
 
-# H
+## H
 
 ## http_build_query
 
@@ -180,7 +180,7 @@ echo http_build_query($data) . "\n"; // limit=10&keyword=prime&is_deleted=0
   URL-encoded 된 문자열
 
 
-# I
+## I
 
 ## isset
 
@@ -209,7 +209,7 @@ var_dump(isset($you['🍠']));  // FALSE
     - null character 인 `\0` 는 `null`로 취급되지 않기에 `true` 가 리턴되니 주의!
 
 
-# S
+## S
 
 ## strpos
 String 에 담겨 있는 substring 의 position 을 찾아준다.

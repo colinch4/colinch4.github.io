@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Data Transmission
+## Data Transmission
 데이터를 한 지점에서 다른 지점으로 보내는 방법에 대해 알아보자.  
 > 데이터 전송에서 살펴볼 주제들은 아래와 같다.
   * Serial | Parallel

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Logistic Regression
+## Logistic Regression
 
 > **TF2.x**를 가지고 **Logistic Regression** 모델을 타이타닉 예제를 통해 구현해 본다.
 
@@ -30,7 +30,7 @@ from tensorflow.keras.optimizers import SGD
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-# from scipy import stats
+## from scipy import stats
 
 ```
 
@@ -67,14 +67,14 @@ training_data = df.drop(['PassengerId','Cabin','Ticket', 'Fare', 'Name'], axis=1
 
 ```python
 print(training_data.isnull().sum())
-# Survived      0
-# Pclass        0
-# Sex           0
-# Age         177
-# SibSp         0
-# Parch         0
-# Embarked      2
-# dtype: int64
+## Survived      0
+## Pclass        0
+## Sex           0
+## Age         177
+## SibSp         0
+## Parch         0
+## Embarked      2
+## dtype: int64
 ```
 
 
@@ -105,11 +105,11 @@ training_data = training_data.drop(['SibSp', 'Parch'], axis=1)
 * `Age` 처리 : **median** 값으로 결측치를 바꿔주고 Age binning을 해준다.
 
 ```python
-# 결측치 처리
+## 결측치 처리
 age_median = np.nanmedian(training_data['Age'])
 training_data['Age'] = training_data['Age'].fillna(age_median)
 
-# binning
+## binning
 training_data.loc[training_data['Age']<25,'Age'] = 0
 training_data.loc[(training_data['Age']>=25) & (training_data['Age']<50),'Age'] = 1
 training_data.loc[(training_data['Age']>=50),'Age'] = 2
@@ -194,7 +194,7 @@ print('TF2.0 정확도는 : {}'.format(keras_result))
 
 #268/268 [==============================] - 0s 27us/sample - loss: 0.5160 - accuracy: #0.8097
 
-# TF2.0 정확도는 : [0.5316909854091815, 0.78731346]
+## TF2.0 정확도는 : [0.5316909854091815, 0.78731346]
 ```
 
 
@@ -203,9 +203,9 @@ print('TF2.0 정확도는 : {}'.format(keras_result))
 
 ```python
 print(type(result))
-# <class 'tensorflow.python.keras.callbacks.History'>
+## <class 'tensorflow.python.keras.callbacks.History'>
 print(result.history)
-# dict_keys(['loss', 'accuracy', 'val_loss', 'val_accuracy'])
+## dict_keys(['loss', 'accuracy', 'val_loss', 'val_accuracy'])
 
 plt.plot(result.history['accuracy'], color='b')
 plt.plot(result.history['val_accuracy'], color='r')
@@ -227,7 +227,7 @@ sklearn_model.fit(x_data_train_norm, t_data_train)
 sklearn_result = sklearn_model.score(x_data_test_norm, t_data_test)
 
 print('sklearn의 정확도는 : {}'.format(sklearn_result))
-# sklearn의 정확도는 : 0.7947761194029851
+## sklearn의 정확도는 : 0.7947761194029851
 ```
 
 

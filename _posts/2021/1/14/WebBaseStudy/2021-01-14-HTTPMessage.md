@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# HTTP Message
+## HTTP Message
 
 HTTP 메세지의 형식은 다음과 같이 생겼다.
 

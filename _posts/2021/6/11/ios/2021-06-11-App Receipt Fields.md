@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# App Receipt Fields
+## App Receipt Fields
 
 ## 1. Bundle Identifier
 

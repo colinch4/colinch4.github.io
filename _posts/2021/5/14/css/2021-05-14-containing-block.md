@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Containing Block
+## Containing Block
 Containing Block은 어떤 element의 Position과 Size를 식별하는 기준이 된다.
 
 ****일반적으로**** Containing Block은 부모의 Content 영역이다.

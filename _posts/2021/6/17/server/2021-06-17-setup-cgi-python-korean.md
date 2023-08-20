@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 리눅스 서버에 파이썬 cgi 환경설정하기
+## 리눅스 서버에 파이썬 cgi 환경설정하기
 
 ## apache2에서 cgi 디렉토리 설정하기
 

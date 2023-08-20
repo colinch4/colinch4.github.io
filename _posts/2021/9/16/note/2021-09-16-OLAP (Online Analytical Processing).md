@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# OLAP (Online Analytical Processing)
+## OLAP (Online Analytical Processing)
 
 최종 사용자가 다차원 정보에 직접 접근하여 대화식으로 정보를 분석하고 의사결정에 활용하는 과정을 **OLAP**라고 한다. 
 

@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Network Topology
+## Network Topology
 
 다양한 통신망의 구성 형태에 대해 알아보도록 하자.
 

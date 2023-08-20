@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# ndarray(차원,크기)
+## ndarray(차원,크기)
 
 > Python의 일반적인 `list`와 달리 다른 data-type이 들어올 수 있고 하나의 data-type을 element로 갖는다.
 >

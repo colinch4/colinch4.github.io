@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Vscode Keyboard Shortcuts
+## Vscode Keyboard Shortcuts
 
 * `Cmd + \`: 창 분할하기
 * `Cmd + B`: 사이드바 토글

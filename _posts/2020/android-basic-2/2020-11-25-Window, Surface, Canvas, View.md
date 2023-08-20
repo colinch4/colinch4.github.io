@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 안드로이드에서 뷰가 그려지는 과정
+## 안드로이드에서 뷰가 그려지는 과정
   
   
   안드로이드에서 UI를 렌더링하기 위한 여러 개념들이 있는데 window, surface, canvas, view 가 있다.

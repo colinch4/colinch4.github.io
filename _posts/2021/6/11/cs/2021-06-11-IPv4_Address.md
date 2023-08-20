@@ -8,12 +8,12 @@ comments: true
 share: true
 ---
 
-# IPv4 Address 
+## IPv4 Address 
 
 * Classful 
 * CIDR(Classess Inter-Domain Routing)
 
-# Classful IPv4 Address 
+## Classful IPv4 Address 
 
 ![classful](https://user-images.githubusercontent.com/38216027/71251485-d88cda00-2365-11ea-99fd-ff475643a499.png)
 
@@ -37,7 +37,7 @@ share: true
 
 * 맨 앞에 110이면 class B 이고 네트워크의 수는 2,097,152(2^21)개, 하나의 네트워크가 가지는 host의 개수는 256(2^8)이다. 
 
-# CIDR(Classess Inter-Domain Routing)
+## CIDR(Classess Inter-Domain Routing)
 
 * 인터넷의 현재 address assignment strategy (RFC(Request For Comments)가 4632번)
 
@@ -48,7 +48,7 @@ share: true
 => NIC address 가 200.23.19.5/21 인데 subnet mask 와 AND 연산을 해 subnet address 를 구한다. subnet mask는 길이가 21로 AND 연산을 하면 
 subnet address 는 200.23.16.0/21 이 된다. 
 
-# Address Aggregation ( or Supernetting) 
+## Address Aggregation ( or Supernetting) 
 
 * 또한 route aggreagtion 이나 route summarization 으로 불린다. 
 

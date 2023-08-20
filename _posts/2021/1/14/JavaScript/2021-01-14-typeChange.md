@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# String과 Number 사이의 형변환
+## String과 Number 사이의 형변환
 
 ## String -> Number
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# @discardableResult
+## @discardableResult
 
 <img width="278" alt="f1" src="https://user-images.githubusercontent.com/45002556/108619540-e6a62100-7468-11eb-84f3-de7168256d09.png">
 

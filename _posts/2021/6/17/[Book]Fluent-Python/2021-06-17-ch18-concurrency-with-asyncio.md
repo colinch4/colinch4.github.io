@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 18장 asyncio를 이용한 동시성
+## 18장 asyncio를 이용한 동시성
 
 > 동시성을 구조, 병렬성은 실행에 관한 것이다. - 롭 파이크의 [Concurrency Is Not Paralleism (It's Better)](https://blog.golang.org/concurrency-is-not-parallelism)
 

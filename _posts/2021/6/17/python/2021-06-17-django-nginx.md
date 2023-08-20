@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] 장고 웹서비스"
+title: "[파이썬] 장고 웹서비스"
 description: " "
 date: 2021-06-17
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# 장고 웹서비스
+## 장고 웹서비스
 
 아래는 2019년 10월 21일 케라스 코리아 대화방에서 복사한 글이다. 메모용으로 일단 남겨둔다.
 

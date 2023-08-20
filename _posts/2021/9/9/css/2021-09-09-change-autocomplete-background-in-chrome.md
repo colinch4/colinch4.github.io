@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 크롬 자동완성의 배경색상 변경하기
+## 크롬 자동완성의 배경색상 변경하기
 
 크롬 브라우저 및 webkit 기반 브라우저에서 자동완성기능 사용시 `input` 요소에 특정 배경색상이 적용된다.  가상 선택자 `:-webkit-autofill` 을 이용해 다음 CSS로 색상 수정 가능하다. 다만  `background-color` 속성이 아닌 `box-shadow` 속성을 사용해 배경색상이 변경되어 보이도록 하는 일종의 Hack이다.
 

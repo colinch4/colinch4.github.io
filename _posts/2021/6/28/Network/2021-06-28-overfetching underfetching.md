@@ -9,11 +9,11 @@ share: true
 ---
 
 
-# overfetching
+## overfetching
 
 너무 많은 데이터를 가져오는 것을 의미한다. 즉 어떤 endpoint에 요청을 보내고 그 응답을 받았을 때 내가 원하는 데이터에 비해 큰 데이터가 오기 때문에 낭비가 발생하는 부분을 의미한다.
 
-# underfetching
+## underfetching
 
 한 번의 한 endpoint로의 요청은 내가 원하는 데이터를 충분히 가져올 수 없기 때문에 그 다음의 요청을 보낼 수 밖에 없다.
 

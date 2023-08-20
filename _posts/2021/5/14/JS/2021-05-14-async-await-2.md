@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Async / await2
+## Async / await2
 비동기 프로그래밍을 동기 프로그래밍처럼 사용할 수 있게 해준다.
 
 Promise가 더 큰 개념이기 때문에, async/ await가 이를 완전 대체하는 것은 아니다.

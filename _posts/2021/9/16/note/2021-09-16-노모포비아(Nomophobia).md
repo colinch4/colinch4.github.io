@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 노모포비아(Nomophobia)
+## 노모포비아(Nomophobia)
 
 휴대 전화가 없으면, 불안감과 공포감에 휩싸이게 되는 공포증.
 

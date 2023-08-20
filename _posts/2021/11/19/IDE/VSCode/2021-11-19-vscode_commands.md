@@ -10,7 +10,7 @@ share: true
 
 
 
-# VS Code Commands
+## VS Code Commands
 VS Code 명령어 모음 (for macOS)
 
 ⌨️ Use your keyboard more, and your mouse less

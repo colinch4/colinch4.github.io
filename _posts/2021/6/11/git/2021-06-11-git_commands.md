@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# git commands
+## git commands
 
 1. git remote -v :현 디렉토리에서 모든 원격 저장소 찾기
 2. git remote add [단축이름] [URL] : 원격 저장소 추가하기

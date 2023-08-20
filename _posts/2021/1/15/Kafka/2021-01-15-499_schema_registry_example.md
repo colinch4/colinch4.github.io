@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Kafka 기초 다지기
+## Kafka 기초 다지기
 
 #### Docker로 Schema Registry 실습해보기
 
@@ -151,7 +151,7 @@ ___
 **스키마 검증 (validate)**
 
 ```
-# /usr/bin/kafka-avro-console-producer \
+## /usr/bin/kafka-avro-console-producer \
   --broker-list kafka:9092 --topic bar \
   --property schema.registry.url=http://schema-registry:8081 \
   --property value.schema='{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'

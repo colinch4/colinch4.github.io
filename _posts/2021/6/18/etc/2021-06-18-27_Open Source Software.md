@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] Open Source Software"
+title: "[파이썬] Open Source Software"
 description: " "
 date: 2021-06-18
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Open Source Software
+## Open Source Software
 
 100%의 소프트웨어 중 70% 정도는 Open Source 를 이용한다.
 

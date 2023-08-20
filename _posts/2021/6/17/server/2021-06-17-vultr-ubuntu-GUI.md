@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Vultr 서버 GUI 환경 구축하기
+## Vultr 서버 GUI 환경 구축하기
 
 ## 배경
 

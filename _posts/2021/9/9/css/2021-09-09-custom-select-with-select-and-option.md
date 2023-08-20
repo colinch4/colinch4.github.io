@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# select와 option으로 커스텀 셀렉트 만들기
+## select와 option으로 커스텀 셀렉트 만들기
 
  CSS로 만든 셀렉트박스에서 발생하는 주요 이슈로 인해 브라우저 기본인 `<select>` 와 `<option>` 을 사용해 드롭다운 되는 셀렉트 박스를 구현하고자 한다.
 

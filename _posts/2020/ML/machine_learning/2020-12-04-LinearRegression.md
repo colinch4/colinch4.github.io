@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Linear Regression(수업방식)
+## Linear Regression(수업방식)
 
 > 간단한 예제를 통해 Linear Regression 을 알아본다.
 
@@ -40,7 +40,7 @@ plt.show()
 ```python
 W = np.random.rand(1,1)
 b = np.random.rand(1)
-# 주의해야 할 점은 W와 같은 경우 Multiple Linear Regression 고려해 nx1 꼴로 만들어주는게 효율적이다.
+## 주의해야 할 점은 W와 같은 경우 Multiple Linear Regression 고려해 nx1 꼴로 만들어주는게 효율적이다.
 
 H = np.dot(x_data, W) + b
 ```
@@ -111,7 +111,7 @@ def predict(x):
     return np.dot(x,W) + b
 
 print(predict(30))
-# [[114.53841039]]
+## [[114.53841039]]
 ```
 
 

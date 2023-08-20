@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# POST로 AJAX 처리하기
+## POST로 AJAX 처리하기
 
 ## tl;dr
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Callback Function
+## Callback Function
 
 Node.js를 쓰며 가장 많이 접하는 개념이 바로 `callback 함수` 이다.
 

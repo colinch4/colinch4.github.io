@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# SMTP 
+## SMTP 
 **S**imple **M**ail **T**ransfer **P**rotocol 의 약자  
 > SMTP 의 자세한 내용은 [Network/SMTP](https://github.com/8luebottle/TIL/blob/master/Network/smtp.md) 에서 확인
 

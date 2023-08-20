@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# CloudFront
+## CloudFront
 > Reference : [CloudFront](https://aws.amazon.com/ko/cloudfront/features)
 
 <img width="150" alt="CloudFront" src="https://user-images.githubusercontent.com/48475824/89286048-7da5ba00-d68c-11ea-9977-505ca988cd88.png">

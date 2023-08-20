@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] Computation Thinking"
+title: "[파이썬] Computation Thinking"
 description: " "
 date: 2021-06-18
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Computation Thinking
+## Computation Thinking
 
 ## 1. 기초 수식
 

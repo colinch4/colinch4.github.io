@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Localization
+## Localization
 - 현지화, 해당 나라의 문화, 특색에 맞게 언어 및 디자인을 변경하는것 
 
 [Localizing Your App](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html)

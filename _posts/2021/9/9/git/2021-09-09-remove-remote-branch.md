@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 원격 브랜치 삭제하기
+## 원격 브랜치 삭제하기
 
 로컬에 있는 브랜치를 로컬과 원격에서 동시에 삭제하고자 하는 경우, [브랜치 삭제하기](https://github.com/onlyeon/TIL/blob/master/git/delete-branch.md) 를 먼저 수행한 후 아래의 명령어로 upstream에 반영한다.
 

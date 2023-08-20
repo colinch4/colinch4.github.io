@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🦦 MongoDB로 JDBC 사용하기
+## 🦦 MongoDB로 JDBC 사용하기
 
 ### 1. 의존성 설정하기
 

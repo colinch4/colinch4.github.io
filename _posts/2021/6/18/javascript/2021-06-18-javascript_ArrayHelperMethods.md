@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Array Helper Methods
+## Array Helper Methods
 
 > - map(), forEach(), filter()
 >   - 인자로 함수 자체가 와야함.

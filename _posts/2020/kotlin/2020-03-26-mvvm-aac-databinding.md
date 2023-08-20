@@ -29,7 +29,7 @@ Jetpack AAC(Android Architecture Components 이하 AAC)를 이용하기 위해�
 
 ----------
 
-# _1. 안드로이드 개발의 시작! Gradle Setting_
+## _1. 안드로이드 개발의 시작! Gradle Setting_
 
 //코틀린 사용자의 경우(해당세팅 하지 않을경우 어뎁터 사용 불가)  
 apply plugin: 'kotlin-kapt'android {  
@@ -45,7 +45,7 @@ AAC중 거의 유일하게 implementation 코드가 필요 없습니다. 그 이
 
 ----------
 
-# 2. 레이아웃 세팅
+## 2. 레이아웃 세팅
 
 <?xml version="1.0" encoding="utf-8"?>  
 <layout xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -126,7 +126,7 @@ data 태그는 레이아웃에서 사용하고 싶은 오브잭트의 구성요�
 
 ----------
 
-# 3. 액티비티 세팅
+## 3. 액티비티 세팅
 
 **액티비티 세팅을 하기전에 Build->Rebuild Project를 해주어야 합니다.**(데이터바인딩의 거의 유일한 단점이지만 매우 귀찮습니다.) 그 이유는 위에 설명한것 처럼 컴파일러가 자동으로 생성해주는 바인딩 클래스가 컴파일할때 생성되기 때문입니다.
 
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
 
 DataBindingUtil클래스를 통하여 레이아웃을 Binding 하고, binding 인스턴스를 통해 값을 세팅하면 됩니다.
 
-# 4. 데이터 바인딩
+## 4. 데이터 바인딩
 
 이름에서 표현되듯이 데이터를 레이아웃에 바인딩을 해주는 것을 의미합니다. 먼저 코드와 결과 화면을 보고 설명을 드리도록 하겠습니다.
 
@@ -194,7 +194,7 @@ var binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout
 
 ![](https://miro.medium.com/max/467/1*0oV-dGiy9tlCsLUI9gNL4w.jpeg)
 
-# 5. 커스텀 바인딩 어댑터
+## 5. 커스텀 바인딩 어댑터
 
 이미지를 넣기위해 저는  [Picaaso](https://github.com/square/picasso)  혹은  [Glide](http://glide/)라이브러리를 이용합니다. 하지만 매번 Activity, Fragment등 에서 Glide를 이용해서 프로필 사진을 세팅하기 귀찮습니다. 뭔가 객체로 한번에 세팅을 하고 싶습니다. 그럴때 사용하는 방법이 커스텀 바인딩 어댑터입니다. 데이터 바인딩 프레임워크에는 값을 설정하기 위해 호출할 함수를 사용자 지정하는 방법이 있습니다.
 
@@ -269,7 +269,7 @@ CustomBindingAdapterKt.bindImage(this._mboundView2_, userProfileURL);
 -   맞춤 네임스페이스는 일치 확인 중에 무시됩니다.
 -   Android 네임스페이스용 어댑터를 작성할 수도 있습니다.
 
-# 6. 리스너 바인딩
+## 6. 리스너 바인딩
 
 안드로이드에는 여러가지 리스너가 있습니다. 대표적으로 View.OnClickListener가 있으며 이러한 SAM(Single Abstract Method)들은 함수 이름을 따라서 어트리뷰트 이름이 정해집니다. 추상메소드가 많은 리스너들은 변칙적으로 이름이 적용됩니다. 예를들어 TextWatcher의 경우 세가지의 추상메소드가 있지만 변칙적으로 하나의 메소드만 이용합니다.
 
@@ -324,7 +324,7 @@ binding.setLifecycleOwner(this)
 
 주요파일들 전체 코드입니다. 참고로봐주시기 바랍니다.
 
-# **MainActivity**
+## **MainActivity**
 
 class MainActivity : AppCompatActivity() {  
     override fun onCreate(savedInstanceState: Bundle?) {  
@@ -351,7 +351,7 @@ class MainActivity : AppCompatActivity() {
     }  
 }
 
-# MainViewModel
+## MainViewModel
 
 class MainViewModel : ViewModel() {  
     var TAG = _javaClass_._simpleName_ var clickConverter = MutableLiveData<Unit>()  
@@ -363,7 +363,7 @@ class MainViewModel : ViewModel() {
     }  
 }
 
-# MainViewModelFactory
+## MainViewModelFactory
 
 class MainViewModelFactory : ViewModelProvider.Factory {  
   
@@ -372,7 +372,7 @@ class MainViewModelFactory : ViewModelProvider.Factory {
     }  
 }
 
-# CustomBindingAdapter.kt
+## CustomBindingAdapter.kt
 
 @BindingAdapter("bind_image")  
 fun bindImage(view: ImageView, res: Int?) {  
@@ -394,7 +394,7 @@ fun bindImage(view: ImageView, res: Int, error: Drawable) {
         .into(view)  
 }
 
-# activity_main.xml
+## activity_main.xml
 
 <?xml version="1.0" encoding="utf-8"?>  
 <layout xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -440,7 +440,7 @@ fun bindImage(view: ImageView, res: Int, error: Drawable) {
     </LinearLayout>  
 </layout>
 
-# gradle.properties(이거 빼먹는경우 많습니다.)
+## gradle.properties(이거 빼먹는경우 많습니다.)
 
 _저도 포스팅하다가 이거 깜빡해서 좀 해맸습니다._
 
@@ -450,7 +450,7 @@ org.gradle.jvmargs=-Xmx1536m
 kotlin.code.style=official
 
 
-# 7. 데이터바인딩 준비
+## 7. 데이터바인딩 준비
 
 1.  아키택쳐 가이드에 준하는 패키지 구조 확립
 2.  Room을 이용한 데이터베이스 세팅
@@ -478,7 +478,7 @@ MVVM 패키지 구조
 
 ----------
 
-# 8. 데이터바인딩(Fragment, Adapter)
+## 8. 데이터바인딩(Fragment, Adapter)
 
 Fragment 에서의 데이터 바인딩은 Activty에서의 데이터 바인딩과 조금 다르지만 기존에 inflater로 inflate하는 방식과 상당히 유사합니다. 또한 어뎁터로 리스트를 넘겨주는 방법또한 다릅니다. 먼저 코드를 보고 설명하겠습니다.
 
@@ -531,7 +531,7 @@ notifyDataSetChanged()와 기능적으로 유사합니다.
 
 ----------
 
-# 9. 레이아웃에 자바클래스 import
+## 9. 레이아웃에 자바클래스 import
 
 자바와 마찬가지로 import구문을 사용하여 xml레벨에서 해당 클래스를 이용 가능합니다. 복잡한 활용은 피해야 하며 최대한 직관적이고 간단하게 구현해야 합니다.
 
@@ -555,7 +555,7 @@ notifyDataSetChanged()와 기능적으로 유사합니다.
 
 ----------
 
-# 10. 식 언어
+## 10. 식 언어
 
 식 언어는 Java 식과 매우 흡사해 보입니다. 다음 사항은 Java 식과 똑같습니다.( 식언어는 간단한 예만 작성하고 따로 설명하지는 않겠습니다. 편의상 i와 j로 표기하겠습니다.)
 
@@ -584,7 +584,7 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"**
 
 ----------
 
-# 11.바인딩 어댑터 오버로딩
+## 11.바인딩 어댑터 오버로딩
 
 예를들어 이미지를 세팅할때, 이미지값이 Int타입 drawable, color ID값이 되거나, 서버로부터 이미지를 받아 String타입 URL이 될수도 있습니다. 이때 바인딩 어댑터를 어떤식으로 오버로딩 하는지 살펴보겠습니다.
 
@@ -634,7 +634,7 @@ fun bindImage(view: ImageView, res: Int, error: Drawable) {
 
 ![](https://miro.medium.com/max/1080/1*EmqeugTTMaq77n1sV6So1A.jpeg)
 
-# 12.개인적인 의견
+## 12.개인적인 의견
 
 1.  자동완성이 되지않는 경우가 있어 오타에 매우 주의해야 합니다.
 2.  android:id값을 바꾸거나 새로운 컴포넌트를 추가하면 컴파일을 다시 해줘야 하기 때문에 매우 귀찮습니다.

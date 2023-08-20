@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# HTML과 JavaScript의 만남 3 (콘솔)
+## HTML과 JavaScript의 만남 3 (콘솔)
 
 자바스크립트에서 따옴표를 붙이면 문자로 인식되며 `.length` 로 글자의 갯수를 셀 수 있다. 예제: `alert('문자열'.length)`
 

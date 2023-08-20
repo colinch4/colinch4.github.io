@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 반복문과 배열
+## 반복문과 배열
 
 ## **반복문 예고**
 

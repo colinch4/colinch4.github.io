@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# React Query - intro
+## React Query - intro
 
 ## Reudx?
 일반적으로 Redux를 사용하는 것은 클라이언트의 상태를 관리하는데에 적합하다.
@@ -188,7 +188,7 @@ function Todos() {
 
 
 
-# React Query - query
+## React Query - query
 - key : 특정 쿼리에 대한 unique key
 - function : Promise를 반환하는 함수
 - result : 쿼리의 반환 값

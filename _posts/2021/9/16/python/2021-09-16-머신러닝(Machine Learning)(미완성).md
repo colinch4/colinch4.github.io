@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 머신러닝(Machine Learning)"
+title: "[파이썬] 머신러닝(Machine Learning)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 머신러닝(Machine Learning)
+## 머신러닝(Machine Learning)
 
 ## 머신러닝 시스템의 종류
 

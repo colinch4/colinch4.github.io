@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Perceptron(퍼셉트론)
+## Perceptron(퍼셉트론)
 
 > 1957년 로젠블라트가 고안한 알고리즘이다. 이 알고리즘은 딥러닝의 기원이 되는 알고리즘이다.
 

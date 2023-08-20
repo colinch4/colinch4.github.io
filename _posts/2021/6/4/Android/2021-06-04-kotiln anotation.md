@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Kotlin에서 자주 사용하는 annotation 정리
+## Kotlin에서 자주 사용하는 annotation 정리
 
 - @JvmName
 - @JvmStatic

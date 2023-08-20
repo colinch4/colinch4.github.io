@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Logistic Regression 기초
+## Logistic Regression 기초
 
 > Linear Regression과 별개로 Logistic Regression은 연속적인 값을 추록하는것이 아니라 **Classification**하는 하나의 방법이다. 
 

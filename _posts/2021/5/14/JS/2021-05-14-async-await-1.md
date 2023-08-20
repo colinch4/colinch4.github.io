@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Async / await
+## Async / await
 ## Async / await
 
 ```js

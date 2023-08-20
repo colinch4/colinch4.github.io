@@ -12,7 +12,7 @@ share: true
 ---
 
 
-# Views and ViewModels
+## Views and ViewModels
 
 ## Distributing responsibilities
 
@@ -62,7 +62,7 @@ Typical subscription from an activity or fragment.
 
 > ✅ Instead of pushing data to the UI, let the UI observe changes to it.
 
-# Fat ViewModels
+## Fat ViewModels
 
 Whatever lets you separate concerns is a good idea. If your ViewModel is holding too much code or has too many responsibilities consider:
 
@@ -71,7 +71,7 @@ Whatever lets you separate concerns is a good idea. If your ViewModel is holding
 
 > ✅ Distribute responsibilities, add a domain layer if needed.
 
-# Using a data repository
+## Using a data repository
 
 As seen in the  [Guide to App Architecture](https://developer.android.com/topic/libraries/architecture/guide.html)  most apps have multiple data sources, such as:
 
@@ -85,7 +85,7 @@ If you have multiple and very different data models, consider adding multiple re
 
 > ✅ Add a data repository as the single-point entry to your data
 
-# Dealing with data state
+## Dealing with data state
 
 Consider this scenario: you’re observing a LiveData exposed by a ViewModel that contains a list of items to display. How can the View diferentiate between data being loaded, a network error and an empty list?
 
@@ -99,7 +99,7 @@ You can wrap the data in a class that has a state and other metadata like an err
 
 > ✅ Expose information about the state of your data using a wrapper or another LiveData.
 
-# Saving activity state
+## Saving activity state
 
 Activity state is the information you need to recreate a screen if an activity is gone, meaning the activity was destroyed or the process was killed. Rotation is the most obvious case and we’ve got that covered with ViewModels. State is safe if it’s kept in the ViewModel.
 
@@ -109,7 +109,7 @@ To efficiently save and restore UI state, use a combination of persistence,  `on
 
 For an example, see:  [ViewModels: Persistence, onSaveInstanceState(), Restoring UI State and Loaders](https://medium.com/google-developers/viewmodels-persistence-onsaveinstancestate-restoring-ui-state-and-loaders-fc7cc4a6c090)
 
-# Events
+## Events
 
 An event is something that happens once. ViewModels expose data, but what about events? For example, navigation events or showing Snackbar messages are actions that should only be executed once.
 
@@ -129,7 +129,7 @@ Instead of trying to solve this with libraries or extensions to the Architecture
 
 > ✅ Design events as part of your state. For more details read  [LiveData with SnackBar, Navigation and other events (the SingleLiveEvent case)](https://medium.com/google-developers/livedata-with-snackbar-navigation-and-other-events-the-singleliveevent-case-ac2622673150).
 
-# Leaking ViewModels
+## Leaking ViewModels
 
 The reactive paradigm works well in Android because it allows for a convenient connection between UI and the rest of the layers of your app. LiveData is the key component of this structure so normally your activities and fragments will observe LiveData instances.
 
@@ -165,7 +165,7 @@ You have many options to achieve this:
 > 
 > ❌ Don’t put logic in the ViewModel that is critical to saving clean state or related to data. Any call you make from a ViewModel can be the last one.
 
-# LiveData in repositories
+## LiveData in repositories
 
 To avoid leaking ViewModels and  _callback hell_, repositories can be observed like this:
 
@@ -187,7 +187,7 @@ In this example, when the trigger gets an update, the function is applied and th
 
 > ✅ Whenever you think you need a  [Lifecycle](https://developer.android.com/reference/android/arch/lifecycle/Lifecycle.html)  object inside a  [ViewModel](https://developer.android.com/reference/android/arch/lifecycle/ViewModel.html), a  [Transformation](https://developer.android.com/topic/libraries/architecture/livedata#transform_livedata)  is probably the solution.
 
-# Extending LiveData
+## Extending LiveData
 
 The most common use case for LiveData is using  `MutableLiveData`  in ViewModels and exposing them as  `LiveData`  to make them immutable from the observers.
 

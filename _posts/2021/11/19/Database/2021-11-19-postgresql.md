@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# postgreSQL
+## postgreSQL
 Postgre의 기본 포트는 ```5432```
  
  ### Table of Contents

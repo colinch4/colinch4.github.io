@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 기본 DataFrame column (2)
+## 기본 DataFrame column (2)
 
 > `pandas` 의 `DataFrame` 에 관한 `row`와 `column` 추가, 삭제등에 관한 내용에 대해서 알아본다.
 
@@ -79,12 +79,12 @@ display(df)
 
 ```python
 print(df['학점'] > 3.0)
-# one      False
-# two      False
-# three     True
-# four     False
-# five     False
-# Name: 학점, dtype: bool     : Series
+## one      False
+## two      False
+## three     True
+## four     False
+## five     False
+## Name: 학점, dtype: bool     : Series
 df['장학생여부'] = df['학점'] > 3.0
 display(df)
 ```

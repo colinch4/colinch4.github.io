@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Numpy
+## Numpy
 
 > `Numpy` 는 Numercial Pyhon의 약어로 Python의 Module이다.
 

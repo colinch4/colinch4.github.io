@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Durability 
+## Durability 
 **내구성 (Durability)**  
 ```내구성 != 용량```
 

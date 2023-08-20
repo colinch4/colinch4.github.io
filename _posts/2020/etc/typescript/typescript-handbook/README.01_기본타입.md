@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Typescript basic
+## Typescript basic
 
 -   [타입스크립트 핸드북 - 기본타입](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 

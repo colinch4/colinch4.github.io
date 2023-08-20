@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Program Counter 
+## Program Counter 
 **PC** : **P**rogram **C**ounter  
 PC 는 레지스터의 일종으로써 CPU 가 다음에 실행시켜야 할 명령의 주소를 담고 있다.  
 * IP (Instrcuton Pointer) 또는 IAR (Instruction Address Register) 라 불리기도 한다.  

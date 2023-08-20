@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# git commit 
+## git commit 
 
 ## 커밋 (commit)
 

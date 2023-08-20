@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# GraphQL 기초 다지기
+## GraphQL 기초 다지기
 
  **출처 : [GraphQL 공식 레퍼런스](https://graphql.github.io/learn)**
 

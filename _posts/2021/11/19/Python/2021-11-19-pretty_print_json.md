@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[Python] Pretty Print JSON"
+title: "[파이썬] Pretty Print JSON"
 description: " "
 date: 2021-11-19
-tags: [Python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# Pretty Print JSON
+## Pretty Print JSON
 python 이 깔려있다면 console 창에서 JSON 을 보기 좋은 형태로 print 할 수 있다.
 
 Python Version 은 2.6 이상 이어야 한다.  

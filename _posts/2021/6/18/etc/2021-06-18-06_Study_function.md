@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "[python] 내장함수"
+title: "[파이썬] 내장함수"
 description: " "
 date: 2021-06-18
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
 
-# 0115
+## 0115
 
-# 내장함수
+## 내장함수
 
 1. 수치 연산 함수
    - abs( k )

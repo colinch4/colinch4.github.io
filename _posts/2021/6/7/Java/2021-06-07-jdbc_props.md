@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 🏗 Properties 파일을 이용한 JDBC
+## 🏗 Properties 파일을 이용한 JDBC
 
 > - 자바 프로그래밍 내부적으로 커넥션을 설정하는 방법 외에
 >   properties파일을 이용해서 JDBC를 사용하는 방법!

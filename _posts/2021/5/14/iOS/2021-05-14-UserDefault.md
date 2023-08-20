@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# UserDefaults
+## UserDefaults
 - key : value 형태로 저장하는 사용자 기본 데이터베이스에 대한 인터페이스
 - 사용자 설정이나 환경설정 값에 사용하기 적합하다.(ex: 모바일데이터 사용 on/off, 백그라운드 재생 on/off)
 

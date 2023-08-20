@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# 🤹‍♀️ Spring MVC 패턴 사용하기
+## 🤹‍♀️ Spring MVC 패턴 사용하기
 
 ### MVC(Model View Controller) 패턴이란?
 

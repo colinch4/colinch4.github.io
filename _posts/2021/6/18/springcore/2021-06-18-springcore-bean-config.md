@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 빈 설정 방법
+## 빈 설정 방법
 - 빈 설정 방법 2가지
 	- XML 설정
 	- 자바 클래스 설정

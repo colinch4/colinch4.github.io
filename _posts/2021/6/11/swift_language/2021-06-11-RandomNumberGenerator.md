@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# RandomNumberGenerator
+## RandomNumberGenerator
 
 
 **균일하게 분포된** 무작위 데이터를 제공하는 유형입니다.

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Style Guide
+## Style Guide
 
 ## Type annotation
 

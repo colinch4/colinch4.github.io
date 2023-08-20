@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# rest 파라미터와 스프레드
+## rest 파라미터와 스프레드
 rest 파라미터와 스프레드는 문법적으로 유사하다.
 
 ## rest 파라미터

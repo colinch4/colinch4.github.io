@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Logical Storage Structure  
+## Logical Storage Structure  
 데이터베이스에 담긴 데이터가 어떻게 담겨있는지 논리적 구조에 대해 알아보자.
 
 ### Table of Contents

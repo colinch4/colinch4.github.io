@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 강화학습 (reinforcement learning)
+## 강화학습 (reinforcement learning)
 
 > Reinforcement - 강화, 증강
 >

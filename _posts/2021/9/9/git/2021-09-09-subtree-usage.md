@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Git Submodule
+## Git Submodule
 
 Git 저장소에 다른 저장소를 추가하는 도구다. 예를들어, 라이브러리를 가져다 쓸 때 소스코드를 프로젝트로 직접 복사해 사용할 수 있지만 이 경우 라이브러리를 프로젝트에 맞게 수정해서 사용하고 배포하기 어렵다. 이러한 문제를 해결할 수 있는 도구이다.
 
@@ -85,10 +85,10 @@ $ git submodule update --remote core-style
 `.gitmodules` 파일에 설정해 모든 작업자에게 동일하게 적용하거나 개인 설정 파일인 `.git/config` 에 설정할 수 있다.
 
 ```bash
-# .gitmodules에 설정하기
+## .gitmodules에 설정하기
 $ git config -f .gitmodules submodule.core-style.branch dev
 
-# .git/config에 설정하기
+## .git/config에 설정하기
 $ git config submodule.core-style.branch dev
 ```
 

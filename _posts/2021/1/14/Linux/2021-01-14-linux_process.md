@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 프로세스
+## 프로세스
 ![https://68.media.tumblr.com/449c3ea2351d4bf0c23f593ea4b7e7dc/tumblr_ok4bzwdlCK1v80c66o1_540.jpg](https://68.media.tumblr.com/449c3ea2351d4bf0c23f593ea4b7e7dc/tumblr_ok4bzwdlCK1v80c66o1_540.jpg)
 
 1. mkdir, tm, top 등의 각 명령어들은 각각 하나의 프로그램이다.<br> 이들은 /bin, /sbin 디렉토리에 **파일의 형태**로, 하드디스크에 저장된다.<br><br>

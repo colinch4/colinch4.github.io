@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 전방 신경망의 학습
+## 전방 신경망의 학습
 
 ## 패스트푸드 문제
 

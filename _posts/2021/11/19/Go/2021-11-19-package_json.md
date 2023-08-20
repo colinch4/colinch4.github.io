@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Package json
+## Package json
 
 Go 에서 JSON을 사용하기 위해서는 <code>encoding/json</code> 패키지를 이용한다.
 

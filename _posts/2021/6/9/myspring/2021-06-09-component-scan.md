@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 공부내용 정리
+## 공부내용 정리
 
 ### context:component-scan
 

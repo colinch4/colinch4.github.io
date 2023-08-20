@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Factory Method 패턴
+## Factory Method 패턴
 
 객체를 만들어내는 부분을 서브 클래스에 위임하는 패턴
 

@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Recursive Algorithm
+## Recursive Algorithm
 
 ## 재귀 함수란
 
@@ -25,7 +25,7 @@ share: true
 ### 피보나치 수열 재귀함수로 구현해보기
 
 ```python
-# n번째 피보나치 수를 리턴
+## n번째 피보나치 수를 리턴
 def fib(n):
     # Base Case
     if n < 3:
@@ -34,7 +34,7 @@ def fib(n):
     else:
         return fib(n - 2) + fib(n - 1)
 
-# Test
+## Test
 for i in range(1, 11):
     print(fib(i))
 ```
@@ -44,7 +44,7 @@ for i in range(1, 11):
 ### 1부터 n까지의 합인 n번째 삼각수(triangle number)를 구현
 
 ```python
-# 1부터 n까지의 합을 리턴
+## 1부터 n까지의 합을 리턴
 def triangle_number(n):
     # Base Case
     if n < 2:
@@ -55,7 +55,7 @@ def triangle_number(n):
         return triangle_number(n - 1) + n
 
 
-# Test
+## Test
 for i in range(1, 11):
     print(triangle_number(i))
 ```
@@ -65,7 +65,7 @@ for i in range(1, 11):
 ### n의 각 자릿수의 합을 리턴해주는 재귀함수를 구현
 
 ```python
-# n의 각 자릿수의 합을 리턴
+## n의 각 자릿수의 합을 리턴
 def sum_digits(n):
     # Base Case
     if n < 10:
@@ -75,10 +75,10 @@ def sum_digits(n):
     else:
         return (n % 10) + sum_digits(n // 10)
 
-# 코드를 작성하세요.
+## 코드를 작성하세요.
 
 
-# 테스트
+## 테스트
 print(sum_digits(22541))    # 14
 print(sum_digits(92130))    # 15
 print(sum_digits(12634))    # 16
@@ -91,7 +91,7 @@ print(sum_digits(3755))     # 20
 ### 입력받은 리스트를 뒤집힌 리스트로 리턴 하는 것을 재귀함수로 구현
 
 ```python
-# 파라미터 some_list를 거꾸로 뒤집는 함수
+## 파라미터 some_list를 거꾸로 뒤집는 함수
 def flip(some_list):
     # Base Case
     if len(some_list) < 2:
@@ -101,7 +101,7 @@ def flip(some_list):
     else:
         return [some_list[-1]] + flip(some_list[:-1])
 
-# 테스트
+## 테스트
 some_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 some_list = flip(some_list)
 print(some_list)
@@ -171,6 +171,6 @@ def hanoi(num_disks, start_peg, end_peg):
         # 나머지 원판들을 pass_peg에서 end_peg로 이동
         hanoi(num_disks - 1, pass_peg, end_peg)
 
-# 테스트 코드
+## 테스트 코드
 hanoi(4, 1, 3)
 ```

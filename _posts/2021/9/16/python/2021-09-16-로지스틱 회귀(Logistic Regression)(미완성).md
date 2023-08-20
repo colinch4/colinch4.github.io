@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] 로지스틱 회귀(Logistic Regression)"
+title: "[파이썬] 로지스틱 회귀(Logistic Regression)"
 description: " "
 date: 2021-09-16
 tags: [파이썬]
@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 로지스틱 회귀(Logistic Regression)
+## 로지스틱 회귀(Logistic Regression)
 
 로지스틱회귀는 범주형 변수를 예측하는데 쓰이는 모델이다
 

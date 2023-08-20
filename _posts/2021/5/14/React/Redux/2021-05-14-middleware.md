@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-#  리덕스 미들웨어와 Thunk
+##  리덕스 미들웨어와 Thunk
 - 미들웨어란 무엇인가?
 - 미들웨어의 구조
 - 미들웨어의 활용 (별도 chpater에서 다룸)
@@ -139,7 +139,7 @@ function incrementAsync() {
 #리덕스/미들웨어와Thunk 
 
 
-# 미들웨어의 활용
+## 미들웨어의 활용
 ## Logger Middleware
 
 ```js

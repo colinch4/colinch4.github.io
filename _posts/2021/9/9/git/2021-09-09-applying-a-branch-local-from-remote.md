@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 원격 저장소에서 삭제된 브랜치 로컬에도 반영하기
+## 원격 저장소에서 삭제된 브랜치 로컬에도 반영하기
 
 원격에 있는 브랜치는 [원격 브랜치 삭제하기](https://h22y25n.github.io/git/remove-remote-branch/) 에 있는 명령어로 제거가 가능하다.
 특히, 로컬에도 있고 원격에도 있는 브랜치는 로컬에서 제거하고 원격에 `push` 해주기 때문에 로컬과 원격 동시에 제거되지만
@@ -17,10 +17,10 @@ share: true
 이런 경우 `fetch` 할 때 `--prune` 옵션을 사용하면 리모트 저장소에 제거된 브랜치 정보도 함께 가져온다.
 
 ```bash
-# While fetching
+## While fetching
 $ git fetch --prune <name>
 
-# Only prune, don't fetch
+## Only prune, don't fetch
 $ git remote prune <name>
 ```
 

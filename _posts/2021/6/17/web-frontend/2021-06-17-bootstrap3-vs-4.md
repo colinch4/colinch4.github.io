@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# 부트스트랩 3와 4
+## 부트스트랩 3와 4
 
 ## Bootstrap 소고
 

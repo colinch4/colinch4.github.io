@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] 파이썬 가상 환경"
+title: "[파이썬] 파이썬 가상 환경"
 description: " "
 date: 2020-12-04
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# 파이썬 가상 환경
+## 파이썬 가상 환경
 
 > 프로젝트별로 서로 다른 패키지의 버전이 요구되는 경우 반드시 필요
 
@@ -45,7 +45,7 @@ share: true
 ## pip
 
 ```bash
-# requirements.txt 설치된 패키들을 설치
+## requirements.txt 설치된 패키들을 설치
 $ pip freeze > requirements.txt
 ```
 

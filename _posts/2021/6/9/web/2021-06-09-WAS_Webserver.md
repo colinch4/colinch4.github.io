@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Web Server VS Web Application Server(WAS)
+## Web Server VS Web Application Server(WAS)
 
 > 간단하게 정리
 

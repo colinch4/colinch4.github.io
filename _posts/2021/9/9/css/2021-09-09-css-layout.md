@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# CSS 레이아웃
+## CSS 레이아웃
 
 CSS 레이아웃 초창기, 우리는 다음과 같이 Box Model을 공부했다
 

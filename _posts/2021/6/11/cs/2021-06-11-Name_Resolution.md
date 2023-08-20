@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# DNS - Name Resolution
+## DNS - Name Resolution
 
 * Two types of name resolution mechanism 
   * Recursive queries

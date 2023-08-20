@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Concurrent-programing and Parallel-programing
+## Concurrent-programing and Parallel-programing
 
 ## 1.1 병행과 병렬의 차이
 

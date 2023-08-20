@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Resource 추상화
+## Resource 추상화
 - java.net.URL을 추상화한 것
 - 추상화 이유
     - 클래스패스 기준으로 리소스 읽어오는 기능 없음

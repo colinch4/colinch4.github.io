@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Functions
+## Functions
 
 ### Function의 특징
 

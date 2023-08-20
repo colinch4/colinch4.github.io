@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# Multiple Linear Regression(4)-Tensorflow
+## Multiple Linear Regression(4)-Tensorflow
 
 > 앞에서 Preprocessing DataSet을 가지고 **Tensorflow**를 가지고 Multiple Linear Regression 모델을 만들어 본다.
 
@@ -44,7 +44,7 @@ T = tf.placeholder(shape = [None, 1], dtype = tf.float32)
 ```python
 W = tf.Variable(tf.random.normal([3,1]), name='weight')   
 b = tf.Variable(tf.random.normal([1]), name='bias')
-# name은 내부적으로 사용되므로 설정해준다.
+## name은 내부적으로 사용되므로 설정해준다.
 ```
 
 
@@ -105,6 +105,6 @@ predict_data_x = scaler_x.transform(predict_data_x)
 result = sess.run(H, feed_dict={X:predict_data_x}) 
 result = scaler_t.inverse_transform(result)
 print(result)
-# [[10.75479]]
+## [[10.75479]]
 ```
 

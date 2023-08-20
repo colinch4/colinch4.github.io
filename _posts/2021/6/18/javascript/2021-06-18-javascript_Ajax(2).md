@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# JS - 비동기
+## JS - 비동기
 
 - Computer
   - CPU( register  )

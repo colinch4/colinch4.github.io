@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Kafka 기초 다지기
+## Kafka 기초 다지기
 
  **출처 : [카프카 핵심 가이드 (O'Reilly)](https://book.naver.com/bookdb/book_detail.nhn?bid=14093855)**
 

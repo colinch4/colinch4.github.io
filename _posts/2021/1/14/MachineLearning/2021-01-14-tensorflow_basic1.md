@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Tensorflow Basic #1
+## Tensorflow Basic #1
 
 > [모두를 위한 딥러닝](https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm) 강좌를 듣고 배운 내용을 기반으로 기록합니다.
 

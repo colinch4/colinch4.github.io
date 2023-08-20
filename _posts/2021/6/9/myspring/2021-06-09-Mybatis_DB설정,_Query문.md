@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# mybatis-DB설정
+## mybatis-DB설정
 
 > root-context.xml 안에 설정
 
@@ -33,7 +33,7 @@ share: true
 
 
 
-# Query문 넣을 때 (JDBC에서)
+## Query문 넣을 때 (JDBC에서)
 
 ### #{} 
 

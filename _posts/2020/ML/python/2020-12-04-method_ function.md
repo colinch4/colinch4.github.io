@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] python method, function 정리"
+title: "[파이썬] python method, function 정리"
 description: " "
 date: 2020-12-04
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# python method, function 정리
+## python method, function 정리
 
 > 알고리즘을 하면서 배우는 method, function을 정리한다.
 
@@ -18,13 +18,13 @@ share: true
 
 ```python
 print('a'.isalpha())
-# True
+## True
 
 print('한글'.isalpha())
-# True
+## True
 
 print(3.isdigit())
-# True
+## True
 ```
 
 
@@ -36,7 +36,7 @@ points =[(2, 2), (0, 3), (1, 1), (4, 1)]
 points.sort(key=lambda x: x[0])
 print(points)
 
-# [(0, 3), (1, 1), (2, 2), (4, 1)]
+## [(0, 3), (1, 1), (2, 2), (4, 1)]
 ```
 
 
@@ -47,9 +47,9 @@ print(points)
 import math
 a = math.inf
 print(a)
-# inf
+## inf
 print(-math.inf)
-# -inf
+## -inf
 ```
 
 
@@ -65,8 +65,8 @@ print(list(perm))
 
 comb = combinations(my_list,2)
 print(list(comb))
-# [('1', '2'), ('1', '3'), ('1', '4'), ('2', '1'), ('2', '3'), ('2', '4'), ('3', '1'), ('3', '2'), ('3', '4'), ('4', '1'), ('4', '2'), ('4', '3')]
-# [('1', '2'), ('1', '3'), ('1', '4'), ('2', '3'), ('2', '4'), ('3', '4')]
+## [('1', '2'), ('1', '3'), ('1', '4'), ('2', '1'), ('2', '3'), ('2', '4'), ('3', '1'), ('3', '2'), ('3', '4'), ('4', '1'), ('4', '2'), ('4', '3')]
+## [('1', '2'), ('1', '3'), ('1', '4'), ('2', '3'), ('2', '4'), ('3', '4')]
 
 ```
 

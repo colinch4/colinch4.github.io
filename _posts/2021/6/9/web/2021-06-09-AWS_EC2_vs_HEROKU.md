@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# AWS EC2 vs HEROKU
+## AWS EC2 vs HEROKU
 
 > 서버 배포시 어떤것이 더 효율적일까?
 

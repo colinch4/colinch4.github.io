@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-# Token
+## Token
 
 ## Local Storage??
 jwt 토큰과 같이 토큰으로 로그인을 할때, 이 데이터를 어디에 저장해야할까?

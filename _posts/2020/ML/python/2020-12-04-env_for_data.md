@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[python] 데이터 분석을 위한 파이썬 환경설정 "
+title: "[파이썬] 데이터 분석을 위한 파이썬 환경설정 "
 description: " "
 date: 2020-12-04
-tags: [python]
+tags: [파이썬]
 comments: true
 share: true
 ---
 
-# 데이터 분석을 위한 파이썬 환경설정 
+## 데이터 분석을 위한 파이썬 환경설정 
 
 > ### 데이터 분석쪽은
 

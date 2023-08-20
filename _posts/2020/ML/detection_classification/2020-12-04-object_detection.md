@@ -9,7 +9,7 @@ share: true
 ---
 
 
-# [6강] 영상 인식 (image recognition) 이해
+## [6강] 영상 인식 (image recognition) 이해
 
 
 
