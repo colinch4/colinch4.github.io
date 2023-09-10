@@ -1,0 +1,100 @@
+Basics of string manipulation in Python
+String concatenation in Python
+String indexing and slicing in Python
+String formatting in Python
+String methods in Python
+String comparison in Python
+String case conversion in Python
+Working with unicode strings in Python
+Common string operations in Python
+Working with special characters in strings in Python
+String interpolation in Python
+Regular expressions in Python string manipulation
+Parsing and formatting dates and times in strings in Python
+Splitting and joining strings in Python
+Removing whitespace from strings in Python
+Searching strings in Python
+Replacing substrings in strings in Python
+Counting occurrences of substrings in strings in Python
+Checking if a string starts or ends with a specific substring in Python
+Finding the longest common substring in two strings in Python
+Reversing a string in Python
+Capitalizing the first letter of each word in a string in Python
+Removing duplicates from a string in Python
+Extracting numbers from a string in Python
+Encrypting and decrypting strings in Python
+Generating random strings in Python
+Checking if a string is a palindrome in Python
+Checking if a string is an anagram in Python
+Converting a string to a list in Python
+Converting a list to a string in Python
+Working with multi-line strings in Python
+Converting a string to uppercase in Python
+Converting a string to lowercase in Python
+Checking if a string contains only alphabetic characters in Python
+Checking if a string contains only numeric characters in Python
+Checking if a string contains only alphanumeric characters in Python
+Checking if a string contains only whitespace characters in Python
+Finding the length of a string in Python
+Checking if a string is empty in Python
+Checking if a string is numeric in Python
+Checking if a string is a valid email address in Python
+Checking if a string is a valid URL in Python
+Checking if a string is a valid IP address in Python
+Removing HTML tags from a string in Python
+Converting HTML special characters to their corresponding entities in Python
+Counting the number of words in a string in Python
+Extracting a substring between two indices in Python
+Removing non-alphanumeric characters from a string in Python
+Converting a string to a datetime object in Python
+Converting a datetime object to a string in Python
+Checking if a string is a valid JSON in Python
+Checking if a string is a valid XML in Python
+Checking if a string is a valid HTML in Python
+Checking if a string contains a specific substring in Python
+Extracting all occurrences of a specific substring from a string in Python
+Splitting a string at a specific delimiter in Python
+Joining multiple strings with a specific delimiter in Python
+Transforming a string to titlecase in Python
+Finding all permutations of a string in Python
+Finding the most common character in a string in Python
+Converting a string to a dictionary in Python
+Converting a dictionary to a string in Python
+Encoding and decoding strings in Python
+Finding the index of a substring in a string in Python
+Capitalizing the first letter of a string in Python
+Trimming whitespace from the beginning and end of a string in Python
+Removing leading and trailing characters from a string in Python
+Converting a string to a set in Python
+Converting a set to a string in Python
+Checking if a string is a valid password according to certain criteria in Python
+Checking if a string is a valid username according to certain criteria in Python
+Checking if a string is a valid phone number in Python
+Checking if a string is a valid social security number in Python
+Checking if a string is a valid credit card number in Python
+Removing all occurrences of a substring from a string in Python
+Counting the number of vowels in a string in Python
+Counting the number of consonants in a string in Python
+Checking if a string contains only uppercase letters in Python
+Checking if a string contains only lowercase letters in Python
+Extracting all numbers from a string in Python
+Checking if a string contains only printable characters in Python
+Reversing the order of words in a string in Python
+Finding the most frequent character in a string in Python
+Converting a string to a binary representation in Python
+Converting a binary string to a normal string in Python
+Removing trailing zeros from a decimal number in a string in Python
+Finding the frequency of each character in a string in Python
+Counting the number of occurrences of a specific word in a string in Python
+Extracting all email addresses from a string in Python
+Checking if a string is a valid ISBN number in Python
+Searching for a specific word in a large string or text file in Python
+Converting a string to a list of characters in Python
+Converting a list of characters to a string in Python
+Counting the number of occurrences of each character in a string in Python
+Removing duplicates from a string without using additional data structures in Python
+Finding the most frequent word in a string in Python
+Reverse sorting the words in a string in Python
+Checking if a string contains only ASCII characters in Python
+Extracting all URLs from a string in Python
+Converting a string to a boolean value in Python

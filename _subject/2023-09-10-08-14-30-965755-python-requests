@@ -1,0 +1,100 @@
+Introduction to Python Requests
+How to install Python Requests
+Sending a GET request with Python Requests
+Sending a POST request with Python Requests
+Sending a PUT request with Python Requests
+Sending a DELETE request with Python Requests
+Handling authentication with Python Requests
+Adding headers to requests with Python Requests
+Handling cookies with Python Requests
+Handling redirects with Python Requests
+Handling timeouts with Python Requests
+Uploading files with Python Requests
+Downloading files with Python Requests
+Sending JSON data with Python Requests
+Sending XML data with Python Requests
+Using proxies with Python Requests
+Checking SSL certificates with Python Requests
+Using sessions with Python Requests
+Handling connection errors with Python Requests
+Handling status codes with Python Requests
+Handling response content with Python Requests
+Parsing HTML responses with Python Requests
+Parsing JSON responses with Python Requests
+Parsing XML responses with Python Requests
+Handling redirects with Python Requests
+Sending multipart/form-data with Python Requests
+Creating reusable requests with Python Requests
+Working with request timeouts in Python Requests
+Using cookies in Python Requests
+Serializing and deserializing JSON with Python Requests
+Handling exceptions with Python Requests
+Following redirects in Python Requests
+Using sessions to persist data in Python Requests
+Customizing headers with Python Requests
+Testing API endpoints with Python Requests
+Sending requests concurrently with Python Requests
+Making authenticated requests with Python Requests
+Working with OAuth2 authentication in Python Requests
+Handling authentication challenges in Python Requests
+Sending requests through proxies with Python Requests
+Caching responses with Python Requests
+Writing test cases for Python Requests
+Using Python Requests for web scraping
+Handling pagination with Python Requests
+Handling rate limits with Python Requests
+Sending GZIP-encoded requests with Python Requests
+Making GraphQL requests with Python Requests
+Working with response headers in Python Requests
+Sending custom query parameters with Python Requests
+Using Python Requests for web automation
+Sending PATCH requests with Python Requests
+Checking request/response sizes with Python Requests
+Using Python Requests with asynchronous frameworks (e.g., asyncio)
+Using Python Requests with threading
+Sending requests over a proxy chain with Python Requests
+Handling response timeouts with Python Requests
+Adding a timeout to specific requests with Python Requests
+Working with HTTP/2 requests in Python Requests
+Working with multipart responses in Python Requests
+Sending custom HTTP requests with Python Requests
+Working with multipart/form-data requests in Python Requests
+Sending custom user-agent headers with Python Requests
+Sending binary data with Python Requests
+Sending requests through SOCKS proxies with Python Requests
+Sending HEAD requests with Python Requests
+Sending CORS requests with Python Requests
+Working with response history in Python Requests
+Sending OPTIONS requests with Python Requests
+Sending TRACE requests with Python Requests
+Sending CONNECT requests with Python Requests
+Sending PROPFIND requests with Python Requests
+Sending LOCK requests with Python Requests
+Sending MKCOL requests with Python Requests
+Sending CHECKOUT requests with Python Requests
+Sending UNLOCK requests with Python Requests
+Sending PROPPATCH requests with Python Requests
+Sending MOVE requests with Python Requests
+Sending COPY requests with Python Requests
+Sending REPORT requests with Python Requests
+Sending SEARCH requests with Python Requests
+Sending MKACTIVITY requests with Python Requests
+Sending BASELINE-CONTROL requests with Python Requests
+Sending LABEL requests with Python Requests
+Sending MERGE requests with Python Requests
+Sending MKWORKSPACE requests with Python Requests
+Sending UPDATE requests with Python Requests
+Sending VERSION-CONTROL requests with Python Requests
+Sending MKACTIVITY requests with Python Requests
+Using Python Requests for web scraping with Beautiful Soup
+Handling SSL certificate validation errors with Python Requests
+Sending requests with custom content types with Python Requests
+Using Python Requests in Flask applications
+Sending SOAP requests with Python Requests
+Using Python Requests with GraphQL APIs
+Sending requests to RESTful APIs with Python Requests
+Using Python Requests with Django
+Sending requests through a proxy server with Python Requests
+Implementing retry logic with Python Requests
+Sending requests to Elasticsearch with Python Requests
+Using Python Requests for web performance testing

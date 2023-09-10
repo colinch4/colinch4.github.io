@@ -1,0 +1,100 @@
+if statement
+else statement
+elif statement
+nested if statement
+Ternary operator
+Comparison operators
+Logical operators
+Nested conditional statements
+Multiple conditions in if statement
+Boolean expressions in if statement
+Short-circuit evaluation
+Comparison of multiple variables in if statement
+Evaluating truthiness of a statement
+Use of braces in if statement
+Combining logical operators in if statement
+Use of parentheses in if statements
+if-else statement
+if-elif statement
+if-elif-else statement
+if-else statement inside a loop
+if-else statement inside a function
+Use of and logical operator in if statement
+Use of or logical operator in if statement
+Use of not logical operator in if statement
+Chaining if-elif-else statements
+Checking for equality in if statement
+Checking for inequality in if statement
+Checking for greater than in if statement
+Checking for less than in if statement
+Checking for greater than or equal to in if statement
+Checking for less than or equal to in if statement
+Checking for membership in if statement
+Checking for non-membership in if statement
+Checking for presence of substring in a string in if statement
+Checking for absence of substring in a string in if statement
+Using if statements in list comprehensions
+Using if statements in dictionary comprehensions
+Using if statements in set comprehensions
+Using if statements in generator expressions
+Skipping iteration using if statements
+Looping through a range of numbers using if statements
+Printing a statement if condition is met using if statement
+Print a different statement if condition is not met using if-else statement
+Checking for multiple conditions using if-elif statement
+Checking for multiple conditions and executing different statements using if-elif-else statement
+Checking for a condition and executing a statement multiple times using nested if statements
+Using if statements to determine the control flow of a program
+Using if statements to implement a decision-making process
+Using if statements to validate user input
+Using if statements to handle error conditions
+Using if statements for input validation and error handling
+Using if statements to check for null or empty values
+Using if statements to filter data in a list or a database query result
+Using if statements to select a specific code path based on user input
+Using if statements to implement a state machine
+Using if statements to implement branching logic in a game
+Using if statements to filter data in data analysis or machine learning tasks
+Using if statements to determine the behavior of an AI agent
+Using if statements to implement decision trees in a machine learning model
+Using if statements to handle exceptions in a program
+Using if statements to implement a calculator with different operations
+Using if statements to implement a search algorithm
+Using if statements to check for file existence and handle file operations
+Using if statements to handle network or socket connections
+Using if statements to implement a user registration and login system
+Using if statements to implement user authorization and access control
+Using if statements to determine the type of an object and perform different actions based on the type
+Using if statements to implement a quiz or a game with different levels or questions
+Using if statements to implement a voting system
+Using if statements to implement a chatbot with different responses based on user input
+Using if statements to implement different themes or modes in a software application
+Using if statements to validate and process user input in a web form
+Using if statements to implement role-based access control in a web application
+Using if statements to implement decision-making logic in a robotic system
+Using if statements to implement a recommendation system
+Using if statements to determine the flow of a user interface
+Using if statements to handle different types of events in a game or a simulation
+Using if statements to implement a workflow or a business process
+Using if statements to implement a task scheduler or a job queue
+Using if statements to implement a routing logic in a web application
+Using if statements to implement a fault-tolerant system
+Using if statements to implement a benchmarking or performance monitoring system
+Using if statements to implement a version control system
+Using if statements to implement a customer support ticketing system
+Using if statements to implement a recommendation engine
+Using if statements to determine the eligibility of a candidate for a job or a scholarship
+Using if statements to implement a decision-making process in a simulation
+Using if statements to determine the behavior of a robot in a maze-solving task
+Using if statements to implement a rule-based system
+Using if statements to implement a smart home automation system
+Using if statements to implement a rule-based expert system
+Using if statements to determine the behavior of a virtual assistant
+Using if statements to implement a rule-based trading system
+Using if statements to implement a rule-based recommendation system
+Using if statements to implement a rule-based fraud detection system
+Using if statements to implement a rule-based routing system
+Using if statements to implement a rule-based search engine
+Using if statements to implement a rule-based content filtering system
+Using if statements to implement a rule-based spam filtering system
+Using if statements to implement a rule-based natural language processing system

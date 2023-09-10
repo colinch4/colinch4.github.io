@@ -1,0 +1,100 @@
+Introduction to Python
+Overview of Jupyter Notebook
+Installation and setup of Jupyter Notebook
+Cell types in Jupyter Notebook
+Markdown syntax in Jupyter Notebook
+Executing code in Jupyter Notebook
+Keyboard shortcuts in Jupyter Notebook
+Sharing Jupyter Notebooks
+Saving and exporting Jupyter Notebooks
+Jupyter Notebook extensions
+Magic commands in Jupyter Notebook
+Using Jupyter Notebook with Python libraries
+Data analysis in Jupyter Notebook
+Data visualization in Jupyter Notebook
+Machine learning with Jupyter Notebook
+Web scraping with Jupyter Notebook
+Natural language processing with Jupyter Notebook
+Image processing with Jupyter Notebook
+Time series analysis in Jupyter Notebook
+Financial analysis with Jupyter Notebook
+Geospatial analysis with Jupyter Notebook
+Interactive widgets in Jupyter Notebook
+Debugging code in Jupyter Notebook
+Version control with Jupyter Notebook
+Parallel computing with Jupyter Notebook
+Big data analysis with Jupyter Notebook
+Distributed computing with Jupyter Notebook
+Performance optimization in Jupyter Notebook
+Unit testing in Jupyter Notebook
+Creating slides with Jupyter Notebook
+Automating tasks with Jupyter Notebook
+Web development with Jupyter Notebook
+Introduction to NumPy in Jupyter Notebook
+Working with arrays in NumPy
+Mathematics and statistics with NumPy
+Array manipulation with NumPy
+Indexing and slicing arrays in NumPy
+Broadcasting in NumPy
+Introduction to Pandas in Jupyter Notebook
+Data structures in Pandas
+Data cleaning and preprocessing with Pandas
+Data manipulation with Pandas
+Data aggregation and grouping with Pandas
+Time series analysis with Pandas
+Handling missing data in Pandas
+Introduction to Matplotlib in Jupyter Notebook
+Line plots with Matplotlib
+Bar plots with Matplotlib
+Scatter plots with Matplotlib
+Histograms and density plots with Matplotlib
+Box plots and violin plots with Matplotlib
+Heatmaps and contour plots with Matplotlib
+3D plots with Matplotlib
+Introduction to Seaborn in Jupyter Notebook
+Visualizing statistical relationships with Seaborn
+Plotting categorical data with Seaborn
+Visualizing distributions with Seaborn
+Visualizing linear relationships with Seaborn
+Customizing plots with Seaborn
+Introduction to Plotly in Jupyter Notebook
+Interactive plots with Plotly
+Geospatial plots with Plotly
+3D plots with Plotly
+Introduction to Scikit-learn in Jupyter Notebook
+Supervised learning with Scikit-learn
+Unsupervised learning with Scikit-learn
+Dimensionality reduction with Scikit-learn
+Model evaluation and selection with Scikit-learn
+Hyperparameter tuning with Scikit-learn
+Pipelines and feature engineering with Scikit-learn
+Introduction to TensorFlow in Jupyter Notebook
+Building and training neural networks with TensorFlow
+Transfer learning with TensorFlow
+Image classification with TensorFlow
+Natural language processing with TensorFlow
+Introduction to Keras in Jupyter Notebook
+Building and training deep learning models with Keras
+Convolutional neural networks with Keras
+Recurrent neural networks with Keras
+Generative models with Keras
+Introduction to OpenCV in Jupyter Notebook
+Image manipulation and processing with OpenCV
+Object detection and tracking with OpenCV
+Image segmentation with OpenCV
+Face recognition with OpenCV
+Introduction to NLTK in Jupyter Notebook
+Text cleaning and preprocessing with NLTK
+Tokenization and stemming with NLTK
+Part-of-speech tagging with NLTK
+Named entity recognition with NLTK
+Introduction to spaCy in Jupyter Notebook
+Sentence segmentation and tokenization with spaCy
+POS tagging and dependency parsing with spaCy
+Named entity recognition with spaCy
+Introduction to time series analysis in Jupyter Notebook
+Time series visualization and exploration
+Time series decomposition
+Forecasting time series data
+Time series models and techniques
+Evaluation and validation of time series models

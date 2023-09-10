@@ -1,0 +1,100 @@
+Introduction to python dictionaries
+Python dictionary functions and methods
+Creating a dictionary in python
+Accessing elements in a dictionary
+Modifying elements in a dictionary
+Removing elements from a dictionary
+Looping through a dictionary
+Adding elements to a dictionary
+Dictionary comprehension in python
+Nested dictionaries in python
+Merging dictionaries in python
+Counting frequency of elements in a dictionary
+Sorting a dictionary by values
+Sorting a dictionary by keys
+Dictionary operations (union, intersection, difference)
+Converting a dictionary to a list
+Converting a list to a dictionary
+Copying a dictionary in python
+Checking if a key exists in a dictionary
+Checking if a value exists in a dictionary
+Creating a dictionary from two lists
+Dictionary with default values
+Accessing dictionary values using keys
+Modifying specific values in a dictionary
+Removing a key from a dictionary
+Removing all keys from a dictionary
+Dictionary keys, values, and items methods
+Iterating through a dictionary
+Checking if a dictionary is empty
+Merging two dictionaries with duplicate keys
+Shallow vs Deep copy of dictionary in python
+Dictionary comprehension with conditional statements
+Sorting a dictionary by multiple keys
+Converting a dictionary to a string
+Storing JSON data in a dictionary
+Dictionary vs list in python
+Converting a dictionary to a dataframe
+Dictionary with mutable keys
+Dictionary of lists in python
+Finding the maximum and minimum values in a dictionary
+Updating dictionary values based on conditions
+Deleting multiple keys from a dictionary
+Checking if two dictionaries are equal
+Dictionary with case-insensitive keys
+Dictionary with case-insensitive values
+Partial updates in a dictionary
+Find keys with maximum and minimum values in a dictionary
+Filter dictionary by keys or values
+Dictionary with multiple values per key
+Adding a dictionary to another dictionary
+Dictionary with tuple keys
+Creating a dictionary from a CSV file
+Creating a dictionary from a text file
+Dictionary with composite key
+Checking if a dictionary is a subset or superset of another dictionary
+Finding common keys in two dictionaries
+Dictionary with formatted keys
+Dictionary with formatted values
+Dictionary with unique values
+Dictionary with unique keys
+Updating multiple keys in a dictionary
+Counting occurrences of values in a dictionary
+Changing key value of a dictionary
+Handling missing keys in a dictionary
+Getting all unique values from a dictionary
+Selecting random key-value pairs from a dictionary
+Creating a nested dictionary from a list of dictionaries
+Summing the values of a dictionary
+Searching for a key with a specific value in a dictionary
+Flattening a nested dictionary
+Finding keys with a specific prefix in a dictionary
+Inverting a dictionary (keys become values, values become keys)
+Creating a dictionary from two dictionaries
+Finding missing keys in a dictionary
+Calculating the average value from a dictionary
+Maximum and minimum length of values in a dictionary
+Combining values of the same key in a dictionary
+Creating a dictionary from a string
+Calculating the median value from a dictionary
+Calculating the mode value from a dictionary
+Converting a dictionary to a set
+Selecting random keys from a dictionary
+Splitting a dictionary into multiple dictionaries
+Creating a dictionary from a list of tuples
+Finding the nth largest value in a dictionary
+Calculating the product of values in a dictionary
+Calculating the sum of keys in a dictionary
+Finding keys with a specific suffix in a dictionary
+Calculating the standard deviation of values in a dictionary
+Selecting random values from a dictionary
+Finding the nth smallest value in a dictionary
+Checking if a dictionary is a proper superset of another dictionary
+Creating a dictionary from a set of keys
+Calculating the range of values in a dictionary
+Elements unique to one dictionary (difference operation)
+Calculating the cumulative sum of values in a dictionary
+Selecting keys based on a condition from a dictionary
+Checking if a dictionary is a proper subset of another dictionary
+Reversing the order of keys in a dictionary
+Calculating the average length of keys in a dictionary

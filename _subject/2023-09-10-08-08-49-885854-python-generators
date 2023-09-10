@@ -1,0 +1,100 @@
+Iterators
+Yield statement
+Coroutine
+Lazy evaluation
+Memory efficiency
+Synchronous vs asynchronous generators
+Generator functions
+Generator objects
+Iteration protocol
+Next method
+StopIteration exception
+Exhausting a generator
+Generator expressions
+Yield from statement
+Chaining generators
+Nested generators
+Sending values into a generator
+Exception handling in generators
+Advantages of generators
+Performance benefits
+Parallel processing with generators
+Converting a function into a generator
+Infinite generators
+Recursive generators
+Composing generators
+Stateful generators
+Generator patterns
+Tree traversal with generators
+Graph traversal with generators
+Filtering data using generators
+Mapping data using generators
+Sorting data with generators
+Counting elements in a generator
+Accumulating values in a generator
+Finding maximum/minimum value in a generator
+Partial sums using generators
+Prime number generators
+Fibonacci sequence with generators
+Random number generators
+Sampling from a generator
+Reservoir sampling with generators
+Random permutations using generators
+Shuffling data with generators
+Data stream processing with generators
+File processing using generators
+Working with large datasets using generators
+Parsing data with generators
+Markup processing with generators
+Text generation with generators
+Cryptographic generators
+Monte Carlo simulations with generators
+Probability distributions using generators
+Markov chains with generators
+Hidden Markov models using generators
+Neural networks with generators
+Deep learning with generators
+Reinforcement learning using generators
+Genetic algorithms with generators
+Evolutionary computing using generators
+Game development with generators
+Web scraping using generators
+Web crawling with generators
+Data visualization using generators
+GUI programming with generators
+Database access using generators
+Network programming with generators
+Socket programming using generators
+Multithreading with generators
+Multiprocessing using generators
+Parallel computing with generators
+Asynchronous programming using generators
+Event-driven programming with generators
+Task scheduling using generators
+Real-time data processing with generators
+Internet of Things using generators
+Machine learning with generators
+Natural language processing using generators
+Sentiment analysis with generators
+Image processing using generators
+Computer vision with generators
+Robotics using generators
+Virtual reality with generators
+Augmented reality using generators
+IoT sensor data processing with generators
+Data analysis using generators
+Data cleaning with generators
+Feature engineering using generators
+Model training using generators
+Model evaluation with generators
+Ensemble learning using generators
+Time series analysis using generators
+Anomaly detection using generators
+Clustering algorithms with generators
+Classification models using generators
+Regression models with generators
+Dimensionality reduction using generators
+Reinforcement learning using generators
+Gradient descent algorithms with generators
+Hyperparameter tuning using generators
+Transfer learning with generators

@@ -1,0 +1,100 @@
+Basic syntax of regular expressions in Python
+Matching patterns with regular expressions
+Metacharacters in regular expressions
+Anchors in regular expressions
+Quantifiers in regular expressions
+Character classes in regular expressions
+Capturing groups in regular expressions
+Lookahead and lookbehind assertions in regular expressions
+Greedy vs. non-greedy matching in regular expressions
+Using the re module in Python for regular expressions
+Find and replace using regular expressions in Python
+Splitting strings using regular expressions in Python
+Extracting substring matches using regular expressions
+Validating input with regular expressions in Python
+Cleaning and normalizing text using regular expressions
+Removing HTML tags from a string using regular expressions
+Extracting email addresses from a string using regular expressions
+Extracting URLs from a string using regular expressions
+Extracting dates from a string using regular expressions
+Extracting phone numbers from a string using regular expressions
+Removing punctuation from a string using regular expressions
+Finding duplicate words in a string using regular expressions
+Tokenizing text using regular expressions in Python
+Breaking a string into sentences using regular expressions
+Extracting specific words from a string using regular expressions
+Matching IP addresses using regular expressions in Python
+Removing whitespace from a string using regular expressions
+Password validation using regular expressions in Python
+Phone number normalization using regular expressions in Python
+Parsing log files using regular expressions in Python
+Extracting hashtags from social media text using regular expressions
+Scraping web pages using regular expressions in Python
+Extracting data from CSV files using regular expressions
+Extracting data from JSON files using regular expressions
+Searching and replacing with regular expressions in a file
+Extracting specific information from XML using regular expressions
+Validating and extracting data from XML files using regular expressions
+Extracting data from HTML tables using regular expressions
+Extracting data from PDF files using regular expressions
+Extracting data from plain text files using regular expressions
+Extracting data from log files using regular expressions
+Searching for patterns in DNA sequences using regular expressions
+Extracting Twitter handles from text using regular expressions
+Finding and replacing emoticons in text using regular expressions
+Extracting names from text using regular expressions
+Validating credit card numbers using regular expressions
+Extracting product codes from text using regular expressions
+Extracting postal codes from text using regular expressions
+Extracting zip codes from text using regular expressions
+Extracting latitude and longitude from text using regular expressions
+Extracting street addresses from text using regular expressions
+Extracting social security numbers using regular expressions
+Extracting IPv6 addresses from text using regular expressions
+Extracting prices from text using regular expressions
+Extracting currency symbols from text using regular expressions
+Extracting time and date information from text using regular expressions
+Extracting hashtags from text using regular expressions
+Extracting scientific notation from text using regular expressions
+Extracting domain names from URLs using regular expressions
+Extracting email domains from addresses using regular expressions
+Extracting file extensions from filenames using regular expressions
+Extracting file paths from text using regular expressions
+Extracting HTML tags from text using regular expressions
+Extracting code snippets from text using regular expressions
+Extracting function names from code using regular expressions
+Extracting variable names from code using regular expressions
+Extracting class names from code using regular expressions
+Extracting method names from code using regular expressions
+Extracting attribute names from code using regular expressions
+Extracting import statements from code using regular expressions
+Extracting function arguments from code using regular expressions
+Extracting function calls from code using regular expressions
+Extracting comments from code using regular expressions
+Extracting URLs from HTML anchor tags using regular expressions
+Extracting image URLs from HTML tags using regular expressions
+Extracting video URLs from HTML tags using regular expressions
+Extracting data between HTML tags using regular expressions
+Extracting data inside HTML attributes using regular expressions
+Extracting data from specific HTML tags using regular expressions
+Extracting data from XML tags using regular expressions
+Extracting data from specific XML nodes using regular expressions
+Extracting JSON keys and values using regular expressions
+Extracting data from specific JSON fields using regular expressions
+Extracting specific fields from CSV data using regular expressions
+Extracting data from log entries using regular expressions
+Extracting data from specific log fields using regular expressions
+Extracting data from plain text reports using regular expressions
+Extracting data from specific sections of text using regular expressions
+Extracting data from nested structures using regular expressions
+Extracting data from irregularly formatted text using regular expressions
+Generating random data using regular expressions in Python
+Preprocessing text data using regular expressions in Python
+Tokenization and stemming using regular expressions in Python
+Normalizing text data using regular expressions in Python
+Sentiment analysis using regular expressions in Python
+Spelling correction using regular expressions in Python
+Named entity recognition using regular expressions in Python
+Document classification using regular expressions in Python
+Topic modeling using regular expressions in Python
+Text generation using regular expressions in Python

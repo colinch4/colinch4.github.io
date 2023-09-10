@@ -1,0 +1,100 @@
+Introduction to Python Scikit-learn
+Machine learning algorithms in Python Scikit-learn
+Linear regression using Scikit-learn
+Logistic regression using Scikit-learn
+Decision tree classification using Scikit-learn
+Random forest classification using Scikit-learn
+Support Vector Machines (SVM) in Scikit-learn
+Naive Bayes classification using Scikit-learn
+K-means clustering using Scikit-learn
+Principal Component Analysis (PCA) using Scikit-learn
+Model evaluation and selection in Scikit-learn
+Cross-validation techniques in Scikit-learn
+Hyperparameter tuning in Scikit-learn
+Feature selection using Scikit-learn
+Data preprocessing with Scikit-learn
+Pipelines in Scikit-learn
+Handling missing data in Scikit-learn
+One-hot encoding in Scikit-learn
+Scaling and normalization in Scikit-learn
+Imbalanced data handling in Scikit-learn
+Ensemble learning in Scikit-learn
+Bagging in Scikit-learn
+Boosting in Scikit-learn
+Stacking in Scikit-learn
+Neural network models in Scikit-learn
+Deep learning in Scikit-learn
+Time series forecasting with Scikit-learn
+Text classification using Scikit-learn
+Sentiment analysis using Scikit-learn
+Natural Language Processing (NLP) with Scikit-learn
+Dimensionality reduction using Scikit-learn
+Manifold learning with Scikit-learn
+Anomaly detection with Scikit-learn
+Outlier detection using Scikit-learn
+Clustering algorithms in Scikit-learn
+DBSCAN clustering with Scikit-learn
+Gaussian Mixture Models (GMM) in Scikit-learn
+Isolation Forest in Scikit-learn
+Neural network architectures in Scikit-learn
+Convolutional Neural Networks (CNN) in Scikit-learn
+Recurrent Neural Networks (RNN) in Scikit-learn
+Autoencoders in Scikit-learn
+Transfer learning using Scikit-learn
+Generative Adversarial Networks (GAN) in Scikit-learn
+Reinforcement learning with Scikit-learn
+Policy Gradient methods in Scikit-learn
+Q-learning using Scikit-learn
+Deep Q-learning in Scikit-learn
+Markov Decision Process (MDP) in Scikit-learn
+Time series analysis with Scikit-learn
+ARIMA modeling in Scikit-learn
+LSTM time series forecasting in Scikit-learn
+Prophet time series forecasting with Scikit-learn
+State space models in Scikit-learn
+Hidden Markov Models (HMM) in Scikit-learn
+Word2Vec embedding using Scikit-learn
+Text summarization using Scikit-learn
+Named Entity Recognition (NER) with Scikit-learn
+Topic modeling using Scikit-learn
+Sequence classification with Scikit-learn
+Hierarchical clustering using Scikit-learn
+Density-based clustering with Scikit-learn
+Anomaly detection in time series data using Scikit-learn
+Model interpretability in Scikit-learn
+Feature importance in Scikit-learn
+Explainable Artificial Intelligence (XAI) with Scikit-learn
+Model deployment using Scikit-learn
+Model serialization and deserialization in Scikit-learn
+Model serving with Scikit-learn
+Model performance monitoring in Scikit-learn
+Model retraining and updating with Scikit-learn
+Model versioning and tracking using Scikit-learn
+Hyperparameter optimization using Scikit-learn
+Grid search in Scikit-learn
+Bayesian optimization with Scikit-learn
+Genetic algorithms in Scikit-learn
+Model interpretability techniques in Scikit-learn
+Partial Dependence Plots (PDP) with Scikit-learn
+SHAP (Shapley Additive exPlanations) values with Scikit-learn
+LIME (Local Interpretable Model-Agnostic Explanations) in Scikit-learn
+Feature engineering using Scikit-learn
+Polynomial features in Scikit-learn
+Interaction terms in Scikit-learn
+Feature scaling techniques in Scikit-learn
+Feature extraction with Scikit-learn
+Feature selection methods in Scikit-learn
+Recursive Feature Elimination (RFE) in Scikit-learn
+SelectKBest feature selection in Scikit-learn
+Regularization techniques in Scikit-learn
+Ridge regression with Scikit-learn
+Lasso regression using Scikit-learn
+Elastic Net regularization in Scikit-learn
+Data preprocessing for neural networks in Scikit-learn
+Batch normalization in Scikit-learn
+Dropout regularization with Scikit-learn
+Early stopping in Scikit-learn
+Transfer learning and fine-tuning in Scikit-learn
+Model stacking and blending using Scikit-learn
+Reinforcement learning in game development with Scikit-learn
+Credit scoring and risk assessment using Scikit-learn
