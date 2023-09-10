@@ -20,7 +20,7 @@ author:
   reddit:           your-id
   medium:           your-id
   tumblr:           your-id
-  email:            colinch4@gmail.com
+  email:            colin.ch.py@gmail.com
 
 copyright:
   year:             2018
@@ -28,14 +28,14 @@ copyright:
 
 # Google-analytics
 google-analytics:
-  id:               "colinch4"
+  id:               "colinchpy"
 
 # Disqus
 disqus:
   id:               "algamza"
 
 # URL
-url:                "https://colinch4.github.io" # the base hostname & protocol for your site
+url:                "https://colinchpy.github.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
 baseurl:            "/" # the subpath of your site, e.g. /blog
 
@@ -62,7 +62,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://colinch4.github.io"
+    url:            "https://colinchpy.github.io"
 
 # Sass
 sass:
