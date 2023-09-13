@@ -3,4 +3,4 @@ _site
 Gemfile.lock
 _drafts
 .jsbeautifyrc
-.py
+*.py

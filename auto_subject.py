@@ -1,22 +1,18 @@
+#!/usr/bin/env python3
+
 import openai
 import re
 import os
-import sys
-import threading
 import time
-import numpy as np
-import tkinter as tk
-from tkinter import filedialog
-from datetime import datetime, timedelta
+import subprocess
+from datetime import datetime
 
-import tkinter as tk
-from tkinter import filedialog
+import subprocess
 
 openai.api_key = os.environ['API_KEY']
 
 file_contents = ""
 open_file_path = ""
-last_index = 0
 
 def generate_blog(topic):
     global file_contents
@@ -30,11 +26,7 @@ def generate_blog(topic):
                 messages=[
                         {
                             "role": "system",
-                            "content": "List at least 100 topics based on keywords.",
-                        },
-                        {
-                            "role": "system",
-                            "content": "Please write in Korean.",
+                            "content": "Based on the given keywords, create 100 topics that might spark the interest of developers.",
                         },
                         {
                             "role": "user",
@@ -51,6 +43,24 @@ def generate_blog(topic):
                 time.sleep(5)    
             else:    
                 raise e  
+
+def git_commit(commit_message, remote='origin', branch='master'):
+    try:
+        # 변경 사항 추가
+        subprocess.check_call(['git','add','-A'], cwd='.')
+
+        # 변경 사항 추가
+        subprocess.check_call(['git','commit','-m', commit_message], cwd='.')
+
+        
+        # GitHub에 푸시
+        subprocess.check_call(['git','push',remote,branch], cwd='.')
+
+        print("Commit and push successful!")
+    except subprocess.CalledProcessError as e:
+        print("Error occurred:", e.output.decode())
+
+
 def urlify(s):
     # 1. 소문자로 변환 (영어에만 해당)
     s = s.lower()
@@ -62,6 +72,17 @@ def urlify(s):
     s = re.sub(r'[^\w-]', '', s)  # \w는 알파벳, 숫자, 밑줄에 매치되며, 한글에도 매치됩니다.
     
     return s
+
+
+def save_file(li): 
+    global open_file_path
+    if len(li) == 0: 
+        if os.path.isfile(open_file_path):
+            os.remove(open_file_path)
+            return
+    with open(open_file_path, 'w', encoding='UTF-8') as file:
+        file.write('\n'.join(li))
+
 
 def gpt_action(_topic): 
     topic = f"{_topic}"
@@ -106,87 +127,25 @@ def gpt_action(_topic):
         f.write(output)
         f.close()
 
-def save_file(li): 
-    global open_file_path
-    if len(li) == 0: 
-        if os.path.isfile(open_file_path):
-            os.remove(open_file_path)
-            return
-    with open(open_file_path, 'w', encoding='UTF-8') as file:
-        file.write('\n'.join(li))
 
-# 파일 선택 버튼을 눌렀을 때 실행할 함수
-def open_file_dialog():
-    global file_contents
-    global open_file_path
-    open_file_path = filedialog.askopenfilename(title="파일 선택")
-    if open_file_path:
-        selected_file_label.config(text=f"선택한 파일: {open_file_path}")
-        try:
-            with open(open_file_path, "r", encoding='UTF-8') as file:
-                file_contents = file.readlines()
-                array_length_label.config(text=f"배열 길이: {len(file_contents)}")
-            display_contents(file_contents, 0)
-        except Exception as e:
-            error_label.config(text=f"파일을 읽는 중 오류 발생: {e}")
-    else:
-        selected_file_label.config(text="파일을 선택하지 않았습니다.")
-        array_length_label.config(text="")
+open_file_path = "subject"
 
-# 파일 내용을 화면에 표시하는 함수
-def display_contents(contents, startIndex):
-    contents_listbox.delete(0, tk.END)  # 이전 내용을 지우기
-    for idx, val in enumerate(contents):
-        if idx >= startIndex:
-            contents_listbox.insert(tk.END, val.strip())
+try:
+    with open(open_file_path, 'r', encoding='UTF-8') as f:
+        file_contents = f.readlines()
+except Exception as e:
+    print(f"{e}")
+    exit()
 
-def run_thread(): 
-    global file_contents
-    global last_index
-    for idx, val in enumerate(file_contents):
-        last_index = idx
-        print(val.strip())
-        gpt_action(val.strip())
-        display_contents(file_contents,idx+1)
-        array_length_label.config(text=f"배열 길이: {len(file_contents)-idx-1}")
-    save_file([])
+for idx, val in enumerate(file_contents):
+    print(f"({idx}/{len(file_contents)}) {val.strip()}")
+    gpt_action(val.strip())
 
-# 두 번째 버튼을 눌렀을 때 실행할 함수
-def run_gpt():
-    thread = threading.Thread(target=run_thread)
-    thread.start()
+save_file([])
 
-def exit():
-    window.destroy()
-    window.quit()
+commit_message = "post"
+git_commit(commit_message)
 
-# Tkinter 윈도우 생성
-window = tk.Tk()
-window.title("파일 선택 및 내용 표시 예제")
+print(f"complete !! {len(file_contents)} were posted.")
 
-# 파일 선택 버튼 생성
-open_button = tk.Button(window, text="파일 선택", command=open_file_dialog)
-open_button.pack(pady=10)
-
-# 파일 이름을 나타낼 라벨(Label) 생성
-selected_file_label = tk.Label(window, text="")
-selected_file_label.pack()
-
-# 배열 길이를 나타낼 라벨(Label) 생성
-array_length_label = tk.Label(window, text="")
-array_length_label.pack()
-
-# 파일 내용을 표시할 리스트박스(Listbox) 생성
-contents_listbox = tk.Listbox(window)
-contents_listbox.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
-
-# 파일 읽기 중 오류를 표시할 라벨(Label) 생성
-error_label = tk.Label(window, text="", fg="red")
-error_label.pack()
-
-# 두 번째 버튼 생성
-clear_button = tk.Button(window, text="실행", command=run_gpt)
-clear_button.pack()
-
-# Tkinter 메인 루프 시작
-window.mainloop()
+exit()

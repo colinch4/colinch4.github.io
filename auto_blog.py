@@ -31,7 +31,7 @@ def generate_blog(topic):
                         },
                         {
                             "role": "system",
-                            "content": "Create two important hashtags and add them only at the end of the line.",
+                            "content": "Create only two important hashtags and add them only at the end of the line.",
                         },
                         {
                             "role": "system",
