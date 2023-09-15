@@ -1,0 +1,500 @@
+자바스크립트 Middleware
+자바스크립트 Express.js
+자바스크립트 Node Package Manager (Yarn)
+자바스크립트 Callback Queue
+자바스크립트 Event Loop
+자바스크립트 V8 Engine
+자바스크립트 Single-threaded
+자바스크립트 Non-blocking I/O
+자바스크립트 Concurrency
+자바스크립트 Package.json
+자바스크립트 Middleware
+자바스크립트 Error Handling
+자바스크립트 Promisify
+자바스크립트 Server-side Rendering (SSR)
+자바스크립트 Isomorphic JavaScript
+자바스크립트 Deno
+자바스크립트 Context API (React)
+자바스크립트 React Hooks
+자바스크립트 VueX (Vue)
+자바스크립트 Angular Directives
+자바스크립트 Angular Services
+자바스크립트 JAMstack
+자바스크립트 Gatsby
+자바스크립트 Next.js
+자바스크립트 Nuxt.js
+자바스크립트 Parcel Bundler
+자바스크립트 Rollup.js
+자바스크립트 Three.js (WebGL)
+자바스크립트 Canvas API
+자바스크립트 SVG Animation
+자바스크립트 Lodash
+자바스크립트 Ramda
+자바스크립트 Axios
+자바스크립트 REST API
+자바스크립트 CRUD Operations
+자바스크립트 Webpack Loaders
+자바스크립트 Webpack Plugins
+자바스크립트 Hot Module Replacement (HMR)
+자바스크립트 Minification
+자바스크립트 Tree Shaking
+자바스크립트 Code Splitting
+자바스크립트 Lazy Evaluation
+자바스크립트 Pure Functions
+자바스크립트 Immutable Data Structures
+자바스크립트 Currying
+자바스크립트 Tail Call Optimization
+자바스크립트 Monads
+자바스크립트 Functors
+자바스크립트 First-class Functions
+자바스크립트 React Native (Mobile development)
+자바스크립트 Electron (Desktop applications)
+자바스크립트 NestJS
+자바스크립트 Fastify
+자바스크립트 Koa.js
+자바스크립트 WebRTC
+자바스크립트 D3.js (Data Visualization)
+자바스크립트 Immutable.js
+자바스크립트 Moment.js (Date manipulation)
+자바스크립트 Date-fns
+자바스크립트 Puppeteer (Web scraping & testing)
+자바스크립트 Cheerio
+자바스크립트 Browserify
+자바스크립트 ESLint (Linting)
+자바스크립트 Prettier (Code formatting)
+자바스크립트 Husky (Git Hooks)
+자바스크립트 CI/CD (Continuous Integration/Continuous Deployment)
+자바스크립트 Docker (Containerization)
+자바스크립트 WebAssembly (Wasm)
+자바스크립트 Intersection Observer API
+자바스크립트 Resize Observer API
+자바스크립트 Intl (Internationalization)
+자바스크립트 Template Engines (EJS, Pug)
+자바스크립트 Data Structures (Stack, Queue, LinkedList)
+자바스크립트 Algorithms (Sorting, Searching)
+자바스크립트 Socket.io (Real-time communication)
+자바스크립트 OAuth
+자바스크립트 JWT Authentication
+자바스크립트 Passport.js
+자바스크립트 IndexedDB
+자바스크립트 WebAudio API
+자바스크립트 Push Notifications
+자바스크립트 Offline First Applications
+자바스크립트 Cache API
+자바스크립트 MediaStream API
+자바스크립트 Geolocation API
+자바스크립트 Payments API
+자바스크립트 Web Bluetooth API
+자바스크립트 WebUSB API
+자바스크립트 History API
+자바스크립트 Server Sent Events (SSE)
+자바스크립트 Hapi.js
+자바스크립트 Styled-components (CSS in JS)
+자바스크립트 Emotion
+자바스크립트 Tailwind CSS (Utility-first CSS framework)
+자바스크립트 CSS Modules
+자바스크립트 Brotli Compression
+자바스크립트 SASS/SCSS (CSS Preprocessors)
+자바스크립트 PostCSS
+자바스크립트 Flexbox
+자바스크립트 CSS Grid
+자바스크립트 React Context
+자바스크립트 Virtual List
+자바스크립트 WebGL
+자바스크립트 WebVR/WebXR
+자바스크립트 React Fragments
+자바스크립트 Suspense (React)
+자바스크립트 Concurrent Mode (React)
+자바스크립트 Relay (GraphQL client)
+자바스크립트 JSONP (JSON with Padding)
+자바스크립트 JWT Refresh Token
+자바스크립트 Semantic Versioning (SemVer)
+자바스크립트 Nginx (with Node.js deployments)
+자바스크립트 pm2 (Node.js process manager)
+자바스크립트 Event Delegation
+자바스크립트 CSS-in-JS libraries
+자바스크립트 GraphQL Mutations
+자바스크립트 GraphQL Subscriptions
+자바스크립트 React Portals
+자바스크립트 PureComponent
+자바스크립트 React.memo()
+자바스크립트 React.forwardRef()
+자바스크립트 Web Components
+자바스크립트 Custom React Hooks
+자바스크립트 Firebase (Realtime Database, Firestore, Functions)
+자바스크립트 Serverless functions (with JavaScript)
+자바스크립트 AWS Lambda (Node.js runtime)
+자바스크립트 Azure Functions (JavaScript)
+자바스크립트 Google Cloud Functions (Node.js)
+자바스크립트 Zeit Vercel
+자바스크립트 Netlify Functions
+자바스크립트 Sapper (Svelte)
+자바스크립트 RxJS Operators
+자바스크립트 Observers
+자바스크립트 Subjects (RxJS)
+자바스크립트 BehaviorSubject (RxJS)
+자바스크립트 ReplaySubject (RxJS)
+자바스크립트 GraphQL Directives
+자바스크립트 Data Loaders (GraphQL optimization)
+자바스크립트 Error Boundaries (React)
+자바스크립트 PropTypes (React)
+자바스크립트 Ternary Operations
+자바스크립트 Short-circuit Evaluation
+자바스크립트 Proxy (ES6)
+자바스크립트 Reflect (ES6)
+자바스크립트 Decorators (TypeScript & Babel)
+자바스크립트 Mixins
+자바스크립트 Storybook (Component documentation)
+자바스크립트 JSX Pragma
+자바스크립트 React Children API
+자바스크립트 React CloneElement
+자바스크립트 Compound Components
+자바스크립트 Higher-Order Components (HOCs)
+자바스크립트 Render Props
+자바스크립트 Chakra UI (React component library)
+자바스크립트 Ant Design (React component library)
+자바스크립트 Material-UI (React component library)
+자바스크립트 GraphQL Apollo Federation
+자바스크립트 GraphQL Apollo Gateway
+자바스크립트 V8 Optimization
+자바스크립트 Turbolinks
+자바스크립트 Stimulus.js
+자바스크립트 Alpine.js
+자바스크립트 Solid.js
+자바스크립트 Ionic Framework (JavaScript mobile development)
+자바스크립트 Framework7
+자바스크립트 Stencil.js (Web Components compiler)
+자바스크립트 HTML5 Video API
+자바스크립트 HTML5 Drag and Drop API
+자바스크립트 WAI-ARIA (Web Accessibility)
+자바스크립트 IntersectionObserver Polyfill
+자바스크립트 Polyfill.io
+자바스크립트 SWC (Speedy Web Compiler)
+자바스크립트 ES Lint Rules
+자바스크립트 TSLint (for TypeScript)
+자바스크립트 Module Federation (Webpack 5)
+자바스크립트 Web MIDI API
+자바스크립트 Web Animations API
+자바스크립트 Web Notifications API
+자바스크립트 Page Visibility API
+자바스크립트 React Hydration
+자바스크립트 Engines (SpiderMonkey, JavaScriptCore)
+자바스크립트 Real-time Logging (with Node.js)
+자바스크립트 Streams (Node.js)
+자바스크립트 Buffer (Node.js)
+자바스크립트 Cluster (Node.js for scaling)
+자바스크립트 Child Processes (Node.js)
+자바스크립트 PnP (Plug and Play - Yarn 2)
+자바스크립트 Dynamic Imports (ES6)
+자바스크립트 BigInt (ES11)
+자바스크립트 Optional Chaining (ES11)
+자바스크립트 Nullish Coalescing (ES11)
+자바스크립트 ESLint Plugins
+자바스크립트 Redux Middleware
+자바스크립트 Redux Thunk
+자바스크립트 Redux Saga
+자바스크립트 Redux Toolkit
+자바스크립트 Immer (Immutable state management)
+자바스크립트 Web Cryptography API
+자바스크립트 SpeechRecognition API
+자바스크립트 Screen Capture API
+파이썬 Pyenv
+파이썬 FastAPI
+파이썬 CherryPy
+파이썬 Plotly
+파이썬 Dash
+파이썬 Bokeh
+파이썬 Seaborn
+파이썬 Statsmodels
+파이썬 SciPy
+파이썬 BioPython
+파이썬 PySpark
+파이썬 Joblib
+파이썬 Logging
+파이썬 DataFrames
+파이썬 Pytest
+파이썬 Mocking in tests
+파이썬 PyGTK
+파이썬 Tkinter
+파이썬 WXPython
+파이썬 Pillow (PIL)
+파이썬 Image processing
+파이썬 Animation with Python
+파이썬 OpenCV
+파이썬 Audio processing
+파이썬 Pydub
+파이썬 OS module
+파이썬 Time and date manipulation
+파이썬 Calendar operations
+파이썬 Geographic Information System (GIS) with Python
+파이썬 Geopy
+파이썬 NetworkX
+파이썬 Quantum computing with Python
+파이썬 qiskit
+파이썬 Cryptography
+파이썬 Blockchain with Python
+파이썬 PyCrypto
+파이썬 OAuth with Python
+파이썬 JWT authentication
+파이썬 Cookie handling
+파이썬 Web sessions
+파이썬 Serverless Python
+파이썬 Zappa
+파이썬 PyInstaller
+파이썬 Packaging and distribution
+파이썬 WebRTC with Python
+파이썬 Chatbots
+파이썬 NLTK (Natural Language Toolkit)
+파이썬 SpaCy
+파이썬 Gensim
+파이썬 Word embeddings
+파이썬 Sentiment analysis
+파이썬 Text classification
+파이썬 Websockets with Python
+파이썬 MQTT with Python
+파이썬 IoT (Internet of Things) with Python
+파이썬 Microservices with Python
+파이썬 Celery
+파이썬 RabbitMQ
+파이썬 Redis with Python
+파이썬 Caching techniques
+파이썬 Memory profiling
+파이썬 Cython for optimization
+파이썬 JIT compilation
+파이썬 Numba
+파이썬 WebAssembly with Python
+파이썬 GraphQL with Python
+파이썬 AeroSpike with Python
+파이썬 NoSQL databases with Python
+파이썬 MongoDB with Python
+파이썬 PyMongo
+파이썬 Elasticsearch with Python
+파이썬 Lucene
+파이썬 PyLucene
+파이썬 Distributed computing
+파이썬 ZeroMQ
+파이썬 Docker with Python
+파이썬 Kubernetes with Python
+파이썬 YAML and Python
+파이썬 Configuration management
+파이썬 Infrastructure as code with Python
+파이썬 Ansible
+파이썬 Puppet with Python
+파이썬 Flask-Restful
+파이썬 REST API development
+파이썬 GRPC with Python
+파이썬 Webhooks
+파이썬 OAuth2 with Python
+파이썬 PyO3
+파이썬 Rust and Python interoperability
+파이썬 Virtual Reality with Python
+파이썬 Augmented Reality with Python
+파이썬 PyOpenGL
+파이썬 3D graphics with Python
+파이썬 Geographic data with GeoPandas
+파이썬 Cartopy
+파이썬 Pyproj
+파이썬 Boto3 (AWS SDK for Python)
+파이썬 Google Cloud SDK with Python
+파이썬 Azure SDK with Python
+파이썬 Cloud Functions with Python
+파이썬 Pyro
+파이썬 Bayesian analysis
+파이썬 Time series analysis
+파이썬 ARIMA
+파이썬 Reinforcement learning
+파이썬 Gym (by OpenAI)
+파이썬 Genetic algorithms
+파이썬 Swarm optimization
+파이썬 Multidimensional arrays
+파이썬 Neural networks
+파이썬 RNNs (Recurrent Neural Networks)
+파이썬 LSTM (Long Short-Term Memory)
+파이썬 CNNs (Convolutional Neural Networks)
+파이썬 Transfer learning
+파이썬 Feature extraction
+파이썬 Feature engineering
+파이썬 Imbalanced datasets
+파이썬 Overfitting and underfitting
+파이썬 Bias-variance trade-off
+파이썬 A/B testing with Python
+파이썬 Hypothesis testing
+파이썬 PyMC3
+파이썬 Probabilistic programming
+파이썬 PyStan
+파이썬 Financial analysis
+파이썬 Quantitative finance
+파이썬 Algorithmic trading
+파이썬 Backtesting strategies
+파이썬 Portfolio optimization
+파이썬 FX (Forex) analysis with Python
+파이썬 Risk management
+파이썬 Actuarial analysis with Python
+파이썬 Survival analysis
+파이썬 PyQT and PyQtGraph
+파이썬 PySerial
+파이썬 Serial communication
+파이썬 USB interface with Python
+파이썬 Bluetooth communication
+파이썬 Zigbee and Python
+파이썬 Radio Frequency with Python
+파이썬 I2C and Python
+파이썬 SPI with Python
+파이썬 Embedded systems and Python
+파이썬 Robotics control
+파이썬 ROS (Robot Operating System) with Python
+파이썬 Drone programming with Python
+파이썬 Home automation
+파이썬 Smart device integration
+파이썬 Voice recognition
+파이썬 Speech-to-text
+파이썬 Text-to-speech
+파이썬 Voice assistants with Python
+파이썬 PyAudio
+파이썬 Audio analysis
+파이썬 Digital Signal Processing (DSP) with Python
+파이썬 Fourier Transform with Python
+파이썬 Wavelet transform
+파이썬 Computer vision
+파이썬 Object detection
+파이썬 Image segmentation
+파이썬 Style transfer
+파이썬 Generative Adversarial Networks (GANs)
+파이썬 PyVISA
+파이썬 Instrumentation control
+파이썬 SCADA with Python
+파이썬 Industrial automation
+파이썬 PLC (Programmable Logic Controller) integration
+파이썬 3D printing control with Python
+파이썬 VR interaction scripting
+파이썬 Physics simulations
+파이썬 Quantum physics with Python
+파이썬 Astrophysics and Python
+파이썬 Molecular dynamics
+파이썬 Bioinformatics
+파이썬 ChemPy
+파이썬 Computational chemistry
+파이썬 Geographic mapping
+파이썬 Satellite imagery analysis
+파이썬 GPS data processing
+파이썬 Geolocation services
+파이썬 Earthquake analysis
+파이썬 Climate modeling with Python
+파이썬 Environmental monitoring
+파이썬 Sustainability analytics
+파이썬 Agricultural data analysis
+파이썬 Supply chain optimization
+파이썬 Operations research with Python
+파이썬 Linear programming
+파이썬 OR-Tools
+파이썬 Traveling salesman problem
+파이썬 Vehicle routing problem
+파이썬 Simulation modeling
+파이썬 Monte Carlo simulation
+파이썬 Agent-based modeling
+파이썬 System dynamics
+파이썬 Evolutionary algorithms
+파이썬 Fuzzy logic with Python
+파이썬 Uncertainty propagation
+파이썬 Decision trees and random forests
+파이썬 XGBoost and gradient boosting
+파이썬 PyBrain (Neural network library)
+파이썬 Chainer
+파이썬 Web2py
+파이썬 TurboGears
+파이썬 CherryPy
+파이썬 Pyramid
+파이썬 Falcon
+파이썬 Bottle
+파이썬 Tornado (Web framework and asynchronous networking library)
+파이썬 Gluon (Deep learning API)
+파이썬 Caffe
+파이썬 Theano
+파이썬 Sympy (Symbolic mathematics)
+파이썬 Quantlib (Quantitative finance)
+파이썬 Social media integration
+파이썬 OAuth1 and OAuth2 authentication
+파이썬 Websockets in Django
+파이썬 Django Channels
+파이썬 Django ORM
+파이썬 Flask-SQLAlchemy
+파이썬 Flask-WTF
+파이썬 Flask-Login
+파이썬 Flask-Migrate
+파이썬 WTForms
+파이썬 Marshmallow
+파이썬 Alembic (Database migrations)
+파이썬 PyODBC
+파이썬 Full-text search
+파이썬 SOLR integration with Python
+파이썬 ElasticSearch integration
+파이썬 Logstash and Python
+파이썬 Kibana visualizations with Python data
+파이썬 Vega and Vega-lite for visualization
+파이썬 Altair (Declarative visualization)
+파이썬 Holoviews
+파이썬 Dask (Parallel computing)
+파이썬 Vaex (Big data DataFrame library)
+파이썬 Ray (Distributed computing)
+파이썬 Nuitka (Python compiler)
+파이썬 Brython (Python for the browser)
+파이썬 Skulpt (Python in-browser implementation)
+파이썬 Pyjs (Python to JavaScript compiler)
+파이썬 RPy2 (Python interface to R)
+파이썬 Flask-RESTPlus
+파이썬 Eve (REST API framework)
+파이썬 DRF (Django Rest Framework)
+파이썬 Falcon REST API
+파이썬 Hug API
+파이썬 Cornice
+파이썬 Peewee (ORM)
+파이썬 Pony ORM
+파이썬 Tortoise ORM
+파이썬 Apache Airflow (Workflow management)
+파이썬 Luigi (Workflow management)
+파이썬 Snakebite (Python client for Hadoop HDFS)
+파이썬 Pydoop
+파이썬 HDFSCLI
+파이썬 ThriftPy
+파이썬 Avro and Python
+파이썬 Parquet file handling
+파이썬 HDF5 with h5py
+파이썬 MsgPack
+파이썬 Protocol Buffers with Python
+파이썬 gRPC and Python
+파이썬 ZeroRPC
+파이썬 PyZMQ
+파이썬 Twisted (Event-driven network programming)
+파이썬 Scrapy clusters
+파이썬 Apache Kafka with Python
+파이썬 RabbitMQ with Pika
+파이썬 MQTT with Paho
+파이썬 Pub/Sub patterns in Python
+파이썬 WebSocket-client library
+파이썬 Sockets with Python
+파이썬 Paramiko (SSH2 protocol)
+파이썬 Netmiko (Multi-vendor library for SSH)
+파이썬 Telnet with Python
+파이썬 SNMP with Python
+파이썬 Scrapyd (Service for running Scrapy spiders)
+파이썬 Portia (Visual web scraper)
+파이썬 Colly (Web scraping framework)
+파이썬 Frontera (Web crawling framework)
+파이썬 Feedparser (Parse feeds in Python)
+파이썬 Newspaper3k (News extraction and curation)
+파이썬 Goose (Article extractor)
+파이썬 Readability (Content extraction)
+파이썬 ETL processes in Python
+파이썬 Petl (Data extraction, transformation, and loading)
+파이썬 Bonobo (ETL toolkit)
+파이썬 Bubbles (ETL framework)
+파이썬 Morph.io (Web scraping and data storage)
+파이썬 Apache Beam with Python SDK
+파이썬 Cloud Dataflow with Python
+파이썬 Apache Nifi with Python
+파이썬 Prefect (Workflow management)
+파이썬 Metaflow
+파이썬 dbt (Data transformation tool)
+파이썬 Great Expectations (Data quality framework)
+파이썬 Apache Superset (Data visualization)
+파이썬 Redash (Connect and query data sources)Python 
