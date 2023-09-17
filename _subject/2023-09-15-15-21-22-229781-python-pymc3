@@ -1,0 +1,100 @@
+Introduction to PyMC3: A Probabilistic Programming Library in Python
+Bayesian Inference with PyMC3: A Beginner's Guide
+Advanced Bayesian Modeling with PyMC3
+Building Bayesian Hierarchical Models with PyMC3
+Bayesian Model Selection using PyMC3
+Time Series Forecasting with PyMC3
+Spatial Analysis and Modeling with PyMC3
+Bayesian Neural Networks with PyMC3
+Gaussian Processes in PyMC3: Modeling and Prediction
+Probabilistic Programming for Machine Learning with PyMC3
+Sampling Algorithms in PyMC3: MCMC, HMC, and NUTS
+Variational Inference with PyMC3: An Introduction
+Introduction to Sequential Monte Carlo Methods with PyMC3
+Probabilistic Graphical Models with PyMC3: A Hands-On Tutorial
+Approximate Bayesian Computation with PyMC3
+PyMC3 vs Stan: A Comparison of Probabilistic Programming Tools
+Hierarchical Time Series Forecasting with PyMC3
+Time-to-Event Analysis with PyMC3: Survival Modeling
+Bayesian Optimization using PyMC3
+Bayesian Decision Theory with PyMC3
+Causal Inference with PyMC3: An Introduction
+Bayesian Nonparametric Modeling with PyMC3
+Mixture Models with PyMC3: Unsupervised Learning in a Probabilistic Framework
+Bayesian Regression with PyMC3: Model Building and Interpretation
+PyMC3 for Deep Learning: Bayesian Neural Networks for Uncertainty Estimation
+Physics-Informed Probabilistic Modeling with PyMC3
+Financial Risk Modeling using PyMC3 and Markov Chain Monte Carlo
+Anomaly Detection with PyMC3: Bayesian Approaches for Outlier Identification
+Reinforcement Learning with PyMC3: Bayesian Approaches to Policy Optimization
+Human Decision-Making Modeling with PyMC3: Cognitive Science Applications
+Gaussian Mixture Models in PyMC3: Modeling Complex Data Distributions
+Markov Chain Monte Carlo methods in PyMC3: Theory and Practice
+Bayesian Neural Architecture Search with PyMC3
+Probabilistic Matrix Factorization using PyMC3: Collaborative Filtering for Recommender Systems
+Model Selection via Bayesian A/B Testing with PyMC3
+Handling Missing Data in PyMC3: Imputation Techniques
+Bayesian Deep Learning with PyMC3 and Variational Inference
+Sequential Learning with PyMC3: Handling Data Streams in a Probabilistic Framework
+Particle Filtering with PyMC3: Bayesian Approaches to Tracking and Localization
+Gaussian Process Regression with PyMC3: Modeling Nonlinear Relationships in Data
+Bayesian Clustering with PyMC3: Identifying Hidden Patterns in Data
+Bayesian Change Point Detection with PyMC3: Anomaly Detection in Time Series
+Predictive Maintenance with PyMC3: Proactive Equipment Failure Modeling
+Social Network Analysis with PyMC3: Modeling Information Diffusion and Influence
+Bayesian Classification with PyMC3: Building Probabilistic Classifier Models
+Modeling Uncertainty in Reinforcement Learning with PyMC3
+Bayesian Optimization of Hyperparameters with PyMC3
+Hierarchical Latent Dirichlet Allocation with PyMC3: Topic Modeling for Text Analysis
+Financial Market Modeling with PyMC3: Bayesian Approaches to Portfolio Optimization
+Bayesian Item Response Theory with PyMC3: Modeling Individual Responses in Psychological Testing
+Bayesian Deep Reinforcement Learning with PyMC3
+Bayesian Survival Analysis with PyMC3: Modeling Time-to-Event Data
+Time Series Anomaly Detection with PyMC3: A Bayesian Approach
+Topic Modeling using Latent Dirichlet Allocation in PyMC3
+Generative Adversarial Networks with PyMC3: Bayesian Approaches to GAN Training
+PyMC3 for Natural Language Processing: Probabilistic Language Models
+Model Calibration with PyMC3: Bayesian Approaches to Parameter Estimation
+Anomaly Detection in Network Traffic with PyMC3: Bayesian Approaches to Intrusion Detection
+Bayesian Matrix Factorization with PyMC3: Collaborative Filtering for Recommendation Systems
+Solving Inverse Problems with PyMC3: Bayesian Approaches to Ill-Posed Problems
+Building Recommendation Engines with PyMC3: Collaborative Filtering for Personalized Recommendations
+Bayesian Optimization of Black-Box Functions with PyMC3
+Bayesian Survival Regression with PyMC3: Modeling Time-to-Event Data with Covariates
+Bayesian Deep Learning for Image Classification with PyMC3
+Analyzing Network Dynamics with PyMC3: Bayesian Approaches to Temporal Data Modeling
+Deep Gaussian Processes with PyMC3: Hierarchical Nonlinear Modeling
+Bayesian Text Classification with PyMC3: Topic Modeling for Document Classification
+Solving Partial Differential Equations with PyMC3: Bayesian Approaches to Forward and Inverse Problems
+Probabilistic Robotics with PyMC3: Bayesian Approaches to Localization and Mapping
+Probabilistic Graph Embeddings using PyMC3: Modeling Latent Representations of Networks
+Bayesian Recommender Systems with PyMC3: Building Personalized Recommendation Engines
+Model Selection in Clustering with PyMC3: Bayesian Approaches to Identifying Optimal Cluster Number
+Bayesian Inference for Gaussian Processes with PyMC3: Modeling and Predicting Spatial Data
+Time Series Anomaly Detection with Recurrent Bayesian Neural Networks in PyMC3
+Modeling Latent Variables with PyMC3: Bayesian Approaches to Factor Analysis
+Bayesian Optimization of Neural Network Architectures with PyMC3
+Bayesian Models for Anomaly Detection in Sensor Data with PyMC3
+Probabilistic Topic Modeling for Customer Reviews with PyMC3
+Bayesian Deep Reinforcement Learning for Continuous Control with PyMC3
+Probabilistic Reasoning with PyMC3: Bayesian Logic Programming
+Bayesian Inference for Graph Convolutional Networks with PyMC3
+Deep Bayesian Neural Networks for Image Generation with PyMC3
+Anomaly Detection in Time Series Data with Bayesian Recurrent Neural Networks in PyMC3
+Probabilistic Approaches for Sentiment Analysis with PyMC3
+Bayesian Multi-armed Bandits with Thompson Sampling in PyMC3
+Modeling Spatiotemporal Data with PyMC3: Bayesian Approaches to Space-Time Analytics
+Bayesian Autoencoders with PyMC3: Unsupervised Learning for Dimensionality Reduction
+Bayesian Optimization for Hyperparameter Tuning of Convolutional Neural Networks with PyMC3
+Bayesian Spatial Regression with PyMC3: Modeling the Effects of Geography on Outcomes
+Probabilistic Forecasting of Stock Prices with PyMC3 and Gaussian Processes
+Model-based Reinforcement Learning with PyMC3: Bayesian Approaches for Decision Making
+Matrix Completion with PyMC3: Bayesian Approaches to Collaborative Filtering
+Deep Reinforcement Learning with Value Iteration Networks in PyMC3
+Probabilistic Modeling for Fraud Detection with PyMC3
+Bayesian Approaches for Recommender Systems with Implicit Feedback in PyMC3
+Bayesian Analysis of Latent Variable Models with PyMC3: A Case Study in Psychology
+Probabilistic Deep Learning for Image Segmentation with U-Net and PyMC3
+Modeling Time-varying Parameters in PyMC3: Bayesian Approaches to Dynamic Modeling
+Bayesian Approaches to Social Network Analysis with PyMC3: Modeling Ties and Communities
+Probabilistic Generative Models with Variational Autoencoders in PyMC3

@@ -1,0 +1,100 @@
+Introduction to probabilistic programming using Python
+Building Bayesian models with Python
+Implementing Markov Chain Monte Carlo in Python for probabilistic programming
+Exploring the capabilities of PyMC3 for probabilistic programming
+Developing probabilistic models for data analysis using Python
+An overview of Edward, a probabilistic programming library in Python
+Probabilistic programming with PyStan in Python
+Gaussian processes for probabilistic modeling in Python
+Probabilistic programming for machine learning in Python
+Implementing Bayesian optimization with GPyOpt in Python
+Bayesian network modeling with pgmpy in Python
+Bayesian deep learning with Pyro in Python
+Using TensorFlow Probability for probabilistic modeling in Python
+Probabilistic programming for time series analysis using Pyro in Python
+An introduction to JAGS (Just Another Gibbs Sampler) for probabilistic programming in Python
+Probabilistic models for recommender systems in Python
+Implementing probabilistic inference algorithms in PyMC3
+Variational inference for probabilistic programming in Python
+Probabilistic graphical models with the pomegranate library in Python
+Bayesian hierarchical modeling with PyStan in Python
+Building generative models with Edward in Python
+Probabilistic programming for natural language processing in Python
+Particle filters for probabilistic modeling in Python
+An introduction to Bayesian decision theory in Python
+Probabilistic programming for anomaly detection using PyMC3
+Kernel density estimation with scikit-learn for probabilistic modeling in Python
+Bayesian statistics and probabilistic programming in Python
+Probabilistic matrix factorization with TensorFlow Probability in Python
+Probabilistic programming for image recognition using Pyro in Python
+Bayesian deep learning with BNN-PyTorch in Python
+Anomaly detection using Gaussian mixture models in Python
+Probabilistic modeling with probabilistic matrix factorization in Python
+An overview of PyDatalog for probabilistic programming in Python
+Probabilistic programming for recommendation systems using PyMC3
+Reinforcement learning with probabilistic models in Python
+Probabilistic programming for fraud detection in Python
+An introduction to Bayesian inference in Python
+Building Bayesian models for time series forecasting in Python
+Probabilistic modeling with Bayesian neural networks in Python
+Bayesian optimization with scikit-optimize in Python
+Probabilistic programming for genetic algorithms in Python
+Probabilistic programming for network analysis using Python
+Markov chain Monte Carlo sampling with PyMC3 in Python
+Bayesian model averaging in Python
+Probabilistic programming for recommendation systems using Pyro
+Deep learning with uncertainty estimation in Python
+Bayesian network structure learning with pyAgrum in Python
+An introduction to probabilistic programming in TensorFlow Probability
+Implementing hierarchical models with PyMC3 in Python
+Probabilistic programming for sentiment analysis using Pyro
+Probabilistic modeling for social network analysis in Python
+Dirichlet processes for nonparametric Bayesian modeling in Python
+Bayesian network learning with the bnlearn library in Python
+Probabilistic programming for time series forecasting using Pyro
+Gaussian mixture models for clustering in Python
+Probabilistic programming for privacy-preserving data analysis in Python
+An introduction to probabilistic programming in STAN
+Probabilistic modeling for network traffic analysis in Python
+Transfer learning with Bayesian neural networks in Python
+Probabilistic programming for human activity recognition using Pyro
+An overview of Soss, a probabilistic programming library in Python
+Probabilistic matrix factorization for collaborative filtering with PyMC3
+Multi-objective optimization with Bayesian optimization in Python
+Probabilistic modeling for credit risk analysis in Python
+Deep reinforcement learning with uncertainty estimation in Python
+Nonparametric Bayesian clustering with PyMC3 in Python
+Probabilistic programming for prediction intervals in time series forecasting
+An introduction to generative adversarial networks (GANs) in Python
+Probabilistic programming for click-through rate prediction using Pyro
+Bayesian optimization with hyperparameter tuning in Python
+Probabilistic modeling for fraud detection using PyMC3
+Bayesian statistics and probabilistic programming for A/B testing in Python
+Probabilistic programming for variance estimation in survey sampling
+Weighted Gaussian processes for imbalanced data classification in Python
+Probabilistic programming for topic modeling using LDA in Python
+Bayesian deep learning for predicting patient outcomes in Python
+Probabilistic programming for spatial analysis using Pyro
+Sequential Monte Carlo methods for filtering and smoothing in Python
+Anomaly detection using variational autoencoders in Python
+Probabilistic programming for recommendation systems using Edward
+Bayesian optimization with automatic feature selection in Python
+Probabilistic modeling for churn prediction in customer analytics using PyMC3
+Bayesian deep learning for natural language generation in Python
+Probabilistic programming for cybersecurity threat detection using Pyro
+Bayesian network structure learning with the pyAgrum toolbox in Python
+Probabilistic programming for stock market trend analysis in Python
+Nonparametric Bayesian models for time series forecasting in Python
+Deep reinforcement learning with uncertainty estimation for robotics in Python
+Probabilistic programming for spatial-temporal analysis using Pyro
+Gaussian processes for time series analysis in Python
+Probabilistic modeling for credit card fraud detection using PyMC3
+Bayesian optimization with uncertainty estimation for hyperparameter tuning in Python
+Probabilistic programming for personalized medicine using Pyro
+Bayesian statistics and probabilistic programming for customer segmentation in Python
+Probabilistic programming for demand forecasting in retail analytics using PyMC3
+Anomaly detection using outlier detection models in Python
+Probabilistic programming for network intrusion detection using Pyro
+Bayesian deep learning for automatic document categorization in Python
+Probabilistic programming for predicting product recommendations using Edward
+Time series forecasting using deep learning with probabilistic modeling in Python

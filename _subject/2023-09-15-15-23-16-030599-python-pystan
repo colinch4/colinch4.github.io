@@ -1,0 +1,100 @@
+Introduction to PyStan: A Python library for Bayesian inference and probabilistic modeling
+Exploring the power of PyStan: Case studies and use cases
+Understanding Markov Chain Monte Carlo (MCMC) algorithms with PyStan
+Implementing hierarchical models in PyStan
+Building Bayesian linear regression models using PyStan
+Time series analysis with PyStan: Forecasting and modeling
+Bayesian inference with PyStan: A beginner's guide
+PyStan vs. PyMC3: A comparison of two popular Bayesian inference libraries in Python
+Implementing probabilistic programming with PyStan
+Understanding Bayesian neural networks with PyStan
+Anomaly detection with PyStan: A practical approach
+Introduction to Bayesian hierarchical modeling using PyStan
+PyStan for big data: Scalable Bayesian inference techniques
+Building recommendation systems with PyStan
+PyStan for time-dependent prediction: Modeling dynamic systems
+Deep learning with PyStan: Implementing Bayesian neural networks
+Text classification using PyStan: A probabilistic modeling approach
+Advanced PyStan techniques: Tips and tricks for experienced users
+Bayesian optimization with PyStan: Hyperparameter tuning made easy
+Introduction to probabilistic graphical models with PyStan
+Detecting fraud in financial transactions using PyStan
+Sequential Monte Carlo methods with PyStan
+Bayesian meta-analysis using PyStan: Combining evidence from multiple studies
+PyStan for machine learning: Integrating Bayesian inference with traditional algorithms
+Understanding Bayesian model comparison with PyStan
+PyStan for natural language processing: Modeling uncertainty in text analysis
+Model selection in PyStan: Choosing the best probabilistic model for your data
+Bayesian time series forecasting with PyStan
+Evaluating model assumptions using PyStan: Goodness-of-fit tests
+Gaussian processes with PyStan: Nonparametric modeling made easy
+PyStan for survival analysis: Modeling time-to-event data
+Hierarchical clustering with PyStan: A probabilistic approach
+PyStan for recommendation systems: Collaborative filtering with uncertainty
+Bayesian deep learning with PyStan: Incorporating uncertainty in neural networks
+Applying Bayesian inference to healthcare data using PyStan
+Probabilistic principal component analysis with PyStan
+Introduction to Hamiltonian Monte Carlo (HMC) in PyStan
+PyStan for image classification: Bayesian approaches to computer vision
+Quantile regression with PyStan: A Bayesian approach to estimating conditional percentiles
+Bayesian mixed-effects models with PyStan: Modeling random effects in hierarchical data
+PyStan for sentiment analysis: Modeling uncertainty in text sentiment classification
+Probabilistic matrix factorization with PyStan: Collaborative filtering for recommender systems
+Bayesian anomaly detection with PyStan: Detecting novel patterns in spatiotemporal data
+Introduction to variational inference with PyStan
+PyStan for portfolio optimization: Incorporating uncertainty in investment strategies
+Gaussian mixture models with PyStan: Clustering data with uncertain membership
+PyStan for reinforcement learning: Bayesian approaches to sequential decision making
+Bayesian changepoint detection with PyStan: Identifying shifts in time series data
+Modeling uncertainty in demand forecasting with PyStan
+Introduction to Bayesian nonparametrics with PyStan
+Generative adversarial networks with PyStan: Bayesian modeling of adversarial learning
+PyStan for causal inference: Estimating causal effects using Bayesian methods
+Probabilistic topic modeling with PyStan: Discovering latent themes in text corpora
+Bayesian optimization of deep neural networks with PyStan
+Bayesian spatial modeling with PyStan: Modeling spatial dependencies in geospatial data
+PyStan for recommendation engines: Collaborative filtering with probabilistic models
+Bayesian time series clustering with PyStan: Identifying patterns in multivariate time series data
+Robust Bayesian inference with PyStan: Dealing with outliers and model misspecification
+Probabilistic programming for decision making with PyStan
+PyStan for Bayesian network modeling: Capturing complex dependencies in data
+Sequential analysis with PyStan: Updating beliefs in real-time data streams
+Bayesian change point estimation with PyStan: Detecting shifts in data distributions
+Modeling uncertain environmental impacts with PyStan
+Probabilistic image segmentation with PyStan: Uncertainty-aware computer vision
+Bayesian deep reinforcement learning with PyStan
+PyStan for supply chain optimization: Modeling uncertainty in logistics
+Bayesian neural architecture search with PyStan: Automating model selection
+Modeling uncertainty in financial risk management with PyStan
+Probabilistic anomaly detection in network traffic using PyStan
+Bayesian spatial-temporal modeling with PyStan: Analyzing dynamic geospatial data
+Intrusion detection with PyStan: Bayesian approaches to cybersecurity
+Estimating missing data with PyStan: Bayesian imputation techniques
+PyStan for collaborative filtering in recommender systems: Integrating user preferences with uncertainty
+Bayesian clustering of time series data with PyStan: Discovering temporal patterns
+Bayesian deep learning for image segmentation with PyStan
+PyStan for personalized medicine: Bayesian approaches to treatment optimization
+Modeling uncertainty in customer churn prediction with PyStan
+Bayesian optimization of hyperparameters in deep reinforcement learning with PyStan
+Discovering causal relationships in complex systems with PyStan: Bayesian structural equation modeling
+Probabilistic event detection in social media using PyStan
+Bayesian estimation of network traffic anomalies with PyStan
+PyStan for topic modeling: Uncovering hidden themes in text corpora
+Bayesian deep learning for time series forecasting with PyStan
+Modeling uncertainty in credit risk assessment with PyStan
+Recommender systems with Bayesian matrix factorization in PyStan: Handling sparse and missing data
+Bayesian clustering of high-dimensional data with PyStan: Identifying subgroups in genomic datasets
+PyStan for personalized marketing: Bayesian approaches to customer segmentation
+Uncertainty-aware anomaly detection in IoT data using PyStan
+Bayesian optimization of mixed-effects models with PyStan: Incorporating group-level variability
+Probabilistic modeling of customer lifetime value with PyStan: Evaluating long-term profitability
+Bayesian deep learning for image classification with PyStan
+PyStan for precision medicine: Personalized treatment recommendations using Bayesian models
+Uncertainty quantification in risk assessment with PyStan
+Detecting abnormal patterns in time series data with PyStan: Anomaly detection in industrial processes
+Modeling uncertainty in credit scoring with PyStan
+Bayesian optimization of recommendation systems with PyStan: Incorporating user preferences and uncertainty
+PyStan for text summarization: Extracting key information with probabilistic models
+Quantifying uncertainty in operational risk management with PyStan
+Bayesian optimization of Gaussian mixture models with PyStan: Robust clustering of high-dimensional data
+Uncertainty-aware time series forecasting with PyStan: Application in energy demand prediction.
