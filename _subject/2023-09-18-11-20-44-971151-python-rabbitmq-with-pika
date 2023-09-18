@@ -1,0 +1,100 @@
+Introduction to RabbitMQ messaging system
+Getting started with Pika library for Python
+Key features of RabbitMQ for message queueing
+How to install RabbitMQ on different platforms
+Implementing basic message publishing with Pika and RabbitMQ
+Creating consumers and handling message delivery in Pika
+Understanding message acknowledgments in RabbitMQ
+RabbitMQ exchange types and their use cases
+Routing and filtering messages with Pika and RabbitMQ
+Implementing message persistence in RabbitMQ using Pika
+Handling RabbitMQ connection failures and retries with Pika
+Using RabbitMQ's message TTL and dead letter exchanges with Pika
+Implementing message priority in RabbitMQ with Pika
+Scaling message processing with worker queues in RabbitMQ and Pika
+Load balancing messages across multiple consumers with RabbitMQ and Pika
+Implementing message acknowledgments and redeliveries in Pika
+Implementing message batching and transactional publishing with Pika
+Using RabbitMQ's Direct Reply-To feature with Pika for request-response communication
+Implementing publish/subscribe pattern with RabbitMQ and Pika
+Implementing topic-based message routing with Pika and RabbitMQ
+Building a distributed task queue with RabbitMQ, Pika, and Celery
+Implementing RPC communication with RabbitMQ and Pika
+Using RabbitMQ's message expiration feature with Pika
+Building a message-driven microservices architecture with RabbitMQ and Pika
+Implementing message retry and dead-letter queues with RabbitMQ and Pika
+Working with RabbitMQ's management plugin and Pika for monitoring and administration
+Implementing message filtering and routing with RabbitMQ's exchange-to-exchange bindings and Pika
+Implementing message compression and encryption with RabbitMQ and Pika
+Implementing message batching and de-duplication with RabbitMQ and Pika
+Implementing message exchange between different programming languages with RabbitMQ and Pika
+Implementing message priority and delay with RabbitMQ and Pika
+Using RabbitMQ's federation plugin with Pika for building distributed systems
+Monitoring RabbitMQ performance and health with Pika and Prometheus
+Implementing parallel message processing with RabbitMQ and Pika
+Building real-time collaborative applications with RabbitMQ, Pika, and WebSockets
+Using RabbitMQ's sharding feature with Pika for scalability
+Implementing message validation and schema evolution with RabbitMQ and Pika
+Building event-driven architectures with RabbitMQ, Pika, and Event Sourcing
+Implementing message rate limiting and throttling with RabbitMQ and Pika
+Integrating RabbitMQ and Apache Kafka with Pika for messaging pipelines
+Using RabbitMQ's MQTT plugin with Pika for Internet of Things (IoT) communication
+Implementing message-driven microservices with RabbitMQ, Pika, and Spring Cloud Stream
+Implementing message prefetching and QoS settings with RabbitMQ and Pika
+Building a distributed job scheduler with RabbitMQ, Pika, and APScheduler
+Implementing message routing based on consumer availability with Pika and RabbitMQ
+Using RabbitMQ's federation plugin with Pika for disaster recovery and high availability
+Implementing asynchronous communication patterns with RabbitMQ and Pika
+Building a distributed log system with RabbitMQ, Pika, and Apache Kafka
+Implementing event sourcing and CQRS with RabbitMQ, Pika, and Axon Framework
+Using RabbitMQ's STOMP plugin with Pika for cross-platform messaging
+Implementing message versioning and backward compatibility with RabbitMQ and Pika
+Building a fault-tolerant messaging system with RabbitMQ, Pika, and Apache Cassandra
+Implementing message deduplication and idempotency with RabbitMQ and Pika
+Using RabbitMQ's management API with Pika for automated monitoring and control
+Implementing message archiving and auditing with RabbitMQ and Pika
+Building a scalable chat application with RabbitMQ, Pika, and Socket.IO
+Implementing event-driven Microservices with RabbitMQ, Pika, and Axon Server
+Using RabbitMQ's alternate exchange feature for handling undeliverable messages with Pika
+Implementing message routing based on content type with RabbitMQ and Pika
+Building a distributed file processing system with RabbitMQ, Pika, and Apache Spark
+Implementing message time-to-live (TTL) with RabbitMQ and Pika
+Using RabbitMQ's shovel plugin with Pika for cross-datacenter message replication
+Implementing message partitioning and consistent hashing with RabbitMQ and Pika
+Building a distributed event-driven architecture with RabbitMQ, Pika, and Kafka Streams
+Implementing message tracing and observability with RabbitMQ and Pika
+Using RabbitMQ's delayed message plugin with Pika for scheduled message delivery
+Implementing message encryption and decryption with RabbitMQ and Pika
+Building a distributed recommendation system with RabbitMQ, Pika, and Apache Mahout
+Implementing message rate limiting with RabbitMQ and Pika
+Using RabbitMQ's federation plugin for building multi-datacenter messaging systems with Pika
+Implementing message routing based on geo-location with RabbitMQ and Pika
+Building a real-time analytics platform with RabbitMQ, Pika, and Apache Flink
+Implementing message batching and fanout with RabbitMQ and Pika
+Using RabbitMQ's per-message TTL feature with Pika for delayed retries
+Implementing message content-based filtering with RabbitMQ and Pika
+Building a distributed recommendation engine with RabbitMQ, Pika, and Apache Solr
+Implementing message rate limiting with RabbitMQ and Pika
+Using RabbitMQ's shovel plugin with Pika for data replication across clusters
+Implementing message routing based on message size with RabbitMQ and Pika
+Building a distributed content delivery network with RabbitMQ, Pika, and Varnish
+Implementing message tracing and request correlation with RabbitMQ and Pika
+Using RabbitMQ's message deduplication plugin with Pika for duplicate message detection
+Implementing message encryption and signing with RabbitMQ and Pika
+Building a distributed fraud detection system with RabbitMQ, Pika, and Apache Kafka
+Implementing message rate limiting and circuit breaking with RabbitMQ and Pika
+Using RabbitMQ's federation plugin with Pika for global data distribution
+Implementing message routing based on business rules with RabbitMQ and Pika
+Building a real-time recommendation service with RabbitMQ, Pika, and Apache Cassandra
+Implementing message time-to-live (TTL) with RabbitMQ and Pika
+Using RabbitMQ's message journaling feature with Pika for message log auditing
+Implementing message routing based on message priority with RabbitMQ and Pika
+Building a distributed social networking platform with RabbitMQ, Pika, and Apache ZooKeeper
+Implementing message rate limiting with RabbitMQ and Pika
+Using RabbitMQ's shovel plugin with Pika for migrating queues between clusters
+Implementing message routing based on custom headers with RabbitMQ and Pika
+Building a distributed recommender system with RabbitMQ, Pika, and Apache Giraph
+Implementing message compression and decompression with RabbitMQ and Pika
+Building a distributed fraud detection system with RabbitMQ, Pika, and Apache Storm
+Implementing message rate limiting and load balancing with RabbitMQ and Pika
+Using RabbitMQ's federation plugin with Pika for bridging multiple brokers
