@@ -3,7 +3,7 @@ layout: post
 title: "Implementing distributed locking with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, distributedlocking]
+tags: [asyncio, distributedlocking]
 comments: true
 share: true
 ---

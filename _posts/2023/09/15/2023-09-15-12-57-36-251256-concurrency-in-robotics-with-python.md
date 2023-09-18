@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in robotics with Python"
 description: " "
 date: 2023-09-15
-tags: [Python, Robotics]
+tags: [Robotics]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scraping competitor information using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webscraping, competitorinformation]
+tags: [webscraping, competitorinformation]
 comments: true
 share: true
 ---

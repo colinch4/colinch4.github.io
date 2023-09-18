@@ -3,7 +3,7 @@ layout: post
 title: "Implementing pub-sub systems with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, pubsub, realtime, eventdriven]
+tags: [asyncio, pubsub, realtime, eventdriven]
 comments: true
 share: true
 ---

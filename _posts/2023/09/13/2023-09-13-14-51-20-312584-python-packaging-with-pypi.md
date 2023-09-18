@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with PyPi"
 description: " "
 date: 2023-09-13
-tags: [python, programming, PythonPackaging, PyPIGuide]
+tags: [programming, PythonPackaging, PyPIGuide]
 comments: true
 share: true
 ---

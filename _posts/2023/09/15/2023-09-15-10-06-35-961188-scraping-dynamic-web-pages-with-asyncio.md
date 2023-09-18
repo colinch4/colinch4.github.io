@@ -3,7 +3,7 @@ layout: post
 title: "Scraping dynamic web pages with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

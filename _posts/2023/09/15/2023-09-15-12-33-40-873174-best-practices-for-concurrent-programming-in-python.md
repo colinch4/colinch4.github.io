@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for concurrent programming in Python"
 description: " "
 date: 2023-09-15
-tags: [python, concurrency]
+tags: [concurrency]
 comments: true
 share: true
 ---

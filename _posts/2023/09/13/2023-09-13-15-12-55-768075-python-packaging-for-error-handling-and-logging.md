@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for error handling and logging"
 description: " "
 date: 2023-09-13
-tags: [python, packaging]
+tags: [packaging]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Test reporting and analysis in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, Testing, TestReporting, CodeAnalysis]
+tags: [Testing, TestReporting, CodeAnalysis]
 comments: true
 share: true
 ---

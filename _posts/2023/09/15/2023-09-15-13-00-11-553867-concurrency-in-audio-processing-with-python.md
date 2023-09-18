@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in audio processing with Python"
 description: " "
 date: 2023-09-15
-tags: [python, audioengineering]
+tags: [audioengineering]
 comments: true
 share: true
 ---

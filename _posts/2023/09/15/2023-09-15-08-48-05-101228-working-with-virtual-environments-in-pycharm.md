@@ -3,7 +3,7 @@ layout: post
 title: "Working with virtual environments in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, pycharm, virtualenvironment, development]
+tags: [pycharm, virtualenvironment, development]
 comments: true
 share: true
 ---

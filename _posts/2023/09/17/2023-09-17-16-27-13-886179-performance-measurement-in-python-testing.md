@@ -3,7 +3,7 @@ layout: post
 title: "Performance measurement in Python testing"
 description: " "
 date: 2023-09-17
-tags: [Python, PerformanceMeasurement]
+tags: [PerformanceMeasurement]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for event-driven programming"
 description: " "
 date: 2023-09-13
-tags: [Python, EventDrivenProgramming, Asyncio, Twisted]
+tags: [EventDrivenProgramming, Asyncio, Twisted]
 comments: true
 share: true
 ---

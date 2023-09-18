@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for machine learning"
 description: " "
 date: 2023-09-13
-tags: [Python, MachineLearning, PythonPackaging, DataScience]
+tags: [MachineLearning, PythonPackaging, DataScience]
 comments: true
 share: true
 ---

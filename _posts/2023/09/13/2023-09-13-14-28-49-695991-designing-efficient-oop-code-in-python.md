@@ -3,7 +3,7 @@ layout: post
 title: "Designing efficient OOP code in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Efficiency]
+tags: [Efficiency]
 comments: true
 share: true
 ---

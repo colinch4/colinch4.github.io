@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for code profiling"
 description: " "
 date: 2023-09-13
-tags: [python, pythonpackage, codeprofiling, performancetuning]
+tags: [pythonpackage, codeprofiling, performancetuning]
 comments: true
 share: true
 ---

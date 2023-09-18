@@ -3,7 +3,7 @@ layout: post
 title: "Machine translation in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [Python, MachineTranslation]
+tags: [MachineTranslation]
 comments: true
 share: true
 ---

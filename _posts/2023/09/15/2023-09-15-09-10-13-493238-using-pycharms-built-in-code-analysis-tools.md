@@ -3,7 +3,7 @@ layout: post
 title: "Using PyCharm's built-in code analysis tools"
 description: " "
 date: 2023-09-15
-tags: [Python, PyCharm, CodeAnalysis, IntegratedDevelopmentEnvironment]
+tags: [PyCharm, CodeAnalysis, IntegratedDevelopmentEnvironment]
 comments: true
 share: true
 ---

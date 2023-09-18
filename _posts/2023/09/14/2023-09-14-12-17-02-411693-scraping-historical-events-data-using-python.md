@@ -3,7 +3,7 @@ layout: post
 title: "Scraping historical events data using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

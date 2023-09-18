@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for multithreading and multiprocessing"
 description: " "
 date: 2023-09-13
-tags: [Python, Multithreading, Multiprocessing]
+tags: [Multithreading, Multiprocessing]
 comments: true
 share: true
 ---

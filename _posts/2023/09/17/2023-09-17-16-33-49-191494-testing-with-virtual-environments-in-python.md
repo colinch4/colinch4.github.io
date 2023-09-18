@@ -3,7 +3,7 @@ layout: post
 title: "Testing with virtual environments in Python"
 description: " "
 date: 2023-09-17
-tags: [python, virtualenvironments]
+tags: [virtualenvironments]
 comments: true
 share: true
 ---

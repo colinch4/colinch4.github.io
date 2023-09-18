@@ -3,7 +3,7 @@ layout: post
 title: "Operator overloading in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, OperatorOverloading]
+tags: [OperatorOverloading]
 comments: true
 share: true
 ---

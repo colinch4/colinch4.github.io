@@ -3,7 +3,7 @@ layout: post
 title: "Implementing sentiment analysis using Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

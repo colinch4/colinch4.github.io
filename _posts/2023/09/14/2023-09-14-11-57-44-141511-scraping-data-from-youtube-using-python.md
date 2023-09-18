@@ -3,7 +3,7 @@ layout: post
 title: "Scraping data from YouTube using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, YouTubeScraping]
+tags: [YouTubeScraping]
 comments: true
 share: true
 ---

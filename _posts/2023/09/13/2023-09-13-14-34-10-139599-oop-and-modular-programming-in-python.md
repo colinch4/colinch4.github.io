@@ -3,7 +3,7 @@ layout: post
 title: "OOP and modular programming in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, ProgrammingParadigms]
+tags: [ProgrammingParadigms]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python script to monitor Bluetooth proximity with notifications"
 description: " "
 date: 2023-09-18
-tags: [Python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

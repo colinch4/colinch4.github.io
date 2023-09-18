@@ -3,7 +3,7 @@ layout: post
 title: "OOP and image processing in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, ImageProcessing]
+tags: [ImageProcessing]
 comments: true
 share: true
 ---

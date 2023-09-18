@@ -3,7 +3,7 @@ layout: post
 title: "Scraping scientific data using Python"
 description: " "
 date: 2023-09-14
-tags: [python, datascraping]
+tags: [datascraping]
 comments: true
 share: true
 ---

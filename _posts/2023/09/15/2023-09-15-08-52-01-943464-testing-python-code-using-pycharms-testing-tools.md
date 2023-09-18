@@ -3,7 +3,7 @@ layout: post
 title: "Testing Python code using PyCharm's testing tools"
 description: " "
 date: 2023-09-15
-tags: [python, testing]
+tags: [testing]
 comments: true
 share: true
 ---

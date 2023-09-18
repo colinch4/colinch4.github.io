@@ -3,7 +3,7 @@ layout: post
 title: "OOP and web scraping in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Using Asyncio for real-time video processing tasks"
 description: " "
 date: 2023-09-15
-tags: [Python, Asyncio, RealTimeVideoProcessing, Concurrency]
+tags: [Asyncio, RealTimeVideoProcessing, Concurrency]
 comments: true
 share: true
 ---

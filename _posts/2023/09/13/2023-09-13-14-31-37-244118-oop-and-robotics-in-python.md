@@ -3,7 +3,7 @@ layout: post
 title: "OOP and robotics in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Robotics, Programming]
+tags: [Robotics, Programming]
 comments: true
 share: true
 ---

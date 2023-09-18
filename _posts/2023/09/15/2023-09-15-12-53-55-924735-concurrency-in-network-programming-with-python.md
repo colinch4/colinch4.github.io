@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in network programming with Python"
 description: " "
 date: 2023-09-15
-tags: [python, networkprogramming]
+tags: [networkprogramming]
 comments: true
 share: true
 ---

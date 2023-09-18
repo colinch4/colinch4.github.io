@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data transformation and feature engineering"
 description: " "
 date: 2023-09-13
-tags: [python, datatransformation, python, featureengineering]
+tags: [datatransformation, python, featureengineering]
 comments: true
 share: true
 ---

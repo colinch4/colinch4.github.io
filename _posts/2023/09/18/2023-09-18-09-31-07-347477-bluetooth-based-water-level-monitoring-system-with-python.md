@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based water level monitoring system with Python"
 description: " "
 date: 2023-09-18
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

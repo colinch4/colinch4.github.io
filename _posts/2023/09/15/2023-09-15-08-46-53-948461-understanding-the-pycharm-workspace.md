@@ -3,7 +3,7 @@ layout: post
 title: "Understanding the PyCharm workspace"
 description: " "
 date: 2023-09-15
-tags: [python, pycharm, workspace]
+tags: [pycharm, workspace]
 comments: true
 share: true
 ---

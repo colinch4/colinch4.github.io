@@ -3,7 +3,7 @@ layout: post
 title: "Handling dynamic content while web scraping with Python"
 description: " "
 date: 2023-09-14
-tags: [Python, WebScraping, DynamicContent]
+tags: [WebScraping, DynamicContent]
 comments: true
 share: true
 ---

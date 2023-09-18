@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for caching and storage"
 description: " "
 date: 2023-09-13
-tags: [python, caching, storage]
+tags: [caching, storage]
 comments: true
 share: true
 ---

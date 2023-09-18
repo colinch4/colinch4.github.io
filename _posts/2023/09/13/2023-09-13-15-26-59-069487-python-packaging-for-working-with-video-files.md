@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with video files"
 description: " "
 date: 2023-09-13
-tags: [Python, VideoProcessing, PythonPackage]
+tags: [VideoProcessing, PythonPackage]
 comments: true
 share: true
 ---

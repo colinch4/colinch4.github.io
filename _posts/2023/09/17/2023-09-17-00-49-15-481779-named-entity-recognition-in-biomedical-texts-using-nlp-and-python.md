@@ -3,7 +3,7 @@ layout: post
 title: "Named Entity Recognition in biomedical texts using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [python, biomedical]
+tags: [biomedical]
 comments: true
 share: true
 ---

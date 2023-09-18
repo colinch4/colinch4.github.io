@@ -3,7 +3,7 @@ layout: post
 title: "Global Interpreter Lock (GIL) in Python"
 description: " "
 date: 2023-09-15
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

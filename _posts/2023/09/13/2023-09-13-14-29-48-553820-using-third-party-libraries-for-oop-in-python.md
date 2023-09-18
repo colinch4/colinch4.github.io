@@ -3,7 +3,7 @@ layout: post
 title: "Using third-party libraries for OOP in Python"
 description: " "
 date: 2023-09-13
-tags: [python, thirdparty, libraries]
+tags: [thirdparty, libraries]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Integrating PyCharm with web development frameworks (e.g., Django, Flask)"
 description: " "
 date: 2023-09-15
-tags: [python, webdevelopment, pycharm, django, flask]
+tags: [webdevelopment, pycharm, django, flask]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data classification and regression"
 description: " "
 date: 2023-09-13
-tags: [Python, MachineLearning, Python, TensorFlow, MachineLearning, Python, MachineLearning, DataClassification, DataRegression]
+tags: [MachineLearning, Python, TensorFlow, MachineLearning, Python, MachineLearning, DataClassification, DataRegression]
 comments: true
 share: true
 ---

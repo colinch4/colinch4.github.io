@@ -3,7 +3,7 @@ layout: post
 title: "Features of the PyCharm IDE"
 description: " "
 date: 2023-09-15
-tags: [python, development]
+tags: [development]
 comments: true
 share: true
 ---

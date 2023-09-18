@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for IoT (Internet of Things) devices"
 description: " "
 date: 2023-09-13
-tags: [Python, Packaging, Code]
+tags: [Packaging, Code]
 comments: true
 share: true
 ---

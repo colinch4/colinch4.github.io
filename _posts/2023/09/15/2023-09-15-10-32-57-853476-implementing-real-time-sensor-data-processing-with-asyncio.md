@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time sensor data processing with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio]
+tags: [asyncio]
 comments: true
 share: true
 ---

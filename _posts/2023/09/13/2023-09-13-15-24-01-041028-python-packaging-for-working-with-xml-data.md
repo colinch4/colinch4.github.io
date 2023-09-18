@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with XML data"
 description: " "
 date: 2023-09-13
-tags: [python, data, parsing]
+tags: [data, parsing]
 comments: true
 share: true
 ---

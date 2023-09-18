@@ -3,7 +3,7 @@ layout: post
 title: "Using OOP in GUI programming in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, GUIprogramming]
+tags: [GUIprogramming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Exception handling in Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, exceptionhandling]
+tags: [asyncio, exceptionhandling]
 comments: true
 share: true
 ---

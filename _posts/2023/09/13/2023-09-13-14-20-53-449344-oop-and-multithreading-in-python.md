@@ -3,7 +3,7 @@ layout: post
 title: "OOP and multithreading in Python"
 description: " "
 date: 2023-09-13
-tags: [python, multithreading]
+tags: [multithreading]
 comments: true
 share: true
 ---

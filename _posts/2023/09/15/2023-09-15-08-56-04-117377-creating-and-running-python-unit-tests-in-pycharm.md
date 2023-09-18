@@ -3,7 +3,7 @@ layout: post
 title: "Creating and running Python unit tests in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, unittest, pycharm]
+tags: [unittest, pycharm]
 comments: true
 share: true
 ---

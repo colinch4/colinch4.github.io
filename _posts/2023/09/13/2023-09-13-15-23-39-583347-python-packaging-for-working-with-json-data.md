@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with JSON data"
 description: " "
 date: 2023-09-13
-tags: [python, json, packaging, pythondataprocessing]
+tags: [json, packaging, pythondataprocessing]
 comments: true
 share: true
 ---

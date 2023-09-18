@@ -3,7 +3,7 @@ layout: post
 title: "Sharing data between threads in Python"
 description: " "
 date: 2023-09-15
-tags: [python, multithreading]
+tags: [multithreading]
 comments: true
 share: true
 ---

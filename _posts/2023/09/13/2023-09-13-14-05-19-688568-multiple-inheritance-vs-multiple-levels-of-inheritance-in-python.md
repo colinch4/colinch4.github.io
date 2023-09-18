@@ -3,7 +3,7 @@ layout: post
 title: "Multiple inheritance vs multiple levels of inheritance in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Inheritance, Programming]
+tags: [Inheritance, Programming]
 comments: true
 share: true
 ---

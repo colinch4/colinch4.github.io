@@ -3,7 +3,7 @@ layout: post
 title: "PyTorch tutorials and online courses"
 description: " "
 date: 2023-09-14
-tags: [Python, DeepLearning, PyTorch]
+tags: [DeepLearning, PyTorch]
 comments: true
 share: true
 ---

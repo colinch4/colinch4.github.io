@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Python applications with PyCharm"
 description: " "
 date: 2023-09-15
-tags: [Python, PyCharm]
+tags: [PyCharm]
 comments: true
 share: true
 ---

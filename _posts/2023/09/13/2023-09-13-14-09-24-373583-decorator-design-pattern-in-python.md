@@ -3,7 +3,7 @@ layout: post
 title: "Decorator design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, DecoratorPattern]
+tags: [DecoratorPattern]
 comments: true
 share: true
 ---

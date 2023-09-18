@@ -3,7 +3,7 @@ layout: post
 title: "Class attributes and methods in Python"
 description: " "
 date: 2023-09-13
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

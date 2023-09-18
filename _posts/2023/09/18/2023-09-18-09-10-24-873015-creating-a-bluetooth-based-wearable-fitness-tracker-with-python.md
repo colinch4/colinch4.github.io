@@ -3,7 +3,7 @@ layout: post
 title: "Creating a Bluetooth-based wearable fitness tracker with Python"
 description: " "
 date: 2023-09-18
-tags: [python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

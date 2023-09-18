@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with setuptools"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, setuptools]
+tags: [packaging, setuptools]
 comments: true
 share: true
 ---

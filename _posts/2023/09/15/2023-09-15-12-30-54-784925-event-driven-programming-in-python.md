@@ -3,7 +3,7 @@ layout: post
 title: "Event-driven programming in Python"
 description: " "
 date: 2023-09-15
-tags: [python, eventdrivenprogramming]
+tags: [eventdrivenprogramming]
 comments: true
 share: true
 ---

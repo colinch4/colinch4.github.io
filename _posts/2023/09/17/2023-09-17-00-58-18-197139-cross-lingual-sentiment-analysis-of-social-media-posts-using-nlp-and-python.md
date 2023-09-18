@@ -3,7 +3,7 @@ layout: post
 title: "Cross-lingual sentiment analysis of social media posts using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

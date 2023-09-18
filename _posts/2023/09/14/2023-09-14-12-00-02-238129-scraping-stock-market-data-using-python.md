@@ -3,7 +3,7 @@ layout: post
 title: "Scraping stock market data using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, DataScraping]
+tags: [DataScraping]
 comments: true
 share: true
 ---

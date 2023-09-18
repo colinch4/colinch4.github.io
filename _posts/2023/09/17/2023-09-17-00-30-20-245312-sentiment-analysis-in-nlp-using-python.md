@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [python, sentimentanalysis]
+tags: [sentimentanalysis]
 comments: true
 share: true
 ---

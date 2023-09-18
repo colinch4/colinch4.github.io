@@ -3,7 +3,7 @@ layout: post
 title: "Code reusability and maintainability in OOP in Python"
 description: " "
 date: 2023-09-13
-tags: [python, objectorientedprogramming, codeencapsulation, inheritance, polymorphism, modularization, documentation]
+tags: [objectorientedprogramming, codeencapsulation, inheritance, polymorphism, modularization, documentation]
 comments: true
 share: true
 ---

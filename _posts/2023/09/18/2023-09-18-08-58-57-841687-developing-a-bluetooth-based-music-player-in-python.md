@@ -3,7 +3,7 @@ layout: post
 title: "Developing a Bluetooth-based music player in Python"
 description: " "
 date: 2023-09-18
-tags: [python, BluetoothMusicPlayer]
+tags: [BluetoothMusicPlayer]
 comments: true
 share: true
 ---

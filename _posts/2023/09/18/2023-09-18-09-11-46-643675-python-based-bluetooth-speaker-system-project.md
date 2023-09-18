@@ -3,7 +3,7 @@ layout: post
 title: "Python-based Bluetooth speaker system project"
 description: " "
 date: 2023-09-18
-tags: [python, bluetoothspeakersystem]
+tags: [bluetoothspeakersystem]
 comments: true
 share: true
 ---

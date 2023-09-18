@@ -3,7 +3,7 @@ layout: post
 title: "Implementing biometric authentication via Bluetooth in Python"
 description: " "
 date: 2023-09-18
-tags: [python, biometrics]
+tags: [biometrics]
 comments: true
 share: true
 ---

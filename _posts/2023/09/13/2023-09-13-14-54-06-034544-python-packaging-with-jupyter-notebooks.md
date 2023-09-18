@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with Jupyter notebooks"
 description: " "
 date: 2023-09-13
-tags: [Python, Packaging, JupyterNotebooks]
+tags: [Packaging, JupyterNotebooks]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for code reviews"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, codereviews]
+tags: [packaging, codereviews]
 comments: true
 share: true
 ---

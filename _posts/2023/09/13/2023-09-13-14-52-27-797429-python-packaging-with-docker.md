@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with Docker"
 description: " "
 date: 2023-09-13
-tags: [python, docker, pythonpackaging, devops]
+tags: [docker, pythonpackaging, devops]
 comments: true
 share: true
 ---

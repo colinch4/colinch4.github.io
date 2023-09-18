@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-controlled wireless robotic vehicle using Python"
 description: " "
 date: 2023-09-18
-tags: [python, robotics)]
+tags: [robotics)]
 comments: true
 share: true
 ---

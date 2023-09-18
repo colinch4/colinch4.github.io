@@ -3,7 +3,7 @@ layout: post
 title: "OOP and cryptography in Python"
 description: " "
 date: 2023-09-13
-tags: [python, cryptography]
+tags: [cryptography]
 comments: true
 share: true
 ---

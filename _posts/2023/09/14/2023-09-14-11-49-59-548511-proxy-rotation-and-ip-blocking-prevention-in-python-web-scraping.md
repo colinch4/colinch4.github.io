@@ -3,7 +3,7 @@ layout: post
 title: "Proxy rotation and IP blocking prevention in Python web scraping"
 description: " "
 date: 2023-09-14
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

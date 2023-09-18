@@ -3,7 +3,7 @@ layout: post
 title: "Running Python scripts in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [Python, PyCharm, PythonScripts]
+tags: [PyCharm, PythonScripts]
 comments: true
 share: true
 ---

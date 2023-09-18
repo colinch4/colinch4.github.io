@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in chatbot development with Python"
 description: " "
 date: 2023-09-15
-tags: [Python, ChatbotDevelopment]
+tags: [ChatbotDevelopment]
 comments: true
 share: true
 ---

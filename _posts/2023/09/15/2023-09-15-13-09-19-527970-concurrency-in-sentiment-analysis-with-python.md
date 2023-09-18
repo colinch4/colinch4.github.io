@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in sentiment analysis with Python"
 description: " "
 date: 2023-09-15
-tags: [python, sentimentanalysis]
+tags: [sentimentanalysis]
 comments: true
 share: true
 ---

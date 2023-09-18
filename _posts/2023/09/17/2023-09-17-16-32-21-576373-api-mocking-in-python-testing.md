@@ -3,7 +3,7 @@ layout: post
 title: "API mocking in Python testing"
 description: " "
 date: 2023-09-17
-tags: [python, testing, apimocking]
+tags: [testing, apimocking]
 comments: true
 share: true
 ---

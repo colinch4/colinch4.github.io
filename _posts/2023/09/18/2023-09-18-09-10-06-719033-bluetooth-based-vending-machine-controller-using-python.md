@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based vending machine controller using Python"
 description: " "
 date: 2023-09-18
-tags: [Python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

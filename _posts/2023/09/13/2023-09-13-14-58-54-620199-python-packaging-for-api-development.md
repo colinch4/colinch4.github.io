@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for API development"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, development]
+tags: [packaging, development]
 comments: true
 share: true
 ---

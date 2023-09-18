@@ -3,7 +3,7 @@ layout: post
 title: "Using PyCharm's Build Tools (e.g., setuptools, pytest, tox)"
 description: " "
 date: 2023-09-15
-tags: [python, PyCharm, buildtools, setuptools, pytest]
+tags: [PyCharm, buildtools, setuptools, pytest]
 comments: true
 share: true
 ---

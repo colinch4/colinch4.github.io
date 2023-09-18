@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data persistence"
 description: " "
 date: 2023-09-13
-tags: [python, datapersitence, python, datapersitence, python, datapersitence]
+tags: [datapersitence, python, datapersitence, python, datapersitence]
 comments: true
 share: true
 ---

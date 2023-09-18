@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm for automating repetitive tasks and workflows"
 description: " "
 date: 2023-09-15
-tags: [python, automation]
+tags: [automation]
 comments: true
 share: true
 ---

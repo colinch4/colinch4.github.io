@@ -3,7 +3,7 @@ layout: post
 title: "Basics of multi-processing in Python"
 description: " "
 date: 2023-09-15
-tags: [python, multiprocessing]
+tags: [multiprocessing]
 comments: true
 share: true
 ---

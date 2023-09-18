@@ -3,7 +3,7 @@ layout: post
 title: "Adapter design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, AdapterPattern]
+tags: [AdapterPattern]
 comments: true
 share: true
 ---

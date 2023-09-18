@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for code documentation"
 description: " "
 date: 2023-09-13
-tags: [python, documentation, packaging]
+tags: [documentation, packaging]
 comments: true
 share: true
 ---

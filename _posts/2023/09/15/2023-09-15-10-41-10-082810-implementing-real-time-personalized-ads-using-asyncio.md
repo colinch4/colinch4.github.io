@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time personalized ads using Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, advertising]
+tags: [asyncio, advertising]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scraping job listings using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webscraping]
+tags: [webscraping]
 comments: true
 share: true
 ---

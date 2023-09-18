@@ -3,7 +3,7 @@ layout: post
 title: "Python's multiprocessing.Pool"
 description: " "
 date: 2023-09-15
-tags: [Python, Multiprocessing]
+tags: [Multiprocessing]
 comments: true
 share: true
 ---

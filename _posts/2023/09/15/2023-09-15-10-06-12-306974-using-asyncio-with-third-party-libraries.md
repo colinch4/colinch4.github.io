@@ -3,7 +3,7 @@ layout: post
 title: "Using Asyncio with third-party libraries"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, thirdparty, asynchronous, programming]
+tags: [asyncio, thirdparty, asynchronous, programming]
 comments: true
 share: true
 ---

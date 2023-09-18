@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for Raspberry Pi"
 description: " "
 date: 2023-09-13
-tags: [Python, RaspberryPi]
+tags: [RaspberryPi]
 comments: true
 share: true
 ---

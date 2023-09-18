@@ -3,7 +3,7 @@ layout: post
 title: "Scraping music lyrics using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

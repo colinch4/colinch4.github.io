@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in cybersecurity with Python"
 description: " "
 date: 2023-09-15
-tags: [python, concurrency]
+tags: [concurrency]
 comments: true
 share: true
 ---

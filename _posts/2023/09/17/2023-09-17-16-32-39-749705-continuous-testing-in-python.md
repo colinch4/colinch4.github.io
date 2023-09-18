@@ -3,7 +3,7 @@ layout: post
 title: "Continuous testing in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, ContinuousTesting]
+tags: [ContinuousTesting]
 comments: true
 share: true
 ---

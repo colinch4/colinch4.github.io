@@ -3,7 +3,7 @@ layout: post
 title: "Python's multiprocessing module"
 description: " "
 date: 2023-09-15
-tags: [Python, multiprocessing]
+tags: [multiprocessing]
 comments: true
 share: true
 ---

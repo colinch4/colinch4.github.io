@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with Django"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, Django, deployment]
+tags: [packaging, Django, deployment]
 comments: true
 share: true
 ---

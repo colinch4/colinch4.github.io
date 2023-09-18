@@ -3,7 +3,7 @@ layout: post
 title: "Compatibility testing in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, CompatibilityTesting]
+tags: [CompatibilityTesting]
 comments: true
 share: true
 ---

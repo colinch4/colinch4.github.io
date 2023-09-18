@@ -3,7 +3,7 @@ layout: post
 title: "Abstract classes and interfaces in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Abstraction]
+tags: [Abstraction]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scraping event information using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webscraping]
+tags: [webscraping]
 comments: true
 share: true
 ---

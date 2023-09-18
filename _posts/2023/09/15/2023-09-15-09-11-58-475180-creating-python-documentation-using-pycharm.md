@@ -3,7 +3,7 @@ layout: post
 title: "Creating Python documentation using PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, documentation]
+tags: [documentation]
 comments: true
 share: true
 ---

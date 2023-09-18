@@ -3,7 +3,7 @@ layout: post
 title: "Real-time programming in Python"
 description: " "
 date: 2023-09-15
-tags: [python, realtimeprogramming]
+tags: [realtimeprogramming]
 comments: true
 share: true
 ---

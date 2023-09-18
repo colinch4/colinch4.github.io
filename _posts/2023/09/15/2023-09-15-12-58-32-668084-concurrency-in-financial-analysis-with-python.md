@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in financial analysis with Python"
 description: " "
 date: 2023-09-15
-tags: [Python, FinancialAnalysis]
+tags: [FinancialAnalysis]
 comments: true
 share: true
 ---

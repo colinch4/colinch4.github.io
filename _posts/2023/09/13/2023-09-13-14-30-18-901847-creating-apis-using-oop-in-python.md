@@ -3,7 +3,7 @@ layout: post
 title: "Creating APIs using OOP in Python"
 description: " "
 date: 2023-09-13
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building real-time fitness tracking systems using Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asynchronous, fitness, tracking, realtime]
+tags: [asynchronous, fitness, tracking, realtime]
 comments: true
 share: true
 ---

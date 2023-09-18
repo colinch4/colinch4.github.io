@@ -3,7 +3,7 @@ layout: post
 title: "Load testing concurrent programs in Python"
 description: " "
 date: 2023-09-15
-tags: [python, loadtesting]
+tags: [loadtesting]
 comments: true
 share: true
 ---

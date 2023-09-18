@@ -3,7 +3,7 @@ layout: post
 title: "Test case management in Python"
 description: " "
 date: 2023-09-17
-tags: [python, testcasemanagement]
+tags: [testcasemanagement]
 comments: true
 share: true
 ---

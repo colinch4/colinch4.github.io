@@ -3,7 +3,7 @@ layout: post
 title: "Benefits and drawbacks of concurrent programming in Python"
 description: " "
 date: 2023-09-15
-tags: [Python, ConcurrentProgramming]
+tags: [ConcurrentProgramming]
 comments: true
 share: true
 ---

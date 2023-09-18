@@ -3,7 +3,7 @@ layout: post
 title: "Word embeddings in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [python, word_embeddings, gensim]
+tags: [word_embeddings, gensim]
 comments: true
 share: true
 ---

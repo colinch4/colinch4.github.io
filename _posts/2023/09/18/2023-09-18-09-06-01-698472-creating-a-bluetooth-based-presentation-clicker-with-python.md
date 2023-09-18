@@ -3,7 +3,7 @@ layout: post
 title: "Creating a Bluetooth-based presentation clicker with Python"
 description: " "
 date: 2023-09-18
-tags: [python, bluetooth]
+tags: [bluetooth]
 comments: true
 share: true
 ---

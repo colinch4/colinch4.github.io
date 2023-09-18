@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for testing and test automation"
 description: " "
 date: 2023-09-13
-tags: [python, testing, testautomation]
+tags: [testing, testautomation]
 comments: true
 share: true
 ---

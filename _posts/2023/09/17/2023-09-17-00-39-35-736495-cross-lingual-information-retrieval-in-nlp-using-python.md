@@ -3,7 +3,7 @@ layout: post
 title: "Cross-lingual information retrieval in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [Python, CrossLingualIR]
+tags: [CrossLingualIR]
 comments: true
 share: true
 ---

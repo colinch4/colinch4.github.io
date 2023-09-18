@@ -3,7 +3,7 @@ layout: post
 title: "Using code completion and intelligent suggestions in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, codingtips]
+tags: [codingtips]
 comments: true
 share: true
 ---

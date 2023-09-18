@@ -3,7 +3,7 @@ layout: post
 title: "Python script to automate Bluetooth device discovery and pairing"
 description: " "
 date: 2023-09-18
-tags: [python, bluetooth]
+tags: [bluetooth]
 comments: true
 share: true
 ---

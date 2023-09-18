@@ -3,7 +3,7 @@ layout: post
 title: "Named Entity Recognition in scientific articles using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [Python, NamedEntityRecognition, ScientificArticles]
+tags: [NamedEntityRecognition, ScientificArticles]
 comments: true
 share: true
 ---

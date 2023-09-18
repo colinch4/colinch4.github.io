@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for statistical analysis"
 description: " "
 date: 2023-09-13
-tags: [python, statistics, python, statistics]
+tags: [statistics, python, statistics]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "OOP and database connectivity in Python"
 description: " "
 date: 2023-09-13
-tags: [python, database, connectivity]
+tags: [database, connectivity]
 comments: true
 share: true
 ---

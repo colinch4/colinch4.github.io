@@ -3,7 +3,7 @@ layout: post
 title: "Python-based Bluetooth robot control project"
 description: " "
 date: 2023-09-18
-tags: [Python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

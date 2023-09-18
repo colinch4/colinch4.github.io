@@ -3,7 +3,7 @@ layout: post
 title: "Tokenization in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

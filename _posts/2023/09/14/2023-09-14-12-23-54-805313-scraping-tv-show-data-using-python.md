@@ -3,7 +3,7 @@ layout: post
 title: "Scraping TV show data using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

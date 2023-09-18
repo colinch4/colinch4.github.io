@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for cloud computing"
 description: " "
 date: 2023-09-13
-tags: [python, cloudcomputing]
+tags: [cloudcomputing]
 comments: true
 share: true
 ---

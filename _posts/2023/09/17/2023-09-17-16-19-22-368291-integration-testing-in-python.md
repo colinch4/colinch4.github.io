@@ -3,7 +3,7 @@ layout: post
 title: "Integration testing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, integrationtesting]
+tags: [integrationtesting]
 comments: true
 share: true
 ---

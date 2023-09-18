@@ -3,7 +3,7 @@ layout: post
 title: "Understanding coroutines in Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio]
+tags: [asyncio]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in web scraping with Python"
 description: " "
 date: 2023-09-15
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

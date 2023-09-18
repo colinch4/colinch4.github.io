@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for command-line applications"
 description: " "
 date: 2023-09-13
-tags: [Python, Packaging]
+tags: [Packaging]
 comments: true
 share: true
 ---

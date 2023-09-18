@@ -3,7 +3,7 @@ layout: post
 title: "Accessing private methods and variables in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Encapsulation]
+tags: [Encapsulation]
 comments: true
 share: true
 ---

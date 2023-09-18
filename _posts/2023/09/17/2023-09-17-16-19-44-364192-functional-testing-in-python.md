@@ -3,7 +3,7 @@ layout: post
 title: "Functional testing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, functionaltesting]
+tags: [functionaltesting]
 comments: true
 share: true
 ---

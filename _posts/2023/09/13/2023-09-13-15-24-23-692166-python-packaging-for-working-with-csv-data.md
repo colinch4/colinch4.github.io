@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with CSV data"
 description: " "
 date: 2023-09-13
-tags: [python, data, packaging]
+tags: [data, packaging]
 comments: true
 share: true
 ---

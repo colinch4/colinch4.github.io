@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to locks, mutexes, and semaphores in Python"
 description: " "
 date: 2023-09-15
-tags: [python, concurrency]
+tags: [concurrency]
 comments: true
 share: true
 ---

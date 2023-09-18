@@ -3,7 +3,7 @@ layout: post
 title: "Data-driven testing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, datadriven, testing]
+tags: [datadriven, testing]
 comments: true
 share: true
 ---

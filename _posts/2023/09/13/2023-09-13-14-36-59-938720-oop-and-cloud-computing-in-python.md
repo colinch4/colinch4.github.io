@@ -3,7 +3,7 @@ layout: post
 title: "OOP and cloud computing in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, CloudComputing]
+tags: [CloudComputing]
 comments: true
 share: true
 ---

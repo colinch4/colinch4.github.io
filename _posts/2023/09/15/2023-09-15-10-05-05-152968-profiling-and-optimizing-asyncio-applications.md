@@ -3,7 +3,7 @@ layout: post
 title: "Profiling and optimizing Asyncio applications"
 description: " "
 date: 2023-09-15
-tags: [Python, Asyncio, Profiling, Optimization]
+tags: [Asyncio, Profiling, Optimization]
 comments: true
 share: true
 ---

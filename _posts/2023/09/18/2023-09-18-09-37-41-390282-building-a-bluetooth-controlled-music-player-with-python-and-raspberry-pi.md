@@ -3,7 +3,7 @@ layout: post
 title: "Building a Bluetooth-controlled music player with Python and Raspberry Pi"
 description: " "
 date: 2023-09-18
-tags: [python, raspberrypi]
+tags: [raspberrypi]
 comments: true
 share: true
 ---

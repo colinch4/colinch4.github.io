@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for web scraping"
 description: " "
 date: 2023-09-13
-tags: [Python, WebScraping, PythonPackaging]
+tags: [WebScraping, PythonPackaging]
 comments: true
 share: true
 ---

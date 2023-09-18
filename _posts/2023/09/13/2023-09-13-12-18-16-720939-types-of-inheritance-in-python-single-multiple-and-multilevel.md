@@ -3,7 +3,7 @@ layout: post
 title: "Types of inheritance in Python: single, multiple, and multilevel"
 description: " "
 date: 2023-09-13
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

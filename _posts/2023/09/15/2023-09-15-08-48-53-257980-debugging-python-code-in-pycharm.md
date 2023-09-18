@@ -3,7 +3,7 @@ layout: post
 title: "Debugging Python code in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, debugging, pycharm]
+tags: [debugging, pycharm]
 comments: true
 share: true
 ---

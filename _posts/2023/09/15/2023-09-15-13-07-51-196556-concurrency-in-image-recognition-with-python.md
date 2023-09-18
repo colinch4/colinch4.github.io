@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in image recognition with Python"
 description: " "
 date: 2023-09-15
-tags: [python, imageRecognition]
+tags: [imageRecognition]
 comments: true
 share: true
 ---

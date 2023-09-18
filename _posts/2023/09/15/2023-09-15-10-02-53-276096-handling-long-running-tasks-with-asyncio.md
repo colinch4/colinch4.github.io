@@ -3,7 +3,7 @@ layout: post
 title: "Handling long-running tasks with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, Asyncio]
+tags: [Asyncio]
 comments: true
 share: true
 ---

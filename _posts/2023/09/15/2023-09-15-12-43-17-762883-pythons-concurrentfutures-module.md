@@ -3,7 +3,7 @@ layout: post
 title: "Python's concurrent.futures module"
 description: " "
 date: 2023-09-15
-tags: [Python, concurrentprogramming]
+tags: [concurrentprogramming]
 comments: true
 share: true
 ---

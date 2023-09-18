@@ -3,7 +3,7 @@ layout: post
 title: "Developing GUI applications with PyCharm and PyQt/PySide"
 description: " "
 date: 2023-09-15
-tags: [python, PyQt, PySide]
+tags: [PyQt, PySide]
 comments: true
 share: true
 ---

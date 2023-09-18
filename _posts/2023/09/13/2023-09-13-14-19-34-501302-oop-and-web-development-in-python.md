@@ -3,7 +3,7 @@ layout: post
 title: "OOP and web development in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, WebDevelopment]
+tags: [WebDevelopment]
 comments: true
 share: true
 ---

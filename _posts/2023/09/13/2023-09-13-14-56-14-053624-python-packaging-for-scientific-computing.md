@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for scientific computing"
 description: " "
 date: 2023-09-13
-tags: [python, scientificcomputing, pythonpackaging]
+tags: [scientificcomputing, pythonpackaging]
 comments: true
 share: true
 ---

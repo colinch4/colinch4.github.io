@@ -3,7 +3,7 @@ layout: post
 title: "Python's threading module"
 description: " "
 date: 2023-09-15
-tags: [python, multithreading]
+tags: [multithreading]
 comments: true
 share: true
 ---

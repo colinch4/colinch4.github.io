@@ -3,7 +3,7 @@ layout: post
 title: "Class inheritance and method inheritance in Python"
 description: " "
 date: 2023-09-13
-tags: [python, inheritance]
+tags: [inheritance]
 comments: true
 share: true
 ---

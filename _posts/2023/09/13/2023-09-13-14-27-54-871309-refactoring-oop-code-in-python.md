@@ -3,7 +3,7 @@ layout: post
 title: "Refactoring OOP code in Python"
 description: " "
 date: 2023-09-13
-tags: [python, refactoring, objectorientedprogramming]
+tags: [refactoring, objectorientedprogramming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python Bluetooth car starter project"
 description: " "
 date: 2023-09-18
-tags: [Python, BluetoothCarStarter]
+tags: [BluetoothCarStarter]
 comments: true
 share: true
 ---

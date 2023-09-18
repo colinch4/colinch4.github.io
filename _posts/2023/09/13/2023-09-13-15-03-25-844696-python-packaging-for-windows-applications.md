@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for Windows applications"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, windows, cx_Freeze, py2exe, PyInstaller]
+tags: [packaging, windows, cx_Freeze, py2exe, PyInstaller]
 comments: true
 share: true
 ---

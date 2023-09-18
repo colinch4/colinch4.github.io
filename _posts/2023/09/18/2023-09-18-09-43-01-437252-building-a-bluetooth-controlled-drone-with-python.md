@@ -3,7 +3,7 @@ layout: post
 title: "Building a Bluetooth-controlled drone with Python"
 description: " "
 date: 2023-09-18
-tags: [python, drone]
+tags: [drone]
 comments: true
 share: true
 ---

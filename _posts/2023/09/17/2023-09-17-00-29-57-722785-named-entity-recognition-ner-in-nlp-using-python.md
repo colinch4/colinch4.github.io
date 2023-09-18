@@ -3,7 +3,7 @@ layout: post
 title: "Named Entity Recognition (NER) in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [python, namedentityrecognition, spacy]
+tags: [namedentityrecognition, spacy]
 comments: true
 share: true
 ---

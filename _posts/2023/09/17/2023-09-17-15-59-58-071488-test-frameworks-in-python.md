@@ -3,7 +3,7 @@ layout: post
 title: "Test frameworks in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, Testing]
+tags: [Testing]
 comments: true
 share: true
 ---

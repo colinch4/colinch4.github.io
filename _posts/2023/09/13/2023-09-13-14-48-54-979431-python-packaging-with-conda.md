@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with conda"
 description: " "
 date: 2023-09-13
-tags: [python, packages, conda, packaging, pythonapplications]
+tags: [packages, conda, packaging, pythonapplications]
 comments: true
 share: true
 ---

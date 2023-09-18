@@ -3,7 +3,7 @@ layout: post
 title: "Scraping social media followers count using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webscraping, socialmedia]
+tags: [webscraping, socialmedia]
 comments: true
 share: true
 ---

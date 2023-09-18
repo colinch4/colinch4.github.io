@@ -3,7 +3,7 @@ layout: post
 title: "Handling and managing multiple tasks with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, Asyncio, ConcurrentProgramming]
+tags: [Asyncio, ConcurrentProgramming]
 comments: true
 share: true
 ---

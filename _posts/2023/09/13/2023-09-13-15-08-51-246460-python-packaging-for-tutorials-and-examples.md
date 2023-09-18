@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for tutorials and examples"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, tutorials, examples]
+tags: [packaging, tutorials, examples]
 comments: true
 share: true
 ---

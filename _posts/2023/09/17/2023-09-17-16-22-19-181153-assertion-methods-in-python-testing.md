@@ -3,7 +3,7 @@ layout: post
 title: "Assertion methods in Python testing"
 description: " "
 date: 2023-09-17
-tags: [python, testing]
+tags: [testing]
 comments: true
 share: true
 ---

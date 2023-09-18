@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time video analytics with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, asyncio, python, asyncio]
+tags: [asyncio, python, asyncio]
 comments: true
 share: true
 ---

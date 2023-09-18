@@ -3,7 +3,7 @@ layout: post
 title: "Facade design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [python, designpattern]
+tags: [designpattern]
 comments: true
 share: true
 ---

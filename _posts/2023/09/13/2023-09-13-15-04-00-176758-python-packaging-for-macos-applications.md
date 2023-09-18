@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for macOS applications"
 description: " "
 date: 2023-09-13
-tags: [Python, macOS, Packaging]
+tags: [macOS, Packaging]
 comments: true
 share: true
 ---

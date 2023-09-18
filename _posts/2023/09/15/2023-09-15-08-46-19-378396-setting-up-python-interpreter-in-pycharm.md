@@ -3,7 +3,7 @@ layout: post
 title: "Setting up Python interpreter in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, pycharm]
+tags: [pycharm]
 comments: true
 share: true
 ---

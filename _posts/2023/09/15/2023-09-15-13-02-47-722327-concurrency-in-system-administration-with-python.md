@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in system administration with Python"
 description: " "
 date: 2023-09-15
-tags: [Python, SystemAdministration]
+tags: [SystemAdministration]
 comments: true
 share: true
 ---

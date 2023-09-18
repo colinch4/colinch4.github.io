@@ -3,7 +3,7 @@ layout: post
 title: "OOP and algorithms in Python"
 description: " "
 date: 2023-09-13
-tags: [python, algorithms]
+tags: [algorithms]
 comments: true
 share: true
 ---

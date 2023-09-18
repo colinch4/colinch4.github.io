@@ -3,7 +3,7 @@ layout: post
 title: "OOP and file handling in Python"
 description: " "
 date: 2023-09-13
-tags: [python, filehandling]
+tags: [filehandling]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scraping data from e-commerce websites using Python"
 description: " "
 date: 2023-09-14
-tags: [python, webscraping]
+tags: [webscraping]
 comments: true
 share: true
 ---

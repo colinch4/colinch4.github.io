@@ -3,7 +3,7 @@ layout: post
 title: "OOP and game development in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, ObjectOrientedProgramming, GameDevelopment]
+tags: [ObjectOrientedProgramming, GameDevelopment]
 comments: true
 share: true
 ---

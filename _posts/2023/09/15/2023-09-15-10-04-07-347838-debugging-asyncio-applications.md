@@ -3,7 +3,7 @@ layout: post
 title: "Debugging Asyncio applications"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, debugging]
+tags: [asyncio, debugging]
 comments: true
 share: true
 ---

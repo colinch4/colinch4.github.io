@@ -3,7 +3,7 @@ layout: post
 title: "Question answering system for medical literature using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

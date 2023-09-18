@@ -3,7 +3,7 @@ layout: post
 title: "Speech recognition using NLP in python"
 description: " "
 date: 2023-09-17
-tags: [Python, SpeechRecognition]
+tags: [SpeechRecognition]
 comments: true
 share: true
 ---

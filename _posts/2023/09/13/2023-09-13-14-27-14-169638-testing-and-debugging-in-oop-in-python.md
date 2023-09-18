@@ -3,7 +3,7 @@ layout: post
 title: "Testing and debugging in OOP in Python"
 description: " "
 date: 2023-09-13
-tags: [python, testing, debugging]
+tags: [testing, debugging]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time multiplayer game servers with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, realtimegaming]
+tags: [realtimegaming]
 comments: true
 share: true
 ---

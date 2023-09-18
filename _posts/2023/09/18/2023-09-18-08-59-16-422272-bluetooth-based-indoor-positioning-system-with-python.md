@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based indoor positioning system with Python"
 description: " "
 date: 2023-09-18
-tags: [Python, IndoorPositioning]
+tags: [IndoorPositioning]
 comments: true
 share: true
 ---

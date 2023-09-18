@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth sensor data logging with Python"
 description: " "
 date: 2023-09-18
-tags: [Python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

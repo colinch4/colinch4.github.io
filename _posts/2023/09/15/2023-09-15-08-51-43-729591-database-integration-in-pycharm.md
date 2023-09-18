@@ -3,7 +3,7 @@ layout: post
 title: "Database integration in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, database, PyCharm]
+tags: [database, PyCharm]
 comments: true
 share: true
 ---

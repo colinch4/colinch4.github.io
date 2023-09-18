@@ -3,7 +3,7 @@ layout: post
 title: "Advantages and disadvantages of OOP in Python"
 description: " "
 date: 2023-09-13
-tags: [python, advantages, disadvantages]
+tags: [advantages, disadvantages]
 comments: true
 share: true
 ---

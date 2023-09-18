@@ -3,7 +3,7 @@ layout: post
 title: "Builder design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, DesignPatterns]
+tags: [DesignPatterns]
 comments: true
 share: true
 ---

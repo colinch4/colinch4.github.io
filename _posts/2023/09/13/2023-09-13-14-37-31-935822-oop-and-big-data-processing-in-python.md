@@ -3,7 +3,7 @@ layout: post
 title: "OOP and big data processing in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, BigData, DataProcessing]
+tags: [BigData, DataProcessing]
 comments: true
 share: true
 ---

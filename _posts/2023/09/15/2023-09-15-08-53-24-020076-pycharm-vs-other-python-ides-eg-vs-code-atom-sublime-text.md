@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm vs other Python IDEs (e.g., VS Code, Atom, Sublime Text)"
 description: " "
 date: 2023-09-15
-tags: [python, IDEs]
+tags: [IDEs]
 comments: true
 share: true
 ---

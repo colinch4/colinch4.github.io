@@ -3,7 +3,7 @@ layout: post
 title: "Regression testing in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, RegressionTesting]
+tags: [RegressionTesting]
 comments: true
 share: true
 ---

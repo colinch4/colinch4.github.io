@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm for scientific computing and numerical analysis"
 description: " "
 date: 2023-09-15
-tags: [Python, PyCharm, ScientificComputing, NumericalAnalysis]
+tags: [PyCharm, ScientificComputing, NumericalAnalysis]
 comments: true
 share: true
 ---

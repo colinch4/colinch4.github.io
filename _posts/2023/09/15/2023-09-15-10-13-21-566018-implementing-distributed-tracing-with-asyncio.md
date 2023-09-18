@@ -3,7 +3,7 @@ layout: post
 title: "Implementing distributed tracing with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, distributedtracing]
+tags: [distributedtracing]
 comments: true
 share: true
 ---

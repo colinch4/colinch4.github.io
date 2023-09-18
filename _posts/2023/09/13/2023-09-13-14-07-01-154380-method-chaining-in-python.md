@@ -3,7 +3,7 @@ layout: post
 title: "Method chaining in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, MethodChaining]
+tags: [MethodChaining]
 comments: true
 share: true
 ---

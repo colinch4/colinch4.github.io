@@ -3,7 +3,7 @@ layout: post
 title: "Implementing anomaly detection using Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, Asyncio, AnomalyDetection]
+tags: [Asyncio, AnomalyDetection]
 comments: true
 share: true
 ---

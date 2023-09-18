@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for desktop applications"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, desktop, applications]
+tags: [packaging, desktop, applications]
 comments: true
 share: true
 ---

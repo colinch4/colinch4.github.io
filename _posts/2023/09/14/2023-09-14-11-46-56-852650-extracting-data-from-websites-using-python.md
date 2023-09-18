@@ -3,7 +3,7 @@ layout: post
 title: "Extracting data from websites using Python"
 description: " "
 date: 2023-09-14
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

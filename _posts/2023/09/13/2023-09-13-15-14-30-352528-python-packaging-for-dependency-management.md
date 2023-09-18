@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for dependency management"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, dependencymanagement]
+tags: [packaging, dependencymanagement]
 comments: true
 share: true
 ---

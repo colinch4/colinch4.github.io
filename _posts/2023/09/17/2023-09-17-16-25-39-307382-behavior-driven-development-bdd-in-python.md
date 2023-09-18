@@ -3,7 +3,7 @@ layout: post
 title: "Behavior-driven development (BDD) in Python"
 description: " "
 date: 2023-09-17
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

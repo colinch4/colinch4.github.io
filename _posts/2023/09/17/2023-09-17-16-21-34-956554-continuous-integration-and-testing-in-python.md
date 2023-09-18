@@ -3,7 +3,7 @@ layout: post
 title: "Continuous integration and testing in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, ContinuousIntegration, AutomatedTesting]
+tags: [ContinuousIntegration, AutomatedTesting]
 comments: true
 share: true
 ---

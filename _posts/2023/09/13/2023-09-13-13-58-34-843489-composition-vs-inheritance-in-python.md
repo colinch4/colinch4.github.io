@@ -3,7 +3,7 @@ layout: post
 title: "Composition vs inheritance in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, CompositionVsInheritance]
+tags: [CompositionVsInheritance]
 comments: true
 share: true
 ---

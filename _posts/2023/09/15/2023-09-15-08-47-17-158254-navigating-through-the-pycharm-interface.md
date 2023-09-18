@@ -3,7 +3,7 @@ layout: post
 title: "Navigating through the PyCharm interface"
 description: " "
 date: 2023-09-15
-tags: [python, PyCharm]
+tags: [PyCharm]
 comments: true
 share: true
 ---

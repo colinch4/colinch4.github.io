@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth proximity detection with Python"
 description: " "
 date: 2023-09-18
-tags: [python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

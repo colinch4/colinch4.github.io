@@ -3,7 +3,7 @@ layout: post
 title: "Scraping cryptocurrency data using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, Cryptocurrency]
+tags: [Cryptocurrency]
 comments: true
 share: true
 ---

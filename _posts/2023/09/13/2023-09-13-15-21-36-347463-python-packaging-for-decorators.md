@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for decorators"
 description: " "
 date: 2023-09-13
-tags: [python, decorators, packaging]
+tags: [decorators, packaging]
 comments: true
 share: true
 ---

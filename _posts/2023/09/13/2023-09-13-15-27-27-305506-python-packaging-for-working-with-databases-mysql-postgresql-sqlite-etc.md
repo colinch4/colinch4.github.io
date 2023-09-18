@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with databases (MySQL, PostgreSQL, SQLite, etc.)"
 description: " "
 date: 2023-09-13
-tags: [python, database, packaging]
+tags: [database, packaging]
 comments: true
 share: true
 ---

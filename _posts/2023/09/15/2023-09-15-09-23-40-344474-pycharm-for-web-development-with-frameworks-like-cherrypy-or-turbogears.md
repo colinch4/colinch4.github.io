@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm for web development with frameworks like CherryPy or TurboGears"
 description: " "
 date: 2023-09-15
-tags: [Python, WebDevelopment, PyCharm, CherryPy, TurboGears]
+tags: [WebDevelopment, PyCharm, CherryPy, TurboGears]
 comments: true
 share: true
 ---

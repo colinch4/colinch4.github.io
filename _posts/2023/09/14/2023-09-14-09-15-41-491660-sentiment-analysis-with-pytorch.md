@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis with PyTorch"
 description: " "
 date: 2023-09-14
-tags: [python, deeplearning]
+tags: [deeplearning]
 comments: true
 share: true
 ---

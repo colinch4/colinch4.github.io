@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with APIs (RESTful APIs, web services, etc.)"
 description: " "
 date: 2023-09-13
-tags: [python, python, Flask, python, pytest, python]
+tags: [python, Flask, python, pytest, python]
 comments: true
 share: true
 ---

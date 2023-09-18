@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with py2app"
 description: " "
 date: 2023-09-13
-tags: [python, py2app]
+tags: [py2app]
 comments: true
 share: true
 ---

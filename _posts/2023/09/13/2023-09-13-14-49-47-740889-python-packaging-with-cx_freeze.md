@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with cx_Freeze"
 description: " "
 date: 2023-09-13
-tags: [python, coding, packaging, standalone, cx_Freeze]
+tags: [coding, packaging, standalone, cx_Freeze]
 comments: true
 share: true
 ---

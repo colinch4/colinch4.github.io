@@ -3,7 +3,7 @@ layout: post
 title: "OOP and data structures in Python"
 description: " "
 date: 2023-09-13
-tags: [python, datastructures]
+tags: [datastructures]
 comments: true
 share: true
 ---

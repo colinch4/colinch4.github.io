@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time data synchronization with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asynchronous, realtime, data]
+tags: [asynchronous, realtime, data]
 comments: true
 share: true
 ---

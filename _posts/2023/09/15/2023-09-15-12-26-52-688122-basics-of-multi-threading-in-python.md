@@ -3,7 +3,7 @@ layout: post
 title: "Basics of multi-threading in Python"
 description: " "
 date: 2023-09-15
-tags: [Python, Threading]
+tags: [Threading]
 comments: true
 share: true
 ---

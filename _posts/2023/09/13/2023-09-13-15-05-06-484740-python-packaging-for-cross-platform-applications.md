@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for cross-platform applications"
 description: " "
 date: 2023-09-13
-tags: [Python, Packaging, CrossPlatform, Applications]
+tags: [Packaging, CrossPlatform, Applications]
 comments: true
 share: true
 ---

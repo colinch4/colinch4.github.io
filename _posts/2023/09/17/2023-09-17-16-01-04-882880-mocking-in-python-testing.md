@@ -3,7 +3,7 @@ layout: post
 title: "Mocking in Python testing"
 description: " "
 date: 2023-09-17
-tags: [python, testing, mocking]
+tags: [testing, mocking]
 comments: true
 share: true
 ---

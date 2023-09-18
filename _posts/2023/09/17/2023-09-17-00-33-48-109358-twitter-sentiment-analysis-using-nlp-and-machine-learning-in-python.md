@@ -3,7 +3,7 @@ layout: post
 title: "Twitter sentiment analysis using NLP and machine learning in python"
 description: " "
 date: 2023-09-17
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

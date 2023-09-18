@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency and parallelism in Python"
 description: " "
 date: 2023-09-15
-tags: [Python, Concurrency]
+tags: [Concurrency]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Python web applications with PyCharm and web servers (e.g., Nginx, Gunicorn)"
 description: " "
 date: 2023-09-15
-tags: [Python, WebDevelopment, DeployingApps, PyCharm, Nginx, Gunicorn]
+tags: [WebDevelopment, DeployingApps, PyCharm, Nginx, Gunicorn]
 comments: true
 share: true
 ---

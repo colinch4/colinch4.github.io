@@ -3,7 +3,7 @@ layout: post
 title: "Creating objects in Python"
 description: " "
 date: 2023-09-13
-tags: [python, objects, programming]
+tags: [objects, programming]
 comments: true
 share: true
 ---

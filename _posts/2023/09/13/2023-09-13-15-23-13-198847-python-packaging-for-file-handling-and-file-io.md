@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for file handling and file I/O"
 description: " "
 date: 2023-09-13
-tags: [python, filehandling, fileIO]
+tags: [filehandling, fileIO]
 comments: true
 share: true
 ---

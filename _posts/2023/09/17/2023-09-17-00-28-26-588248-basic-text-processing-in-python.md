@@ -3,7 +3,7 @@ layout: post
 title: "Basic text processing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, textprocessing, regex]
+tags: [textprocessing, regex]
 comments: true
 share: true
 ---

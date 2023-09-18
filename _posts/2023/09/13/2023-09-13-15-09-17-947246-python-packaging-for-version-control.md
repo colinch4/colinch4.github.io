@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for version control"
 description: " "
 date: 2023-09-13
-tags: [Python, VersionControl, Packaging]
+tags: [VersionControl, Packaging]
 comments: true
 share: true
 ---

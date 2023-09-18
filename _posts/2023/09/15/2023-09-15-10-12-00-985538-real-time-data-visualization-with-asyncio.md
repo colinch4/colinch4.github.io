@@ -3,7 +3,7 @@ layout: post
 title: "Real-time data visualization with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Python, DataVisualization]
+tags: [DataVisualization]
 comments: true
 share: true
 ---

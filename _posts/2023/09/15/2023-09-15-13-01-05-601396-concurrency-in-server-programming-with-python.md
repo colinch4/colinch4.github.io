@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in server programming with Python"
 description: " "
 date: 2023-09-15
-tags: [Python, Concurrency]
+tags: [Concurrency]
 comments: true
 share: true
 ---

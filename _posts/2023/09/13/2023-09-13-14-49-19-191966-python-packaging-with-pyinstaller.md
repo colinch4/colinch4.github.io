@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with PyInstaller"
 description: " "
 date: 2023-09-13
-tags: [Python, Packaging, PyInstaller]
+tags: [Packaging, PyInstaller]
 comments: true
 share: true
 ---

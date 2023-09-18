@@ -3,7 +3,7 @@ layout: post
 title: "OOP and event-driven programming in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, Programming]
+tags: [Programming]
 comments: true
 share: true
 ---

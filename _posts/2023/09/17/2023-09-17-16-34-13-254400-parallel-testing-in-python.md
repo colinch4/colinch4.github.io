@@ -3,7 +3,7 @@ layout: post
 title: "Parallel testing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, testing, paralleltesting]
+tags: [testing, paralleltesting]
 comments: true
 share: true
 ---

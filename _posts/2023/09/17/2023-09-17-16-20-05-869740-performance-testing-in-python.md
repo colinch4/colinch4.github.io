@@ -3,7 +3,7 @@ layout: post
 title: "Performance testing in Python"
 description: " "
 date: 2023-09-17
-tags: [python, performancetesting]
+tags: [performancetesting]
 comments: true
 share: true
 ---

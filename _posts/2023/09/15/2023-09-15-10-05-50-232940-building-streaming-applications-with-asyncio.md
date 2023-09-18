@@ -3,7 +3,7 @@ layout: post
 title: "Building streaming applications with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, streaming, asynchronous, programming]
+tags: [asyncio, streaming, asynchronous, programming]
 comments: true
 share: true
 ---

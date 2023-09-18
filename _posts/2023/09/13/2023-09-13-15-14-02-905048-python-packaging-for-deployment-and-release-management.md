@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for deployment and release management"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, deployment, release, management]
+tags: [packaging, deployment, release, management]
 comments: true
 share: true
 ---

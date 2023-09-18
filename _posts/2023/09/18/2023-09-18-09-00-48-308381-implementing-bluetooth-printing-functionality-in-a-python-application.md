@@ -3,7 +3,7 @@ layout: post
 title: "Implementing Bluetooth printing functionality in a Python application"
 description: " "
 date: 2023-09-18
-tags: [python, bluetoothprinting]
+tags: [bluetoothprinting]
 comments: true
 share: true
 ---

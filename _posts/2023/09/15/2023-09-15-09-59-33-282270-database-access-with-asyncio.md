@@ -3,7 +3,7 @@ layout: post
 title: "Database access with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, databases]
+tags: [asyncio, databases]
 comments: true
 share: true
 ---

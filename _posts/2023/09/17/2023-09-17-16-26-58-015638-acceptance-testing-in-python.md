@@ -3,7 +3,7 @@ layout: post
 title: "Acceptance testing in Python"
 description: " "
 date: 2023-09-17
-tags: [Python, AcceptanceTesting]
+tags: [AcceptanceTesting]
 comments: true
 share: true
 ---

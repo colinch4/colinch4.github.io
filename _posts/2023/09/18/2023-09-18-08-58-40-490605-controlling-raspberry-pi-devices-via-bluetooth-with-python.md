@@ -3,7 +3,7 @@ layout: post
 title: "Controlling Raspberry Pi devices via Bluetooth with Python"
 description: " "
 date: 2023-09-18
-tags: [python, RaspberryPi]
+tags: [RaspberryPi]
 comments: true
 share: true
 ---

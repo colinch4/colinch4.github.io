@@ -3,7 +3,7 @@ layout: post
 title: "Publishing Python packages using PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, publishing, packages]
+tags: [publishing, packages]
 comments: true
 share: true
 ---

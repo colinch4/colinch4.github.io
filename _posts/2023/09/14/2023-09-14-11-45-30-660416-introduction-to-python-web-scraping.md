@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python web scraping"
 description: " "
 date: 2023-09-14
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

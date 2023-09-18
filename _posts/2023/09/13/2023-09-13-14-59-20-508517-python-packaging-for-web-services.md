@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for web services"
 description: " "
 date: 2023-09-13
-tags: [python, pythonweb, webdevelopment]
+tags: [pythonweb, webdevelopment]
 comments: true
 share: true
 ---

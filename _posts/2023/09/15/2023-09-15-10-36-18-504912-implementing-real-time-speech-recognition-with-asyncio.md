@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time speech recognition with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, speechrecognition]
+tags: [speechrecognition]
 comments: true
 share: true
 ---

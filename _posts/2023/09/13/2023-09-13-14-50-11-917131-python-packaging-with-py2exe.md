@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with Py2exe"
 description: " "
 date: 2023-09-13
-tags: [Python, Py2exe, PythonPackaging, Executable]
+tags: [Py2exe, PythonPackaging, Executable]
 comments: true
 share: true
 ---

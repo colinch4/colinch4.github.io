@@ -3,7 +3,7 @@ layout: post
 title: "Method resolution order (MRO) in Python"
 description: " "
 date: 2023-09-13
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

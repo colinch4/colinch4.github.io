@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for RESTful APIs"
 description: " "
 date: 2023-09-13
-tags: [python, packaging, APIs]
+tags: [packaging, APIs]
 comments: true
 share: true
 ---

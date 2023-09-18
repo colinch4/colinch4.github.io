@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis of movie reviews using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

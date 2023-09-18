@@ -3,7 +3,7 @@ layout: post
 title: "Performance optimization techniques in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [Python, PerformanceOptimization]
+tags: [PerformanceOptimization]
 comments: true
 share: true
 ---

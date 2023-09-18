@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for performance tuning"
 description: " "
 date: 2023-09-13
-tags: [Python, PerformancePerformanceTuning]
+tags: [PerformancePerformanceTuning]
 comments: true
 share: true
 ---

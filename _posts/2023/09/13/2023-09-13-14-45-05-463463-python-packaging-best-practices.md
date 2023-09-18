@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging best practices"
 description: " "
 date: 2023-09-13
-tags: [python, virtualenvironment, python, packaging, python, packaging, python, documentation, versioncontrol, pythonpackaging, bestpractices]
+tags: [virtualenvironment, python, packaging, python, packaging, python, documentation, versioncontrol, pythonpackaging, bestpractices]
 comments: true
 share: true
 ---

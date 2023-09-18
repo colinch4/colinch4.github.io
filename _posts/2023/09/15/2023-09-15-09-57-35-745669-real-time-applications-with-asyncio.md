@@ -3,7 +3,7 @@ layout: post
 title: "Real-time applications with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, realtime, asynchronous]
+tags: [asyncio, realtime, asynchronous]
 comments: true
 share: true
 ---

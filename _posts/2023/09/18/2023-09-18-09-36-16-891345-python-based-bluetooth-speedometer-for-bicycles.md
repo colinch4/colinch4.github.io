@@ -3,7 +3,7 @@ layout: post
 title: "Python-based Bluetooth speedometer for bicycles"
 description: " "
 date: 2023-09-18
-tags: [python, BluetoothSpeedometer]
+tags: [BluetoothSpeedometer]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scraping sports data using Python"
 description: " "
 date: 2023-09-14
-tags: [Python, WebScraping, SportsData]
+tags: [WebScraping, SportsData]
 comments: true
 share: true
 ---

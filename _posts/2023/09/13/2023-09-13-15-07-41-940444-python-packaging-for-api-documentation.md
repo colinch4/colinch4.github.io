@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for API documentation"
 description: " "
 date: 2023-09-13
-tags: [python, documentation, sphinx, mkdocs]
+tags: [documentation, sphinx, mkdocs]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Integrating Bluetooth GPS functionality in a Python app"
 description: " "
 date: 2023-09-18
-tags: [python, BluetoothGPS]
+tags: [BluetoothGPS]
 comments: true
 share: true
 ---

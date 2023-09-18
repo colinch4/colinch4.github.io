@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for functional programming"
 description: " "
 date: 2023-09-13
-tags: [Python, FunctionalProgramming, Packaging, PythonDevelopment]
+tags: [FunctionalProgramming, Packaging, PythonDevelopment]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python script to establish a Bluetooth connection for data transfer"
 description: " "
 date: 2023-09-18
-tags: [Python, Bluetooth]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

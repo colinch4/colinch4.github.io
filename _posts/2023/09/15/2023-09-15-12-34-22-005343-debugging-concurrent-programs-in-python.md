@@ -3,7 +3,7 @@ layout: post
 title: "Debugging concurrent programs in Python"
 description: " "
 date: 2023-09-15
-tags: [python, concurrencydebugging]
+tags: [concurrencydebugging]
 comments: true
 share: true
 ---

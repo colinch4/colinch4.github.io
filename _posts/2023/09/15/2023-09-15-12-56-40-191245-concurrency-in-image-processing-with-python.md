@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in image processing with Python"
 description: " "
 date: 2023-09-15
-tags: [python, imageprocessing]
+tags: [imageprocessing]
 comments: true
 share: true
 ---

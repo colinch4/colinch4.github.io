@@ -3,7 +3,7 @@ layout: post
 title: "Code coverage in Python testing"
 description: " "
 date: 2023-09-17
-tags: [python, testing, codecoverage]
+tags: [testing, codecoverage]
 comments: true
 share: true
 ---

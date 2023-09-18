@@ -3,7 +3,7 @@ layout: post
 title: "Named Entity Recognition in online news articles using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

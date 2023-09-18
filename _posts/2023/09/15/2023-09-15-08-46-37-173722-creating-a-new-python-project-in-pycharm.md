@@ -3,7 +3,7 @@ layout: post
 title: "Creating a new Python project in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [python, development]
+tags: [development]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "OOP and sentiment analysis in Python"
 description: " "
 date: 2023-09-13
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

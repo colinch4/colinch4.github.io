@@ -3,7 +3,7 @@ layout: post
 title: "Developing RESTful APIs with PyCharm and frameworks like Django REST framework"
 description: " "
 date: 2023-09-15
-tags: [python, APIdevelopment]
+tags: [APIdevelopment]
 comments: true
 share: true
 ---

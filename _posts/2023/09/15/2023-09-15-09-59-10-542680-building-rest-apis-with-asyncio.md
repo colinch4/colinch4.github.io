@@ -3,7 +3,7 @@ layout: post
 title: "Building REST APIs with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [python, asyncio, restapi, webdevelopment]
+tags: [asyncio, restapi, webdevelopment]
 comments: true
 share: true
 ---

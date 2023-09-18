@@ -3,7 +3,7 @@ layout: post
 title: "OOP design guidelines in Python"
 description: " "
 date: 2023-09-13
-tags: [python, OOPDesign]
+tags: [OOPDesign]
 comments: true
 share: true
 ---

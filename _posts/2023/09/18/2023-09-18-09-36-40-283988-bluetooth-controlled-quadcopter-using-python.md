@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-controlled quadcopter using Python"
 description: " "
 date: 2023-09-18
-tags: [Python, Quadcopter]
+tags: [Quadcopter]
 comments: true
 share: true
 ---

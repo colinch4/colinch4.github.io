@@ -3,7 +3,7 @@ layout: post
 title: "Parallel computing in Python"
 description: " "
 date: 2023-09-15
-tags: [Python, ParallelComputing]
+tags: [ParallelComputing]
 comments: true
 share: true
 ---
