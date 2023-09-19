@@ -1,0 +1,100 @@
+Installing and configuring Boto3
+Setting up AWS credentials for Boto3
+Creating an EC2 instance using Boto3
+Starting and stopping an EC2 instance with Boto3
+Listing all EC2 instances using Boto3
+Terminating an EC2 instance with Boto3
+Creating an S3 bucket using Boto3
+Uploading files to an S3 bucket with Boto3
+Downloading files from an S3 bucket using Boto3
+Deleting files from an S3 bucket with Boto3
+Copying files between S3 buckets using Boto3
+Installing and configuring Boto3 for DynamoDB
+Creating a DynamoDB table with Boto3
+Adding items to a DynamoDB table using Boto3
+Getting items from a DynamoDB table with Boto3
+Updating items in a DynamoDB table using Boto3
+Deleting items from a DynamoDB table with Boto3
+Querying a DynamoDB table with Boto3
+Working with DynamoDB global secondary indexes in Boto3
+Working with DynamoDB streams in Boto3
+Creating a Lambda function using Boto3
+Invoking a Lambda function with Boto3
+Creating an IAM role with Boto3
+Attaching policies to an IAM role using Boto3
+Listing IAM roles with Boto3
+Creating an SNS topic with Boto3
+Subscribing to an SNS topic using Boto3
+Publishing a message to an SNS topic with Boto3
+Creating a CloudWatch alarm with Boto3
+Listing CloudWatch alarms using Boto3
+Creating an Elastic Beanstalk application using Boto3
+Deploying an Elastic Beanstalk application with Boto3
+Listing Elastic Beanstalk applications using Boto3
+Creating an Auto Scaling group using Boto3
+Updating an Auto Scaling group with Boto3
+Listing Auto Scaling groups using Boto3
+Creating a Route 53 hosted zone with Boto3
+Creating subdomains in Route 53 using Boto3
+Creating a VPC with Boto3
+Creating subnets in a VPC using Boto3
+Creating security groups with Boto3
+Creating a load balancer with Boto3
+Updating a load balancer with Boto3
+Listing load balancers using Boto3
+Creating a CloudFront distribution with Boto3
+Updating a CloudFront distribution with Boto3
+Listing CloudFront distributions using Boto3
+Creating a CloudFormation stack using Boto3
+Updating a CloudFormation stack with Boto3
+Deleting a CloudFormation stack using Boto3
+Creating an ECS cluster with Boto3
+Creating ECS services using Boto3
+Creating ECS tasks and task definitions with Boto3
+Listing ECS clusters using Boto3
+Creating an RDS instance with Boto3
+Updating an RDS instance with Boto3
+Listing RDS instances using Boto3
+Creating an elastic IP address with Boto3
+Associating an elastic IP address with an EC2 instance using Boto3
+Creating a CloudTrail trail with Boto3
+Updating a CloudTrail trail with Boto3
+Deleting a CloudTrail trail using Boto3
+Creating an S3 lifecycle configuration with Boto3
+Updating an S3 lifecycle configuration using Boto3
+Listing S3 lifecycle configurations with Boto3
+Creating a VPC peering connection with Boto3
+Accepting a VPC peering connection request using Boto3
+Creating an AWS Batch job definition with Boto3
+Submitting a job to AWS Batch with Boto3
+Listing AWS Batch job definitions using Boto3
+Creating an SSM parameter store entry with Boto3
+Getting an SSM parameter from the parameter store with Boto3
+Updating an SSM parameter in the parameter store using Boto3
+Deleting an SSM parameter from the parameter store with Boto3
+Creating an AWS Glue crawler with Boto3
+Starting an AWS Glue crawler with Boto3
+Listing AWS Glue crawlers using Boto3
+Creating an AWS Step Functions state machine with Boto3
+Starting an AWS Step Functions execution with Boto3
+Listing AWS Step Functions state machines using Boto3
+Creating a CloudSearch domain with Boto3
+Updating a CloudSearch domain with Boto3
+Listing CloudSearch domains using Boto3
+Creating an API Gateway REST API with Boto3
+Deploying an API Gateway REST API with Boto3
+Listing API Gateway REST APIs using Boto3
+Creating an AppStream stack with Boto3
+Updating an AppStream stack with Boto3
+Listing AppStream stacks using Boto3
+Creating a Direct Connect connection with Boto3
+Updating a Direct Connect connection with Boto3
+Listing Direct Connect connections using Boto3
+Creating a CloudTrail trail with Boto3
+Updating a CloudTrail trail with Boto3
+Deleting a CloudTrail trail using Boto3
+Creating an API Gateway WebSocket API with Boto3
+Deploying an API Gateway WebSocket API with Boto3
+Listing API Gateway WebSocket APIs using Boto3
+Creating an AWS WAF web ACL with Boto3
+Updating an AWS WAF web ACL with Boto3

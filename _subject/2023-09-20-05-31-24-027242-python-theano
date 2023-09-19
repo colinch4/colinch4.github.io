@@ -1,0 +1,100 @@
+Introduction to Python Theano
+History and background of Theano
+Getting started with Theano
+Installing Theano on different platforms
+Theano vs other deep learning libraries
+Theano architecture and design principles
+Optimizations in Theano
+Data types in Theano
+Symbolic computation in Theano
+Creating and manipulating Theano tensors
+Broadcasting in Theano
+Using GPU for computations in Theano
+Theano shared variables
+Defining and working with Theano functions
+Compiling Theano functions
+Debugging in Theano
+Profiling in Theano
+Implementing neural networks with Theano
+Recurrent neural networks in Theano
+Convolutional neural networks in Theano
+Autoencoders in Theano
+Reinforcement learning with Theano
+Unsupervised learning with Theano
+Supervised learning with Theano
+Deep learning with Theano
+Linear regression in Theano
+Logistic regression in Theano
+Support vector machines in Theano
+Random forests in Theano
+K-means clustering with Theano
+Principal component analysis (PCA) in Theano
+Time series analysis with Theano
+Natural language processing with Theano
+Parallel computing in Theano
+Theano in big data analytics
+Theano in image processing
+Theano in computer vision
+Theano in speech recognition
+Theano in natural language understanding
+Theano in recommendation systems
+Theano in anomaly detection
+Theano in sentiment analysis
+Theano in text classification
+Theano in fraud detection
+Theano in stock market prediction
+Theano in healthcare analytics
+Theano in genomics
+Theano in drug discovery
+Theano in autonomous vehicles
+Theano in robotics
+Theano in financial modeling
+Theano in time series forecasting
+Theano in customer segmentation
+Theano in predictive maintenance
+Theano in supply chain optimization
+Theano in fraud prevention
+Theano in credit risk analysis
+Theano in social network analysis
+Theano in recommender systems
+Theano in image recognition
+Theano in object detection
+Theano in facial recognition
+Theano in speech synthesis
+Theano in text summarization
+Theano in sentiment detection
+Theano in chatbots
+Theano in question answering systems
+Theano in machine translation
+Theano in document classification
+Theano in credit scoring
+Theano in market basket analysis
+Theano in churn prediction
+Theano in customer lifetime value estimation
+Theano in demand forecasting
+Theano in inventory optimization
+Theano in route optimization
+Theano in anomaly detection in sensor data
+Theano in predictive maintenance in manufacturing
+Theano in fraud detection in financial transactions
+Theano in cancer detection from medical images
+Theano in drug discovery and development
+Theano in autonomous navigation for drones
+Theano in speech recognition for virtual assistants
+Theano in sentiment analysis for social media monitoring
+Theano in recommendation systems for e-commerce
+Theano in fraud prevention in online banking
+Theano in stock market prediction for trading algorithms
+Theano in predictive analytics for healthcare management
+Theano in genomics research for personalized medicine
+Theano in robotics for automation and control
+Theano in financial modeling for risk assessment
+Theano in time series forecasting for sales predictions
+Theano in customer segmentation for targeted marketing
+Theano in predictive maintenance for industrial equipment
+Theano in supply chain optimization for logistics
+Theano in fraud detection for insurance claims
+Theano in credit risk analysis for lending decisions
+Theano in social network analysis for influencer marketing
+Theano in recommender systems for personalized recommendations
+Theano in image recognition for security applications

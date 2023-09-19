@@ -1,0 +1,100 @@
+Singleton pattern in Python
+Factory pattern in Python
+Observer pattern in Python
+Decorator pattern in Python
+Adapter pattern in Python
+Strategy pattern in Python
+Command pattern in Python
+Prototype pattern in Python
+Template method pattern in Python
+Composite pattern in Python
+Chain of Responsibility pattern in Python
+Mediator pattern in Python
+Flyweight pattern in Python
+Memento pattern in Python
+Proxy pattern in Python
+Iterator pattern in Python
+State pattern in Python
+Visitor pattern in Python
+Builder pattern in Python
+Abstract Factory pattern in Python
+Function decorator pattern in Python
+Callback pattern in Python
+Data Access Object (DAO) pattern in Python
+Facade pattern in Python
+MVC (Model-View-Controller) pattern in Python
+Model-View-ViewModel (MVVM) pattern in Python
+Front Controller pattern in Python
+Dependency Injection pattern in Python
+Inversion of Control (IoC) pattern in Python
+Singleton metaclass pattern in Python
+Publish/Subscribe pattern in Python
+Data Mapper pattern in Python
+Null Object pattern in Python
+Proxy metaclass pattern in Python
+Abstract Class pattern in Python
+Service Locator pattern in Python
+Specification pattern in Python
+Active Object pattern in Python
+Interpreter pattern in Python
+Command metaclass pattern in Python
+Layered pattern in Python
+Value Object pattern in Python
+Object Pool pattern in Python
+Fluent Interface pattern in Python
+Fluent Builder pattern in Python
+Aggregate pattern in Python
+Half-Object + Protocol (HOP) pattern in Python
+Adapter metaclass pattern in Python
+Business Delegate pattern in Python
+Composite metaclass pattern in Python
+Lazy Initialization pattern in Python
+Data Transfer Object (DTO) pattern in Python
+Aspect-Oriented Programming (AOP) pattern in Python
+Interceptor pattern in Python
+Event-driven pattern in Python
+Filters and Pipes pattern in Python
+Repository pattern in Python
+Transaction Script pattern in Python
+Peer-to-Peer pattern in Python
+Layer Supertype pattern in Python
+Front Controller metaclass pattern in Python
+Presentation Model pattern in Python
+Producer-Consumer pattern in Python
+Business Object pattern in Python
+Query Object pattern in Python
+Service Layer pattern in Python
+Event Sourcing pattern in Python
+CQRS (Command Query Responsibility Segregation) pattern in Python
+Event Aggregator pattern in Python
+Project Morrison pattern in Python
+Multiton pattern in Python
+Null Coalescing pattern in Python
+Repository metaclass pattern in Python
+Futures pattern in Python
+Command Query Separation pattern in Python
+Fascade metaclass pattern in Python
+Object-Relational Mapping (ORM) pattern in Python
+Private Class Data pattern in Python
+Transaction Script metaclass pattern in Python
+Chain of Responsibility metaclass pattern in Python
+Container pattern in Python
+Parallel Task Execution pattern in Python
+Command Processor pattern in Python
+Event Sourcing metaclass pattern in Python
+Layered metaclass pattern in Python
+Model View Controller metaclass pattern in Python
+Rule Engine pattern in Python
+Half-Object + Protocol metaclass pattern in Python
+Partitioned Layer pattern in Python
+Peer-to-Peer metaclass pattern in Python
+Service Locator metaclass pattern in Python
+Atomic Commit pattern in Python
+Thread Pool pattern in Python
+Work Queue pattern in Python
+Hexagonal Architecture pattern in Python
+Unmarshaller pattern in Python
+Dispatcher pattern in Python
+External Configuration pattern in Python
+Layer Supertype metaclass pattern in Python
+Session State pattern in Python

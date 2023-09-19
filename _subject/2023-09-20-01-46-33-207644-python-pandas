@@ -1,0 +1,100 @@
+Introduction to Python Pandas
+Installing Pandas and its dependencies
+Importing Pandas library in Python
+Basic data structures in Pandas: Series and DataFrame
+Creating Series in Pandas
+Accessing and manipulating data in a Series
+Creating DataFrames in Pandas
+Loading data from CSV files into a DataFrame
+Loading data from Excel files into a DataFrame
+Accessing and manipulating data in a DataFrame
+Indexing and selecting data in Pandas
+Filtering data in a DataFrame
+Sorting data in a DataFrame
+Basic statistics with Pandas
+Grouping and aggregating data in Pandas
+Handling missing values in a DataFrame
+Merging and joining DataFrames in Pandas
+Combining and reshaping DataFrames in Pandas
+Applying functions to data in Pandas
+Working with dates and times in Pandas
+Handling categorical data in Pandas
+Visualizing data with Pandas
+Introduction to data analysis with Pandas
+Data preprocessing with Pandas
+Data cleaning and data transformation in Pandas
+Exploratory data analysis with Pandas
+Pandas for data visualization and plotting
+Working with large datasets in Pandas
+Reading and writing data to/from different file formats with Pandas
+Time series analysis with Pandas
+Statistical analysis with Pandas
+Hypothesis testing with Pandas
+Linear regression analysis with Pandas
+Logistic regression analysis with Pandas
+Machine learning with Pandas
+Feature engineering with Pandas
+Dimensionality reduction with Pandas
+Resampling and time series forecasting with Pandas
+Data manipulation using Pandas methods
+Combining data from multiple sources with Pandas
+Working with SQL databases in Pandas
+Working with JSON data in Pandas
+Working with API data in Pandas
+Handling large datasets using chunking in Pandas
+Performance optimization techniques in Pandas
+Memory optimization techniques in Pandas
+Data visualization with matplotlib and Pandas
+Advanced plotting techniques with Pandas
+Geographic data analysis with Pandas
+Image data analysis with Pandas
+Natural language processing with Pandas
+Web scraping and data extraction with Pandas
+Social media data analysis with Pandas
+Sentiment analysis with Pandas
+Text mining with Pandas
+Time series forecasting with Pandas
+Anomaly detection using Pandas
+Customer segmentation using Pandas
+Market basket analysis with Pandas
+Network analysis with Pandas
+Geospatial analysis with Pandas
+Natural language processing using NLTK and Pandas
+Topic modeling with Pandas
+Recommender systems with Pandas
+Deep learning with Pandas and TensorFlow
+Reinforcement learning with Pandas and OpenAI Gym
+Time series decomposition with Pandas
+Forecast evaluation and performance metrics with Pandas
+Feature selection using Pandas
+Feature scaling and normalization with Pandas
+Cross-validation and model evaluation with Pandas
+Grid search and hyperparameter tuning with Pandas
+Ensemble learning with Pandas
+Model deployment and serving with Pandas
+Web application development with Pandas
+Building interactive dashboards with Pandas and Dash
+Building APIs with Pandas and Flask
+Data reporting and visualization with Pandas and Tableau
+Data analysis and visualization in Jupyter Notebook with Pandas
+Data science with Pandas and scikit-learn
+Time series analysis with Prophet and Pandas
+Financial data analysis with Pandas
+Marketing analytics with Pandas
+Sales forecasting with Pandas
+Customer churn prediction with Pandas
+Fraud detection with Pandas
+Image processing and computer vision with Pandas and OpenCV
+Stock market analysis with Pandas
+Sentiment analysis on social media data using Pandas
+Web analytics using Pandas
+A/B testing and experimentation with Pandas
+Natural language generation with Pandas and NLG libraries
+Clustering analysis with Pandas
+Customer lifetime value prediction with Pandas
+Network analysis on social graphs with Pandas and NetworkX
+Time series forecasting using ARIMA and Pandas
+Customer segmentation using RFM analysis and Pandas
+Text classification and sentiment analysis with Pandas and spaCy
+Predictive maintenance using time series analysis and Pandas
+Credit risk analysis using Pandas and machine learning algorithms

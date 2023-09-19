@@ -1,0 +1,100 @@
+Code readability
+Naming conventions
+Proper indentation
+Consistent formatting
+Using comments effectively
+Writing modular and reusable code
+Avoiding code duplication
+Following the Single Responsibility Principle
+Using appropriate data structures and algorithms
+Handling exceptions properly
+Using meaningful variable and function names
+Using docstrings to document code
+Writing clean and concise code
+Properly organizing code files and directories
+Avoiding global variables
+Writing efficient and optimized code
+Using built-in functions and libraries effectively
+Understanding and using Pythonic idioms
+Properly handling input and output
+Documenting functions and modules
+Writing comprehensive unit tests
+Using version control systems effectively
+Using virtual environments for Python projects
+Using type hints and annotations
+Properly managing dependencies
+Writing clear and explicit code
+Avoiding unnecessary or complex code
+Handling edge cases and error conditions
+Using context managers for resource management
+Following the DRY (Don't Repeat Yourself) principle
+Using object-oriented programming principles
+Writing reusable and extensible classes
+Properly handling file I/O operations
+Understanding and using decorators
+Using generator expressions and comprehensions
+Managing project configurations effectively
+Using logging for debugging and error reporting
+Following the PEP 8 style guide
+Understanding and using generators and iterators
+Properly managing memory and resources
+Using multiprocessing for parallel processing
+Understanding and using context managers and the "with" statement
+Optimizing code performance with profiling and benchmarking
+Writing code that is easy to debug
+Using regular expressions effectively
+Understanding and using metaclasses
+Using the Python packaging ecosystem
+Writing code that is resistant to bugs and vulnerabilities
+Using appropriate design patterns in Python
+Understanding and using concurrency and threading
+Writing code that is compatible with different Python versions
+Understanding and using the Global Interpreter Lock (GIL)
+Using type checking tools like mypy and pytype
+Following the principle of least privilege in code design
+Writing code that is resistant to race conditions
+Understanding and using Python's contextlib module
+Writing code that is resistant to code injection attacks
+Using code linters like pylint and flake8
+Understanding and using multi-threading and multi-processing in Python
+Writing code that is resistant to SQL injection attacks
+Understanding and using Python's multiprocessing module
+Using static code analysis tools like Bandit and SonarQube
+Writing code that is resistant to cross-site scripting (XSS) attacks
+Understanding and using Python's concurrent.futures module
+Using code formatting tools like Black and autopep8
+Writing code that is resistant to cross-site request forgery (CSRF) attacks
+Understanding and using Python's asyncio module
+Using code coverage tools like coverage and pytest-cov
+Writing code that is resistant to command injection attacks
+Understanding and using Python's socket programming capabilities
+Using code documentation tools like Sphinx and Doxygen
+Writing code that is resistant to XML external entity (XXE) attacks
+Understanding and using Python's networking libraries like requests and urllib
+Using code profiling tools like cProfile and line_profiler
+Writing code that is resistant to server-side request forgery (SSRF) attacks
+Understanding and using Python's web scraping libraries like BeautifulSoup and Scrapy
+Using code review tools like CodeClimate and Crucible
+Writing code that is resistant to insecure deserialization attacks
+Understanding and using Python's database libraries like SQLAlchemy and psycopg2
+Using code refactoring tools like PyCharm and Visual Studio Code
+Writing code that is resistant to insecure direct object references (IDOR) attacks
+Understanding and using Python's web development frameworks like Django and Flask
+Using code testing tools like pytest and unittest
+Writing code that is resistant to server-side template injection (SSTI) attacks
+Understanding and using Python's data analysis libraries like pandas and NumPy
+Using code vulnerability scanning tools like Snyk and OWASP ZAP
+Writing code that is resistant to cross-site scripting (XSS) attacks in web applications
+Understanding and using Python's machine learning libraries like scikit-learn and TensorFlow
+Using code deployment and continuous integration tools like Jenkins and Travis CI
+Writing code that is resistant to SQL injection attacks in web applications
+Understanding and using Python's natural language processing (NLP) libraries like NLTK and spaCy
+Using code versioning tools like Git and Mercurial
+Writing code that is resistant to cross-site request forgery (CSRF) attacks in web applications
+Understanding and using Python's web scraping and automation libraries like Selenium and BeautifulSoup
+Using code testing frameworks like Robot Framework and behave for behavior-driven development (BDD)
+Writing code that is resistant to command injection attacks in web applications
+Understanding and using Python's web development frameworks for RESTful APIs like FastAPI and Flask-RESTful
+Using code analysis and code quality tools like SonarQube and PyLint
+Writing code that is resistant to XML external entity (XXE) attacks in web applications
+Understanding and using Python's web security frameworks like Django and OWASP Flask

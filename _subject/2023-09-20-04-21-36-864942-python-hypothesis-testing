@@ -1,0 +1,100 @@
+Understanding the concept of hypothesis testing in Python.
+The importance of hypothesis testing in statistical analysis using Python.
+Different types of hypothesis tests available in Python.
+One-sample t-test in Python for hypothesis testing.
+Independent two-sample t-test in Python for hypothesis testing.
+Paired t-test in Python for hypothesis testing.
+One-way ANOVA in Python for hypothesis testing.
+Two-way ANOVA in Python for hypothesis testing.
+Chi-square test in Python for hypothesis testing.
+Wilcoxon signed-rank test in Python for hypothesis testing.
+Kruskal-Wallis test in Python for hypothesis testing.
+Mann-Whitney U test in Python for hypothesis testing.
+Contingency table analysis in Python for hypothesis testing.
+Bonferroni correction in Python for multiple hypothesis testing.
+Holm-Bonferroni method in Python for multiple hypothesis testing.
+False discovery rate (FDR) control in Python for multiple hypothesis testing.
+P-value adjustment methods in Python for hypothesis testing.
+Power analysis in Python for hypothesis testing.
+Effect size calculation in Python for hypothesis testing.
+Confidence interval estimation in Python for hypothesis testing.
+Parametric tests in Python for hypothesis testing.
+Non-parametric tests in Python for hypothesis testing.
+One-tailed hypothesis testing in Python.
+Two-tailed hypothesis testing in Python.
+Null hypothesis and alternative hypothesis in Python hypothesis testing.
+Interpreting p-values in Python hypothesis testing.
+Type I error in Python hypothesis testing.
+Type II error in Python hypothesis testing.
+Hypothesis testing assumptions in Python.
+Assumptions of normality in Python hypothesis testing.
+Assumptions of homogeneity of variance in Python hypothesis testing.
+Handling violations of assumptions in Python hypothesis testing.
+Outliers and their impact on hypothesis testing in Python.
+Data cleaning and preprocessing for hypothesis testing in Python.
+The process of hypothesis testing in Python.
+Sample size determination for hypothesis testing in Python.
+Hypothesis testing examples in Python.
+Hypothesis testing for proportions in Python.
+Confidence interval for proportions in Python hypothesis testing.
+Hypothesis testing for means in Python.
+Confidence interval for means in Python hypothesis testing.
+Hypothesis testing for variances in Python.
+Confidence interval for variances in Python hypothesis testing.
+Hypothesis testing for correlation in Python.
+Confidence interval for correlation in Python hypothesis testing.
+Hypothesis testing for regression coefficients in Python.
+Confidence interval for regression coefficients in Python hypothesis testing.
+Hypothesis testing for difference in proportions in Python.
+Confidence interval for difference in proportions in Python hypothesis testing.
+Hypothesis testing for difference in means in Python.
+Confidence interval for difference in means in Python hypothesis testing.
+Hypothesis testing for difference in variances in Python.
+Confidence interval for difference in variances in Python hypothesis testing.
+Hypothesis testing for difference in correlations in Python.
+Confidence interval for difference in correlations in Python hypothesis testing.
+Hypothesis testing for non-inferiority in Python.
+Confidence interval for non-inferiority in Python hypothesis testing.
+Hypothesis testing for superiority in Python.
+Confidence interval for superiority in Python hypothesis testing.
+Hypothesis testing for equivalence in Python.
+Confidence interval for equivalence in Python hypothesis testing.
+Hypothesis testing using Monte Carlo simulations in Python.
+Bootstrap hypothesis testing in Python.
+Permutation tests in Python for hypothesis testing.
+Comparing multiple groups in hypothesis testing with Python.
+Multiple comparisons correction in Python hypothesis testing.
+Hypothesis testing with Bayesian methods in Python.
+Hypothesis testing for time series data in Python.
+Hypothesis testing for categorical data in Python.
+Hypothesis testing for survival analysis in Python.
+Hypothesis testing in machine learning using Python.
+Hypothesis testing for classification models in Python.
+Hypothesis testing for regression models in Python.
+Hypothesis testing for clustering models in Python.
+Hypothesis testing for dimensionality reduction models in Python.
+Hypothesis testing for anomaly detection models in Python.
+Hypothesis testing for recommender systems in Python.
+Hypothesis testing for natural language processing models in Python.
+Hypothesis testing for image processing models in Python.
+Hypothesis testing for time series forecasting models in Python.
+Hypothesis testing for deep learning models in Python.
+Hypothesis testing for reinforcement learning models in Python.
+Hypothesis testing for ensemble learning models in Python.
+Hypothesis testing for genetic algorithms in Python.
+Hypothesis testing for optimization algorithms in Python.
+Hypothesis testing for network analysis in Python.
+Hypothesis testing for social media analysis in Python.
+Hypothesis testing for web scraping and crawling in Python.
+Hypothesis testing for data visualization in Python.
+Hypothesis testing for data preprocessing in Python.
+Hypothesis testing for feature selection in Python.
+Hypothesis testing for model evaluation in Python.
+Hypothesis testing for hyperparameter tuning in Python.
+Hypothesis testing for model interpretation in Python.
+Hypothesis testing for model deployment in Python.
+Hypothesis testing for model scalability in Python.
+Hypothesis testing for model explainability in Python.
+Hypothesis testing for model fairness in Python.
+Hypothesis testing for model robustness in Python.
+Hypothesis testing in data science projects using Python.

@@ -1,0 +1,100 @@
+Introduction to Reinforcement Learning
+Basics of Python programming language
+Algorithms for Reinforcement Learning in Python
+Q-Learning in Python
+Deep Q-Learning in Python
+Policy Gradient methods in Python
+Actor-Critic methods in Python
+Proximal Policy Optimization in Python
+Monte Carlo methods in Python
+Temporal Difference Learning in Python
+Value Iteration in Python
+Model-free vs Model-based Reinforcement Learning in Python
+Exploration vs Exploitation in Reinforcement Learning with Python
+Markov Decision Processes in Python
+Bellman Equations in Reinforcement Learning with Python
+Discount Factor in Reinforcement Learning with Python
+State-Value Function in Python Reinforcement Learning
+Action-Value Function in Python Reinforcement Learning
+Policy Evaluation in Reinforcement Learning with Python
+Policy Iteration in Reinforcement Learning with Python
+Value Iteration in Reinforcement Learning with Python
+Dynamic Programming in Reinforcement Learning with Python
+Tabular Q-Learning in Python
+Function Approximation in Reinforcement Learning with Python
+Deep Neural Networks in Reinforcement Learning with Python
+Convolutional Neural Networks in Reinforcement Learning with Python
+Recurrent Neural Networks in Reinforcement Learning with Python
+Advantage-Actor-Critic in Reinforcement Learning with Python
+Deterministic Policy Gradient in Reinforcement Learning with Python
+Continuous Action Spaces in Reinforcement Learning with Python
+Discrete Action Spaces in Reinforcement Learning with Python
+Exploration Strategies in Reinforcement Learning with Python
+Exploitation Strategies in Reinforcement Learning with Python
+Epsilon-Greedy Algorithm in Reinforcement Learning with Python
+Boltzmann Exploration in Reinforcement Learning with Python
+Upper Confidence Bound in Reinforcement Learning with Python
+Thompson Sampling in Reinforcement Learning with Python
+Reward functions in Reinforcement Learning with Python
+Markov Chain in Reinforcement Learning with Python
+n-Step Return in Reinforcement Learning with Python
+Eligibility Traces in Reinforcement Learning with Python
+Experience Replay in Reinforcement Learning with Python
+Transfer Learning in Reinforcement Learning with Python
+Multi-Armed Bandits in Reinforcement Learning with Python
+Contextual Bandits in Reinforcement Learning with Python
+Policy Gradients by Finite Difference in Python
+Actor-Critic with Eligibility Traces in Python
+Advantage Actor-Critic with GAE in Python
+TRPO (Trust Region Policy Optimization) in Python
+PPO (Proximal Policy Optimization) in Python
+A2C (Advantage Actor-Critic) in Python
+DDPG (Deep Deterministic Policy Gradient) in Python
+DQN (Deep Q-Network) in Python
+DQN with Experience Replay in Python
+DQN with Dueling Network Architecture in Python
+DQN with Double Q-Learning in Python
+DQN with Prioritized Experience Replay in Python
+DQN with Rainbow (Combining Improvements) in Python
+DQN with Noisy Networks in Python
+DQN with Distributional RL in Python
+DQN with Quantile Regression in Python
+DQN with Categorical DQN in Python
+DDPG with Hindsight Experience Replay in Python
+DDPG with Twin Delayed DDPG in Python
+DDPG with Parameter Space Noise in Python
+DDPG with Soft Actor-Critic in Python
+PPO with Generalized Advantage Estimation in Python
+PPO with Clipped Surrogate Objective in Python
+PPO with Value Function Clipping in Python
+PPO with Adaptive KL Penalty Coefficient in Python
+PPO with Trust Region Objective Constrained Optimization in Python
+PPO with Importance Sampling in Python
+A2C with GAE in Python
+A2C with Parallel Environments in Python
+A2C with LSTM Policy in Python
+A2C with A2C Critic in Python
+A2C with A2C Actor in Python
+A2C with PPO in Python
+Importance of reward shaping in Reinforcement Learning with Python
+Generalization in Reinforcement Learning with Python
+Benchmarking Reinforcement Learning algorithms in Python
+Hyperparameter tuning in Reinforcement Learning with Python
+Continuous Control using Reinforcement Learning and Python
+Sliding Window Technique in Reinforcement Learning with Python
+Cross-Entropy Method in Reinforcement Learning with Python
+OpenAI Gym and Reinforcement Learning in Python
+TensorFlow and Reinforcement Learning in Python
+PyTorch and Reinforcement Learning in Python
+Keras and Reinforcement Learning in Python
+Robot Control using Reinforcement Learning with Python
+Autonomous Driving using Reinforcement Learning with Python
+Game playing using Reinforcement Learning with Python
+Robotics using Reinforcement Learning with Python
+Natural Language Processing using Reinforcement Learning with Python
+Finance and Trading using Reinforcement Learning with Python
+Healthcare and Medicine using Reinforcement Learning with Python
+Education and e-Learning using Reinforcement Learning with Python
+Manufacturing and Supply Chain using Reinforcement Learning with Python
+Smart Grid and Energy Management using Reinforcement Learning with Python
+Reinforcement Learning in Real-World Applications using Python.

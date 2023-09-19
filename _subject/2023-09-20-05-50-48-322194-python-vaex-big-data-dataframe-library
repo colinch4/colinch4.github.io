@@ -1,0 +1,100 @@
+Introduction to Python Vaex
+Installing Python Vaex
+Creating a Vaex DataFrame
+Loading data into a Vaex DataFrame
+Reading CSV files with Python Vaex
+Reading Parquet files with Python Vaex
+Reading HDF5 files with Python Vaex
+Reading SQLite databases with Python Vaex
+Basic operations with Python Vaex
+Filtering data in a Vaex DataFrame
+Sorting data in a Vaex DataFrame
+Selecting columns in a Vaex DataFrame
+Adding columns to a Vaex DataFrame
+Removing columns from a Vaex DataFrame
+Renaming columns in a Vaex DataFrame
+Grouping data in a Vaex DataFrame
+Aggregating data in a Vaex DataFrame
+Computing statistics with Python Vaex
+Handling missing values in a Vaex DataFrame
+Concatenating Vaex DataFrames
+Merging Vaex DataFrames
+Combining Vaex DataFrames
+Removing duplicates in a Vaex DataFrame
+Computing correlation with Python Vaex
+Applying functions to a Vaex DataFrame
+Joins in Python Vaex
+Outer joins in Python Vaex
+Inner joins in Python Vaex
+Left joins in Python Vaex
+Right joins in Python Vaex
+Understanding lazy evaluation in Python Vaex
+Handling large datasets with Python Vaex
+Efficient memory management in Python Vaex
+Using indexes in a Vaex DataFrame
+Reshaping a Vaex DataFrame
+Transforming data with Python Vaex
+Creating derived features in a Vaex DataFrame
+Sampling data from a Vaex DataFrame
+Visualizing data with Python Vaex
+Creating plots with Vaex DataFrame
+Plotting histograms with Vaex DataFrame
+Plotting scatter plots with Vaex DataFrame
+Plotting line plots with Vaex DataFrame
+Plotting bar plots with Vaex DataFrame
+Plotting box plots with Vaex DataFrame
+Plotting kernel density plots with Vaex DataFrame
+Plotting heatmaps with Vaex DataFrame
+Plotting pair plots with Vaex DataFrame
+Plotting time series data with Vaex DataFrame
+Plotting geographical data with Vaex DataFrame
+Exporting data from a Vaex DataFrame
+Saving data to CSV with Python Vaex
+Saving data to Parquet with Python Vaex
+Saving data to HDF5 with Python Vaex
+Saving data to SQLite with Python Vaex
+Serializing a Vaex DataFrame
+Deserializing a Vaex DataFrame
+Performance optimization in Python Vaex
+Using multi-threading with Python Vaex
+Using multi-processing with Python Vaex
+Using distributed computing with Python Vaex
+Running Vaex on a cluster environment
+Interacting with other Python libraries in Vaex
+Integration with NumPy in Vaex
+Integration with Pandas in Vaex
+Integration with Matplotlib in Vaex
+Integration with Seaborn in Vaex
+Integration with Dask in Vaex
+Integration with PySpark in Vaex
+Integration with scikit-learn in Vaex
+Integration with TensorFlow in Vaex
+Integration with Keras in Vaex
+Integration with XGBoost in Vaex
+Integration with LightGBM in Vaex
+Handling time series data with Vaex
+Resampling time series data with Vaex
+Handling categorical data with Vaex
+Encoding categorical data with Vaex
+Handling text data with Vaex
+Text mining with Vaex
+Feature selection with Vaex
+Feature engineering with Vaex
+Model training with Vaex
+Linear regression with Vaex
+Logistic regression with Vaex
+Decision trees with Vaex
+Random forests with Vaex
+Support Vector Machines (SVM) with Vaex
+Gradient Boosting with Vaex
+Deep Learning with Vaex
+Neural Networks with Vaex
+Convolutional Neural Networks (CNN) with Vaex
+Recurrent Neural Networks (RNN) with Vaex
+Natural Language Processing (NLP) with Vaex
+Computer Vision with Vaex
+Time Series Forecasting with Vaex
+Anomaly Detection with Vaex
+Clustering with Vaex
+Dimensionality Reduction with Vaex
+Model evaluation and validation with Vaex.

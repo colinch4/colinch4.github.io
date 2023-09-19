@@ -1,0 +1,100 @@
+Introduction to Python Petl
+Installing Python Petl
+Basic data extraction with Python Petl
+Connecting to different data sources with Python Petl
+Extracting data from CSV files using Python Petl
+Extracting data from Excel files using Python Petl
+Extracting data from databases using Python Petl
+Transforming data with Python Petl
+Renaming columns in Python Petl
+Filtering data with Python Petl
+Sort data using Python Petl
+Aggregating data with Python Petl
+Grouping data with Python Petl
+Joining data using Python Petl
+Merging data with Python Petl
+Splitting columns in Python Petl
+Pivoting data with Python Petl
+Unpivoting data with Python Petl
+Combining multiple data sources with Python Petl
+Handling missing data with Python Petl
+Cleaning data with Python Petl
+Removing duplicate rows with Python Petl
+Dealing with data inconsistencies using Python Petl
+Performing calculations with Python Petl
+Adding calculated columns in Python Petl
+Performing statistical analysis with Python Petl
+Handling dates and times in Python Petl
+Formatting data in Python Petl
+Exporting data with Python Petl
+Exporting data to CSV files using Python Petl
+Exporting data to Excel files using Python Petl
+Exporting data to databases using Python Petl
+Exporting data to JSON files using Python Petl
+Exporting data to XML files using Python Petl
+Automating data extraction, transformation, and loading with Python Petl
+Schedule data jobs using Python Petl
+Error handling in Python Petl
+Logging with Python Petl
+Monitoring data processes with Python Petl
+Handling large datasets with Python Petl
+Using parallel processing with Python Petl
+Performance optimization in Python Petl
+Working with streaming data in Python Petl
+Connecting Python Petl to live data feeds
+Real-time data extraction with Python Petl
+Real-time data transformation with Python Petl
+Real-time data loading with Python Petl
+Web scraping with Python Petl
+Extracting data from websites using Python Petl
+Parsing HTML with Python Petl
+Parsing JSON with Python Petl
+Parsing XML with Python Petl
+Handling API data with Python Petl
+Extracting data from REST APIs with Python Petl
+Extracting data from SOAP APIs with Python Petl
+Handling authentication in Python Petl
+Working with encrypted data in Python Petl
+Data validation using Python Petl
+Writing custom data validation rules in Python Petl
+Data profiling with Python Petl
+Data quality assessment using Python Petl
+Data cleansing with Python Petl
+Handling data anomalies with Python Petl
+Working with unstructured data in Python Petl
+Extracting text data using Python Petl
+Performing text analysis with Python Petl
+Extracting image data using Python Petl
+Analyzing image data with Python Petl
+Extracting audio data using Python Petl
+Analyzing audio data with Python Petl
+Extracting video data using Python Petl
+Analyzing video data with Python Petl
+Working with geospatial data in Python Petl
+Extracting geospatial data using Python Petl
+Geospatial data analysis with Python Petl
+Geospatial data visualization with Python Petl
+Natural language processing with Python Petl
+Text preprocessing with Python Petl
+Named entity recognition with Python Petl
+Sentiment analysis with Python Petl
+Topic modeling with Python Petl
+Machine learning with Python Petl
+Feature engineering with Python Petl
+Model training with Python Petl
+Model evaluation with Python Petl
+Predictive modeling with Python Petl
+Time series analysis with Python Petl
+Forecasting with Python Petl
+Anomaly detection with Python Petl
+Clustering with Python Petl
+Classification with Python Petl
+Regression with Python Petl
+Natural language processing with Python Petl
+Text preprocessing with Python Petl
+Named entity recognition with Python Petl
+Sentiment analysis with Python Petl
+Topic modeling with Python Petl
+Machine learning with Python Petl
+Feature engineering with Python Petl
+Model training with Python Petl

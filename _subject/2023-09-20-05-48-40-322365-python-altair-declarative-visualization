@@ -1,0 +1,100 @@
+Introduction to Python Altair
+Installing Altair in Python
+Basic plotting with Altair
+Line plots with Altair
+Bar plots with Altair
+Scatter plots with Altair
+Area plots with Altair
+Histograms with Altair
+Box plots with Altair
+Interactive plots with Altair
+Customizing plot colors in Altair
+Customizing plot size and aspect ratio in Altair
+Adding titles and labels to plots in Altair
+Adding legends to plots in Altair
+Annotations and tooltips in Altair
+Layering multiple plots in Altair
+Combining different plot types in Altair
+Grouped plots in Altair
+Stacked plots in Altair
+Faceted plots in Altair
+Conditional encoding in Altair
+Aggregation and summarization in Altair
+Filtering and selecting data in Altair
+Axis customization in Altair
+Scale customization in Altair
+Time-series plots with Altair
+Geospatial data visualization with Altair
+Heatmaps with Altair
+Treemaps with Altair
+Sankey diagrams with Altair
+Network visualization with Altair
+Interactive maps with Altair
+Visualizing categorical data with Altair
+Visualizing numerical data with Altair
+Visualizing time-series data with Altair
+Visualizing geospatial data with Altair
+Visualizing hierarchical data with Altair
+Creating animated plots with Altair
+Subplots and multiple plots in Altair
+Interactive dashboards with Altair
+Visualizing data from CSV files with Altair
+Visualizing data from Excel files with Altair
+Visualizing data from JSON files with Altair
+Data preprocessing for Altair visualizations
+Handling missing data in Altair
+Handling outliers in Altair
+Data transformation and aggregation in Altair
+Data merging and joining in Altair
+Data filtering and selection in Altair
+Data sampling and splitting for Altair visualizations
+Data scaling and normalization for Altair visualizations
+Data visualization best practices with Altair
+Choosing the right plot type in Altair
+Designing effective color schemes in Altair
+Designing informative labels and titles in Altair
+Optimizing plot performance in Altair
+Designing interactive elements in Altair
+Sharing Altair visualizations online
+Exporting Altair plots to different file formats
+Creating interactive Altair dashboards
+Creating interactive Altair maps
+Creating interactive Altair charts
+Creating interactive Altair plots with selection and brushing
+Creating interactive Altair plots with sliders and widgets
+Creating interactive Altair plots with tooltips and pop-ups
+Creating interactive Altair plots with linked views
+Creating interactive Altair plots with zooming and panning
+Creating interactive Altair plots with hover effects
+Creating interactive Altair plots with drill-down capabilities
+Creating interactive Altair plots with custom interactions
+Creating interactive Altair plots with dynamic data updates
+Creating interactive Altair plots with data zooming and selection
+Creating interactive Altair plots with data filtering and aggregation
+Creating interactive Altair plots with linked filtering and highlighting
+Creating interactive Altair plots with user-defined actions
+Creating interactive Altair plots with custom themes and styles
+Creating interactive Altair plots with interactive legends
+Creating interactive Altair plots with output as HTML or JavaScript
+Creating interactive Altair plots with embedding in web applications
+Creating interactive Altair plots with integration in Jupyter notebooks
+Creating interactive Altair plots with export options
+Creating interactive Altair plots with save and share options
+Creating interactive Altair plots with data exploration capabilities
+Creating interactive Altair plots with 3D visualization
+Creating interactive Altair plots with augmented reality (AR)
+Creating interactive Altair plots with virtual reality (VR)
+Creating interactive Altair plots with machine learning integration
+Creating interactive Altair plots with natural language processing (NLP) integration
+Creating interactive Altair plots with deep learning integration
+Creating interactive Altair plots with sentiment analysis integration
+Creating interactive Altair plots with social media analytics integration
+Creating interactive Altair plots with real-time data streaming
+Creating interactive Altair plots with geolocation tracking
+Creating interactive Altair plots with IoT sensor data integration
+Creating interactive Altair plots with predictive analytics integration
+Creating interactive Altair plots with anomaly detection integration
+Creating interactive Altair plots with customer segmentation integration
+Creating interactive Altair plots with supply chain analytics integration
+Creating interactive Altair plots with financial data analysis integration
+Creating interactive Altair plots with healthcare analytics integration

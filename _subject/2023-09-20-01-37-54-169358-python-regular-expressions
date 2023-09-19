@@ -1,0 +1,100 @@
+Introduction to regular expressions in Python
+Basic syntax of regular expressions in Python
+Meta characters in regular expressions
+Matching a pattern using regular expressions
+Anchors in regular expressions
+Character classes in regular expressions
+Quantifiers in regular expressions
+Groups and capturing in regular expressions
+Alternation in regular expressions
+Lookahead and lookbehind in regular expressions
+Backreferences in regular expressions
+The dot (.) metacharacter in regular expressions
+Escape sequences in regular expressions
+Matching specific characters in regular expressions
+Matching digits in regular expressions
+Matching alphabetic characters in regular expressions
+Matching alphanumeric characters in regular expressions
+Matching whitespace characters in regular expressions
+Matching special characters in regular expressions
+Matching email addresses using regular expressions
+Matching URLs using regular expressions
+Matching IP addresses using regular expressions
+Matching dates and times using regular expressions
+Matching phone numbers using regular expressions
+Matching social security numbers using regular expressions
+Matching HTML tags using regular expressions
+Matching XML tags using regular expressions
+Matching JSON strings using regular expressions
+Matching specific words using regular expressions
+Matching multiple words using regular expressions
+Matching word boundaries using regular expressions
+Matching word characters using regular expressions
+Matching non-word characters using regular expressions
+Matching start and end of line using regular expressions
+Matching specific patterns using regular expressions
+Matching multiple patterns using regular expressions
+Matching case-insensitive patterns using regular expressions
+Replacing text using regular expressions
+Splitting text using regular expressions
+Extracting information using regular expressions
+Validating input using regular expressions
+Removing unwanted characters using regular expressions
+Finding and replacing in files using regular expressions
+Searching and replacing using regular expressions
+Parsing text using regular expressions
+Extracting URLs from text using regular expressions
+Extracting email addresses from text using regular expressions
+Extracting phone numbers from text using regular expressions
+Extracting dates and times from text using regular expressions
+Extracting numbers from text using regular expressions
+Extracting names from text using regular expressions
+Extracting HTML tags from text using regular expressions
+Extracting XML tags from text using regular expressions
+Extracting JSON strings from text using regular expressions
+Extracting specific patterns from text using regular expressions
+Extracting multiple patterns from text using regular expressions
+Extracting URLs from HTML using regular expressions
+Extracting email addresses from HTML using regular expressions
+Extracting phone numbers from HTML using regular expressions
+Extracting dates and times from HTML using regular expressions
+Extracting numbers from HTML using regular expressions
+Extracting names from HTML using regular expressions
+Extracting HTML tags with specific attributes using regular expressions
+Extracting URLs from XML using regular expressions
+Extracting email addresses from XML using regular expressions
+Extracting phone numbers from XML using regular expressions
+Extracting dates and times from XML using regular expressions
+Extracting numbers from XML using regular expressions
+Extracting names from XML using regular expressions
+Extracting XML tags with specific attributes using regular expressions
+Extracting URLs from JSON using regular expressions
+Extracting email addresses from JSON using regular expressions
+Extracting phone numbers from JSON using regular expressions
+Extracting dates and times from JSON using regular expressions
+Extracting numbers from JSON using regular expressions
+Extracting names from JSON using regular expressions
+Extracting JSON strings with specific properties using regular expressions
+Using regular expressions for data cleaning
+Using regular expressions for data extraction
+Using regular expressions for data validation
+Using regular expressions for data transformation
+Using regular expressions for data manipulation
+Using regular expressions for data analysis
+Using regular expressions for data visualization
+Using regular expressions for text mining
+Using regular expressions for natural language processing
+Using regular expressions for web scraping
+Using regular expressions for web automation
+Using regular expressions for web testing
+Using regular expressions for log analysis
+Using regular expressions for security analysis
+Using regular expressions for file parsing
+Using regular expressions for pattern matching
+Using regular expressions for pattern recognition
+Using regular expressions for pattern generation
+Using regular expressions for pattern extraction
+Using regular expressions for pattern replacement
+Using regular expressions for pattern validation
+Using regular expressions for pattern transformation
+Using regular expressions for pattern manipulation

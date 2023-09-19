@@ -1,0 +1,100 @@
+Basics of multidimensional arrays in Python
+Declaration and initialization of a multidimensional array in Python
+Accessing elements in a multidimensional array in Python
+Modifying elements in a multidimensional array in Python
+Printing a multidimensional array in Python
+Traversing a multidimensional array in Python
+Finding the dimensions of a multidimensional array in Python
+Understanding the concept of rows and columns in a multidimensional array
+Transposing a multidimensional array in Python
+Slicing a multidimensional array in Python
+Concatenating multidimensional arrays in Python
+Reshaping a multidimensional array in Python
+Copying a multidimensional array in Python
+Comparing two multidimensional arrays in Python
+Sorting elements of a multidimensional array in Python
+Finding the maximum value in a multidimensional array in Python
+Finding the minimum value in a multidimensional array in Python
+Finding the sum of all elements in a multidimensional array in Python
+Finding the average of all elements in a multidimensional array in Python
+Finding the median of all elements in a multidimensional array in Python
+Finding the standard deviation of all elements in a multidimensional array in Python
+Finding the variance of all elements in a multidimensional array in Python
+Checking if a multidimensional array is empty in Python
+Checking if a multidimensional array is full in Python
+Finding the number of occurrences of a value in a multidimensional array in Python
+Counting the number of rows in a multidimensional array in Python
+Counting the number of columns in a multidimensional array in Python
+Checking if a multidimensional array is square in Python
+Checking if a multidimensional array is symmetric in Python
+Checking if a multidimensional array is diagonal in Python
+Checking if a multidimensional array is upper triangular in Python
+Checking if a multidimensional array is lower triangular in Python
+Checking if a multidimensional array is identity in Python
+Checking if a multidimensional array is sparse in Python
+Extracting a subarray from a multidimensional array in Python
+Removing rows from a multidimensional array in Python
+Removing columns from a multidimensional array in Python
+Adding rows to a multidimensional array in Python
+Adding columns to a multidimensional array in Python
+Finding the diagonal elements of a multidimensional array in Python
+Finding the trace of a multidimensional array in Python
+Flattening a multidimensional array in Python
+Concatenating rows of multidimensional arrays in Python
+Concatenating columns of multidimensional arrays in Python
+Reversing rows of a multidimensional array in Python
+Reversing columns of a multidimensional array in Python
+Rotating a multidimensional array in Python
+Shuffling elements of a multidimensional array in Python
+Finding the most frequent element in a multidimensional array in Python
+Check if a multidimensional array contains a specific value in Python
+Finding the rank of a multidimensional array in Python
+Finding the determinant of a multidimensional array in Python
+Solving a system of linear equations using a multidimensional array in Python
+Resampling a multidimensional array in Python
+Filtering elements of a multidimensional array in Python
+Filling missing values in a multidimensional array in Python
+Applying a function to elements of a multidimensional array in Python
+Finding the eigenvalues of a multidimensional array in Python
+Finding the eigenvectors of a multidimensional array in Python
+Multiplying two multidimensional arrays in Python
+Performing element-wise multiplication of two multidimensional arrays in Python
+Dividing two multidimensional arrays in Python
+Performing element-wise division of two multidimensional arrays in Python
+Adding two multidimensional arrays in Python
+Performing element-wise addition of two multidimensional arrays in Python
+Subtracting two multidimensional arrays in Python
+Performing element-wise subtraction of two multidimensional arrays in Python
+Concatenating two multidimensional arrays along a specified axis in Python
+Reshaping a multidimensional array using broadcasting in Python
+Repeating elements in a multidimensional array in Python
+Finding the largest element along a specified axis in a multidimensional array in Python
+Finding the smallest element along a specified axis in a multidimensional array in Python
+Finding the sum along a specified axis in a multidimensional array in Python
+Finding the average along a specified axis in a multidimensional array in Python
+Finding the median along a specified axis in a multidimensional array in Python
+Finding the standard deviation along a specified axis in a multidimensional array in Python
+Finding the variance along a specified axis in a multidimensional array in Python
+Applying a function along a specified axis in a multidimensional array in Python
+Finding the indexes of the maximum value along a specified axis in a multidimensional array in Python
+Finding the indexes of the minimum value along a specified axis in a multidimensional array in Python
+Finding the unique elements in a multidimensional array in Python
+Finding the cumulative sum of elements in a multidimensional array in Python
+Finding the cumulative product of elements in a multidimensional array in Python
+Finding the difference between consecutive elements in a multidimensional array in Python
+Finding the percentage change between consecutive elements in a multidimensional array in Python
+Finding the rolling mean of elements in a multidimensional array in Python
+Finding the rolling sum of elements in a multidimensional array in Python
+Finding the rolling maximum of elements in a multidimensional array in Python
+Finding the rolling minimum of elements in a multidimensional array in Python
+Finding the rolling standard deviation of elements in a multidimensional array in Python
+Finding the rolling variance of elements in a multidimensional array in Python
+Finding the autocorrelation of elements in a multidimensional array in Python
+Finding the cross-correlation between two multidimensional arrays in Python
+Finding the cross-covariance between two multidimensional arrays in Python
+Finding the outer product of two multidimensional arrays in Python
+Finding the dot product of two multidimensional arrays in Python
+Finding the Kronecker product of two multidimensional arrays in Python
+Finding the Hadamard product of two multidimensional arrays in Python
+Determining if two multidimensional arrays are orthogonal in Python
+Finding the inverse of a multidimensional array in Python

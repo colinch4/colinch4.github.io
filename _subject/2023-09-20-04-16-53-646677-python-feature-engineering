@@ -1,0 +1,100 @@
+Missing value imputation
+Outlier detection and treatment
+Data normalization and scaling
+One-hot encoding
+Label encoding
+Target encoding
+Binning
+Data discretization
+Feature extraction using Principal Component Analysis (PCA)
+Feature selection using chi-square test
+Feature selection using correlation matrix
+Feature selection using mutual information
+Feature selection using Recursive Feature Elimination (RFE)
+Feature selection using Lasso regression
+Feature selection using Random Forests
+Polynomial feature generation
+Log-transforming features
+Box-Cox transformation for non-normal data
+Interaction features
+Ratio features
+Frequency encoding
+Time-based feature extraction
+Handling categorical variables
+Handling numerical variables
+Handling ordinal variables
+Encoding cyclic features (e.g., day of the week)
+Target variable transformation (e.g., log-transforming)
+Handling skewed features
+Handling rare categories
+Handling high cardinality categorical variables
+Handling multi-collinearity in features
+Handling feature interactions
+Handling data with different scales
+Handling seasonal patterns
+Handling temporal data (e.g., time series)
+Handling skewed target variables
+Handling imbalanced datasets
+Handling class imbalance using oversampling
+Handling class imbalance using undersampling
+Handling class imbalance using SMOTE
+Handling time-dependent features
+Handling non-linear relationships between variables
+Handling outliers in target variables
+Handling missing values in target variables
+Normalizing features using z-scores
+Scaling features using min-max normalization
+Scaling features using robust scaler
+Scaling features using log transformation
+Transforming features using power transformation
+Handling non-numeric data
+Handling text data for feature engineering
+Handling images for feature engineering
+Handling audio data for feature engineering
+Handling geospatial data for feature engineering
+Scaling features using standardization
+Handling data with multiple types of features
+Handling data with text and numerical features
+Handling data with categorical and numerical features
+Handling data with numerical and time series features
+Handling data with missing values and categorical features
+Transforming skewed features using logarithmic transformation
+Transforming features using square root transformation
+Handling missing values using mean imputation
+Handling missing values using median imputation
+Handling missing values using mode imputation
+Handling missing values using random sampling
+Handling missing values using forward filling
+Handling missing values using backward filling
+Handling missing values using linear interpolation
+Handling missing values using K-nearest neighbors (KNN) imputation
+Handling missing values using multiple imputation (MICE)
+Handling missing values using predictive mean matching
+Normalizing features using robust normalization
+Encoding ordinal variables using integer mapping
+Encoding ordinal variables using target encoding
+Encoding ordinal variables using ordinal encoding
+Encoding ordinal variables using frequency encoding
+Encoding categorical variables using One-hot encoding
+Encoding categorical variables using Binary encoding
+Encoding categorical variables using Label encoding
+Encoding categorical variables using Count encoding
+Handling data with high dimensionality
+Handling data with duplicate features
+Handling data with missing metadata
+Handling data with conflicting features
+Handling data with non-standard units of measurement
+Handling data with date and time features
+Handling data with geographical location features
+Handling data with complex relationships between features
+Handling data with nested or hierarchical structures
+Handling data with domain-specific knowledge
+Handling data with multiple sources or datasets
+Handling data with inconsistent data types
+Handling data with imbalanced proportions between classes
+Handling data with data leakage
+Handling data with high noise levels
+Handling data with insufficient variability or diversity
+Handling data with different levels of granularity
+Handling data with weak or unreliable features
+Handling data with non-traditional or unconventional sampling methods

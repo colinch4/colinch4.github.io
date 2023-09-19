@@ -1,0 +1,100 @@
+Introduction to Scikit-learn
+Installation and setup of Scikit-learn
+Basic data preprocessing using Scikit-learn
+Exploratory data analysis with Scikit-learn
+Feature selection methods in Scikit-learn
+Supervised learning algorithms in Scikit-learn
+Unsupervised learning algorithms in Scikit-learn
+Evaluation metrics for classification in Scikit-learn
+Evaluation metrics for regression in Scikit-learn
+Cross-validation techniques in Scikit-learn
+Hyperparameter tuning with Scikit-learn
+Grid search and random search in Scikit-learn
+Model selection and evaluation in Scikit-learn
+Handling imbalanced datasets in Scikit-learn
+Handling missing data with Scikit-learn
+One-hot encoding and categorical variable handling in Scikit-learn
+Scaling and normalization with Scikit-learn
+Data transformation techniques in Scikit-learn
+Ensemble learning with Scikit-learn
+Bagging algorithms in Scikit-learn
+Boosting algorithms in Scikit-learn
+Random Forests with Scikit-learn
+Gradient Boosting with Scikit-learn
+AdaBoost with Scikit-learn
+XGBoost with Scikit-learn
+Support Vector Machines (SVM) in Scikit-learn
+K-Nearest Neighbors (KNN) in Scikit-learn
+Decision Trees in Scikit-learn
+Naive Bayes in Scikit-learn
+Logistic Regression in Scikit-learn
+Linear Regression in Scikit-learn
+Ridge and Lasso regression in Scikit-learn
+ElasticNet regression in Scikit-learn
+Principal Component Analysis (PCA) in Scikit-learn
+t-SNE (t-Distributed Stochastic Neighbor Embedding) in Scikit-learn
+K-Means Clustering in Scikit-learn
+Hierarchical Clustering in Scikit-learn
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) with Scikit-learn
+Gaussian Mixture Models in Scikit-learn
+Neural Network models with Scikit-learn
+MLP (Multi-Layer Perceptron) in Scikit-learn
+CNN (Convolutional Neural Networks) in Scikit-learn
+RNN (Recurrent Neural Networks) in Scikit-learn
+Transfer Learning with Scikit-learn
+Time Series Analysis with Scikit-learn
+Anomaly Detection with Scikit-learn
+Feature extraction techniques in Scikit-learn
+Regularization techniques in Scikit-learn
+Model deployment with Scikit-learn
+Persisting and loading Scikit-learn models
+Pipelines in Scikit-learn
+Custom transformers in Scikit-learn
+Pipelining feature extraction and model training in Scikit-learn
+Handling text data with Scikit-learn
+Natural Language Processing (NLP) with Scikit-learn
+Sentiment analysis using Scikit-learn
+Text classification with Scikit-learn
+Topic modeling with Scikit-learn
+RecSys (Recommendation Systems) with Scikit-learn
+Collaborative Filtering with Scikit-learn
+Matrix Factorization with Scikit-learn
+Handling image data with Scikit-learn
+Pre-trained models and transfer learning for image classification in Scikit-learn
+Image segmentation with Scikit-learn
+Object detection with Scikit-learn
+Image clustering with Scikit-learn
+Feature extraction from images using Scikit-learn
+Model interpretability in Scikit-learn
+SHAP (SHapley Additive exPlanations) in Scikit-learn
+LIME (Local Interpretable Model-agnostic Explanations) in Scikit-learn
+Model explainability techniques in Scikit-learn
+Model persistence and joblib in Scikit-learn
+Scaling Scikit-learn with Dask
+Distributed machine learning with Scikit-learn
+Parallelization and performance optimization in Scikit-learn
+GPU utilization in Scikit-learn
+Deployment of Scikit-learn models in production
+Containerization of Scikit-learn models using Docker
+Cloud deployment of Scikit-learn models
+Scikit-learn vs other machine learning libraries (TensorFlow, Keras, PyTorch, etc.)
+Scikit-learn in a big data ecosystem (Hadoop, Spark, etc.)
+Time complexity and performance analysis of Scikit-learn algorithms
+Handling large datasets in Scikit-learn
+Memory management and optimization in Scikit-learn
+Distributed computing with Scikit-learn
+Handling outliers with Scikit-learn
+Feature engineering techniques in Scikit-learn
+Feature scaling techniques in Scikit-learn
+Handling multicollinearity in Scikit-learn
+Interpreting model results and coefficients in Scikit-learn
+Model evaluation and interpretation using SHAP values in Scikit-learn
+Dimensionality reduction techniques in Scikit-learn
+Handling imbalance in multiclass classification with Scikit-learn
+Fitting models using Scikit-learn's API
+Deploying Scikit-learn models on cloud platforms (AWS, GCP, Azure, etc.)
+Handling time-dependent features with Scikit-learn
+Explaining predictions with partial dependence plots in Scikit-learn
+Advanced feature selection techniques in Scikit-learn
+Handling ordinal variables in Scikit-learn
+Using Scikit-learn for anomaly detection in time series data

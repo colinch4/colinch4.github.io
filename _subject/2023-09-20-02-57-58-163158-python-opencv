@@ -1,0 +1,100 @@
+Image processing using OpenCV in Python
+Installing and setting up OpenCV for Python
+Basic operations on images with OpenCV in Python
+Reading and displaying images using OpenCV in Python
+Writing images using OpenCV in Python
+Image resizing using OpenCV in Python
+Image rotation and flipping using OpenCV in Python
+Image cropping using OpenCV in Python
+Image filtering and smoothing with OpenCV in Python
+Image thresholding and binarization using OpenCV in Python
+Edge detection in images using OpenCV in Python
+Image segmentation with OpenCV in Python
+Contour detection and analysis using OpenCV in Python
+Image feature extraction using OpenCV in Python
+Template matching for image recognition with OpenCV in Python
+Harris corner detection using OpenCV in Python
+Face detection and recognition with OpenCV in Python
+Object detection in images using OpenCV in Python
+Object tracking with OpenCV in Python
+Color detection and manipulation with OpenCV in Python
+Image blending and compositing using OpenCV in Python
+Image warping and perspective transformation using OpenCV in Python
+Creating image mosaics and panoramas with OpenCV in Python
+Histogram equalization for image enhancement with OpenCV in Python
+Image denoising using various filters in OpenCV with Python
+Image registration and alignment using OpenCV in Python
+Image morphing and face swapping using OpenCV in Python
+Optical character recognition (OCR) with OpenCV in Python
+Motion detection and tracking with OpenCV in Python
+Background subtraction for video analysis using OpenCV in Python
+Image inpainting and hole filling with OpenCV in Python
+Image compression techniques using OpenCV in Python
+Blob detection and analysis using OpenCV in Python
+Image histogram analysis and equalization with OpenCV in Python
+Image annotation and drawing on images using OpenCV in Python
+Image blending and compositing using masks with OpenCV in Python
+Image color space conversion and manipulation with OpenCV in Python
+Video capturing and processing using OpenCV in Python
+Real-time face detection using OpenCV in Python
+Real-time object detection using OpenCV in Python
+Real-time lane detection and tracking using OpenCV in Python
+Real-time hand gesture recognition using OpenCV in Python
+Real-time human pose estimation using OpenCV in Python
+Real-time emotion detection from facial expressions using OpenCV in Python
+Real-time object tracking using OpenCV in Python
+Real-time vehicle detection and tracking using OpenCV in Python
+Real-time traffic sign detection and recognition using OpenCV in Python
+Real-time barcode and QR code detection using OpenCV in Python
+Real-time face recognition using OpenCV in Python
+Real-time object counting and tracking using OpenCV in Python
+Real-time image stitching and panoramas using OpenCV in Python
+Machine learning integration with OpenCV in Python
+Deep learning integration with OpenCV in Python
+Real-time facial landmark detection using OpenCV in Python
+Real-time gaze estimation and eye tracking using OpenCV in Python
+Real-time object classification using OpenCV in Python
+Real-time video stabilization using OpenCV in Python
+Real-time face beautification using OpenCV in Python
+Augmented reality using OpenCV in Python
+Stereoscopic vision and depth estimation using OpenCV in Python
+Camera calibration and 3D reconstruction using OpenCV in Python
+Image rectification and stereo matching with OpenCV in Python
+Handwritten digit recognition using OpenCV in Python
+Real-time text detection and recognition using OpenCV in Python
+Facial expression recognition using OpenCV in Python
+Real-time pose estimation using OpenCV in Python
+Vehicle license plate recognition using OpenCV in Python
+Robot vision and object detection using OpenCV in Python
+Fire and smoke detection using OpenCV in Python
+Real-time image watermarking using OpenCV in Python
+Real-time face swapping and morphing using OpenCV in Python
+Background removal and image segmentation with OpenCV in Python
+Document scanner using OpenCV in Python
+Real-time image feature tracking using OpenCV in Python
+Real-time image-based localization using OpenCV in Python
+Eye detection and gaze tracking using OpenCV in Python
+Real-time skin detection and analysis using OpenCV in Python
+Image recognition for augmented reality applications using OpenCV in Python
+Image-to-text conversion using OpenCV and OCR in Python
+Lane detection and lane keeping assist using OpenCV in Python
+Real-time traffic flow analysis using OpenCV in Python
+Real-time crowd counting and analysis using OpenCV in Python
+Optical flow analysis using OpenCV in Python
+Visual SLAM (Simultaneous Localization and Mapping) using OpenCV in Python
+Hand gesture recognition and control using OpenCV in Python
+3D object pose estimation using OpenCV in Python
+Iris recognition using OpenCV in Python
+Real-time smile detection using OpenCV in Python
+Real-time attention tracking using OpenCV in Python
+Reading barcodes in images using OpenCV in Python
+Creating panoramic images using OpenCV in Python
+QR code generation and detection using OpenCV in Python
+Face swapping using OpenCV in Python
+Image morphing using OpenCV in Python
+Background replacement and green screen effects using OpenCV in Python
+Optical character recognition from natural scenes using OpenCV in Python
+Real-time pose estimation for sports applications using OpenCV in Python
+3D hand and finger tracking using OpenCV in Python
+Real-time people counting and tracking using OpenCV in Python
+Real-time object recognition and tracking using OpenCV in Python

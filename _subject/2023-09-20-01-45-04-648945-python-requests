@@ -1,0 +1,100 @@
+Introduction to Python Requests library
+Sending HTTP GET requests with Python Requests
+Sending HTTP POST requests with Python Requests
+Sending HTTP PUT requests with Python Requests
+Sending HTTP DELETE requests with Python Requests
+Handling HTTP response codes with Python Requests
+Adding headers to requests using Python Requests
+Sending JSON data in requests with Python Requests
+Sending form data in requests with Python Requests
+Sending file uploads with Python Requests
+Handling cookies in Python Requests
+Handling redirects in Python Requests
+Timeout handling in Python Requests
+Handling SSL certificate verification with Python Requests
+Authenticating with Basic Auth using Python Requests
+Authenticating with OAuth using Python Requests
+Handling proxy servers with Python Requests
+Making asynchronous requests with Python Requests
+Streaming response content with Python Requests
+Parsing and extracting data from HTML responses using Python Requests
+Parsing and extracting data from JSON responses using Python Requests
+Making concurrent requests with Python Requests
+Sending XML requests with Python Requests
+Uploading files using multipart/form-data with Python Requests
+Handling response cookies in Python Requests
+Customizing SSL certificate verification in Python Requests
+Handling session management with Python Requests
+Enabling gzip compression in Python Requests
+Persistent connections in Python Requests
+Caching responses in Python Requests
+Automatic content decoding with Python Requests
+Configuring request timeouts with Python Requests
+Preparing requests using PreparedRequest objects in Python Requests
+Following redirects with Python Requests
+Advanced error handling with Python Requests
+Working with APIs using Python Requests
+Handling HTTP headers with Python Requests
+Authentication using OAuth2 with Python Requests
+Handling XML responses with Python Requests
+Throttling requests with Python Requests
+Handling cookies with Python Requests
+Sending requests with custom user agents using Python Requests
+Enabling request and response logging with Python Requests
+Mocking HTTP requests and responses with Python Requests
+Sending requests with different authentication methods using Python Requests
+Testing APIs with Python Requests
+Handling different types of content in responses using Python Requests
+Controlling request redirects with Python Requests
+Using query parameters in requests with Python Requests
+Making authenticated requests with Python Requests
+Handling rate limiting in Python Requests
+Retrying failed requests with Python Requests
+Debugging and troubleshooting requests with Python Requests
+Making requests with different HTTP methods using Python Requests
+Parsing response headers with Python Requests
+Making requests with different request bodies using Python Requests
+Using request hooks in Python Requests
+Fetching response history with Python Requests
+Sending requests with custom SSL certificates using Python Requests
+Sending requests through HTTP proxies using Python Requests
+Logging request and response details using Python Requests
+Handling different types of authentication challenges with Python Requests
+Controlling request timeouts and retries with Python Requests
+Implementing request retries with exponential backoff using Python Requests
+Using session objects for efficient request handling in Python Requests
+Sending binary data in requests using Python Requests
+Handling multipart/form-data requests with Python Requests
+Customizing redirect handling in Python Requests
+Customizing cookie handling in Python Requests
+Handling request timeout errors with Python Requests
+Using Python Requests with GraphQL APIs
+Handling different content encodings in response bodies with Python Requests
+Serializing and deserializing JSON request and response bodies with Python Requests
+Sending requests with custom headers using Python Requests
+Validating JSON responses with Python Requests
+Sending requests with custom HTTP methods using Python Requests
+Handling response redirection with Python Requests
+Sending requests with custom authentication headers using Python Requests
+Handling invalid SSL certificates with Python Requests
+Sending HTTP PATCH requests with Python Requests
+Generating and signing requests with JSON Web Tokens (JWT) using Python Requests
+Sending requests with custom user sessions using Python Requests
+Handling compressed responses with Python Requests
+Controlling request rate and concurrency with Python Requests
+Handling HTTP/2 requests with Python Requests
+Using Python Requests in web scraping
+Handling request timeouts and retries in multithreaded environments with Python Requests
+Implementing streaming uploads with Python Requests
+Handling OAuth token refresh with Python Requests
+Sending requests through SOCKS proxies with Python Requests
+Benchmarking request performance with Python Requests
+Sending SOAP requests with Python Requests
+Handling session cookies with Python Requests
+Sending requests with custom SSL certificates and private keys using Python Requests
+Implementing request retry with maximum retries and backoff using Python Requests
+Handling multipart/related requests with Python Requests
+Using Python Requests with AWS API Gateway
+Sending requests with custom network interface bindings using Python Requests
+Handling request authentication in Python Requests
+Controlling request concurrency and throttling with Python Requests

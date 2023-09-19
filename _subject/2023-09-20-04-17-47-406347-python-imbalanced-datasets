@@ -1,0 +1,100 @@
+Introduction to imbalanced datasets in Python
+Techniques for handling imbalanced datasets in Python
+Resampling techniques for imbalanced datasets in Python
+Undersampling methods for imbalanced datasets in Python
+Oversampling methods for imbalanced datasets in Python
+SMOTE (Synthetic Minority Over-sampling Technique) in Python for imbalanced datasets
+ADASYN (Adaptive Synthetic) in Python for imbalanced datasets
+Random under-sampling in Python for imbalanced datasets
+Tomek Links undersampling in Python for imbalanced datasets
+Cluster Centroids undersampling in Python for imbalanced datasets
+SMOTE + Tomek Links hybrid method for imbalanced datasets in Python
+SMOTE + ENN (Edited Nearest Neighbors) hybrid method for imbalanced datasets in Python
+SMOTE + ENN + Tomek hybrid method for imbalanced datasets in Python
+Combination of oversampling and undersampling techniques in Python for imbalanced datasets
+Synthetic oversampling techniques for imbalanced datasets in Python
+Random oversampling in Python for imbalanced datasets
+SMOTE-NC (SMOTE for Nominal and Continuous features) in Python for imbalanced datasets
+Borderline-SMOTE (Specific type of SMOTE) in Python for imbalanced datasets
+K-means SMOTE (SMOTE with K-means clustering) in Python for imbalanced datasets
+Safe-Level SMOTE (Specific type of SMOTE) in Python for imbalanced datasets
+RareBoost (Rare Class Boosting) in Python for imbalanced datasets
+EasyEnsemble (Specific type of ensemble method) in Python for imbalanced datasets
+BalanceCascade (Specific type of ensemble method) in Python for imbalanced datasets
+RUSBoost (Random Under Sampling with Boosting) in Python for imbalanced datasets
+SMOTETomek (Combination of SMOTE and Tomek Links) in Python for imbalanced datasets
+NEATER (Nonlinear Effective Anti-noise Technique) in Python for imbalanced datasets
+ROSBoost (Random OverSampling with Boosting) in Python for imbalanced datasets
+The effect of imbalanced datasets on machine learning algorithms in Python
+Evaluation metrics for imbalanced datasets in Python
+Confusion matrix analysis for imbalanced datasets in Python
+Precision for imbalanced datasets in Python
+Recall for imbalanced datasets in Python
+F1-score for imbalanced datasets in Python
+ROC curve analysis for imbalanced datasets in Python
+AUC (Area Under the Curve) analysis for imbalanced datasets in Python
+Choosing the right evaluation metric for imbalanced datasets in Python
+Dealing with misclassification costs in imbalanced datasets in Python
+Feature selection and engineering for imbalanced datasets in Python
+Anomaly detection for imbalanced datasets in Python
+One-Class SVM (Support Vector Machine) for imbalanced datasets in Python
+Ensemble methods for imbalanced datasets in Python
+Bagging for imbalanced datasets in Python
+Boosting for imbalanced datasets in Python
+Stacking for imbalanced datasets in Python
+Decision tree algorithms for imbalanced datasets in Python
+Random Forest for imbalanced datasets in Python
+Gradient Boosting for imbalanced datasets in Python
+XGBoost (Extreme Gradient Boosting) for imbalanced datasets in Python
+LightGBM (Light Gradient Boosting Machine) for imbalanced datasets in Python
+CatBoost for imbalanced datasets in Python
+Support Vector Machines (SVM) for imbalanced datasets in Python
+Logistic Regression for imbalanced datasets in Python
+Naive Bayes for imbalanced datasets in Python
+K-nearest neighbors (KNN) for imbalanced datasets in Python
+Neural networks for imbalanced datasets in Python
+The effect of feature scaling on imbalanced datasets in Python
+Stratified sampling for imbalanced datasets in Python
+Cross-validation techniques for imbalanced datasets in Python
+Oversampling the majority class for imbalanced datasets in Python
+Bias detection and mitigation techniques for imbalanced datasets in Python
+Active learning for imbalanced datasets in Python
+Cost-sensitive learning for imbalanced datasets in Python
+Meta-learning for imbalanced datasets in Python
+Imbalanced dataset problems in real-world applications using Python
+Credit card fraud detection using Python with imbalanced datasets
+Intrusion detection using Python with imbalanced datasets
+Medical diagnosis using Python with imbalanced datasets
+Fraud detection in financial transactions using Python with imbalanced datasets
+Sentiment analysis using Python with imbalanced datasets
+Predictive maintenance using Python with imbalanced datasets
+Customer churn prediction using Python with imbalanced datasets
+Image classification with imbalanced datasets using Python
+Text classification with imbalanced datasets using Python
+Anomaly detection in time series data using Python with imbalanced datasets
+Network traffic analysis using Python with imbalanced datasets
+Social network analysis using Python with imbalanced datasets
+Web click-through rate prediction using Python with imbalanced datasets
+Recommender systems using Python with imbalanced datasets
+Natural language processing tasks with imbalanced datasets using Python
+Time series forecasting with imbalanced datasets using Python
+Feature importance analysis for imbalanced datasets in Python
+Model interpretability for imbalanced datasets in Python
+Hyperparameter tuning for imbalanced datasets in Python
+Model deployment for imbalanced datasets in Python
+Handling imbalanced datasets in deep learning with Python
+Autoencoders for imbalanced datasets in Python
+Generative adversarial networks (GANs) for imbalanced datasets in Python
+Transfer learning for imbalanced datasets in Python
+Reinforcement learning for imbalanced datasets in Python
+Semi-supervised learning for imbalanced datasets in Python
+Active learning techniques for imbalanced datasets in Python
+Online learning for imbalanced datasets in Python
+Multi-label classification with imbalanced datasets using Python
+Multi-class classification with imbalanced datasets using Python
+Time series classification with imbalanced datasets using Python
+Anomaly detection in streaming data using Python with imbalanced datasets
+Change detection in imbalanced datasets using Python
+Model ensembles for imbalanced datasets in Python
+Visualization techniques for imbalanced datasets in Python
+Case studies and real-world examples of handling imbalanced datasets in Python

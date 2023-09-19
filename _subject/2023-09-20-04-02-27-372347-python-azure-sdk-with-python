@@ -1,0 +1,100 @@
+Installation and setup of Python Azure SDK
+Overview of Python Azure SDK
+Authentication and authorization using Python Azure SDK
+Working with Azure virtual machines using Python Azure SDK
+Managing storage accounts with Python Azure SDK
+Creating and configuring Azure SQL databases with Python Azure SDK
+Deploying applications to Azure App Service using Python Azure SDK
+Working with Azure Active Directory using Python Azure SDK
+Automating resource management with Python Azure SDK
+Monitoring and logging Azure resources with Python Azure SDK
+Working with Azure Cosmos DB using Python Azure SDK
+Implementing messaging queues in Azure with Python Azure SDK
+Managing Azure Logic Apps using Python Azure SDK
+Creating and managing Azure Functions with Python Azure SDK
+Working with Azure Key Vault using Python Azure SDK
+Securing Azure resources using Python Azure SDK
+Configuring network security groups with Python Azure SDK
+Setting up network peering using Python Azure SDK
+Deploying Azure virtual networks using Python Azure SDK
+Managing Azure Load Balancers with Python Azure SDK
+Implementing Azure Traffic Manager using Python Azure SDK
+Configuring Azure CDN using Python Azure SDK
+Working with Azure API Management using Python Azure SDK
+Implementing serverless computing with Python Azure SDK
+Managing Azure Event Grid using Python Azure SDK
+Working with Azure Service Bus using Python Azure SDK
+Implementing serverless workflows using Python Azure SDK
+Configuring Azure Data Lake Storage using Python Azure SDK
+Creating and managing Azure Machine Learning resources with Python Azure SDK
+Working with Azure Cognitive Services using Python Azure SDK
+Implementing anomaly detection using Python Azure SDK
+Deploying and managing Azure Kubernetes Service using Python Azure SDK
+Working with Azure Container Instances using Python Azure SDK
+Deploying and managing Azure Functions with Python Azure SDK
+Configuring Azure DevOps pipelines using Python Azure SDK
+Implementing continuous integration and deployment with Python Azure SDK
+Monitoring and debugging Azure resources using Python Azure SDK
+Working with Azure Monitor using Python Azure SDK
+Implementing Azure Log Analytics using Python Azure SDK
+Testing and troubleshooting Azure resources with Python Azure SDK
+Implementing Azure Policy using Python Azure SDK
+Working with Azure Resource Manager templates using Python Azure SDK
+Automating infrastructure deployment with Python Azure SDK
+Managing Azure virtual machine scale sets with Python Azure SDK
+Implementing load balancing for Azure virtual machines using Python Azure SDK
+Configuring Azure App Service environments using Python Azure SDK
+Managing Azure Storage Blob containers with Python Azure SDK
+Working with Azure Data Factory using Python Azure SDK
+Implementing Azure Batch using Python Azure SDK
+Working with Azure Search using Python Azure SDK
+Configuring Azure Front Door using Python Azure SDK
+Managing Azure Databricks using Python Azure SDK
+Working with Azure Notification Hubs using Python Azure SDK
+Implementing Azure API for FHIR using Python Azure SDK
+Configuring Azure Cache for Redis using Python Azure SDK
+Managing Azure Database for MariaDB using Python Azure SDK
+Working with Azure Data Catalog using Python Azure SDK
+Implementing Azure Storage Queues using Python Azure SDK
+Configuring Azure Analysis Services using Python Azure SDK
+Managing Azure Database for PostgreSQL using Python Azure SDK
+Working with Azure Resource Graph using Python Azure SDK
+Implementing Azure Stack Hub using Python Azure SDK
+Configuring Azure Event Hubs using Python Azure SDK
+Managing Azure Database for MySQL using Python Azure SDK
+Working with Azure Cognitive Search using Python Azure SDK
+Implementing Azure Reserved Virtual Machine Instances using Python Azure SDK
+Configuring Azure Media Services using Python Azure SDK
+Managing Azure Durable Functions using Python Azure SDK
+Working with Azure Sphere using Python Azure SDK
+Implementing Azure Security Center using Python Azure SDK
+Configuring Azure Synapse Analytics using Python Azure SDK
+Managing Azure Maps using Python Azure SDK
+Working with Azure Remote Rendering using Python Azure SDK
+Implementing Azure IoT Central using Python Azure SDK
+Configuring Azure Cost Management and Billing using Python Azure SDK
+Managing Azure Front Door using Python Azure SDK
+Working with Azure Container Registry using Python Azure SDK
+Implementing Azure ExpressRoute using Python Azure SDK
+Configuring Azure Quantum using Python Azure SDK
+Managing Azure Sentinel using Python Azure SDK
+Working with Azure API Management using Python Azure SDK
+Implementing Azure Advisor using Python Azure SDK
+Configuring Azure IoT Edge using Python Azure SDK
+Managing Azure Red Hat OpenShift using Python Azure SDK
+Working with Azure Shared Image Gallery using Python Azure SDK
+Implementing Azure Stack Edge using Python Azure SDK
+Configuring Azure Database Migration Service using Python Azure SDK
+Managing Azure Machine Learning Compute using Python Azure SDK
+Working with Azure Purview using Python Azure SDK
+Implementing Azure NetApp Files using Python Azure SDK
+Configuring Azure Cognitive Search using Python Azure SDK
+Managing Azure Database Migration Service using Python Azure SDK
+Working with Azure Communication Services using Python Azure SDK
+Implementing Azure VMware Solution using Python Azure SDK
+Configuring Azure Private Link using Python Azure SDK
+Managing Azure Machine Learning models using Python Azure SDK
+Working with Azure Arc enabled Kubernetes using Python Azure SDK
+Implementing Azure Logic Apps using Python Azure SDK
+Configuring Azure Sphere using Python Azure SDK
+Managing Azure Access Control using Python Azure SDK

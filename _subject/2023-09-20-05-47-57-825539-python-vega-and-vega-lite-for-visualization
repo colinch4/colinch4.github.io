@@ -1,0 +1,100 @@
+Introduction to Python Vega and Vega-lite
+Basic data visualization with Python Vega and Vega-lite
+Creating bar charts with Python Vega and Vega-lite
+Line charts with Python Vega and Vega-lite
+Scatter plots with Python Vega and Vega-lite
+Area charts with Python Vega and Vega-lite
+Pie charts with Python Vega and Vega-lite
+Histograms with Python Vega and Vega-lite
+Heatmaps with Python Vega and Vega-lite
+Box plots with Python Vega and Vega-lite
+Bubble charts with Python Vega and Vega-lite
+Force-directed graphs with Python Vega and Vega-lite
+Interactive maps with Python Vega and Vega-lite
+Radar charts with Python Vega and Vega-lite
+Donut charts with Python Vega and Vega-lite
+Tree maps with Python Vega and Vega-lite
+Gantt charts with Python Vega and Vega-lite
+Stream graphs with Python Vega and Vega-lite
+Chord diagrams with Python Vega and Vega-lite
+Parallel coordinates with Python Vega and Vega-lite
+Stacked area charts with Python Vega and Vega-lite
+Interactive tooltips with Python Vega and Vega-lite
+Overlaying multiple charts with Python Vega and Vega-lite
+Transitions and animations with Python Vega and Vega-lite
+Customizing colors and palettes in Python Vega and Vega-lite
+Creating interactive dashboards with Python Vega and Vega-lite
+Geographic visualizations with Python Vega and Vega-lite
+Network visualizations with Python Vega and Vega-lite
+Barley-breakdown charts with Python Vega and Vega-lite
+Brushing and linking in Python Vega and Vega-lite
+Sparkline charts with Python Vega and Vega-lite
+Candlestick charts with Python Vega and Vega-lite
+Violin plots with Python Vega and Vega-lite
+Sunburst charts with Python Vega and Vega-lite
+Calendar heatmaps with Python Vega and Vega-lite
+Streamline plots with Python Vega and Vega-lite
+Small multiples with Python Vega and Vega-lite
+Trellis plots with Python Vega and Vega-lite
+Waterfall charts with Python Vega and Vega-lite
+Network chord diagrams with Python Vega and Vega-lite
+Sankey diagrams with Python Vega and Vega-lite
+Word clouds with Python Vega and Vega-lite
+Slopegraphs with Python Vega and Vega-lite
+Force-directed edge bundling with Python Vega and Vega-lite
+Stacked bar charts with Python Vega and Vega-lite
+Interactive tooltips with Python Vega and Vega-lite
+Heatmap matrices with Python Vega and Vega-lite
+Streamgraph subplots with Python Vega and Vega-lite
+Polar area charts with Python Vega and Vega-lite
+3D lines with Python Vega and Vega-lite
+Small multiples scatter plots with Python Vega and Vega-lite
+Linked highlight brushing with Python Vega and Vega-lite
+Sortable bar charts with Python Vega and Vega-lite
+Stacked percentage area charts with Python Vega and Vega-lite
+Stream graphs with Python Vega and Vega-lite
+Linked line plots with Python Vega and Vega-lite
+Beeswarm plots with Python Vega and Vega-lite
+Grouped barcharts with Python Vega and Vega-lite
+Heatmap matrix with Python Vega and Vega-lite
+Waterfall charts with Python Vega and Vega-lite
+Interactive scatter plots with Python Vega and Vega-lite
+Linked scatter plots with Python Vega and Vega-lite
+Nested donut charts with Python Vega and Vega-lite
+Bar chart races with Python Vega and Vega-lite
+Linked histograms with Python Vega and Vega-lite
+Discrete heatmaps with Python Vega and Vega-lite
+Hierarchical edge bundling with Python Vega and Vega-lite
+Sankey diagram subplots with Python Vega and Vega-lite
+Treemap and Sunburst with Python Vega and Vega-lite
+Maps with choropleth in Python Vega and Vega-lite
+Interactive choropleth maps with Python Vega and Vega-lite
+Network graphs with Python Vega and Vega-lite
+Matrix heatmaps with Python Vega and Vega-lite
+Interactive stacked area charts with Python Vega and Vega-lite
+Binned scatter plots with Python Vega and Vega-lite
+Small multiples line plots with Python Vega and Vega-lite
+Box plots with custom whiskers in Python Vega and Vega-lite
+Contour plots with Python Vega and Vega-lite
+Linked bar and line charts with Python Vega and Vega-lite
+Stacked percentage area charts with Python Vega and Vega-lite
+Stream graphs with custom color schemes in Python Vega and Vega-lite
+Linked small multiples scatter plots with Python Vega and Vega-lite
+Hierarchical edge bundling with custom style in Python Vega and Vega-lite
+Discrete Heatmap matrices with custom axes configuration in Python Vega and Vega-lite
+Sankey diagrams with configurable node widths in Python Vega and Vega-lite
+Treemaps with custom tiling algorithms in Python Vega and Vega-lite
+Box plots with custom orientation in Python Vega and Vega-lite
+Matrix heatmaps with custom sorting and clustering in Python Vega and Vega-lite
+Interactive stacked area charts with custom smoothing in Python Vega and Vega-lite
+Binned scatter plots with custom bin size and overlap in Python Vega and Vega-lite
+Small multiples line plots with custom label formatting in Python Vega and Vega-lite
+Contour plots with custom interpolation in Python Vega and Vega-lite
+Linked bar and line charts with custom highlighting in Python Vega and Vega-lite
+Stacked percentage area charts with custom normalization in Python Vega and Vega-lite
+Stream graphs with custom interpolation in Python Vega and Vega-lite
+Linked small multiples scatter plots with custom tooltips in Python Vega and Vega-lite
+Hierarchical edge bundling with custom node labels in Python Vega and Vega-lite
+Discrete Heatmap matrices with custom color scales in Python Vega and Vega-lite
+Sankey diagrams with custom flow sorting in Python Vega and Vega-lite
+Treemaps with custom tiling layouts in Python Vega and Vega-lite

@@ -1,0 +1,100 @@
+Memory-based caching
+Disk-based caching
+Result caching
+Function-based caching
+Memoization
+Least Recently Used (LRU) caching
+First-in, first-out (FIFO) caching
+Time-based caching
+Key-based caching
+Partial caching
+Full caching
+Persistent caching
+Lazy caching
+Cache expiration policies
+Cache invalidation
+Cache hit ratio
+Cache miss rate
+Cache size optimization
+Cache concurrency
+Cache consistency
+Cache coherency
+Cache synchronization
+Cache partitioning
+Distributed caching
+In-memory database caching
+Database query caching
+Web page caching
+CDN caching
+Proxy server caching
+File-based caching
+Database table caching
+Session caching
+Query result caching
+Object caching
+Template caching
+Static file caching
+Microcaching
+HTTP response caching
+API response caching
+Query string caching
+Redis caching
+Memcached caching
+SQLAlchemy caching
+Django caching framework
+Flask caching extension
+Pyramid caching
+Werkzeug caching
+Flask-Cache extension
+Django-Redis caching
+Django-Cacheops caching
+Django-Memcached caching
+Django-Johnny caching
+Django-NativeCache caching
+Django-CachedModel caching
+Django-Cachalot caching
+Django-Cacheback caching
+Django-Kache caching
+Django-Uncached caching
+Django-Cascache caching
+Django-AutoCache caching
+Django-RightCache caching
+Django-DynamicCache caching
+Django-TimedCache caching
+Django-StaticallyCached caching
+Django-SelectiveCache caching
+Django-ModelCache caching
+Django-InMemoryCache caching
+Django-CachedForms caching
+Django-CacheSimulator caching
+Django-SimpleCache caching
+Django-RandomCache caching
+Django-ModelValidation caching
+Django-RateLimitedCache caching
+Django-ETagCache caching
+Django-SynchronousCache caching
+Django-AsynchronousCache caching
+Django-BackgroundCache caching
+Django-DistributedCache caching
+Django-SQLCache caching
+Django-BooleanCache caching
+Django-DatabaseCache caching
+Django-NginxCaching caching
+Django-Memcached-Cache caching
+Django-MultipleCache caching
+Django-SoftCache caching
+Django-ChunkedCache caching
+Django-TransactionalCache caching
+Django-BulkCache caching
+Django-DynamicPageCache caching
+Django-ClusteredCache caching
+Django-DistributedLock caching
+Django-StreamedCache caching
+Django-FileCache caching
+Django-MongoCache caching
+Django-SQLiteDatabaseCache caching
+Django-AggregatedCache caching
+Django-FilesystemCache caching
+Django-MemSQLCache caching
+Django-AtomicCache caching
+Django-LocalCache caching

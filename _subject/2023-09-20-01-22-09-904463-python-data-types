@@ -1,0 +1,100 @@
+Integer
+Float
+String
+Boolean
+List
+Tuple
+Dictionary
+Set
+None
+Complex
+Boolean operations
+Numeric operations
+String operations
+Type conversion
+Type checking
+Indexing
+Slicing
+Mutable vs. immutable data types
+Assigning values to variables
+Arithmetic operations
+Logical operators
+Comparison operators
+Membership operators
+Identity operators
+Bitwise operators
+Data type casting
+Nested data structures
+Type inference
+Type hints
+Built-in functions for data types
+Numeric data types in Python
+String formatting
+Data type conversion functions
+Integer arithmetic
+Float precision
+Boolean expressions
+String concatenation
+List operations
+List comprehension
+Tuple packing and unpacking
+Dictionary operations
+Dictionary comprehension
+Set operations
+Set methods
+None value usage
+Complex number operations
+Booleans and conditionals
+Strings with escape characters
+String interpolation
+String methods
+List indexing and slicing
+List methods
+Tuple methods
+Dictionary methods
+Set methods and operations
+Data type mutability
+Copying and cloning data types
+Changing data types dynamically
+Type errors and exception handling
+File I/O with different data types
+Date and time data types
+Regular expressions with string data types
+Mathematical operations with numeric data types
+Object-oriented programming with data types
+Data type comparison and sorting
+Type casting in function arguments
+Functional programming with data types
+Data type attributes and methods
+Generator objects with data types
+Enumerations and data types
+Namedtuple and data types
+Data type manipulation with Numpy
+Pandas data types
+Data type serialization and deserialization
+JSON data types
+XML data types
+CSV data types
+HTML data types
+Network data types (IP, MAC address)
+Database data types (SQL, NoSQL)
+Binary data types (bytes, bytearrays)
+Image data types (PIL, OpenCV)
+Audio data types (WAV, MP3)
+Video data types (MP4, AVI)
+Time series data types
+geospatial data types (latitude, longitude)
+Financial data types (stock price, currency)
+Social media data types (hashtags, mentions)
+Web scraping data types (HTML, CSS)
+Machine learning data types (features, labels)
+Natural language processing data types (tokens, sentences)
+Data visualization data types (plots, charts)
+Data analysis data types (data frames, data sets)
+Big data types (Hadoop, Spark)
+Cloud computing data types
+Internet of Things (IoT) data types
+Sensor data types
+Graph data types
+Artificial intelligence data types
+Blockchain data types

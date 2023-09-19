@@ -1,0 +1,100 @@
+Introduction to Python Keras
+Benefits of using Python Keras for deep learning
+Installation and setup of Python Keras
+Understanding the Keras API in Python
+Creating a simple neural network with Python Keras
+Preprocessing data for Python Keras models
+Training and evaluating a Python Keras model
+Fine-tuning a Pretrained model using Python Keras
+Implementing different types of layers in Python Keras
+Using different activation functions in Python Keras
+Implementing regularization techniques in Python Keras
+Handling imbalanced datasets with Python Keras
+Implementing data augmentation in Python Keras
+Working with recurrent neural networks in Python Keras
+Implementing convolutional neural networks in Python Keras
+Implementing transfer learning with Python Keras
+Understanding hyperparameters in Python Keras
+Tuning hyperparameters in Python Keras models
+Handling overfitting in Python Keras models
+Handling underfitting in Python Keras models
+Implementing early stopping in Python Keras
+Using callbacks in Python Keras
+Implementing model checkpointing in Python Keras
+Saving and loading Python Keras models
+Deploying a Python Keras model for production
+Understanding the concept of deep learning in Python Keras
+Implementing multi-layer perceptron models in Python Keras
+Implementing autoencoders in Python Keras
+Implementing generative adversarial networks (GANs) with Python Keras
+Implementing recurrent neural networks (RNN) in Python Keras
+Implementing long short-term memory (LSTM) networks in Python Keras
+Implementing gated recurrent units (GRUs) in Python Keras
+Implementing bidirectional recurrent neural networks in Python Keras
+Implementing convolutional neural networks (CNN) in Python Keras
+Implementing deep residual networks (ResNet) in Python Keras
+Implementing convolutional autoencoders in Python Keras
+Implementing variational autoencoders (VAEs) with Python Keras
+Implementing sequence-to-sequence models in Python Keras
+Implementing attention mechanisms in Python Keras
+Implementing capsule networks in Python Keras
+Using Python Keras for natural language processing (NLP)
+Implementing word embeddings in Python Keras
+Implementing recurrent neural networks for text classification in Python Keras
+Implementing convolutional neural networks for text classification in Python Keras
+Implementing recurrent neural networks for text generation in Python Keras
+Implementing convolutional neural networks for image classification in Python Keras
+Implementing generative models for image generation in Python Keras
+Transfer learning for image classification using Python Keras
+Transfer learning for object detection using Python Keras
+Implementing generative models for music generation in Python Keras
+Implementing recommender systems with Python Keras
+Implementing collaborative filtering with Python Keras
+Implementing factorization machines with Python Keras
+Implementing deep Q-learning for reinforcement learning in Python Keras
+Implementing deep deterministic policy gradients (DDPG) using Python Keras
+Implementing deep reinforcement learning for robotics with Python Keras
+Implementing deep reinforcement learning for game playing using Python Keras
+Implementing deep reinforcement learning for autonomous driving with Python Keras
+Implementing adversarial attacks and defenses with Python Keras
+Implementing adversarial training with Python Keras
+Implementing adversarial examples with Python Keras
+Implementing adversarial robustness with Python Keras
+Implementing federated learning with Python Keras
+Implementing distributed deep learning with Python Keras
+Implementing model parallelism with Python Keras
+Implementing data parallelism with Python Keras
+Hyperparameter tuning with Python Keras using optimization algorithms
+Implementing automated machine learning (AutoML) with Python Keras
+Implementing graph neural networks (GNNs) in Python Keras
+Implementing transfer learning for graph classification with Python Keras
+Implementing message passing neural networks (MPNNs) in Python Keras
+Implementing attention-based graph neural networks (GNNs) with Python Keras
+Implementing deep graph convolutional networks (GCNs) with Python Keras
+Implementing graph autoencoders with Python Keras
+Implementing graph generative models with Python Keras
+Implementing Bayesian deep learning with Python Keras
+Implementing uncertainty estimation in Python Keras models
+Implementing Bayesian neural networks with Python Keras
+Implementing variational inference in Python Keras models
+Implementing active learning with Python Keras
+Implementing model compression and quantization with Python Keras
+Implementing pruning and sparsity techniques with Python Keras
+Implementing knowledge distillation with Python Keras
+Implementing transfer learning for time series forecasting with Python Keras
+Implementing deep learning for anomaly detection with Python Keras
+Implementing deep learning for fraud detection with Python Keras
+Implementing deep learning for sentiment analysis with Python Keras
+Implementing deep learning for image segmentation with Python Keras
+Implementing deep learning for object tracking with Python Keras
+Implementing deep learning for emotion recognition with Python Keras
+Implementing deep learning for speech recognition with Python Keras
+Implementing deep learning for machine translation with Python Keras
+Implementing deep learning for named entity recognition with Python Keras
+Implementing deep learning for text summarization with Python Keras
+Implementing deep learning for question-answering with Python Keras
+Implementing deep learning for image captioning with Python Keras
+Implementing deep learning for style transfer with Python Keras
+Implementing deep learning for face recognition with Python Keras
+Implementing deep learning for gesture recognition with Python Keras
+Implementing deep learning for activity recognition with Python Keras

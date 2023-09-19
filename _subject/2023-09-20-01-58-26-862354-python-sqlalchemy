@@ -1,0 +1,100 @@
+Introduction to Python SQLAlchemy
+Installing and setting up SQLAlchemy in Python
+Connecting SQLAlchemy with different databases (MySQL, PostgreSQL, SQLite)
+Basic CRUD operations using SQLAlchemy
+Creating and using SQLAlchemy models
+Mapping database tables to SQLAlchemy models
+Defining relationships between SQLAlchemy models (one-to-one, one-to-many, many-to-many)
+Querying the database using SQLAlchemy's ORM (Object-Relational Mapping)
+Filtering and sorting data with SQLAlchemy queries
+Performing joins and subqueries with SQLAlchemy
+Using SQLAlchemy's query expressions and operators
+Aggregating and grouping data with SQLAlchemy
+Updating and deleting data with SQLAlchemy
+Handling transactions in SQLAlchemy
+Working with SQLAlchemy sessions
+Using SQLAlchemy to handle database migrations
+Integrating SQLAlchemy with Flask web framework
+Integrating SQLAlchemy with Django web framework
+Using SQLAlchemy with async frameworks (asyncio, Trio)
+Implementing pagination with SQLAlchemy
+Implementing authentication and authorization with SQLAlchemy
+Handling database errors and exceptions with SQLAlchemy
+Using SQLAlchemy's event system for custom logic
+Working with SQLAlchemy's declarative base
+Using SQLAlchemy's reflection to generate models from existing databases
+Using SQLAlchemy's hybrid properties for computed columns
+Performing full-text search with SQLAlchemy
+Implementing caching with SQLAlchemy
+Using SQLAlchemy to work with temporal data (dates, times, timestamps)
+Serializing SQLAlchemy models to JSON
+Deserializing JSON to SQLAlchemy models
+Validating data before saving with SQLAlchemy
+Handling concurrent writes with SQLAlchemy
+Implementing soft deletes with SQLAlchemy
+Using SQLAlchemy with Geospatial data (GIS)
+Implementing full-text search with SQLAlchemy's TextSearch
+Working with JSONB column types in SQLAlchemy
+Using SQLAlchemy to work with XML data
+Implementing indexing and optimization with SQLAlchemy
+Working with SQLAlchemy's query builder API
+Querying data by date ranges with SQLAlchemy
+Working with SQLAlchemy's relationship loaders
+Creating custom types and coercion with SQLAlchemy
+Using SQLAlchemy's table inheritance patterns
+Implementing auditing and versioning with SQLAlchemy
+Using SQLAlchemy to handle database constraints
+Handling and logging database errors with SQLAlchemy
+Working with SQLAlchemy's dialects for non-standard databases
+Implementing data validations with SQLAlchemy
+Using SQLAlchemy to work with NoSQL databases (MongoDB)
+Implementing user-defined functions with SQLAlchemy
+Using SQLAlchemy to work with UUIDs
+Implementing data encryption with SQLAlchemy
+Integrating SQLAlchemy with asynchronous web frameworks (FastAPI, Quart)
+Using SQLAlchemy to work with graph databases (Neo4j)
+Implementing geographic queries with SQLAlchemy
+Working with SQLAlchemy's connection pooling
+Implementing data replication and synchronization with SQLAlchemy
+Using SQLAlchemy's hybrid attributes for computed properties
+Implementing data migrations with Alembic (SQLAlchemy extension)
+Using SQLAlchemy's object lifecycle events
+Working with SQLAlchemy's ORM session lifecycle
+Implementing materialized views with SQLAlchemy
+Using SQLAlchemy to interact with REST APIs
+Implementing stored procedures with SQLAlchemy
+Working with SQLAlchemy's reflection to generate code from a database schema
+Using SQLAlchemy's association proxies
+Implementing asynchronous queries with SQLAlchemy's asyncio integration
+Using SQLAlchemy's connectionless execution mode
+Working with SQLAlchemy's metadata object
+Implementing data validation with SQLAlchemy constraints
+Using SQLAlchemy's query result caching
+Working with SQLAlchemy's ModelView for Flask-Admin
+Implementing real-time updates with SQLAlchemy and WebSockets
+Using SQLAlchemy's change tracking to selectively update objects
+Working with SQLAlchemy's composite types
+Implementing data sharding with SQLAlchemy
+Using SQLAlchemy's integration with Pandas for data analysis
+Working with SQLAlchemy's transaction isolation levels
+Implementing row-level security with SQLAlchemy
+Using SQLAlchemy's event-driven programming model
+Working with SQLAlchemy's materialized views for reporting
+Implementing multi-tenancy with SQLAlchemy
+Using SQLAlchemy's in-memory SQLite database for testing
+Working with SQLAlchemy's dynamic models
+Implementing optimistic concurrency control with SQLAlchemy
+Using SQLAlchemy's reflection to analyze database schema
+Working with SQLAlchemy's query hints for query optimization
+Implementing composite foreign keys with SQLAlchemy
+Using SQLAlchemy's JSON column types for flexible schema
+Working with SQLAlchemy's SQL generation and execution APIs
+Implementing automatic timestamps with SQLAlchemy
+Using SQLAlchemy's result object for custom query processing
+Working with SQLAlchemy's CTE (Common Table Expressions)
+Implementing multi-database support with SQLAlchemy
+Using SQLAlchemy's connectionless execution for testing
+Working with SQLAlchemy's expression language
+Implementing optimistic locking with SQLAlchemy
+Using SQLAlchemy's native SQL expressions for complex queries
+Working with SQLAlchemy's unit of work pattern

@@ -1,0 +1,100 @@
+Introduction to Python lists
+Initializing an empty list in Python
+Creating a list with elements in Python
+Accessing elements in a Python list
+Modifying elements in a Python list
+Appending elements to a Python list
+Inserting elements into a Python list
+Removing elements from a Python list
+Clearing a Python list
+Checking if an element exists in a Python list
+Finding the length of a Python list
+Slicing a Python list
+Copying a Python list
+Sorting a Python list
+Reversing a Python list
+Concatenating lists in Python
+Counting occurrences of an element in a Python list
+Checking if a list is empty in Python
+Checking if a list is sorted in Python
+Finding the index of an element in a Python list
+Counting the number of elements in a Python list
+Using the in operator with Python lists
+Creating a list with a range of numbers in Python
+Using list comprehension in Python
+Concatenating multiple lists in Python
+Merging two lists into one in Python
+Creating a list of unique elements in Python
+Creating a list with duplicate elements in Python
+Creating a list of random numbers in Python
+Adding elements from one list to another in Python
+Finding the maximum element in a Python list
+Finding the minimum element in a Python list
+Checking if a list contains only numbers in Python
+Repeating elements in a Python list
+Finding the sum of elements in a Python list
+Finding the average of elements in a Python list
+Finding the median of elements in a Python list
+Checking if a list is palindrome in Python
+Checking if a list is a subset of another list in Python
+Checking if two lists are equal in Python
+Checking if two lists have any common elements in Python
+Checking if a list contains any duplicates in Python
+Removing duplicates from a Python list
+Checking if a list contains only unique elements in Python
+Merging two lists without duplicates in Python
+Removing multiple elements from a Python list
+Checking if a list is symmetric in Python
+Checking if a list is a permutation of another list in Python
+Finding the frequency of elements in a Python list
+Checking if a list is a combination of two other lists in Python
+Creating a list with custom objects in Python
+Accessing object properties in a list of objects in Python
+Sorting a list of objects in Python based on a property
+Filtering a list of objects in Python based on a property
+Creating a list of lists in Python
+Accessing elements in a list of lists in Python
+Modifying elements in a list of lists in Python
+Creating a 2D grid using nested lists in Python
+Transposing a 2D grid in Python using nested lists
+Flattening a 2D grid in Python using nested lists
+Checking if a list is a matrix in Python
+Finding the row with the maximum sum in a matrix list in Python
+Finding the column with the maximum sum in a matrix list in Python
+Calculating the sum of each row in a matrix list in Python
+Calculating the sum of each column in a matrix list in Python
+Reversing a list using slicing in Python
+Checking if a list is sorted in ascending order in Python
+Checking if a list is sorted in descending order in Python
+Finding the kth smallest element in a Python list
+Finding the kth largest element in a Python list
+Swapping elements in a Python list
+Finding the second smallest element in a Python list
+Finding the second largest element in a Python list
+Converting a Python list to a tuple
+Converting a Python list to a set
+Converting a Python list to a string
+Converting a string to a list in Python
+Converting a list of strings to a single string in Python
+Converting a list of integers to a string in Python
+Combining multiple lists into a dictionary in Python
+Checking if a list is subsequence of another list in Python
+Modifying a list while iterating over it in Python
+Counting the number of occurrences of each element in a list in Python
+Reversing the order of elements in a list without using the reverse method in Python
+Checking if a list contains a sublist in Python
+Finding the common elements between two lists in Python
+Removing all occurrences of a specific element from a list in Python
+Merging multiple lists into a single list in Python
+Flattening a nested list in Python
+Sorting a list of strings based on their length in Python
+Cloning a list in Python
+Finding the mode of elements in a list in Python
+Checking if a list is a heap in Python
+Inserting elements into a sorted list in Python
+Finding the position of the first occurrence of an element in a list in Python
+Checking if a list contains all elements from another list in Python
+Splitting a list into multiple equal-sized sublists in Python
+Counting the number of unique elements in a list in Python
+Rearranging elements in a list in Python based on a specific condition
+Finding the difference between two lists in Python

@@ -1,0 +1,100 @@
+Introduction to Django ORM
+Basic CRUD operations using Django ORM
+Model creation in Django ORM
+Defining fields and their types in Django ORM models
+Relationships in Django ORM models (One-to-One, One-to-Many, Many-to-Many)
+Database migrations in Django ORM
+Querying data using Django ORM
+Filtering and sorting data in Django ORM queries
+Joining tables in Django ORM queries
+Aggregation and aggregation functions in Django ORM
+Querying related objects in Django ORM models
+Limiting and offsetting in Django ORM queries
+Selecting specific fields in Django ORM queries
+Raw SQL queries in Django ORM
+Executing raw database queries in Django ORM
+Caching queries in Django ORM
+Handling transactions in Django ORM
+Creating and executing stored procedures in Django ORM
+Handling concurrency in Django ORM
+Working with multiple databases in Django ORM
+Using Django ORM with MySQL
+Using Django ORM with PostgreSQL
+Using Django ORM with SQLite
+Using Django ORM with Oracle database
+Best practices for using Django ORM
+Performance optimization techniques for Django ORM queries
+Using indexes in Django ORM for better query performance
+Utilizing database specific features in Django ORM
+Handling complex queries in Django ORM
+Using subqueries in Django ORM queries
+Advanced query optimization techniques in Django ORM
+Setting up database connections in Django ORM
+Configuring database settings in Django ORM
+Data modeling conventions in Django ORM
+Using Django ORM in a multi-tenant application
+Securing Django ORM queries against SQL injection attacks
+Using Django ORM with Django Rest Framework
+Using Django ORM with GraphQL
+Integrating Django ORM with other ORMs or frameworks
+Implementing full-text search using Django ORM
+Implementing geospatial queries using Django ORM
+Implementing pagination in Django ORM queries
+Implementing cascading delete in Django ORM models
+Implementing soft deletes using Django ORM
+Handling large datasets in Django ORM
+Eager loading related objects in Django ORM queries
+Lazy loading related objects in Django ORM queries
+Implementing custom database functions in Django ORM
+Using Django ORM for data migrations in production
+Debugging and troubleshooting Django ORM queries
+Logging SQL queries executed by Django ORM
+Using Django ORM with NoSQL databases
+Using Django ORM with MongoDB
+Using Django ORM with Redis
+Using Django ORM with Elasticsearch
+Using Django ORM with Apache Cassandra
+Implementing full-text search with Django ORM and Elasticsearch
+Implementing caching with Django ORM and Redis
+Implementing real-time updates with Django ORM and WebSockets
+Implementing data replication and sharding with Django ORM
+Using Django ORM for data warehousing
+Implementing optimistic concurrency control with Django ORM
+Using Django ORM with time-series databases
+Implementing auditing and versioning with Django ORM
+Using Django ORM with AI and machine learning libraries
+Implementing sentiment analysis with Django ORM
+Implementing recommendation systems with Django ORM
+Using Django ORM for natural language processing tasks
+Implementing data analytics with Django ORM
+Using Django ORM for anomaly detection
+Implementing data visualization with Django ORM
+Using Django ORM with data science workflows
+Implementing cron jobs and scheduled tasks with Django ORM
+Extract, Transform, Load (ETL) operations with Django ORM
+Implementing data validation with Django ORM
+Implementing user authentication and authorization with Django ORM
+Implementing role-based access control with Django ORM
+Implementing social login with Django ORM
+Implementing password hashing and encryption with Django ORM
+Implementing two-factor authentication with Django ORM
+Implementing email notifications with Django ORM
+Implementing image and file uploads with Django ORM
+Implementing RESTful APIs with Django ORM
+Implementing GraphQL APIs with Django ORM
+Implementing real-time features with Django ORM and WebSockets
+Implementing internationalization and localization with Django ORM
+Implementing testing and test automation with Django ORM
+Implementing continuous integration and deployment with Django ORM
+Deploying Django ORM applications to cloud platforms
+Securing Django ORM applications against common security threats
+Monitoring and logging Django ORM applications
+Optimizing Django ORM application performance
+Scaling Django ORM applications
+Deploying Django ORM applications in containers
+Implementing serverless architecture with Django ORM
+Implementing microservices with Django ORM
+Implementing event-driven architecture with Django ORM
+Implementing real-time data streaming with Django ORM
+Using Django ORM in serverless computing platforms
+Future trends and advancements in Django ORM

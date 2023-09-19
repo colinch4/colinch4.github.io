@@ -1,0 +1,100 @@
+Introduction to Matplotlib
+Installing Matplotlib in Python
+Basic line plot using Matplotlib
+Customizing line plots in Matplotlib
+Scatter plots using Matplotlib
+Customizing scatter plots in Matplotlib
+Bar plots using Matplotlib
+Customizing bar plots in Matplotlib
+Histograms using Matplotlib
+Customizing histograms in Matplotlib
+Pie charts using Matplotlib
+Customizing pie charts in Matplotlib
+Box plots using Matplotlib
+Customizing box plots in Matplotlib
+Violin plots using Matplotlib
+Customizing violin plots in Matplotlib
+Heatmaps using Matplotlib
+Customizing heatmaps in Matplotlib
+3D plotting with Matplotlib
+Customizing 3D plots in Matplotlib
+Animations with Matplotlib
+Working with multiple plots using subplots in Matplotlib
+Saving plots in different file formats with Matplotlib
+Using Matplotlib in Jupyter Notebook
+Adding titles, labels, and legends in Matplotlib
+Adding gridlines in Matplotlib plots
+Changing plot styles in Matplotlib
+Adding annotations and text in Matplotlib
+Working with multiple axes in Matplotlib
+Using Matplotlib with pandas dataframes
+Creating interactive plots with Matplotlib and mplcursors
+Creating subplots with shared axes in Matplotlib
+Working with dates and time series data in Matplotlib
+Creating logarithmic plots with Matplotlib
+Adding colorbars in Matplotlib
+Working with categorical data in Matplotlib
+Creating polar plots with Matplotlib
+Working with geographical data in Matplotlib
+Creating network graphs with Matplotlib
+Visualizing statistical distributions with Matplotlib
+Working with image data in Matplotlib
+Creating 3D surface plots with Matplotlib
+Creating 3D scatter plots with Matplotlib
+Interactivity in Matplotlib plots with widgets
+Creating streamplots with Matplotlib
+Plotting real-time data with Matplotlib
+Creating stem plots with Matplotlib
+Working with colored scatter plots in Matplotlib
+Plotting on different axes in Matplotlib
+Working with LaTeX equations in Matplotlib
+Creating word clouds with Matplotlib
+Visualizing word embeddings with Matplotlib
+Creating network heatmaps with Matplotlib
+Creating Sankey diagrams with Matplotlib
+Visualizing decision trees with Matplotlib
+Creating treemaps with Matplotlib
+Creating candlestick charts with Matplotlib
+Creating waterfall charts with Matplotlib
+Creating radar charts with Matplotlib
+Creating error bars in Matplotlib
+Creating animated plots with Matplotlib and FuncAnimation
+Working with logarithmic scales in Matplotlib
+Creating 3D bar plots with Matplotlib
+Creating hexbin plots with Matplotlib
+Working with color maps in Matplotlib
+Creating strip plots with Matplotlib
+Adding tooltips to Matplotlib plots
+Creating spline plots with Matplotlib
+Creating sunburst plots with Matplotlib
+Visualizing hierarchical data with Matplotlib
+Creating streamtube plots with Matplotlib
+Working with geographical maps in Matplotlib
+Creating contour plots with Matplotlib
+Creating filled area plots with Matplotlib
+Visualizing word frequencies with Matplotlib
+Comparing multiple datasets with side-by-side plots in Matplotlib
+Working with missing data in Matplotlib
+Creating animated scatter plots with Matplotlib and celluloid
+Creating area plots with Matplotlib
+Creating animated 3D plots with Matplotlib and Celluloid
+Working with big data in Matplotlib with Dask
+Creating Gantt charts with Matplotlib
+Creating dendrograms with Matplotlib
+Working with multiple y-axes in Matplotlib
+Creating violin strip plots with Matplotlib
+Visualizing correlations with Matplotlib
+Creating stacked plots with Matplotlib
+Working with logarithmic scales in Matplotlib
+Creating donut plots with Matplotlib
+Visualizing random walk processes with Matplotlib
+Creating bidiagonal plots with Matplotlib
+Working with polar coordinates in Matplotlib
+Creating triangle plots with Matplotlib
+Creating Andrew's curves with Matplotlib
+Creating wind rose plots with Matplotlib
+Working with vector fields in Matplotlib
+Creating mosaic plots with Matplotlib
+Creating chord diagrams with Matplotlib
+Working with probability distributions in Matplotlib
+Creating animated parallel coordinates plots with Matplotlib

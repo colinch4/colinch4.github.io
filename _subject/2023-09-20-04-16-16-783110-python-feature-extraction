@@ -1,0 +1,100 @@
+Bag of words
+Term frequency-inverse document frequency (TF-IDF)
+Word embeddings
+Latent semantic analysis (LSA)
+Latent Dirichlet allocation (LDA)
+Pointwise mutual information (PMI)
+Mutual information
+Co-occurrence matrix
+Topic modeling
+Named entity recognition (NER)
+Dependency parsing
+Part-of-speech (POS) tagging
+Sentiment analysis
+Text classification
+Document similarity
+Text summarization
+Word frequency analysis
+N-gram model
+Tokenization
+Stop word removal
+Stemming
+Lemmatization
+TF-IDF vectorization
+Word2Vec
+GloVe
+FastText
+Extracting image features using convolutional neural networks (CNNs)
+Audio feature extraction using MFCCs (Mel-frequency cepstral coefficients)
+Video feature extraction using deep learning models like Convolutional Recurrent Neural Networks (CRNN)
+Bag of visual words
+Color histogram extraction
+Edge detection
+Optical character recognition (OCR)
+Facial feature extraction
+Object detection
+SIFT (Scale-Invariant Feature Transform)
+SURF (Speeded-Up Robust Features)
+HOG (Histogram of Oriented Gradients)
+Dense SIFT
+Corner detection
+Harris corner detection
+Scale space representation
+Scale-invariant feature detection and matching
+Template matching
+Scale-invariant feature transform (SIFT)
+Speeded up robust features (SURF)
+Scale-invariant shape matching (SIAM)
+Harris-affine
+Maximally stable extremal regions (MSER)
+Histogram of oriented gradients (HOG)
+Scale-invariant blob detector (SIBD)
+Feature points matching and tracking
+Optical flow
+Image segmentation
+Region-based segmentation
+Edge-based segmentation
+Clustering-based segmentation
+Thresholding
+Watershed algorithm
+Mean shift segmentation
+GrabCut algorithm
+Superpixel segmentation
+Color-based segmentation
+Texture-based segmentation
+Object recognition
+Object localization
+Object tracking
+Scene understanding
+Shape recognition
+Deep learning-based feature extraction
+Convolutional neural networks (CNNs)
+Recurrent neural networks (RNNs)
+Autoencoders
+Generative adversarial networks (GANs)
+Transfer learning
+Pre-trained models
+Fine-tuning
+Feature extraction using pre-trained models
+Dimensionality reduction techniques (e.g., Principal Component Analysis (PCA), t-distributed Stochastic Neighbor Embedding (t-SNE))
+Feature selection algorithms (e.g., chi-square test, information gain, correlation-based feature selection)
+Statistical feature extraction
+Histogram-based feature extraction
+Texture feature extraction
+Color feature extraction
+Shape feature extraction
+Motion feature extraction
+Frequency domain feature extraction
+Wavelet transform-based feature extraction
+Statistical moments-based feature extraction (e.g., mean, median, standard deviation)
+Fourier transform-based feature extraction
+Statistical feature selection techniques (e.g., forward selection, backward elimination, stepwise regression)
+Genetic algorithms for feature selection
+Recursive feature elimination (RFE)
+Sequential feature selection
+Mutual information-based feature selection
+F-score feature selection
+Wrapper methods for feature selection
+Embedded methods for feature selection
+Feature importance ranking
+Evaluation and comparison of feature extraction techniques.

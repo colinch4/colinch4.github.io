@@ -1,0 +1,100 @@
+Installation and setup of Django Rest Framework (DRF)
+Building RESTful APIs using DRF
+Serializers in DRF
+Views and Viewsets in DRF
+Routing and URL configuration in DRF
+Authentication and permissions in DRF
+Pagination in DRF
+Filtering and searching data in DRF
+Customizing the default DRF behavior
+Handling nested relationships in DRF
+Testing APIs in DRF
+Versioning APIs in DRF
+Handling errors and exceptions in DRF
+Customizing response format in DRF
+Handling file uploads in DRF
+Performing CRUD operations using DRF
+Integration of DRF with Django models
+Getting started with DRF and React frontend
+DRF serializers vs REST framework serializers
+Implementing token-based authentication in DRF
+Limiting API request rates with rate limiting in DRF
+Working with different types of data fields in DRF serializers
+Creating API documentation with DRF and Swagger
+Authentication using OAuth in DRF
+Implementing permissions and roles in DRF
+Managing user registration and authentication with DRF
+File downloads and responses in DRF
+Using view decorators in DRF
+Implementing pagination with cursor-based pagination in DRF
+Implementing JWT authentication in DRF
+Implementing social authentication (Facebook, Google, etc.) in DRF
+Handling nested serializers in DRF
+Building nested resources with DRF
+Implementing search functionality with Elasticsearch and DRF
+Serializing and deserializing JSON with DRF
+Implementing WebSockets with DRF
+Customizing response status codes in DRF
+Building real-time APIs with Django Channels and DRF
+Implementing push notifications with DRF and Firebase Cloud Messaging
+Using caching to improve API performance in DRF
+Implementing throttling in DRF to control API usage
+Implementing request validation in DRF
+Working with different authentication backends in DRF
+Implementing soft deletion with DRF
+Implementing data validation and serialization with Django forms and DRF
+Authenticating with external services using OAuth2 in DRF
+Implementing WebSockets notifications with Django Channels and DRF
+Implementing bulk operations with DRF
+Implementing server-side filtering in DRF
+Working with query parameters in DRF
+Implementing advanced filtering with Django filters and DRF
+Integrating Django Rest Framework with Celery for background tasks
+Profiling and optimizing DRF APIs for performance
+Implementing API versioning with DRF
+Implementing user registration and login using DRF serializers
+Implementing password reset functionality with DRF
+Implementing two-factor authentication with DRF
+Implementing user activity tracking with DRF and Django signals
+Implementing rate limiting with Redis and DRF
+Implementing content negotiation in DRF
+Implementing cross-origin resource sharing (CORS) in DRF
+Implementing filtering with URL query parameters in DRF
+Implementing advanced pagination with DRF and Django pagination
+Implementing data validation with Django forms and DRF serializers
+Implementing geolocation functionality with GeoDjango and DRF
+Implementing bulk updates with DRF
+Implementing custom permissions with DRF
+Implementing password strength validation with DRF serializers
+Implementing complex query filtering with Django ORM and DRF
+Implementing user roles and permissions with DRF
+Implementing webhooks with DRF
+Implementing JWT token authentication with DRF
+Implementing push notifications with DRF and OneSignal
+Implementing data export functionality with DRF
+Implementing validation with Django Validators and DRF serializers
+Implementing advanced authentication with third-party providers in DRF
+Implementing real-time chat functionality with Django Channels and DRF
+Implementing social authentication with OAuth2 in DRF
+Implementing permission-based access control with DRF
+Implementing customizable API response formats in DRF
+Implementing nested filtering with DRF
+Implementing user profile functionality with DRF
+Implementing user-based recommendations with DRF
+Implementing custom field validation with DRF serializers
+Implementing GraphQL with DRF
+Implementing file storage and retrieval with DRF
+Implementing email notifications with DRF
+Implementing localization and internationalization in DRF
+Implementing data exporting in different formats with DRF
+Implementing data import functionality with DRF
+Implementing Excel exporting and importing with DRF
+Implementing custom error handling with DRF
+Implementing auto-generated API documentation with DRF
+Implementing content compression and decompression with DRF
+Implementing asynchronous API requests with DRF and Celery
+Implementing GraphQL subscriptions with Django Channels and DRF
+Implementing multi-factor authentication with DRF
+Implementing data validation with DRF formsets
+Implementing automated testing for DRF APIs
+Implementing email verification and activation with DRF

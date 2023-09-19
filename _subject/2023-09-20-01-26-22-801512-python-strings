@@ -1,0 +1,100 @@
+Basics of Python strings
+Creating a string in Python
+String concatenation in Python
+Accessing characters in a string
+String indexing in Python
+Finding the length of a string
+String methods in Python
+Changing case of a string
+String formatting in Python
+Escape characters in strings
+Comparing strings in Python
+Checking if a string contains a substring
+Removing spaces from a string
+Splitting a string into a list of words
+Reversing a string in Python
+Checking if a string is empty
+Deleting characters from a string
+Counting occurrences of a character in a string
+Converting a string to lowercase
+Converting a string to uppercase
+Checking if a string starts or ends with a particular substring
+Finding the first occurrence of a substring in a string
+Finding the last occurrence of a substring in a string
+Replacing characters in a string
+Formatting numbers in a string
+Removing non-alphanumeric characters from a string
+Checking if a string is a palindrome
+Generating a random string in Python
+Joining strings in Python
+Checking if a string contains only digits
+Checking if a string contains only letters
+Checking if a string contains only uppercase letters
+Checking if a string contains only lowercase letters
+Checking if a string contains only whitespace characters
+Checking if a string is a valid email address
+Checking if a string is a valid URL
+Extracting numbers from a string
+Removing HTML tags from a string
+Removing punctuation from a string
+Removing newline characters from a string
+Checking if a string is a valid date
+Checking if a string is a valid time
+Splitting a string based on multiple delimiters
+Checking if a string contains only printable characters
+Counting words in a string
+Checking if a string is a valid IPv4 address
+Checking if a string is a valid IPv6 address
+Converting a string to a list of characters
+Extracting a substring between two markers
+Checking if a string contains a valid JSON object
+Checking if a string contains a valid XML document
+Extracting email addresses from a string
+Extracting URLs from a string
+Checking if a string contains a valid credit card number
+Removing duplicate characters from a string
+Checking if a string is a valid phone number
+Calculating the Levenshtein distance between two strings
+Removing leading and trailing whitespace from a string
+Converting a string to a dictionary
+Counting the number of occurrences of a word in a string
+Checking if a string contains emojis
+Checking if a string is a valid password
+Checking if a string is a valid username
+Extracting numbers and units from a string
+Checking if a string contains a valid ISBN number
+Extracting hashtags from a string
+Removing HTML entities from a string
+Checking if a string contains a valid social security number
+Extracting email domains from a string
+Checking if a string contains only printable ASCII characters
+Removing formatting characters from a string
+Reversing the order of words in a string
+Encrypting and decrypting a string
+Converting a string to a binary representation
+Checking if a string contains a valid MAC address
+Removing trailing zeros from a string
+Checking if a string contains a valid postal code
+Checking if a string is a valid URL slug
+Extracting decimal numbers from a string
+Checking if a string is a valid HTML tag
+Removing control characters from a string
+Checking if a string contains a valid IP address range
+Checking if a string is a valid XML tag
+Converting a string to a hexadecimal representation
+Checking if a string is a valid base64 encoded string
+Removing non-ASCII characters from a string
+Checking if a string contains a valid hexadecimal color code
+Checking if a string is a valid JSON array
+Calculating the similarity between two strings
+Extracting numbers and dates from a string
+Checking if a string is a valid HTML attribute
+Removing duplicate words from a string
+Checking if a string contains a valid ISBN-10 number
+Extracting URLs and metadata from a string
+Checking if a string contains a valid UUID
+Removing gender-specific terms from a string
+Checking if a string is a valid HTML comment
+Extracting currency symbols from a string
+Checking if a string contains a valid CSS selector
+Removing non-printable characters from a string

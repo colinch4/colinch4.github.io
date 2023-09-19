@@ -1,0 +1,100 @@
+Introduction to Python GUI programming
+Basics of creating a GUI in Python
+Choosing a GUI framework in Python
+Getting started with the Tkinter module
+Creating windows in Tkinter
+Adding widgets to a Tkinter window
+Laying out widgets in a Tkinter window
+Handling user input in Tkinter
+Working with buttons in Tkinter
+Creating labels in Tkinter
+Using entry fields in Tkinter
+Working with check boxes and radio buttons in Tkinter
+Using menus in Tkinter
+Creating drop-down menus in Tkinter
+Building message boxes in Tkinter
+Adding images to a Tkinter window
+Customizing the appearance of Tkinter widgets
+Changing fonts in Tkinter
+Setting widget colors in Tkinter
+Styling buttons in Tkinter
+Creating tooltips in Tkinter
+Working with event handling in Tkinter
+Understanding event-driven programming in Tkinter
+Handling button clicks in Tkinter
+Handling keyboard events in Tkinter
+Managing user input validation in Tkinter
+Displaying error messages in Tkinter
+Implementing drag and drop functionality in Tkinter
+Working with tabs and notebooks in Tkinter
+Implementing scrollbars in Tkinter
+Creating resizable windows in Tkinter
+Using grid layout in Tkinter
+Working with frames and containers in Tkinter
+Organizing widgets using the pack layout in Tkinter
+Building a calculator application using Tkinter
+Creating a text editor in Tkinter
+Designing a file explorer in Tkinter
+Building a simple image viewer in Tkinter
+Creating a weather application using Tkinter
+Building a chat client using Tkinter and sockets
+Introduction to PyQt for GUI programming in Python
+Getting started with PyQt
+Creating windows in PyQt
+Adding widgets to a PyQt window
+Laying out widgets in a PyQt window
+Handling user input in PyQt
+Working with buttons in PyQt
+Creating labels in PyQt
+Using line edit widgets in PyQt
+Working with check boxes and radio buttons in PyQt
+Using menus in PyQt
+Creating drop-down menus in PyQt
+Building message boxes in PyQt
+Adding images to a PyQt window
+Customizing the appearance of PyQt widgets
+Changing fonts in PyQt
+Setting widget colors in PyQt
+Styling buttons in PyQt
+Implementing tooltips in PyQt
+Working with event handling in PyQt
+Handling button clicks in PyQt
+Handling keyboard events in PyQt
+Managing user input validation in PyQt
+Displaying error messages in PyQt
+Implementing drag and drop functionality in PyQt
+Working with tabs and notebooks in PyQt
+Implementing scrollbars in PyQt
+Creating resizable windows in PyQt
+Using grid layout in PyQt
+Working with frames and containers in PyQt
+Organizing widgets using the box layout in PyQt
+Building a calculator application using PyQt
+Creating a text editor in PyQt
+Designing a file explorer in PyQt
+Building a simple image viewer in PyQt
+Creating a weather application using PyQt
+Building a chat client using PyQt and sockets
+Introduction to wxPython for GUI programming in Python
+Getting started with wxPython
+Creating windows in wxPython
+Adding widgets to a wxPython window
+Laying out widgets in a wxPython window
+Handling user input in wxPython
+Working with buttons in wxPython
+Creating labels in wxPython
+Using text input controls in wxPython
+Working with check boxes and radio buttons in wxPython
+Using menus in wxPython
+Creating drop-down menus in wxPython
+Building message boxes in wxPython
+Adding images to a wxPython window
+Customizing the appearance of wxPython widgets
+Changing fonts in wxPython
+Setting widget colors in wxPython
+Styling buttons in wxPython
+Implementing tooltips in wxPython
+Working with event handling in wxPython
+Handling button clicks in wxPython
+Handling keyboard events in wxPython
+Building a simple calculator application using wxPython

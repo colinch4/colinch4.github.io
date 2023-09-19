@@ -1,0 +1,100 @@
+Working with key-value pairs
+Understanding dictionary data structure in Python
+Creating an empty dictionary in Python
+Adding key-value pairs to a dictionary
+Accessing values from a dictionary using keys
+Removing key-value pairs from a dictionary
+Updating values in a dictionary
+Checking if a key exists in a dictionary
+Retrieving all keys from a dictionary
+Retrieving all values from a dictionary
+Iterating over a dictionary
+Using dictionary comprehension in Python
+Checking the length of a dictionary
+Getting the maximum and minimum values from a dictionary
+Sorting a dictionary by key
+Sorting a dictionary by value
+Merging two dictionaries in Python
+Creating a dictionary from two lists in Python
+Checking if two dictionaries are equal
+Deleting a dictionary in Python
+Copying a dictionary in Python
+Creating nested dictionaries in Python
+Converting a dictionary to JSON in Python
+Converting a JSON string to a dictionary in Python
+Accessing nested values in a dictionary
+Handling missing keys in a dictionary
+Changing the default value of a dictionary
+Updating multiple values in a dictionary
+Converting a dictionary to a list of tuples
+Converting a list of tuples to a dictionary
+Working with dictionaries in function arguments
+Counting occurrences of values in a dictionary
+Checking if a value exists in a dictionary
+Finding keys with maximum value in a dictionary
+Finding keys with minimum value in a dictionary
+Removing duplicate values from a dictionary
+Checking dictionary items for specific conditions
+Accessing dictionary values using get() method
+Creating a dictionary from a CSV file in Python
+Creating a dictionary from a text file in Python
+Sorting dictionary keys alphabetically
+Checking if a dictionary is empty
+Converting a dictionary to a string
+Swapping keys and values in a dictionary
+Finding the most common value in a dictionary
+Checking if a dictionary is a subset of another dictionary
+Counting unique values in a dictionary
+Serializing a dictionary in Python
+Deserializing a dictionary in Python
+Finding the key with the maximum length in a dictionary
+Merging multiple dictionaries in Python
+Creating a dictionary with default values
+Creating a defaultdict in Python
+Converting a dictionary to a Pandas DataFrame
+Checking if a dictionary is a superset of another dictionary
+Creating a dictionary with unique values
+Converting a dictionary to a JSON file
+Converting a dictionary to XML in Python
+Searching for values in a dictionary
+Finding the key associated with a specific value in a dictionary
+Counting the occurrences of each letter in a string using a dictionary
+Finding the largest value in a dictionary
+Finding the smallest value in a dictionary
+Checking if a dictionary is equal to another dictionary regardless of order
+Generating a random key-value pair in a dictionary
+Checking if a dictionary key is a string
+Creating a dictionary containing lists as values
+Creating a dictionary containing sets as values
+Checking if a dictionary key is an integer
+Accessing dictionary values using square brackets vs get()
+Transforming dictionary keys and values using map()
+Calculating the sum of all dictionary values
+Calculating the average of all dictionary values
+Calculating the product of all dictionary values
+Calculating the median of all dictionary values
+Calculating the mode of all dictionary values
+Calculating the standard deviation of all dictionary values
+Calculating the variance of all dictionary values
+Finding the key with the maximum count of occurrences in a dictionary
+Finding the key with the minimum count of occurrences in a dictionary
+Converting a dictionary to a NumPy array
+Adding a prefix or suffix to dictionary keys
+Reversing a dictionary in Python
+Finding the keys with a specific value in a dictionary
+Creating a dictionary from a list using index as keys
+Converting a dictionary of lists to a list of dictionaries
+Deleting multiple keys from a dictionary
+Finding the difference between two dictionaries
+Converting a dictionary of lists to a pandas DataFrame
+Creating a dictionary with sorted values from another dictionary
+Finding the top N keys with the highest values in a dictionary
+Finding the key-value pair with the highest value in a dictionary
+Checking if all values in a dictionary are equal
+Checking if all values in a dictionary are unique
+Calculating the total size of a dictionary in memory
+Creating a dictionary with the first letter of each word as the key
+Finding the average length of all values in a dictionary
+Finding the second highest value in a dictionary
+Calculating the frequency of each word in a text using a dictionary
+Calculating the percentage of each value in a dictionary

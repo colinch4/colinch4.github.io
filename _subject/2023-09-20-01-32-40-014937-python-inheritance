@@ -1,0 +1,100 @@
+Single inheritance
+Multiple inheritance
+Multilevel inheritance
+Hierarchical inheritance
+Hybrid inheritance
+Accessing superclass methods and attributes in inherited classes
+Method overriding
+Method overloading
+Constructors in inherited classes
+Abstract classes and methods in inheritance
+Polymorphism in inheritance
+Advantages of using inheritance
+Disadvantages of using inheritance
+Inheriting built-in Python classes
+Inheriting user-defined classes
+Base class and derived class in inheritance
+Super() function in inheritance
+Differences between inheritance and composition
+Inheritance vs encapsulation
+Understanding the "is-a" relationship in inheritance
+Understanding the "has-a" relationship in inheritance
+Method resolution order (MRO) in multiple inheritance
+Diamond problem in multiple inheritance
+Resolving conflicts in multiple inheritance
+Overriding and extending inherited methods
+Using super() to call superclass methods and constructors
+Overriding class variables in inherited classes
+Private, protected, and public access modifiers in inheritance
+Restricting inherited methods and attributes using access modifiers
+Dynamic inheritance in Python
+Inheritance in built-in Python modules and packages
+Inheriting magic methods (dunder methods)
+Inheriting properties and decorators
+Inheriting from abstract base classes in Python
+Using mixins in multiple inheritance
+Understanding object composition through inheritance
+Composition over inheritance principle
+Inheriting from multiple abstract base classes
+Inheritance in object-oriented design patterns
+Using inheritance to implement interface-like behavior
+Using inheritance to implement inheritance-like behavior
+Inheriting from third-party libraries and frameworks in Python
+Inheriting from container classes (e.g., list, dict)
+Inheriting from utility classes (e.g., namedtuple, OrderedDict)
+Overriding inherited exception classes
+Subclassing built-in Python exceptions
+Subclassing from metaclasses
+Inheriting and extending iterable classes
+Inheriting and extending generator classes
+Inheriting and extending context manager classes
+Inheriting and extending decorator classes
+Inheriting and extending serialization/deserialization classes
+Inheriting and extending GUI framework classes
+Inheriting and extending database access classes
+Inheriting and extending web framework classes
+Inheriting and extending testing framework classes
+Inheriting and extending machine learning framework classes
+Inheriting and extending natural language processing classes
+Inheriting and extending computer vision classes
+Inheriting and extending data visualization classes
+Using inheritance to achieve code reuse
+Using inheritance to modularize code
+Using inheritance to create specialized versions of classes
+Using inheritance to add new features to existing classes
+Using inheritance to create domain-specific languages (DSLs)
+Using inheritance to enforce code contracts
+Using inheritance to establish code conventions
+Using inheritance to simplify code maintenance
+Using inheritance to organize complex code bases
+Using inheritance to enhance code readability
+Using inheritance to reduce code redundancy
+Using inheritance to improve code scalability
+Using inheritance to manage code complexity
+Using inheritance to separate interface from implementation
+Using inheritance to enable code extensibility
+Using inheritance to enable code reusability
+Using inheritance to enable code interoperability
+Using inheritance to enable code testability
+Using inheritance to enable code maintainability
+Using inheritance to enable code flexibility
+Using inheritance to enable code modularity
+Using inheritance to enable code portability
+Using inheritance to enable code documentation
+Using inheritance to enable code troubleshooting
+Using inheritance to enable code performance optimization
+Using inheritance to enable code error handling
+Using inheritance to enable code version control
+Using inheritance to enable code debugging
+Using inheritance to enable code review
+Using inheritance to enable code profiling
+Using inheritance to enable code security
+Using inheritance to enable code refactoring
+Using inheritance to enable code logging
+Using inheritance to enable code analysis
+Using inheritance to enable code deployment
+Using inheritance to enable code backups
+Using inheritance to enable code recovery
+Using inheritance to enable code customization
+Using inheritance to enable code internationalization
+Using inheritance to enable code performance monitoring

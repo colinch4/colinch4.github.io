@@ -1,0 +1,100 @@
+Introduction to Python Bokeh
+Basic plotting with Bokeh
+Interactive data visualization with Bokeh
+Customizing Bokeh plots
+Adding annotations to Bokeh plots
+Working with different types of Bokeh plots (line, scatter, bar, etc.)
+Styling Bokeh plots with CSS
+Creating interactive tooltips in Bokeh
+Using interactivity tools in Bokeh (zoom, pan, hover, etc.)
+Embedding Bokeh plots in web applications
+Building interactive dashboards with Bokeh
+Creating maps and geographic visualizations with Bokeh
+Working with data sources in Bokeh (CSV, JSON, Pandas DataFrame, etc.)
+Using glyphs and markers in Bokeh plots
+Linking and brushing techniques in Bokeh
+Advanced customization options in Bokeh
+Animating Bokeh plots
+Streaming data with Bokeh
+Building interactive widgets with Bokeh
+Exporting Bokeh plots to different file formats (PNG, SVG, etc.)
+Working with layouts and multiple plots in Bokeh
+Handling and displaying large datasets in Bokeh
+Interacting with Bokeh using JavaScript callbacks
+Embedding Bokeh plots in Jupyter Notebooks
+Troubleshooting common issues in Bokeh
+Incorporating interactivity in Bokeh server applications
+Creating responsive visualizations in Bokeh
+Real-time data visualization with Bokeh
+Creating interactive heatmaps with Bokeh
+Visualizing network graphs with Bokeh
+Creating 3D visualizations with Bokeh
+Working with time series data in Bokeh
+Using color palettes and gradients in Bokeh
+Visualizing statistical data with Bokeh
+Adding legends and labels to Bokeh plots
+Building interactive choropleth maps with Bokeh
+Creating interactive histograms with Bokeh
+Working with categorical data in Bokeh
+Incorporating widgets and GUI components in Bokeh
+Creating responsive dashboards with Bokeh server
+Building interactive plots with Bokeh and D3.js
+Data exploration and analysis with Bokeh
+Visualizing financial data with Bokeh
+Creating interactive scatter plots with Bokeh
+Advanced color customization in Bokeh
+Using mouse and keyboard interactions in Bokeh
+Creating animated transitions in Bokeh
+Visualizing neural networks and deep learning models with Bokeh
+Building interactive time series plots with Bokeh
+Creating aesthetically pleasing visualizations with Bokeh
+Incorporating image analysis and visualization in Bokeh
+Using interactive sliders and selectors in Bokeh
+Building interactive geospatial visualizations with Bokeh
+Visualizing social network graphs with Bokeh
+Creating interactive bar plots with Bokeh
+Using Bokeh with other Python libraries (NumPy, SciPy, etc.)
+Visualizing genetic and genomic data with Bokeh
+Incorporating machine learning models in Bokeh visualization
+Creating interactive word clouds with Bokeh
+Working with streaming data and real-time updates in Bokeh
+Visualizing time-based data with Bokeh
+Building interactive network visualizations with Bokeh
+Using Bokeh to create animated visualizations
+Visualizing spatial data with Bokeh
+Incorporating interactivity in Bokeh server applications using callbacks
+Creating dynamic visualizations with Bokeh
+Interactive exploration of large datasets with Bokeh
+Visualizing sentiment analysis results with Bokeh
+Creating interactive sunburst plots with Bokeh
+Using Bokeh for image classification visualization
+Incorporating sentiment analysis models in Bokeh
+Creating interactive pie charts with Bokeh
+Interactive statistical analysis with Bokeh
+Visualizing machine learning model outputs with Bokeh
+Creating interactive word2vec embeddings with Bokeh
+Using Bokeh for image segmentation visualization
+Incorporating image captioning models in Bokeh
+Interactive exploration of neural network activations with Bokeh
+Visualizing decision trees and random forests with Bokeh
+Creating interactive sentiment analysis dashboards with Bokeh
+Using Bokeh for object detection visualization
+Incorporating image generation models in Bokeh
+Interactive exploration of neural style transfer with Bokeh
+Visualizing clustering algorithms with Bokeh
+Creating interactive text classification dashboards with Bokeh
+Using Bokeh for facial recognition visualization
+Incorporating generative adversarial networks (GANs) in Bokeh
+Interactive exploration of neural language models with Bokeh
+Visualizing anomaly detection algorithms with Bokeh
+Creating interactive spatiotemporal visualizations with Bokeh
+Using Bokeh for activity recognition visualization
+Incorporating recurrent neural networks (RNNs) in Bokeh
+Interactive exploration of topic modeling with Bokeh
+Visualizing recommendation algorithms with Bokeh
+Creating interactive time series forecasting dashboards with Bokeh
+Using Bokeh for fraud detection visualization
+Incorporating natural language processing (NLP) models in Bokeh
+Interactive exploration of sentiment analysis using deep learning with Bokeh
+Visualizing time series anomaly detection algorithms with Bokeh
+Creating interactive ECG analysis dashboards with Bokeh

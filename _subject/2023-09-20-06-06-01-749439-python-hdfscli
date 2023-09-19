@@ -1,0 +1,100 @@
+Introduction to HDFSCLI
+Installation and setup of HDFSCLI
+Basic commands in HDFSCLI
+Working with files in HDFSCLI
+Creating directories in HDFSCLI
+Listing files and directories in HDFSCLI
+Copying files to HDFS using HDFSCLI
+Moving files in HDFSCLI
+Deleting files and directories in HDFSCLI
+Reading files from HDFSCLI
+Writing files to HDFS using HDFSCLI
+Changing file permissions in HDFSCLI
+Changing ownership of files and directories in HDFSCLI
+Checking disk usage in HDFSCLI
+Enabling and disabling replication in HDFSCLI
+Checking the replication factor of files in HDFSCLI
+Setting HDFSCLI configuration properties
+Checking the health of the HDFS cluster using HDFSCLI
+Monitoring HDFS metrics with HDFSCLI
+Configuring HDFS fencing in HDFSCLI
+Mounting HDFS as a local file system using HDFSCLI
+Listing active NameNodes in HDFSCLI
+Running HDFSCLI in batch mode
+Enabling and disabling safe mode in HDFSCLI
+Creating snapshots of files and directories in HDFSCLI
+Restoring files from HDFS snapshots using HDFSCLI
+Checking the status of HDFSCLI commands
+Troubleshooting common issues in HDFSCLI
+Increasing the HDFSCLI buffer size
+Using HDFSCLI with Apache Ranger for access control
+Querying metadata information in HDFS using HDFSCLI
+Performing block-level operations in HDFSCLI
+Configuring high availability for HDFSCLI
+Configuring HDFS federation using HDFSCLI
+Using HDFSCLI with Apache Ambari for cluster management
+Managing HDFS quotas with HDFSCLI
+Configuring HDFS encryption using HDFSCLI
+Performing distributed file operations in HDFSCLI
+Setting up HDFS federation with multiple namespaces using HDFSCLI
+Using HDFSCLI with Apache Atlas for data governance
+Configuring HDFS cache using HDFSCLI
+Performing data tiering in HDFSCLI
+Setting up HDFSCLI to work with Kerberos authentication
+Managing HDFS snapshots using HDFSCLI commands
+Monitoring HDFS I/O operations using HDFSCLI
+Setting up HDFSCLI to work with LDAP authentication
+Using HDFSCLI with Apache Kafka for data streaming
+Configuring HDFSCLI to work with SSL/TLS encryption
+Performing data deduplication in HDFSCLI
+Using HDFSCLI with Apache Hive for data warehousing
+Configuring HDFSCLI to work with Apache Ranger for fine-grained access control
+Setting up HDFSCLI for continuous data replication
+Using HDFSCLI with Apache Pig for data processing
+Configuring HDFSCLI to work with Apache Solr for full-text search
+Implementing data lifecycle management in HDFS using HDFSCLI
+Setting up HDFSCLI for data archival
+Using HDFSCLI with Apache NiFi for data flow management
+Configuring HDFSCLI to work with Apache Knox for secure access
+Implementing data encryption at rest in HDFS using HDFSCLI
+Setting up HDFSCLI for data backup and recovery
+Using HDFSCLI with Apache Zeppelin for data visualization
+Configuring HDFSCLI to work with Apache Oozie for workflow scheduling
+Setting up HDFSCLI for data replication across multiple clusters
+Using HDFSCLI with Apache Spark for big data processing
+Configuring HDFSCLI to work with Apache Flink for stream processing
+Securing data in HDFS using HDFSCLI encryption features
+Setting up HDFSCLI for real-time data ingestion
+Using HDFSCLI with Apache Storm for real-time stream processing
+Configuring HDFSCLI to work with Apache Beam for data integration
+Setting up HDFSCLI for data sharing across multiple organizations
+Using HDFSCLI with Apache Cassandra for distributed database storage
+Configuring HDFSCLI to work with Apache CouchDB for document storage
+Setting up HDFSCLI for data warehousing with Apache Kylin
+Using HDFSCLI with Apache Mahout for machine learning on big data
+Configuring HDFSCLI to work with Apache Nutch for web crawling and search
+Setting up HDFSCLI for data analytics with Apache Kylin
+Using HDFSCLI with Apache Phoenix for SQL query on HBase
+Configuring HDFSCLI to work with Apache Samza for stream processing
+Setting up HDFSCLI for data replication across multiple data centers
+Using HDFSCLI with Apache Tez for high-performance batch processing
+Configuring HDFSCLI to work with Apache ZooKeeper for distributed coordination
+Setting up HDFSCLI for data integration with Apache NiFi
+Using HDFSCLI with Apache Kafka Connect for data streaming pipelines
+Configuring HDFSCLI to work with Apache Drill for self-service data exploration
+Setting up HDFSCLI for data processing with Apache Beam
+Using HDFSCLI with Apache NiFi Registry for version control of data flows
+Configuring HDFSCLI to work with Apache Atlas for data lineage and governance
+Setting up HDFSCLI for data storage with Apache Kudu
+Using HDFSCLI with Apache Kafka Streams for real-time stream processing
+Configuring HDFSCLI to work with Apache Impala for SQL query on Hadoop
+Setting up HDFSCLI for data integration with Apache Flume
+Using HDFSCLI with Apache Kafka MirrorMaker for data replication
+Configuring HDFSCLI to work with Apache Druid for real-time analytics
+Setting up HDFSCLI for data ingestion with Apache Sqoop
+Using HDFSCLI with Apache Kylin for OLAP cubes on Hadoop
+Configuring HDFSCLI to work with Apache Accumulo for distributed key-value storage
+Setting up HDFSCLI for data processing with Apache Flink
+Using HDFSCLI with Apache Nifi for data routing and transformation
+Configuring HDFSCLI to work with Apache Superset for data visualization
+Setting up HDFSCLI for distributed file sharing with Apache PDFBox

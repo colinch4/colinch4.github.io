@@ -1,0 +1,100 @@
+Introduction to OR-Tools library in Python
+Installing OR-Tools library in Python
+Linear programming with OR-Tools in Python
+Solving a simple linear program using OR-Tools in Python
+Integer programming with OR-Tools in Python
+Solving a simple integer program using OR-Tools in Python
+Mixed integer programming with OR-Tools in Python
+Solving a simple mixed integer program using OR-Tools in Python
+Bin packing problem with OR-Tools in Python
+Solving a bin packing problem using OR-Tools in Python
+Knapsack problem with OR-Tools in Python
+Solving a knapsack problem using OR-Tools in Python
+Vehicle routing problem with OR-Tools in Python
+Solving a vehicle routing problem using OR-Tools in Python
+Traveling salesman problem with OR-Tools in Python
+Solving a traveling salesman problem using OR-Tools in Python
+Graph coloring problem with OR-Tools in Python
+Solving a graph coloring problem using OR-Tools in Python
+Job shop scheduling problem with OR-Tools in Python
+Solving a job shop scheduling problem using OR-Tools in Python
+Resource allocation problem with OR-Tools in Python
+Solving a resource allocation problem using OR-Tools in Python
+TSP with time windows problem with OR-Tools in Python
+Solving a TSP with time windows problem using OR-Tools in Python
+Network flow problem with OR-Tools in Python
+Solving a network flow problem using OR-Tools in Python
+Facility location problem with OR-Tools in Python
+Solving a facility location problem using OR-Tools in Python
+Set covering problem with OR-Tools in Python
+Solving a set covering problem using OR-Tools in Python
+Set packing problem with OR-Tools in Python
+Solving a set packing problem using OR-Tools in Python
+Set partitioning problem with OR-Tools in Python
+Solving a set partitioning problem using OR-Tools in Python
+Vehicle scheduling problem with OR-Tools in Python
+Solving a vehicle scheduling problem using OR-Tools in Python
+Integer linear programming with OR-Tools in Python
+Solving a simple integer linear program using OR-Tools in Python
+Quadratic programming with OR-Tools in Python
+Solving a simple quadratic program using OR-Tools in Python
+Nonlinear programming with OR-Tools in Python
+Solving a simple nonlinear program using OR-Tools in Python
+Constraint programming with OR-Tools in Python
+Solving a simple constraint program using OR-Tools in Python
+Local search with OR-Tools in Python
+Solving a simple local search problem using OR-Tools in Python
+Metaheuristics with OR-Tools in Python
+Solving a simple problem using metaheuristics with OR-Tools in Python
+Genetic algorithms with OR-Tools in Python
+Solving a simple problem using genetic algorithms with OR-Tools in Python
+Simulated annealing with OR-Tools in Python
+Solving a simple problem using simulated annealing with OR-Tools in Python
+Tabu search with OR-Tools in Python
+Solving a simple problem using tabu search with OR-Tools in Python
+Particle swarm optimization with OR-Tools in Python
+Solving a simple problem using particle swarm optimization with OR-Tools in Python
+Ant colony optimization with OR-Tools in Python
+Solving a simple problem using ant colony optimization with OR-Tools in Python
+Constraint satisfaction problems with OR-Tools in Python
+Solving a simple constraint satisfaction problem using OR-Tools in Python
+Resource-constrained scheduling with OR-Tools in Python
+Solving a resource-constrained scheduling problem using OR-Tools in Python
+Scheduling with time windows with OR-Tools in Python
+Solving a scheduling problem with time windows using OR-Tools in Python
+Pulp library for mathematical programming in Python
+Introduction to Pulp library for mathematical programming in Python
+Linear programming with Pulp in Python
+Solving a simple linear program using Pulp in Python
+Integer programming with Pulp in Python
+Solving a simple integer program using Pulp in Python
+Mixed integer programming with Pulp in Python
+Solving a simple mixed integer program using Pulp in Python
+Bin packing problem with Pulp in Python
+Solving a bin packing problem using Pulp in Python
+Knapsack problem with Pulp in Python
+Solving a knapsack problem using Pulp in Python
+Vehicle routing problem with Pulp in Python
+Solving a vehicle routing problem using Pulp in Python
+Traveling salesman problem with Pulp in Python
+Solving a traveling salesman problem using Pulp in Python
+Graph coloring problem with Pulp in Python
+Solving a graph coloring problem using Pulp in Python
+Job shop scheduling problem with Pulp in Python
+Solving a job shop scheduling problem using Pulp in Python
+Resource allocation problem with Pulp in Python
+Solving a resource allocation problem using Pulp in Python
+TSP with time windows problem with Pulp in Python
+Solving a TSP with time windows problem using Pulp in Python
+Network flow problem with Pulp in Python
+Solving a network flow problem using Pulp in Python
+Facility location problem with Pulp in Python
+Solving a facility location problem using Pulp in Python
+Set covering problem with Pulp in Python
+Solving a set covering problem using Pulp in Python
+Set packing problem with Pulp in Python
+Solving a set packing problem using Pulp in Python
+Set partitioning problem with Pulp in Python
+Solving a set partitioning problem using Pulp in Python
+Vehicle scheduling problem with Pulp in Python
+Solving a vehicle scheduling problem using Pulp in Python

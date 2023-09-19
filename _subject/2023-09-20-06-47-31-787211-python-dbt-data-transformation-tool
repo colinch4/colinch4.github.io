@@ -1,0 +1,100 @@
+Introduction to dbt (Data transformation tool)
+Installing and setting up dbt
+Configuring dbt for different databases
+Creating a new project in dbt
+Understanding the dbt project structure
+Writing SQL queries in dbt
+Transforming data with dbt models
+Loading and extracting data with dbt
+Defining schemas and relationships in dbt
+Using variables and macros in dbt
+Creating and managing incremental models in dbt
+Scheduling and automating dbt runs
+Using the dbt command-line interface (CLI)
+Version control and collaboration in dbt
+Testing and debugging dbt models
+Performance optimization in dbt
+Modifying data with dbt operations
+Data lineage and documentation in dbt
+Source and target configuration in dbt
+Handling database connections in dbt
+Monitoring and logging with dbt
+Data quality checks and validations in dbt
+Securing sensitive data in dbt
+Integrating dbt with cloud platforms (AWS, GCP, Azure)
+Building data pipelines with dbt
+Deploying dbt models to production
+Monitoring and alerting in dbt
+Real-time data transformation with dbt
+Handling complex transformations in dbt
+Error handling and data recovery in dbt
+Implementing data partitioning in dbt
+Using snapshots and incremental syncs with dbt
+Continuous integration and deployment with dbt
+Troubleshooting common issues in dbt
+Scaling dbt for large datasets
+Advanced data transformation techniques with dbt
+Data transformation best practices with dbt
+Transforming structured and unstructured data in dbt
+Data governance and compliance with dbt
+Real-time analytics with dbt
+Building data marts and data warehouses with dbt
+Data exploration and visualizations with dbt
+Optimizing query performance in dbt
+Building data models for machine learning with dbt
+Implementing data lineage tracking in dbt
+Data cataloging and metadata management with dbt
+Using dbt with different database engines (PostgreSQL, BigQuery, Redshift, Snowflake)
+Data replication and synchronization with dbt
+Building a data pipeline with dbt and Apache Airflow
+Migrating from legacy ETL tools to dbt
+Managing version control conflicts in dbt
+Real-time streaming and processing with dbt
+Data archiving and retention policies in dbt
+Data anonymization and pseudonymization with dbt
+Dimensional modeling and data warehousing concepts in dbt
+Implementing data deduplication and aggregation with dbt
+Implementing slowly changing dimensions in dbt
+Building data models for advanced analytics with dbt
+Managing data lineage in complex data pipelines with dbt
+Data transformation automation with dbt and Python scripting
+Building custom plugins and integrations for dbt
+Data storytelling and reporting with dbt
+Implementing data access controls and permissions in dbt
+Handling data updates and deletes with dbt
+Building data validation frameworks with dbt
+Implementing data versioning and rollback in dbt
+Data migration strategies and techniques with dbt
+Building historical data models with dbt
+Implementing data encryption and masking in dbt
+Using dbt with data streaming platforms (Kafka, Kinesis)
+Building real-time dashboards with dbt and visualization tools
+Implementing data backup and disaster recovery with dbt
+Data virtualization and federation with dbt
+Implementing data lineage visualization in dbt
+Building data quality monitoring frameworks with dbt
+Implementing data governance frameworks with dbt
+Data profiling and data quality assessment in dbt
+Implementing change data capture (CDC) with dbt
+Building data models for natural language processing (NLP) with dbt
+Implementing data caching and performance optimization strategies with dbt
+Data quality and data anomaly detection with dbt
+Implementing data version control and release management with dbt
+Building real-time data integration pipelines with dbt
+Implementing data privacy and compliance measures in dbt
+Data replication and synchronization strategies with dbt
+Implementing complex data transformations with dbt macros
+Optimizing data transformations for scalability with dbt
+Implementing data profiling and data lineage analysis with dbt
+Building data models for time series analysis with dbt
+Implementing data validation and error handling techniques in dbt
+Data enrichment and cleansing with dbt
+Implementing data resiliency and fault tolerance with dbt
+Building anomaly detection models with dbt
+Implementing data version control and rollback techniques in dbt
+Real-time data ingestion and processing with dbt
+Implementing data deduplication and record matching in dbt
+Building data models for recommendation systems with dbt
+Implementing data archiving and data retention policies in dbt
+Handling data privacy and data protection requirements with dbt
+Best practices for data transformation and data engineering with dbt

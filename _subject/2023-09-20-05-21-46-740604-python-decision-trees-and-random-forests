@@ -1,0 +1,100 @@
+Decision tree algorithm
+Random forest algorithm
+Supervised learning in Python
+Classification using decision trees in Python
+Regression using decision trees in Python
+Feature selection in decision trees
+CART algorithm in Python
+ID3 algorithm in Python
+C4.5 algorithm in Python
+Gini impurity in decision trees
+Entropy in decision trees
+Information gain in decision trees
+Pruning decision trees in Python
+Handling missing values in decision trees
+Handling categorical variables in decision trees
+Visualizing decision trees in Python
+Pros and cons of decision trees
+Advantages of using decision trees in Python
+Disadvantages of using decision trees in Python
+Hyperparameter tuning in decision trees
+Bagging in random forests
+Boosting in random forests
+Number of trees in random forests
+Feature importance in random forests
+Out of bag (OOB) error in random forests
+Parallel processing in random forests
+Random forest vs decision tree
+Random forest vs other algorithms (SVM, KNN, etc.)
+Advantages of using random forests in Python
+Disadvantages of using random forests in Python
+Overfitting in decision trees and random forests
+Ensemble methods in Python
+Bias-variance tradeoff in random forests
+Cross-validation in decision trees and random forests
+Grid search in decision trees and random forests
+Scikit-learn library for decision trees and random forests
+Performance metrics for decision trees (accuracy, precision, recall, F1 score)
+Performance metrics for random forests (accuracy, precision, recall, F1 score)
+Feature importance plot in random forests
+Optimal tree depth in decision trees
+Pruning strategies in decision trees
+Handling imbalanced data in decision trees and random forests
+Tree-based feature engineering in random forests
+Decision boundaries in decision trees and random forests
+Class imbalance in decision trees and random forests
+Handling multicollinearity in decision trees and random forests
+Handling outliers in decision trees and random forests
+Decision trees vs linear regression
+Decision trees vs logistic regression
+Decision trees vs support vector machines (SVM)
+Decision trees vs k-nearest neighbors (KNN)
+Decision tree pruning methods (pre-pruning, post-pruning)
+Decision trees vs neural networks
+Decision trees vs naive Bayes algorithm
+Decision trees in recommendation systems
+Decision trees in customer segmentation
+Decision trees in fraud detection
+Decision trees in stock market prediction
+Decision trees in medical diagnosis
+Decision trees in sentiment analysis
+Decision trees in churn prediction
+Decision trees in credit scoring
+Decision trees in image classification
+Decision trees in natural language processing (NLP)
+Decision trees in anomaly detection
+Random forests in feature engineering
+Random forests in model interpretability
+Random forests in ensemble learning
+Random forests in time series forecasting
+Random forests in customer lifetime value prediction
+Random forests in clustering
+Random forests in multi-label classification
+Random forests in imbalanced data classification
+Random forests in dimensionality reduction
+Random forests in sentiment analysis
+Random forests in recommendation systems
+Random forests in fraud detection
+Random forests in text classification
+Random forests in credit scoring
+Random forests in image segmentation
+Random forests in face recognition
+Random forests in sentiment analysis
+Random forests in anomaly detection
+Random forests in churn prediction
+Random forests in stock market prediction
+Random forests in medical diagnosis
+Random forests in natural language processing (NLP)
+Random forests in click-through rate prediction
+Random forests in customer segmentation
+Random forests in regression analysis
+Random forests in binary classification
+Random forests in multi-class classification
+Random forests in feature selection
+Random forests in transfer learning
+Random forests in hyperparameter optimization
+Random forests in time series analysis
+Random forests in geospatial analysis
+Random forests in object detection
+Random forests in recommender systems
+Random forests in survival analysis

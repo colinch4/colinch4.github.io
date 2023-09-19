@@ -1,0 +1,100 @@
+Introduction to file handling in Python
+Opening a file in Python
+Closing a file in Python
+Reading data from a file in Python
+Writing data to a file in Python
+Appending data to a file in Python
+Checking if a file exists in Python
+Creating a new file in Python
+Deleting a file in Python
+Renaming a file in Python
+Moving a file to a different directory in Python
+Copying a file in Python
+Determining the size of a file in Python
+Reading a specific line from a file in Python
+Modifying a specific line in a file in Python
+Finding and replacing text in a file in Python
+Counting the number of occurrences of a word in a file using Python
+Sorting lines of a file alphabetically in Python
+Reading a CSV file in Python
+Writing data to a CSV file in Python
+Appending data to a CSV file in Python
+Creating a new directory in Python
+Removing a directory in Python
+Checking if a path is a file or directory in Python
+Listing all files and directories in a directory in Python
+Recursively listing all files and directories in a directory in Python
+Moving a directory to a different location in Python
+Copying a directory in Python
+Checking if a file is readable in Python
+Checking if a file is writable in Python
+Checking if a file is executable in Python
+Changing file permissions in Python
+Getting the last access timestamp of a file in Python
+Getting the creation timestamp of a file in Python
+Getting the last modification timestamp of a file in Python
+Changing the last access timestamp of a file in Python
+Changing the creation timestamp of a file in Python
+Changing the last modification timestamp of a file in Python
+Checking if a file is hidden in Python
+Reading binary data from a file in Python
+Writing binary data to a file in Python
+Appending binary data to a file in Python
+Serializing Python objects to a file using pickle module
+Deserializing Python objects from a file using pickle module
+Compressing a file using gzip in Python
+Decompressing a file using gzip in Python
+Compressing a file using zlib in Python
+Decompressing a file using zlib in Python
+Encrypting a file using cryptography module in Python
+Decrypting a file using cryptography module in Python
+Hashing a file in Python
+Verifying the integrity of a file using file checksum in Python
+Reading a JSON file in Python
+Writing data to a JSON file in Python
+Appending data to a JSON file in Python
+Parsing XML data from a file in Python
+Writing XML data to a file in Python
+Validating XML data in a file using a schema in Python
+Reading text data from a file in Python
+Writing text data to a file in Python
+Appending text data to a file in Python
+Searching for a specific pattern in a file using regular expressions in Python
+Splitting a file into multiple smaller files in Python
+Joining multiple files into a single file in Python
+Encrypting a file using RSA encryption in Python
+Decrypting a file using RSA decryption in Python
+Reading and writing to a file concurrently in Python
+Duplicating a file in Python
+Reversing the contents of a file in Python
+Modifying the file permissions of a file in Python
+Merging multiple files into a single file in Python
+Splitting a file into fixed-sized chunks in Python
+Interleaving multiple files into a single file in Python
+Reading a file line by line in Python
+Handling file exceptions in Python
+Reading a specific column from a tab-separated file in Python
+Writing data to a tab-separated file in Python
+Appending data to a tab-separated file in Python
+Writing hexadecimal data to a file in Python
+Reading hexadecimal data from a file in Python
+Displaying file metadata in Python
+Generating a secure random file in Python
+Flushing file buffer in Python
+Reading and writing large text files efficiently in Python
+Splitting a CSV file into multiple smaller CSV files in Python
+Joining multiple CSV files into a single CSV file in Python
+Sorting data in a file using external sorting in Python
+Using memory-mapped files in Python for handling large files
+Parsing log files in Python
+Reading Excel files in Python
+Creating Excel files in Python
+Writing data to Excel files in Python
+Appending data to Excel files in Python
+Reading data from a specific sheet in an Excel file in Python
+Writing data to a specific sheet in an Excel file in Python
+Appending data to a specific sheet in an Excel file in Python
+Updating existing data in an Excel file in Python
+Parsing PDF files in Python
+Writing data to PDF files in Python
+Extracting images from PDF files in Python

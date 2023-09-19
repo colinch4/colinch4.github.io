@@ -1,0 +1,100 @@
+Introduction to Python Bonobo
+Installing Python Bonobo
+Getting started with Python Bonobo
+Bonobo transformations: map
+Bonobo transformations: filter
+Bonobo transformations: reduce
+Bonobo transformations: group_by
+Bonobo transformations: aggregate
+Bonobo transformations: sort
+Bonobo transformations: merge
+Bonobo transformations: join
+Bonobo transformations: intersect
+Bonobo transformations: distinct
+Bonobo transformations: flatten
+Bonobo transformations: split
+Bonobo input sources: CSV files
+Bonobo input sources: JSON files
+Bonobo input sources: XML files
+Bonobo input sources: databases
+Bonobo input sources: APIs
+Bonobo input sources: web scraping
+Bonobo output destinations: CSV files
+Bonobo output destinations: JSON files
+Bonobo output destinations: XML files
+Bonobo output destinations: databases
+Bonobo output destinations: APIs
+Bonobo output destinations: logging
+Bonobo error handling: exception handling
+Bonobo error handling: error logging
+Bonobo error handling: retry strategies
+Bonobo error handling: data validation
+Bonobo performance tuning: parallel processing
+Bonobo performance tuning: lazy evaluation
+Bonobo performance tuning: in-memory caching
+Bonobo scheduling: executing a Bonobo graph
+Bonobo scheduling: scheduling periodic tasks
+Bonobo monitoring: tracking data flows
+Bonobo monitoring: logging execution progress
+Bonobo monitoring: visualizing data pipelines
+Bonobo testing: unit testing Bonobo graphs
+Bonobo testing: integration testing with sample data
+Bonobo testing: mocking external dependencies
+Bonobo testing: performance testing with large datasets
+Bonobo best practices: organizing Bonobo code
+Bonobo best practices: naming conventions
+Bonobo best practices: modularizing Bonobo graphs
+Bonobo best practices: documenting Bonobo code
+Bonobo best practices: error handling strategies
+Bonobo best practices: optimizing Bonobo graphs
+Bonobo resources: official documentation
+Bonobo resources: community forums
+Bonobo resources: tutorials and guides
+Bonobo resources: video tutorials
+Bonobo use cases: data extraction
+Bonobo use cases: data transformation
+Bonobo use cases: data loading
+Bonobo use cases: data integration
+Bonobo use cases: data cleaning
+Bonobo use cases: data validation
+Bonobo use cases: data aggregation
+Bonobo use cases: data migration
+Bonobo use cases: data synchronization
+Bonobo use cases: real-time data processing
+Bonobo use cases: batch processing
+Bonobo use cases: data analytics
+Bonobo use cases: machine learning pipelines
+Bonobo use cases: data visualization
+Bonobo use cases: data streaming
+Bonobo use cases: IoT data processing
+Bonobo use cases: log analysis
+Bonobo use cases: web scraping and data extraction
+Bonobo use cases: financial data analysis
+Bonobo use cases: social media data processing
+Bonobo use cases: healthcare data integration
+Bonobo use cases: e-commerce data cleaning
+Bonobo use cases: supply chain data management
+Bonobo use cases: fraud detection
+Bonobo use cases: sentiment analysis
+Bonobo use cases: recommendation systems
+Bonobo use cases: natural language processing
+Bonobo use cases: image processing
+Bonobo use cases: geospatial data analysis
+Bonobo use cases: time series analysis
+Bonobo use cases: customer segmentation
+Bonobo use cases: market research data processing
+Bonobo use cases: risk analysis
+Bonobo use cases: sales forecasting
+Bonobo use cases: product recommendation
+Bonobo use cases: sentiment analysis
+Bonobo use cases: data anonymization
+Bonobo use cases: data encryption
+Bonobo use cases: data masking
+Bonobo use cases: data governance
+Bonobo use cases: data lifecycle management
+Bonobo use cases: data quality management
+Bonobo use cases: data archival
+Bonobo use cases: data backup and recovery
+Bonobo use cases: data versioning and lineage
+Bonobo use cases: data visualization
+Bonobo use cases: data exploration and discovery.

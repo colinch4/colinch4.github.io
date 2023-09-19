@@ -1,0 +1,100 @@
+Introduction to Python Beautiful Soup
+Installing Python Beautiful Soup
+Basics of web scraping with Beautiful Soup
+Parsing HTML with Beautiful Soup
+Parsing XML with Beautiful Soup
+Navigating the tag structure with Beautiful Soup
+Finding tags with Beautiful Soup
+Searching for specific text with Beautiful Soup
+Modifying HTML with Beautiful Soup
+Extracting attributes from tags with Beautiful Soup
+Filtering tags based on attributes with Beautiful Soup
+Extracting data from tables with Beautiful Soup
+Handling malformed HTML with Beautiful Soup
+Advanced parsing techniques with Beautiful Soup
+Extracting data from nested tags with Beautiful Soup
+Scraping dynamic websites with Beautiful Soup
+Handling redirects with Beautiful Soup
+Handling login forms with Beautiful Soup
+Handling JavaScript-driven pages with Beautiful Soup
+Extracting data from AJAX-loaded content with Beautiful Soup
+Working with forms and user input with Beautiful Soup
+Scraping websites with session management using Beautiful Soup
+Scraping websites with cookies using Beautiful Soup
+Scraping websites with proxies using Beautiful Soup
+Scraping websites with CAPTCHA using Beautiful Soup
+Scraping websites with multi-threading using Beautiful Soup
+Scraping websites with multi-processing using Beautiful Soup
+Handling pagination with Beautiful Soup
+Crawling multiple pages with Beautiful Soup
+Scraping websites with login authentication using Beautiful Soup
+Scraping websites with IP rotation using Beautiful Soup
+Scraping websites with random user agent headers using Beautiful Soup
+Scraping websites with random delays between requests using Beautiful Soup
+Scraping websites with request throttling using Beautiful Soup
+Handling errors and exceptions in web scraping with Beautiful Soup
+Saving scraped data to a file with Beautiful Soup
+Generating CSV output with Beautiful Soup
+Generating JSON output with Beautiful Soup
+Generating XML output with Beautiful Soup
+Using Beautiful Soup with regular expressions
+Scraping multiple websites in parallel with Beautiful Soup
+Scheduling web scraping tasks with Beautiful Soup
+Extracting data from specific websites using Beautiful Soup
+Scraping product details from e-commerce websites using Beautiful Soup
+Scraping news articles from websites using Beautiful Soup
+Scraping weather data from websites using Beautiful Soup
+Scraping financial data from websites using Beautiful Soup
+Scraping social media data from websites using Beautiful Soup
+Scraping job listings from websites using Beautiful Soup
+Scraping real estate data from websites using Beautiful Soup
+Scraping sports data from websites using Beautiful Soup
+Scraping stock market data from websites using Beautiful Soup
+Scraping movie data from websites using Beautiful Soup
+Scraping music data from websites using Beautiful Soup
+Scraping book data from websites using Beautiful Soup
+Scraping restaurant data from websites using Beautiful Soup
+Scraping travel data from websites using Beautiful Soup
+Scraping health data from websites using Beautiful Soup
+Scraping government data from websites using Beautiful Soup
+Scraping educational data from websites using Beautiful Soup
+Scraping scientific data from websites using Beautiful Soup
+Scraping gaming data from websites using Beautiful Soup
+Scraping automotive data from websites using Beautiful Soup
+Scraping tech news from websites using Beautiful Soup
+Scraping fashion data from websites using Beautiful Soup
+Scraping food recipes from websites using Beautiful Soup
+Scraping celebrity data from websites using Beautiful Soup
+Scraping job application data from websites using Beautiful Soup
+Scraping blog data from websites using Beautiful Soup
+Scraping image data from websites using Beautiful Soup
+Scraping video data from websites using Beautiful Soup
+Scraping audio data from websites using Beautiful Soup
+Scraping user-generated content from websites using Beautiful Soup
+Scraping historical data from websites using Beautiful Soup
+Scraping live data from websites using Beautiful Soup
+Scraping data from international websites using Beautiful Soup
+Scraping data from local websites using Beautiful Soup
+Scraping data from government websites using Beautiful Soup
+Scraping data from educational websites using Beautiful Soup
+Scraping data from news websites using Beautiful Soup
+Scraping data from social media websites using Beautiful Soup
+Scraping data from e-commerce websites using Beautiful Soup
+Scraping data from financial websites using Beautiful Soup
+Scraping data from sports websites using Beautiful Soup
+Scraping data from stock market websites using Beautiful Soup
+Scraping data from movie websites using Beautiful Soup
+Scraping data from music websites using Beautiful Soup
+Scraping data from book websites using Beautiful Soup
+Scraping data from restaurant websites using Beautiful Soup
+Scraping data from travel websites using Beautiful Soup
+Scraping data from health websites using Beautiful Soup
+Scraping data from gaming websites using Beautiful Soup
+Scraping data from automotive websites using Beautiful Soup
+Scraping data from tech news websites using Beautiful Soup
+Scraping data from fashion websites using Beautiful Soup
+Scraping data from food websites using Beautiful Soup
+Scraping data from celebrity websites using Beautiful Soup
+Scraping data from job application websites using Beautiful Soup
+Scraping data from blog websites using Beautiful Soup
+Scraping data from image websites using Beautiful Soup

@@ -1,0 +1,100 @@
+Formatting date and time in Python
+Converting a string to a date object
+Converting a string to a time object
+Parsing a date and time from a string
+Getting the current date and time in Python
+Displaying the date and time in different formats
+Adding or subtracting time from a given date and time
+Comparing dates and times in Python
+Calculating the difference between two dates or times
+Getting the day of the week from a given date
+Finding the number of days in a given month
+Converting time zones in Python
+Working with time durations in Python
+Formatting timedelta objects in Python
+Calculating the difference between two time intervals
+Calculating the next occurrence of a specific date or time
+Using the dateutil module for advanced date and time manipulation
+Checking if a given year is a leap year
+Calculating the number of days between two given dates
+Displaying the date and time in a specific language
+Converting a Unix timestamp to a date and time object
+Calculating the age based on a given date of birth
+Calculating the difference between two timestamps in seconds
+Converting a time object to a string
+Converting a date object to a string
+Finding the last day of a given month
+Creating a countdown timer in Python
+Calculating the time elapsed between two events
+Checking if a given date is a holiday
+Adjusting for daylight saving time in Python
+Finding the current time in a specific time zone
+Sorting a list of dates and times in Python
+Getting the current timestamp in Python
+Converting a datetime object to a timestamp
+Rounding a datetime object to a specific resolution
+Extracting the month from a given date
+Extracting the year from a given date
+Extracting the hour from a given time
+Extracting the minute from a given time
+Extracting the second from a given time
+Extracting the microsecond from a given time
+Calculating the number of weekdays in a given month
+Finding the next occurrence of a specific day of the week
+Calculating the difference between two dates excluding weekends
+Calculating the average time between multiple timestamps
+Calculating the time difference in hours and minutes
+Converting a timestamp to a specific time zone
+Checking if a date falls within a specific range
+Converting a given date object to Julian Day number
+Calculating the number of hours between two given times
+Calculating the age in years, months, and days
+Finding the nearest future or past date
+Calculating the number of seconds in a given time duration
+Finding the oldest or newest date in a list
+Generating random dates within a specific range
+Calculating the number of working days between two dates
+Calculating the average time of a list of timestamps
+Converting a date object to a Unix timestamp
+Converting a time object to a Unix timestamp
+Calculating the number of minutes between two given times
+Calculating the number of seconds between two given times
+Determining if a given year is a century leap year
+Checking if a given timestamp is in the future
+Checking if a given timestamp is in the past
+Calculating the number of weeks between two given dates
+Calculating the number of years between two given dates
+Converting a datetime object to a specific time zone
+Comparing the order of two dates in Python
+Calculating the time difference in days, hours, and minutes
+Converting a timedelta object to a string
+Getting the ISO week number of a given date
+Getting the ISO calendar of a specific year
+Getting the week number of a given date
+Calculating the number of months between two given dates
+Calculating the number of milliseconds between two given times
+Converting a timestamp to a specific format
+Creating a date range with specific start and end dates
+Converting a given date to a string in a specific format
+Using the calendar module for date and time manipulation
+Converting a given timestamp to a specific time format
+Calculating the difference between two dates excluding holidays
+Adding or subtracting months from a given date
+Adding or subtracting years from a given date
+Finding the number of seconds since the Unix epoch
+Adding or subtracting seconds to a given time
+Adding or subtracting minutes to a given time
+Checking if a given date is in a specific month
+Checking if a given time is in a specific hour
+Checking if a given time is in a specific minute
+Checking if a given time is in a specific second
+Checking if a given time is in a specific microsecond
+Creating a recurring event with a specific interval
+Finding the number of weeks in a given year
+Calculating the average difference between multiple timestamps
+Finding the earliest or latest time in a list
+Generating a sequence of dates within a specific range
+Calculating the duration between two timestamps in days
+Calculating the duration between two timestamps in weeks
+Calculating the duration between two timestamps in years
+Converting a timedelta object to seconds

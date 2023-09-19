@@ -1,0 +1,100 @@
+Introduction to Gensim in Python
+Installing Gensim in Python
+Understanding the concept of topic modeling with Gensim
+Working with text corpora using Gensim
+Preprocessing text data with Gensim
+Building a document-term matrix with Gensim
+Implementing Latent Semantic Indexing (LSI) using Gensim
+Performing term frequency-inverse document frequency (TF-IDF) with Gensim
+Word2Vec implementation using Gensim
+Training a Word2Vec model with Gensim
+Using pre-trained Word2Vec models in Gensim
+Text similarity calculation using Gensim
+Topic modeling with Latent Dirichlet Allocation (LDA) using Gensim
+Evaluating topic models with coherence scores in Gensim
+Generating document representations using Gensim's Doc2Vec
+Building a document similarity search engine using Gensim
+Entity recognition using Gensim's Phrases
+Creating a word cloud with Gensim and PyLDAvis
+Extracting keyword phrases with Gensim's Phrases
+Finding similar documents using Gensim's Similarity module
+Text summarization using Gensim's Summarize
+Building a document retrieval system using Gensim
+Implementation of fastText using Gensim
+Building a document classification model using Gensim
+Text clustering with Gensim's K-Means
+Implementing Hierarchical Dirichlet Process (HDP) using Gensim
+Building a recommender system using Gensim
+Document clustering using Gensim's DBSCAN
+Implementing Non-Negative Matrix Factorization (NMF) with Gensim
+Sentiment analysis using Gensim's TextBlob
+Text classification using Gensim's LabeledLineSentence
+Building a similar image search engine using Gensim
+Analyzing social media data using Gensim
+Implementing BERT embeddings with Gensim
+Building a document similarity recommender system using Gensim
+Named Entity Recognition (NER) using Gensim
+Implementing a sentiment analysis model using Gensim
+Text summarization using Gensim's TextRank
+Building a recommendation system using Gensim's MatrixFactorization
+Implementing a chatbot with Gensim
+Sentiment analysis using Gensim's VADER
+Topic classification using Gensim's HDP
+Building a knowledge graph using Gensim and Neo4j
+Implementing a question-answering system using Gensim
+Document similarity analysis using Gensim's SoftCosineSimilarity
+Emotion detection using Gensim's FastText
+Topic labeling using Gensim's LDA
+Building a text generation model using Gensim and LSTM
+Named Entity Recognition (NER) using Gensim's FastText
+Implementing a multi-label text classification model with Gensim
+Building a recommendation system using Gensim's Word2Vec
+Document classification using Gensim's TF-IDF
+Text summarization using Gensim's LSA
+Sentiment analysis using Gensim's Doc2Vec
+Building a text classification model using Gensim's LDA
+Topic modeling with Gensim's LSA
+Building a chatbot using Gensim's Sequence to Sequence model
+Document clustering using Gensim's LDA
+Text similarity analysis with Gensim's Word Mover's Distance
+Implementing a question generation model using Gensim
+Building a sentiment analysis model using Gensim's Word2Vec
+Topic classification using Gensim's LSI
+Extractive text summarization using Gensim's TextRank
+Building a recommendation system using Gensim's LDA
+Sentiment analysis using Gensim's TF-IDF
+Named Entity Recognition (NER) using Gensim's LSI
+Implementing a text generation model using Gensim's Word2Vec
+Document similarity analysis using Gensim's LSI
+Building a text classification model using Gensim's LSI
+Topic modeling with Gensim's TF-IDF
+Building a chatbot using Gensim's LDA
+Document clustering using Gensim's TF-IDF
+Text similarity analysis with Gensim's Word2Vec
+Implementing a question answering model using Gensim's LSI
+Building a sentiment analysis model using Gensim's LSA
+Topic classification using Gensim's TF-IDF
+Extractive text summarization using Gensim's LSA
+Building a recommendation system using Gensim's TF-IDF
+Sentiment analysis using Gensim's LSA
+Named Entity Recognition (NER) using Gensim's TF-IDF
+Implementing a text generation model using Gensim's LSA
+Document similarity analysis using Gensim's TF-IDF
+Building a text classification model using Gensim's TF-IDF
+Topic modeling with Gensim's Doc2Vec
+Building a chatbot using Gensim's TF-IDF
+Document clustering using Gensim's Doc2Vec
+Text similarity analysis with Gensim's Doc2Vec
+Implementing a question answering model using Gensim's TF-IDF
+Building a sentiment analysis model using Gensim's Doc2Vec
+Topic classification using Gensim's Doc2Vec
+Extractive text summarization using Gensim's Doc2Vec
+Building a recommendation system using Gensim's Doc2Vec
+Sentiment analysis using Gensim's Doc2Vec
+Named Entity Recognition (NER) using Gensim's Doc2Vec
+Implementing a text generation model using Gensim's Doc2Vec
+Document similarity analysis using Gensim's Doc2Vec
+Building a text classification model using Gensim's Doc2Vec
+Topic modeling with Gensim's Word Mover's Distance
+Building a chatbot using Gensim's Doc2Vec
+Document clustering using Gensim's Word Mover's Distance

@@ -1,0 +1,100 @@
+Connecting a MySQL database to Redash
+Connecting a PostgreSQL database to Redash
+Connecting a MongoDB database to Redash
+Connecting an Oracle database to Redash
+Connecting a Microsoft SQL Server database to Redash
+Connecting a Google BigQuery database to Redash
+Connecting a Amazon Redshift database to Redash
+Connecting a SQLite database to Redash
+Connecting a Elasticsearch database to Redash
+Connecting a Apache Cassandra database to Redash
+Configuring data source settings in Redash
+Creating a new data source in Redash
+Editing an existing data source in Redash
+Deleting a data source in Redash
+Testing a data source connection in Redash
+Setting up SSL for a data source in Redash
+Using query snippets in Redash
+Using query variables in Redash
+Creating queries in Redash
+Writing SQL queries in Redash
+Using parameters in Redash queries
+Creating joins in Redash queries
+Aggregating data in Redash queries
+Filtering data in Redash queries
+Sorting and ordering data in Redash queries
+Grouping data in Redash queries
+Limiting and offsetting data in Redash queries
+Using subqueries in Redash queries
+Creating visualizations in Redash
+Building bar charts in Redash
+Creating line charts in Redash
+Designing pie charts in Redash
+Creating scatter plots in Redash
+Generating heat maps in Redash
+Creating tables in Redash
+Building pivot tables in Redash
+Creating dashboards in Redash
+Adding queries to a Redash dashboard
+Configuring layout and design in a Redash dashboard
+Sharing dashboards in Redash
+Schedule refreshing of data sources in Redash
+Configuring email alerts in Redash
+Exporting data from Redash
+Exporting query results as CSV in Redash
+Exporting query results as Excel in Redash
+Exporting query results as JSON in Redash
+Exporting query results as PDF in Redash
+Scheduling and automating queries in Redash
+Creating scheduled queries in Redash
+Managing scheduled queries in Redash
+Configuring query notifications in Redash
+Setting up data caching in Redash
+Configuring query execution time limits in Redash
+Optimizing query performance in Redash
+Monitoring resource usage in Redash
+Configuring user access and permissions in Redash
+Setting up single sign-on (SSO) in Redash
+Creating user groups in Redash
+Assigning permissions to user groups in Redash
+Managing user accounts in Redash
+Configuring password policies in Redash
+Auditing user activity in Redash
+Troubleshooting data source connectivity issues in Redash
+Troubleshooting query execution issues in Redash
+Troubleshooting visualization rendering issues in Redash
+Updating Redash to the latest version
+Migrating Redash to a new server
+Integrating Redash with external services (Slack, Zapier, etc.)
+Enabling and configuring alerts in Redash
+Setting up and configuring data alerts in Redash
+Configuring security settings in Redash
+Setting up HTTPS with a custom SSL certificate in Redash
+Configuring two-factor authentication (2FA) in Redash
+Enabling data retention policies in Redash
+Configuring data backups in Redash
+Configuring data encryption in Redash
+Setting up redundancy and failover in Redash
+Configuring performance optimizations in Redash
+Scaling Redash to handle larger datasets
+Configuring automatic scaling in Redash
+Monitoring Redash server health and performance
+Configuring email notifications in Redash
+Managing system logs in Redash
+Customizing the Redash user interface
+Changing Redash logo and branding
+Adding custom CSS styles to Redash
+Customizing error pages in Redash
+Localization and internationalization in Redash
+Configuring timezones in Redash
+Customizing date and time formats in Redash
+Redash API documentation and usage
+Creating custom query data sources in Redash
+Extending Redash with custom visualization types
+Contributing to the Redash open-source project
+Redash best practices for organizing queries and dashboards
+Redash performance tuning tips and tricks
+Redash security best practices
+Redash deployment strategies and considerations
+Redash integration with business intelligence (BI) tools
+Redash use cases and success stories
