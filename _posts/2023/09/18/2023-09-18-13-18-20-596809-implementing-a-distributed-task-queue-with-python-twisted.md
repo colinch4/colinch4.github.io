@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a distributed task queue with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, twisted]
+tags: [twisted]
 comments: true
 share: true
 ---

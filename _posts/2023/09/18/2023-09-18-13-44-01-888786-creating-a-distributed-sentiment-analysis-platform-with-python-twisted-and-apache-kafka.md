@@ -3,7 +3,7 @@ layout: post
 title: "Creating a distributed sentiment analysis platform with Python Twisted and Apache Kafka"
 description: " "
 date: 2023-09-18
-tags: [Python, DataProcessing]
+tags: [DataProcessing]
 comments: true
 share: true
 ---

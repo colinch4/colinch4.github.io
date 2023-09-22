@@ -3,7 +3,7 @@ layout: post
 title: "Implementing interactive virtual museums with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Python, VirtualMuseums]
+tags: [VirtualMuseums]
 comments: true
 share: true
 ---

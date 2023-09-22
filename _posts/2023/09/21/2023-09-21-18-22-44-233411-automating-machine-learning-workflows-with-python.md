@@ -3,7 +3,7 @@ layout: post
 title: "Automating machine learning workflows with Python"
 description: " "
 date: 2023-09-21
-tags: [python, machinelearning, automation]
+tags: [machinelearning, automation]
 comments: true
 share: true
 ---

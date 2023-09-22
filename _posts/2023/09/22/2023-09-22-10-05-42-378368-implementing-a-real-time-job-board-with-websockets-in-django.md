@@ -93,6 +93,7 @@ Now that we have set up the necessary infrastructure for websockets in Django, l
 1. Create a new template called `job_board.html`:
 
 ```html
+{% raw %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -125,6 +126,7 @@ Now that we have set up the necessary infrastructure for websockets in Django, l
     </script>
 </body>
 </html>
+{% endraw %}
 ```
 
 2. Create a new Django view to render the job board template:

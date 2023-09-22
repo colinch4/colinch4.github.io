@@ -3,7 +3,7 @@ layout: post
 title: "Annotation styles supported by MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

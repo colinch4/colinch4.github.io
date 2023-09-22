@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a string is a valid email address in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, EmailValidation]
+tags: [EmailValidation]
 comments: true
 share: true
 ---

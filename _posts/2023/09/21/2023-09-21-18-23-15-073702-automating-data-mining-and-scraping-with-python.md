@@ -3,7 +3,7 @@ layout: post
 title: "Automating data mining and scraping with Python"
 description: " "
 date: 2023-09-21
-tags: [python, datamining, webscraping]
+tags: [datamining, webscraping]
 comments: true
 share: true
 ---

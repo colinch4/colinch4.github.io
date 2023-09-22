@@ -3,7 +3,7 @@ layout: post
 title: "Identifying areas with frequent GPS signal loss in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, SignalLoss]
+tags: [SignalLoss]
 comments: true
 share: true
 ---

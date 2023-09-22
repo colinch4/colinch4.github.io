@@ -3,7 +3,7 @@ layout: post
 title: "Identifying areas with frequent GPS data updates in Python"
 description: " "
 date: 2023-09-22
-tags: [python, gpsdata]
+tags: [gpsdata]
 comments: true
 share: true
 ---

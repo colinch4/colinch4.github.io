@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for geofencing applications in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, Geofencing]
+tags: [Geofencing]
 comments: true
 share: true
 ---

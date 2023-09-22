@@ -3,7 +3,7 @@ layout: post
 title: "Automating document similarity and clustering analysis using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, TextAnalysis, DocumentSimilarity, ClusteringAnalysis]
+tags: [TextAnalysis, DocumentSimilarity, ClusteringAnalysis]
 comments: true
 share: true
 ---

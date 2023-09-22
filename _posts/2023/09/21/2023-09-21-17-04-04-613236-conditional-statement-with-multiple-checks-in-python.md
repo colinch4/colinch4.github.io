@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple checks in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionalstatement, logicaloperators]
+tags: [conditionalstatement, logicaloperators]
 comments: true
 share: true
 ---

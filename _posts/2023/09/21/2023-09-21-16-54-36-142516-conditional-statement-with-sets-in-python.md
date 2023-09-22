@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with sets in Python"
 description: " "
 date: 2023-09-21
-tags: [python, sets]
+tags: [sets]
 comments: true
 share: true
 ---

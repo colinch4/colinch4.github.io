@@ -3,7 +3,7 @@ layout: post
 title: "Running MyPy with multiple Python versions"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

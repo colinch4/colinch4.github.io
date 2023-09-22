@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for vowels in a string in Python"
 description: " "
 date: 2023-09-21
-tags: [python, ifstatement, vowels]
+tags: [ifstatement, vowels]
 comments: true
 share: true
 ---

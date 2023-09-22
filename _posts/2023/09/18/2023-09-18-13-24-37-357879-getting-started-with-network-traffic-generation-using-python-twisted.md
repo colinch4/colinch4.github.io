@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with network traffic generation using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, Networking]
+tags: [Networking]
 comments: true
 share: true
 ---

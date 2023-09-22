@@ -3,7 +3,7 @@ layout: post
 title: "Calculating time of arrival using GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [python, timeofarrival]
+tags: [timeofarrival]
 comments: true
 share: true
 ---

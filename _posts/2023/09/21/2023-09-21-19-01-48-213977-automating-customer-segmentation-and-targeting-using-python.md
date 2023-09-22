@@ -3,7 +3,7 @@ layout: post
 title: "Automating customer segmentation and targeting using Python"
 description: " "
 date: 2023-09-21
-tags: [python, automation]
+tags: [automation]
 comments: true
 share: true
 ---

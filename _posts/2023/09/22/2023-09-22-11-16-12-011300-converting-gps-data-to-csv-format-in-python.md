@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to CSV format in Python"
 description: " "
 date: 2023-09-22
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

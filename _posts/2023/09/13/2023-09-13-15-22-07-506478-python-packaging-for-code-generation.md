@@ -25,6 +25,7 @@ pip install jinja2
 Here's a simple example of using Jinja2 for code generation:
 
 ```python
+{% raw %}
 from jinja2 import Template
 
 template = Template("""
@@ -36,10 +37,13 @@ hello_world()
 
 code = template.render(name="John")
 print(code)
+{% endraw %}
 ```
 
+{% raw %}
 In this example, we define a template for a Python function that prints "Hello, {{ name }}!". We render the template by providing the actual value for the `name` placeholder, which is "John". The rendered code is then printed to the console.
 
+{% endraw %}
 You can leverage Jinja2's powerful features like conditionals, loops, and filters to generate complex code structures.
 
 ## 2. **Cheetah** ( #Cheetah #CodeGeneration )

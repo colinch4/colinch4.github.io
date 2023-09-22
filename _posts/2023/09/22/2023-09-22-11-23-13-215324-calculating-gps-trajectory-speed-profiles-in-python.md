@@ -3,7 +3,7 @@ layout: post
 title: "Calculating GPS trajectory speed profiles in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, Trajectory]
+tags: [Trajectory]
 comments: true
 share: true
 ---

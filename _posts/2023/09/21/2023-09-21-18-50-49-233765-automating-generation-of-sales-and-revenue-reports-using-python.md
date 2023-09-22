@@ -3,7 +3,7 @@ layout: post
 title: "Automating generation of sales and revenue reports using Python"
 description: " "
 date: 2023-09-21
-tags: [python, datascience]
+tags: [datascience]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python type annotations in MyPy"
 description: " "
 date: 2023-09-20
-tags: [Python, TypeAnnotations]
+tags: [TypeAnnotations]
 comments: true
 share: true
 ---

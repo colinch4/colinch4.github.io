@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with numbers comparison in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionalstatements]
+tags: [conditionalstatements]
 comments: true
 share: true
 ---

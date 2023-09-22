@@ -3,7 +3,7 @@ layout: post
 title: "Identifying areas with high GPS speed variance in Python"
 description: " "
 date: 2023-09-22
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

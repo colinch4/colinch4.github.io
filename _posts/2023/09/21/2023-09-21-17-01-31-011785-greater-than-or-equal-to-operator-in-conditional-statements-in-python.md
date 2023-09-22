@@ -3,7 +3,7 @@ layout: post
 title: "Greater than or equal to operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [python, comparisonoperators]
+tags: [comparisonoperators]
 comments: true
 share: true
 ---

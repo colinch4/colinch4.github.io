@@ -3,7 +3,7 @@ layout: post
 title: "How to install MyPy for Python"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

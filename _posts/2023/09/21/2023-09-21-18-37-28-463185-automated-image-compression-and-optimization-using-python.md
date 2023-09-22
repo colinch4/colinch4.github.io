@@ -3,7 +3,7 @@ layout: post
 title: "Automated image compression and optimization using Python"
 description: " "
 date: 2023-09-21
-tags: [python, imagemanipulation]
+tags: [imagemanipulation]
 comments: true
 share: true
 ---

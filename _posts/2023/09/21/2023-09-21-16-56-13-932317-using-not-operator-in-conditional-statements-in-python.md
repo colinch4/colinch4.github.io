@@ -3,7 +3,7 @@ layout: post
 title: "Using not operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditional]
+tags: [conditional]
 comments: true
 share: true
 ---

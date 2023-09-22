@@ -3,7 +3,7 @@ layout: post
 title: "Troubleshooting common issues with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

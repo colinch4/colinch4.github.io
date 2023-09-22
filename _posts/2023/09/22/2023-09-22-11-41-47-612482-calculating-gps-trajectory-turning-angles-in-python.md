@@ -3,7 +3,7 @@ layout: post
 title: "Calculating GPS trajectory turning angles in Python"
 description: " "
 date: 2023-09-22
-tags: [python, trajectory]
+tags: [trajectory]
 comments: true
 share: true
 ---

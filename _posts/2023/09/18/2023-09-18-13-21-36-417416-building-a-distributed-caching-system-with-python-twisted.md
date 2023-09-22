@@ -3,7 +3,7 @@ layout: post
 title: "Building a distributed caching system with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, distributedcaching]
+tags: [distributedcaching]
 comments: true
 share: true
 ---

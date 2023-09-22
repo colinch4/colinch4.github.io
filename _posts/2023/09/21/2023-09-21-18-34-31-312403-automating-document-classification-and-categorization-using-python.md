@@ -3,7 +3,7 @@ layout: post
 title: "Automating document classification and categorization using Python"
 description: " "
 date: 2023-09-21
-tags: [python, documentclassification]
+tags: [documentclassification]
 comments: true
 share: true
 ---

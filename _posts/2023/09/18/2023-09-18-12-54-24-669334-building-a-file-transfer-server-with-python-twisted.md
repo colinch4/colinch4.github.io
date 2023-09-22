@@ -3,7 +3,7 @@ layout: post
 title: "Building a file transfer server with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

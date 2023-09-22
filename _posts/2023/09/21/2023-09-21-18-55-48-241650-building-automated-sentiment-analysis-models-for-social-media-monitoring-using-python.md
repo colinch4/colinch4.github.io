@@ -3,7 +3,7 @@ layout: post
 title: "Building automated sentiment analysis models for social media monitoring using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, SentimentAnalysis, SocialMediaMonitoring]
+tags: [SentimentAnalysis, SocialMediaMonitoring]
 comments: true
 share: true
 ---

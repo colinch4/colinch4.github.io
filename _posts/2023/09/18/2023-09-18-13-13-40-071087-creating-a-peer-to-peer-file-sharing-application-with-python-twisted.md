@@ -3,7 +3,7 @@ layout: post
 title: "Creating a peer-to-peer file sharing application with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, filesharing]
+tags: [filesharing]
 comments: true
 share: true
 ---

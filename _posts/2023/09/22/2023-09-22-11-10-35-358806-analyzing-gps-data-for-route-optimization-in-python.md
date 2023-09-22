@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for route optimization in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, RouteOptimization]
+tags: [RouteOptimization]
 comments: true
 share: true
 ---

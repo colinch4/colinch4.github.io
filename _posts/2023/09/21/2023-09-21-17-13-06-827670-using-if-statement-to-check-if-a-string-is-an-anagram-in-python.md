@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a string is an anagram in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Anagram]
+tags: [Anagram]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating interactive VR experiences for tourism"
 description: " "
 date: 2023-09-19
-tags: [python, tourism, virtualreality]
+tags: [tourism, virtualreality]
 comments: true
 share: true
 ---

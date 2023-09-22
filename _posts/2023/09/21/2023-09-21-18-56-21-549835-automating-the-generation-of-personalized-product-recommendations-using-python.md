@@ -3,7 +3,7 @@ layout: post
 title: "Automating the generation of personalized product recommendations using Python"
 description: " "
 date: 2023-09-21
-tags: [python, recommendationsystems]
+tags: [recommendationsystems]
 comments: true
 share: true
 ---

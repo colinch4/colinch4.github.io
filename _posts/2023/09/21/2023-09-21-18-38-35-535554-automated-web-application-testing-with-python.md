@@ -3,7 +3,7 @@ layout: post
 title: "Automated web application testing with Python"
 description: " "
 date: 2023-09-21
-tags: [Python, WebTesting]
+tags: [WebTesting]
 comments: true
 share: true
 ---

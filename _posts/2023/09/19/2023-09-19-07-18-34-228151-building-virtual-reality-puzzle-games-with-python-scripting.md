@@ -3,7 +3,7 @@ layout: post
 title: "Building virtual reality puzzle games with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

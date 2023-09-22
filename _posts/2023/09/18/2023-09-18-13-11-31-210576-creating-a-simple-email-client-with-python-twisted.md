@@ -3,7 +3,7 @@ layout: post
 title: "Creating a simple email client with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

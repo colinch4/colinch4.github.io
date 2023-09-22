@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy annotations with Python decorators"
 description: " "
 date: 2023-09-20
-tags: [python, decorators]
+tags: [decorators]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "MyPy type hints for built-in Python containers and iterators"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

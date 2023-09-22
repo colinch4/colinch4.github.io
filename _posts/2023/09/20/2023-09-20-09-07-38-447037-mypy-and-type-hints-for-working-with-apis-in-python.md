@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for working with APIs in Python"
 description: " "
 date: 2023-09-20
-tags: [python, APIs]
+tags: [APIs]
 comments: true
 share: true
 ---

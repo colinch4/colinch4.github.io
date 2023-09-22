@@ -3,7 +3,7 @@ layout: post
 title: "Integrating Python scripts for user interactions in virtual reality simulations"
 description: " "
 date: 2023-09-19
-tags: [python, virtualreality, userinteractions, PythonScripts, VRsimulations]
+tags: [virtualreality, userinteractions, PythonScripts, VRsimulations]
 comments: true
 share: true
 ---

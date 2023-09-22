@@ -3,7 +3,7 @@ layout: post
 title: "Inequality operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [python, inequality]
+tags: [inequality]
 comments: true
 share: true
 ---

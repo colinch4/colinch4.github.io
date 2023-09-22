@@ -3,7 +3,7 @@ layout: post
 title: "Developing VR simulations for construction site safety training with Python."
 description: " "
 date: 2023-09-19
-tags: [Python, VRSimulations, ConstructionSafety]
+tags: [VRSimulations, ConstructionSafety]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automating speech recognition and synthesis with Python"
 description: " "
 date: 2023-09-21
-tags: [Python, SpeechRecognition, SpeechSynthesis]
+tags: [SpeechRecognition, SpeechSynthesis]
 comments: true
 share: true
 ---

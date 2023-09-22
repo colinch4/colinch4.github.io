@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a number is a prime number in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, PrimeNumbers]
+tags: [PrimeNumbers]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automating fraud prevention in online transactions using Python"
 description: " "
 date: 2023-09-21
-tags: [python, fraudprevention, onlinetransactions]
+tags: [fraudprevention, onlinetransactions]
 comments: true
 share: true
 ---

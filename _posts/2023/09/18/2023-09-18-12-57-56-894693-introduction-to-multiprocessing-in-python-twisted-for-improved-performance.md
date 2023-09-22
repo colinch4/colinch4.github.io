@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to multiprocessing in Python Twisted for improved performance"
 description: " "
 date: 2023-09-18
-tags: [Python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Exploring the use of twisted.internet.defer in Python Twisted for asynchronous programming"
 description: " "
 date: 2023-09-18
-tags: [Python, AsyncProgramming]
+tags: [AsyncProgramming]
 comments: true
 share: true
 ---

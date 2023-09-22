@@ -3,7 +3,7 @@ layout: post
 title: "Automating social media tasks using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, SocialMediaAutomation]
+tags: [SocialMediaAutomation]
 comments: true
 share: true
 ---

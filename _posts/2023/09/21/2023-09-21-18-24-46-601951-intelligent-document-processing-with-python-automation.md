@@ -3,7 +3,7 @@ layout: post
 title: "Intelligent document processing with Python automation"
 description: " "
 date: 2023-09-21
-tags: [Python, Automation]
+tags: [Automation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and typing patterns for functional programming in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, FunctionalProgramming]
+tags: [FunctionalProgramming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for multithreaded programming in Python"
 description: " "
 date: 2023-09-20
-tags: [python, multithreading]
+tags: [multithreading]
 comments: true
 share: true
 ---

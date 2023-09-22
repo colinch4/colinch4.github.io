@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a tuple is empty or not in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Tuple]
+tags: [Tuple]
 comments: true
 share: true
 ---

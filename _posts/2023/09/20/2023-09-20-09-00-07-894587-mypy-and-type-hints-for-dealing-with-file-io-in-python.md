@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for dealing with file I/O in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

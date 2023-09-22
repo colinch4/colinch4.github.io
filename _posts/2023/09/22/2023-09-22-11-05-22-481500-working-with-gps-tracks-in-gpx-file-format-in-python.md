@@ -3,7 +3,7 @@ layout: post
 title: "Working with GPS tracks in GPX file format in Python"
 description: " "
 date: 2023-09-22
-tags: [python, geolocation]
+tags: [geolocation]
 comments: true
 share: true
 ---

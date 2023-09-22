@@ -3,7 +3,7 @@ layout: post
 title: "Automating generation of interactive visualizations using Python"
 description: " "
 date: 2023-09-21
-tags: [python, datavisualization, automation]
+tags: [datavisualization, automation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Adding interactive physics-based objects to VR environments using Python"
 description: " "
 date: 2023-09-19
-tags: [Python, VRdevelopment, Pygame2VR]
+tags: [VRdevelopment, Pygame2VR]
 comments: true
 share: true
 ---

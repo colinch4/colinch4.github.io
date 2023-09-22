@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with tuple comparison in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionals]
+tags: [conditionals]
 comments: true
 share: true
 ---

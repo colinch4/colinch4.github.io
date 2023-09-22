@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for non-empty values in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, ConditionalStatements]
+tags: [ConditionalStatements]
 comments: true
 share: true
 ---

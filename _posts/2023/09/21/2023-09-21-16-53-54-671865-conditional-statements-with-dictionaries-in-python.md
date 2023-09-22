@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statements with dictionaries in Python"
 description: " "
 date: 2023-09-21
-tags: [python, dictionaries]
+tags: [dictionaries]
 comments: true
 share: true
 ---

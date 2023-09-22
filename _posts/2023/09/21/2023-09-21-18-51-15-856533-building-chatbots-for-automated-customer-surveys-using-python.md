@@ -3,7 +3,7 @@ layout: post
 title: "Building chatbots for automated customer surveys using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Chatbots, AutomatedSurveys]
+tags: [Chatbots, AutomatedSurveys]
 comments: true
 share: true
 ---

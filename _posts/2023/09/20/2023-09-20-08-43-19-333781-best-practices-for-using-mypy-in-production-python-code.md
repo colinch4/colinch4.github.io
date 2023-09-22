@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for using MyPy in production Python code"
 description: " "
 date: 2023-09-20
-tags: [python, typing]
+tags: [typing]
 comments: true
 share: true
 ---

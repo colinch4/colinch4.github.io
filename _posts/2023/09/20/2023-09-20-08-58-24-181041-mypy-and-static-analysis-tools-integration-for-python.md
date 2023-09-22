@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and static analysis tools integration for Python"
 description: " "
 date: 2023-09-20
-tags: [Python, TypeChecking]
+tags: [TypeChecking]
 comments: true
 share: true
 ---

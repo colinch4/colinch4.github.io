@@ -188,7 +188,9 @@ $(document).ready(function() {
 3. Include the `comment.js` file in your HTML file:
 
 ```html
+{% raw %}
 <script src="{% static 'comment.js' %}"></script>
+{% endraw %}
 ```
 
 ## Testing the Application

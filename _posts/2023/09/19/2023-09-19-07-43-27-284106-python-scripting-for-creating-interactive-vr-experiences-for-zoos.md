@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating interactive VR experiences for zoos"
 description: " "
 date: 2023-09-19
-tags: [Python, VRexperiences]
+tags: [VRexperiences]
 comments: true
 share: true
 ---

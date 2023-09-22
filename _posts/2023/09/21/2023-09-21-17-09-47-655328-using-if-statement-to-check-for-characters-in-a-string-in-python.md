@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for characters in a string in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, StringManipulation]
+tags: [StringManipulation]
 comments: true
 share: true
 ---

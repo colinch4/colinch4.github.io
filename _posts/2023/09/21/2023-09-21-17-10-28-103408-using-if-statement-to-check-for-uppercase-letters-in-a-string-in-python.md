@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for uppercase letters in a string in Python"
 description: " "
 date: 2023-09-21
-tags: [python, string, uppercase]
+tags: [string, uppercase]
 comments: true
 share: true
 ---

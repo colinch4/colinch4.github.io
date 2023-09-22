@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple conditions using logical AND operator in Python"
 description: " "
 date: 2023-09-21
-tags: [python, logical]
+tags: [logical]
 comments: true
 share: true
 ---

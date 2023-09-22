@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating interactive VR experiences for music concerts"
 description: " "
 date: 2023-09-19
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

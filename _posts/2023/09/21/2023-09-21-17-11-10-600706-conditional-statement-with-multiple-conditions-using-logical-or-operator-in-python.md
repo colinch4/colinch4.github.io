@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple conditions using logical OR operator in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, LogicalOperators]
+tags: [LogicalOperators]
 comments: true
 share: true
 ---

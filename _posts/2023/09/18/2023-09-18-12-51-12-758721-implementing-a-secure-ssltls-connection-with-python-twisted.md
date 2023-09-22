@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a secure SSL/TLS connection with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

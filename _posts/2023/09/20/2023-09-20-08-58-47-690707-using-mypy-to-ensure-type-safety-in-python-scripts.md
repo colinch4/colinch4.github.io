@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy to ensure type safety in Python scripts"
 description: " "
 date: 2023-09-20
-tags: [python, typesafety]
+tags: [typesafety]
 comments: true
 share: true
 ---

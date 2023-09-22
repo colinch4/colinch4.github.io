@@ -3,7 +3,7 @@ layout: post
 title: "Developing locomotion systems for virtual reality using Python"
 description: " "
 date: 2023-09-19
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

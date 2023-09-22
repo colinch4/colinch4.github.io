@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for web scraping web development frameworks in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

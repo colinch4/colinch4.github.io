@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy with type hinting libraries for complex data structures in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typehinting]
+tags: [typehinting]
 comments: true
 share: true
 ---

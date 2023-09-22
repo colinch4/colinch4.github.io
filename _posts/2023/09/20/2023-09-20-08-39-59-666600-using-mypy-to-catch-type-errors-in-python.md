@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy to catch type errors in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typechecking]
+tags: [typechecking]
 comments: true
 share: true
 ---

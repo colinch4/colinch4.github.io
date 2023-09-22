@@ -3,7 +3,7 @@ layout: post
 title: "Writing custom type checkers with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, typechecking]
+tags: [typechecking]
 comments: true
 share: true
 ---

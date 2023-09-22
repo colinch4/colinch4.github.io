@@ -3,7 +3,7 @@ layout: post
 title: "Automating data synchronization between different systems using Python"
 description: " "
 date: 2023-09-21
-tags: [python, datasync, automation]
+tags: [datasync, automation]
 comments: true
 share: true
 ---

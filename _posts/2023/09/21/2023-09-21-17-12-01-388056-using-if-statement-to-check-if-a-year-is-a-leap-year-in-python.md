@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a year is a leap year in Python"
 description: " "
 date: 2023-09-21
-tags: [python, leapyear]
+tags: [leapyear]
 comments: true
 share: true
 ---

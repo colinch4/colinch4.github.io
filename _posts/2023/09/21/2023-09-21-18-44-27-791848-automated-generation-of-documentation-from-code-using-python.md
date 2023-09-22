@@ -3,7 +3,7 @@ layout: post
 title: "Automated generation of documentation from code using Python"
 description: " "
 date: 2023-09-21
-tags: [python, documentation]
+tags: [documentation]
 comments: true
 share: true
 ---

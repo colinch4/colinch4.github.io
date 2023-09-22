@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for immersive VR storytelling"
 description: " "
 date: 2023-09-19
-tags: [Python, VRstorytelling, PythonVR, ImmersiveScripting]
+tags: [VRstorytelling, PythonVR, ImmersiveScripting]
 comments: true
 share: true
 ---

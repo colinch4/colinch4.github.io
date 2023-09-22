@@ -3,7 +3,7 @@ layout: post
 title: "Extending MyPy with type hinting plugins for custom libraries"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automated feature selection and model building using Python"
 description: " "
 date: 2023-09-21
-tags: [python, machinelearning, featureselection, automodelbuilding]
+tags: [machinelearning, featureselection, automodelbuilding]
 comments: true
 share: true
 ---

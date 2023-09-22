@@ -3,7 +3,7 @@ layout: post
 title: "Using Python scripts to create interactive 3D visualizations in VR"
 description: " "
 date: 2023-09-19
-tags: [python, development]
+tags: [development]
 comments: true
 share: true
 ---

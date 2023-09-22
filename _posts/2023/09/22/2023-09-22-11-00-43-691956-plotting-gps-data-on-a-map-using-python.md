@@ -3,7 +3,7 @@ layout: post
 title: "Plotting GPS data on a map using Python"
 description: " "
 date: 2023-09-22
-tags: [python, GPSdata]
+tags: [GPSdata]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for GUI development in Python"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

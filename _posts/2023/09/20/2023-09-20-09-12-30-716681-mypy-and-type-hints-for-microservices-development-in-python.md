@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for microservices development in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, Microservices]
+tags: [Microservices]
 comments: true
 share: true
 ---

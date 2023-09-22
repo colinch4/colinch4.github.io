@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for divisibility in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Divisibility]
+tags: [Divisibility]
 comments: true
 share: true
 ---

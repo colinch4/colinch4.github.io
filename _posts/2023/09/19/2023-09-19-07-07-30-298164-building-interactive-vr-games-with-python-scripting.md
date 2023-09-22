@@ -3,7 +3,7 @@ layout: post
 title: "Building interactive VR games with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Python, Unity, GameDevelopment]
+tags: [Unity, GameDevelopment]
 comments: true
 share: true
 ---

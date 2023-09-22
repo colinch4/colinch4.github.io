@@ -3,7 +3,7 @@ layout: post
 title: "Less than operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, LessThanOperator]
+tags: [LessThanOperator]
 comments: true
 share: true
 ---

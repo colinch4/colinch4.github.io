@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for game development in Python"
 description: " "
 date: 2023-09-20
-tags: [python, gamedev]
+tags: [gamedev]
 comments: true
 share: true
 ---

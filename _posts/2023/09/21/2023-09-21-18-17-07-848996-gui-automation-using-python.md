@@ -3,7 +3,7 @@ layout: post
 title: "GUI automation using Python"
 description: " "
 date: 2023-09-21
-tags: [python, GUIautomation]
+tags: [GUIautomation]
 comments: true
 share: true
 ---

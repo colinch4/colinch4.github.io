@@ -105,8 +105,10 @@ To display real-time notifications, we need to integrate the notification bar in
 First, include the JavaScript file that handles the WebSocket connection in your template:
 
 ```html
+{% raw %}
 {% load static %}
 <script src="{% static 'js/notification.js' %}"></script>
+{% endraw %}
 ```
 
 Create and include the `notification.js` file:

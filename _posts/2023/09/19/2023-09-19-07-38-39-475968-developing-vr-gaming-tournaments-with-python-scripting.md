@@ -3,7 +3,7 @@ layout: post
 title: "Developing VR gaming tournaments with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [python, VRgaming]
+tags: [VRgaming]
 comments: true
 share: true
 ---

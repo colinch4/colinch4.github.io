@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a list is sorted in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Sorting]
+tags: [Sorting]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Enforcing static typing with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, StaticTyping]
+tags: [StaticTyping]
 comments: true
 share: true
 ---

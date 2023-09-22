@@ -3,7 +3,7 @@ layout: post
 title: "Advanced features of MyPy for type checking in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

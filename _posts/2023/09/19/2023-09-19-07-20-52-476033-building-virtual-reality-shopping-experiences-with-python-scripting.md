@@ -3,7 +3,7 @@ layout: post
 title: "Building virtual reality shopping experiences with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [python, VRshopping, pythonscripting]
+tags: [VRshopping, pythonscripting]
 comments: true
 share: true
 ---

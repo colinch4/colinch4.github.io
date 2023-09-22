@@ -3,7 +3,7 @@ layout: post
 title: "Building interactive VR experiences for language learning with Python"
 description: " "
 date: 2023-09-19
-tags: [python, languagelearning]
+tags: [languagelearning]
 comments: true
 share: true
 ---

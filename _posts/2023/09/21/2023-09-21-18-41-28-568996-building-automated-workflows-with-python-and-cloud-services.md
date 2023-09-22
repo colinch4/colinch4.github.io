@@ -3,7 +3,7 @@ layout: post
 title: "Building automated workflows with Python and cloud services"
 description: " "
 date: 2023-09-21
-tags: [python, cloudservices]
+tags: [cloudservices]
 comments: true
 share: true
 ---

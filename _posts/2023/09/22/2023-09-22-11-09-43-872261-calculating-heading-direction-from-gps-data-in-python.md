@@ -3,7 +3,7 @@ layout: post
 title: "Calculating heading direction from GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automated generation of personalized marketing emails using Python"
 description: " "
 date: 2023-09-21
-tags: [python, emailmarketing]
+tags: [emailmarketing]
 comments: true
 share: true
 ---
@@ -23,6 +23,7 @@ Once you have gathered the necessary customer data, the next step is to create e
 In Python, you can use libraries like Jinja2 or Django templates to generate dynamic email content. These libraries allow you to incorporate placeholders in your email templates and replace them with specific customer data at runtime. For example:
 
 ```python
+{% raw %}
 from jinja2 import Template
 
 email_template = Template("""
@@ -50,6 +51,7 @@ customer_info = {
 }
 
 email_content = email_template.render(**customer_info)
+{% endraw %}
 ```
 
 ## Automating Email Generation

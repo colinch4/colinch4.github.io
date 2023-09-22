@@ -3,7 +3,7 @@ layout: post
 title: "Creating teleportation functionality using Python scripts in VR"
 description: " "
 date: 2023-09-19
-tags: [Python, Teleportation, VirtualReality]
+tags: [Teleportation, VirtualReality]
 comments: true
 share: true
 ---

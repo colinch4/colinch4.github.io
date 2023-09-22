@@ -3,7 +3,7 @@ layout: post
 title: "Ternary operator in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, TernaryOperator]
+tags: [TernaryOperator]
 comments: true
 share: true
 ---

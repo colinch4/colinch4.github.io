@@ -3,7 +3,7 @@ layout: post
 title: "Building automated chatbots for customer support using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Chatbots, CustomerSupport]
+tags: [Chatbots, CustomerSupport]
 comments: true
 share: true
 ---

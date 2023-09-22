@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for personal fitness tracking in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, FitnessTracking]
+tags: [FitnessTracking]
 comments: true
 share: true
 ---

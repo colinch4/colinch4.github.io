@@ -3,7 +3,7 @@ layout: post
 title: "Automating quality assurance testing with Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Automation, Testing]
+tags: [Automation, Testing]
 comments: true
 share: true
 ---

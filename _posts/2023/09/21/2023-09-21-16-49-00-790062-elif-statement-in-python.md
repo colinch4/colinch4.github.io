@@ -3,7 +3,7 @@ layout: post
 title: "Elif statement in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Elif, PythonProgramming]
+tags: [Elif, PythonProgramming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and event-driven programming in Python applications"
 description: " "
 date: 2023-09-20
-tags: [Python, EventDrivenProgramming]
+tags: [EventDrivenProgramming]
 comments: true
 share: true
 ---

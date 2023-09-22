@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type safety in Python scientific computing code"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

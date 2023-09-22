@@ -3,7 +3,7 @@ layout: post
 title: "Handling cyclic dependencies in MyPy with Python"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

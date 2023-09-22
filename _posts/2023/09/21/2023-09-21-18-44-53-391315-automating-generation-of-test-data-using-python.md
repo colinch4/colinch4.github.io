@@ -3,7 +3,7 @@ layout: post
 title: "Automating generation of test data using Python"
 description: " "
 date: 2023-09-21
-tags: [python, testdata, automation]
+tags: [testdata, automation]
 comments: true
 share: true
 ---

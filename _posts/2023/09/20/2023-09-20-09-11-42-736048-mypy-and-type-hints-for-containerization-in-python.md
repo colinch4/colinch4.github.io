@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for containerization in Python"
 description: " "
 date: 2023-09-20
-tags: [python, containerization]
+tags: [containerization]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a number is positive, negative, or zero in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, IfStatement]
+tags: [IfStatement]
 comments: true
 share: true
 ---

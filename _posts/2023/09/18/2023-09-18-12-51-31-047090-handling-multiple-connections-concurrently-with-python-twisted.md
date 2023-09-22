@@ -3,7 +3,7 @@ layout: post
 title: "Handling multiple connections concurrently with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, networkprogramming]
+tags: [networkprogramming]
 comments: true
 share: true
 ---

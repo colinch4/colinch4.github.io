@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy to validate data models in Python applications"
 description: " "
 date: 2023-09-20
-tags: [python, typechecking]
+tags: [typechecking]
 comments: true
 share: true
 ---

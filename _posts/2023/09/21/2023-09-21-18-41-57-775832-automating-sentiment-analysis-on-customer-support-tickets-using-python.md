@@ -3,7 +3,7 @@ layout: post
 title: "Automating sentiment analysis on customer support tickets using Python"
 description: " "
 date: 2023-09-21
-tags: [python, sentimentanalysis]
+tags: [sentimentanalysis]
 comments: true
 share: true
 ---

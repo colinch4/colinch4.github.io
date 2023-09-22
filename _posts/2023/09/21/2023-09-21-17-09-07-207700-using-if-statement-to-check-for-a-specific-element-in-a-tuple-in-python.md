@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for a specific element in a tuple in Python"
 description: " "
 date: 2023-09-21
-tags: [python, tuples]
+tags: [tuples]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple levels of indentation in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionalstatements, code]
+tags: [conditionalstatements, code]
 comments: true
 share: true
 ---

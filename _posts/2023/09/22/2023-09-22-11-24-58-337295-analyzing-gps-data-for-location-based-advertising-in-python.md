@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for location-based advertising in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, GPSdata]
+tags: [GPSdata]
 comments: true
 share: true
 ---

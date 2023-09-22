@@ -3,7 +3,7 @@ layout: post
 title: "Creating interactive training simulations in virtual reality with Python"
 description: " "
 date: 2023-09-19
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

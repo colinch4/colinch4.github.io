@@ -3,7 +3,7 @@ layout: post
 title: "Advanced MyPy type checking for Django applications"
 description: " "
 date: 2023-09-20
-tags: [python, django]
+tags: [django]
 comments: true
 share: true
 ---

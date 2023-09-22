@@ -3,7 +3,7 @@ layout: post
 title: "Automating sentiment analysis on customer reviews using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

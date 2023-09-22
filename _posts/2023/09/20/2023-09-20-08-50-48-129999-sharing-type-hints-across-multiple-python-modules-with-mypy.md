@@ -3,7 +3,7 @@ layout: post
 title: "Sharing type hints across multiple Python modules with MyPy"
 description: " "
 date: 2023-09-20
-tags: [python, typing]
+tags: [typing]
 comments: true
 share: true
 ---

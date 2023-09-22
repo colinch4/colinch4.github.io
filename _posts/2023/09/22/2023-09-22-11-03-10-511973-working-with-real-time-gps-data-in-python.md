@@ -3,7 +3,7 @@ layout: post
 title: "Working with real-time GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [python, realtime]
+tags: [realtime]
 comments: true
 share: true
 ---

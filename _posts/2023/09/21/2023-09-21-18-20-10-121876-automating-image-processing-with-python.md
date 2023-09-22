@@ -3,7 +3,7 @@ layout: post
 title: "Automating image processing with Python"
 description: " "
 date: 2023-09-21
-tags: [Python, ImageProcessing, Automation]
+tags: [ImageProcessing, Automation]
 comments: true
 share: true
 ---

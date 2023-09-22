@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statements with strings in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, StringConditionals]
+tags: [StringConditionals]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automated generation of product descriptions using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Automation, Python, Automation, ProductDescription]
+tags: [Automation, Python, Automation, ProductDescription]
 comments: true
 share: true
 ---

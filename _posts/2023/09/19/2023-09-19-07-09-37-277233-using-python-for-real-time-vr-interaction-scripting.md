@@ -3,7 +3,7 @@ layout: post
 title: "Using Python for real-time VR interaction scripting"
 description: " "
 date: 2023-09-19
-tags: [python, scripting]
+tags: [scripting]
 comments: true
 share: true
 ---

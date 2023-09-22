@@ -3,7 +3,7 @@ layout: post
 title: "Text classification and sentiment analysis automation using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, TextClassification, SentimentAnalysis]
+tags: [TextClassification, SentimentAnalysis]
 comments: true
 share: true
 ---

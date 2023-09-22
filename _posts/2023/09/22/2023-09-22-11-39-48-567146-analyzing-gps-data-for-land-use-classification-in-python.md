@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for land use classification in Python"
 description: " "
 date: 2023-09-22
-tags: [python, GPSdata]
+tags: [GPSdata]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a real-time analytics system with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, RealTimeAnalytics]
+tags: [RealTimeAnalytics]
 comments: true
 share: true
 ---

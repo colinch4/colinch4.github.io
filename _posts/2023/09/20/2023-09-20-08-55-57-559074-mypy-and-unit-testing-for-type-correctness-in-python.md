@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and unit testing for type correctness in Python"
 description: " "
 date: 2023-09-20
-tags: [python, Mypy]
+tags: [Mypy]
 comments: true
 share: true
 ---

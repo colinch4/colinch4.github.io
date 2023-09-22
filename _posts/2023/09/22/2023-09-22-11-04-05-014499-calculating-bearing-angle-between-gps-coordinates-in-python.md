@@ -3,7 +3,7 @@ layout: post
 title: "Calculating bearing angle between GPS coordinates in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, Geospatial]
+tags: [Geospatial]
 comments: true
 share: true
 ---

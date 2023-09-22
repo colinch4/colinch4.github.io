@@ -3,7 +3,7 @@ layout: post
 title: "An introduction to asynchronous programming with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, AsynchronousProgramming]
+tags: [AsynchronousProgramming]
 comments: true
 share: true
 ---

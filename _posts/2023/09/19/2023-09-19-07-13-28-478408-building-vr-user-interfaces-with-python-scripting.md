@@ -3,7 +3,7 @@ layout: post
 title: "Building VR user interfaces with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Python, Unity, Scripting, UserInterfaces]
+tags: [Unity, Scripting, UserInterfaces]
 comments: true
 share: true
 ---

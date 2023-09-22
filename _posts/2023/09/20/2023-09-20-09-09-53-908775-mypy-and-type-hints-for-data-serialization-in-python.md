@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for data serialization in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, DataSerialization]
+tags: [DataSerialization]
 comments: true
 share: true
 ---

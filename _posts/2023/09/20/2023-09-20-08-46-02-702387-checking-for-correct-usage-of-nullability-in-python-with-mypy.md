@@ -3,7 +3,7 @@ layout: post
 title: "Checking for correct usage of nullability in Python with MyPy"
 description: " "
 date: 2023-09-20
-tags: [python, mypy]
+tags: [mypy]
 comments: true
 share: true
 ---

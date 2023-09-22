@@ -3,7 +3,7 @@ layout: post
 title: "Automating fraud detection in financial transactions using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, FraudDetection, Automation]
+tags: [FraudDetection, Automation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Customizing MyPy error messages in Python"
 description: " "
 date: 2023-09-20
-tags: [python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

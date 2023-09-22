@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a number is a Fibonacci number in Python"
 description: " "
 date: 2023-09-21
-tags: [python, fibonacci]
+tags: [fibonacci]
 comments: true
 share: true
 ---

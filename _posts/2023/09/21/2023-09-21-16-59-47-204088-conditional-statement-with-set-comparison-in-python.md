@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with set comparison in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, SetComparison]
+tags: [SetComparison]
 comments: true
 share: true
 ---

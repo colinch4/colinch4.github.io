@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for web scraping cloud computing in Python"
 description: " "
 date: 2023-09-20
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Integrating MyPy with CI/CD pipelines for Python projects"
 description: " "
 date: 2023-09-20
-tags: [python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

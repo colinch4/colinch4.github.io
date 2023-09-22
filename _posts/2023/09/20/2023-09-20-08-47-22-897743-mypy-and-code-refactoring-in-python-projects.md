@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and code refactoring in Python projects"
 description: " "
 date: 2023-09-20
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

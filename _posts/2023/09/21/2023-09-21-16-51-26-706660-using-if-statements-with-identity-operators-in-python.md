@@ -3,7 +3,7 @@ layout: post
 title: "Using if statements with identity operators in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, IdentityOperators]
+tags: [IdentityOperators]
 comments: true
 share: true
 ---

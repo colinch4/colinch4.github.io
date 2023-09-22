@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for trip planning in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, GPSData]
+tags: [GPSData]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Geo-tagging photos using GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [python, geotagging]
+tags: [geotagging]
 comments: true
 share: true
 ---

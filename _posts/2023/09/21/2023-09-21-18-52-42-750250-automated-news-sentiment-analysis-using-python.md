@@ -3,7 +3,7 @@ layout: post
 title: "Automated news sentiment analysis using Python"
 description: " "
 date: 2023-09-21
-tags: [Python, NewsSentimentAnalysis]
+tags: [NewsSentimentAnalysis]
 comments: true
 share: true
 ---

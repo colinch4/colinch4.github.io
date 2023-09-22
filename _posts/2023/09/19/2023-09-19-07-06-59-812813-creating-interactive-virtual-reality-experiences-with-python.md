@@ -3,7 +3,7 @@ layout: post
 title: "Creating interactive virtual reality experiences with Python"
 description: " "
 date: 2023-09-19
-tags: [python, virtualreality]
+tags: [virtualreality]
 comments: true
 share: true
 ---

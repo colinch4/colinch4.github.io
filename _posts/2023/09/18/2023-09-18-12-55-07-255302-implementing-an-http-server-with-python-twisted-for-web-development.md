@@ -3,7 +3,7 @@ layout: post
 title: "Implementing an HTTP server with Python Twisted for web development"
 description: " "
 date: 2023-09-18
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

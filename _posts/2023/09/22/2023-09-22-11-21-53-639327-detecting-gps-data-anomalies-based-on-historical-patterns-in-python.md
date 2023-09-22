@@ -3,7 +3,7 @@ layout: post
 title: "Detecting GPS data anomalies based on historical patterns in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, GPSAnomalies]
+tags: [GPSAnomalies]
 comments: true
 share: true
 ---

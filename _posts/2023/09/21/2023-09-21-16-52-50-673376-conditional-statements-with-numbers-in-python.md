@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statements with numbers in Python"
 description: " "
 date: 2023-09-21
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

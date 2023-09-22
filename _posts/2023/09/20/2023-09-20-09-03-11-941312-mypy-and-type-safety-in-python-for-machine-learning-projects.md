@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type safety in Python for machine learning projects"
 description: " "
 date: 2023-09-20
-tags: [python, machinelearning]
+tags: [machinelearning]
 comments: true
 share: true
 ---

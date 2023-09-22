@@ -3,7 +3,7 @@ layout: post
 title: "Python development for VR interaction design"
 description: " "
 date: 2023-09-19
-tags: [Python, InteractionDesign]
+tags: [InteractionDesign]
 comments: true
 share: true
 ---

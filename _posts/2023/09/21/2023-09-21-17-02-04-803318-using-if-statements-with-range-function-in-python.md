@@ -3,7 +3,7 @@ layout: post
 title: "Using if statements with range() function in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Range, IfStatements]
+tags: [Range, IfStatements]
 comments: true
 share: true
 ---

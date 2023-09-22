@@ -3,7 +3,7 @@ layout: post
 title: "Identifying GPS data gaps or discontinuities in Python"
 description: " "
 date: 2023-09-22
-tags: [python, GPSdata]
+tags: [GPSdata]
 comments: true
 share: true
 ---

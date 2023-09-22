@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating multiplayer VR interactions"
 description: " "
 date: 2023-09-19
-tags: [python, multplayer, scripting]
+tags: [multplayer, scripting]
 comments: true
 share: true
 ---

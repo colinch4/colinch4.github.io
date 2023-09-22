@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for public transportation route optimization in Python"
 description: " "
 date: 2023-09-22
-tags: [python, publictransportation]
+tags: [publictransportation]
 comments: true
 share: true
 ---

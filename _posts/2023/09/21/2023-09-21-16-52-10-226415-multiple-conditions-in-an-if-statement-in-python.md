@@ -3,7 +3,7 @@ layout: post
 title: "Multiple conditions in an if statement in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, IfStatement, LogicalOperators]
+tags: [IfStatement, LogicalOperators]
 comments: true
 share: true
 ---

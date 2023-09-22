@@ -3,7 +3,7 @@ layout: post
 title: "Detecting and removing GPS data outliers in Python"
 description: " "
 date: 2023-09-22
-tags: [python, outliers]
+tags: [outliers]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing interactive virtual classrooms using Python in VR"
 description: " "
 date: 2023-09-19
-tags: [Python, VirtualReality, Education]
+tags: [VirtualReality, Education]
 comments: true
 share: true
 ---

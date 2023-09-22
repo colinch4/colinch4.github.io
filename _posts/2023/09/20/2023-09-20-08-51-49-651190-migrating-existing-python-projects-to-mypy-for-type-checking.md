@@ -3,7 +3,7 @@ layout: post
 title: "Migrating existing Python projects to MyPy for type checking"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

@@ -153,6 +153,7 @@ This configuration will include the routing configuration for our chat applicati
 Now, let's create the HTML template for the chat interface. Inside the `chat` application directory, create a new directory named `templates`. Inside the `templates` directory, create a new file called `chat.html` with the following code:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -166,6 +167,7 @@ Now, let's create the HTML template for the chat interface. Inside the `chat` ap
     <button id="chat-send">Send</button>
 </body>
 </html>
+{% endraw %}
 ```
 
 This is a basic HTML template for our chat interface. It includes a script tag to load the `chat.js` script.

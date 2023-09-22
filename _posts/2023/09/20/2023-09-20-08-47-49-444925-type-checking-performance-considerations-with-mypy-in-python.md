@@ -3,7 +3,7 @@ layout: post
 title: "Type checking performance considerations with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typechecking]
+tags: [typechecking]
 comments: true
 share: true
 ---

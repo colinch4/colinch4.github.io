@@ -3,7 +3,7 @@ layout: post
 title: "Creating a distributed data visualization platform with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [Python, DataVisualization]
+tags: [DataVisualization]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Calculating GPS trajectory similarity using dynamic time warping in Python"
 description: " "
 date: 2023-09-22
-tags: [python, trajectory]
+tags: [trajectory]
 comments: true
 share: true
 ---

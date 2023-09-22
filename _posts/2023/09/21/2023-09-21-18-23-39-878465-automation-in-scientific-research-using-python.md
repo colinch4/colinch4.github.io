@@ -3,7 +3,7 @@ layout: post
 title: "Automation in scientific research using Python"
 description: " "
 date: 2023-09-21
-tags: [python, automation]
+tags: [automation]
 comments: true
 share: true
 ---

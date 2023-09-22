@@ -3,7 +3,7 @@ layout: post
 title: "Type hints for complex generics in MyPy for Python"
 description: " "
 date: 2023-09-20
-tags: [python, typing]
+tags: [typing]
 comments: true
 share: true
 ---

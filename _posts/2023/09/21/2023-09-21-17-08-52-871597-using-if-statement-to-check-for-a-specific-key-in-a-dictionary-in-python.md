@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check for a specific key in a dictionary in Python"
 description: " "
 date: 2023-09-21
-tags: [python, dictionary, ifstatement]
+tags: [dictionary, ifstatement]
 comments: true
 share: true
 ---

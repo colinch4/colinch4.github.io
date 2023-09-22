@@ -3,7 +3,7 @@ layout: post
 title: "MyPy type hints for handling concurrency in Python applications"
 description: " "
 date: 2023-09-20
-tags: [python, concurrency]
+tags: [concurrency]
 comments: true
 share: true
 ---

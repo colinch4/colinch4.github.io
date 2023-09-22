@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for natural language processing in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typehints]
+tags: [typehints]
 comments: true
 share: true
 ---

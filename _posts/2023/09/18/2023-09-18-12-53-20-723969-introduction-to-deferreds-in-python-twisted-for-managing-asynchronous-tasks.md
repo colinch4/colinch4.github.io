@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to deferreds in Python Twisted for managing asynchronous tasks"
 description: " "
 date: 2023-09-18
-tags: [python, twisted]
+tags: [twisted]
 comments: true
 share: true
 ---

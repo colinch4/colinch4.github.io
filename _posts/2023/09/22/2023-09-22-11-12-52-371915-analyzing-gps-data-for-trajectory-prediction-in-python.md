@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for trajectory prediction in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, TrajectoryPrediction]
+tags: [TrajectoryPrediction]
 comments: true
 share: true
 ---

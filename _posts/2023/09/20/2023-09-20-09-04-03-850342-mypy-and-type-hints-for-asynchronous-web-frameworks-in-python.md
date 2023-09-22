@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for asynchronous web frameworks in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, AsynchronousProgramming]
+tags: [AsynchronousProgramming]
 comments: true
 share: true
 ---

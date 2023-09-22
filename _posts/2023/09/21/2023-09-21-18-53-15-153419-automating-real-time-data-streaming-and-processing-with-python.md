@@ -3,7 +3,7 @@ layout: post
 title: "Automating real-time data streaming and processing with Python"
 description: " "
 date: 2023-09-21
-tags: [Python, RealTimeDataStreaming, DataProcessing]
+tags: [RealTimeDataStreaming, DataProcessing]
 comments: true
 share: true
 ---

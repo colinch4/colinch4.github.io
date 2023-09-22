@@ -3,7 +3,7 @@ layout: post
 title: "Building automated recommendation systems for personalized marketing using Python"
 description: " "
 date: 2023-09-21
-tags: [python, recommendationsystems, personalizedmarketing]
+tags: [recommendationsystems, personalizedmarketing]
 comments: true
 share: true
 ---

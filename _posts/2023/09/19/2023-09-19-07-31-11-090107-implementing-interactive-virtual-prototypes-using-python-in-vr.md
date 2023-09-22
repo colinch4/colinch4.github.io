@@ -3,7 +3,7 @@ layout: post
 title: "Implementing interactive virtual prototypes using Python in VR"
 description: " "
 date: 2023-09-19
-tags: [Python, VirtualReality, VRPrototypes]
+tags: [VirtualReality, VRPrototypes]
 comments: true
 share: true
 ---

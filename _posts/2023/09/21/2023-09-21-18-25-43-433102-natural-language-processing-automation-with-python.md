@@ -3,7 +3,7 @@ layout: post
 title: "Natural language processing automation with Python"
 description: " "
 date: 2023-09-21
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

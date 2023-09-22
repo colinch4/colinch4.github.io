@@ -3,7 +3,7 @@ layout: post
 title: "Building recommendation systems using Python automation"
 description: " "
 date: 2023-09-21
-tags: [Python, RecommendationSystems]
+tags: [RecommendationSystems]
 comments: true
 share: true
 ---

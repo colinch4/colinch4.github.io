@@ -3,7 +3,7 @@ layout: post
 title: "Developing VR simulations for fire safety training with Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Python, FireSafety, VRTraining]
+tags: [FireSafety, VRTraining]
 comments: true
 share: true
 ---

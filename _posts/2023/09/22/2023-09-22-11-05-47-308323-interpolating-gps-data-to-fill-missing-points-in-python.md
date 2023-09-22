@@ -3,7 +3,7 @@ layout: post
 title: "Interpolating GPS data to fill missing points in Python"
 description: " "
 date: 2023-09-22
-tags: [python, interpolation]
+tags: [interpolation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to raster format in Python"
 description: " "
 date: 2023-09-22
-tags: [python, raster]
+tags: [raster]
 comments: true
 share: true
 ---

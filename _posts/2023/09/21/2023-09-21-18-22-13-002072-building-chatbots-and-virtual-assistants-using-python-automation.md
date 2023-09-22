@@ -3,7 +3,7 @@ layout: post
 title: "Building chatbots and virtual assistants using Python automation"
 description: " "
 date: 2023-09-21
-tags: [Python, Chatbots, VirtualAssistants]
+tags: [Chatbots, VirtualAssistants]
 comments: true
 share: true
 ---

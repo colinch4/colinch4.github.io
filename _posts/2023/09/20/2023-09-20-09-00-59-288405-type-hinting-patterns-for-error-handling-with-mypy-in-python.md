@@ -3,7 +3,7 @@ layout: post
 title: "Type hinting patterns for error handling with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, TypeHinting]
+tags: [TypeHinting]
 comments: true
 share: true
 ---

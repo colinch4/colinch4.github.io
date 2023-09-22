@@ -3,7 +3,7 @@ layout: post
 title: "Automating speech-to-text transcription using Python"
 description: " "
 date: 2023-09-21
-tags: [python, speechrecognition, automations]
+tags: [speechrecognition, automations]
 comments: true
 share: true
 ---

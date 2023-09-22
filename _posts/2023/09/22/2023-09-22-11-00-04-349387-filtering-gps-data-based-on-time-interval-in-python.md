@@ -3,7 +3,7 @@ layout: post
 title: "Filtering GPS data based on time interval in Python"
 description: " "
 date: 2023-09-22
-tags: [python, datamanipulation]
+tags: [datamanipulation]
 comments: true
 share: true
 ---

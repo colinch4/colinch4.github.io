@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and data validation patterns in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typechecking]
+tags: [typechecking]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to resource utilization in Python Twisted for efficient event handling"
 description: " "
 date: 2023-09-18
-tags: [python, networking]
+tags: [networking]
 comments: true
 share: true
 ---

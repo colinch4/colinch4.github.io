@@ -3,7 +3,7 @@ layout: post
 title: "Building interactive VR art installations using Python"
 description: " "
 date: 2023-09-19
-tags: [Python, ArtInstallations]
+tags: [ArtInstallations]
 comments: true
 share: true
 ---

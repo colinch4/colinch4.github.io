@@ -3,7 +3,7 @@ layout: post
 title: "MyPy type hints for database interactions in Python applications"
 description: " "
 date: 2023-09-20
-tags: [Python, MyPy]
+tags: [MyPy]
 comments: true
 share: true
 ---

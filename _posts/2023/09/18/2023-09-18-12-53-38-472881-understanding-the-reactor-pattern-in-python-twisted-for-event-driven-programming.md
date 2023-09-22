@@ -3,7 +3,7 @@ layout: post
 title: "Understanding the reactor pattern in Python Twisted for event-driven programming"
 description: " "
 date: 2023-09-18
-tags: [Python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a dictionary is empty or not in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Dictionaries]
+tags: [Dictionaries]
 comments: true
 share: true
 ---

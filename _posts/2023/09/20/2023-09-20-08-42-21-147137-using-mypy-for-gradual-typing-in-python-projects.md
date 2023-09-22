@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy for gradual typing in Python projects"
 description: " "
 date: 2023-09-20
-tags: [Python, TypeChecking]
+tags: [TypeChecking]
 comments: true
 share: true
 ---

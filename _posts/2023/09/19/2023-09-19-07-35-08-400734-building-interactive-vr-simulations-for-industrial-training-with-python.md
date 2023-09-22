@@ -3,7 +3,7 @@ layout: post
 title: "Building interactive VR simulations for industrial training with Python"
 description: " "
 date: 2023-09-19
-tags: [Python, IndustrialTraining, Simulation]
+tags: [IndustrialTraining, Simulation]
 comments: true
 share: true
 ---

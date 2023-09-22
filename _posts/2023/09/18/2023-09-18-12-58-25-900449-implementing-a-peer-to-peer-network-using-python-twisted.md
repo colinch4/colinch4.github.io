@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a peer-to-peer network using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, p2pnetworking]
+tags: [p2pnetworking]
 comments: true
 share: true
 ---

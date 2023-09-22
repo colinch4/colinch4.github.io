@@ -3,7 +3,7 @@ layout: post
 title: "Using in operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [python, inoperator, conditionalstatements]
+tags: [inoperator, conditionalstatements]
 comments: true
 share: true
 ---

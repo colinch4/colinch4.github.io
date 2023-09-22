@@ -3,7 +3,7 @@ layout: post
 title: "Building a proxy server with Python Twisted for network communication"
 description: " "
 date: 2023-09-18
-tags: [Python, ProxyServer]
+tags: [ProxyServer]
 comments: true
 share: true
 ---

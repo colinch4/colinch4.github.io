@@ -3,7 +3,7 @@ layout: post
 title: "Calculating speed from GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, GPSSpeed]
+tags: [GPSSpeed]
 comments: true
 share: true
 ---

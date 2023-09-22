@@ -3,7 +3,7 @@ layout: post
 title: "Basics of Python programming language for automation"
 description: " "
 date: 2023-09-21
-tags: [python, automation]
+tags: [automation]
 comments: true
 share: true
 ---

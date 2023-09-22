@@ -3,7 +3,7 @@ layout: post
 title: "Using if statements with comparison operators in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, ComparisonOperators, IfStatements]
+tags: [ComparisonOperators, IfStatements]
 comments: true
 share: true
 ---

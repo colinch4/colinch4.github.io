@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with None value in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionalstatement]
+tags: [conditionalstatement]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Chaining conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionals]
+tags: [conditionals]
 comments: true
 share: true
 ---

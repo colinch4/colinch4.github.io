@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for web automation in Python"
 description: " "
 date: 2023-09-20
-tags: [python, webautomation]
+tags: [webautomation]
 comments: true
 share: true
 ---

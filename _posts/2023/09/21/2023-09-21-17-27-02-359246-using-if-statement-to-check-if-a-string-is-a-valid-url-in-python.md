@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a string is a valid URL in Python"
 description: " "
 date: 2023-09-21
-tags: [python, URLvalidation]
+tags: [URLvalidation]
 comments: true
 share: true
 ---

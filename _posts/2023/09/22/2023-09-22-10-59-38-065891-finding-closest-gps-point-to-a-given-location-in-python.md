@@ -3,7 +3,7 @@ layout: post
 title: "Finding closest GPS point to a given location in Python"
 description: " "
 date: 2023-09-22
-tags: [python, geopy]
+tags: [geopy]
 comments: true
 share: true
 ---

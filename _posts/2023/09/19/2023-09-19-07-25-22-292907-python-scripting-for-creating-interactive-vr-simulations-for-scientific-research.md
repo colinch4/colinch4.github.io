@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating interactive VR simulations for scientific research"
 description: " "
 date: 2023-09-19
-tags: [Python, ScientificResearch]
+tags: [ScientificResearch]
 comments: true
 share: true
 ---

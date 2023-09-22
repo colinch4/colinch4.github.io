@@ -3,7 +3,7 @@ layout: post
 title: "Equality operator in conditional statements in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, EqualityOperator]
+tags: [EqualityOperator]
 comments: true
 share: true
 ---

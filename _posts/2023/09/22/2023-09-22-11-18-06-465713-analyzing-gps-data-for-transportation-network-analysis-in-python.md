@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for transportation network analysis in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, TransportationNetworkAnalysis]
+tags: [TransportationNetworkAnalysis]
 comments: true
 share: true
 ---

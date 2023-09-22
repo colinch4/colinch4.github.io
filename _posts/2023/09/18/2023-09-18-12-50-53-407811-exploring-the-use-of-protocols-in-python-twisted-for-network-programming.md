@@ -3,7 +3,7 @@ layout: post
 title: "Exploring the use of protocols in Python Twisted for network programming"
 description: " "
 date: 2023-09-18
-tags: [python, networkprogramming]
+tags: [networkprogramming]
 comments: true
 share: true
 ---

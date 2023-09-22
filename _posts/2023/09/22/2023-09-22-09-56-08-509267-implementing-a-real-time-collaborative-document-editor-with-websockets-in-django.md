@@ -105,6 +105,7 @@ websocket_urlpatterns = [
 1. Create a new file called `document.html` within the `templates` directory:
 
 ```html
+{% raw %}
 {% extends 'base.html' %}
 
 {% block content %}
@@ -136,6 +137,7 @@ websocket_urlpatterns = [
         document.getElementById('editor').addEventListener('input', handleUpdate);
     </script>
 {% endblock %}
+{% endraw %}
 ```
 
 2. Update your `views.py` file within the `editor` app to include the following:

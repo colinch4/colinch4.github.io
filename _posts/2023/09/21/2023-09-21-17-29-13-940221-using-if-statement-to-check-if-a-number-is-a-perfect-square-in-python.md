@@ -3,7 +3,7 @@ layout: post
 title: "Using if statement to check if a number is a perfect square in Python"
 description: " "
 date: 2023-09-21
-tags: [python, perfectsquare]
+tags: [perfectsquare]
 comments: true
 share: true
 ---

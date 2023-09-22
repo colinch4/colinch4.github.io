@@ -3,7 +3,7 @@ layout: post
 title: "MyPy integration with documentation generators in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, Documentation]
+tags: [Documentation]
 comments: true
 share: true
 ---

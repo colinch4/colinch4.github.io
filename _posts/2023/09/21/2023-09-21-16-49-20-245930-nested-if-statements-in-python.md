@@ -3,7 +3,7 @@ layout: post
 title: "Nested if statements in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, Conditionals]
+tags: [Conditionals]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting latitude and longitude from GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

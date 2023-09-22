@@ -3,7 +3,7 @@ layout: post
 title: "Using MyPy to improve code readability and maintainability in Python"
 description: " "
 date: 2023-09-20
-tags: [python, coding]
+tags: [coding]
 comments: true
 share: true
 ---

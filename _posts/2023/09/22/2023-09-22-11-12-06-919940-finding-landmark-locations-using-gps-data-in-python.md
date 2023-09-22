@@ -3,7 +3,7 @@ layout: post
 title: "Finding landmark locations using GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, Geocoding]
+tags: [Geocoding]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Estimating travel time based on GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, GPSTravelTimeEstimation]
+tags: [GPSTravelTimeEstimation]
 comments: true
 share: true
 ---

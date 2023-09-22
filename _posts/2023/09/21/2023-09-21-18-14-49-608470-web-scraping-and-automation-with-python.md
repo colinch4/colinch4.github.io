@@ -3,7 +3,7 @@ layout: post
 title: "Web scraping and automation with Python"
 description: " "
 date: 2023-09-21
-tags: [python, webscraping, automation]
+tags: [webscraping, automation]
 comments: true
 share: true
 ---

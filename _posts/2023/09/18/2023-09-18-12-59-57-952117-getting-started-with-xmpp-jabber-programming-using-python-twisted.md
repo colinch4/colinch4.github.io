@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with XMPP (Jabber) programming using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, XMPP]
+tags: [XMPP]
 comments: true
 share: true
 ---

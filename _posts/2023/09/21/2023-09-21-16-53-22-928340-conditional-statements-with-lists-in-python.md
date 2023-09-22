@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statements with lists in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditional, programming]
+tags: [conditional, programming]
 comments: true
 share: true
 ---

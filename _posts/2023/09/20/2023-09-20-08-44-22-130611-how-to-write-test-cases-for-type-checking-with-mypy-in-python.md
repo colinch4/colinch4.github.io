@@ -3,7 +3,7 @@ layout: post
 title: "How to write test cases for type checking with MyPy in Python"
 description: " "
 date: 2023-09-20
-tags: [Python, TypeChecking]
+tags: [TypeChecking]
 comments: true
 share: true
 ---

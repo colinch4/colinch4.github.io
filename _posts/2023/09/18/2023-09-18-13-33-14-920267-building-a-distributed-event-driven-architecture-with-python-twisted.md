@@ -3,7 +3,7 @@ layout: post
 title: "Building a distributed event-driven architecture with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

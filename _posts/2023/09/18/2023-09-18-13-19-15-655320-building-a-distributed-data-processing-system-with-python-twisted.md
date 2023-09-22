@@ -3,7 +3,7 @@ layout: post
 title: "Building a distributed data processing system with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [python, distributedsystem]
+tags: [distributedsystem]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for wildlife tracking in Python"
 description: " "
 date: 2023-09-22
-tags: [Python, WildlifeTracking]
+tags: [WildlifeTracking]
 comments: true
 share: true
 ---

@@ -105,7 +105,9 @@ At this point, the backend setup for the real-time comment moderation system is 
 1. In your HTML template, include the JavaScript code to connect to the websocket and handle real-time updates:
 
 ```
+{% raw %}
 <script src="{% static 'js/comment_ws.js' %}"></script>
+{% endraw %}
 ```
 
 2. Create a new file `comment_ws.js` in your static files directory and write the following code:

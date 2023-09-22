@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to MongoDB database in Python"
 description: " "
 date: 2023-09-22
-tags: [python, mongodb]
+tags: [mongodb]
 comments: true
 share: true
 ---

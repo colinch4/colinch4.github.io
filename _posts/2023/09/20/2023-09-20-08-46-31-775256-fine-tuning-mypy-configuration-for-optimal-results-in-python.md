@@ -3,7 +3,7 @@ layout: post
 title: "Fine-tuning MyPy configuration for optimal results in Python"
 description: " "
 date: 2023-09-20
-tags: [python, typing]
+tags: [typing]
 comments: true
 share: true
 ---

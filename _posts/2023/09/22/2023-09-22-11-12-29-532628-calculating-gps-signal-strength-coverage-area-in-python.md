@@ -3,7 +3,7 @@ layout: post
 title: "Calculating GPS signal strength coverage area in Python"
 description: " "
 date: 2023-09-22
-tags: [python, GPSignalStrengthCoverage]
+tags: [GPSignalStrengthCoverage]
 comments: true
 share: true
 ---

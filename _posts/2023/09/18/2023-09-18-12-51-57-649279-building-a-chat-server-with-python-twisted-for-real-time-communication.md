@@ -3,7 +3,7 @@ layout: post
 title: "Building a chat server with Python Twisted for real-time communication"
 description: " "
 date: 2023-09-18
-tags: [Python, Twisted]
+tags: [Twisted]
 comments: true
 share: true
 ---

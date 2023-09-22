@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to Excel file format in Python"
 description: " "
 date: 2023-09-22
-tags: [python, Excel]
+tags: [Excel]
 comments: true
 share: true
 ---

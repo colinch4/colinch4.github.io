@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for performance optimization in Python"
 description: " "
 date: 2023-09-20
-tags: [python, performanceoptimization]
+tags: [performanceoptimization]
 comments: true
 share: true
 ---

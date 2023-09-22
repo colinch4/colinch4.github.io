@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to SQLite database in Python"
 description: " "
 date: 2023-09-22
-tags: [python, datamanagement]
+tags: [datamanagement]
 comments: true
 share: true
 ---

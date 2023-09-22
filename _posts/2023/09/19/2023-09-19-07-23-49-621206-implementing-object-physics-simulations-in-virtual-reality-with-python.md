@@ -3,7 +3,7 @@ layout: post
 title: "Implementing object physics simulations in virtual reality with Python"
 description: " "
 date: 2023-09-19
-tags: [python, PhysicsSimulation, PythonProgramming, VirtualReality]
+tags: [PhysicsSimulation, PythonProgramming, VirtualReality]
 comments: true
 share: true
 ---

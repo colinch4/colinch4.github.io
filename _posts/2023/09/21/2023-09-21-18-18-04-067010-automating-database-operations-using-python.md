@@ -3,7 +3,7 @@ layout: post
 title: "Automating database operations using Python"
 description: " "
 date: 2023-09-21
-tags: [python, database, automation]
+tags: [database, automation]
 comments: true
 share: true
 ---

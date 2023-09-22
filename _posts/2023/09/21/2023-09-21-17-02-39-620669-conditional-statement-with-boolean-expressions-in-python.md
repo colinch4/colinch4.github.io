@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with boolean expressions in Python"
 description: " "
 date: 2023-09-21
-tags: [python, conditionalstatements, boolexpressions]
+tags: [conditionalstatements, boolexpressions]
 comments: true
 share: true
 ---

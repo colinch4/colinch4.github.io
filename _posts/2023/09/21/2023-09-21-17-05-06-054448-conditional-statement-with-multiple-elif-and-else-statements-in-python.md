@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple elif and else statements in Python"
 description: " "
 date: 2023-09-21
-tags: [Python, ConditionalStatements]
+tags: [ConditionalStatements]
 comments: true
 share: true
 ---

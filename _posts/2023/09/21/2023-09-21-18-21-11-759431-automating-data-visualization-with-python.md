@@ -3,7 +3,7 @@ layout: post
 title: "Automating data visualization with Python"
 description: " "
 date: 2023-09-21
-tags: [python, datavisualization]
+tags: [datavisualization]
 comments: true
 share: true
 ---
