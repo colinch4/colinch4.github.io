@@ -92,6 +92,7 @@ To test file uploads with websockets, we need to create a simple HTML form that 
 Add the following code to your HTML file:
 
 ```html
+{% raw %}
 <form method="post" action="{% url 'upload_file' %}" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file" name="file">
@@ -126,6 +127,7 @@ Add the following code to your HTML file:
         reader.readAsText(file);
     });
 </script>
+{% endraw %}
 ```
 
 ## Conclusion

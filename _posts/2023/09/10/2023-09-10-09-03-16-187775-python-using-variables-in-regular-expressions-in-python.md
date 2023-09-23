@@ -71,6 +71,7 @@ In the above code, we use an f-string to embed the variable `fruit` into the reg
 Quantifiers in regular expressions specify the number of occurrences of a pattern that should be matched. You can use variables to customize these quantifiers. Here's an example:
 
 ```python
+{% raw %}
 import re
 
 fruit = "apple"
@@ -82,6 +83,7 @@ text = "I love apples, apple pie, and apple cider."
 matches = fruit_regex.findall(text)
 
 print(matches)
+{% endraw %}
 ```
 
 In the above code, we use an f-string to embed the variable `fruit` and `occurrences` into the regular expression pattern. We use the `{}` syntax to specify that the pattern should match between 0 and `occurrences` number of occurrences of the word "apple". The output will be `['apple', 'apple', 'apple']` as the pattern matches the word "apple" three times in the text.

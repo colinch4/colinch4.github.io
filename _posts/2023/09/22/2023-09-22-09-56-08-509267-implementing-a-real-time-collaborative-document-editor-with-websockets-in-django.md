@@ -105,6 +105,7 @@ websocket_urlpatterns = [
 1. Create a new file called `document.html` within the `templates` directory:
 
 ```html
+{% raw %}
 {% extends 'base.html' %}
 
 {% block content %}
@@ -136,15 +137,18 @@ websocket_urlpatterns = [
         document.getElementById('editor').addEventListener('input', handleUpdate);
     </script>
 {% endblock %}
+{% endraw %}
 ```
 
 2. Update your `views.py` file within the `editor` app to include the following:
 
 ```python
+{% raw %}
 from django.shortcuts import render
 
 def document(request, room_name):
     return render(request, 'document.html', {'room_name': room_name})
+{% endraw %}
 ```
 
 3. Define the necessary URL patterns in your project's `urls.py` file:

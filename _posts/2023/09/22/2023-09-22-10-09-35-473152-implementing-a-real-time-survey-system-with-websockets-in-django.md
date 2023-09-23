@@ -148,6 +148,7 @@ Before we begin, make sure you have the following installed:
 
 5. Create a new template file `survey.html` inside a `templates/surveyapp` directory and add the following code:
    ```html
+   {% raw %}
    <!DOCTYPE html>
    <html>
    <head>
@@ -175,6 +176,7 @@ Before we begin, make sure you have the following installed:
        </script>
    </body>
    </html>
+   {% endraw %}
    ```
 
 ## Testing the Real-time Survey App
