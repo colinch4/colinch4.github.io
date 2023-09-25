@@ -3,7 +3,7 @@ layout: post
 title: "Deep learning techniques for NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [deeplearning, Python]
+tags: [deeplearning]
 comments: true
 share: true
 ---

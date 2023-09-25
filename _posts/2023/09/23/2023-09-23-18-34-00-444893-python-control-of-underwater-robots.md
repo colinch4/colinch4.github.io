@@ -3,7 +3,7 @@ layout: post
 title: "Python control of underwater robots"
 description: " "
 date: 2023-09-23
-tags: [python, underwaterrobots]
+tags: [underwaterrobots]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Genre identification in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [python, genreidentification]
+tags: [genreidentification]
 comments: true
 share: true
 ---

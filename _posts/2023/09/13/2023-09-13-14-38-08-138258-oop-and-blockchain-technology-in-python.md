@@ -3,7 +3,7 @@ layout: post
 title: "OOP and blockchain technology in Python"
 description: " "
 date: 2023-09-13
-tags: [Blockchain, Python, TechBlog]
+tags: [Blockchain,TechBlog]
 comments: true
 share: true
 ---

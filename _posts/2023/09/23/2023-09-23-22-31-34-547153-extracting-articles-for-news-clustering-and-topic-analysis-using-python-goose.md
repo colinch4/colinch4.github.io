@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for news clustering and topic analysis using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, DataAnalysis]
+tags: [DataAnalysis]
 comments: true
 share: true
 ---

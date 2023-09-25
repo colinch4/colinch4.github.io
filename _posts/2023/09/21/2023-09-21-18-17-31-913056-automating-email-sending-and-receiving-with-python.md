@@ -3,7 +3,7 @@ layout: post
 title: "Automating email sending and receiving with Python"
 description: " "
 date: 2023-09-21
-tags: [Programming, Python, Email, Automation]
+tags: [Programming,Email, Automation]
 comments: true
 share: true
 ---

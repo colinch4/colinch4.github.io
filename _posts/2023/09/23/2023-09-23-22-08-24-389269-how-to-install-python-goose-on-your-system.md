@@ -3,7 +3,7 @@ layout: post
 title: "How to install Python Goose on your system"
 description: " "
 date: 2023-09-23
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

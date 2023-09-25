@@ -3,7 +3,7 @@ layout: post
 title: "Implementing validation and sanitization of ThriftPy messages"
 description: " "
 date: 2023-09-24
-tags: [thrift, python]
+tags: [thrift]
 comments: true
 share: true
 ---

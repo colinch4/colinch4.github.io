@@ -3,7 +3,7 @@ layout: post
 title: "Network testing in Python"
 description: " "
 date: 2023-09-17
-tags: [networktesting, Python]
+tags: [networktesting]
 comments: true
 share: true
 ---

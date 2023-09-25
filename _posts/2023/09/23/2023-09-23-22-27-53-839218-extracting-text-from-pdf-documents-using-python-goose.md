@@ -3,7 +3,7 @@ layout: post
 title: "Extracting text from PDF documents using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, textextraction]
+tags: [textextraction]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Spelling correction in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, SpellingCorrection]
+tags: [SpellingCorrection]
 comments: true
 share: true
 ---

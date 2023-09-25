@@ -3,7 +3,7 @@ layout: post
 title: "PyVISA and virtual reality (VR) visualization of instrument data"
 description: " "
 date: 2023-09-18
-tags: [Instrumentation, Python]
+tags: [Instrumentation]
 comments: true
 share: true
 ---

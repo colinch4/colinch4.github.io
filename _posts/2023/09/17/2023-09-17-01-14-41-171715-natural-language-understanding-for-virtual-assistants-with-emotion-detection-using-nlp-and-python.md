@@ -3,7 +3,7 @@ layout: post
 title: "Natural language understanding for virtual assistants with emotion detection using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [VirtualAssistants, EmotionDetection, Python]
+tags: [VirtualAssistants, EmotionDetection]
 comments: true
 share: true
 ---

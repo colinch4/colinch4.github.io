@@ -3,7 +3,7 @@ layout: post
 title: "Extracting metadata from articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [tech, python]
+tags: [tech]
 comments: true
 share: true
 ---

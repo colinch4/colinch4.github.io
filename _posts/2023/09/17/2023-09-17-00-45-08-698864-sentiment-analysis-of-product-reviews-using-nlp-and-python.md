@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis of product reviews using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [SentimentAnalysis, Python, Reviews]
+tags: [SentimentAnalysis,Reviews]
 comments: true
 share: true
 ---

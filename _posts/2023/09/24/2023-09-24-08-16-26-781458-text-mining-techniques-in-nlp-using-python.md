@@ -3,7 +3,7 @@ layout: post
 title: "Text mining techniques in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [python, textmining]
+tags: [textmining]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for rumor detection and debunking using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [rumordetection, python]
+tags: [rumordetection]
 comments: true
 share: true
 ---

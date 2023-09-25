@@ -3,7 +3,7 @@ layout: post
 title: "Test-driven deployment in Python"
 description: " "
 date: 2023-09-17
-tags: [testdrivendeployment, Python]
+tags: [testdrivendeployment]
 comments: true
 share: true
 ---

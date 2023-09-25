@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for implementing article extraction using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, ArticleExtraction]
+tags: [ArticleExtraction]
 comments: true
 share: true
 ---

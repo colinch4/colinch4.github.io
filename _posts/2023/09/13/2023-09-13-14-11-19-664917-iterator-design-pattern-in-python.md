@@ -3,7 +3,7 @@ layout: post
 title: "Iterator design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [Tech, Python, IteratorDesignPattern]
+tags: [Tech,IteratorDesignPattern]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Creating a TCP client with Python Twisted for network communication"
 description: " "
 date: 2023-09-18
-tags: [networking, python]
+tags: [networking]
 comments: true
 share: true
 ---

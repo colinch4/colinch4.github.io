@@ -3,7 +3,7 @@ layout: post
 title: "Building a content tracking system for news organizations using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, contentextraction]
+tags: [contentextraction]
 comments: true
 share: true
 ---

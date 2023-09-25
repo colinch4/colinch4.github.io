@@ -3,7 +3,7 @@ layout: post
 title: "Converting GPS data to GML format in Python"
 description: " "
 date: 2023-09-22
-tags: [Tech, Python]
+tags: [Tech]
 comments: true
 share: true
 ---

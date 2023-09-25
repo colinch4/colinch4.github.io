@@ -3,7 +3,7 @@ layout: post
 title: "Implementing article summarization algorithms with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, articlesummarization]
+tags: [articlesummarization]
 comments: true
 share: true
 ---

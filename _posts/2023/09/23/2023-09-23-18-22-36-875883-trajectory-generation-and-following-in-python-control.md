@@ -3,7 +3,7 @@ layout: post
 title: "Trajectory generation and following in Python control"
 description: " "
 date: 2023-09-23
-tags: [Python, ControlSystem]
+tags: [ControlSystem]
 comments: true
 share: true
 ---

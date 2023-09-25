@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python programming"
 description: " "
 date: 2023-09-15
-tags: [programming, Python, Python, programming]
+tags: [programming,Python, programming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a multilingual article extraction system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, articleextraction]
+tags: [articleextraction]
 comments: true
 share: true
 ---

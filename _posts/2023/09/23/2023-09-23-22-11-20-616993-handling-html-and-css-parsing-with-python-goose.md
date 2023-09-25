@@ -3,7 +3,7 @@ layout: post
 title: "Handling HTML and CSS parsing with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, HTML]
+tags: [HTML]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python control of robotic prosthetics"
 description: " "
 date: 2023-09-23
-tags: [Robotics, Python]
+tags: [Robotics]
 comments: true
 share: true
 ---

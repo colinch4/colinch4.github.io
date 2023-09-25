@@ -3,7 +3,7 @@ layout: post
 title: "Web scraping best practices in Python"
 description: " "
 date: 2023-09-14
-tags: [webscraping, python]
+tags: [webscraping]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python script to monitor Bluetooth signal strength"
 description: " "
 date: 2023-09-18
-tags: [bluetooth, python]
+tags: [bluetooth]
 comments: true
 share: true
 ---

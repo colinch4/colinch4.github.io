@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for event-driven trading strategies using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, eventdriven]
+tags: [eventdriven]
 comments: true
 share: true
 ---

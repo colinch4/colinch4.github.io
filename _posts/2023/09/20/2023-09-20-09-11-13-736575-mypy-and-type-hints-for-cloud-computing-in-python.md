@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for cloud computing in Python"
 description: " "
 date: 2023-09-20
-tags: [cloudcomputing, python]
+tags: [cloudcomputing]
 comments: true
 share: true
 ---

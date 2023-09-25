@@ -3,7 +3,7 @@ layout: post
 title: "Smoothing GPS data using moving average in Python"
 description: " "
 date: 2023-09-22
-tags: [TechBlog, Python]
+tags: [TechBlog]
 comments: true
 share: true
 ---

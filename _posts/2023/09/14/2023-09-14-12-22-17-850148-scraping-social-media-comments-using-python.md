@@ -3,7 +3,7 @@ layout: post
 title: "Scraping social media comments using Python"
 description: " "
 date: 2023-09-14
-tags: [SocialMediaScraping, Python]
+tags: [SocialMediaScraping]
 comments: true
 share: true
 ---

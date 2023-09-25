@@ -3,7 +3,7 @@ layout: post
 title: "Extracting article statistics and analytics using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, webanalytics]
+tags: [webanalytics]
 comments: true
 share: true
 ---

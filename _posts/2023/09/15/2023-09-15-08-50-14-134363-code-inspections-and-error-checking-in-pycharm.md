@@ -3,7 +3,7 @@ layout: post
 title: "Code inspections and error checking in PyCharm"
 description: " "
 date: 2023-09-15
-tags: [pycharm, python]
+tags: [pycharm]
 comments: true
 share: true
 ---

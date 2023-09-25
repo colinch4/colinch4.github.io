@@ -3,7 +3,7 @@ layout: post
 title: "How to handle pagination and multiple page articles with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, scarping]
+tags: [scarping]
 comments: true
 share: true
 ---

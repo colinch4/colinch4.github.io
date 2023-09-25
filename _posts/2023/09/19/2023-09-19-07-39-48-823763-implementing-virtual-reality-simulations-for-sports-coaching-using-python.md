@@ -3,7 +3,7 @@ layout: post
 title: "Implementing virtual reality simulations for sports coaching using Python"
 description: " "
 date: 2023-09-19
-tags: [SportsCoaching, Python, VirtualReality, Simulation]
+tags: [SportsCoaching,VirtualReality, Simulation]
 comments: true
 share: true
 ---

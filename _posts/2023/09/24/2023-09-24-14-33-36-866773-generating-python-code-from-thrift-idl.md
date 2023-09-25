@@ -3,7 +3,7 @@ layout: post
 title: "Generating Python code from Thrift IDL"
 description: " "
 date: 2023-09-24
-tags: [Thrift, Python]
+tags: [Thrift]
 comments: true
 share: true
 ---

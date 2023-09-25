@@ -3,7 +3,7 @@ layout: post
 title: "Named Entity Recognition in legal contracts using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [NamedEntityRecognition, Python, LegalTech]
+tags: [NamedEntityRecognition,LegalTech]
 comments: true
 share: true
 ---

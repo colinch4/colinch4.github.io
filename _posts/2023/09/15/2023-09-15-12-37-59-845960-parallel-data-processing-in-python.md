@@ -3,7 +3,7 @@ layout: post
 title: "Parallel data processing in Python"
 description: " "
 date: 2023-09-15
-tags: [parallelprocessing, python]
+tags: [parallelprocessing]
 comments: true
 share: true
 ---

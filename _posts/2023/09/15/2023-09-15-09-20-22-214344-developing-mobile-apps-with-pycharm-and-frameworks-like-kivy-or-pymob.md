@@ -3,7 +3,7 @@ layout: post
 title: "Developing mobile apps with PyCharm and frameworks like Kivy or PyMob"
 description: " "
 date: 2023-09-15
-tags: [mobileappdevelopment, python]
+tags: [mobileappdevelopment]
 comments: true
 share: true
 ---

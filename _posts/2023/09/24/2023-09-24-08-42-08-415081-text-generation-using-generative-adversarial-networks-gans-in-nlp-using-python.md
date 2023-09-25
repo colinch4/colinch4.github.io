@@ -3,7 +3,7 @@ layout: post
 title: "Text generation using generative adversarial networks (GANs) in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [python, GANs]
+tags: [GANs]
 comments: true
 share: true
 ---

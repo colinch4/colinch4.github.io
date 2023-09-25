@@ -3,7 +3,7 @@ layout: post
 title: "Accessibility testing in Python"
 description: " "
 date: 2023-09-17
-tags: [AccessibilityTesting, Python]
+tags: [AccessibilityTesting]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data clustering and segmentation"
 description: " "
 date: 2023-09-13
-tags: [datascience, python]
+tags: [datascience]
 comments: true
 share: true
 ---

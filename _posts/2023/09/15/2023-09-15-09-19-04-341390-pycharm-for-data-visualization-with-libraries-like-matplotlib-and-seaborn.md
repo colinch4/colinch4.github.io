@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm for data visualization with libraries like Matplotlib and Seaborn"
 description: " "
 date: 2023-09-15
-tags: [datavisualization, python]
+tags: [datavisualization]
 comments: true
 share: true
 ---

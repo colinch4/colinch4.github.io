@@ -3,7 +3,7 @@ layout: post
 title: "Web scraping and text analysis using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [WebScraping, Python]
+tags: [WebScraping]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Control of robot feedback systems using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, Robotics]
+tags: [Robotics]
 comments: true
 share: true
 ---

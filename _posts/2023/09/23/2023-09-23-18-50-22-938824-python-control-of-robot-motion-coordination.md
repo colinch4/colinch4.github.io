@@ -3,7 +3,7 @@ layout: post
 title: "Python control of robot motion coordination"
 description: " "
 date: 2023-09-23
-tags: [robotics, python]
+tags: [robotics]
 comments: true
 share: true
 ---

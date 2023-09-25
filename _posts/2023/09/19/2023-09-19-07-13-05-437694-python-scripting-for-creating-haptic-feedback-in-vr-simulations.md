@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating haptic feedback in VR simulations"
 description: " "
 date: 2023-09-19
-tags: [hashtags, Python]
+tags: [hashtags]
 comments: true
 share: true
 ---

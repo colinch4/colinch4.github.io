@@ -3,7 +3,7 @@ layout: post
 title: "Automating time series forecasting using Python"
 description: " "
 date: 2023-09-21
-tags: [datascience, python]
+tags: [datascience]
 comments: true
 share: true
 ---

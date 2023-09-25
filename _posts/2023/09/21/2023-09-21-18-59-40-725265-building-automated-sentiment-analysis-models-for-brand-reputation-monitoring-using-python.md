@@ -3,7 +3,7 @@ layout: post
 title: "Building automated sentiment analysis models for brand reputation monitoring using Python"
 description: " "
 date: 2023-09-21
-tags: [sentimentanalysis, brandreputation, python]
+tags: [sentimentanalysis, brandreputation]
 comments: true
 share: true
 ---

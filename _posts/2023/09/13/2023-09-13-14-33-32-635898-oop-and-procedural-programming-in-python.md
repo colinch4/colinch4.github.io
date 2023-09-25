@@ -3,7 +3,7 @@ layout: post
 title: "OOP and procedural programming in Python"
 description: " "
 date: 2023-09-13
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

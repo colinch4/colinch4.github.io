@@ -3,7 +3,7 @@ layout: post
 title: "Python scripting for creating interactive VR experiences for art galleries"
 description: " "
 date: 2023-09-19
-tags: [artgalleries, Python, interactiveexperiences]
+tags: [artgalleries,interactiveexperiences]
 comments: true
 share: true
 ---

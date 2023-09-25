@@ -3,7 +3,7 @@ layout: post
 title: "Control of surgical robots using Python"
 description: " "
 date: 2023-09-23
-tags: [surgicalrobots, python]
+tags: [surgicalrobots]
 comments: true
 share: true
 ---

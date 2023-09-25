@@ -3,7 +3,7 @@ layout: post
 title: "Extracting entities from unstructured text data using Python"
 description: " "
 date: 2023-09-24
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

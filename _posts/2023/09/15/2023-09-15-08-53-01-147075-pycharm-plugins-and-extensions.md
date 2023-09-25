@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm plugins and extensions"
 description: " "
 date: 2023-09-15
-tags: [pycharm, python, plugins, extensions]
+tags: [pycharm,plugins, extensions]
 comments: true
 share: true
 ---

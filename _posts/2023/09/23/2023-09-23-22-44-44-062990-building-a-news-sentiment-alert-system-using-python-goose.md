@@ -3,7 +3,7 @@ layout: post
 title: "Building a news sentiment alert system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, newsalert]
+tags: [newsalert]
 comments: true
 share: true
 ---

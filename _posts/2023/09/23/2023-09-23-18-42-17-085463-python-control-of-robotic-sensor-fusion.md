@@ -3,7 +3,7 @@ layout: post
 title: "Python control of robotic sensor fusion"
 description: " "
 date: 2023-09-23
-tags: [Python, Robotics]
+tags: [Robotics]
 comments: true
 share: true
 ---

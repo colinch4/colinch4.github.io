@@ -3,7 +3,7 @@ layout: post
 title: "Named entity recognition in social media data using Python"
 description: " "
 date: 2023-09-24
-tags: [python, NamedEntityRecognition]
+tags: [NamedEntityRecognition]
 comments: true
 share: true
 ---

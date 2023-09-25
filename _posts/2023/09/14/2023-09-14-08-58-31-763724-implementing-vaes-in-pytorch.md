@@ -3,7 +3,7 @@ layout: post
 title: "Implementing VAEs in PyTorch"
 description: " "
 date: 2023-09-14
-tags: [deeplearning, python]
+tags: [deeplearning]
 comments: true
 share: true
 ---

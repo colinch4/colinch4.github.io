@@ -3,7 +3,7 @@ layout: post
 title: "Extracting article summaries and key points with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

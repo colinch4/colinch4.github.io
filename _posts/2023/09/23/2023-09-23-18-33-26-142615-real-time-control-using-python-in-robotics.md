@@ -3,7 +3,7 @@ layout: post
 title: "Real-time control using Python in robotics"
 description: " "
 date: 2023-09-23
-tags: [python, realtime]
+tags: [realtime]
 comments: true
 share: true
 ---

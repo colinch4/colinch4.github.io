@@ -3,7 +3,7 @@ layout: post
 title: "Intent recognition in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [IntentRecognition, Python]
+tags: [IntentRecognition]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building desktop applications with PyCharm and frameworks like Tkinter or Kivy"
 description: " "
 date: 2023-09-15
-tags: [desktopapplications, python]
+tags: [desktopapplications]
 comments: true
 share: true
 ---

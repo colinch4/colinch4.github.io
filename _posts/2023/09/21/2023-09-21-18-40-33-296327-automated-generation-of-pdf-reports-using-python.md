@@ -3,7 +3,7 @@ layout: post
 title: "Automated generation of PDF reports using Python"
 description: " "
 date: 2023-09-21
-tags: [8AB6D6, Reports, Python]
+tags: [8AB6D6, Reports]
 comments: true
 share: true
 ---

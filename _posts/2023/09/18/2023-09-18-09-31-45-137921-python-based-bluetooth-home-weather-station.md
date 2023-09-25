@@ -3,7 +3,7 @@ layout: post
 title: "Python-based Bluetooth home weather station"
 description: " "
 date: 2023-09-18
-tags: [technology, Python]
+tags: [technology]
 comments: true
 share: true
 ---

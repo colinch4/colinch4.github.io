@@ -3,7 +3,7 @@ layout: post
 title: "Developing web applications using PyCharm and frameworks like Django or Flask"
 description: " "
 date: 2023-09-15
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automated code generation using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [CodeGeneration, Python]
+tags: [CodeGeneration]
 comments: true
 share: true
 ---

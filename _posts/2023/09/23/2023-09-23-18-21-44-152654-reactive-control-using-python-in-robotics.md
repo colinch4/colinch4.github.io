@@ -3,7 +3,7 @@ layout: post
 title: "Reactive control using Python in robotics"
 description: " "
 date: 2023-09-23
-tags: [robotics, python]
+tags: [robotics]
 comments: true
 share: true
 ---

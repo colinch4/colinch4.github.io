@@ -3,7 +3,7 @@ layout: post
 title: "Named entity recognition in biomedical text using Python"
 description: " "
 date: 2023-09-24
-tags: [python, biomedical]
+tags: [biomedical]
 comments: true
 share: true
 ---

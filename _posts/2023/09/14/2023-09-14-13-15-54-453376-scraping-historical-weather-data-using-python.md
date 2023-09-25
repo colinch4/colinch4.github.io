@@ -3,7 +3,7 @@ layout: post
 title: "Scraping historical weather data using Python"
 description: " "
 date: 2023-09-14
-tags: [inner, inner, Python, WebScraping]
+tags: [inner, inner,WebScraping]
 comments: true
 share: true
 ---

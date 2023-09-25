@@ -3,7 +3,7 @@ layout: post
 title: "Dealing with JavaScript while web scraping with Python"
 description: " "
 date: 2023-09-14
-tags: [WebScraping, Python]
+tags: [WebScraping]
 comments: true
 share: true
 ---

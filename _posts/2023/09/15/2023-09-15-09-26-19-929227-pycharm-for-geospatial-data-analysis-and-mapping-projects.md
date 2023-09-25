@@ -3,7 +3,7 @@ layout: post
 title: "PyCharm for geospatial data analysis and mapping projects"
 description: " "
 date: 2023-09-15
-tags: [geospatial, Python]
+tags: [geospatial]
 comments: true
 share: true
 ---

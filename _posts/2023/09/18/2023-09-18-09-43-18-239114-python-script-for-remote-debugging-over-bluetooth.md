@@ -3,7 +3,7 @@ layout: post
 title: "Python script for remote debugging over Bluetooth"
 description: " "
 date: 2023-09-18
-tags: [debugging, python]
+tags: [debugging]
 comments: true
 share: true
 ---

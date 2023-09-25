@@ -3,7 +3,7 @@ layout: post
 title: "Extracting news articles for sentiment analysis and market trend prediction with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, newsanalysis]
+tags: [newsanalysis]
 comments: true
 share: true
 ---

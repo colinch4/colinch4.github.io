@@ -3,7 +3,7 @@ layout: post
 title: "Security testing in Python"
 description: " "
 date: 2023-09-17
-tags: [securitytesting, python]
+tags: [securitytesting]
 comments: true
 share: true
 ---

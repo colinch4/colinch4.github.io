@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis in financial news using Python"
 description: " "
 date: 2023-09-24
-tags: [python, sentimentanalysis]
+tags: [sentimentanalysis]
 comments: true
 share: true
 ---

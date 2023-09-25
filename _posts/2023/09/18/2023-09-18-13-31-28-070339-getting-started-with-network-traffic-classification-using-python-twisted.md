@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with network traffic classification using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [networking, Python]
+tags: [networking]
 comments: true
 share: true
 ---

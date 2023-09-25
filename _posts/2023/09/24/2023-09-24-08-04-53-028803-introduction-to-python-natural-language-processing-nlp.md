@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python Natural Language Processing (NLP)"
 description: " "
 date: 2023-09-24
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

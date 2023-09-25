@@ -3,7 +3,7 @@ layout: post
 title: "Controlling a 3D printer via Bluetooth with Python"
 description: " "
 date: 2023-09-18
-tags: [3DPrinting, Python]
+tags: [3DPrinting]
 comments: true
 share: true
 ---

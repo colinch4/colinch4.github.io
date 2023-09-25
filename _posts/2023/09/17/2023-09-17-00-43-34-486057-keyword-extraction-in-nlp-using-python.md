@@ -3,7 +3,7 @@ layout: post
 title: "Keyword extraction in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [naturallanguageprocessing, python]
+tags: [naturallanguageprocessing]
 comments: true
 share: true
 ---

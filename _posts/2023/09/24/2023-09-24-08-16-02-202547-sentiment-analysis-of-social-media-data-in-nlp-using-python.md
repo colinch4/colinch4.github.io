@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis of social media data in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [excited, python]
+tags: [excited]
 comments: true
 share: true
 ---

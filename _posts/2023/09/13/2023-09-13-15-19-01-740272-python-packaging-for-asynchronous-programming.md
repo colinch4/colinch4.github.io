@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for asynchronous programming"
 description: " "
 date: 2023-09-13
-tags: [AsyncFrameworks, PythonPackage, Dependencies, Documentation, PackageDistribution, Python, Asynchronous, Packaging, Programming]
+tags: [AsyncFrameworks, PythonPackage, Dependencies, Documentation, PackageDistribution,Asynchronous, Packaging, Programming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for social network analysis and community detection using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, Tech]
+tags: [Tech]
 comments: true
 share: true
 ---

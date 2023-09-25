@@ -3,7 +3,7 @@ layout: post
 title: "Dependency parsing in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, Python]
+tags: []
 comments: true
 share: true
 ---

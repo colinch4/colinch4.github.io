@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with Flask"
 description: " "
 date: 2023-09-13
-tags: [Flask, VirtualEnvironments, Python, Flask, SetupTools, Python, Flask, Docker, FlaskAppDevelopment, WebDevelopment]
+tags: [Flask, VirtualEnvironments,Flask, SetupTools,Flask, Docker, FlaskAppDevelopment, WebDevelopment]
 comments: true
 share: true
 ---

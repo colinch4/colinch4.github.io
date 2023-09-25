@@ -3,7 +3,7 @@ layout: post
 title: "Automated anomaly detection using Python"
 description: " "
 date: 2023-09-21
-tags: [AnomalyDetection, Python]
+tags: [AnomalyDetection]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for working with Excel data"
 description: " "
 date: 2023-09-13
-tags: [techblog, python, excel, pandas, openpyxl]
+tags: [techblog,excel, pandas, openpyxl]
 comments: true
 share: true
 ---

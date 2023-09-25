@@ -3,7 +3,7 @@ layout: post
 title: "Natural language understanding for voice assistants using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [VoiceAssistants, NaturalLanguageUnderstanding, Python]
+tags: [VoiceAssistants, NaturalLanguageUnderstanding]
 comments: true
 share: true
 ---

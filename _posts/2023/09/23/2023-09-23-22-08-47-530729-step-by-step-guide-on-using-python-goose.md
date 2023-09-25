@@ -3,7 +3,7 @@ layout: post
 title: "Step-by-step guide on using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

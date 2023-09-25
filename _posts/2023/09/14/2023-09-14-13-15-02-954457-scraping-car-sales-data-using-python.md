@@ -3,7 +3,7 @@ layout: post
 title: "Scraping car sales data using Python"
 description: " "
 date: 2023-09-14
-tags: [Tech, Scraping, Python]
+tags: [Tech, Scraping]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a distributed recommendation engine with deep learning and Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [deeplearning, python]
+tags: [deeplearning]
 comments: true
 share: true
 ---

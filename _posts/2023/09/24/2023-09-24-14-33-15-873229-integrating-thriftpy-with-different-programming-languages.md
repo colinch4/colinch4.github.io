@@ -3,7 +3,7 @@ layout: post
 title: "Integrating ThriftPy with different programming languages"
 description: " "
 date: 2023-09-24
-tags: [Python, ThriftPy]
+tags: [ThriftPy]
 comments: true
 share: true
 ---

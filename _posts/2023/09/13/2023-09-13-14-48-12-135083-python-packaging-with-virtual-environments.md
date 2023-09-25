@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging with virtual environments"
 description: " "
 date: 2023-09-13
-tags: [PythonPackaging, VirtualEnvironments, Python, Packaging, VirtualEnvironments]
+tags: [PythonPackaging, VirtualEnvironments,Packaging, VirtualEnvironments]
 comments: true
 share: true
 ---

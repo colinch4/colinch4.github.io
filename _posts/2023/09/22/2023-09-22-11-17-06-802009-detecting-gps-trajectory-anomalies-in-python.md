@@ -3,7 +3,7 @@ layout: post
 title: "Detecting GPS trajectory anomalies in Python"
 description: " "
 date: 2023-09-22
-tags: [datascience, python]
+tags: [datascience]
 comments: true
 share: true
 ---

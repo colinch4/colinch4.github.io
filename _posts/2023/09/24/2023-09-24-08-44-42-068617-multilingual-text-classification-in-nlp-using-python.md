@@ -3,7 +3,7 @@ layout: post
 title: "Multilingual text classification in NLP using Python."
 description: " "
 date: 2023-09-24
-tags: [Multilingual, Python]
+tags: [Multilingual]
 comments: true
 share: true
 ---

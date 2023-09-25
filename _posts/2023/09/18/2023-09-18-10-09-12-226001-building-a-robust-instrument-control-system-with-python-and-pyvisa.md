@@ -3,7 +3,7 @@ layout: post
 title: "Building a robust instrument control system with Python and PyVISA"
 description: " "
 date: 2023-09-18
-tags: [instrumentcontrol, Python]
+tags: [instrumentcontrol]
 comments: true
 share: true
 ---

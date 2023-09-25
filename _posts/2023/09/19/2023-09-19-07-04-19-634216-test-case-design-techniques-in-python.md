@@ -3,7 +3,7 @@ layout: post
 title: "Test case design techniques in Python"
 description: " "
 date: 2023-09-19
-tags: [testing, python]
+tags: [testing]
 comments: true
 share: true
 ---

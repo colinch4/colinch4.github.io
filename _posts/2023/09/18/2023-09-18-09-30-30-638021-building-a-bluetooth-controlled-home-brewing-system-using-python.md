@@ -3,7 +3,7 @@ layout: post
 title: "Building a Bluetooth-controlled home brewing system using Python"
 description: " "
 date: 2023-09-18
-tags: [tech, python]
+tags: [tech]
 comments: true
 share: true
 ---

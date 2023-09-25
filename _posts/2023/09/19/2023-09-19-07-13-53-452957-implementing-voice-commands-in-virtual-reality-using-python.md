@@ -3,7 +3,7 @@ layout: post
 title: "Implementing voice commands in virtual reality using Python"
 description: " "
 date: 2023-09-19
-tags: [virtualreality, python]
+tags: [virtualreality]
 comments: true
 share: true
 ---

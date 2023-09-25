@@ -3,7 +3,7 @@ layout: post
 title: "Control of autonomous navigation using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, AutonomousNavigation]
+tags: [AutonomousNavigation]
 comments: true
 share: true
 ---

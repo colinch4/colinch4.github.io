@@ -3,7 +3,7 @@ layout: post
 title: "Domain-specific sentiment analysis using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [SentimentAnalysis, DomainSpecific, Python]
+tags: [SentimentAnalysis, DomainSpecific]
 comments: true
 share: true
 ---

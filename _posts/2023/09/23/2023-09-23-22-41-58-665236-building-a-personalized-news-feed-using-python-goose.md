@@ -3,7 +3,7 @@ layout: post
 title: "Building a personalized news feed using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, NewsFeed]
+tags: [NewsFeed]
 comments: true
 share: true
 ---

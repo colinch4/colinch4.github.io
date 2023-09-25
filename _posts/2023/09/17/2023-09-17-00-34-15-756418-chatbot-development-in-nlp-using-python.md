@@ -3,7 +3,7 @@ layout: post
 title: "Chatbot development in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [Chatbot, Python]
+tags: [Chatbot]
 comments: true
 share: true
 ---

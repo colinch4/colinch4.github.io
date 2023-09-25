@@ -3,7 +3,7 @@ layout: post
 title: "Scraping cryptocurrency market news using Python"
 description: " "
 date: 2023-09-14
-tags: [crypto, python]
+tags: [crypto]
 comments: true
 share: true
 ---

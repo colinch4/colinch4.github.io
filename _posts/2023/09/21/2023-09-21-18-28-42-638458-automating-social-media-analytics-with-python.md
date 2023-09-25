@@ -3,7 +3,7 @@ layout: post
 title: "Automating social media analytics with Python"
 description: " "
 date: 2023-09-21
-tags: [socialmedia, python]
+tags: [socialmedia]
 comments: true
 share: true
 ---

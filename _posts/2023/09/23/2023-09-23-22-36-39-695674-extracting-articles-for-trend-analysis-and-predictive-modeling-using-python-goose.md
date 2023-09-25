@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for trend analysis and predictive modeling using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, article]
+tags: [article]
 comments: true
 share: true
 ---

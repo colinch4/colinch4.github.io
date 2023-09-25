@@ -3,7 +3,7 @@ layout: post
 title: "Building automation pipelines with Python"
 description: " "
 date: 2023-09-21
-tags: [automation, python]
+tags: [automation]
 comments: true
 share: true
 ---

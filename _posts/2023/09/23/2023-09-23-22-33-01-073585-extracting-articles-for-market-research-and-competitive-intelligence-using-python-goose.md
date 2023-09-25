@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for market research and competitive intelligence using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, marketresearch]
+tags: [marketresearch]
 comments: true
 share: true
 ---

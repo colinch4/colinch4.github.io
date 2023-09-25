@@ -3,7 +3,7 @@ layout: post
 title: "Building a real-time news aggregation system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, newsaggregator]
+tags: [newsaggregator]
 comments: true
 share: true
 ---

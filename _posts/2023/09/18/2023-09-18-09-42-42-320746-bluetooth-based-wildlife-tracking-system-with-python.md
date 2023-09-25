@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based wildlife tracking system with Python"
 description: " "
 date: 2023-09-18
-tags: [wildlifeconservation, python]
+tags: [wildlifeconservation]
 comments: true
 share: true
 ---

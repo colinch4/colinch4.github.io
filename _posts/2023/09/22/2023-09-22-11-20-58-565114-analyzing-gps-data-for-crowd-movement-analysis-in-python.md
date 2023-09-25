@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing GPS data for crowd movement analysis in Python"
 description: " "
 date: 2023-09-22
-tags: [dataanalysis, Python]
+tags: [dataanalysis]
 comments: true
 share: true
 ---

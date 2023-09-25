@@ -3,7 +3,7 @@ layout: post
 title: "Simulating robot dynamics in Python"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotDynamics]
+tags: [RobotDynamics]
 comments: true
 share: true
 ---

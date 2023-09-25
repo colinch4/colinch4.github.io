@@ -3,7 +3,7 @@ layout: post
 title: "Word sense disambiguation in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [WordSenseDisambiguation, Python]
+tags: [WordSenseDisambiguation]
 comments: true
 share: true
 ---

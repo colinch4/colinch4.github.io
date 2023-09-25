@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for serverless architecture in Python"
 description: " "
 date: 2023-09-20
-tags: [serverless, Python]
+tags: [serverless]
 comments: true
 share: true
 ---

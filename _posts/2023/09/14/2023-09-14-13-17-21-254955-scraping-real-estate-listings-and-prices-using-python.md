@@ -3,7 +3,7 @@ layout: post
 title: "Scraping real estate listings and prices using Python"
 description: " "
 date: 2023-09-14
-tags: [RealEstate, Python]
+tags: [RealEstate]
 comments: true
 share: true
 ---

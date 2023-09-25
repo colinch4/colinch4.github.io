@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in cloud computing with Python"
 description: " "
 date: 2023-09-15
-tags: [cloudcomputing, python]
+tags: [cloudcomputing]
 comments: true
 share: true
 ---

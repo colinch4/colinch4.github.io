@@ -3,7 +3,7 @@ layout: post
 title: "OOP and reactive programming in Python"
 description: " "
 date: 2023-09-13
-tags: [programming, python, objectorientedprogramming, reactiveprogramming, rxpython, asynchronous]
+tags: [programming,objectorientedprogramming, reactiveprogramming, rxpython, asynchronous]
 comments: true
 share: true
 ---

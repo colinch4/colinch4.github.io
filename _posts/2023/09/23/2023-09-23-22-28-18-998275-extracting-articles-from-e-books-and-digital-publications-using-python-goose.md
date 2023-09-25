@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles from e-books and digital publications using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, webcontentextraction]
+tags: [webcontentextraction]
 comments: true
 share: true
 ---

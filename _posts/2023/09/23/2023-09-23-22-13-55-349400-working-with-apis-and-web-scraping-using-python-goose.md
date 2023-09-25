@@ -3,7 +3,7 @@ layout: post
 title: "Working with APIs and web scraping using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, APIs]
+tags: [APIs]
 comments: true
 share: true
 ---

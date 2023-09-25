@@ -3,7 +3,7 @@ layout: post
 title: "Building a content aggregation and recommendation platform using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, contentaggregation]
+tags: [contentaggregation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Experiments with pre-trained language models in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, BERT]
+tags: [BERT]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Natural language processing for robot control using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotControl]
+tags: [RobotControl]
 comments: true
 share: true
 ---

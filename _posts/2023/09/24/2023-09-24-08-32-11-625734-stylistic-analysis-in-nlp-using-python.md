@@ -3,7 +3,7 @@ layout: post
 title: "Stylistic analysis in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [StylisticAnalysis, Python]
+tags: [StylisticAnalysis]
 comments: true
 share: true
 ---

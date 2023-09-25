@@ -3,7 +3,7 @@ layout: post
 title: "Creating a distributed sentiment analysis system with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [hashtags, Python]
+tags: [hashtags]
 comments: true
 share: true
 ---

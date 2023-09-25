@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for event detection and tracking using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, Goose]
+tags: [Goose]
 comments: true
 share: true
 ---

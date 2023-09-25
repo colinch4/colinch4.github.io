@@ -3,7 +3,7 @@ layout: post
 title: "Machine vision-based control in Python robotics"
 description: " "
 date: 2023-09-23
-tags: [python, robotics]
+tags: [robotics]
 comments: true
 share: true
 ---

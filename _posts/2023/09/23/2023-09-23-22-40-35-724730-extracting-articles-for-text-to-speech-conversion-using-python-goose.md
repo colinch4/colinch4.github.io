@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for text-to-speech conversion using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, texttospeech]
+tags: [texttospeech]
 comments: true
 share: true
 ---

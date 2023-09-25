@@ -3,7 +3,7 @@ layout: post
 title: "Extracting structured data from articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, dataextraction]
+tags: [dataextraction]
 comments: true
 share: true
 ---

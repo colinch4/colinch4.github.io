@@ -3,7 +3,7 @@ layout: post
 title: "Automated image recognition and object detection using Python"
 description: " "
 date: 2023-09-21
-tags: [TechTrends, Python]
+tags: [TechTrends]
 comments: true
 share: true
 ---

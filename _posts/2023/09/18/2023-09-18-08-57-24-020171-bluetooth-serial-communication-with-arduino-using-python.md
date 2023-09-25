@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth serial communication with Arduino using Python"
 description: " "
 date: 2023-09-18
-tags: [Arduino, Python]
+tags: [Arduino]
 comments: true
 share: true
 ---

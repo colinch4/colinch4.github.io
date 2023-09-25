@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with UDP programming using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

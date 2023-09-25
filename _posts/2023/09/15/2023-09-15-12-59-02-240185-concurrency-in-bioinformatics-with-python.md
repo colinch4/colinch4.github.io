@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in bioinformatics with Python"
 description: " "
 date: 2023-09-15
-tags: [bioinformatics, python]
+tags: [bioinformatics]
 comments: true
 share: true
 ---

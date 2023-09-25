@@ -3,7 +3,7 @@ layout: post
 title: "Opinion extraction from online reviews using Python"
 description: " "
 date: 2023-09-24
-tags: [python, opinionextraction]
+tags: [opinionextraction]
 comments: true
 share: true
 ---

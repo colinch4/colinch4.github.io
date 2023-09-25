@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a news recommendation engine for personalized newsletters using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, goose]
+tags: [goose]
 comments: true
 share: true
 ---

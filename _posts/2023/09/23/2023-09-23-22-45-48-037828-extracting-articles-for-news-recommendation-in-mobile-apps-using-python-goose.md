@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for news recommendation in mobile apps using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

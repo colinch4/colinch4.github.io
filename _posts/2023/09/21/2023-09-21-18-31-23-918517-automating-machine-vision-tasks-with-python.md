@@ -3,7 +3,7 @@ layout: post
 title: "Automating machine vision tasks with Python"
 description: " "
 date: 2023-09-21
-tags: [machinevision, python]
+tags: [machinevision]
 comments: true
 share: true
 ---

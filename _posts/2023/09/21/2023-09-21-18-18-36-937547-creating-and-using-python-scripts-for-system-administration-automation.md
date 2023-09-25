@@ -3,7 +3,7 @@ layout: post
 title: "Creating and using Python scripts for system administration automation"
 description: " "
 date: 2023-09-21
-tags: [systemadministration, python, automation]
+tags: [systemadministration,automation]
 comments: true
 share: true
 ---

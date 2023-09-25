@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data summarization and aggregation"
 description: " "
 date: 2023-09-13
-tags: [data, summarization, aggregation, python, packaging]
+tags: [data, summarization, aggregation,packaging]
 comments: true
 share: true
 ---

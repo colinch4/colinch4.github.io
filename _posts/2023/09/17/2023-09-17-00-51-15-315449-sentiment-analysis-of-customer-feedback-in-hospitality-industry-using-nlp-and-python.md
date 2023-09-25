@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis of customer feedback in hospitality industry using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [hospitalityindustry, sentimentanalysis, Python]
+tags: [hospitalityindustry, sentimentanalysis]
 comments: true
 share: true
 ---

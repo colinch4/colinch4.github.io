@@ -3,7 +3,7 @@ layout: post
 title: "Implementing interactive VR simulations for military training with Python"
 description: " "
 date: 2023-09-19
-tags: [MilitaryTraining, Python]
+tags: [MilitaryTraining]
 comments: true
 share: true
 ---

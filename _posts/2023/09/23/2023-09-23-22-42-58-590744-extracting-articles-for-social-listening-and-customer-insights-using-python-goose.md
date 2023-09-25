@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for social listening and customer insights using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [hashtags, python]
+tags: [hashtags]
 comments: true
 share: true
 ---

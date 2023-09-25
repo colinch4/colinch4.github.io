@@ -3,7 +3,7 @@ layout: post
 title: "Continuous Integration and Continuous Deployment (CI/CD) using PyCharm"
 description: " "
 date: 2023-09-15
-tags: [pycharm, cicd, continuousintegration, continuousdeployment, python]
+tags: [pycharm, cicd, continuousintegration, continuousdeployment]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "PyTorch for survival analysis"
 description: " "
 date: 2023-09-14
-tags: [survivalanalysis, deeplearning, python, pytorch]
+tags: [survivalanalysis, deeplearning,pytorch]
 comments: true
 share: true
 ---

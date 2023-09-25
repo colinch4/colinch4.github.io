@@ -3,7 +3,7 @@ layout: post
 title: "Coreference resolution in NLP using python"
 description: " "
 date: 2023-09-17
-tags: [CoreferenceResolution, Python, StanfordNLP]
+tags: [CoreferenceResolution,StanfordNLP]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python control of autonomous drones"
 description: " "
 date: 2023-09-23
-tags: [Drones, Python]
+tags: [Drones]
 comments: true
 share: true
 ---

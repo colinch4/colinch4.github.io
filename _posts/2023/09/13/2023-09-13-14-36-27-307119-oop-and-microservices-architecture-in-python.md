@@ -3,7 +3,7 @@ layout: post
 title: "OOP and microservices architecture in Python"
 description: " "
 date: 2023-09-13
-tags: [Microservices, Python]
+tags: [Microservices]
 comments: true
 share: true
 ---

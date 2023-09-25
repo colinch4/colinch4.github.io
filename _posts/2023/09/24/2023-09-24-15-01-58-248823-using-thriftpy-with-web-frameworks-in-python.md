@@ -3,7 +3,7 @@ layout: post
 title: "Using ThriftPy with web frameworks in Python"
 description: " "
 date: 2023-09-24
-tags: [python, ThriftPy]
+tags: [ThriftPy]
 comments: true
 share: true
 ---

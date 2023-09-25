@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency models in Python: threads vs Asyncio"
 description: " "
 date: 2023-09-15
-tags: [Conclusion, python, concurrency]
+tags: [Conclusion,concurrency]
 comments: true
 share: true
 ---

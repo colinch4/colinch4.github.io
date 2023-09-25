@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing GPS data with heat maps in Python"
 description: " "
 date: 2023-09-22
-tags: [datavisualization, Python]
+tags: [datavisualization]
 comments: true
 share: true
 ---

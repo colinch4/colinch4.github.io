@@ -3,7 +3,7 @@ layout: post
 title: "Building a distributed messaging system with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [distributedsystems, python]
+tags: [distributedsystems]
 comments: true
 share: true
 ---

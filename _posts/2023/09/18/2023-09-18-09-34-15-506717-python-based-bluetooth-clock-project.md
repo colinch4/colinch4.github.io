@@ -3,7 +3,7 @@ layout: post
 title: "Python-based Bluetooth clock project"
 description: " "
 date: 2023-09-18
-tags: [bluetooth, python]
+tags: [bluetooth]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "IoT data transfer using Bluetooth and Python"
 description: " "
 date: 2023-09-18
-tags: [Bluetooth, Python]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

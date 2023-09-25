@@ -3,7 +3,7 @@ layout: post
 title: "Emotion recognition in conversations using Python"
 description: " "
 date: 2023-09-24
-tags: [EmotionRecognition, Python]
+tags: [EmotionRecognition]
 comments: true
 share: true
 ---

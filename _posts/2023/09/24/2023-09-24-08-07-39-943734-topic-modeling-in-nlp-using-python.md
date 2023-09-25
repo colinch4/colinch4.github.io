@@ -3,7 +3,7 @@ layout: post
 title: "Topic modeling in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, TopicModeling]
+tags: [TopicModeling]
 comments: true
 share: true
 ---

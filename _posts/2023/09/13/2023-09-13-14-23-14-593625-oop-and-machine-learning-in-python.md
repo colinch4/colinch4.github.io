@@ -3,7 +3,7 @@ layout: post
 title: "OOP and machine learning in Python"
 description: " "
 date: 2023-09-13
-tags: [MachineLearning, Python, ObjectOrientedProgramming, CodeOrganization]
+tags: [MachineLearning,ObjectOrientedProgramming, CodeOrganization]
 comments: true
 share: true
 ---

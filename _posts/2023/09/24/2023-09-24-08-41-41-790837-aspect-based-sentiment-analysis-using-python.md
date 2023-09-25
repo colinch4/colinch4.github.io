@@ -3,7 +3,7 @@ layout: post
 title: "Aspect-based sentiment analysis using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

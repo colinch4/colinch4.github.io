@@ -3,7 +3,7 @@ layout: post
 title: "Developing VR mindfulness applications using Python scripting"
 description: " "
 date: 2023-09-19
-tags: [Mindfulness, Python]
+tags: [Mindfulness]
 comments: true
 share: true
 ---

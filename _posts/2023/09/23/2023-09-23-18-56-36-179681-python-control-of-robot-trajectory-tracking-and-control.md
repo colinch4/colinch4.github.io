@@ -3,7 +3,7 @@ layout: post
 title: "Python control of robot trajectory tracking and control"
 description: " "
 date: 2023-09-23
-tags: [python, robotics]
+tags: [robotics]
 comments: true
 share: true
 ---

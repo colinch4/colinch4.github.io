@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for web scraping machine learning in Python"
 description: " "
 date: 2023-09-20
-tags: [webdev, python]
+tags: [webdev]
 comments: true
 share: true
 ---

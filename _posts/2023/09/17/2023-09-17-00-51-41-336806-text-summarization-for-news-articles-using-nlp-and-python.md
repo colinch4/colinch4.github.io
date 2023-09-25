@@ -3,7 +3,7 @@ layout: post
 title: "Text summarization for news articles using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [news, textsummarization, python]
+tags: [news, textsummarization]
 comments: true
 share: true
 ---

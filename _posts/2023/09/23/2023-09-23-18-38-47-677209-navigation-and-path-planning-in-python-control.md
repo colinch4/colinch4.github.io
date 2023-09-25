@@ -3,7 +3,7 @@ layout: post
 title: "Navigation and path planning in Python control"
 description: " "
 date: 2023-09-23
-tags: [python, navigation]
+tags: [navigation]
 comments: true
 share: true
 ---

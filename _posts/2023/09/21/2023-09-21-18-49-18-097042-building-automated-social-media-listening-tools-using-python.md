@@ -3,7 +3,7 @@ layout: post
 title: "Building automated social media listening tools using Python"
 description: " "
 date: 2023-09-21
-tags: [yourhashtag, socialmedia, Python, automation]
+tags: [yourhashtag, socialmedia,automation]
 comments: true
 share: true
 ---

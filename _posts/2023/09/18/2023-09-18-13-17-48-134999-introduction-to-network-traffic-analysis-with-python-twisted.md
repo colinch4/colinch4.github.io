@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to network traffic analysis with Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [networktraffic, python]
+tags: [networktraffic]
 comments: true
 share: true
 ---

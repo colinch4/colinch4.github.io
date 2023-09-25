@@ -3,7 +3,7 @@ layout: post
 title: "Scikit-learn vs other machine learning libraries (TensorFlow, Keras, PyTorch, etc.)"
 description: " "
 date: 2023-09-25
-tags: [MachineLearning, Python]
+tags: [MachineLearning]
 comments: true
 share: true
 ---

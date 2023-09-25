@@ -3,7 +3,7 @@ layout: post
 title: "Extracting and analyzing user-generated content from forums and discussion boards with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, UserGeneratedContent]
+tags: [UserGeneratedContent]
 comments: true
 share: true
 ---

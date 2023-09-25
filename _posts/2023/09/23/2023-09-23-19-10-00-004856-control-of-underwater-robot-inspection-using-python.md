@@ -3,7 +3,7 @@ layout: post
 title: "Control of underwater robot inspection using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, UnderwaterRobotics]
+tags: [UnderwaterRobotics]
 comments: true
 share: true
 ---

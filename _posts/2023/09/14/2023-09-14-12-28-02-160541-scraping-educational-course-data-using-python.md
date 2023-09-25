@@ -3,7 +3,7 @@ layout: post
 title: "Scraping educational course data using Python"
 description: " "
 date: 2023-09-14
-tags: [data, scraping, python, webdevelopment]
+tags: [data, scraping,webdevelopment]
 comments: true
 share: true
 ---

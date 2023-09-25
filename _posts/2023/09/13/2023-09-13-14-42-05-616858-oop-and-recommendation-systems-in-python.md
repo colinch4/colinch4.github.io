@@ -3,7 +3,7 @@ layout: post
 title: "OOP and recommendation systems in Python"
 description: " "
 date: 2023-09-13
-tags: [RecommendationSystems, Python, RecommendationSystems, PythonProgramming, RecommendationSystems]
+tags: [RecommendationSystems,RecommendationSystems, PythonProgramming, RecommendationSystems]
 comments: true
 share: true
 ---

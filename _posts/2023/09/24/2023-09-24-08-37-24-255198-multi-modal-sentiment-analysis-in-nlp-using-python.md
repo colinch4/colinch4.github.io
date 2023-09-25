@@ -3,7 +3,7 @@ layout: post
 title: "Multi-modal sentiment analysis in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

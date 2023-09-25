@@ -3,7 +3,7 @@ layout: post
 title: "Forward and inverse kinematics in Python robotics control"
 description: " "
 date: 2023-09-23
-tags: [Python, Robotics]
+tags: [Robotics]
 comments: true
 share: true
 ---

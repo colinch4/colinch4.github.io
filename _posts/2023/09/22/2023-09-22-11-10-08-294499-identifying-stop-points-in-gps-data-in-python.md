@@ -3,7 +3,7 @@ layout: post
 title: "Identifying stop points in GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [tech, python]
+tags: [tech]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a chat bot with Python Twisted for automated conversation handling"
 description: " "
 date: 2023-09-18
-tags: [chatroom, python]
+tags: [chatroom]
 comments: true
 share: true
 ---

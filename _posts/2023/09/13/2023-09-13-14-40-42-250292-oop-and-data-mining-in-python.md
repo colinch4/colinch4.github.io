@@ -3,7 +3,7 @@ layout: post
 title: "OOP and data mining in Python"
 description: " "
 date: 2023-09-13
-tags: [dataMining, Python]
+tags: [dataMining]
 comments: true
 share: true
 ---

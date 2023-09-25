@@ -3,7 +3,7 @@ layout: post
 title: "Python control of quadruped robots"
 description: " "
 date: 2023-09-23
-tags: [Python, QuadrupedRobots]
+tags: [QuadrupedRobots]
 comments: true
 share: true
 ---

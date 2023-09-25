@@ -3,7 +3,7 @@ layout: post
 title: "Implementing circuit breaking with ThriftPy"
 description: " "
 date: 2023-09-24
-tags: [python, thriftpy]
+tags: [thriftpy]
 comments: true
 share: true
 ---

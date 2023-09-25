@@ -3,7 +3,7 @@ layout: post
 title: "Developing a Bluetooth-based electronic door lock system with Python"
 description: " "
 date: 2023-09-18
-tags: [Bluetooth, Python]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

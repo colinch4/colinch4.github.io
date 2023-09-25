@@ -3,7 +3,7 @@ layout: post
 title: "Controlling a Raspberry Pi car using Bluetooth and Python"
 description: " "
 date: 2023-09-18
-tags: [RaspberryPi, Python]
+tags: [RaspberryPi]
 comments: true
 share: true
 ---

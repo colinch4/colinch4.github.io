@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with MQTT (Message Queuing Telemetry Transport) using Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [MQTT, Python]
+tags: [MQTT]
 comments: true
 share: true
 ---

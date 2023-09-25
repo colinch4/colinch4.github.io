@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based vehicle telemetry system with Python"
 description: " "
 date: 2023-09-18
-tags: [telemetry, Python]
+tags: [telemetry]
 comments: true
 share: true
 ---

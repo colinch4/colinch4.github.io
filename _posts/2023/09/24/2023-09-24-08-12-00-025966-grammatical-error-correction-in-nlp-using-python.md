@@ -3,7 +3,7 @@ layout: post
 title: "Grammatical error correction in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, GrammaticalErrorCorrection]
+tags: [GrammaticalErrorCorrection]
 comments: true
 share: true
 ---

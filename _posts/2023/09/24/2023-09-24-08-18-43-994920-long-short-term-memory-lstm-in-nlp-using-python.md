@@ -3,7 +3,7 @@ layout: post
 title: "Long Short-Term Memory (LSTM) in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [LSTM, Python]
+tags: [LSTM]
 comments: true
 share: true
 ---

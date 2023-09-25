@@ -3,7 +3,7 @@ layout: post
 title: "Calculating average time spent in different areas using GPS data in Python"
 description: " "
 date: 2023-09-22
-tags: [dataanalysis, Python]
+tags: [dataanalysis]
 comments: true
 share: true
 ---

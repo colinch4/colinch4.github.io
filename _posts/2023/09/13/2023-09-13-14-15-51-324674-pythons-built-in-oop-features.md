@@ -3,7 +3,7 @@ layout: post
 title: "Python's built-in OOP features"
 description: " "
 date: 2023-09-13
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

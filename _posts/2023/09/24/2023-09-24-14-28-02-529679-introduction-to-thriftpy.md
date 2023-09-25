@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to ThriftPy"
 description: " "
 date: 2023-09-24
-tags: [ThriftPy, Python]
+tags: [ThriftPy]
 comments: true
 share: true
 ---

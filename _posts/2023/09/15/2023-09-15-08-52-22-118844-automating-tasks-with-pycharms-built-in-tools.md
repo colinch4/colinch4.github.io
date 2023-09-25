@@ -3,7 +3,7 @@ layout: post
 title: "Automating tasks with PyCharm's built-in tools"
 description: " "
 date: 2023-09-15
-tags: [PyCharm, Python]
+tags: [PyCharm]
 comments: true
 share: true
 ---

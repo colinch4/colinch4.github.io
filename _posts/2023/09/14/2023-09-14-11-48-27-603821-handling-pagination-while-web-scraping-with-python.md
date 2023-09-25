@@ -3,7 +3,7 @@ layout: post
 title: "Handling pagination while web scraping with Python"
 description: " "
 date: 2023-09-14
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

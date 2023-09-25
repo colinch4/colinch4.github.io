@@ -3,7 +3,7 @@ layout: post
 title: "Neural language generation in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [NeuralLanguageGeneration, Python]
+tags: [NeuralLanguageGeneration]
 comments: true
 share: true
 ---

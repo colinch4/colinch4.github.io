@@ -3,7 +3,7 @@ layout: post
 title: "Concurrency in fraud detection with Python"
 description: " "
 date: 2023-09-15
-tags: [frauddetection, python]
+tags: [frauddetection]
 comments: true
 share: true
 ---

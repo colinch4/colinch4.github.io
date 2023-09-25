@@ -3,7 +3,7 @@ layout: post
 title: "Building real-time recommendation systems with Asyncio"
 description: " "
 date: 2023-09-15
-tags: [recommendationsystems, asyncio, python]
+tags: [recommendationsystems, asyncio]
 comments: true
 share: true
 ---

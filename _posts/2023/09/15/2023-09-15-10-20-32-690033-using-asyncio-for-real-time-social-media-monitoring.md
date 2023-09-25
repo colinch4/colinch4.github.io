@@ -3,7 +3,7 @@ layout: post
 title: "Using Asyncio for real-time social media monitoring"
 description: " "
 date: 2023-09-15
-tags: [socialmediamonitoring, asyncio, python]
+tags: [socialmediamonitoring, asyncio]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Preprocessing and cleaning extracted articles with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Introduction, #What]
+tags: [Introduction, What]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "PID control in Python robotics"
 description: " "
 date: 2023-09-23
-tags: [Python, Robotics]
+tags: [Robotics]
 comments: true
 share: true
 ---

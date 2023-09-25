@@ -3,7 +3,7 @@ layout: post
 title: "Sensing and perception in Python robotics control"
 description: " "
 date: 2023-09-23
-tags: [python, robotics]
+tags: [robotics]
 comments: true
 share: true
 ---

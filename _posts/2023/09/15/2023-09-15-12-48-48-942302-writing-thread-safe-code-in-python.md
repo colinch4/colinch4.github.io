@@ -3,7 +3,7 @@ layout: post
 title: "Writing thread-safe code in Python"
 description: " "
 date: 2023-09-15
-tags: [threadsafe, python]
+tags: [threadsafe]
 comments: true
 share: true
 ---

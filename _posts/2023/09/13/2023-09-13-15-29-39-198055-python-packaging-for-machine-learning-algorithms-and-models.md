@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for machine learning algorithms and models"
 description: " "
 date: 2023-09-13
-tags: [machinelearning, python, packaging, PyPI, Anaconda, conda]
+tags: [machinelearning,packaging, PyPI, Anaconda, conda]
 comments: true
 share: true
 ---

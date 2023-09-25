@@ -3,7 +3,7 @@ layout: post
 title: "Automating natural language understanding and generation with Python"
 description: " "
 date: 2023-09-21
-tags: [tags, Python, NLUGeneration]
+tags: [tags,NLUGeneration]
 comments: true
 share: true
 ---

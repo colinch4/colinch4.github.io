@@ -3,7 +3,7 @@ layout: post
 title: "Cross-lingual text summarization using Python"
 description: " "
 date: 2023-09-24
-tags: [python, crosslingual]
+tags: [crosslingual]
 comments: true
 share: true
 ---

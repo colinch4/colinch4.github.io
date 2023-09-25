@@ -3,7 +3,7 @@ layout: post
 title: "Implementing web scraping using Python's Scrapy framework"
 description: " "
 date: 2023-09-14
-tags: [webscraping, python, scrapy]
+tags: [webscraping,scrapy]
 comments: true
 share: true
 ---

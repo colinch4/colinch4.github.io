@@ -3,7 +3,7 @@ layout: post
 title: "Extracting social media posts and comments with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [socialmediadata, python]
+tags: [socialmediadata]
 comments: true
 share: true
 ---

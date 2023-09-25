@@ -3,7 +3,7 @@ layout: post
 title: "Controlling smart lights using Python and Bluetooth"
 description: " "
 date: 2023-09-18
-tags: [SmartLights, Python]
+tags: [SmartLights]
 comments: true
 share: true
 ---

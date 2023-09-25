@@ -3,12 +3,12 @@ layout: post
 title: "Control of social robots using Python"
 description: " "
 date: 2023-09-23
-tags: [python]
+tags: []
 comments: true
 share: true
 ---
 
-In recent years, social robots have gained significant popularity due to their ability to interact and communicate with humans. These robots are designed to perform various tasks such as providing assistance, entertainment, and companionship. To control these social robots, Python, a versatile and easy-to-use programming language, can be utilized effectively. In this blog post, we will explore how to control social robots using Python.
+In recent years, social robots have gained significant popularity due to their ability to interact and communicate with humans. These robots are designed to perform various tasks such as providing assistance, entertainment, and companionship. To control these social robots,a versatile and easy-to-use programming language, can be utilized effectively. In this blog post, we will explore how to control social robots using Python.
 
 ## Choosing the Robot Platform
 

@@ -3,7 +3,7 @@ layout: post
 title: "AdaBoost with Scikit-learn"
 description: " "
 date: 2023-09-25
-tags: [Python, MachineLearning]
+tags: [MachineLearning]
 comments: true
 share: true
 ---

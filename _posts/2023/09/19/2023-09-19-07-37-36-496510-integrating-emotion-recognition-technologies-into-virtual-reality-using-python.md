@@ -3,7 +3,7 @@ layout: post
 title: "Integrating emotion recognition technologies into virtual reality using Python"
 description: " "
 date: 2023-09-19
-tags: [tech, Python]
+tags: [tech]
 comments: true
 share: true
 ---

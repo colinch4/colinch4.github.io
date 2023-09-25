@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a news monitoring system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, NewsMonitoring]
+tags: [NewsMonitoring]
 comments: true
 share: true
 ---

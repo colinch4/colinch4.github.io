@@ -3,7 +3,7 @@ layout: post
 title: "Dealing with different languages and character encodings in Python Goose"
 description: " "
 date: 2023-09-23
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

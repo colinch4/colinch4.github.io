@@ -3,7 +3,7 @@ layout: post
 title: "Probabilistic models in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

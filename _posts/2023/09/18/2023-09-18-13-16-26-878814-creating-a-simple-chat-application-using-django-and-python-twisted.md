@@ -3,7 +3,7 @@ layout: post
 title: "Creating a simple chat application using Django and Python Twisted"
 description: " "
 date: 2023-09-18
-tags: [django, python]
+tags: [django]
 comments: true
 share: true
 ---

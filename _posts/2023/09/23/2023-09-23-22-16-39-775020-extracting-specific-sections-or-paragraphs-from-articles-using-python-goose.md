@@ -3,7 +3,7 @@ layout: post
 title: "Extracting specific sections or paragraphs from articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, webscrapping]
+tags: [webscrapping]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Automating data analysis using Python"
 description: " "
 date: 2023-09-21
-tags: [dataanalysis, python]
+tags: [dataanalysis]
 comments: true
 share: true
 ---

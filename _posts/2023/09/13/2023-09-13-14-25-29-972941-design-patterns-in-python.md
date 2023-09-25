@@ -3,7 +3,7 @@ layout: post
 title: "Design patterns in Python"
 description: " "
 date: 2023-09-13
-tags: [DesignPatterns, Python, DesignPatterns, PythonDevelopment, SoftwareDesign]
+tags: [DesignPatterns,DesignPatterns, PythonDevelopment, SoftwareDesign]
 comments: true
 share: true
 ---

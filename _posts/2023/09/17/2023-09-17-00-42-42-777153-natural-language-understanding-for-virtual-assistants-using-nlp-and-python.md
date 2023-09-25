@@ -3,7 +3,7 @@ layout: post
 title: "Natural language understanding for virtual assistants using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [VirtualAssistants, Python]
+tags: [VirtualAssistants]
 comments: true
 share: true
 ---

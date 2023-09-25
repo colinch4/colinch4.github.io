@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis of customer feedback in tourism industry using NLP and python"
 description: " "
 date: 2023-09-17
-tags: [sentimentanalysis, python, tourism, customerfeedback]
+tags: [sentimentanalysis,tourism, customerfeedback]
 comments: true
 share: true
 ---

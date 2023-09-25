@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for market sentiment analysis using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, sentimentanalysis]
+tags: [sentimentanalysis]
 comments: true
 share: true
 ---

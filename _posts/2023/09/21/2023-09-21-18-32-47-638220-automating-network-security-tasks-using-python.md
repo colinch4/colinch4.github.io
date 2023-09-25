@@ -3,7 +3,7 @@ layout: post
 title: "Automating network security tasks using Python"
 description: " "
 date: 2023-09-21
-tags: [networksecurity, python]
+tags: [networksecurity]
 comments: true
 share: true
 ---

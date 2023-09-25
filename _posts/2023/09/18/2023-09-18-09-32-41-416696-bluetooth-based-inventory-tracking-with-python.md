@@ -3,7 +3,7 @@ layout: post
 title: "Bluetooth-based inventory tracking with Python"
 description: " "
 date: 2023-09-18
-tags: [inventorytracking, python]
+tags: [inventorytracking]
 comments: true
 share: true
 ---

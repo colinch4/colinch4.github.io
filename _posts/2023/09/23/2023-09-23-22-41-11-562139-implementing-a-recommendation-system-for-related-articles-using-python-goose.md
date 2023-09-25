@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a recommendation system for related articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, RecommendationSystem]
+tags: [RecommendationSystem]
 comments: true
 share: true
 ---

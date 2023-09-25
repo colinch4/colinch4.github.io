@@ -3,7 +3,7 @@ layout: post
 title: "Control of robot manipulations using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotManipulation]
+tags: [RobotManipulation]
 comments: true
 share: true
 ---

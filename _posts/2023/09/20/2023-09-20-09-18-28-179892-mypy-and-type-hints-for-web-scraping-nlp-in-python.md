@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type hints for web scraping NLP in Python"
 description: " "
 date: 2023-09-20
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

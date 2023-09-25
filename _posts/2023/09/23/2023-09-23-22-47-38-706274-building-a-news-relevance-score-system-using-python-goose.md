@@ -3,7 +3,7 @@ layout: post
 title: "Building a news relevance score system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, newsrelevance]
+tags: [newsrelevance]
 comments: true
 share: true
 ---

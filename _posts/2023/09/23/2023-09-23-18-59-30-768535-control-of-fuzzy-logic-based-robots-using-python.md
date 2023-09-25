@@ -3,7 +3,7 @@ layout: post
 title: "Control of fuzzy logic-based robots using Python"
 description: " "
 date: 2023-09-23
-tags: [python, fuzzylogic]
+tags: [fuzzylogic]
 comments: true
 share: true
 ---

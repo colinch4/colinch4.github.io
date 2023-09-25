@@ -3,7 +3,7 @@ layout: post
 title: "Pros and cons of using Python Goose for article extraction"
 description: " "
 date: 2023-09-23
-tags: [python, webextraction]
+tags: [webextraction]
 comments: true
 share: true
 ---

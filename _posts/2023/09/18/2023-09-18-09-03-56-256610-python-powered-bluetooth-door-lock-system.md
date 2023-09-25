@@ -3,7 +3,7 @@ layout: post
 title: "Python-powered Bluetooth door lock system"
 description: " "
 date: 2023-09-18
-tags: [tech, Python]
+tags: [tech]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python control of robot trajectory optimization"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotOptimization]
+tags: [RobotOptimization]
 comments: true
 share: true
 ---

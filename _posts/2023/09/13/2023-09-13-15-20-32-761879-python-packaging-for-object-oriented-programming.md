@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for object-oriented programming"
 description: " "
 date: 2023-09-13
-tags: [packaging, Python, packaging]
+tags: [packaging,packaging]
 comments: true
 share: true
 ---

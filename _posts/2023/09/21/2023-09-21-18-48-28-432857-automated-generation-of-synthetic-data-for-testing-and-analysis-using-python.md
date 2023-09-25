@@ -3,7 +3,7 @@ layout: post
 title: "Automated generation of synthetic data for testing and analysis using Python"
 description: " "
 date: 2023-09-21
-tags: [syntheticdata, Python]
+tags: [syntheticdata]
 comments: true
 share: true
 ---

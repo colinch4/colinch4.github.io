@@ -3,7 +3,7 @@ layout: post
 title: "Automated optimization and tuning of machine learning models using Python"
 description: " "
 date: 2023-09-21
-tags: [MachineLearning, Python]
+tags: [MachineLearning]
 comments: true
 share: true
 ---

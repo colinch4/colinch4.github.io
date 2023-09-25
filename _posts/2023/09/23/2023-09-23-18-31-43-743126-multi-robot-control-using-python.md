@@ -3,7 +3,7 @@ layout: post
 title: "Multi-robot control using Python"
 description: " "
 date: 2023-09-23
-tags: [python, multirobotcontrol]
+tags: [multirobotcontrol]
 comments: true
 share: true
 ---

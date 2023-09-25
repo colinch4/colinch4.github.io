@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a news sentiment prediction model using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, news]
+tags: [news]
 comments: true
 share: true
 ---

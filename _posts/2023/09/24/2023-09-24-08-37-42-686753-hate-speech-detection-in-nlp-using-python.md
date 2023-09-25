@@ -3,7 +3,7 @@ layout: post
 title: "Hate speech detection in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, HateSpeechDetection]
+tags: [HateSpeechDetection]
 comments: true
 share: true
 ---

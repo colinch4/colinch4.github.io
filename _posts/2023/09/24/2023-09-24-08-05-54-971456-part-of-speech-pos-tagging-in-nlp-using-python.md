@@ -3,7 +3,7 @@ layout: post
 title: "Part-of-speech (POS) tagging in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [NLTK, Python]
+tags: [NLTK]
 comments: true
 share: true
 ---

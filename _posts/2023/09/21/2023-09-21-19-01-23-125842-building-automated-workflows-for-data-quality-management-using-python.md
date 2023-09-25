@@ -3,7 +3,7 @@ layout: post
 title: "Building automated workflows for data quality management using Python"
 description: " "
 date: 2023-09-21
-tags: [dataquality, python]
+tags: [dataquality]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing and visualizing web scraped data in Python"
 description: " "
 date: 2023-09-14
-tags: [webdev, python]
+tags: [webdev]
 comments: true
 share: true
 ---

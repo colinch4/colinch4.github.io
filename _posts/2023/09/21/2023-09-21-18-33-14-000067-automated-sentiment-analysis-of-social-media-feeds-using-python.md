@@ -3,7 +3,7 @@ layout: post
 title: "Automated sentiment analysis of social media feeds using Python"
 description: " "
 date: 2023-09-21
-tags: [tech, python, sentimentanalysis]
+tags: [tech,sentimentanalysis]
 comments: true
 share: true
 ---

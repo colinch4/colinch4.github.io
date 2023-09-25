@@ -3,7 +3,7 @@ layout: post
 title: "Network automation using Python"
 description: " "
 date: 2023-09-21
-tags: [networkautomation, python]
+tags: [networkautomation]
 comments: true
 share: true
 ---

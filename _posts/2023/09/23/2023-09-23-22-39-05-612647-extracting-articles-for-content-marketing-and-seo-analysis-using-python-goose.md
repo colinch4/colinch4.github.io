@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for content marketing and SEO analysis using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, contentmarketing]
+tags: [contentmarketing]
 comments: true
 share: true
 ---

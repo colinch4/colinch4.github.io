@@ -3,7 +3,7 @@ layout: post
 title: "Control of robot learning and adaptation using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotLearning]
+tags: [RobotLearning]
 comments: true
 share: true
 ---

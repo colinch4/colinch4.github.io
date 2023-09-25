@@ -3,7 +3,7 @@ layout: post
 title: "Control of robot locomotion using Python"
 description: " "
 date: 2023-09-23
-tags: [Python, RobotLocomotion]
+tags: [RobotLocomotion]
 comments: true
 share: true
 ---

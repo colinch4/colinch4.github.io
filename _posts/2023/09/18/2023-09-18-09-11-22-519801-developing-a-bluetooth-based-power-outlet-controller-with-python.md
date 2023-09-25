@@ -3,7 +3,7 @@ layout: post
 title: "Developing a Bluetooth-based power outlet controller with Python"
 description: " "
 date: 2023-09-18
-tags: [techblog, python]
+tags: [techblog]
 comments: true
 share: true
 ---

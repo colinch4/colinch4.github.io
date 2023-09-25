@@ -3,7 +3,7 @@ layout: post
 title: "Saving and exporting extracted articles in different formats with Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

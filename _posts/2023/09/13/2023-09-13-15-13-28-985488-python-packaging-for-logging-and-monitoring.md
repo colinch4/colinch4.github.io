@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for logging and monitoring"
 description: " "
 date: 2023-09-13
-tags: [logging, python, monitoring]
+tags: [logging,monitoring]
 comments: true
 share: true
 ---

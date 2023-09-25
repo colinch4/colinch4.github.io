@@ -3,7 +3,7 @@ layout: post
 title: "Best Python libraries for web scraping"
 description: " "
 date: 2023-09-14
-tags: [PythonWebScraping, DataExtraction, PythonScrapingFramework, DataCrawling, Python, WebScraping]
+tags: [PythonWebScraping, DataExtraction, PythonScrapingFramework, DataCrawling,WebScraping]
 comments: true
 share: true
 ---

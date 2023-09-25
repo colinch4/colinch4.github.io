@@ -3,7 +3,7 @@ layout: post
 title: "Selenium testing in Python"
 description: " "
 date: 2023-09-17
-tags: [selenium, python]
+tags: [selenium]
 comments: true
 share: true
 ---

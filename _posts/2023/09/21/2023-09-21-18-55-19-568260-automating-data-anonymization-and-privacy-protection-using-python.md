@@ -3,7 +3,7 @@ layout: post
 title: "Automating data anonymization and privacy protection using Python"
 description: " "
 date: 2023-09-21
-tags: [dataanonymization, python]
+tags: [dataanonymization]
 comments: true
 share: true
 ---

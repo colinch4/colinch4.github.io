@@ -3,7 +3,7 @@ layout: post
 title: "Understanding the concept of websockets in Python"
 description: " "
 date: 2023-09-22
-tags: [websockets, Python]
+tags: [websockets]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Sentiment analysis on extracted articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, goose]
+tags: [goose]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a news sentiment forecasting model using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

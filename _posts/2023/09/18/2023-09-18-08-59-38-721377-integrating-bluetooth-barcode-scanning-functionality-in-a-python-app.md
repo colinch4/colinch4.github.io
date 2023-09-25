@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-Keywords: Bluetooth barcode scanning, Python, app development, integration
+Keywords: Bluetooth barcode scanning,app development, integration
 
 ---
 

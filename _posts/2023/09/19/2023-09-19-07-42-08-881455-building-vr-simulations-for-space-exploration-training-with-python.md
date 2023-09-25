@@ -3,7 +3,7 @@ layout: post
 title: "Building VR simulations for space exploration training with Python"
 description: " "
 date: 2023-09-19
-tags: [VRsimulations, Python, SpaceExploration]
+tags: [VRsimulations,SpaceExploration]
 comments: true
 share: true
 ---

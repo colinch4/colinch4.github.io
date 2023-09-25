@@ -3,7 +3,7 @@ layout: post
 title: "Configuration testing in Python"
 description: " "
 date: 2023-09-17
-tags: [testing, configuration, python]
+tags: [testing, configuration]
 comments: true
 share: true
 ---

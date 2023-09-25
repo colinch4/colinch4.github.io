@@ -3,7 +3,7 @@ layout: post
 title: "Python control of agile and acrobatic robots"
 description: " "
 date: 2023-09-23
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

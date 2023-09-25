@@ -3,7 +3,7 @@ layout: post
 title: "Implementing an automated content curation system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, contentcuration]
+tags: [contentcuration]
 comments: true
 share: true
 ---

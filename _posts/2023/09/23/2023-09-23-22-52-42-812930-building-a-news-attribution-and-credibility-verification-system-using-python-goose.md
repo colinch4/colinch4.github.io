@@ -3,7 +3,7 @@ layout: post
 title: "Building a news attribution and credibility verification system using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [newsverification, python]
+tags: [newsverification]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for data manipulation and processing"
 description: " "
 date: 2023-09-13
-tags: [datapackaging, python, datapackaging, python, datapackaging, python, datapackaging]
+tags: [datapackaging,datapackaging,datapackaging,datapackaging]
 comments: true
 share: true
 ---

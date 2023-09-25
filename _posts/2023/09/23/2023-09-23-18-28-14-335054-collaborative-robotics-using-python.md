@@ -3,7 +3,7 @@ layout: post
 title: "Collaborative robotics using Python"
 description: " "
 date: 2023-09-23
-tags: [collaborativerobotics, python]
+tags: [collaborativerobotics]
 comments: true
 share: true
 ---

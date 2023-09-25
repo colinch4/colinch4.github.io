@@ -3,7 +3,7 @@ layout: post
 title: "Extracting financial or stock market information from news articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, stockmarket]
+tags: [stockmarket]
 comments: true
 share: true
 ---

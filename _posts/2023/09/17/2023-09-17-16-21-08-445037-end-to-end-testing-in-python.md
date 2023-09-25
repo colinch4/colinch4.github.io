@@ -3,7 +3,7 @@ layout: post
 title: "End-to-end testing in Python"
 description: " "
 date: 2023-09-17
-tags: [testing, python]
+tags: [testing]
 comments: true
 share: true
 ---

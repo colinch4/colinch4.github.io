@@ -3,7 +3,7 @@ layout: post
 title: "Conditional statement with multiple membership operators in Python"
 description: " "
 date: 2023-09-21
-tags: [hashtags, Python, ConditionalStatements]
+tags: [hashtags,ConditionalStatements]
 comments: true
 share: true
 ---

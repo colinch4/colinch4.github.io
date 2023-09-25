@@ -3,7 +3,7 @@ layout: post
 title: "Control of parallel and redundant robotic systems using Python"
 description: " "
 date: 2023-09-23
-tags: [Robotics, Python]
+tags: [Robotics]
 comments: true
 share: true
 ---

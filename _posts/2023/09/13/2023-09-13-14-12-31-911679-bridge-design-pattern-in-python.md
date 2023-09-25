@@ -3,7 +3,7 @@ layout: post
 title: "Bridge design pattern in Python"
 description: " "
 date: 2023-09-13
-tags: [Bridge, DesignPattern, Python]
+tags: [Bridge, DesignPattern]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Named entity recognition in medical text using Python"
 description: " "
 date: 2023-09-24
-tags: [Python, NamedEntityRecognition]
+tags: [NamedEntityRecognition]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for social media monitoring and analysis using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [hashtags, Python]
+tags: [hashtags]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting articles for cybersecurity threat analysis using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [cybersecurity, python]
+tags: [cybersecurity]
 comments: true
 share: true
 ---

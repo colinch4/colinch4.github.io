@@ -3,7 +3,7 @@ layout: post
 title: "Integrating gesture recognition technologies into virtual reality using Python"
 description: " "
 date: 2023-09-19
-tags: [GestureRecognition, Python]
+tags: [GestureRecognition]
 comments: true
 share: true
 ---

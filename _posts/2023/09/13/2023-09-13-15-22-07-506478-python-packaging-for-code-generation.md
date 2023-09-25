@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging for code generation"
 description: " "
 date: 2023-09-13
-tags: [Jinja2, CodeGeneration, Cheetah, CodeGeneration, Python, CodeGeneration, Jinja2, Cheetah]
+tags: [Jinja2, CodeGeneration, Cheetah, CodeGeneration,CodeGeneration, Jinja2, Cheetah]
 comments: true
 share: true
 ---

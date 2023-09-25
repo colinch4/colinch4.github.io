@@ -3,7 +3,7 @@ layout: post
 title: "Python packaging and distribution"
 description: " "
 date: 2023-09-13
-tags: [choosing, Python, Packaging, Distribution]
+tags: [choosing,Packaging, Distribution]
 comments: true
 share: true
 ---

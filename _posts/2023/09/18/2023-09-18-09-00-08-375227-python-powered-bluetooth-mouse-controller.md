@@ -3,7 +3,7 @@ layout: post
 title: "Python-powered Bluetooth mouse controller"
 description: " "
 date: 2023-09-18
-tags: [Bluetooth, Python]
+tags: [Bluetooth]
 comments: true
 share: true
 ---

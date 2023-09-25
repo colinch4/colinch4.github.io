@@ -3,7 +3,7 @@ layout: post
 title: "Comparison between synchronous and asynchronous programming in Python"
 description: " "
 date: 2023-09-15
-tags: [programming, Python]
+tags: [programming]
 comments: true
 share: true
 ---

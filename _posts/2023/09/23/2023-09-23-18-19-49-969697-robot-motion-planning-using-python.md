@@ -3,7 +3,7 @@ layout: post
 title: "Robot motion planning using Python"
 description: " "
 date: 2023-09-23
-tags: [robotmotionplanning, python]
+tags: [robotmotionplanning]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Question answering in NLP using Python"
 description: " "
 date: 2023-09-24
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

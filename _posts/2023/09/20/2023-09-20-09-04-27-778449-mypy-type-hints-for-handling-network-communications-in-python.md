@@ -3,7 +3,7 @@ layout: post
 title: "MyPy type hints for handling network communications in Python"
 description: " "
 date: 2023-09-20
-tags: [networking, Python]
+tags: [networking]
 comments: true
 share: true
 ---

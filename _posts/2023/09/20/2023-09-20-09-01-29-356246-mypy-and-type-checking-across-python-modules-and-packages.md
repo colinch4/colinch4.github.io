@@ -3,7 +3,7 @@ layout: post
 title: "MyPy and type checking across Python modules and packages"
 description: " "
 date: 2023-09-20
-tags: [techblog, python]
+tags: [techblog]
 comments: true
 share: true
 ---

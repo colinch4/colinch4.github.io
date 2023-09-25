@@ -3,7 +3,7 @@ layout: post
 title: "Extracting images and multimedia content from articles using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

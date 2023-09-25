@@ -3,7 +3,7 @@ layout: post
 title: "Scraping dynamic web pages using Python Goose"
 description: " "
 date: 2023-09-23
-tags: [python, webscraping]
+tags: [webscraping]
 comments: true
 share: true
 ---

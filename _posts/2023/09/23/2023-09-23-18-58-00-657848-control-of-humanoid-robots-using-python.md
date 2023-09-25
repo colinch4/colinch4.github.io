@@ -3,7 +3,7 @@ layout: post
 title: "Control of humanoid robots using Python"
 description: " "
 date: 2023-09-23
-tags: [robotics, python]
+tags: [robotics]
 comments: true
 share: true
 ---
