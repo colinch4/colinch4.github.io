@@ -3,7 +3,7 @@ layout: post
 title: "IDLE (Integrated Development and Learning Environment)"
 description: " "
 date: 2023-09-26
-tags: [Python, IDLE]
+tags: [IDLE]
 comments: true
 share: true
 ---

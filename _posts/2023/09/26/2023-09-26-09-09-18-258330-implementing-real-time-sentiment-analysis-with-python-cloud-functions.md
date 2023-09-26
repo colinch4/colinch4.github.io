@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time sentiment analysis with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, SentimentAnalysis]
+tags: [SentimentAnalysis]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "LiteIDE with Python support"
 description: " "
 date: 2023-09-26
-tags: [python, LiteIDE]
+tags: [LiteIDE]
 comments: true
 share: true
 ---

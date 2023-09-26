@@ -3,7 +3,7 @@ layout: post
 title: "Implementing data validation and cleansing with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

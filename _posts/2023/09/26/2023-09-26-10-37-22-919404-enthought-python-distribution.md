@@ -3,7 +3,7 @@ layout: post
 title: "Enthought Python Distribution"
 description: " "
 date: 2023-09-26
-tags: [python, scientificcomputing]
+tags: [scientificcomputing]
 comments: true
 share: true
 ---

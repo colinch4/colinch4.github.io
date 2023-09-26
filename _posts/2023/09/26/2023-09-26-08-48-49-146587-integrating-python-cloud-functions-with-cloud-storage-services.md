@@ -3,7 +3,7 @@ layout: post
 title: "Integrating Python Cloud Functions with cloud storage services"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudStorage]
+tags: [CloudStorage]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Scaling Python Cloud Functions for high traffic"
 description: " "
 date: 2023-09-26
-tags: [python, cloudcomputing]
+tags: [cloudcomputing]
 comments: true
 share: true
 ---

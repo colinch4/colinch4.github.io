@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time sports analytics with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [sportsanalytics, python]
+tags: [sportsanalytics]
 comments: true
 share: true
 ---

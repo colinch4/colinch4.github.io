@@ -3,7 +3,7 @@ layout: post
 title: "Leo with Python functionality"
 description: " "
 date: 2023-09-26
-tags: [Python, Outliner]
+tags: [Outliner]
 comments: true
 share: true
 ---

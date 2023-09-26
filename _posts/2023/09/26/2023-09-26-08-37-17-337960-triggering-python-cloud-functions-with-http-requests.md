@@ -3,7 +3,7 @@ layout: post
 title: "Triggering Python Cloud Functions with HTTP requests"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

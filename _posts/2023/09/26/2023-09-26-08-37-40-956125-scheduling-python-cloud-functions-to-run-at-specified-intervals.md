@@ -3,7 +3,7 @@ layout: post
 title: "Scheduling Python Cloud Functions to run at specified intervals"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

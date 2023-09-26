@@ -3,7 +3,7 @@ layout: post
 title: "Creating and deploying your first Python Cloud Function"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing data visualization with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, data]
+tags: [data]
 comments: true
 share: true
 ---

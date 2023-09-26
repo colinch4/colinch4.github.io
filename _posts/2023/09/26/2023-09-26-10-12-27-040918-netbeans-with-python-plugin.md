@@ -3,7 +3,7 @@ layout: post
 title: "NetBeans with Python plugin"
 description: " "
 date: 2023-09-26
-tags: [python, NetBeans]
+tags: [NetBeans]
 comments: true
 share: true
 ---

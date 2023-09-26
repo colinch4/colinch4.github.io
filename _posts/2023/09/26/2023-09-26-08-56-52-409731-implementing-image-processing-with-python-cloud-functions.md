@@ -3,7 +3,7 @@ layout: post
 title: "Implementing image processing with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudComputing]
+tags: [CloudComputing]
 comments: true
 share: true
 ---

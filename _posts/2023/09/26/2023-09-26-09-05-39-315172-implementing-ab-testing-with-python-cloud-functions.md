@@ -3,7 +3,7 @@ layout: post
 title: "Implementing A/B testing with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, ABTesting]
+tags: [ABTesting]
 comments: true
 share: true
 ---

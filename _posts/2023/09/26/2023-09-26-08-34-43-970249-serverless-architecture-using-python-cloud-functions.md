@@ -3,7 +3,7 @@ layout: post
 title: "Serverless architecture using Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [serverless, python]
+tags: [serverless]
 comments: true
 share: true
 ---

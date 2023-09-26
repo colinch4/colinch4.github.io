@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Python Cloud Functions with CI/CD pipelines"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

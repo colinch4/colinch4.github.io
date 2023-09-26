@@ -3,7 +3,7 @@ layout: post
 title: "Dabo integrated development environment"
 description: " "
 date: 2023-09-26
-tags: [Python, DaboIDE]
+tags: [DaboIDE]
 comments: true
 share: true
 ---

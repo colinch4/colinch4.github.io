@@ -3,7 +3,7 @@ layout: post
 title: "PTVS (Python Tools for Visual Studio)"
 description: " "
 date: 2023-09-26
-tags: [python, visualstudio]
+tags: [visualstudio]
 comments: true
 share: true
 ---

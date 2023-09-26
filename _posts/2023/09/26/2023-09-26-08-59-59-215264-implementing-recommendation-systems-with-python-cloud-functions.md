@@ -3,7 +3,7 @@ layout: post
 title: "Implementing recommendation systems with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, recommendationsystems]
+tags: [recommendationsystems]
 comments: true
 share: true
 ---

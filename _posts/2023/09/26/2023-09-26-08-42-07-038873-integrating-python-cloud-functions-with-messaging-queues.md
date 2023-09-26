@@ -3,7 +3,7 @@ layout: post
 title: "Integrating Python Cloud Functions with messaging queues"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

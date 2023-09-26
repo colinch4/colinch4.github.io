@@ -3,7 +3,7 @@ layout: post
 title: "Using Python Cloud Functions for data processing and transformation"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

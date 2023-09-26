@@ -3,7 +3,7 @@ layout: post
 title: "Visual Studio Code with Python extension"
 description: " "
 date: 2023-09-26
-tags: [python, visualstudiocode]
+tags: [visualstudiocode]
 comments: true
 share: true
 ---

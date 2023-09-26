@@ -3,7 +3,7 @@ layout: post
 title: "Implementing natural language processing with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

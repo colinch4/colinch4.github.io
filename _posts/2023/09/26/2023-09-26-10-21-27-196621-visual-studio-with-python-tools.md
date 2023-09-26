@@ -3,7 +3,7 @@ layout: post
 title: "Visual Studio with Python Tools"
 description: " "
 date: 2023-09-26
-tags: [VisualStudio, Python]
+tags: [VisualStudio]
 comments: true
 share: true
 ---

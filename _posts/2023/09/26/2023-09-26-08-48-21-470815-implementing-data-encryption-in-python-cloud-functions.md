@@ -3,7 +3,7 @@ layout: post
 title: "Implementing data encryption in Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, cloudsecurity]
+tags: [cloudsecurity]
 comments: true
 share: true
 ---

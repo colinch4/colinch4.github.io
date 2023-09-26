@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time fraud detection with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, frauddetection]
+tags: [frauddetection]
 comments: true
 share: true
 ---

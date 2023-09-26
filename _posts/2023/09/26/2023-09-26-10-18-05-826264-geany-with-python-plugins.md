@@ -3,7 +3,7 @@ layout: post
 title: "Geany with Python plugins"
 description: " "
 date: 2023-09-26
-tags: [geany, python]
+tags: [geany]
 comments: true
 share: true
 ---

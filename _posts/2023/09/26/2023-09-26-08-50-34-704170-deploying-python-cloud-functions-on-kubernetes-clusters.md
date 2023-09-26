@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Python Cloud Functions on Kubernetes clusters"
 description: " "
 date: 2023-09-26
-tags: [python, kubernetes]
+tags: [kubernetes]
 comments: true
 share: true
 ---

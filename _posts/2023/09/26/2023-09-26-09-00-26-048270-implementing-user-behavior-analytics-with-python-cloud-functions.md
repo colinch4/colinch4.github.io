@@ -3,7 +3,7 @@ layout: post
 title: "Implementing user behavior analytics with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

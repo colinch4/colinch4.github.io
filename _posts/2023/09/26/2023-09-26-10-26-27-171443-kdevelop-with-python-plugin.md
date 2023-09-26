@@ -3,7 +3,7 @@ layout: post
 title: "KDevelop with Python plugin"
 description: " "
 date: 2023-09-26
-tags: [python, KDevelop]
+tags: [KDevelop]
 comments: true
 share: true
 ---

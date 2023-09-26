@@ -3,7 +3,7 @@ layout: post
 title: "Setting up a Python Cloud Function environment"
 description: " "
 date: 2023-09-26
-tags: [Python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

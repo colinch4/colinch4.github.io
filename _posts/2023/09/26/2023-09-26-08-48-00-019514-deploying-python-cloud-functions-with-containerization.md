@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Python Cloud Functions with containerization"
 description: " "
 date: 2023-09-26
-tags: [python, cloudcomputing]
+tags: [cloudcomputing]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for writing Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

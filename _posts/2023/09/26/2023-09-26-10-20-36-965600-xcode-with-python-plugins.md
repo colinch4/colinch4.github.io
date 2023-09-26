@@ -3,7 +3,7 @@ layout: post
 title: "Xcode with Python plugins"
 description: " "
 date: 2023-09-26
-tags: [Python, Xcode]
+tags: [Xcode]
 comments: true
 share: true
 ---

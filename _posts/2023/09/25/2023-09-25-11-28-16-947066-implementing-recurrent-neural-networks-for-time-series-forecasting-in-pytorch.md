@@ -3,7 +3,7 @@ layout: post
 title: "Implementing recurrent neural networks for time series forecasting in PyTorch"
 description: " "
 date: 2023-09-25
-tags: [techblog, python]
+tags: [techblog]
 comments: true
 share: true
 ---

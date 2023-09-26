@@ -3,7 +3,7 @@ layout: post
 title: "Implementing speech recognition with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, speechrecognition]
+tags: [speechrecognition]
 comments: true
 share: true
 ---

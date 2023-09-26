@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time analytics with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, realtimeanalytics]
+tags: [realtimeanalytics]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing audio processing with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, audio]
+tags: [audio]
 comments: true
 share: true
 ---

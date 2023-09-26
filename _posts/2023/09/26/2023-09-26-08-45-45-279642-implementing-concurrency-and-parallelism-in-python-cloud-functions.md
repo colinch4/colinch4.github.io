@@ -3,7 +3,7 @@ layout: post
 title: "Implementing concurrency and parallelism in Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

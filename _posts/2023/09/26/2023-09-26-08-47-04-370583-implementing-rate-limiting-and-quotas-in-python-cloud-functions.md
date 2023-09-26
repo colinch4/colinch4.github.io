@@ -3,7 +3,7 @@ layout: post
 title: "Implementing rate limiting and quotas in Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, CloudFunctions]
+tags: [CloudFunctions]
 comments: true
 share: true
 ---

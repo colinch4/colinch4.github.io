@@ -3,7 +3,7 @@ layout: post
 title: "AWS Lambda vs. Google Cloud Functions for Python"
 description: " "
 date: 2023-09-26
-tags: [python, serverless]
+tags: [serverless]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building custom dashboards with Python Cloud Functions and visualization tools"
 description: " "
 date: 2023-09-26
-tags: [Python, DataVisualization]
+tags: [DataVisualization]
 comments: true
 share: true
 ---

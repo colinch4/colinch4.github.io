@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time marketing automation with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, marketing]
+tags: [marketing]
 comments: true
 share: true
 ---

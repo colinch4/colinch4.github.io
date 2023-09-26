@@ -3,7 +3,7 @@ layout: post
 title: "Implementing anomaly detection with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, anomalydetection]
+tags: [anomalydetection]
 comments: true
 share: true
 ---

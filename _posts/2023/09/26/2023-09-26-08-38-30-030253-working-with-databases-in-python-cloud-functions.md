@@ -3,7 +3,7 @@ layout: post
 title: "Working with databases in Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

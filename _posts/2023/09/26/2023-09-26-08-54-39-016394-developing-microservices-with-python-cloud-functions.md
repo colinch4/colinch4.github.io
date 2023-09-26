@@ -3,7 +3,7 @@ layout: post
 title: "Developing microservices with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, microservices]
+tags: [microservices]
 comments: true
 share: true
 ---

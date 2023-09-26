@@ -3,7 +3,7 @@ layout: post
 title: "Running background tasks with Python Cloud Functions"
 description: " "
 date: 2023-09-26
-tags: [python, cloudfunctions]
+tags: [cloudfunctions]
 comments: true
 share: true
 ---

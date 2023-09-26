@@ -3,7 +3,7 @@ layout: post
 title: "Securing Python Cloud Functions with authentication and authorization"
 description: " "
 date: 2023-09-26
-tags: [Python, Security]
+tags: [Security]
 comments: true
 share: true
 ---

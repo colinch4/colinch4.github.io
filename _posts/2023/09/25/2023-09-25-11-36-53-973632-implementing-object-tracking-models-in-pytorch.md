@@ -3,7 +3,7 @@ layout: post
 title: "Implementing object tracking models in PyTorch"
 description: " "
 date: 2023-09-25
-tags: [python, deeplearning]
+tags: [deeplearning]
 comments: true
 share: true
 ---
