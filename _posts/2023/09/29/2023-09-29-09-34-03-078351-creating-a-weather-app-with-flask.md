@@ -66,6 +66,7 @@ def weather():
 Create `index.html` and `weather.html` inside the `templates/` folder. These HTML templates will be used to display the home page and weather information, respectively.
 
 ```html
+{% raw %}
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
@@ -92,6 +93,7 @@ Create `index.html` and `weather.html` inside the `templates/` folder. These HTM
     <p>{{ weather }}</p>
 </body>
 </html>
+{% endraw %}
 ```
 
 ### Fetching Weather Data from API

@@ -19,6 +19,7 @@ To get started, we need to create HTML templates that Flask can render. Flask us
 To begin, create a `templates` folder in your Flask project directory. Inside this folder, create a new HTML file, for example, `home.html`. In this file, you can write the HTML code for your home page, including any dynamic content that you want to render.
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,10 +30,11 @@ To begin, create a `templates` folder in your Flask project directory. Inside th
     <p>Hello, {{ name }}!</p>
 </body>
 </html>
+{% endraw %}
 ```
-
+{% raw %}
 In this example, we have a simple HTML page with a heading and a paragraph. Note the use of `{{ name }}` within double curly braces. This is a placeholder that will be replaced with the actual value when rendering the template.
-
+{% endraw %}
 #### Rendering HTML Templates in Flask
 
 Now that we have our HTML template ready, we can render it in a Flask view function. A view function is a Python function that handles HTTP requests and returns the response to the client.

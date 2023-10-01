@@ -74,6 +74,7 @@ In this code, we import the necessary modules and create a Flask instance. We de
 Next, let's create the HTML template for displaying job recommendations. In the project directory, create a new folder `templates` and inside it, create a file `index.html`. Add the following code to the `index.html` file:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,6 +89,7 @@ Next, let's create the HTML template for displaying job recommendations. In the 
     </ul>
 </body>
 </html>
+{% endraw %}
 ```
 
 This template uses Jinja2, a popular templating engine for Flask, to iterate through the `jobs` list and display each job's details.

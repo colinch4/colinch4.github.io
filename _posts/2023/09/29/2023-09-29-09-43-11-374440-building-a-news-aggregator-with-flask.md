@@ -82,6 +82,7 @@ cd templates
 Inside the `templates` directory, create a new file called `index.html` and open it with your text editor.
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,6 +100,7 @@ Inside the `templates` directory, create a new file called `index.html` and open
     </ul>
 </body>
 </html>
+{% endraw %}
 ```
 
 In this template, we iterate over the `articles` list using Flask's templating engine to display each article's title and description. Feel free to customize the HTML structure and styling according to your preferences.

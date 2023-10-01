@@ -74,6 +74,7 @@ In "index.html", add a basic form to input the text for sentiment analysis:
 In "result.html", display the sentiment analysis result:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,6 +85,7 @@ In "result.html", display the sentiment analysis result:
     <p>The sentiment of the text is: {{ sentiment }}</p>
 </body>
 </html>
+{% endraw %}
 ```
 
 ## Running the Application

@@ -53,6 +53,7 @@ In the code above, we make a request to the specified URL and create a Beautiful
 ## Creating the HTML Template
 Now, let's create an HTML template to display the scraped headlines. Inside the same directory as `app.py`, create a new directory called `templates`. Inside the `templates` directory, create a file called `index.html`. Add the following code to `index.html`:
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,6 +68,7 @@ Now, let's create an HTML template to display the scraped headlines. Inside the 
     </ul>
 </body>
 </html>
+{% endraw %}
 ```
 
 The above code creates a simple HTML page with a heading and a list. We use the Jinja templating engine to iterate over the headlines passed from the Flask route and dynamically generate list items.

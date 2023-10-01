@@ -66,9 +66,11 @@ In addition to template inheritance, Flask also provides macros, which are reusa
 To define a macro, you can use the `{% macro %}` statement followed by the name of the macro. Inside the macro, you can define the HTML or other content that will be included when the macro is called. For example:
 
 ```html
+{% raw %}
 {% macro button(text, url) %}
     <a href="{{ url }}">{{ text }}</a>
 {% endmacro %}
+{% endraw %}
 ```
 
 To use the macro, you can call it with the `{% call %}` statement, passing the required arguments. For example:
@@ -82,9 +84,11 @@ This will render the button macro with the specified text and URL.
 Macros can also accept optional arguments and have default values. You can define default values by using the `default` keyword followed by the desired value. For example:
 
 ```html
+{% raw %}
 {% macro button(text, url, color='blue') %}
     <a href="{{ url }}" style="background-color: {{ color }}">{{ text }}</a>
 {% endmacro %}
+{% endraw %}
 ```
 
 In this example, if the color argument is not specified when calling the macro, it will default to "blue".

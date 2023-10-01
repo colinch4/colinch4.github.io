@@ -97,10 +97,12 @@ if __name__ == '__main__':
 To display the recommendations on the frontend, create a new file `recommendations.html` and iterate over the recommendations:
 
 ```html
+{% raw %}
 {% for recommendation in recommendations %}
   <div>{{ recommendation.title }}</div>
   <div>{{ recommendation.description }}</div>
 {% endfor %}
+{% endraw %}
 ```
 
 ## Conclusion

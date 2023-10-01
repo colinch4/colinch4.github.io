@@ -78,6 +78,7 @@ In the above code, we import the `ContactForm` class from our `forms.py` file. I
 To render the form in an HTML template, create a new file called `contact.html`. Add the following code:
 
 ```html
+{% raw %}
 {% extends 'base.html' %}
 
 {% block content %}
@@ -90,6 +91,7 @@ To render the form in an HTML template, create a new file called `contact.html`.
     {{ form.submit() }}
 </form>
 {% endblock %}
+{% endraw %}
 ```
 
 In the above code, we use the Jinja2 templating system to render the form fields. `form.name.label` represents the label for the `name` field, and `form.name()` renders the actual form input.

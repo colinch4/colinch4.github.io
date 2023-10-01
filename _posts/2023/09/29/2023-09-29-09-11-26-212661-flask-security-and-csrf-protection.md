@@ -27,11 +27,13 @@ Flask provides built-in support for CSRF protection through the `flask-wtf` exte
 2. Create a `csrf_token` field in your HTML forms:
 
    ```html
+   {% raw %}
    <form method="POST">
      {{ form.csrf_token }}
      <!-- Rest of the form fields -->
      <button type="submit">Submit</button>
    </form>
+   {% endraw %}
    ```
 
 3. Import the necessary modules and initialize the CSRF protection in your Flask application:

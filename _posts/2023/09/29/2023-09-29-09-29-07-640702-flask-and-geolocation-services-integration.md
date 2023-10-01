@@ -70,6 +70,7 @@ def get_location():
 3. Create a template (`location.html`) to display the geolocation data:
 
 ```html
+{% raw %}
 <!doctype html>
 <html>
 <head>
@@ -83,6 +84,7 @@ def get_location():
     <p>Country: {{ location.country }}</p>
 </body>
 </html>
+{% endraw %}
 ```
 
 Remember to replace `'YOUR_API_KEY'` with your actual API key obtained from the geolocation service provider.

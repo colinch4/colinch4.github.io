@@ -80,6 +80,7 @@ In `index.html`, we can display a simple form where users can enter their userna
 In `chat.html`, we can display the chat room where users can send and receive messages:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,6 +106,7 @@ In `chat.html`, we can display the chat room where users can send and receive me
     </script>
 </body>
 </html>
+{% endraw %}
 ```
 
 ## Implementing the chat functionality

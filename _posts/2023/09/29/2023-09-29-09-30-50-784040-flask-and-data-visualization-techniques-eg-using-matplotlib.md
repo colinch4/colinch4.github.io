@@ -60,6 +60,7 @@ In this example, we define a route `/data` and within the route function, we gen
 Now, let's create the HTML template `chart.html` that will display the chart. Here's a basic example:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,6 +77,7 @@ Now, let's create the HTML template `chart.html` that will display the chart. He
     <img src="{{ chart_path }}" alt="Chart">
 </body>
 </html>
+{% endraw %}
 ```
 
 In this template, we include a header `h1` with the title, and an `img` tag that displays the chart image. The `src` attribute references the `chart_path` variable passed from the Flask route.

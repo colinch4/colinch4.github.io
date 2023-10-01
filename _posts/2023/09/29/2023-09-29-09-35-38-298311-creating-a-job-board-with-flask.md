@@ -64,6 +64,7 @@ We then modify the `home()` function to render an HTML template called `index.ht
 Create a new directory called `templates` in your project folder and create a new HTML file inside it called `index.html`. Open `index.html` in your text editor and add the following code:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,10 +79,11 @@ Create a new directory called `templates` in your project folder and create a ne
     </ul>
 </body>
 </html>
+{% endraw %}
 ```
-
+{% raw %}
 In the HTML template, we use a Jinja2 for loop to iterate over each job in the `job_listings` variable. We then display the job title, company, and location using the `{{ }}` syntax.
-
+{% endraw %}
 ## Conclusion
 
 In this blog post, we learned how to create a simple job board using Flask. We set up a basic Flask application, added job listing data, and created an HTML template to display the job listings. This is just the starting point, and you can extend the application by adding features like job search, filtering, and user authentication. Flask provides a flexible foundation for building powerful web applications. Happy building!

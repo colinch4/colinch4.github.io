@@ -19,7 +19,9 @@ To add CSS styles to your Flask application, you can follow these steps:
 2. Link the CSS file in your HTML templates: In the `<head>` section of your HTML template(s), add the following line of code to link the CSS file:
 
    ```html
+   {% raw %}
    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+   {% endraw %}
    ```
 
    This line tells Flask to serve the CSS file located in the `static` folder.

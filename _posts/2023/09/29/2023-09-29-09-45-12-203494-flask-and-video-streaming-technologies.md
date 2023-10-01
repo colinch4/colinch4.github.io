@@ -53,6 +53,7 @@ In this example, we have defined two routes: '/' for the homepage and '/video_st
 In your template, you can use HTML5 video tags to embed the video player:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,6 +63,7 @@ In your template, you can use HTML5 video tags to embed the video player:
     <video src="{{ video_url }}" controls autoplay></video>
 </body>
 </html>
+{% endraw %}
 ```
 
 You can enhance the video streaming page by adding additional features such as video categories, user comments, and related videos. Flask's integration with Python libraries like OpenCV and FFmpeg allows you to manipulate video files and extract relevant information easily.
