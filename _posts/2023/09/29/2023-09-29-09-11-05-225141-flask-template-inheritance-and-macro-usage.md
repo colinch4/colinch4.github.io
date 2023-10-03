@@ -76,11 +76,13 @@ To define a macro, you can use the `{% macro %}` statement followed by the name 
 {% endmacro %}
 {% endraw %}
 ```
-
+{% raw %}
 To use the macro, you can call it with the `{% call %}` statement, passing the required arguments. For example:
-
+{% endraw %}
 ```html
+{% raw %}
 {% call button('Click Me', '/my-url') %}
+{% endraw %}
 ```
 
 This will render the button macro with the specified text and URL.
