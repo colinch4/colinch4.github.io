@@ -3,7 +3,7 @@ layout: post
 title: "Calling functions from different modules in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, Functions]
+tags: [Functions]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Global variables in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, GlobalVariables]
+tags: [GlobalVariables]
 comments: true
 share: true
 ---

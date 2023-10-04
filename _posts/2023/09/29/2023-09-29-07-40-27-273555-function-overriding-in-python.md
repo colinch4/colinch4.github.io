@@ -3,7 +3,7 @@ layout: post
 title: "Function overriding in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FunctionOverriding]
+tags: [FunctionOverriding]
 comments: true
 share: true
 ---

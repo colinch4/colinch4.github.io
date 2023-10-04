@@ -3,7 +3,7 @@ layout: post
 title: "Setting up a Python Flask development environment"
 description: " "
 date: 2023-09-29
-tags: [python, flask]
+tags: [flask]
 comments: true
 share: true
 ---

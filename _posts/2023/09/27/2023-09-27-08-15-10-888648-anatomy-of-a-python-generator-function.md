@@ -3,7 +3,7 @@ layout: post
 title: "Anatomy of a Python Generator function"
 description: " "
 date: 2023-09-27
-tags: [Python, Generators]
+tags: [Generators]
 comments: true
 share: true
 ---

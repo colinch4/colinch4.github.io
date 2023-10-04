@@ -3,7 +3,7 @@ layout: post
 title: "What kind of Python code is suitable for Numba optimization?"
 description: " "
 date: 2023-10-01
-tags: [Python, Numba]
+tags: [Numba]
 comments: true
 share: true
 ---

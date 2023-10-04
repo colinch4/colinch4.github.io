@@ -3,7 +3,7 @@ layout: post
 title: "Closing a generator with the close() method"
 description: " "
 date: 2023-09-27
-tags: [Python, generators]
+tags: [generators]
 comments: true
 share: true
 ---

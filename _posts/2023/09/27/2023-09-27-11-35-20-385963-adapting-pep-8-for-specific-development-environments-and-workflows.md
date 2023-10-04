@@ -3,7 +3,7 @@ layout: post
 title: "Adapting PEP 8 for specific development environments and workflows"
 description: " "
 date: 2023-09-27
-tags: [Python, CodingStandards]
+tags: [CodingStandards]
 comments: true
 share: true
 ---

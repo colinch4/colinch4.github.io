@@ -3,7 +3,7 @@ layout: post
 title: "Enforcing PEP 8 guidelines with code linters and formatters"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

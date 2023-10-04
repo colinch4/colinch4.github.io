@@ -3,7 +3,7 @@ layout: post
 title: "Simulating crowd behavior and dynamics in 3D environments using Python"
 description: " "
 date: 2023-10-03
-tags: [Python, CrowdSimulation]
+tags: [CrowdSimulation]
 comments: true
 share: true
 ---

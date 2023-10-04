@@ -3,7 +3,7 @@ layout: post
 title: "Setting up Python Falcon in a virtual environment"
 description: " "
 date: 2023-10-02
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

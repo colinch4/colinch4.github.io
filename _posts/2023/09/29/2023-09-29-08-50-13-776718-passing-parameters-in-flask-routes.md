@@ -3,7 +3,7 @@ layout: post
 title: "Passing parameters in Flask routes"
 description: " "
 date: 2023-09-29
-tags: [Flask, Python]
+tags: [Flask]
 comments: true
 share: true
 ---

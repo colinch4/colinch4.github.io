@@ -3,7 +3,7 @@ layout: post
 title: "Designing and rendering immersive virtual reality environments with Python"
 description: " "
 date: 2023-10-03
-tags: [virtualreality, python]
+tags: [virtualreality]
 comments: true
 share: true
 ---

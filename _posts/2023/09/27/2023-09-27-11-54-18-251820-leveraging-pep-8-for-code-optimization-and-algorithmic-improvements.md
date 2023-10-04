@@ -3,7 +3,7 @@ layout: post
 title: "Leveraging PEP 8 for code optimization and algorithmic improvements"
 description: " "
 date: 2023-09-27
-tags: [programming, Python]
+tags: [programming]
 comments: true
 share: true
 ---

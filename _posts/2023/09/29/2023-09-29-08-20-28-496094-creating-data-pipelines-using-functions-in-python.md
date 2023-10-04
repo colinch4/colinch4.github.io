@@ -3,7 +3,7 @@ layout: post
 title: "Creating data pipelines using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [DataPipelines, Python]
+tags: [DataPipelines]
 comments: true
 share: true
 ---

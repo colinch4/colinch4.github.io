@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for mathematical modeling?"
 description: " "
 date: 2023-10-01
-tags: [Python, Numba]
+tags: [Numba]
 comments: true
 share: true
 ---

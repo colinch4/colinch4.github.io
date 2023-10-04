@@ -3,7 +3,7 @@ layout: post
 title: "What are the alternatives to Numba for accelerating Python code?"
 description: " "
 date: 2023-10-01
-tags: [Python, Cython]
+tags: [Cython]
 comments: true
 share: true
 ---

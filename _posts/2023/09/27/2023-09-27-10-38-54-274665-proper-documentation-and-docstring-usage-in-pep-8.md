@@ -3,7 +3,7 @@ layout: post
 title: "Proper documentation and docstring usage in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, Documentation]
+tags: [Documentation]
 comments: true
 share: true
 ---

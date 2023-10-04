@@ -3,7 +3,7 @@ layout: post
 title: "Working with data visualization in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, datavisualization]
+tags: [datavisualization]
 comments: true
 share: true
 ---

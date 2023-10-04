@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D audio visualization tool using Python"
 description: " "
 date: 2023-10-03
-tags: [Python, AudioVisualization]
+tags: [AudioVisualization]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing interactive cloth manipulation in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, pygame]
+tags: [pygame]
 comments: true
 share: true
 ---

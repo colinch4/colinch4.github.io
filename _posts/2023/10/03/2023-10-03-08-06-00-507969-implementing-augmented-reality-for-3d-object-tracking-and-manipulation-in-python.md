@@ -3,7 +3,7 @@ layout: post
 title: "Implementing augmented reality for 3D object tracking and manipulation in Python"
 description: " "
 date: 2023-10-03
-tags: [python, augmentedreality]
+tags: [augmentedreality]
 comments: true
 share: true
 ---

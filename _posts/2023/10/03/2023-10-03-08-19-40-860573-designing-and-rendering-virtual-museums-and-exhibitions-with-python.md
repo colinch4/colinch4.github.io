@@ -3,7 +3,7 @@ layout: post
 title: "Designing and rendering virtual museums and exhibitions with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, VirtualMuseums]
+tags: [VirtualMuseums]
 comments: true
 share: true
 ---

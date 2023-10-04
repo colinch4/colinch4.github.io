@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to 3D graphics in Python"
 description: " "
 date: 2023-10-03
-tags: [Python, 3DGraphics]
+tags: [3DGraphics]
 comments: true
 share: true
 ---

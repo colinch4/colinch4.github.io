@@ -3,7 +3,7 @@ layout: post
 title: "File I/O operations with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FileIO]
+tags: [FileIO]
 comments: true
 share: true
 ---

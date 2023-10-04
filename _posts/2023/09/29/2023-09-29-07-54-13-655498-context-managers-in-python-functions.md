@@ -3,7 +3,7 @@ layout: post
 title: "Context managers in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, ContextManagers]
+tags: [ContextManagers]
 comments: true
 share: true
 ---

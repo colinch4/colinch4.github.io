@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D visualization platform for geospatial data in Python"
 description: " "
 date: 2023-10-03
-tags: [python, geospatial]
+tags: [geospatial]
 comments: true
 share: true
 ---

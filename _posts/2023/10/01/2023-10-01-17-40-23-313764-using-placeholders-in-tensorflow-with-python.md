@@ -3,7 +3,7 @@ layout: post
 title: "Using placeholders in TensorFlow with Python"
 description: " "
 date: 2023-10-01
-tags: [tensorflow, python]
+tags: [tensorflow]
 comments: true
 share: true
 ---

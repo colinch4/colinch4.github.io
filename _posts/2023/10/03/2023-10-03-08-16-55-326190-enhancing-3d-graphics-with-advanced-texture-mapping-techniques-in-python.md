@@ -3,7 +3,7 @@ layout: post
 title: "Enhancing 3D graphics with advanced texture mapping techniques in Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3DGraphics]
+tags: [3DGraphics]
 comments: true
 share: true
 ---

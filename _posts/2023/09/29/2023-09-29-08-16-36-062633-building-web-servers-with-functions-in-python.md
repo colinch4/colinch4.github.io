@@ -3,7 +3,7 @@ layout: post
 title: "Building web servers with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, WebServers]
+tags: [WebServers]
 comments: true
 share: true
 ---

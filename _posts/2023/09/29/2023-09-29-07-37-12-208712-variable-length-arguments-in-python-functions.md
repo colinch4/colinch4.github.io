@@ -3,7 +3,7 @@ layout: post
 title: "Variable-length arguments in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, VariableLengthArguments]
+tags: [VariableLengthArguments]
 comments: true
 share: true
 ---

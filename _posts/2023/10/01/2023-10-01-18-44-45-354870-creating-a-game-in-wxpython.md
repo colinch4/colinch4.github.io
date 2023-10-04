@@ -3,7 +3,7 @@ layout: post
 title: "Creating a game in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, game]
+tags: [game]
 comments: true
 share: true
 ---

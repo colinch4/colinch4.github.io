@@ -3,7 +3,7 @@ layout: post
 title: "Designing and rendering realistic outdoor environments with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, Graphics]
+tags: [Graphics]
 comments: true
 share: true
 ---

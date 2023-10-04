@@ -3,7 +3,7 @@ layout: post
 title: "Flask integration with other Python frameworks (e.g., Django, SQLAlchemy)"
 description: " "
 date: 2023-09-29
-tags: [python, Flask]
+tags: [Flask]
 comments: true
 share: true
 ---

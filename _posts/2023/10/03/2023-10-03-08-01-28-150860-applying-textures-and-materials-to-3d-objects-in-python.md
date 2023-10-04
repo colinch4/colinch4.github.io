@@ -3,7 +3,7 @@ layout: post
 title: "Applying textures and materials to 3D objects in Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3Drendering]
+tags: [3Drendering]
 comments: true
 share: true
 ---

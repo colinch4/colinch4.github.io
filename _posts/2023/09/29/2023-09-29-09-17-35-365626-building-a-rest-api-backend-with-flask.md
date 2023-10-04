@@ -3,7 +3,7 @@ layout: post
 title: "Building a REST API backend with Flask"
 description: " "
 date: 2023-09-29
-tags: [python, flask]
+tags: [flask]
 comments: true
 share: true
 ---

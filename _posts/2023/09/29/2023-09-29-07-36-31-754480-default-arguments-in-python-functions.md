@@ -3,7 +3,7 @@ layout: post
 title: "Default arguments in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, Function]
+tags: [Function]
 comments: true
 share: true
 ---

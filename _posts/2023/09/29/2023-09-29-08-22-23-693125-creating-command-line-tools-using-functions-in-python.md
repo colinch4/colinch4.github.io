@@ -3,7 +3,7 @@ layout: post
 title: "Creating command-line tools using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, commandlinetools]
+tags: [commandlinetools]
 comments: true
 share: true
 ---

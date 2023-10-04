@@ -3,7 +3,7 @@ layout: post
 title: "Designing and simulating virtual cities and urban environments using Python"
 description: " "
 date: 2023-10-03
-tags: [urbanplanning, python]
+tags: [urbanplanning]
 comments: true
 share: true
 ---

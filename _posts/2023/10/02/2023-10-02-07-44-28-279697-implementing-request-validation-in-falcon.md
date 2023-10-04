@@ -3,7 +3,7 @@ layout: post
 title: "Implementing request validation in Falcon"
 description: " "
 date: 2023-10-02
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

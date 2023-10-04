@@ -3,7 +3,7 @@ layout: post
 title: "Implementing realistic fire and explosion effects in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, graphics]
+tags: [graphics]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "PEP 8 enforcement in continuous integration and deployment pipelines"
 description: " "
 date: 2023-09-27
-tags: [Python, CodeQuality]
+tags: [CodeQuality]
 comments: true
 share: true
 ---

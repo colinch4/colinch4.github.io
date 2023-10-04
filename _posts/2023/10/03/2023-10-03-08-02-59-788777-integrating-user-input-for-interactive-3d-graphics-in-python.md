@@ -3,7 +3,7 @@ layout: post
 title: "Integrating user input for interactive 3D graphics in Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3Dgraphics]
+tags: [3Dgraphics]
 comments: true
 share: true
 ---

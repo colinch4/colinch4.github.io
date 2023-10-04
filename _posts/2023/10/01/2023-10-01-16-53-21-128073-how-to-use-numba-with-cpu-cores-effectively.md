@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with CPU cores effectively?"
 description: " "
 date: 2023-10-01
-tags: [numba, python]
+tags: [numba]
 comments: true
 share: true
 ---

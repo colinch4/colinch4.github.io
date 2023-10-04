@@ -3,7 +3,7 @@ layout: post
 title: "The future of PEP 8 and potential updates or revisions"
 description: " "
 date: 2023-09-27
-tags: [PEP8, Python]
+tags: [PEP8]
 comments: true
 share: true
 ---

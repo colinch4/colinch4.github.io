@@ -3,7 +3,7 @@ layout: post
 title: "Creating a video player in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, wxpython]
+tags: [wxpython]
 comments: true
 share: true
 ---

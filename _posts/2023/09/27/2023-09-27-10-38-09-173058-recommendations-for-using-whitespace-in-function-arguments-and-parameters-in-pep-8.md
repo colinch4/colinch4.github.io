@@ -3,7 +3,7 @@ layout: post
 title: "Recommendations for using whitespace in function arguments and parameters in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

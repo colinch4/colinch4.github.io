@@ -3,7 +3,7 @@ layout: post
 title: "Flask and web scraping libraries (e.g., BeautifulSoup)"
 description: " "
 date: 2023-09-29
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

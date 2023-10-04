@@ -3,7 +3,7 @@ layout: post
 title: "Formatting rules for loops and iterations in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

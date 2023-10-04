@@ -3,7 +3,7 @@ layout: post
 title: "Implementing user authentication and registration API with Falcon"
 description: " "
 date: 2023-10-02
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

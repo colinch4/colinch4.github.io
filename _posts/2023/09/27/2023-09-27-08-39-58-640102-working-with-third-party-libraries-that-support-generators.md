@@ -3,7 +3,7 @@ layout: post
 title: "Working with third-party libraries that support generators"
 description: " "
 date: 2023-09-27
-tags: [Python, Generators]
+tags: [Generators]
 comments: true
 share: true
 ---

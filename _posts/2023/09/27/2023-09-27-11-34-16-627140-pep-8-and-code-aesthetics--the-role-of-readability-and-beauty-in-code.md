@@ -3,7 +3,7 @@ layout: post
 title: "PEP 8 and code aesthetics – the role of readability and beauty in code"
 description: " "
 date: 2023-09-27
-tags: [Python, CodeAesthetics]
+tags: [CodeAesthetics]
 comments: true
 share: true
 ---

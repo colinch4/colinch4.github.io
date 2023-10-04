@@ -3,7 +3,7 @@ layout: post
 title: "Thread management with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, Threading]
+tags: [Threading]
 comments: true
 share: true
 ---

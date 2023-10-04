@@ -3,7 +3,7 @@ layout: post
 title: "Using generators for memoized recursive functions"
 description: " "
 date: 2023-09-27
-tags: [Python, Memoization]
+tags: [Memoization]
 comments: true
 share: true
 ---

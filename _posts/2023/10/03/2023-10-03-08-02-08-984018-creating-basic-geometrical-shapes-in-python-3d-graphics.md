@@ -3,7 +3,7 @@ layout: post
 title: "Creating basic geometrical shapes in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, graphics]
+tags: [graphics]
 comments: true
 share: true
 ---

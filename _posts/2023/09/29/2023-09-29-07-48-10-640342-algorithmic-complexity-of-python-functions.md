@@ -3,7 +3,7 @@ layout: post
 title: "Algorithmic complexity of Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, AlgorithmicComplexity]
+tags: [AlgorithmicComplexity]
 comments: true
 share: true
 ---

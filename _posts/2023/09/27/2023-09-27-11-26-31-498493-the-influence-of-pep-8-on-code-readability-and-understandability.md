@@ -3,7 +3,7 @@ layout: post
 title: "The influence of PEP 8 on code readability and understandability"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Debugging functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, debugging]
+tags: [debugging]
 comments: true
 share: true
 ---

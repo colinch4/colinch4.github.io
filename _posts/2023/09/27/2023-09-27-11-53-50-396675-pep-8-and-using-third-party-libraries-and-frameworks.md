@@ -3,7 +3,7 @@ layout: post
 title: "PEP 8 and using third-party libraries and frameworks"
 description: " "
 date: 2023-09-27
-tags: [hashtags, Python]
+tags: [hashtags]
 comments: true
 share: true
 ---

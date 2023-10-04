@@ -3,7 +3,7 @@ layout: post
 title: "PEP 8 and navigating trade-offs between readability and code performance"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

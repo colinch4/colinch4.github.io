@@ -3,7 +3,7 @@ layout: post
 title: "Higher-order functions in Python"
 description: " "
 date: 2023-09-29
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

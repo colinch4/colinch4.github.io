@@ -3,7 +3,7 @@ layout: post
 title: "Transforming and manipulating objects in 3D using Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3Dobjects]
+tags: [3Dobjects]
 comments: true
 share: true
 ---

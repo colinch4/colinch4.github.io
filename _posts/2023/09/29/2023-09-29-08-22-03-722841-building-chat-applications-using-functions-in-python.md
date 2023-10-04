@@ -3,7 +3,7 @@ layout: post
 title: "Building chat applications using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, chatapplication]
+tags: [chatapplication]
 comments: true
 share: true
 ---

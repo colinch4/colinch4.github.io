@@ -3,7 +3,7 @@ layout: post
 title: "Background tasks and scheduling in Flask"
 description: " "
 date: 2023-09-29
-tags: [Python, Flask]
+tags: [Flask]
 comments: true
 share: true
 ---

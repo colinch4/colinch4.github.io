@@ -3,7 +3,7 @@ layout: post
 title: "Implementing cloth simulation and dynamics in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

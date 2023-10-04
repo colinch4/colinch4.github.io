@@ -3,7 +3,7 @@ layout: post
 title: "Implementing realistic water and fluid simulations in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

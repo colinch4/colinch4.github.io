@@ -3,7 +3,7 @@ layout: post
 title: "What are the supported data types in Numba?"
 description: " "
 date: 2023-10-01
-tags: [Numba, Python]
+tags: [Numba]
 comments: true
 share: true
 ---

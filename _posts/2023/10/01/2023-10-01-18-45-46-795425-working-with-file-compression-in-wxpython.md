@@ -3,7 +3,7 @@ layout: post
 title: "Working with file compression in WXPython"
 description: " "
 date: 2023-10-01
-tags: [Python, WXPython]
+tags: [WXPython]
 comments: true
 share: true
 ---

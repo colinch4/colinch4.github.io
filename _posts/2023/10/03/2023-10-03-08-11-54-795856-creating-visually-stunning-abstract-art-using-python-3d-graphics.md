@@ -3,7 +3,7 @@ layout: post
 title: "Creating visually stunning abstract art using Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [AbstractArtPython, Python]
+tags: [AbstractArtPython]
 comments: true
 share: true
 ---

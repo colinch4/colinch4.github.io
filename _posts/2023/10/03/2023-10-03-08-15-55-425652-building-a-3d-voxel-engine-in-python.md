@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D voxel engine in Python"
 description: " "
 date: 2023-10-03
-tags: [python, voxelengine]
+tags: [voxelengine]
 comments: true
 share: true
 ---

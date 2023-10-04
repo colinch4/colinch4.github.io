@@ -3,7 +3,7 @@ layout: post
 title: "Importing existing 3D models into Python for manipulation and rendering"
 description: " "
 date: 2023-10-03
-tags: [Python, 3DModeling]
+tags: [3DModeling]
 comments: true
 share: true
 ---

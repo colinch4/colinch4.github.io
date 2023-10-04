@@ -3,7 +3,7 @@ layout: post
 title: "How to debug Numba-optimized code?"
 description: " "
 date: 2023-10-01
-tags: [python, debugging]
+tags: [debugging]
 comments: true
 share: true
 ---

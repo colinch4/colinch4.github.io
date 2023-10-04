@@ -3,7 +3,7 @@ layout: post
 title: "Building a virtual reality experience using Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [Python, 3DGraphics]
+tags: [3DGraphics]
 comments: true
 share: true
 ---

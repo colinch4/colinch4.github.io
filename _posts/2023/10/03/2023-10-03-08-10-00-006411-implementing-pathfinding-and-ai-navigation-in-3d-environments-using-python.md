@@ -3,7 +3,7 @@ layout: post
 title: "Implementing pathfinding and AI navigation in 3D environments using Python"
 description: " "
 date: 2023-10-03
-tags: [python, pathfinding]
+tags: [pathfinding]
 comments: true
 share: true
 ---

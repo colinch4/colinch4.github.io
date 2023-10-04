@@ -3,7 +3,7 @@ layout: post
 title: "Function annotations in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FunctionAnnotations]
+tags: [FunctionAnnotations]
 comments: true
 share: true
 ---

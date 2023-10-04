@@ -3,7 +3,7 @@ layout: post
 title: "Implementing basic operations in TensorFlow with Python"
 description: " "
 date: 2023-10-01
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

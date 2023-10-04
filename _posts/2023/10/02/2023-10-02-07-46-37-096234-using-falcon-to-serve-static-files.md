@@ -3,7 +3,7 @@ layout: post
 title: "Using Falcon to serve static files"
 description: " "
 date: 2023-10-02
-tags: [python, webdevelopment]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

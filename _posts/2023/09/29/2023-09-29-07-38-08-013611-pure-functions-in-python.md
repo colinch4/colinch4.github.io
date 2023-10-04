@@ -3,7 +3,7 @@ layout: post
 title: "Pure functions in Python"
 description: " "
 date: 2023-09-29
-tags: [functionalprogramming, python]
+tags: [functionalprogramming]
 comments: true
 share: true
 ---

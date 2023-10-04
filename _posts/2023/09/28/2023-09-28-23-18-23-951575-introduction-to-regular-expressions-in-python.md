@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to regular expressions in Python"
 description: " "
 date: 2023-09-28
-tags: [Python, RegularExpression]
+tags: [RegularExpression]
 comments: true
 share: true
 ---

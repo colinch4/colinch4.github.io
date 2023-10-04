@@ -3,7 +3,7 @@ layout: post
 title: "Generator-based web scraping in Python"
 description: " "
 date: 2023-09-27
-tags: [Python, WebScraping]
+tags: [WebScraping]
 comments: true
 share: true
 ---

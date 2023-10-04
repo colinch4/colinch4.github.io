@@ -3,7 +3,7 @@ layout: post
 title: "Function composition in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FunctionComposition]
+tags: [FunctionComposition]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time physics-based destruction in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, gamedevelopment]
+tags: [gamedevelopment]
 comments: true
 share: true
 ---

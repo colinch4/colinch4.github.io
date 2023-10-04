@@ -3,7 +3,7 @@ layout: post
 title: "Implementing asynchronous request handling in Falcon"
 description: " "
 date: 2023-10-02
-tags: [Python, Falcon]
+tags: [Falcon]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Extracting dates and times from HTML using regular expressions"
 description: " "
 date: 2023-09-28
-tags: [webdevelopment, python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

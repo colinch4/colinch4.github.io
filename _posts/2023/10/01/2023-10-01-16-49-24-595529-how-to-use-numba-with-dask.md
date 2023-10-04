@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with Dask?"
 description: " "
 date: 2023-10-01
-tags: [Python, DataProcessing]
+tags: [DataProcessing]
 comments: true
 share: true
 ---

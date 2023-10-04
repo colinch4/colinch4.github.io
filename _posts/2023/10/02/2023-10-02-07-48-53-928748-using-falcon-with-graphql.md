@@ -3,7 +3,7 @@ layout: post
 title: "Using Falcon with GraphQL"
 description: " "
 date: 2023-10-02
-tags: [Python, GraphQL]
+tags: [GraphQL]
 comments: true
 share: true
 ---

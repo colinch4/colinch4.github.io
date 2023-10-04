@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python WXPython"
 description: " "
 date: 2023-10-01
-tags: [Python, WXPython]
+tags: [WXPython]
 comments: true
 share: true
 ---

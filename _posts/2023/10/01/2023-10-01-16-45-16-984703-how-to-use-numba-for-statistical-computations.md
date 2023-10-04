@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for statistical computations?"
 description: " "
 date: 2023-10-01
-tags: [dataanalysis, python]
+tags: [dataanalysis]
 comments: true
 share: true
 ---

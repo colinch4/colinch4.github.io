@@ -3,7 +3,7 @@ layout: post
 title: "Scientific computing with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, scientificcomputing]
+tags: [scientificcomputing]
 comments: true
 share: true
 ---

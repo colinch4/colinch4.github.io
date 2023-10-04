@@ -3,7 +3,7 @@ layout: post
 title: "Recursion versus iteration in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, recursion]
+tags: [recursion]
 comments: true
 share: true
 ---

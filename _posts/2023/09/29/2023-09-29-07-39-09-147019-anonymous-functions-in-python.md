@@ -3,7 +3,7 @@ layout: post
 title: "Anonymous functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, anonymousfunctions]
+tags: [anonymousfunctions]
 comments: true
 share: true
 ---

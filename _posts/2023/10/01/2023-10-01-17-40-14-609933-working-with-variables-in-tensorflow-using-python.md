@@ -3,7 +3,7 @@ layout: post
 title: "Working with variables in TensorFlow using Python"
 description: " "
 date: 2023-10-01
-tags: [tensorflow, python]
+tags: [tensorflow]
 comments: true
 share: true
 ---

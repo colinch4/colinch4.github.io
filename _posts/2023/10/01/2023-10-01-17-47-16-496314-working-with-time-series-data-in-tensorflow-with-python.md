@@ -3,7 +3,7 @@ layout: post
 title: "Working with time series data in TensorFlow with Python"
 description: " "
 date: 2023-10-01
-tags: [python, tensorflow]
+tags: [tensorflow]
 comments: true
 share: true
 ---

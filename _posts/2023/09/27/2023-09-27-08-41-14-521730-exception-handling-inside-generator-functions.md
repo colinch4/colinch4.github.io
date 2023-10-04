@@ -3,7 +3,7 @@ layout: post
 title: "Exception handling inside generator functions"
 description: " "
 date: 2023-09-27
-tags: [Python, GeneratorFunctions]
+tags: [GeneratorFunctions]
 comments: true
 share: true
 ---

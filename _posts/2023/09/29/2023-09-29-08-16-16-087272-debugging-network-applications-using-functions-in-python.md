@@ -3,7 +3,7 @@ layout: post
 title: "Debugging network applications using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, Networking]
+tags: [Networking]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D modeling and sculpting tool in Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3Dmodeling]
+tags: [3Dmodeling]
 comments: true
 share: true
 ---

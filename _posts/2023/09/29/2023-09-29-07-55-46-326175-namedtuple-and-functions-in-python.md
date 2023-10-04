@@ -3,7 +3,7 @@ layout: post
 title: "Namedtuple and functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, Namedtuple]
+tags: [Namedtuple]
 comments: true
 share: true
 ---

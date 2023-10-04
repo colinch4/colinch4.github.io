@@ -3,7 +3,7 @@ layout: post
 title: "Creating 3D data visualizations and infographics with Python"
 description: " "
 date: 2023-10-03
-tags: [dataviz, python]
+tags: [dataviz]
 comments: true
 share: true
 ---

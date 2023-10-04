@@ -3,7 +3,7 @@ layout: post
 title: "Creating a music player in WXPython"
 description: " "
 date: 2023-10-01
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

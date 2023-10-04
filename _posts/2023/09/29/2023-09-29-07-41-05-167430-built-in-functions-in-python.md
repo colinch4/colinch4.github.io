@@ -3,7 +3,7 @@ layout: post
 title: "Built-in functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, BuiltInFunctions]
+tags: [BuiltInFunctions]
 comments: true
 share: true
 ---

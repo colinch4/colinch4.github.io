@@ -3,7 +3,7 @@ layout: post
 title: "What is the future of Numba in Python?"
 description: " "
 date: 2023-10-01
-tags: [Python, Numba]
+tags: [Numba]
 comments: true
 share: true
 ---

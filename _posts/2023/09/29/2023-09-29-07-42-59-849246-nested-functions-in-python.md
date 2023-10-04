@@ -3,7 +3,7 @@ layout: post
 title: "Nested functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, NestedFunctions]
+tags: [NestedFunctions]
 comments: true
 share: true
 ---

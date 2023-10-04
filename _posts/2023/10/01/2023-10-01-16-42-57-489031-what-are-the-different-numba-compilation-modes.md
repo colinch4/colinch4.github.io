@@ -3,7 +3,7 @@ layout: post
 title: "What are the different Numba compilation modes?"
 description: " "
 date: 2023-10-01
-tags: [python, performance]
+tags: [performance]
 comments: true
 share: true
 ---

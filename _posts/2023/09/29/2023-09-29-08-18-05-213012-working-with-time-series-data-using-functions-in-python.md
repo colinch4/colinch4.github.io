@@ -3,7 +3,7 @@ layout: post
 title: "Working with time series data using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, timeseries]
+tags: [timeseries]
 comments: true
 share: true
 ---

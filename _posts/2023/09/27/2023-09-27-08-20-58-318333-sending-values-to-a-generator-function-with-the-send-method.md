@@ -3,7 +3,7 @@ layout: post
 title: "Sending values to a generator function with the send() method"
 description: " "
 date: 2023-09-27
-tags: [Python, Generators]
+tags: [Generators]
 comments: true
 share: true
 ---

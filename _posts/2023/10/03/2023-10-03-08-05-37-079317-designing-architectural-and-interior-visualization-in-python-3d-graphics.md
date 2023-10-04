@@ -3,7 +3,7 @@ layout: post
 title: "Designing architectural and interior visualization in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, 3dgraphics]
+tags: [3dgraphics]
 comments: true
 share: true
 ---

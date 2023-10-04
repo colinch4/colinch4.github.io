@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D platformer game with Python"
 description: " "
 date: 2023-10-03
-tags: [python, gamedevelopment]
+tags: [gamedevelopment]
 comments: true
 share: true
 ---

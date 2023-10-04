@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for simulation experiments?"
 description: " "
 date: 2023-10-01
-tags: [simulation, python]
+tags: [simulation]
 comments: true
 share: true
 ---

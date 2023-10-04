@@ -3,7 +3,7 @@ layout: post
 title: "Concept of function purity in Python"
 description: " "
 date: 2023-09-29
-tags: [python, functionpurity_]
+tags: [functionpurity_]
 comments: true
 share: true
 ---

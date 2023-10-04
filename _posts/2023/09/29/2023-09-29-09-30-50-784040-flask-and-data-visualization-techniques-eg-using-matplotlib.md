@@ -3,7 +3,7 @@ layout: post
 title: "Flask and data visualization techniques (e.g., using Matplotlib)"
 description: " "
 date: 2023-09-29
-tags: [Python, Flask]
+tags: [Flask]
 comments: true
 share: true
 ---

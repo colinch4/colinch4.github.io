@@ -3,7 +3,7 @@ layout: post
 title: "Creating visually appealing particle effects using Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, 3Dgraphics]
+tags: [3Dgraphics]
 comments: true
 share: true
 ---

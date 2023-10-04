@@ -3,7 +3,7 @@ layout: post
 title: "Profiling functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, profiling]
+tags: [profiling]
 comments: true
 share: true
 ---

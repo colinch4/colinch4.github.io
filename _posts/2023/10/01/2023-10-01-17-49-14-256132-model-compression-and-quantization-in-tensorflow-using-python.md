@@ -3,7 +3,7 @@ layout: post
 title: "Model compression and quantization in TensorFlow using Python"
 description: " "
 date: 2023-10-01
-tags: [Python, TensorFlow]
+tags: [TensorFlow]
 comments: true
 share: true
 ---

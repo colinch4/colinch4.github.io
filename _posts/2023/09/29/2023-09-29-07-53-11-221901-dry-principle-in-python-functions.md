@@ -3,7 +3,7 @@ layout: post
 title: "DRY principle in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

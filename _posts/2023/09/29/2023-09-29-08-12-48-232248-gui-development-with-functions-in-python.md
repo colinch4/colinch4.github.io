@@ -3,7 +3,7 @@ layout: post
 title: "GUI development with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, programming]
+tags: [programming]
 comments: true
 share: true
 ---

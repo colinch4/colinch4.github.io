@@ -3,7 +3,7 @@ layout: post
 title: "Creating a video game using WXPython"
 description: " "
 date: 2023-10-01
-tags: [video_game_development, python]
+tags: [video_game_development]
 comments: true
 share: true
 ---

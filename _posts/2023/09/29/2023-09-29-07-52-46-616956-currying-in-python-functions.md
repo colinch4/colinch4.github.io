@@ -3,7 +3,7 @@ layout: post
 title: "Currying in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, currying]
+tags: [currying]
 comments: true
 share: true
 ---

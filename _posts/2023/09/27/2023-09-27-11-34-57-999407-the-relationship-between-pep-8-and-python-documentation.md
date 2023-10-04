@@ -3,7 +3,7 @@ layout: post
 title: "The relationship between PEP 8 and Python documentation"
 description: " "
 date: 2023-09-27
-tags: [programming, Python]
+tags: [programming]
 comments: true
 share: true
 ---

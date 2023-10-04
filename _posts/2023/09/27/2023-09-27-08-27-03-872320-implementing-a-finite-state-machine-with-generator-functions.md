@@ -3,7 +3,7 @@ layout: post
 title: "Implementing a finite state machine with generator functions"
 description: " "
 date: 2023-09-27
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

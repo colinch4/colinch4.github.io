@@ -3,7 +3,7 @@ layout: post
 title: "Rendering and creating realistic images using Python"
 description: " "
 date: 2023-10-03
-tags: [python, rendering]
+tags: [rendering]
 comments: true
 share: true
 ---

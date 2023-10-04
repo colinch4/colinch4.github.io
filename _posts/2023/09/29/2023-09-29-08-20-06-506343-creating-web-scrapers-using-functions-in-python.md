@@ -3,7 +3,7 @@ layout: post
 title: "Creating web scrapers using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, webscraping]
+tags: [webscraping]
 comments: true
 share: true
 ---

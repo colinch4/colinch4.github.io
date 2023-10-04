@@ -3,7 +3,7 @@ layout: post
 title: "Natural language generation (NLG) with TensorFlow in Python"
 description: " "
 date: 2023-10-01
-tags: [TensorFlow, Python]
+tags: [TensorFlow]
 comments: true
 share: true
 ---

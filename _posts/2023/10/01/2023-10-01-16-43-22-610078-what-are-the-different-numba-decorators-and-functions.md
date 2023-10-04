@@ -3,7 +3,7 @@ layout: post
 title: "What are the different Numba decorators and functions?"
 description: " "
 date: 2023-10-01
-tags: [Numba, Python]
+tags: [Numba]
 comments: true
 share: true
 ---

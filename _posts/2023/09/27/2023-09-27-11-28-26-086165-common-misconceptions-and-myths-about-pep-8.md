@@ -3,7 +3,7 @@ layout: post
 title: "Common misconceptions and myths about PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, CodingStandards]
+tags: [CodingStandards]
 comments: true
 share: true
 ---

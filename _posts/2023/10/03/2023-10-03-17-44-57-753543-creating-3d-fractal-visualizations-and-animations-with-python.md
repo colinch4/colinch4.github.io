@@ -3,7 +3,7 @@ layout: post
 title: "Creating 3D fractal visualizations and animations with Python"
 description: " "
 date: 2023-10-03
-tags: [python, fractals]
+tags: [fractals]
 comments: true
 share: true
 ---

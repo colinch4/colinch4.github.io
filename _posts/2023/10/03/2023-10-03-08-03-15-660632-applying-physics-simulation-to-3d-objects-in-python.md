@@ -3,7 +3,7 @@ layout: post
 title: "Applying physics simulation to 3D objects in Python"
 description: " "
 date: 2023-10-03
-tags: [Python, Pygame]
+tags: [Pygame]
 comments: true
 share: true
 ---

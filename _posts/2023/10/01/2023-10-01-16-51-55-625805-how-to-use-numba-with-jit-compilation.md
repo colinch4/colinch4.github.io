@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with JIT compilation?"
 description: " "
 date: 2023-10-01
-tags: [python, JITCompilation]
+tags: [JITCompilation]
 comments: true
 share: true
 ---

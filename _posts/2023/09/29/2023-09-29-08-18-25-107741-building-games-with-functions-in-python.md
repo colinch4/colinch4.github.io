@@ -3,7 +3,7 @@ layout: post
 title: "Building games with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, GameDevelopment]
+tags: [GameDevelopment]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Using try-except blocks with generator functions"
 description: " "
 date: 2023-09-27
-tags: [Python, Generators]
+tags: [Generators]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Decorators in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, Decorators]
+tags: [Decorators]
 comments: true
 share: true
 ---

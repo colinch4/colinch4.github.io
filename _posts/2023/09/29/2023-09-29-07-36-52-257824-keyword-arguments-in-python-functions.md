@@ -3,7 +3,7 @@ layout: post
 title: "Keyword arguments in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, KeywordArguments]
+tags: [KeywordArguments]
 comments: true
 share: true
 ---

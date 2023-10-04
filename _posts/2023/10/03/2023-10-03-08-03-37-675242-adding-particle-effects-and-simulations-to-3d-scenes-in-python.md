@@ -3,7 +3,7 @@ layout: post
 title: "Adding particle effects and simulations to 3D scenes in Python"
 description: " "
 date: 2023-10-03
-tags: [pygame, python]
+tags: [pygame]
 comments: true
 share: true
 ---

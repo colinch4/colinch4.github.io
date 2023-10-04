@@ -3,7 +3,7 @@ layout: post
 title: "Designing and simulating virtual space exploration using Python"
 description: " "
 date: 2023-10-03
-tags: [python, virtualspace]
+tags: [virtualspace]
 comments: true
 share: true
 ---

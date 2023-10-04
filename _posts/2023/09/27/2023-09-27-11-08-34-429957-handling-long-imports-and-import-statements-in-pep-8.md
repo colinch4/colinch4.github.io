@@ -3,7 +3,7 @@ layout: post
 title: "Handling long imports and import statements in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, ImportStatements]
+tags: [ImportStatements]
 comments: true
 share: true
 ---

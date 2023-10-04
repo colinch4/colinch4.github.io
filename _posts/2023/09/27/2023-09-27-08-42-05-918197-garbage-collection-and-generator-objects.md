@@ -3,7 +3,7 @@ layout: post
 title: "Garbage collection and generator objects"
 description: " "
 date: 2023-09-27
-tags: [Python, GarbageCollection]
+tags: [GarbageCollection]
 comments: true
 share: true
 ---

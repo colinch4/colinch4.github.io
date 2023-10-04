@@ -3,7 +3,7 @@ layout: post
 title: "What are the limitations of Numba?"
 description: " "
 date: 2023-10-01
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

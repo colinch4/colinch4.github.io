@@ -3,7 +3,7 @@ layout: post
 title: "Using explicit relative imports and absolute imports in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

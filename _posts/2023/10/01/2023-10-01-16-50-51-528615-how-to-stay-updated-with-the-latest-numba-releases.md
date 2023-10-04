@@ -3,7 +3,7 @@ layout: post
 title: "How to stay updated with the latest Numba releases?"
 description: " "
 date: 2023-10-01
-tags: [Numba, Python]
+tags: [Numba]
 comments: true
 share: true
 ---

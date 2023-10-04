@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for feature engineering?"
 description: " "
 date: 2023-10-01
-tags: [FeatureEngineering, Python]
+tags: [FeatureEngineering]
 comments: true
 share: true
 ---

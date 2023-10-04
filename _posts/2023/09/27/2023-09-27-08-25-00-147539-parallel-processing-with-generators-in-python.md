@@ -3,7 +3,7 @@ layout: post
 title: "Parallel processing with generators in Python"
 description: " "
 date: 2023-09-27
-tags: [Python, ParallelProcessing]
+tags: [ParallelProcessing]
 comments: true
 share: true
 ---

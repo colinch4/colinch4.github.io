@@ -3,7 +3,7 @@ layout: post
 title: "Implementing request/response deserialization using Thrift in Falcon"
 description: " "
 date: 2023-10-02
-tags: [python, falcon]
+tags: [falcon]
 comments: true
 share: true
 ---

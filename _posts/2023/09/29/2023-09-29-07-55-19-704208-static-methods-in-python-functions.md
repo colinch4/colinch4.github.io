@@ -3,7 +3,7 @@ layout: post
 title: "Static methods in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, staticmethods]
+tags: [staticmethods]
 comments: true
 share: true
 ---

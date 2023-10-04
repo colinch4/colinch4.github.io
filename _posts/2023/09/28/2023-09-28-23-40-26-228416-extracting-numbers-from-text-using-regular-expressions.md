@@ -3,7 +3,7 @@ layout: post
 title: "Extracting numbers from text using regular expressions"
 description: " "
 date: 2023-09-28
-tags: [python, regex]
+tags: [regex]
 comments: true
 share: true
 ---

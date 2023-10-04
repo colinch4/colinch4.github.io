@@ -3,7 +3,7 @@ layout: post
 title: "Error handling in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, codingtips]
+tags: [codingtips]
 comments: true
 share: true
 ---

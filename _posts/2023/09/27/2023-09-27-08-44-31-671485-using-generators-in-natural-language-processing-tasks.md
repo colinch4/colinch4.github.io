@@ -3,7 +3,7 @@ layout: post
 title: "Using generators in natural language processing tasks"
 description: " "
 date: 2023-09-27
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

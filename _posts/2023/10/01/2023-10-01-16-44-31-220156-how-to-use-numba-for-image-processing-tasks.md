@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for image processing tasks?"
 description: " "
 date: 2023-10-01
-tags: [imageprocessing, python]
+tags: [imageprocessing]
 comments: true
 share: true
 ---

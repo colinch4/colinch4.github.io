@@ -3,7 +3,7 @@ layout: post
 title: "Network programming with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, networking]
+tags: [networking]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Designing and rendering realistic characters and avatars in Python"
 description: " "
 date: 2023-10-03
-tags: [Python, OpenCV]
+tags: [OpenCV]
 comments: true
 share: true
 ---

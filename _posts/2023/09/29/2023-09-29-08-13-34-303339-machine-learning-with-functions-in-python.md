@@ -3,7 +3,7 @@ layout: post
 title: "Machine learning with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [MachineLearning, Python]
+tags: [MachineLearning]
 comments: true
 share: true
 ---

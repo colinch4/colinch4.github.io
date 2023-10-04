@@ -3,7 +3,7 @@ layout: post
 title: "Implementing inverse kinematics for 3D character animation with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, InverseKinematics]
+tags: [InverseKinematics]
 comments: true
 share: true
 ---

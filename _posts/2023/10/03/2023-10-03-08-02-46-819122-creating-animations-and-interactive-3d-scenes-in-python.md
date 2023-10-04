@@ -3,7 +3,7 @@ layout: post
 title: "Creating animations and interactive 3D scenes in Python"
 description: " "
 date: 2023-10-03
-tags: [python, animation]
+tags: [animation]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Designing and simulating virtual construction and engineering projects using Python"
 description: " "
 date: 2023-10-03
-tags: [Python, VirtualDesignAndSimulation]
+tags: [VirtualDesignAndSimulation]
 comments: true
 share: true
 ---

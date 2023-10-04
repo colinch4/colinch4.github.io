@@ -3,7 +3,7 @@ layout: post
 title: "Working with complex data structures in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, datastructures]
+tags: [datastructures]
 comments: true
 share: true
 ---

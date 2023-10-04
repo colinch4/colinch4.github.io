@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for near-real-time applications?"
 description: " "
 date: 2023-10-01
-tags: [python, Numba]
+tags: [Numba]
 comments: true
 share: true
 ---

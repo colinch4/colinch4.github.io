@@ -3,7 +3,7 @@ layout: post
 title: "Handling exceptions in accordance with PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, ExceptionHandling]
+tags: [ExceptionHandling]
 comments: true
 share: true
 ---

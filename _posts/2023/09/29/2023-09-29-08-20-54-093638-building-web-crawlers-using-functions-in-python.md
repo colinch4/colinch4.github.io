@@ -3,7 +3,7 @@ layout: post
 title: "Building web crawlers using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [webcrawler, python]
+tags: [webcrawler]
 comments: true
 share: true
 ---

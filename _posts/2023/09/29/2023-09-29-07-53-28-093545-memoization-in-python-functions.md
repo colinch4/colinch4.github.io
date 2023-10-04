@@ -3,7 +3,7 @@ layout: post
 title: "Memoization in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, memoization]
+tags: [memoization]
 comments: true
 share: true
 ---

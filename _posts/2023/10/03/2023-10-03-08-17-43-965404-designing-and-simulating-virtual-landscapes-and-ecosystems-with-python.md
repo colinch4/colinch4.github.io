@@ -3,7 +3,7 @@ layout: post
 title: "Designing and simulating virtual landscapes and ecosystems with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, VirtualLandscapes]
+tags: [VirtualLandscapes]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time soft body physics in Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, 3DGraphics]
+tags: [3DGraphics]
 comments: true
 share: true
 ---

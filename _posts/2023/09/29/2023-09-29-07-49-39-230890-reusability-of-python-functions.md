@@ -3,7 +3,7 @@ layout: post
 title: "Reusability of Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, functions]
+tags: [functions]
 comments: true
 share: true
 ---

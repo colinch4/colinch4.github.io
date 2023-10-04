@@ -3,7 +3,7 @@ layout: post
 title: "Creating a barcode scanner in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, WXPython]
+tags: [WXPython]
 comments: true
 share: true
 ---

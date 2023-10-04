@@ -3,7 +3,7 @@ layout: post
 title: "Working with databases using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, databases]
+tags: [databases]
 comments: true
 share: true
 ---

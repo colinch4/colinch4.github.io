@@ -3,7 +3,7 @@ layout: post
 title: "Designing and simulating virtual worlds for game development using Python"
 description: " "
 date: 2023-10-03
-tags: [GameDevelopment, Python]
+tags: [GameDevelopment]
 comments: true
 share: true
 ---

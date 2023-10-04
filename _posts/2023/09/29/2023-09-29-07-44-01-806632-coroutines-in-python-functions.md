@@ -3,7 +3,7 @@ layout: post
 title: "Coroutines in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, coroutines]
+tags: [coroutines]
 comments: true
 share: true
 ---

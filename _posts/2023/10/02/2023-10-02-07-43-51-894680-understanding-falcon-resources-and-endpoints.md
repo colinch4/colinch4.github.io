@@ -3,7 +3,7 @@ layout: post
 title: "Understanding Falcon resources and endpoints"
 description: " "
 date: 2023-10-02
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

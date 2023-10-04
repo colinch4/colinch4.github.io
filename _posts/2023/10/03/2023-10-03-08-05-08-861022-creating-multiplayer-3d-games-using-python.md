@@ -3,7 +3,7 @@ layout: post
 title: "Creating multiplayer 3D games using Python"
 description: " "
 date: 2023-10-03
-tags: [python, gamedev]
+tags: [gamedev]
 comments: true
 share: true
 ---

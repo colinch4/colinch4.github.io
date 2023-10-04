@@ -3,7 +3,7 @@ layout: post
 title: "Working with XML data using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python]
+tags: []
 comments: true
 share: true
 ---

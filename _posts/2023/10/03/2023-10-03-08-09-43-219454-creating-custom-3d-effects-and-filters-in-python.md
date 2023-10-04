@@ -3,7 +3,7 @@ layout: post
 title: "Creating custom 3D effects and filters in Python"
 description: " "
 date: 2023-10-03
-tags: [python, 3Deffects]
+tags: [3Deffects]
 comments: true
 share: true
 ---

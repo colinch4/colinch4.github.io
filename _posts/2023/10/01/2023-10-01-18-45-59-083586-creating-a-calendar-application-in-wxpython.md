@@ -3,7 +3,7 @@ layout: post
 title: "Creating a calendar application in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, wxPython]
+tags: [wxPython]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Creating interactive architectural walkthroughs with Python"
 description: " "
 date: 2023-10-03
-tags: [Architecture, Python]
+tags: [Architecture]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Polymorphism in Python functions"
 description: " "
 date: 2023-09-29
-tags: [techblog, python]
+tags: [techblog]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Creating chatbots using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [chatbots, python]
+tags: [chatbots]
 comments: true
 share: true
 ---

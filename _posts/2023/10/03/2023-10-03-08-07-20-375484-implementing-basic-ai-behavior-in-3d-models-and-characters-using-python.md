@@ -3,7 +3,7 @@ layout: post
 title: "Implementing basic AI behavior in 3D models and characters using Python"
 description: " "
 date: 2023-10-03
-tags: [Python, 3Dmodels]
+tags: [3Dmodels]
 comments: true
 share: true
 ---

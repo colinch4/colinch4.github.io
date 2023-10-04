@@ -3,7 +3,7 @@ layout: post
 title: "Performing database migrations with Falcon"
 description: " "
 date: 2023-10-02
-tags: [python, database]
+tags: [database]
 comments: true
 share: true
 ---

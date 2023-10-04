@@ -3,7 +3,7 @@ layout: post
 title: "Test-driven development in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

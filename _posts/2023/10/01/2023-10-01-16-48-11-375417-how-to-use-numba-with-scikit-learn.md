@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with scikit-learn?"
 description: " "
 date: 2023-10-01
-tags: [machinelearning, python]
+tags: [machinelearning]
 comments: true
 share: true
 ---

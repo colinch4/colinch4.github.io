@@ -3,7 +3,7 @@ layout: post
 title: "Web development with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [webdevelopment, Python]
+tags: [webdevelopment]
 comments: true
 share: true
 ---

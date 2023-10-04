@@ -3,7 +3,7 @@ layout: post
 title: "Implementing real-time multiplayer functionality in Python 3D games"
 description: " "
 date: 2023-10-03
-tags: [python, multiplayergames]
+tags: [multiplayergames]
 comments: true
 share: true
 ---

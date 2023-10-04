@@ -3,7 +3,7 @@ layout: post
 title: "Handling multiple exceptions in Python functions"
 description: " "
 date: 2023-09-29
-tags: [python, exceptionhandling]
+tags: [exceptionhandling]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with Jupyter notebooks?"
 description: " "
 date: 2023-10-01
-tags: [python, jupyter]
+tags: [jupyter]
 comments: true
 share: true
 ---

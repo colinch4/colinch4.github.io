@@ -3,7 +3,7 @@ layout: post
 title: "Working with big data using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [bigdata, python]
+tags: [bigdata]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a virtual reality game using Python 3D graphics"
 description: " "
 date: 2023-10-03
-tags: [python, virtualreality]
+tags: [virtualreality]
 comments: true
 share: true
 ---

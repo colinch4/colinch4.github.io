@@ -3,7 +3,7 @@ layout: post
 title: "Function overloading in Python"
 description: " "
 date: 2023-09-29
-tags: [python, functionoverloading]
+tags: [functionoverloading]
 comments: true
 share: true
 ---

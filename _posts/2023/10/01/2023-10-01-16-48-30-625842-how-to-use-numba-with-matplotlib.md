@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba with matplotlib?"
 description: " "
 date: 2023-10-01
-tags: [python, matplotlib]
+tags: [matplotlib]
 comments: true
 share: true
 ---

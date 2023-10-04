@@ -3,7 +3,7 @@ layout: post
 title: "How to install Numba in Python?"
 description: " "
 date: 2023-10-01
-tags: [python, numba]
+tags: [numba]
 comments: true
 share: true
 ---

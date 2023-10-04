@@ -3,7 +3,7 @@ layout: post
 title: "Creating desktop applications using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, desktopapplications]
+tags: [desktopapplications]
 comments: true
 share: true
 ---

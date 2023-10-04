@@ -3,7 +3,7 @@ layout: post
 title: "Implementing request/response compression in Falcon using Brotli"
 description: " "
 date: 2023-10-02
-tags: [tech, python]
+tags: [tech]
 comments: true
 share: true
 ---

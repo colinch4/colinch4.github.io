@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba to parallelize Python code?"
 description: " "
 date: 2023-10-01
-tags: [Python, Numba]
+tags: [Numba]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Handling events in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

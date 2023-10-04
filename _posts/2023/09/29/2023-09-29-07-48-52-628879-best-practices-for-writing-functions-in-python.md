@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for writing functions in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FunctionBestPractices]
+tags: [FunctionBestPractices]
 comments: true
 share: true
 ---

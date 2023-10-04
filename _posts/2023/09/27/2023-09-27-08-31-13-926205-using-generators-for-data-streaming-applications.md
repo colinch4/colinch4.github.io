@@ -3,7 +3,7 @@ layout: post
 title: "Using generators for data streaming applications"
 description: " "
 date: 2023-09-27
-tags: [Tech, Python]
+tags: [Tech]
 comments: true
 share: true
 ---

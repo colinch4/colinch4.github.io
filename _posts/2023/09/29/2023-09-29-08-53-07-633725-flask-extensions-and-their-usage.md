@@ -3,7 +3,7 @@ layout: post
 title: "Flask extensions and their usage"
 description: " "
 date: 2023-09-29
-tags: [flask, python]
+tags: [flask]
 comments: true
 share: true
 ---

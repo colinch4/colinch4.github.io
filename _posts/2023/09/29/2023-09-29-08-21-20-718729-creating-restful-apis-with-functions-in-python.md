@@ -3,7 +3,7 @@ layout: post
 title: "Creating RESTful APIs with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python, APIs]
+tags: [APIs]
 comments: true
 share: true
 ---

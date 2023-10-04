@@ -3,7 +3,7 @@ layout: post
 title: "Using generators for asynchronous programming in Python"
 description: " "
 date: 2023-09-27
-tags: [Python, AsynchronousProgramming]
+tags: [AsynchronousProgramming]
 comments: true
 share: true
 ---

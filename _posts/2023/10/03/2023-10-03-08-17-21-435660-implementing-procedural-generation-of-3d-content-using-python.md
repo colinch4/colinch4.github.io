@@ -3,7 +3,7 @@ layout: post
 title: "Implementing procedural generation of 3D content using Python"
 description: " "
 date: 2023-10-03
-tags: [python, proceduralgeneration]
+tags: [proceduralgeneration]
 comments: true
 share: true
 ---

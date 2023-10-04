@@ -3,7 +3,7 @@ layout: post
 title: "Extracting URLs from JSON using regular expressions"
 description: " "
 date: 2023-09-28
-tags: [python, json]
+tags: [json]
 comments: true
 share: true
 ---

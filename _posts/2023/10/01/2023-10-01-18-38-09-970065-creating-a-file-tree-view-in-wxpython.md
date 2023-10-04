@@ -3,7 +3,7 @@ layout: post
 title: "Creating a file tree view in WXPython"
 description: " "
 date: 2023-10-01
-tags: [Python, Programming]
+tags: [Programming]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Building a 3D physics engine from scratch in Python"
 description: " "
 date: 2023-10-03
-tags: [python, physicsengine]
+tags: [physicsengine]
 comments: true
 share: true
 ---

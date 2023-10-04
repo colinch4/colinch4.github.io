@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python PEP 8"
 description: " "
 date: 2023-09-27
-tags: [Python, CodingStyle]
+tags: [CodingStyle]
 comments: true
 share: true
 ---

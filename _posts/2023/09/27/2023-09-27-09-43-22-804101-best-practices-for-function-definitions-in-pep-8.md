@@ -3,7 +3,7 @@ layout: post
 title: "Best practices for function definitions in PEP 8"
 description: " "
 date: 2023-09-27
-tags: [PEP8, Python]
+tags: [PEP8]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Function arguments in Python"
 description: " "
 date: 2023-09-29
-tags: [Python, FunctionArguments]
+tags: [FunctionArguments]
 comments: true
 share: true
 ---

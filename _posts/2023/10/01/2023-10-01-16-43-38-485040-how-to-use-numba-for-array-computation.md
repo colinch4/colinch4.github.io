@@ -3,7 +3,7 @@ layout: post
 title: "How to use Numba for array computation?"
 description: " "
 date: 2023-10-01
-tags: [programming, python]
+tags: [programming]
 comments: true
 share: true
 ---

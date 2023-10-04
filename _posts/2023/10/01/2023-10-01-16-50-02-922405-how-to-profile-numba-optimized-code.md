@@ -3,7 +3,7 @@ layout: post
 title: "How to profile Numba-optimized code?"
 description: " "
 date: 2023-10-01
-tags: [python, performanceanalysis]
+tags: [performanceanalysis]
 comments: true
 share: true
 ---

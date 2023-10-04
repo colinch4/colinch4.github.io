@@ -3,7 +3,7 @@ layout: post
 title: "Performance considerations for Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, Performance]
+tags: [Performance]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Web scraping using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [python]
+tags: []
 comments: true
 share: true
 ---

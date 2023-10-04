@@ -3,7 +3,7 @@ layout: post
 title: "Filtering data using generator functions and the filter() function"
 description: " "
 date: 2023-09-27
-tags: [Python, FilterFunction]
+tags: [FilterFunction]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Understanding the coordinate system in 3D graphics with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, 3DGraphics]
+tags: [3DGraphics]
 comments: true
 share: true
 ---

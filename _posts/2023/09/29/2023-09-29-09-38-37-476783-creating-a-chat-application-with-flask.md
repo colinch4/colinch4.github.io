@@ -3,7 +3,7 @@ layout: post
 title: "Creating a chat application with Flask"
 description: " "
 date: 2023-09-29
-tags: [Python, Flask]
+tags: [Flask]
 comments: true
 share: true
 ---

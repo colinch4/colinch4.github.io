@@ -3,7 +3,7 @@ layout: post
 title: "Creating a CMS with Flask"
 description: " "
 date: 2023-09-29
-tags: [flask, python]
+tags: [flask]
 comments: true
 share: true
 ---

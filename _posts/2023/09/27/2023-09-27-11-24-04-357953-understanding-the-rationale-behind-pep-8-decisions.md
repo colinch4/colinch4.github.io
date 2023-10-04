@@ -3,7 +3,7 @@ layout: post
 title: "Understanding the rationale behind PEP 8 decisions"
 description: " "
 date: 2023-09-27
-tags: [Python, CodeStyle]
+tags: [CodeStyle]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "PEP 8 and the Python community's standards and best practices"
 description: " "
 date: 2023-09-27
-tags: [Python, PEP8]
+tags: [PEP8]
 comments: true
 share: true
 ---

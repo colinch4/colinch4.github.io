@@ -3,7 +3,7 @@ layout: post
 title: "Building recommendation systems with functions in Python"
 description: " "
 date: 2023-09-29
-tags: [recommendations, Python]
+tags: [recommendations]
 comments: true
 share: true
 ---

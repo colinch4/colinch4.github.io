@@ -3,7 +3,7 @@ layout: post
 title: "Creating 3D interactive presentations and showcases with Python"
 description: " "
 date: 2023-10-03
-tags: [Python, 3DVisualization]
+tags: [3DVisualization]
 comments: true
 share: true
 ---

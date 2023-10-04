@@ -3,7 +3,7 @@ layout: post
 title: "Defining route parameters in Falcon"
 description: " "
 date: 2023-10-02
-tags: [Python, Falcon]
+tags: [Falcon]
 comments: true
 share: true
 ---

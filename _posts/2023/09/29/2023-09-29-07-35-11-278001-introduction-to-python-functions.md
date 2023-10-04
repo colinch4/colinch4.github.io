@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, Functions]
+tags: [Functions]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Working with data analysis libraries using functions in Python"
 description: " "
 date: 2023-09-29
-tags: [dataanalysis, python]
+tags: [dataanalysis]
 comments: true
 share: true
 ---

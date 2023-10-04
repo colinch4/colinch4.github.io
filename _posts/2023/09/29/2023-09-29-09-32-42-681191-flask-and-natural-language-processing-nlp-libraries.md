@@ -3,7 +3,7 @@ layout: post
 title: "Flask and natural language processing (NLP) libraries"
 description: " "
 date: 2023-09-29
-tags: [Python, Flask]
+tags: [Flask]
 comments: true
 share: true
 ---

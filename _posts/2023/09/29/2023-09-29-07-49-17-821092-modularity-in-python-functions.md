@@ -3,7 +3,7 @@ layout: post
 title: "Modularity in Python functions"
 description: " "
 date: 2023-09-29
-tags: [Python, Modularity]
+tags: [Modularity]
 comments: true
 share: true
 ---

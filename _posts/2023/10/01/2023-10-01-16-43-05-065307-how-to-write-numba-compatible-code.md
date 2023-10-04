@@ -3,7 +3,7 @@ layout: post
 title: "How to write Numba-compatible code?"
 description: " "
 date: 2023-10-01
-tags: [python, performance]
+tags: [performance]
 comments: true
 share: true
 ---

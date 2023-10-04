@@ -3,7 +3,7 @@ layout: post
 title: "Working with drag and drop in WXPython"
 description: " "
 date: 2023-10-01
-tags: [python, wxpython]
+tags: [wxpython]
 comments: true
 share: true
 ---
