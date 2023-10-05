@@ -3,7 +3,7 @@ layout: post
 title: "Hexagonal Architecture pattern in Python"
 description: " "
 date: 2023-10-04
-tags: [introduction), hexagonal]
+tags: [hexagonal]
 comments: true
 share: true
 ---

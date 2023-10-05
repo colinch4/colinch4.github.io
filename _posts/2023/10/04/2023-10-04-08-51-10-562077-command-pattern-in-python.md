@@ -3,7 +3,7 @@ layout: post
 title: "Command pattern in Python"
 description: " "
 date: 2023-10-04
-tags: [overview), example)]
+tags: [example)]
 comments: true
 share: true
 ---

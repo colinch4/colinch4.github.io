@@ -3,7 +3,7 @@ layout: post
 title: "MVC (Model-View-Controller) pattern in Python"
 description: " "
 date: 2023-10-04
-tags: [introduction), what]
+tags: [what]
 comments: true
 share: true
 ---

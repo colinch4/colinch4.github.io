@@ -3,7 +3,7 @@ layout: post
 title: "Transaction Script pattern in Python"
 description: " "
 date: 2023-10-04
-tags: [introduction), understanding]
+tags: [understanding]
 comments: true
 share: true
 ---

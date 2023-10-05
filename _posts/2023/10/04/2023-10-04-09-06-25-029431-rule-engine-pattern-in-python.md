@@ -3,7 +3,7 @@ layout: post
 title: "Rule Engine pattern in Python"
 description: " "
 date: 2023-10-04
-tags: [introduction), defining]
+tags: [defining]
 comments: true
 share: true
 ---
