@@ -61,9 +61,11 @@ Now that we have created a custom templatetag for date manipulation, let's see h
 Let's say we have a `Post` model with a `created_at` field representing the date the post was created. In our template, we can add days to the `created_at` date using the `add_days` filter:
 
 ```django
+{% raw %}
 {% load custom_date_tags %}
 
 Created at: {{ post.created_at|add_days:7 }}
+{% endraw %}
 ```
 
 In the code above, we first load our custom templatetag library using the `load` tag. Then we use the `add_days` filter to add 7 days to the `created_at` date and display the updated date.
@@ -89,7 +91,9 @@ In the code above, we define a `custom_date_format` filter that takes a date val
 To use the custom date formatting templatetag, load it in your template and apply it to a date value:
 
 ```django
+{% raw %}
 {% load custom_date_tags %}
+{% endraw %}
 
 Formatted date: {{ post.created_at|custom_date_format:"%B %d, %Y" }}
 ```

@@ -17,13 +17,15 @@ Static files are typically cached by web browsers to improve performance. When a
 By using versioning for static files, you can force the browsers to fetch the updated versions when changes are made. This ensures that users always see the most recent version of your static files, even if they have previously visited your website.
 
 ## Static File Versioning in Django
-
+{% raw %}
 Django provides a built-in mechanism to handle static file versioning using the `{% static %}` template tag. The `{% static %}` template tag is used to generate the URLs for your static files, and it appends a unique version identifier to the URL based on the file's modification timestamp.
 
 Here's an example of how you can use the `{% static %}` template tag to include a static file in your template:
-
+{% endraw %}
 ```django
+{% raw %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endraw %}
 ```
 
 When the `collectstatic` management command is run, Django will analyze all the static files in your project and generate a unique version identifier for each file. This identifier is then appended to the static file URLs in your templates.
@@ -43,11 +45,13 @@ To enable file hashing, you need to include the `ManifestStaticFilesStorage` sto
 ### 2. URL Query Parameters
 
 Another cache busting technique is to append a query parameter to the static file URL, containing a unique identifier. This identifier can be a version number or a timestamp. By changing the query parameter, you force the browser to consider the URL as a separate resource and fetch the updated version.
-
+{% raw %}
 To use URL query parameters, you can modify your `{% static %}` template tag as follows:
-
+{% endraw %}
 ```django
+{% raw %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=1">
+{% endraw %}
 ```
 
 By changing the value of the `v` parameter, you can invalidate the browser cache and fetch the latest version of the static file.

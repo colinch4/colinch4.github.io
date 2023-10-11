@@ -79,6 +79,7 @@ Django provides a convenient way to change the language preference for each user
 1. In your template, add the following code:
 
 ```html
+{% raw %}
 {% load i18n %}
 
 <form action="{% url 'set_language' %}" method="POST">
@@ -93,6 +94,7 @@ Django provides a convenient way to change the language preference for each user
         {% endfor %}
     </select>
 </form>
+{% endraw %}
 ```
 
 2. In your project's `urls.py` file, add the following code:
@@ -115,9 +117,11 @@ Apart from translating text, Django also provides localization tools for formatt
 For example, to format a datetime object in a specific locale, use the `localize` template filter:
 
 ```html
+{% raw %}
 {% load i18n tz %}
 
 {{ my_datetime|localize }}
+{% endraw %}
 ```
 
 ## Conclusion

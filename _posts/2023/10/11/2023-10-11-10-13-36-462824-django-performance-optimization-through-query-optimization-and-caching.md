@@ -114,10 +114,12 @@ Django provides template fragment caching, which allows us to cache parts of a t
 Example usage:
 
 ```html
+{% raw %}
 {% load cache %}
 {% cache 600 my_template_fragment %}
     <!-- Expensive to render content goes here -->
 {% endcache %}
+{% endraw %}
 ```
 
 ## Conclusion

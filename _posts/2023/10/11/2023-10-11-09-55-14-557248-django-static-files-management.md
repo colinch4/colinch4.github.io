@@ -40,13 +40,15 @@ The `STATIC_URL` specifies the base URL for serving static files.
 Make sure to create a `static` directory within each app where you want to store static files. Django automatically detects these directories.
 
 ## Using Static Files in Templates
-
+{% raw %}
 To include static files in your templates, first load the `static` template tag by adding `{% load static %}` to the top of your template file.
-
+{% endraw %}
 You can then use the `static` template tag to reference your static files. For example, to include a CSS file:
 
 ```html
+{% raw %}
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{% endraw %}
 ```
 
 The `static` template tag maps the provided path to the actual URL where the static file is served.

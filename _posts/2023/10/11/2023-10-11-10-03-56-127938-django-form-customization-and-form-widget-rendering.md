@@ -74,12 +74,14 @@ In the above example, a custom widget `TextInput` is used for the `email` field.
 Django provides a rich set of form field widgets for rendering form fields automatically. However, there may be cases where you want more control over the rendering process. In such cases, you can render the form fields manually using the `as_widget` method.
 
 ```html
+{% raw %}
 <form method="post" action="{% url 'my_form_view' %}">
     {% csrf_token %}
     {{ form.my_field.errors }}
     <label for="{{ form.my_field.id_for_label }}">Field Label</label>
     {{ form.my_field.as_widget }}
 </form>
+{% endraw %}
 ```
 
 In the example above, the `as_widget` method is used to manually render the `my_field` form field. The id and label attributes are obtained using the `id_for_label` attribute.
@@ -89,12 +91,14 @@ In the example above, the `as_widget` method is used to manually render the `my_
 Django provides a powerful template system that can be used to render form fields. By using template tags and filters specifically designed for form rendering, you can easily customize the appearance of form fields.
 
 ```html
+{% raw %}
 <form method="post" action="{% url 'my_form_view' %}">
     {% csrf_token %}
     {{ form.my_field.label_tag }}
     {{ form.my_field }}
     {{ form.my_field.errors }}
 </form>
+{% endraw %}
 ```
 
 In this example, the `label_tag` template tag is used to render the label for the `my_field` form field. The form field itself is rendered using `my_field` directly.

@@ -13,7 +13,7 @@ In Django, template tags are used to perform various operations and manipulate d
 ## Built-in Template Tags
 
 Django provides a set of built-in template tags that cover common requirements in web development. These tags can be used directly in your templates without any additional configuration or setup. Some of the commonly used built-in template tags include:
-
+{% raw %}
 ### {% if %} and {% else %}
 
 The `{% if %}` tag is used to conditionally render content based on a certain condition. It takes an expression and displays the content within the block if the expression evaluates to true. The `{% else %}` tag is optional and can be used to handle the case when the condition is not met.
@@ -52,7 +52,7 @@ Example Usage:
 </body>
 {% include 'footer.html' %}
 ```
-
+{% endraw %}
 These are just a few examples of the built-in template tags provided by Django. You can refer to the Django documentation for a complete list of available tags and their usage.
 
 ## Custom Template Tags
@@ -75,13 +75,15 @@ def capitalize_first(value):
 To use this custom template tag in your template, you need to load the tag library and call the tag using the `|` operator:
 
 ```django
+{% raw %}
 {% load my_tags %}
 
 {{ name|capitalize_first }}
+{% endraw %}
 ```
-
+{% raw %}
 In the above example, `{% load my_tags %}` loads the custom tag library, and `{{ name|capitalize_first }}` applies the custom tag to the `name` variable.
-
+{% endraw %}
 Custom template tags in Django provide a powerful way to encapsulate complex logic and reuse it across templates. They enable you to extend the capabilities of the template language and make your templates more expressive and efficient.
 
 ## Conclusion

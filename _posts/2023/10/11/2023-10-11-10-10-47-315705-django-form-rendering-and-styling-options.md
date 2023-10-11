@@ -61,12 +61,14 @@ To use Bootstrap forms with `django-bootstrap-form`, follow these steps:
 3. In your HTML template, load the BootstrapForm template tag library and apply the Bootstrap styles to your form:
 
    ```django
+   {% raw %}
    {% load bootstrap_form %}
 
    <form class="bootstrap-form">
        {% bootstrap_form form %}
        <input type="submit" value="Submit">
    </form>
+   {% endraw %}
    ```
 
 ## Form Styling with CSS

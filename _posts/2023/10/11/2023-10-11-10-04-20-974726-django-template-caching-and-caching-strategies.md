@@ -43,14 +43,16 @@ By default, Django uses the `LocMemCache` backend, which stores the cache in mem
 ## 🎯 Template Fragment Caching {#template-fragment-caching}
 
 Django allows you to cache specific parts of a template rather than caching the entire template. This is useful when you have sections of your template that are computationally expensive but don't need to be regenerated in every request.
-
+{% raw %}
 To cache a fragment in a template, you can use the `{% cache %}` template tag:
-
+{% endraw %}
 ```django
+{% raw %}
 {% load cache %}
 {% cache 600 "my_cache_key" %}
     <!-- Computationally expensive HTML code -->
 {% endcache %}
+{% endraw %}
 ```
 
 The first argument to the `cache` tag specifies the cache timeout period in seconds, while the second argument is the cache key. The contents between the `cache` and `endcache` tags will be cached and served from the cache until it expires.

@@ -69,19 +69,22 @@ def to_upper(value):
 In the above code, we define a `to_upper` function that takes a `value` argument and returns the uppercase version of the value. We use the `register.filter` decorator to register this function as a template filter.
 
 ## Using Custom Tags and Filters in Templates
-
+{% raw %}
 Once you have created your custom template tags and filters, you can use them in your templates by loading the module that contains them using the `{% load %}` tag.
+{% endraw %}
 
 ```django
+{% raw %}
 {% load mytags %}
 {% load myfilters %}
 
 {{ number|to_upper }}
 {{ square 5 }}
+{% endraw %}
 ```
-
+{% raw %}
 In the above code, we load the `mytags` and `myfilters` modules using the `{% load %}` tag. We then use the `to_upper` filter to convert the value of `number` to uppercase and the `square` tag to calculate the square of 5.
-
+{% endraw %}
 ## Conclusion
 
 Django's custom template tags and filters provide a powerful way to extend the functionality of the built-in template language. With these features, you can create reusable template logic and manipulate data within your templates. By following the examples and guidelines outlined in this blog post, you can start using custom template tags and filters to enhance your Django applications.

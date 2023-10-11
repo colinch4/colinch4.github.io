@@ -30,15 +30,17 @@ In the above example, we created a form called `MyForm` with a single field call
 Once we have created a form, we can display it in a template. To display a form, we need to instantiate it in the view and pass it to the template context. In the template, we can then render the form fields and include any necessary HTML markup.
 
 ```html
+{% raw %}
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
+{% endraw %}
 ```
-
+{% raw %}
 In the above example, we used the `{{form.as_p}}` template tag to render the form fields as `<p>` tags. The `{% csrf_token %}` template tag is used to add a CSRF token, which is required for security reasons.
-
+{% endraw %}
 ## 3. Handling Form Submissions
 
 When a form is submitted, we need to handle the form data and perform any necessary processing or validation. In Django, we can do this in a view function.

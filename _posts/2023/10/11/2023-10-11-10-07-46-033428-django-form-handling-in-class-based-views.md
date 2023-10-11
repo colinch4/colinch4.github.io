@@ -55,11 +55,13 @@ class ContactView(FormView):
 To display the form in a template, create a `contact.html` file (or any name of your choice) and use the `{{ form }}` variable to render the form fields. Here's an example of how to display the form:
 
 ```html
+{% raw %}
 <form method="post" action="{% url 'contact' %}">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
+{% endraw %}
 ```
 
 ## Handling Form Submission

@@ -68,6 +68,7 @@ def upload_file(request):
 Create an HTML template that renders the file upload form. Make sure to set the `enctype` attribute of the form tag to "multipart/form-data" to enable file uploads.
 
 ```html
+{% raw %}
 <!-- upload.html -->
 
 <form method="post" enctype="multipart/form-data">
@@ -75,6 +76,7 @@ Create an HTML template that renders the file upload form. Make sure to set the 
   {{ form }}
   <button type="submit">Upload</button>
 </form>
+{% endraw %}
 ```
 
 ## Handling media files in Django

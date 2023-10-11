@@ -15,6 +15,7 @@ In Django, template inheritance is a powerful feature that allows you to create 
 The base template serves as the foundation for your web pages. It typically includes the basic HTML structure, common CSS and JavaScript files, and any other elements that should be present on every page. To define a base template, create a new HTML file and add the following code:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,6 +36,7 @@ The base template serves as the foundation for your web pages. It typically incl
     </footer>
 </body>
 </html>
+{% endraw %}
 ```
 
 In this example, we have defined a base template that includes a title block, a header section, a main content block, and a footer section.
@@ -44,6 +46,7 @@ In this example, we have defined a base template that includes a title block, a 
 To create a child template that extends the base template, create a new HTML file and add the following code:
 
 ```html
+{% raw %}
 {% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
@@ -52,10 +55,11 @@ To create a child template that extends the base template, create a new HTML fil
     <h1>Welcome to my website!</h1>
     <p>This is the home page content.</p>
 {% endblock %}
+{% endraw %}
 ```
-
+{% raw %}
 In this child template, we use the `{% extends 'base.html' %}` tag to indicate that we want to inherit from the base template. We can then define content within specific blocks to replace or add to the content defined in the base template. In this example, we override the title block with "Home" and add some content to the content block.
-
+{% endraw %}
 By using inheritance, you can easily create additional child templates that extend the base template and create a consistent layout across multiple pages. This allows you to make changes in one place and have them reflected across all of your web pages.
 
 ### Conclusion

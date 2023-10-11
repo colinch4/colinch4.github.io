@@ -52,7 +52,9 @@ In the above example, the `reverse()` function is used to reverse the URL named 
 
 Similarly, you can use URL reversing in your templates:
 ```html
+{% raw %}
 <a href="{% url 'home-page' %}">Home</a>
+{% endraw %}
 ```
 
 Here, the `url` template tag is used to reverse the URL named `'home-page'` and generate the corresponding URL.

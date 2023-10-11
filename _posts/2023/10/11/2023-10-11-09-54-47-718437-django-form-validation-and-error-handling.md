@@ -61,6 +61,7 @@ When a form fails validation, Django provides several ways to render the errors 
 To achieve this, you can iterate over the form fields and display the errors if they exist:
 
 ```python
+{% raw %}
 {% if form.errors %}
 <ul class="errorlist">
     {% for field_errors in form.errors.values %}
@@ -70,6 +71,7 @@ To achieve this, you can iterate over the form fields and display the errors if 
     {% endfor %}
 </ul>
 {% endif %}
+{% endraw %}
 ```
 
 You can include this snippet in your HTML template to display the validation errors. The `form.errors` attribute contains a dictionary of all the errors for each field.

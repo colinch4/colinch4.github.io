@@ -19,8 +19,9 @@ In Django, template tags and filters are powerful tools that allow you to manipu
   - [Custom Template Filters](#custom-template-filters)
 
 ## Template Tags
+{% raw %}
 Template tags in Django are enclosed within {% %} tags and are used to perform complex logic and control flow within templates.
-
+{% endraw %}
 ### Built-in Template Tags
 Django provides several built-in template tags that you can use out of the box. Some commonly used tags include:
 

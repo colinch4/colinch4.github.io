@@ -86,6 +86,7 @@ To display a form in a Django template, we need to render the form fields. Djang
 For example, we can render the form fields manually:
 
 ```html
+{% raw %}
 <form method="POST">
     {% csrf_token %}
     {{ form.name.label }} {{ form.name }}
@@ -93,16 +94,19 @@ For example, we can render the form fields manually:
     {{ form.age.label }} {{ form.age }}
     <button type="submit">Submit</button>
 </form>
+{% endraw %}
 ```
 
 Alternatively, we can use the form rendering shortcut:
 
 ```html
+{% raw %}
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
+{% endraw %}
 ```
 
 The `form.as_p` template tag outputs the form fields wrapped in `<p>` tags.

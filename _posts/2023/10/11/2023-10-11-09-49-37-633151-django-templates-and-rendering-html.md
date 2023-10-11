@@ -27,6 +27,7 @@ To create a Django template, we need to define a file with a `.html` extension. 
 Here's a simple example of a Django template:
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,6 +43,7 @@ Here's a simple example of a Django template:
     
 </body>
 </html>
+{% endraw %}
 ```
 
 In this example, we have a template that displays a list of blog posts. We use template variables (`{{ page_title }}` and `{{ post.title }}`) to dynamically populate the title and content of each post.
@@ -72,11 +74,11 @@ Variables can be accessed and displayed in the HTML template using the `{{ varia
 
 ## Template Tags and Filters <a name="template-tags-and-filters"></a>
 Django templates also provide **template tags** and **filters** that allow for more advanced logic and manipulation of data within the templates.
-
+{% raw %}
 Template tags, denoted by `{% tag %}`, enable control flow, loops, and other logic inside templates. For example, the `{% for %}...{% endfor %}` tags in our previous example iterate over a list of blog posts.
 
 Filters, denoted by `{{ variable|filter }}`, modify the output of template variables. They can transform data or apply formatting. For instance, `{% datetime|date:"d/m/Y" %}` would format a `datetime` object in the desired date format.
-
+{% endraw %}
 ## Conclusion <a name="conclusion"></a>
 Django templates provide a convenient way to generate dynamic HTML content in web applications. With its simple and powerful syntax, Django templates enable developers to separate the presentation from the application logic, making code maintenance and reuse easier. By leveraging template variables, tags, and filters, developers can create dynamic and interactive web pages efficiently.
 
