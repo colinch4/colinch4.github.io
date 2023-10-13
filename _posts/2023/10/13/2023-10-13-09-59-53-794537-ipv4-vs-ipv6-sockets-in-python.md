@@ -58,8 +58,10 @@ When working with IPv4 and IPv6 sockets in Python, it's important to consider a 
 
 In conclusion, Python provides the necessary tools to create both IPv4 and IPv6 sockets for communication. Understanding the differences between these versions and how to work with them will enable you to build more robust networking applications. 
 
+{% raw %}
 {% note %}
 Make sure to check your network environment and choose the appropriate socket type (IPv4 or IPv6) depending on your requirements.
 {% endnote %}
+{% endraw %}
 
 **#Python #Networking**
