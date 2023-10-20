@@ -25,6 +25,7 @@ One popular approach to code generation in Python is using templates. Templates 
 Here's a simple example of using `jinja2` for code generation:
 
 ```python
+{% raw %}
 from jinja2 import Template
 
 # Define the template
@@ -34,6 +35,7 @@ template = Template('Hello, {{ name }}!')
 code = template.render(name='John')
 
 print(code)
+{% endraw %}
 ```
 
 Output:

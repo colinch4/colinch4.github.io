@@ -25,6 +25,7 @@ One way to achieve this is by using code generation libraries or templates, such
 For example, in Python, we can define a template for benchmarking a function `my_function` as follows:
 
 ```python
+{% raw %}
 from jinja2 import Template
 
 benchmark_template = Template('''
@@ -37,10 +38,11 @@ end_time = time.time()
 execution_time = end_time - start_time
 print("Execution time: {{ execution_time }} seconds")
 ''')
+{% endraw %}
 ```
-
+{% raw %}
 The `{{ function_call }}` and `{{ execution_time }}` are placeholders that will be replaced with the actual function call and execution time, respectively. We can then use this template to generate the benchmarking code as follows:
-
+{% endraw %}
 ```python
 function_code = '''
 def my_function():

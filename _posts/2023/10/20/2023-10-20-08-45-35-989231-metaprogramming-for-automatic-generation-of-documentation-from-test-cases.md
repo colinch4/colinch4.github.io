@@ -31,6 +31,7 @@ Once we have extracted the metadata, the next step is to transform it into human
 We can create a template with placeholders for the extracted metadata and use string interpolation or substitution to replace the placeholders with actual values. For example, in Markdown, we can have a template for a test case like this:
 
 ```markdown
+{% raw %}
 ## Test Case: `{{test_case_name}}`
 
 **Description:** {{test_case_description}}
@@ -40,6 +41,7 @@ We can create a template with placeholders for the extracted metadata and use st
 
 **Expected Output:**
 {{test_case_expected_output}}
+{% endraw %}
 ```
 
 We can then use the extracted metadata to replace the placeholders and generate the final documentation.
