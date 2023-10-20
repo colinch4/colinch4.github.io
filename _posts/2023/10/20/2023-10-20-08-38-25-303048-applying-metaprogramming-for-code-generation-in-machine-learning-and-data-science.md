@@ -40,6 +40,7 @@ To illustrate the concept, let's consider an example of generating feature extra
 We can use metaprogramming to generate code that performs these feature extractions based on the user's configuration. Here's a simplified example in Python using the Jinja2 template engine:
 
 ```python
+{% raw %}
 from jinja2 import Template
 
 # User-defined configuration
@@ -68,6 +69,7 @@ generated_code = template.render(features_list=feature_list)
 # Save the generated code to a file or execute it directly
 with open("feature_extraction.py", "w") as file:
     file.write(generated_code)
+{% endraw %}
 ```
 
 In this example, the user can specify the desired features in the `feature_list`. The metaprogramming technique using the Jinja2 template engine generates the appropriate feature extraction code based on the user's selection.
