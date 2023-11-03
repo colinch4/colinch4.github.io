@@ -15,7 +15,7 @@ share: true
 Two-way Data Binding은 일부 프레임 워크에서 기본적으로 제공되는 기능이며, 사용자 인터페이스와 데이터 간의 양방향 동기화를 담당합니다. 사용자가 입력 폼에 값을 입력하면 자동으로 데이터 모델이 업데이트되며, 데이터 모델이 변경되면 사용자 인터페이스도 자동으로 업데이트됩니다.
 
 ```javascript
-{% endraw %}
+{% raw %}
 // 예시: Vue.js에서의 Two-way Data Binding
 <template>
   <div>
@@ -33,6 +33,7 @@ export default {
   },
 };
 </script>
+{% endraw %}
 ```
 
 ### Flux 아키텍처

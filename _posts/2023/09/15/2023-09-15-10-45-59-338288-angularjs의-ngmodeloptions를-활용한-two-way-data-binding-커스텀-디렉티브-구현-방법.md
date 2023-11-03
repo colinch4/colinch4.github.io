@@ -20,10 +20,12 @@ ngModelOptions는 ngModel 디렉티브의 세부 설정을 제어하는 데 사�
 커스텀 디렉티브를 사용하여 ngModelOptions를 활용한 양방향 데이터 바인딩을 구현해보겠습니다. 예시로 사용자가 입력한 값을 반전시켜서 표시하는 커스텀 디렉티브를 만들어보겠습니다.
 
 ```html
+{% raw %}
 <div ng-app="myApp" ng-controller="myController">
   <input type="text" ng-model="inputValue" my-directive ng-model-options="{ updateOn: 'blur' }">
   <p>The reversed value is: {{ reversedValue }}</p>
 </div>
+{% endraw %}
 ```
 
 위 예제에서는 ng-model-options를 통해 데이터 갱신을 blur 이벤트에서만 수행하도록 설정했습니다. 그리고 `my-directive`라는 커스텀 디렉티브를 적용했습니다.
