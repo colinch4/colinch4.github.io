@@ -15,12 +15,14 @@ share: true
 예를 들어, 다음은 Two-way Data Binding과 One-time Data Binding의 성능 차이를 보여주는 AngularJS 코드입니다.
 
 ```javascript
+{% raw %}
 // Two-way Data Binding
 <input ng-model="name" type="text">
 <p>Hello, {{name}}!</p>
 
 // One-time Data Binding
 <p>Hello, {{::name}}!</p>
+{% endraw %}
 ```
 
 위의 코드에서 `ng-model`은 Two-way Data Binding을 사용하고, `::`는 One-time Data Binding을 사용함을 나타냅니다. Two-way Data Binding은 입력 필드의 값을 실시간으로 반영하고 업데이트하지만, One-time Data Binding은 초깃값에 데이터를 바인딩한 후 변경사항을 감지하지 않습니다.

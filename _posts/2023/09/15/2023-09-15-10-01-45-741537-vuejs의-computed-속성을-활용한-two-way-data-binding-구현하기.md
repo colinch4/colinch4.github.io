@@ -22,7 +22,8 @@ Vue.js에서 computed 속성은 데이터를 계산해주는 속성으로, 간�
 
 다음은 Vue.js에서 computed 속성을 이용하여 Two-way Data Binding을 구현하는 예제이다:
 
-```vue
+```javascript
+{% raw %}
 <template>
   <div>
     <input v-model="inputText" placeholder="입력하세요">
@@ -49,6 +50,7 @@ export default {
   },
 };
 </script>
+{% endraw %}
 ```
 
 위 예제에서는 `inputText`라는 데이터를 computed 속성인 `reversedText`에서 사용한다. `input` 요소에 `v-model` 디렉티브를 사용하여 `inputText`와 양방향 바인딩을 설정하고, `reversedText`를 출력한다.

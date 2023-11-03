@@ -14,14 +14,17 @@ Two-way Data Binding을 구현하기 위해 다음 단계를 따라 간단한 �
 
 ## 1. HTML 템플릿 작성
 ```html
+{% raw %}
 <div ng-app="myApp" ng-controller="myController">
   <label for="name">이름:</label>
   <input type="text" id="name" ng-model="name">
   <p>안녕하세요, {{name}}님!</p>
 </div>
+{% endraw %}
 ```
+{% raw %}
 위의 코드는 AngularJS 앱의 루트 엘리먼트를 정의하고, 컨트롤러와 템플릿을 연결하는 역할을 합니다. `ng-app` 디렉티브는 앱의 이름을 정의하고, `ng-controller` 디렉티브는 컨트롤러를 설정합니다. `<input>` 요소는 `ng-model` 디렉티브를 사용하여 `name` 변수와 양방향 바인딩되도록 설정하는 역할을 합니다. `<p>` 요소는 `{{name}}`을 출력하여 변경된 데이터를 반영하는 역할을 합니다.
-
+{% endraw %}
 ## 2. AngularJS 모듈 및 컨트롤러 정의
 ```javascript
 var app = angular.module('myApp', []);

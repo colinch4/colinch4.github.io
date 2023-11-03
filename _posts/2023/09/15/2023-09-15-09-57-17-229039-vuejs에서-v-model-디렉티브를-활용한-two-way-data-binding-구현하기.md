@@ -18,7 +18,8 @@ Vue.js는 자바스크립트 프레임워크로서 UI를 구축하기 위한 강
 
 Vue.js에서 `v-model` 디렉티브를 사용하여 Two-way Data Binding을 구현하는 방법은 간단합니다. 아래 코드를 참고해보세요.
 
-```vue
+```javascript
+{% raw %}
 <template>
   <div>
     <input v-model="message" type="text" placeholder="메시지를 입력하세요">
@@ -35,6 +36,7 @@ export default {
   }
 }
 </script>
+{% endraw %}
 ```
 
 위의 코드는 `v-model` 디렉티브를 사용하여 입력 필드와 상태 데이터를 바인딩하는 예시입니다. 사용자가 입력한 값을 `message`라는 상태 데이터에 자동으로 반영하고, 상태 데이터의 변경이 입력 필드에 자동으로 반영됩니다.

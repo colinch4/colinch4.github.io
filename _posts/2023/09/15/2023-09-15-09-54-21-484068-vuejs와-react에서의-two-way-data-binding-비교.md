@@ -15,6 +15,7 @@ Two-way data binding은 사용자 입력 및 모델 데이터 간에 양방향�
 Vue.js에서는 `v-model` 디렉티브를 사용하여 Two-way data binding을 구현합니다. `v-model`을 사용하면 입력 요소값과 Vue 인스턴스의 데이터 속성이 서로 바인딩되어 실시간으로 동기화됩니다. 예를 들어, 아래의 코드는 Vue.js에서의 Two-way data binding을 보여줍니다.
 
 ```html
+{% raw %}
 <template>
   <div>
     <input v-model="message" type="text">
@@ -31,10 +32,11 @@ export default {
   }
 };
 </script>
+{% endraw %}
 ```
-
+{% raw %}
 위의 코드에서 `v-model="message"`는 입력 요소의 값과 `message` 데이터 속성을 양방향으로 바인딩합니다. 사용자가 입력한 값은 `message`에 실시간으로 업데이트되고, `{{ message }}`는 `message`의 현재 값을 보여줍니다.
-
+{% endraw %}
 ## React에서의 Two-way Data Binding
 
 React에서는 Two-way data binding을 직접적으로 지원하지 않습니다. 대신, 컴포넌트 상태의 업데이트와 이벤트 핸들러를 사용하여 데이터를 동기화해야 합니다. 아래의 코드는 React에서의 Two-way data binding을 보여줍니다.

@@ -17,8 +17,10 @@ Two-way data binding은 프론트엔드 개발에서 매우 중요한 개념 중
 다음은 AngularJS에서 ng-model을 사용하는 예제 코드입니다:
 
 ```html
+{% raw %}
 <input type="text" ng-model="name">
 <p>Hello, {{name}}!</p>
+{% endraw %}
 ```
 
 위 코드에서 name이라는 변수를 ng-model에 바인딩하였습니다. input 요소에서 이름을 입력하면 해당 이름이 화면에 출력됩니다.
@@ -30,8 +32,10 @@ Two-way data binding은 프론트엔드 개발에서 매우 중요한 개념 중
 다음은 Vue.js에서 v-model을 사용하는 예제 코드입니다:
 
 ```html
+{% raw %}
 <input type="text" v-model="name">
 <p>Hello, {{name}}!</p>
+{% endraw %}
 ```
 
 AngularJS와 마찬가지로, 위의 코드에서 name 변수를 v-model에 바인딩하였습니다. input 요소에서 이름을 입력하면 해당 이름이 화면에 출력됩니다.

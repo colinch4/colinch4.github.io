@@ -19,6 +19,7 @@ Two-way Data Binding은 데이터의 변경이 반영되는 동시에 사용자 
 ng-model 디렉티브는 주로 폼 요소(input, select, textarea 등)와 함께 사용됩니다. 아래는 ng-model 디렉티브를 사용한 예시 코드입니다.
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html ng-app="myApp">
   <head>
@@ -38,10 +39,11 @@ ng-model 디렉티브는 주로 폼 요소(input, select, textarea 등)와 함�
     </script>
   </body>
 </html>
+{% endraw %}
 ```
-
+{% raw %}
 위 코드에서 input 요소에 ng-model 디렉티브를 사용하고, p 요소에서는 {{ message }}를 사용하여 데이터 바인딩을 수행합니다.
-
+{% endraw %}
 ## 결과 확인하기
 
 위 코드를 실행하면 사용자가 input 요소에 텍스트를 입력할 때마다 그 내용이 바로 아래의 p 태그에 표시됩니다. 이는 ng-model 디렉티브를 통해 입력한 값을 데이터에 반영하고, 데이터의 변경이 사용자 인터페이스에도 반영되기 때문입니다.

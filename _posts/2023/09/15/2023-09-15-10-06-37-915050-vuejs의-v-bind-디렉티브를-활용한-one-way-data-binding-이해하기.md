@@ -29,6 +29,7 @@ v-bind 디렉티브를 사용하여 Vue.js에서 One-way Data Binding을 구현�
 다음은 Vue.js의 v-bind 디렉티브를 사용한 One-way Data Binding의 예제 코드입니다.
 
 ```html
+{% raw %}
 <div id="app">
   <h1>{{ message }}</h1>
   <input v-bind:value="inputValue" type="text">
@@ -43,10 +44,11 @@ v-bind 디렉티브를 사용하여 Vue.js에서 One-way Data Binding을 구현�
     }
   });
 </script>
+{% endraw %}
 ```
-
+{% raw %}
 위의 코드에서 `{{ message }}`는 Vue.js 인스턴스의 `message` 데이터를 출력하는 부분입니다. `<input>` 요소에 `v-bind:value`를 사용하여 `inputValue` 데이터와 바인딩하는 부분도 있습니다.
-
+{% endraw %}
 ## 결론
 
 Vue.js의 v-bind 디렉티브를 사용하면 HTML 속성과 데이터를 간단하게 바인딩할 수 있습니다. One-way Data Binding을 통해 데이터의 일방향 전달을 구현할 수 있으며, 데이터를 업데이트할 때 UI를 직접 업데이트해야 한다는 점을 주의해야 합니다. Vue.js의 강력한 기능을 통해 웹 애플리케이션을 동적이고 유연하게 구축할 수 있습니다.

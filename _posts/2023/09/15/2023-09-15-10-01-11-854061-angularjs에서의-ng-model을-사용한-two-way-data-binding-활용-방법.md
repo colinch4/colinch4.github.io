@@ -19,6 +19,7 @@ ng-model은 AngularJS에서 데이터 바인딩을 위해 사용하는 속성입
 다음은 ng-model을 사용하여 Two-way Data Binding을 구현하는 예제입니다. 
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html ng-app="myApp">
 
@@ -45,12 +46,13 @@ ng-model은 AngularJS에서 데이터 바인딩을 위해 사용하는 속성입
 </body>
 
 </html>
+{% endraw %}
 ```
 
 위의 코드에서 \<input> 요소에 ng-model 속성을 사용하여 변수 message와 바인딩했습니다. 이는 사용자가 입력한 값이 message 변수에 자동으로 반영되고, 변수의 값이 변경되면 화면에 자동으로 업데이트됩니다. 
-
+{% raw %}
 \<p> 요소에서는 중괄호({{ }}) 안에 변수를 넣어 값을 표시하는 AngularJS 표현식을 사용했습니다. 이를 통해 변수의 값이 실시간으로 화면에 표시됩니다.
-
+{% endraw %}
 ## 결론
 
 AngularJS의 ng-model을 사용한 Two-way Data Binding은 데이터와 화면의 동기화를 쉽게 구현할 수 있는 강력한 기능입니다. 이를 활용하여 사용자 입력에 따라 동적으로 데이터를 업데이트하고, 화면에 반영하는 웹 애플리케이션을 개발할 수 있습니다.
