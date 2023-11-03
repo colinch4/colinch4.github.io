@@ -78,12 +78,14 @@ new Vue({
 위의 예시에서 `messages` 변수에는 앞서 준비한 다국어 리소스 파일이 포함되어 있습니다. Vue 컴포넌트에서 다국어 텍스트를 사용하려면 `$t` 핼퍼 함수를 사용하면 됩니다.
 
 ```vue
+{% raw %}
 <template>
   <div>
     <h1>{{ $t('welcome_message') }}</h1>
     <button>{{ $t('button_label') }}</button>
   </div>
 </template>
+{% endraw %}
 ```
 
 위와 같이 작성하면, 브라우저에서 해당하는 로케일에 따라 다국어 텍스트가 동적으로 표시됩니다.
