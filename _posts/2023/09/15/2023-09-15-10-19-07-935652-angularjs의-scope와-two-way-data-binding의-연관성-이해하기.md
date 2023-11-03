@@ -31,10 +31,12 @@ AngularJS의 가장 강력한 기능 중 하나인 **Two-way Data Binding**은 $
 다음은 Two-way Data Binding의 예시입니다.
 
 ```html
+{% raw %}
 <div ng-controller="MyController">
   <input type="text" ng-model="message">
   <p>{{ message }}</p>
 </div>
+{% endraw %}
 ```
 
 위 코드에서 `<input>` 요소의 `ng-model` 디렉티브는 $scope 객체의 `message` 변수와 바인딩됩니다. 즉, `<input>` 요소의 값이 변경되면 뷰에 있는 `<p>` 요소에 자동으로 반영됩니다.

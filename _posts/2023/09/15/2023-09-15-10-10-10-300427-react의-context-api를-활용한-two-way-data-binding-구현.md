@@ -20,7 +20,7 @@ React의 Context API는 컴포넌트 트리 전체에서 전역적으로 상태�
 
 ```jsx
 // AppContext.js
-
+{% raw %}
 import React, { createContext, useState } from 'react';
 
 export const AppContext = createContext();
@@ -38,6 +38,7 @@ export const AppProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
+{% endraw %}
 ```
 
 위 코드에서는 `AppContext.js` 파일에서 Context를 생성하고, `AppProvider`를 사용하여 컴포넌트 트리를 감싸는 역할을 합니다. 상태 `text`와 이를 변경하는 `handleChange` 함수를 Context에서 관리합니다.

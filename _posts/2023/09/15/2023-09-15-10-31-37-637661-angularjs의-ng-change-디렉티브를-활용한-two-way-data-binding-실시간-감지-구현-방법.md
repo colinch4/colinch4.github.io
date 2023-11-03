@@ -19,6 +19,7 @@ ng-change 디렉티브는 AngularJS에서 제공하는 디렉티브 중 하나�
 다음은 AngularJS의 ng-change 디렉티브를 사용하여 Two-way Data Binding을 실시간으로 감지하는 간단한 예제입니다.
 
 ```javascript
+{% raw %}
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
@@ -47,6 +48,7 @@ ng-change 디렉티브는 AngularJS에서 제공하는 디렉티브 중 하나�
 
 </body>
 </html>
+{% endraw %}
 ```
 
 이 예제에서는 ng-change 디렉티브를 사용하여 name 변수의 변경 사항을 감지하고 nameChanged 함수를 실행하도록 정의합니다. nameChanged 함수는 변경된 이름을 콘솔에 출력하여 이름이 변경될 때마다 실행되는지 확인할 수 있습니다.

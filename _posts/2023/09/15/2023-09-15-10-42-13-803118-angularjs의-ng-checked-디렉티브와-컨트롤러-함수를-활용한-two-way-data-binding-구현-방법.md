@@ -17,12 +17,14 @@ AngularJS에서 Two-way Data Binding을 구현하기 위해 ng-model 디렉티�
 ## HTML
 
 ```html
+{% raw %}
 <div ng-app="myApp" ng-controller="myController">
     <label>
         <input type="checkbox" ng-checked="isChecked()" ng-click="toggleCheck()"> 체크박스
     </label>
     <p>체크 상태: {{checkboxChecked}}</p>
 </div>
+{% endraw %}
 ```
 
 ## JavaScript (AngularJS)

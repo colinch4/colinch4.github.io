@@ -22,6 +22,7 @@ React의 Context API는 상위 컴포넌트에서 하위 컴포넌트로 데이�
 예제 코드는 다음과 같습니다.
 
 ```javascript
+{% raw %}
 import React, { createContext, useState } from 'react';
 
 // Step 1: Context 생성
@@ -58,6 +59,7 @@ const ChildComponent = () => {
     </DataContext.Consumer>
   );
 };
+{% endraw %}
 ```
 
 ## 2. Redux를 활용한 Two-way Data Binding 실시간 감지 구현

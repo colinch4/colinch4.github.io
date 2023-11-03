@@ -60,10 +60,12 @@ angular.module('myApp', [])
 이제 위에서 생성한 커스텀 디렉티브를 사용해보겠습니다. 다음은 컨트롤러와 뷰의 예입니다.
 
 ```html
+{% raw %}
 <body ng-app="myApp" ng-controller="myController">
   <my-input ng-model="myData"></my-input>
   <p>입력된 값: {{ myData }}</p>
 </body>
+{% endraw %}
 ```
 
 ```javascript
@@ -73,9 +75,9 @@ angular.module('myApp', [])
     $scope.myData = 'Hello, AngularJS!';
   });
 ```
-
+{% raw %}
 위 예제에서는 `<my-input>` 요소를 통해 커스텀 디렉티브를 사용하고 있습니다. `ng-model` 속성을 통해 Two-way Data Binding을 설정할 수 있으며, 입력된 값은 `myData`라는 변수에 자동으로 반영됩니다. `{{ myData }}`를 통해 현재 값을 표시할 수 있습니다.
-
+{% endraw %}
 ## 결론
 AngularJS의 ngModelController를 이용한 Two-way Data Binding 커스텀 디렉티브 구현 방법에 대해 알아보았습니다. 이를 통해 AngularJS 애플리케이션에서 간편하게 데이터 바인딩을 구현할 수 있으며, 사용자 입력에 따라 모델의 값을 유동적으로 업데이트할 수 있습니다.
 

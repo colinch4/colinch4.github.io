@@ -63,20 +63,22 @@ app.controller("myCtrl", function($scope) {
 이제 도시 선택 기능을 구현할 차례입니다. 아래와 같이 `<select>`와 `<option>` 태그를 사용하여 도시 목록을 표시하고 선택된 도시를 바인딩합니다.
 
 ```html
+{% raw %}
 <div ng-app="myApp" ng-controller="myCtrl">
   <select ng-model="selectedCity">
     <option ng-repeat="city in cities" value="{{city.id}}">{{city.name}}</option>
   </select>
   <p>선택된 도시: {{selectedCity}}</p>
 </div>
+{% endraw %}
 ```
 
 위 코드에서 `ng-model` 디렉티브를 사용하면 선택된 도시를 `$scope.selectedCity` 변수에 양방향으로 바인딩할 수 있습니다. `ng-repeat` 디렉티브는 `cities` 배열을 순회하면서 도시 목록을 생성합니다.
 
 ## 단계 4: 실행해보기
-
+{% raw %}
 이제 HTML 파일을 브라우저에서 실행하면 도시 목록이 표시되고 선택된 도시를 확인할 수 있습니다. 선택된 도시가 변경되면 자동으로 `{{selectedCity}}` 부분이 업데이트됩니다.
-
+{% endraw %}
 위의 예시 코드를 웹 서버에 업로드하거나, 로컬에서 서버를 실행하여 도시 선택 기능을 확인해보세요.
 
 ## 결론

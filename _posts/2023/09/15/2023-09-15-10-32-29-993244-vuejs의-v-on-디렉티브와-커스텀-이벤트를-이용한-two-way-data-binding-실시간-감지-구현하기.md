@@ -56,6 +56,7 @@ export default {
 이제 이벤트를 수신할 부모 컴포넌트에서는 해당 커스텀 이벤트를 처리하는 메소드를 정의하여 데이터를 업데이트할 수 있습니다.
 
 ```html
+{% raw %}
 <template>
   <div>
     <custom-input v-on:message-sent="handleMessage"></custom-input>
@@ -82,6 +83,7 @@ export default {
   }
 };
 </script>
+{% endraw %}
 ```
 
 위의 코드에서는 `custom-input` 컴포넌트를 사용하여 `message-sent` 이벤트를 수신하고, `handleMessage` 메소드를 호출하여 자식 컴포넌트로부터 전달된 데이터를 업데이트합니다. 이후 `message` 데이터를 출력하여 컴포넌트 내에서 실시간으로 데이터가 갱신되는 것을 확인할 수 있습니다.

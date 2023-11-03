@@ -21,6 +21,7 @@ input 태그는 웹 애플리케이션에서 사용자의 입력을 받을 수 �
 아래는 예시 코드입니다.
 
 ```javascript
+{% raw %}
 <template>
   <div>
     <input v-model="message" type="text">
@@ -37,10 +38,11 @@ export default {
   }
 };
 </script>
+{% endraw %}
 ```
-
+{% raw %}
 위의 코드에서 `v-model="message"`는 input 태그의 값과 Vue의 데이터 속성인 `message`를 양방향으로 연결합니다. 사용자가 input 태그에 입력한 값은 `message` 변수에 저장되며, 그 값을 다시 `{{ message }}`를 통해 출력할 수 있습니다.
-
+{% endraw %}
 이제 사용자가 input 태그에 어떤 값을 입력하면, 그 값이 실시간으로 화면에 출력되는 것을 확인할 수 있습니다.
 
 ## 3. v-model 디렉티브와 다른 요소
@@ -48,6 +50,7 @@ export default {
 v-model 디렉티브는 input 태그뿐만 아니라 다른 요소들과도 함께 사용할 수 있습니다. 예를 들어, checkbox, radio, select 등도 v-model을 이용하여 데이터 바인딩을 할 수 있습니다.
 
 ```javascript
+{% raw %}
 <template>
   <div>
     <input v-model="checked" type="checkbox">
@@ -76,6 +79,7 @@ export default {
   }
 };
 </script>
+{% endraw %}
 ```
 
 위의 코드에서는 v-model 디렉티브를 이용하여 checkbox, radio, select 요소들의 상태를 Vue의 데이터 속성과 양방향으로 연결하고 있습니다. 사용자의 입력에 따라 데이터가 업데이트되어 실시간으로 화면에 반영됩니다.

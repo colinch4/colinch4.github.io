@@ -11,6 +11,7 @@ share: true
 Vue.js는 양방향 데이터 바인딩을 지원하여 데이터의 변화를 실시간으로 감지하고 반영할 수 있습니다. 이를 통해 애플리케이션의 사용자 인터페이스를 업데이트하거나 필요한 로직을 실행할 수 있습니다.
 
 ```javascript
+{% raw %}
 <template>
   <div>
     <input v-model="message" type="text" placeholder="메시지를 입력하세요" />
@@ -38,6 +39,7 @@ export default {
   }
 };
 </script>
+{% endraw %}
 ```
 
 위의 코드 예제에서는 `v-model` 디렉티브를 사용하여 `<input>` 요소와 `message` 데이터 속성을 양방향으로 바인딩합니다. 사용자가 입력하는 메시지는 자동으로 `message` 속성에 반영되고, `message` 속성의 변경은 `watch` 속성에서 감지됩니다.

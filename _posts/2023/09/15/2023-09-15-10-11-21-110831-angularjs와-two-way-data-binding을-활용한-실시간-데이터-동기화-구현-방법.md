@@ -48,10 +48,12 @@ Two-way Data Binding은 데이터의 변경 사항이 화면에 자동으로 반
 5. 애플리케이션에 Controller를 적용합니다. ng-controller 디렉티브를 이용하여 Controller를 연결합니다.
 
 ```html
+{% raw %}
 <div ng-app="myApp" ng-controller="myCtrl">
   <input type="text" ng-model="myData" />
   <p>{{myData}}</p>
 </div>
+{% endraw %}
 ```
 
 6. ng-model 디렉티브를 이용하여 입력창과 데이터를 바인딩했기 때문에 입력창에 데이터를 입력하면 자동으로 데이터가 변경되고, 변경된 데이터가 반영된 화면이 나타납니다.

@@ -43,12 +43,14 @@ $scope.removeFormField = function(index) {
 마지막으로, HTML 템플릿에서 모델의 필드들을 반복해서 출력하는 작업을 수행해야 합니다. 이 과정에서 AngularJS의 `ng-repeat` 지시자를 사용할 수 있습니다.
 
 ```html
+{% raw %}
 <div ng-repeat="field in formFields">
   <input type="text" ng-model="field.value" placeholder="Enter {{ field.name }}" />
   <button ng-click="removeFormField($index)">Remove</button>
 </div>
 
 <button ng-click="addFormField()">Add Field</button>
+{% endraw %}
 ```
 
 위의 코드에서 `ng-repeat` 지시자는 `formFields` 배열의 각 요소에 대해 반복하며, 각 필드에 대한 폼 입력 필드와 제거 버튼을 출력합니다. 추가 버튼을 클릭하면 새로운 폼 필드가 추가되며, 제거 버튼을 클릭하면 해당 필드가 제거됩니다.

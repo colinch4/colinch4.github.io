@@ -15,6 +15,7 @@ Vue.js는 데이터 바인딩을 처리하는 강력한 기능을 제공합니�
 computed 속성은 자동으로 캐싱되는 특징을 갖고 있으며, 응답형(getter) 속성으로 선언됩니다. computed 속성을 사용하여 계산된 값을 바인딩해주면, 데이터의 변경이 감지될 때마다 해당 속성이 업데이트됩니다.
 
 ```vue
+{% raw %}
 <template>
   <div>
     <input v-model="inputValue">
@@ -36,6 +37,7 @@ export default {
   }
 }
 </script>
+{% endraw %}
 ```
 
 위의 코드는 사용자의 입력값을 받는 input 요소와 입력값을 대문자로 변환하여 보여주는 p 요소를 가진 Vue 컴포넌트입니다. `v-model` 디렉티브를 통해 input 요소와 `inputValue` 데이터를 양방향으로 바인딩하고, computed 속성 `computedValue`를 활용하여 변환된 값이 실시간으로 업데이트되도록 구현하였습니다.
@@ -45,6 +47,7 @@ export default {
 watch 속성은 데이터 변화를 감지하기 위해 설정된 감시자(Watcher) 함수를 실행합니다. watch 속성은 데이터의 변경 여부를 감시하고, 변경되었을 때 특정 동작을 수행하기 위해 사용됩니다.
 
 ```vue
+{% raw %}
 <template>
   <div>
     <input v-model="inputValue">
@@ -67,6 +70,7 @@ export default {
   }
 }
 </script>
+{% endraw %}
 ```
 
 위의 코드는 computed 속성을 사용한 예제와 동일한 기능을 watch 속성을 사용하여 구현한 Vue 컴포넌트입니다. `inputValue` 데이터를 감시하고 변경될 때마다 `watchedValue`를 업데이트하여 변환된 값을 보여주도록 구현하였습니다.
