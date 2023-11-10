@@ -3,7 +3,7 @@ layout: post
 title: "React Concurrent Mode의 자바스크립트 UI 컴포지션 패턴"
 description: " "
 date: 2023-11-09
-tags: []
+tags: [ConcurrentMode]
 comments: true
 share: true
 ---

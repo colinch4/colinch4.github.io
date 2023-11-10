@@ -3,7 +3,7 @@ layout: post
 title: "Hot Observables와 Cold Observables의 차이점"
 description: " "
 date: 2023-11-08
-tags: []
+tags: [자바스크립트]
 comments: true
 share: true
 ---

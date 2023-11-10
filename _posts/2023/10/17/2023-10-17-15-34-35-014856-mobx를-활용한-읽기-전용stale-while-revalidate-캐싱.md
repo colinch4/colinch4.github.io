@@ -3,7 +3,7 @@ layout: post
 title: "MobX를 활용한 읽기 전용(stale-while-revalidate) 캐싱"
 description: " "
 date: 2023-10-17
-tags: []
+tags: [MobX]
 comments: true
 share: true
 ---

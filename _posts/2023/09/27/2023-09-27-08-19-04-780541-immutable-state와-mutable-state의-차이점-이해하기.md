@@ -3,7 +3,7 @@ layout: post
 title: "Immutable state와 mutable state의 차이점 이해하기"
 description: " "
 date: 2023-09-27
-tags: []
+tags: [Immutable]
 comments: true
 share: true
 ---

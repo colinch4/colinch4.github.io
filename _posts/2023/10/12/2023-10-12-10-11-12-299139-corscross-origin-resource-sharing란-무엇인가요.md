@@ -3,7 +3,7 @@ layout: post
 title: "CORS(Cross-Origin Resource Sharing)란 무엇인가요?"
 description: " "
 date: 2023-10-12
-tags: []
+tags: [CORS]
 comments: true
 share: true
 ---

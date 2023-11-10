@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에 저장된 환경 설정 정보를 활용한 JavaScript 개발 프로세스 자동화"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

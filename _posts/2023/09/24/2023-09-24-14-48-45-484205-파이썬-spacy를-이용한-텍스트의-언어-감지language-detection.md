@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 텍스트의 언어 감지(Language Detection)"
 description: " "
 date: 2023-09-24
-tags: []
+tags: [SpaCy]
 comments: true
 share: true
 ---

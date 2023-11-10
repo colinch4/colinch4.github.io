@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 OCR(Optical Character Recognition)을 활용하여 문자 인식 서비스 구현하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI)]
+tags: [FastAPI]
 comments: true
 share: true
 ---

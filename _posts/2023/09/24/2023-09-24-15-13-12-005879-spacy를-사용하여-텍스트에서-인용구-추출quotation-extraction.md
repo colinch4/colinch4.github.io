@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에서 인용구 추출(Quotation Extraction)"
 description: " "
 date: 2023-09-24
-tags: []
+tags: [SpaCy]
 comments: true
 share: true
 ---

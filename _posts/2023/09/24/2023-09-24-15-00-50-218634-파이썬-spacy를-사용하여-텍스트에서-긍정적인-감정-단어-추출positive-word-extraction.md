@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용하여 텍스트에서 긍정적인 감정 단어 추출(Positive Word Extraction)"
 description: " "
 date: 2023-09-24
-tags: []
+tags: [SpaCy]
 comments: true
 share: true
 ---

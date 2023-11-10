@@ -3,7 +3,7 @@ layout: post
 title: "JSX pragma를 활용한 서버 사이드 렌더링(Server-Side Rendering, SSR) 개발 방법"
 description: " "
 date: 2023-10-05
-tags: []
+tags: [JSXpragma ]
 comments: true
 share: true
 ---

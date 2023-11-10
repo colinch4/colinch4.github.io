@@ -3,7 +3,7 @@ layout: post
 title: "MobX를 활용한 SSR(Server-Side Rendering) 구현 방법"
 description: " "
 date: 2023-10-17
-tags: []
+tags: [MobX]
 comments: true
 share: true
 ---

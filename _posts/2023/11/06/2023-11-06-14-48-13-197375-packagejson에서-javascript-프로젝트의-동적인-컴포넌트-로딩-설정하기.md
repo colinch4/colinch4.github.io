@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 동적인 컴포넌트 로딩 설정하기"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

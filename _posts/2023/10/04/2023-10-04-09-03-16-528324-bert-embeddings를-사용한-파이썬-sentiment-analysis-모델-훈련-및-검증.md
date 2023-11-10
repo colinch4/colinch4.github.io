@@ -3,7 +3,7 @@ layout: post
 title: "BERT Embeddings를 사용한 파이썬 Sentiment analysis 모델 훈련 및 검증"
 description: " "
 date: 2023-10-04
-tags: []
+tags: [파이썬]
 comments: true
 share: true
 ---

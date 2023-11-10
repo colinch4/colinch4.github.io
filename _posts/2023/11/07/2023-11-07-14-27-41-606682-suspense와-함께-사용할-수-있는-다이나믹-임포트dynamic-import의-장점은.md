@@ -3,7 +3,7 @@ layout: post
 title: "Suspense와 함께 사용할 수 있는 다이나믹 임포트(Dynamic import)의 장점은?"
 description: " "
 date: 2023-11-07
-tags: []
+tags: [Suspense]
 comments: true
 share: true
 ---

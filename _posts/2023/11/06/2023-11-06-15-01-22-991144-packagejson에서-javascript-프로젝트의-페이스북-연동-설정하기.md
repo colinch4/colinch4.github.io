@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 페이스북 연동 설정하기"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

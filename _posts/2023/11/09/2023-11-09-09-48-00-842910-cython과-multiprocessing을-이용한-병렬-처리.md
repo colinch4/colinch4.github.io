@@ -3,7 +3,7 @@ layout: post
 title: "Cython과 multiprocessing을 이용한 병렬 처리"
 description: " "
 date: 2023-11-09
-tags: []
+tags: [Cython]
 comments: true
 share: true
 ---

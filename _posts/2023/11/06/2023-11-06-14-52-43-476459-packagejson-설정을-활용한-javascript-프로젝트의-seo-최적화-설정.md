@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 활용한 JavaScript 프로젝트의 SEO 최적화 설정"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

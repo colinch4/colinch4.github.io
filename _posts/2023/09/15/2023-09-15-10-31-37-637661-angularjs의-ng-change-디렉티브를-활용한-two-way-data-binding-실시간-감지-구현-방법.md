@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-change 디렉티브를 활용한 Two-way Data Binding 실시간 감지 구현 방법"
 description: " "
 date: 2023-09-15
-tags: []
+tags: [Vue]
 comments: true
 share: true
 ---

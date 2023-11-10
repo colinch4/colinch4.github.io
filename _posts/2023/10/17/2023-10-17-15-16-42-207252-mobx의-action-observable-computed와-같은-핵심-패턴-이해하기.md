@@ -3,7 +3,7 @@ layout: post
 title: "MobX의 action, observable, computed와 같은 핵심 패턴 이해하기"
 description: " "
 date: 2023-10-17
-tags: []
+tags: [MobX]
 comments: true
 share: true
 ---

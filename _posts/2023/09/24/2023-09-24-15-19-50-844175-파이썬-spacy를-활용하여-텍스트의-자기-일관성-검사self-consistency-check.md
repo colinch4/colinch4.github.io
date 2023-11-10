@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용하여 텍스트의 자기 일관성 검사(Self-Consistency Check)"
 description: " "
 date: 2023-09-24
-tags: []
+tags: [SpaCy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "React Concurrent Mode의 DOM 조작 방식과 최적화 전략"
 description: " "
 date: 2023-11-09
-tags: []
+tags: [ConcurrentMode]
 comments: true
 share: true
 ---

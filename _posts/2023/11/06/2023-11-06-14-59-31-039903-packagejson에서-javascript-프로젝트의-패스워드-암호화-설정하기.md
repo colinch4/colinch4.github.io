@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 패스워드 암호화 설정하기"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

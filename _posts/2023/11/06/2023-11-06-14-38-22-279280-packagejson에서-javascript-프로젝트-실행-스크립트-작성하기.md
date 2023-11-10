@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트 실행 스크립트 작성하기"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Package]
 comments: true
 share: true
 ---

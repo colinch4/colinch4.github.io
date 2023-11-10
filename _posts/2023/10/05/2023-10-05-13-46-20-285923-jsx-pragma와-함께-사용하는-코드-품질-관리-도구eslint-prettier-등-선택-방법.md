@@ -3,7 +3,7 @@ layout: post
 title: "JSX pragma와 함께 사용하는 코드 품질 관리 도구(ESLint, Prettier 등) 선택 방법"
 description: " "
 date: 2023-10-05
-tags: []
+tags: [JSXpragma ]
 comments: true
 share: true
 ---

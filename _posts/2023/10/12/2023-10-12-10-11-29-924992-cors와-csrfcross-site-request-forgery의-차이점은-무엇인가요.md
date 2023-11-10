@@ -3,7 +3,7 @@ layout: post
 title: "CORS와 CSRF(Cross-Site Request Forgery)의 차이점은 무엇인가요?"
 description: " "
 date: 2023-10-12
-tags: []
+tags: [CORS]
 comments: true
 share: true
 ---

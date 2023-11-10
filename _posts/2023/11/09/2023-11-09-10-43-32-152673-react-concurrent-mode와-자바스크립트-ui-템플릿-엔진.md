@@ -3,7 +3,7 @@ layout: post
 title: "React Concurrent Mode와 자바스크립트 UI 템플릿 엔진"
 description: " "
 date: 2023-11-09
-tags: []
+tags: [ConcurrentMode]
 comments: true
 share: true
 ---

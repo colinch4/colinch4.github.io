@@ -3,7 +3,7 @@ layout: post
 title: "Azure Cognitive Services와 파이썬을 활용한 감정 분석"
 description: " "
 date: 2023-11-06
-tags: []
+tags: [Azure]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "requestAnimationFrame을 이용한 자바스크립트 슬라이드 쇼 만들기"
 description: " "
 date: 2023-10-18
-tags: []
+tags: [자바스크립트]
 comments: true
 share: true
 ---

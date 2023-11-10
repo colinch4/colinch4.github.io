@@ -3,7 +3,7 @@ layout: post
 title: "Cython과 GIL(Global Interpreter Lock) 문제"
 description: " "
 date: 2023-11-09
-tags: []
+tags: [Cython]
 comments: true
 share: true
 ---

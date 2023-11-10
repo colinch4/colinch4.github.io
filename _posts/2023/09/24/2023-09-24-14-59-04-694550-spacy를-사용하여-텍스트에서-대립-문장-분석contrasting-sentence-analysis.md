@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에서 대립 문장 분석(Contrasting Sentence Analysis)"
 description: " "
 date: 2023-09-24
-tags: []
+tags: [SpaCy]
 comments: true
 share: true
 ---

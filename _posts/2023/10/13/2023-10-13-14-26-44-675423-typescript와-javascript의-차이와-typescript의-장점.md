@@ -3,7 +3,7 @@ layout: post
 title: "TypeScript와 JavaScript의 차이와 TypeScript의 장점"
 description: " "
 date: 2023-10-13
-tags: []
+tags: [자바스크립트]
 comments: true
 share: true
 ---
