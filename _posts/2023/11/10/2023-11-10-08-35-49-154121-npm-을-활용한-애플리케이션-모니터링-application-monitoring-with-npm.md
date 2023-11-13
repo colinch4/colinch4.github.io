@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 애플리케이션 모니터링 (Application monitoring with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

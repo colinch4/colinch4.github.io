@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 빌드 시스템 구축 (Build system setup with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

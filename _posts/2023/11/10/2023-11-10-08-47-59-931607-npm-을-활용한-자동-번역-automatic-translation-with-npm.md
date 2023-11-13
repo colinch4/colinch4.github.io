@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 자동 번역 (Automatic translation with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

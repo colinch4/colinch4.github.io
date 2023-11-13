@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 웹 애플리케이션 개발 (Web application development with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Vercel을 이용한 자바스크립트 애플리케이션의 CDN(Content Delivery Network) 적용하기"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [Vercel]
 comments: true
 share: true
 ---

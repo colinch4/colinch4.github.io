@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 패키지 관리자 (JavaScript package manager)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [자바스크립트]
 comments: true
 share: true
 ---

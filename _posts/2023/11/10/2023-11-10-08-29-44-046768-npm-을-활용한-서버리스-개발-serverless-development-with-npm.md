@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 서버리스 개발 (Serverless development with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

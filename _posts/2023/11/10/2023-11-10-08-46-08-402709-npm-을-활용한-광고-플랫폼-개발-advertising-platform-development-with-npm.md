@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 광고 플랫폼 개발 (Advertising platform development with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

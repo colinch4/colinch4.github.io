@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 활용하여 코드 스플리팅(Code Splitting)을 구현하는 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: []
+tags: [React]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "npm 의 기능과 사용법 (npm features and usage)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

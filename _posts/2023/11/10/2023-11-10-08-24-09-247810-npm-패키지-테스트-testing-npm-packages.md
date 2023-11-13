@@ -3,7 +3,7 @@ layout: post
 title: "npm 패키지 테스트 (Testing npm packages)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

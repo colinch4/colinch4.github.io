@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 자바스크립트 프레임워크 사용 (Using JavaScript frameworks with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

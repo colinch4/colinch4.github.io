@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 프레젠테이션 컴포넌트(Presentation Component)와 컨테이너 컴포넌트(Container Component)를 구분하는 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: []
+tags: [React]
 comments: true
 share: true
 ---

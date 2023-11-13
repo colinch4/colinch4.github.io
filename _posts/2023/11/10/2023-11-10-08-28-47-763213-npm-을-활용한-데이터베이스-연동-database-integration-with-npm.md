@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 데이터베이스 연동 (Database integration with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

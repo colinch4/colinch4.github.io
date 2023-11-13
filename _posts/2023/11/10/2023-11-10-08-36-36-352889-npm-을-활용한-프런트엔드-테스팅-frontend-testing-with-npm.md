@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 프런트엔드 테스팅 (Frontend testing with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 이용한 자바스크립트 라이브러리 사용 (Using JavaScript libraries with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

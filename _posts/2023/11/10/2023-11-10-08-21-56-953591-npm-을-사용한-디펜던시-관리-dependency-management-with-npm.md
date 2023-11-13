@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 사용한 디펜던시 관리 (Dependency management with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

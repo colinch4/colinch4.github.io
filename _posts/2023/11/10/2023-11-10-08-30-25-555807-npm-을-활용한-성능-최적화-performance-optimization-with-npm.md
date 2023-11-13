@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 성능 최적화 (Performance optimization with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

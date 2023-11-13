@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 컴퓨터 비전 모델 배포 (Computer vision model deployment with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

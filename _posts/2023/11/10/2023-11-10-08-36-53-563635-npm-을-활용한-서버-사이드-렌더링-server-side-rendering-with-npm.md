@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 서버 사이드 렌더링 (Server-side rendering with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

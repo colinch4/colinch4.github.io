@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 사용자 피드백 수집 (Collecting user feedback with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

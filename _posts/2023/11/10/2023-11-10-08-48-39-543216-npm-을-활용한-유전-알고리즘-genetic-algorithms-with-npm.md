@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 유전 알고리즘 (Genetic algorithms with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

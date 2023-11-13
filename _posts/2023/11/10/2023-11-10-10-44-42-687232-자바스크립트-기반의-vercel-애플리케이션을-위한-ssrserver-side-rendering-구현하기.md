@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 기반의 Vercel 애플리케이션을 위한 SSR(Server Side Rendering) 구현하기"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [자바스크립트]
 comments: true
 share: true
 ---

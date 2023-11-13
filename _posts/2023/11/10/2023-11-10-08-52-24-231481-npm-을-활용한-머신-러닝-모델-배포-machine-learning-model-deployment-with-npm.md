@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 머신 러닝 모델 배포 (Machine learning model deployment with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 컴포넌트의 소셜 로그인(Social Login) 기능 구현 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: []
+tags: [React]
 comments: true
 share: true
 ---

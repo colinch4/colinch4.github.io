@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 프로젝트 관리 (Project management with npm)"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [npm]
 comments: true
 share: true
 ---
