@@ -3,7 +3,7 @@ layout: post
 title: "JSX pragma를 활용하여 타입 검사(Type Checking)를 강화하는 방법"
 description: " "
 date: 2023-10-05
-tags: [JSXpragma ]SXpragma ]
+tags: [JSXpragma]
 comments: true
 share: true
 ---

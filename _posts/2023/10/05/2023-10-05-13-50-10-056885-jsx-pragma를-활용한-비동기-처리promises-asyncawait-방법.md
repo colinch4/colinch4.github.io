@@ -3,7 +3,7 @@ layout: post
 title: "JSX pragma를 활용한 비동기 처리(Promises, async/await) 방법"
 description: " "
 date: 2023-10-05
-tags: [JSXpragma ]
+tags: [JSXpragma]
 comments: true
 share: true
 ---

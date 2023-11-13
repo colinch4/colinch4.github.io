@@ -3,7 +3,7 @@ layout: post
 title: "JSX pragma를 이용한 테스트 주도 개발(Test-Driven Development, TDD) 방법론 살펴보기"
 description: " "
 date: 2023-10-05
-tags: [JSXpragma ]
+tags: [JSXpragma]
 comments: true
 share: true
 ---
