@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 설정 관리 도구의 성능 비교: Ansible vs. SaltStack vs. Chef vs. Puppet"
 description: " "
 date: 2023-11-10
-tags: []
+tags: [파이썬]
 comments: true
 share: true
 ---
