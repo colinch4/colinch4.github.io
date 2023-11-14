@@ -1,0 +1,100 @@
+Swift FSCalendar 소개
+FSCalendar 라이브러리 다운로드
+FSCalendar 설치 방법
+FSCalendar 사용 가이드
+FSCalendar의 주요 기능
+FSCalendar의 날짜 선택 기능
+FSCalendar의 이벤트 표시 기능
+FSCalendar의 다국어 지원 기능
+FSCalendar의 색상과 스타일 설정
+FSCalendar에서 휴일 표시 기능
+FSCalendar에서 주말 표시 설정
+FSCalendar에서 선택 가능한 최소/최대 날짜 설정
+FSCalendar에서 날짜 선택시 애니메이션 효과 설정
+FSCalendar에서 특정 날짜에 이벤트 추가하기
+FSCalendar에서 특정 날짜의 이벤트 표시 스타일 설정
+FSCalendar에서 이벤트 클릭 시 액션 설정
+FSCalendar에서 이벤트 삭제 기능
+FSCalendar에서 이벤트 수정 기능
+FSCalendar에서 주간/월간/연간 보기 전환 기능
+FSCalendar에서 현재 날짜 자동 스크롤 기능
+FSCalendar에서 특정 날짜로 자동 이동 기능
+FSCalendar에서 날짜 범위 선택 기능
+FSCalendar에서 특정 날짜의 텍스트 커스터마이징
+FSCalendar에서 특정 날짜의 투명도 설정
+FSCalendar에서 글자 크기 및 스타일 설정
+FSCalendar에서 특정 날짜의 색상 변경하기
+FSCalendar에서 특정 날짜의 이미지 추가하기
+FSCalendar에서 휴일에 특정 이미지 추가하기
+FSCalendar에서 특정 날짜의 이미지 다운로드 기능
+FSCalendar에서 특정 날짜의 이벤트 추가 및 편집하기
+FSCalendar에서 이벤트 표시 위치 설정
+FSCalendar에서 오늘 날짜 강조 표시
+FSCalendar에서 특정 날짜의 테두리 스타일 설정
+FSCalendar에서 특정 날짜의 배경색 변경
+FSCalendar에서 특정 날짜의 폰트 변경
+FSCalendar에서 특정 날짜에 대한 툴팁 표시
+FSCalendar에서 특정 날짜의 길게 클릭 이벤트 설정
+FSCalendar에서 날짜 범위 선택 후 이동 가능한 행동 설정
+FSCalendar에서 특정 날짜의 이벤트 개수 표시
+FSCalendar에서 특정 날짜의 이벤트 개수에 따른 아이콘 표시
+FSCalendar에서 특정 날짜의 이벤트 개수 색상 변경
+FSCalendar에서 날짜 선택에 따른 이벤트 리스트 표시
+FSCalendar에서 특정 날짜의 이벤트 리스트 스크롤 가능 설정
+FSCalendar에서 특정 날짜의 이벤트 리스트 스크롤 이동
+FSCalendar에서 특정 날짜의 이벤트 리스트 개수 표시
+FSCalendar에서 특정 날짜의 이벤트 리스트 아이콘 표시
+FSCalendar에서 특정 날짜의 이벤트 리스트 색상 변경
+FSCalendar에서 특정 날짜의 이벤트 추가 시 알림 기능
+FSCalendar에서 특정 날짜의 이벤트 알림 설정
+FSCalendar에서 이벤트 알림 시간 설정
+FSCalendar에서 이벤트 추가 시 알림 사운드 설정
+FSCalendar에서 이벤트 알림 팝업 설정
+FSCalendar에서 특정 날짜의 이벤트 알림 푸시 설정
+FSCalendar에서 다른 달의 날짜 클릭 시 액션 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 링크 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 웹사이트 링크 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 이메일 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 전화 걸기 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 메시지 보내기 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 지도 표시 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 위치 표시 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 실행 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 소셜 미디어 공유 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 파일 열기 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 푸시 알림 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 화면 전환 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 내비게이션 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 웹뷰 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 소리 재생 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 음악 재생 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 비디오 재생 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 화상 통화 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 동영상 촬영 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 사진 촬영 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 주소록 저장 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 인터넷 검색 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 리뷰 요청 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 평가 요청 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 앱 추천 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 QR 코드 생성 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 Wi-Fi 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 블루투스 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 소셜 미디어 SDK 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 GPS 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 NFC 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 데이터 저장 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 웹캠 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 토스트 메시지 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 애니메이션 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 네트워킹 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 도움말 페이지 열기 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 로그인 페이지 열기 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 알림 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 프린트 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 알람 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 백업 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 복사 설정
+FSCalendar에서 특정 날짜의 이벤트 액션 이동 설정
