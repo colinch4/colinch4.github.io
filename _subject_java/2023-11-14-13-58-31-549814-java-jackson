@@ -1,0 +1,15 @@
+Jackson 라이브러리란 무엇인가요?
+Jackson 라이브러리의 주요 기능은 무엇인가요?
+Jackson의 JSON 직렬화와 역직렬화에 대해 설명해주세요.
+Jackson에서 사용되는 주요 어노테이션은 어떤 것이 있나요?
+Jackson의 ObjectMapper 클래스에 대해 설명해주세요.
+Jackson의 JsonNode 클래스에 대해 설명해주세요.
+Jackson을 사용하여 POJO 객체를 JSON으로 변환하는 방법은 무엇인가요?
+Jackson을 사용하여 JSON을 POJO 객체로 변환하는 방법은 무엇인가요?
+Jackson을 사용하여 JSON 배열을 List 객체로 변환하는 방법은 무엇인가요?
+Jackson을 사용하여 JSON 파일을 읽고 쓰는 방법은 무엇인가요?
+Jackson의 어댑터와 필터에 대해 설명해주세요.
+Jackson에서 날짜와 시간의 직렬화 및 역직렬화를 어떻게 처리하나요?
+Jackson에서 커스텀 직렬화와 역직렬화를 구현하는 방법은 무엇인가요?
+Jackson의 다른 직렬화 및 역직렬화 방법을 소개해주세요.
+Jackson이 지원하는 데이터 형식은 무엇이 있나요?

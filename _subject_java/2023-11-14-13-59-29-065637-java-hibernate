@@ -1,0 +1,100 @@
+Java Hibernate란 무엇인가?
+Hibernate와 JPA(Java Persistence API)의 차이점은?
+Hibernate를 사용하기 위해 필요한 설정은?
+Hibernate에서 데이터베이스 연결 설정 방법은?
+Hibernate를 사용하여 데이터베이스 테이블 생성하는 방법은?
+Hibernate에서 엔티티 클래스(Entity class) 작성 방법은?
+Hibernate에서 엔티티 클래스와 데이터베이스 테이블의 매핑 방법은?
+Hibernate에서 연관 관계 매핑하는 방법은?
+Hibernate에서 데이터베이스 테이블과 관련된 CRUD(Create, Read, Update, Delete) 작업하는 방법은?
+Hibernate에서 HQL(Hibernate Query Language)을 사용하여 데이터 조회하는 방법은?
+Hibernate에서 Criteria Query를 사용하여 데이터 조회하는 방법은?
+Hibernate의 성능 최적화 방법은?
+Hibernate에서 캐시(Cache)를 사용하여 성능을 향상시키는 방법은?
+Hibernate에서 지연 로딩(Lazy loading)과 즉시 로딩(Eager loading)의 차이점은?
+Hibernate에서 양방향 연관 관계(Bidirectional relationship) 설정하는 방법은?
+Hibernate에서 일대다(One-to-Many) 연관 관계 설정하는 방법은?
+Hibernate에서 다대일(Many-to-One) 연관 관계 설정하는 방법은?
+Hibernate에서 일대일(One-to-One) 연관 관계 설정하는 방법은?
+Hibernate에서 다대다(Many-to-Many) 연관 관계 설정하는 방법은?
+Hibernate에서 연관 관계에서의 캐스케이드(Cascade) 설정하는 방법은?
+Hibernate에서 상속 관계 매핑하는 방법은?
+Hibernate에서 단일 테이블 전략(Single Table Strategy)과 클래스 테이블 전략(Class Table Strategy)의 차이점은?
+Hibernate에서 다중 테이블 전략(Joined Table Strategy)과 단일 테이블 전략(Single Table Strategy)의 차이점은?
+Hibernate에서 동적 쿼리(Dynamic query) 작성하는 방법은?
+Hibernate에서 네이티브 SQL을 사용하는 방법은?
+Hibernate의 초과로딩(N+1 Selects Problem) 이슈를 해결하는 방법은?
+Hibernate에서 대량 데이터 처리하는 방법은?
+Hibernate와 Spring Framework의 연동 방법은?
+Hibernate에서 인덱스(Index) 설정하는 방법은?
+Hibernate에서 제한(Limit)과 정렬(Order)을 사용하는 방법은?
+Hibernate의 영속성(Persistence)과 일시적인(Detached) 상태의 개념은?
+Hibernate에서 트랜잭션(Transaction) 처리하는 방법은?
+Hibernate에서 예외(Exception) 처리하는 방법은?
+Hibernate에서 엔티티 클래스의 상태(State) 변경하는 방법은?
+Hibernate에서 로깅(logging) 설정하는 방법은?
+Hibernate에서 백업과 복구 방법은?
+Hibernate의 버전 관리(Versioning) 방법은?
+Hibernate의 배치 처리(Batching) 기능은?
+Hibernate에서 프록시(Proxy) 객체를 사용하는 방법은?
+Hibernate와 Spring Boot 연동 방법은?
+Hibernate에서 다양한 데이터 유효성 검사(Validation) 방법은?
+Hibernate에서 쓰기 지연(Write-behind)과 즉시 쓰기(Write-through) 방법은?
+Hibernate에서 두 개의 테이블을 조인하여 데이터 조회하는 방법은?
+Hibernate에서 동적으로 데이터베이스 연결 설정을 변경하는 방법은?
+Hibernate에서 복합키(Composite key) 설정하는 방법은?
+Hibernate에서 데이터 검색을 위한 쿼리 인덱스(Query index) 설정하는 방법은?
+Hibernate에서 명명된(Named) 쿼리 작성 방법은?
+Hibernate에서 JPA 명세(Specification)를 사용하는 방법은?
+Hibernate에서 JPQL(JPA Query Language)을 사용하여 데이터 조회하는 방법은?
+Hibernate에서 동적으로 데이터베이스 연결 풀(Connection Pool) 설정하는 방법은?
+Hibernate에서 트랜잭션 롤백(Rollback)하는 방법은?
+Hibernate에서 트랜잭션 커밋(Commit)하는 방법은?
+Hibernate에서 천체(Flush) 작업하는 방법은?
+Hibernate에서 지원하는 데이터베이스 드라이버(Driver) 목록은?
+Hibernate에서 데이터베이스 컬럼(Colum)의 크기와 유형을 변경하는 방법은?
+Hibernate에서 JSON 형식의 데이터를 처리하는 방법은?
+Hibernate에서 JTA(Java Transaction API)를 사용하는 방법은?
+Hibernate에서 쿼리 힌트(Query Hint)를 사용하는 방법은?
+Hibernate에서 데이터베이스 스키마(Schema)를 변경하는 방법은?
+Hibernate에서 DDL(Data Definition Language) 자동 생성하는 방법은?
+Hibernate에서 데이터베이스 인덱스(Index)를 변경하는 방법은?
+Hibernate에서 데이터베이스가 사용 가능한지 확인하는 방법은?
+Hibernate에서 데이터베이스 연결 풀(Connection Pool) 설정 방법은?
+Hibernate에서 데이터베이스 이벤트 처리하는 방법은?
+Hibernate에서 데이터베이스 분할(Sharding) 설정하는 방법은?
+Hibernate에서 데이터베이스 암호화(Encryption) 설정하는 방법은?
+Hibernate에서 데이터베이스 테이블 수정하는 방법은?
+Hibernate에서 데이터베이스 트랜잭션 로깅 처리하는 방법은?
+Hibernate에서 스키마 생성(Schema Generation) 설정하는 방법은?
+Hibernate에서 메타데이터(Metadata) 작성하는 방법은?
+Hibernate에서 쿼리 최적화하는 방법은?
+Hibernate에서 프로퍼티(Property) 설정하는 방법은?
+Hibernate에서 영속성 관리(Persistence management) 기능은?
+Hibernate에서 세션(Session) 관리하는 방법은?
+Hibernate에서 쿼리 추적(Trace) 설정하는 방법은?
+Hibernate에서 JDBC 캐싱 설정하는 방법은?
+Hibernate에서 트랜잭션 격리 수준(Transaction isolation level) 설정하는 방법은?
+Hibernate에서 Flush Mode를 설정하는 방법은?
+Hibernate에서 Cascading operation 전략 설정 방법은?
+Hibernate에서 Naming Strategy 설정하는 방법은?
+Hibernate에서 데이터베이스 Dialect(Dialect) 설정하는 방법은?
+Hibernate에서 첫 번째 레벨 캐시(First Level Cache) 사용하는 방법은?
+Hibernate에서 두 번째 레벨 캐시(Second Level Cache) 사용하는 방법은?
+Hibernate에서 데이터베이스 관련 예외처리(Exception handling) 방법은?
+Hibernate에서 데이터베이스 트랜잭션(Transaction) 롤백하는 방법은?
+Hibernate에서 엔티티 상태(State)를 관리하는 방법은?
+Hibernate에서 데이터베이스 연결(Connection) 설정하는 방법은?
+Hibernate에서 데이터베이스 연결(Connection) 풀링(Pooling) 설정하는 방법은?
+Hibernate에서 데이터베이스 범위(Range) 쿼리 방법은?
+Hibernate에서 네임스페이스(Namespace) 설정하는 방법은?
+Hibernate에서 데이터베이스 로우(Row) 잠금(Lock) 설정하는 방법은?
+Hibernate에서 데이터베이스 인덱스(Index) 생성 방법은?
+Hibernate에서 오브젝트 상속(Object inheritance) 설정하는 방법은?
+Hibernate에서 데이터베이스 NULL 값을 처리하는 방법은?
+Hibernate에서 엔티티 캐시(Cache) 설정하는 방법은?
+Hibernate에서 데이터베이스 목록(List) 조회 방법은?
+Hibernate에서 데이터베이스 컬럼(Column) 중복 제약(Constraint) 설정하는 방법은?
+Hibernate에서 데이터베이스 인덱스(Index) 중복 제약(Constraint) 설정하는 방법은?
+Hibernate에서 데이터베이스 데이터 유형(Type) 변경하는 방법은?
+Hibernate에서 데이터베이스 테이블 일괄 업데이트하는 방법은?
