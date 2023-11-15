@@ -48,5 +48,3 @@ TensorFlow로 데이터를 훈련셋과 테스트셋으로 분할하기
 파이썬에서 TensorFlow를 사용한 하이퍼파라미터 최적화하기
 파이썬에서 TensorFlow를 사용한 모델 튜닝하기
 파이썬에서 TensorFlow를 사용한 모델 앙상블하기
-
-이 외에도 다양한 주제로 파이썬 TensorFlow에 대한 내용을 추가할 수 있습니다.

@@ -1,23 +1,6 @@
 파이썬 configparser 라이브러리란?
 configparser 라이브러리를 사용하여 설정 파일 읽기
 configparser.ConfigParser() 객체 생성 및 초기화
-설정 파일에서 섹션(section) 읽기
-설정 파일에서 옵션(option) 읽기
-설정 파일에서 값을 읽어오는 다양한 메서드
-설정 파일에서 값을 읽어오는 데이터 타입 지정
-설정 파일에서 값을 읽어오는 에러 처리 방법
-설정 파일에 값을 쓰기
-설정 파일에 새로운 섹션 추가하기
-설정 파일에서 섹션 삭제하기
-설정 파일에서 옵션 삭제하기
-설정 파일 저장하기
-설정 파일을 읽고 쓰는 예제 코드
-configparser 라이브러리와 유사한 다른 라이브러리 비교
-configparser 라이브러리의 장점과 단점
-설정 파일을 다른 형식으로 변환하기
-configparser를 사용한 설정 관리의 실제 예제
-configparser를 사용하여 다중 설정 파일 읽기
-프로그램 설정 파일과 사용자 설정 파일 분리하기
 configparser를 이용한 설정 파일 변경 감지
 configparser를 이용한 설정 파일 백업
 configparser를 이용한 설정 파일 병합
