@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용하여 텍스트의 단어 빈도 분석(Word Frequency Analysis)"
 description: " "
 date: 2023-09-24
-tags: [python, naturallanguageprocessing, textanalysis]
+tags: [python]
 comments: true
 share: true
 ---

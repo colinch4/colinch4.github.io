@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 유지 보수 및 업데이트 설정하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript, package]
+tags: [javascript]
 comments: true
 share: true
 ---

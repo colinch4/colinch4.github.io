@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 텍스트에서 추상화 단어 추출(Abstraction Word Extraction)"
 description: " "
 date: 2023-09-24
-tags: [python, SpaCy]
+tags: [SpaCy]
 comments: true
 share: true
 ---

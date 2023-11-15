@@ -3,7 +3,7 @@ layout: post
 title: "Redux와 Two-way Data Binding 비교 분석하기"
 description: " "
 date: 2023-09-15
-tags: [Redux, TwoWayDataBinding]
+tags: [Redux]
 comments: true
 share: true
 ---

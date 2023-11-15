@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트에서의 Two-way Data Binding과 Flux 아키텍처의 관계 파악하기"
 description: " "
 date: 2023-09-15
-tags: [Javascript, TwoWayDataBinding, Flux]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 $applyAsync를 이용한 Two-way Data Binding의 성능 최적화 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

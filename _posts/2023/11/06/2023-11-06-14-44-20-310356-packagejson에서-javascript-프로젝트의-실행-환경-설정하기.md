@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 실행 환경 설정하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript, Node]
+tags: [javascript]
 comments: true
 share: true
 ---

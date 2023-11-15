@@ -3,7 +3,7 @@ layout: post
 title: "Nullish Coalescing과 Optional Chaining을 사용하여 자바스크립트에서의 데이터 변환 처리하기"
 description: " "
 date: 2023-09-29
-tags: [JavaScript, NullishCoalescing, OptionalChaining]
+tags: [javascript]
 comments: true
 share: true
 ---

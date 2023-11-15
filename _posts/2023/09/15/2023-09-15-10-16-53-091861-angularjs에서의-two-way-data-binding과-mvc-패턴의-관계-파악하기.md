@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS에서의 Two-way Data Binding과 MVC 패턴의 관계 파악하기"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Array.prototype[@@iterator]()"
 description: " "
 date: 2023-09-17
-tags: [JavaScript, Array, Iterator]
+tags: [javascript]
 comments: true
 share: true
 ---

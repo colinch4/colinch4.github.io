@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 Zappa를 사용하여 AWS Step Functions를 통한 워크플로우 자동화 애플리케이션 구축하기"
 description: " "
 date: 2023-09-26
-tags: [python, StepFunctions]
+tags: [python]
 comments: true
 share: true
 ---

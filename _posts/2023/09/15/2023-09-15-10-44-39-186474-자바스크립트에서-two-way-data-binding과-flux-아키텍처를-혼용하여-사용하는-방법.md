@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트에서 Two-way Data Binding과 Flux 아키텍처를 혼용하여 사용하는 방법"
 description: " "
 date: 2023-09-15
-tags: [javascript, twowaydatabinding, flux]
+tags: [javascript]
 comments: true
 share: true
 ---

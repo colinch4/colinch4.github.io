@@ -3,7 +3,7 @@ layout: post
 title: "Convolutional Neural Network를 사용한 파이썬 Sentiment analysis 알고리즘 성능 평가"
 description: " "
 date: 2023-10-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

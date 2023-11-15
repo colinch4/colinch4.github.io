@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 Local Storage와 Session Storage의 차이점"
 description: " "
 date: 2023-09-15
-tags: [JavaScript, WebDevelopment]
+tags: [javascript]
 comments: true
 share: true
 ---

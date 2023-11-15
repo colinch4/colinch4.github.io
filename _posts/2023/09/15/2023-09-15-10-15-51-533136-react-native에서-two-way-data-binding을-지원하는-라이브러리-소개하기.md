@@ -3,7 +3,7 @@ layout: post
 title: "React Native에서 Two-way Data Binding을 지원하는 라이브러리 소개하기"
 description: " "
 date: 2023-09-15
-tags: [ReactNative, TwoWayDataBinding]
+tags: [ReactNative]
 comments: true
 share: true
 ---

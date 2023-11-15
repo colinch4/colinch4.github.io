@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 Intl.RelativeTimeFormat을 사용하여 다국어에서 상대적 시간 표시하기"
 description: " "
 date: 2023-11-10
-tags: [JavaScript, 상대적시간표시]
+tags: [javascript]
 comments: true
 share: true
 ---

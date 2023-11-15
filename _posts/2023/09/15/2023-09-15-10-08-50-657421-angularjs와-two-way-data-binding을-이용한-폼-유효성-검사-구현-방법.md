@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS와 Two-way Data Binding을 이용한 폼 유효성 검사 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

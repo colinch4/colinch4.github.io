@@ -3,7 +3,7 @@ layout: post
 title: "React Native로 iOS 및 Android 앱 개발하기"
 description: " "
 date: 2023-10-13
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

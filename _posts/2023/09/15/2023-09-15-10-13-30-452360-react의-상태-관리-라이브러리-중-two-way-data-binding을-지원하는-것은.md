@@ -3,7 +3,7 @@ layout: post
 title: "React의 상태 관리 라이브러리 중 Two-way Data Binding을 지원하는 것은?"
 description: " "
 date: 2023-09-15
-tags: [React, TwoWayDataBinding]
+tags: [React]
 comments: true
 share: true
 ---

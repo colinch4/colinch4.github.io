@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS와 Two-way Data Binding의 성능 비교"
 description: " "
 date: 2023-09-15
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

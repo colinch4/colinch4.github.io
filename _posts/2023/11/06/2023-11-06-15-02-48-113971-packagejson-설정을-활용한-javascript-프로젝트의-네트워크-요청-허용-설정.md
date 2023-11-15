@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 활용한 JavaScript 프로젝트의 네트워크 요청 허용 설정"
 description: " "
 date: 2023-11-06
-tags: [javascript, cors]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트에서 Nullish Coalescing과 Optional Chaining을 함께 사용하는 방법"
 description: " "
 date: 2023-09-29
-tags: [javascript, codingtips]
+tags: [javascript]
 comments: true
 share: true
 ---

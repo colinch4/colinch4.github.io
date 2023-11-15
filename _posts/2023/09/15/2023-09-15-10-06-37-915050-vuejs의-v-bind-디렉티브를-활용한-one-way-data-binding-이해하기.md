@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js의 v-bind 디렉티브를 활용한 One-way Data Binding 이해하기"
 description: " "
 date: 2023-09-15
-tags: [Vuejs, OneWayDataBinding]
+tags: [TwoWayDataBinding]
 comments: true
 share: true
 ---

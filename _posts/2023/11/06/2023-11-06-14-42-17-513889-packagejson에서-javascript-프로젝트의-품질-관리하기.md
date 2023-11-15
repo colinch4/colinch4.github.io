@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 품질 관리하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript, Package]
+tags: [javascript]
 comments: true
 share: true
 ---

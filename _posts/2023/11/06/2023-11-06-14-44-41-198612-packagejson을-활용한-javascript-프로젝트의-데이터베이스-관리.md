@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 활용한 JavaScript 프로젝트의 데이터베이스 관리"
 description: " "
 date: 2023-11-06
-tags: [javascript, database]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 $watch를 이용한 Two-way Data Binding 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

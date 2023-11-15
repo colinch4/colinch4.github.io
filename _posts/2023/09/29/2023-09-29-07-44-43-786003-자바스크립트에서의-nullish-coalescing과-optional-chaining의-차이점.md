@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트에서의 Nullish Coalescing과 Optional Chaining의 차이점"
 description: " "
 date: 2023-09-29
-tags: [javascript, nullishcoalescing, optionalchaining]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js에서 Two-way Data Binding의 특징과 장점"
 description: " "
 date: 2023-09-15
-tags: [vuejs, twowaydatabinding]
+tags: [vuejs]
 comments: true
 share: true
 ---

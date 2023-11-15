@@ -3,7 +3,7 @@ layout: post
 title: "파이썬과 NLTK를 사용한 Sentiment analysis 분류 알고리즘 비교"
 description: " "
 date: 2023-10-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

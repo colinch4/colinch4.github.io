@@ -3,7 +3,7 @@ layout: post
 title: "React의 Redux와 Vue.js의 Vuex에서 Two-way Data Binding 기능 비교 분석하기"
 description: " "
 date: 2023-09-15
-tags: [React, Redux, Vuex]
+tags: [Redux]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 출고 처리 서비스 설정하기"
 description: " "
 date: 2023-11-06
-tags: [javascript, packagejson]
+tags: [javascript]
 comments: true
 share: true
 ---

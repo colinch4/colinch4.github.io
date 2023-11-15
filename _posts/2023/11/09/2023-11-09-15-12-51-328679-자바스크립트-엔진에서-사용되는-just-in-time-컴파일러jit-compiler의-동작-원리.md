@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 엔진에서 사용되는 Just-In-Time 컴파일러(JIT Compiler)의 동작 원리"
 description: " "
 date: 2023-11-09
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

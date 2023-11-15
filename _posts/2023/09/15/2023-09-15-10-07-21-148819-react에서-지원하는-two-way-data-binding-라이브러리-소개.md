@@ -3,7 +3,7 @@ layout: post
 title: "React에서 지원하는 Two-way Data Binding 라이브러리 소개"
 description: " "
 date: 2023-09-15
-tags: [React, TwoWayDataBinding]
+tags: [TwoWayDataBinding]
 comments: true
 share: true
 ---

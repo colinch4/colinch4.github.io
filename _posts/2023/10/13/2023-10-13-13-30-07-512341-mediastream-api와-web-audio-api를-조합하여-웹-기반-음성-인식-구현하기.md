@@ -3,7 +3,7 @@ layout: post
 title: "MediaStream API와 Web Audio API를 조합하여 웹 기반 음성 인식 구현하기"
 description: " "
 date: 2023-10-13
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

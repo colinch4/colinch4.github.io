@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS에서 Two-way Data Binding 사용하기"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

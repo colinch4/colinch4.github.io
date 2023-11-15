@@ -3,7 +3,7 @@ layout: post
 title: "DeepMoji와 파이썬을 사용한 Sentiment analysis 알고리즘 개발"
 description: " "
 date: 2023-10-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

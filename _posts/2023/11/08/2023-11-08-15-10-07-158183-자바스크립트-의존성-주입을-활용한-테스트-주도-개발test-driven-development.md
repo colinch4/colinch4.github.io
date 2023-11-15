@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 의존성 주입을 활용한 테스트 주도 개발(Test-Driven Development)"
 description: " "
 date: 2023-11-08
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

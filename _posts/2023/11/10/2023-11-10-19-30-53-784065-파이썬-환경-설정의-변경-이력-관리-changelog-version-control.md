@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 환경 설정의 변경 이력 관리: ChangeLog, Version Control"
 description: " "
 date: 2023-11-10
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

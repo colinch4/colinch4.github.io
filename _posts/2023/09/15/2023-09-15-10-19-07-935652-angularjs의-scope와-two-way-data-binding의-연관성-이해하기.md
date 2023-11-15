@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 $scope와 Two-way Data Binding의 연관성 이해하기"
 description: " "
 date: 2023-09-15
-tags: [AngularJS, TwoWayDataBinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---

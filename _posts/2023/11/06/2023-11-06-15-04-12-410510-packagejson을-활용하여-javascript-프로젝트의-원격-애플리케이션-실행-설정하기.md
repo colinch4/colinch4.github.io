@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 활용하여 JavaScript 프로젝트의 원격 애플리케이션 실행 설정하기"
 description: " "
 date: 2023-11-06
-tags: [javascript, webdevelopment]
+tags: [javascript]
 comments: true
 share: true
 ---

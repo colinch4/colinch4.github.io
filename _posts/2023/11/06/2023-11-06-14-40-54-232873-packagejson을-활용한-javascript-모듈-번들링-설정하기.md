@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 활용한 JavaScript 모듈 번들링 설정하기"
 description: " "
 date: 2023-11-06
-tags: [javascript, webpack]
+tags: [javascript]
 comments: true
 share: true
 ---

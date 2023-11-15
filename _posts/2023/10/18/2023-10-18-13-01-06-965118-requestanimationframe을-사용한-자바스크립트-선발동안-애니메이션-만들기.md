@@ -3,7 +3,7 @@ layout: post
 title: "requestAnimationFrame을 사용한 자바스크립트 선발동안 애니메이션 만들기"
 description: " "
 date: 2023-10-18
-tags: [자바스크립트]
+tags: [javascript]
 comments: true
 share: true
 ---

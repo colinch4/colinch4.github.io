@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-model-options를 활용한 Two-way Data Binding 성능 최적화 방법"
 description: " "
 date: 2023-09-15
-tags: [angularjs, twowaydatabinding]
+tags: [AngularJS]
 comments: true
 share: true
 ---
