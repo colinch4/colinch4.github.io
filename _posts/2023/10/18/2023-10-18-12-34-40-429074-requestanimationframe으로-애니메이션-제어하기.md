@@ -3,7 +3,7 @@ layout: post
 title: "requestAnimationFrame으로 애니메이션 제어하기"
 description: " "
 date: 2023-10-18
-tags: [JavaScript, Animation]
+tags: [javascript]
 comments: true
 share: true
 ---

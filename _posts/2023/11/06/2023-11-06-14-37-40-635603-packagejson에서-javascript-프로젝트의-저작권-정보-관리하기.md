@@ -3,7 +3,7 @@ layout: post
 title: "Package.json에서 JavaScript 프로젝트의 저작권 정보 관리하기"
 description: " "
 date: 2023-11-06
-tags: [techblog, techblog]
+tags: [JavaScript]
 comments: true
 share: true
 ---

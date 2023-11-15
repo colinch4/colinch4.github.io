@@ -1,0 +1,100 @@
+spaCy의 소개
+파이썬에서 자연어 처리를 위한 spaCy 설치 방법
+spaCy의 기능과 장점
+spaCy를 사용한 토큰화(tokenization) 기능
+spaCy의 언어 모델(Language Model)과 텍스트 분류(Text Classification)
+spaCy를 사용한 구문 분석(Syntax Parsing)
+spaCy를 이용한 개체명 인식(Named Entity Recognition)
+spaCy의 워드 임베딩(Word Embedding) 기능
+spaCy를 이용한 의존성 파싱(Dependency Parsing)
+spaCy를 사용한 문장 분할(Sentence Segmentation)
+spaCy의 문서 유사도(Document Similarity) 분석 기능
+spaCy의 품사 태깅(Pos Tagging) 기능
+spaCy를 이용한 연속 체언 구(Chunking)
+spaCy의 원형 복원(Lemmatization) 기능
+spaCy를 이용한 정규화(Normalization)
+spaCy의 특징 벡터(Feature Vector) 추출 기능
+spaCy를 사용한 언어 감지(Language Detection)
+spaCy의 명사구 추출(Noun Phrase Extraction) 기능
+spaCy를 이용한 텍스트 정제(Preprocessing)
+spaCy의 개체간 관계 추론(Entity Relations Inference) 기능
+spaCy를 사용한 감정 분석(Sentiment Analysis)
+spaCy를 이용한 문장 간 유사도(Sentence Similarity) 계산
+spaCy의 문장 부호 제거 기능
+spaCy를 사용한 동사 추출(Verb Extraction)
+spaCy를 이용한 문서 요약(Document Summarization)
+spaCy의 텍스트 군집화(Text Clustering) 기능
+spaCy를 사용한 특정 패턴(Pattern) 탐색
+spaCy를 이용한 개체명들의 통계(Statistics) 분석
+spaCy의 토크나이저(Tokanizer) 작동 원리
+spaCy를 사용한 문장 단위 분할(Sentence Tokenization)
+spaCy를 이용한 대용어(Equivalent) 추출
+spaCy의 문서 시각화(Document Visualization) 기능
+spaCy를 사용한 주제 모델링(Topic Modeling)
+spaCy를 이용한 텍스트 요약 기능
+spaCy의 텍스트 유사도 측정 방법
+spaCy를 사용한 정확도(Accuracy) 평가 방법
+spaCy를 이용한 부정어(Negation) 처리
+spaCy의 품사 태그 목록과 의미
+spaCy를 사용한 문법 규칙(Rule-based) 기능
+spaCy를 이용한 관점 기반 감정 분석(Aspect-based Sentiment Analysis)
+spaCy의 개체명 인식 태그 목록
+spaCy를 사용한 문장 단위 이동(Sentence Shuffling)
+spaCy를 이용한 터미널 인터페이스(Terminal Interface) 활용 방법
+spaCy의 문서 분할(Doc Splitting) 기능
+spaCy를 사용한 개체명 식별(Object Identification)
+spaCy를 이용한 문장 분절(Sentence Segmentation) 방법
+spaCy의 어휘(Vocabulary) 처리 방법
+spaCy를 사용한 맞춤법 교정(Spell Correction)
+spaCy를 이용한 코어퍼투 색인(Coreference Resolution) 기능
+spaCy의 개체명 인식의 한계점과 대응 방안
+spaCy를 사용한 화행 분석(Pragmatic Analysis)
+spaCy를 이용한 문서 클러스터링(Document Clustering)
+spaCy의 문서 내용 분류 기능
+spaCy를 사용한 자동 문서 분류(Automatic Document Classification)
+spaCy를 이용한 단어 빈도수 파악(Word Frequency Count)
+spaCy의 문법적 특징(Structural Characteristic) 분석
+spaCy를 사용한 문장 구문(Sentence Paraphrasing) 기능
+spaCy를 이용한 문서 유사도 계산 방법
+spaCy의 형태소 분석(Morphological Analysis) 기능
+spaCy를 사용한 동의어(Antonym) 탐색
+spaCy를 이용한 형태소 태깅(Morphological Tagging)
+spaCy의 명사 추출(Noun Extraction) 방법
+spaCy를 사용한 문서 분해(Document Decomposition)
+spaCy를 이용한 개체명 규칙 정의(Rule-based Named Entity Recognition)
+spaCy의 감정 분류 분석 방법
+spaCy를 사용한 개체 추출(Object Extraction)
+spaCy를 이용한 말뭉치 처리(Corpus Processing) 방법
+spaCy의 문법에 대한 오류 처리 도구
+spaCy를 사용한 참조 대상 분석(Referent Resolution)
+spaCy를 이용한 문장 유사도 판별 방법
+spaCy의 문서 요약 방법
+spaCy를 사용한 샘플 문장 검사(Sample Sentence Checking)
+spaCy를 이용한 어휘 선택 기능
+spaCy의 문서 벡터(Document Vector) 생성 방법
+spaCy를 사용한 문서 검색(Document Retrieval)
+spaCy를 이용한 언어 벡터(Language Vector) 생성
+spaCy의 언어 분류(Language Classification) 기능
+spaCy를 사용한 단어 감정 분석(Word Sentiment Analysis)
+spaCy를 이용한 어휘 빈도수 파악(Vocabulary Frequency Count)
+spaCy의 문서 유사도 측정 방법
+spaCy를 사용한 교착어(Multiword Expression) 처리
+spaCy를 이용한 문서 분류(Document Classification)
+spaCy의 목적어 찾기(Object Finding) 기능
+spaCy를 사용한 개체 수 및 종류 파악
+spaCy를 이용한 정제된 텍스트 생성(Clean Text Generation) 방법
+spaCy의 문법의미론(Grammatical Semantics) 분석
+spaCy를 사용한 기계 번역(Machine Translation)
+spaCy를 이용한 어휘 확장(Vocabulary Expansion) 기능
+spaCy의 문법 관계 탐색(Grammatical Relation Exploration) 방법
+spaCy를 사용한 원문의 단어 순서 변경(Word Rearrangement)
+spaCy를 이용한 구구조 도출(Treebank Parsing) 방법
+spaCy의 명사구(Noun Phrase) 추출 방법
+spaCy를 사용한 문장의 의미 파악(Sentence Understanding)
+spaCy를 이용한 객관적 분류(Objective Classification)
+spaCy의 문법적 특징 파악
+spaCy를 사용한 대화 시스템(Dialogue System)
+spaCy를 이용한 어절 분리(Hyphenation) 방법
+spaCy의 어휘 임베딩(Vocabulary Embedding) 기능
+spaCy를 사용한 문장의 의도 파악(Intent Recognition)
+spaCy를 이용한 어휘 감지(Vocabulary Detection) 방법

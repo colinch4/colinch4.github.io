@@ -1,0 +1,100 @@
+파이썬 Keras 소개
+Keras의 장점과 특징
+Keras 설치 방법
+Keras에서의 딥 러닝 개념
+Keras의 주요 모듈과 함수
+Keras를 이용한 다층 퍼셉트론 구현 방법
+Keras를 이용한 컨볼루션 신경망 (CNN) 구현 방법
+Keras를 이용한 순환 신경망 (RNN) 구현 방법
+Keras를 이용한 자연어 처리 (NLP) 모델 구현 방법
+Keras를 이용한 영상 처리 (Computer Vision) 모델 구현 방법
+Keras에서의 하이퍼파라미터 튜닝 방법
+Keras의 모델 평가 및 성능 개선 방법
+Keras를 이용한 전이 학습 (Transfer Learning) 방법
+Keras를 이용한 생성 모델 (Generative Model) 구현 방법
+Keras를 이용한 강화학습 (Reinforcement Learning) 구현 방법
+Keras에서의 데이터 로딩 및 전처리 방법
+Keras를 이용한 데이터 분할 및 교차 검증 방법
+Keras를 이용한 데이터 augmentation 방법
+Keras에서의 오버피팅 방지 기법
+Keras를 이용한 모델 저장 및 로드 방법
+Keras를 이용한 모델의 시각화 방법
+Keras를 이용한 분류 모델 성능 평가 방법
+Keras를 이용한 회귀 모델 성능 평가 방법
+Keras를 이용한 다중 레이블 분류 모델 구현 방법
+Keras를 이용한 이진 분류 모델 구현 방법
+Keras를 이용한 다중 클래스 분류 모델 구현 방법
+Keras를 이용한 시퀀셜 데이터 모델 구현 방법
+Keras를 이용한 이미지 분류 모델 구현 방법
+Keras를 이용한 객체 검출 (Object Detection) 모델 구현 방법
+Keras를 이용한 얼굴 인식 (Face Recognition) 모델 구현 방법
+Keras를 이용한 자율 주행 (Autonomous Driving) 모델 구현 방법
+Keras를 이용한 감성 분석 (Sentiment Analysis) 모델 구현 방법
+Keras를 이용한 텍스트 분류 모델 구현 방법
+Keras를 이용한 텍스트 생성 모델 구현 방법
+Keras를 이용한 텍스트 요약 (Text Summarization) 모델 구현 방법
+Keras를 이용한 텍스트 번역 (Machine Translation) 모델 구현 방법
+Keras를 이용한 명명 개체 인식 (Named Entity Recognition) 모델 구현 방법
+Keras를 이용한 질문-응답 (Question-Answering) 모델 구현 방법
+Keras를 이용한 추천 시스템 (Recommendation System) 모델 구현 방법
+Keras를 이용한 강화학습 게임 (Reinforcement Learning Game) 모델 구현 방법
+Keras에서의 오버피팅 방지 방법
+Keras를 이용한 데이터 imbalance 처리 방법
+Keras를 이용한 데이터 정규화 (Normalization) 방법
+Keras를 이용한 가중치 초기화 방법
+Keras에서의 배치 정규화 (Batch Normalization) 개념
+Keras를 이용한 드롭아웃 (Dropout) 개념 및 사용 방법
+Keras에서의 가중치 감소 (Weight Decay) 방법
+Keras에서의 학습률 조절 방법
+Keras를 이용한 모델 앙상블 (Model Ensemble) 방법
+Keras에서의 자동 미분 (Automatic Differentiation) 개념
+Keras를 이용한 그래디언트 기반 최적화 (Gradient-based Optimization) 방법
+Keras를 이용한 배치 학습 (Batch Training) 개념
+Keras에서의 early stopping 조기 종료 방법
+Keras를 이용한 학습 곡선 (Learning Curve) 시각화 방법
+Keras에서의 모델 저장 및 로드 방법
+Keras를 이용한 모델 배포 방법
+Keras를 이용한 분산 학습 (Distributed Learning) 개념
+Keras에서의 하드웨어 가속화 (Hardware Acceleration) 방법
+Keras를 이용한 GPU 활용 방법
+Keras에서의 모델 성능 모니터링 방법
+Keras를 이용한 군집화 (Clustering) 모델 구현 방법
+Keras를 이용한 이상 검출 (Anomaly Detection) 모델 구현 방법
+Keras를 이용한 시계열 예측 (Time Series Prediction) 모델 구현 방법
+Keras를 이용한 추천 시스템 (Recommendation System) 모델 구현 방법
+Keras에서의 베이지안 신경망 (Bayesian Neural Network) 개념
+Keras에서의 가변 길이 시퀀스 처리 방법
+Keras를 이용한 지도학습 (Supervised Learning) 구현 방법
+Keras를 이용한 비지도학습 (Unsupervised Learning) 구현 방법
+Keras를 이용한 강화학습 (Reinforcement Learning) 구현 방법
+Keras를 이용한 베이지안 최적화 (Bayesian Optimization) 방법
+Keras를 이용한 시계열 분해 (Time Series Decomposition) 방법
+Keras를 이용한 주가 예측 (Stock Price Prediction) 모델 구현 방법
+Keras를 이용한 음성 인식 (Speech Recognition) 모델 구현 방법
+Keras를 이용한 자연어 생성 (Natural Language Generation) 모델 구현 방법
+Keras에서의 워드 임베딩 (Word Embedding) 개념
+Keras를 이용한 워드 임베딩 (Word Embedding) 기법
+Keras를 이용한 시계열 분석 및 예측 방법
+Keras를 이용한 GAN (Generative Adversarial Network) 모델 구현 방법
+Keras를 이용한 VAE (Variational Autoencoder) 모델 구현 방법
+Keras를 이용한 오토인코더 (Autoencoder) 모델 구현 방법
+Keras를 이용한 리커런트 오토인코더 (Recurrent Autoencoder) 모델 구현 방법
+Keras를 이용한 이미지 분할 (Image Segmentation) 모델 구현 방법
+Keras를 이용한 이미지 생성 (Image Generation) 모델 구현 방법
+Keras를 이용한 이미지 스타일 변환 (Image Style Transfer) 방법
+Keras를 이용한 이미지 캡셔닝 (Image Captioning) 모델 구현 방법
+Keras를 이용한 영화 추천 (Movie Recommendation) 모델 구현 방법
+Keras를 이용한 음악 생성 (Music Generation) 모델 구현 방법
+Keras를 이용한 게임 AI (Game AI) 모델 구현 방법
+Keras를 이용한 듀얼 네트워크 (Dual Network) 모델 구현 방법
+Keras를 이용한 행동 예측 (Action Prediction) 모델 구현 방법
+Keras를 이용한 자율 주행차 (Autonomous Vehicle) 제어 방법
+Keras를 이용한 자율 로봇 (Autonomous Robot) 제어 방법
+Keras를 이용한 손글씨 인식 (Handwriting Recognition) 모델 구현 방법
+Keras를 이용한 객체 탐지 (Object Detection) 모델 구현 방법
+Keras를 이용한 세그멘테이션 (Segmentation) 모델 구현 방법
+Keras를 이용한 악성 코드 탐지 (Malware Detection) 모델 구현 방법
+Keras를 이용한 차량 번호판 인식 (License Plate Recognition) 모델 구현 방법
+Keras를 이용한 얼굴 감지 (Face Detection) 모델 구현 방법
+Keras를 이용한 음성 합성 (Speech Synthesis) 모델 구현 방법
+Keras를 이용한 딥페이크 탐지 (Deepfake Detection) 모델 구현 방법

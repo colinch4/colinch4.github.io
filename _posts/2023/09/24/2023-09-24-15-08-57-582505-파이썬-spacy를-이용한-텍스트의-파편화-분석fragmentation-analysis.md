@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 텍스트의 파편화 분석(Fragmentation Analysis)"
 description: " "
 date: 2023-09-24
-tags: [tech]
+tags: [SpaCy]
 comments: true
 share: true
 ---

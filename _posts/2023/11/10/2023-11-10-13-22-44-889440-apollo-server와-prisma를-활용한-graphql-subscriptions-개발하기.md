@@ -3,7 +3,7 @@ layout: post
 title: "Apollo Server와 Prisma를 활용한 GraphQL Subscriptions 개발하기"
 description: " "
 date: 2023-11-10
-tags: [tech, graphql]
+tags: [graphql]
 comments: true
 share: true
 ---

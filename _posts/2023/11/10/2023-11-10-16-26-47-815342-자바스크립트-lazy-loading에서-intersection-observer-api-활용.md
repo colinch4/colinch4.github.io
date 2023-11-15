@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 Lazy Loading에서 Intersection Observer API 활용"
 description: " "
 date: 2023-11-10
-tags: [webdevelopment, javascript]
+tags: [javascript]
 comments: true
 share: true
 ---

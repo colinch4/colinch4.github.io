@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 사용하여 JavaScript 프로젝트의 로그 분석 설정하기"
 description: " "
 date: 2023-11-06
-tags: [tech, javascript]
+tags: [javascript]
 comments: true
 share: true
 ---

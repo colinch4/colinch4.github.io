@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 텍스트의 가독성 평가(Readability Assessment)"
 description: " "
 date: 2023-09-24
-tags: [Tech]
+tags: [파이썬]
 comments: true
 share: true
 ---

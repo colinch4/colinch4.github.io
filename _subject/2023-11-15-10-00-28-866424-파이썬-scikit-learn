@@ -1,0 +1,100 @@
+scikit-learn의 기능과 사용법
+scikit-learn을 활용한 데이터 전처리
+scikit-learn의 분류 알고리즘 설명
+scikit-learn을 사용한 회귀 분석
+scikit-learn을 활용한 군집화
+scikit-learn을 이용한 차원 축소
+scikit-learn을 활용한 특징 선택
+scikit-learn을 사용한 모델 평가
+scikit-learn의 트리 기반 알고리즘
+scikit-learn의 앙상블 기법
+scikit-learn을 사용한 SVM(Support Vector Machine)
+scikit-learn을 이용한 나이브 베이즈 분류
+scikit-learn을 활용한 로지스틱 회귀
+scikit-learn을 사용한 k-최근접 이웃 알고리즘
+scikit-learn을 활용한 결정 트리
+scikit-learn을 이용한 랜덤 포레스트
+scikit-learn을 사용한 그라디언트 부스팅
+scikit-learn을 활용한 신경망 모델링
+scikit-learn을 이용한 클러스터링 알고리즘 선택 기준
+scikit-learn을 사용한 계층 군집화
+scikit-learn을 활용한 K-means 군집화
+scikit-learn을 이용한 DBSCAN 군집화
+scikit-learn을 사용한 Gaussian Mixture Model
+scikit-learn을 활용한 차원 축소 기법 선택 기준
+scikit-learn을 이용한 주성분 분석 (PCA)
+scikit-learn을 사용한 선형 판별 분석 (LDA)
+scikit-learn을 활용한 특징 선택 기법 선택 기준
+scikit-learn을 이용한 분산 분석 (ANOVA)
+scikit-learn을 사용한 상관 분석
+scikit-learn을 활용한 회귀 분석 모델 선택 기준
+scikit-learn을 이용한 선형 회귀
+scikit-learn을 사용한 리지 회귀
+scikit-learn을 활용한 라쏘 회귀
+scikit-learn을 이용한 다항 회귀
+scikit-learn을 사용한 교차 검증 기법
+scikit-learn을 활용한 그리드 서치
+scikit-learn을 이용한 모델 평가 방법
+scikit-learn을 사용한 정확도 평가
+scikit-learn을 활용한 재현율 평가
+scikit-learn을 이용한 F1 점수 평가
+scikit-learn을 사용한 ROC 곡선 그리기
+scikit-learn을 활용한 피처 스케일링
+scikit-learn을 이용한 피처 정규화
+scikit-learn을 사용한 피처 인코딩
+scikit-learn을 활용한 원-핫 인코딩
+scikit-learn을 이용한 피처 선택 기법
+scikit-learn을 사용한 상관 계수 기반 피처 선택
+scikit-learn을 활용한 피처 중요도 기반 피처 선택
+scikit-learn을 이용한 L1 기반 피처 선택
+scikit-learn을 사용한 피처 엔지니어링
+scikit-learn을 활용한 피처 생성
+scikit-learn을 이용한 다중 클래스 분류
+scikit-learn을 사용한 클래스 불균형 처리
+scikit-learn을 활용한 오버샘플링
+scikit-learn을 이용한 언더샘플링
+scikit-learn을 사용한 모델 튜닝
+scikit-learn을 활용한 하이퍼파라미터 최적화
+scikit-learn을 이용한 그리드 탐색
+scikit-learn을 사용한 랜덤 탐색
+scikit-learn을 활용한 교차 검증을 통한 모델 검증
+scikit-learn을 이용한 평가 지표 선택 기준
+scikit-learn을 사용한 정밀도 평가
+scikit-learn을 활용한 AUC-ROC 평가
+scikit-learn을 이용한 다중 출력 모델링
+scikit-learn을 사용한 다중 라벨 분류
+scikit-learn을 활용한 텍스트 분류
+scikit-learn을 이용한 TF-IDF 피처 추출
+scikit-learn을 사용한 문서 군집화
+scikit-learn을 활용한 워드 임베딩
+scikit-learn을 이용한 네이버 영화 리뷰 감성 분석
+scikit-learn을 사용한 자연어 처리
+scikit-learn을 활용한 토픽 모델링
+scikit-learn을 이용한 이미지 분류
+scikit-learn을 사용한 컬러 히스토그램 추출
+scikit-learn을 활용한 이미지 세그멘테이션
+scikit-learn을 이용한 객체 검출
+scikit-learn을 사용한 데이터 시각화
+scikit-learn을 활용한 히트맵 그리기
+scikit-learn을 이용한 선형 회귀 시각화
+scikit-learn을 사용한 지도 학습 예측 시각화
+scikit-learn을 활용한 군집화 시각화
+scikit-learn을 이용한 차원 축소 시각화
+scikit-learn을 사용한 앙상블 예측 시각화
+scikit-learn을 활용한 SVM 시각화
+scikit-learn을 이용한 나이브 베이즈 분류 시각화
+scikit-learn을 사용한 로지스틱 회귀 시각화
+scikit-learn을 활용한 k-최근접 이웃 예측 시각화
+scikit-learn을 이용한 결정 트리 시각화
+scikit-learn을 사용한 랜덤 포레스트 시각화
+scikit-learn을 활용한 그라디언트 부스팅 시각화
+scikit-learn을 이용한 신경망 모델 시각화
+scikit-learn을 사용한 피처 스케일링 결과 시각화
+scikit-learn을 활용한 피처 선택 결과 시각화
+scikit-learn을 이용한 모델 튜닝 결과 시각화
+scikit-learn을 사용한 다중 클래스 분류 결과 시각화
+scikit-learn을 활용한 클래스 불균형 처리 결과 시각화
+scikit-learn을 이용한 모델 예측 결과 시각화
+scikit-learn을 사용한 이미지 분류 결과 시각화
+scikit-learn을 활용한 데이터 시각화 도구
+scikit-learn을 이용한 대용량 데이터 처리 방법

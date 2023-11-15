@@ -3,7 +3,7 @@ layout: post
 title: "IIFE (Immediately Invoked Function Expression)의 활용"
 description: " "
 date: 2023-09-13
-tags: [javascript, IIFE]
+tags: [javascript]
 comments: true
 share: true
 ---

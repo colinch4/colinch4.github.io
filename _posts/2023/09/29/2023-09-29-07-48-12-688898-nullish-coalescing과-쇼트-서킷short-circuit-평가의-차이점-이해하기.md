@@ -3,7 +3,7 @@ layout: post
 title: "Nullish Coalescing과 쇼트 서킷(Short Circuit) 평가의 차이점 이해하기"
 description: " "
 date: 2023-09-29
-tags: [WebDevelopment, JavaScript]
+tags: [JavaScript]
 comments: true
 share: true
 ---

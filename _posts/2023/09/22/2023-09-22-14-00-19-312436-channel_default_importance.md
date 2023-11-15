@@ -3,7 +3,7 @@ layout: post
 title: "channel_default_importance"
 description: " "
 date: 2023-09-22
-tags: [programming, techblog]
+tags: [python]
 comments: true
 share: true
 ---
