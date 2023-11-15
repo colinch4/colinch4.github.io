@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 머신 러닝 개발 (Machine learning development with npm)"
 description: " "
 date: 2023-11-10
-tags: [머신러닝]
+tags: [python]
 comments: true
 share: true
 ---

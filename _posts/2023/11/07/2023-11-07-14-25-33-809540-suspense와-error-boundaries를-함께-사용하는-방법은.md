@@ -3,7 +3,7 @@ layout: post
 title: "Suspense와 Error Boundaries를 함께 사용하는 방법은?"
 description: " "
 date: 2023-11-07
-tags: [reactsuspense]
+tags: [suspense]
 comments: true
 share: true
 ---
