@@ -3,7 +3,7 @@ layout: post
 title: "Azure Kubernetes Service와 파이썬을 이용한 애플리케이션 스케일링"
 description: " "
 date: 2023-11-06
-tags: [Azure, Kubernetes]
+tags: [Azure]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 활용한 GraphQL API 서버 설정하기"
 description: " "
 date: 2023-11-06
-tags: [GraphQL, package]
+tags: [javascript]
 comments: true
 share: true
 ---

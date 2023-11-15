@@ -3,7 +3,7 @@ layout: post
 title: "파이썬으로 Azure Kubernetes Service 관리하기"
 description: " "
 date: 2023-11-06
-tags: [Azure, Kubernetes]
+tags: [python]
 comments: true
 share: true
 ---

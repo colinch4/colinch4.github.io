@@ -3,7 +3,7 @@ layout: post
 title: "Azure API Management와 파이썬을 사용한 API 개발"
 description: " "
 date: 2023-11-06
-tags: [Azure, AzureAPIManagement]
+tags: [python]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Azure Kubernetes Service와 파이썬으로 컨테이너화된 애플리케이션 운영하기"
 description: " "
 date: 2023-11-06
-tags: [Azure, Kubernetes]
+tags: [python]
 comments: true
 share: true
 ---

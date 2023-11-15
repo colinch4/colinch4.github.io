@@ -3,7 +3,7 @@ layout: post
 title: "파이썬을 사용한 Azure Kubernetes Service 모니터링"
 description: " "
 date: 2023-11-06
-tags: [Azure, Kubernetes]
+tags: [Azure]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "useState와 useEffect를 활용한 Custom Hook 만들기"
 description: " "
 date: 2023-11-06
-tags: [React, CustomHook]
+tags: [react]
 comments: true
 share: true
 ---

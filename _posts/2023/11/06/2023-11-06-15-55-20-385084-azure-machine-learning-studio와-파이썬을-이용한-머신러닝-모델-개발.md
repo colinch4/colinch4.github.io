@@ -3,7 +3,7 @@ layout: post
 title: "Azure Machine Learning Studio와 파이썬을 이용한 머신러닝 모델 개발"
 description: " "
 date: 2023-11-06
-tags: [Azure, MachineLearning]
+tags: [python]
 comments: true
 share: true
 ---
