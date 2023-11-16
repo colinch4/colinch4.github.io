@@ -3,7 +3,7 @@ layout: post
 title: "IMDB 리뷰 데이터를 활용한 Sentiment analysis 알고리즘 개발 및 평가"
 description: " "
 date: 2023-10-04
-tags: [datascience]
+tags: [python]
 comments: true
 share: true
 ---

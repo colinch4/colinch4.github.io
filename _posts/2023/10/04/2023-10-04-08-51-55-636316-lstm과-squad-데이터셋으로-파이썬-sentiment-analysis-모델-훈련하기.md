@@ -3,7 +3,7 @@ layout: post
 title: "LSTM과 Squad 데이터셋으로 파이썬 Sentiment analysis 모델 훈련하기"
 description: " "
 date: 2023-10-04
-tags: [SentimentAnalysis]
+tags: [python]
 comments: true
 share: true
 ---

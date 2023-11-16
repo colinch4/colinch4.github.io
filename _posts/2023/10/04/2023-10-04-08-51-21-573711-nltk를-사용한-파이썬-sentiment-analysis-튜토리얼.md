@@ -3,7 +3,7 @@ layout: post
 title: "NLTK를 사용한 파이썬 Sentiment analysis 튜토리얼"
 description: " "
 date: 2023-10-04
-tags: [NLTK, SentimentAnalysis]
+tags: [python]
 comments: true
 share: true
 ---

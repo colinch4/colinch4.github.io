@@ -3,7 +3,7 @@ layout: post
 title: "Word2Vec을 사용한 파이썬 Sentiment analysis 모델 훈련"
 description: " "
 date: 2023-10-04
-tags: [Word2Vec]
+tags: [python]
 comments: true
 share: true
 ---
