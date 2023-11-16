@@ -3,7 +3,7 @@ layout: post
 title: "Apollo Server와 함께 자바스크립트로 GraphQL Subscriptions 구현하기"
 description: " "
 date: 2023-11-10
-tags: [GraphQL, ApolloServer]
+tags: [GraphQL]
 comments: true
 share: true
 ---

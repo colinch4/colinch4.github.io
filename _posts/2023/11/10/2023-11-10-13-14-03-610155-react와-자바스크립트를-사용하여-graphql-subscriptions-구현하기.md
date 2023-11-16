@@ -3,7 +3,7 @@ layout: post
 title: "React와 자바스크립트를 사용하여 GraphQL Subscriptions 구현하기"
 description: " "
 date: 2023-11-10
-tags: [GraphQL, React]
+tags: [GraphQL]
 comments: true
 share: true
 ---

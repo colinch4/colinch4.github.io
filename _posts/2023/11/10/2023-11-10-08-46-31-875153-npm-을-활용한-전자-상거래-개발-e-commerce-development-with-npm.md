@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 전자 상거래 개발 (E-commerce development with npm)"
 description: " "
 date: 2023-11-10
-tags: [전자상거래]
+tags: [npm]
 comments: true
 share: true
 ---

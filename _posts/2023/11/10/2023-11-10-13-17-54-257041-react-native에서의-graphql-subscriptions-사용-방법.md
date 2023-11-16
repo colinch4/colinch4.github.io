@@ -3,7 +3,7 @@ layout: post
 title: "React Native에서의 GraphQL Subscriptions 사용 방법"
 description: " "
 date: 2023-11-10
-tags: [ReactNative, GraphQL]
+tags: [GraphQL]
 comments: true
 share: true
 ---

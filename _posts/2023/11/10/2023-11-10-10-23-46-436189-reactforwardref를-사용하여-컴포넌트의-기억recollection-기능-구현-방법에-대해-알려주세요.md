@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 컴포넌트의 기억(Recollection) 기능 구현 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: [reactforwardref, Recollection]
+tags: [react]
 comments: true
 share: true
 ---

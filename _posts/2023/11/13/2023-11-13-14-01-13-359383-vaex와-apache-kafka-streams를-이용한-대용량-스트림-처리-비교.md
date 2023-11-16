@@ -3,7 +3,7 @@ layout: post
 title: "Vaex와 Apache Kafka Streams를 이용한 대용량 스트림 처리 비교"
 description: " "
 date: 2023-11-13
-tags: [Vaex, ApacheKafkaStreams]
+tags: [Vaex]
 comments: true
 share: true
 ---

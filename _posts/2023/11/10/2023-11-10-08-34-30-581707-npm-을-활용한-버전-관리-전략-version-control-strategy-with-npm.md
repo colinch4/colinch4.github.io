@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 버전 관리 전략 (Version control strategy with npm)"
 description: " "
 date: 2023-11-10
-tags: [versioncontrol]
+tags: [npm]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 사용하여 JavaScript 프로젝트의 에러 로깅 설정하기"
 description: " "
 date: 2023-11-06
-tags: [references]
+tags: [javascript]
 comments: true
 share: true
 ---

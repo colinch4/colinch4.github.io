@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 환경 설정 패턴: Singleton, Factory, Dependency Injection"
 description: " "
 date: 2023-11-10
-tags: [opensource, python]
+tags: [python]
 comments: true
 share: true
 ---

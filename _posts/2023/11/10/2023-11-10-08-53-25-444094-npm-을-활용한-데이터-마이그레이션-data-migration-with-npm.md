@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 데이터 마이그레이션 (Data migration with npm)"
 description: " "
 date: 2023-11-10
-tags: [datamigration]
+tags: [npm]
 comments: true
 share: true
 ---

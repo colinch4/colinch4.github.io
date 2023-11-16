@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 데이터 시각화 (Data visualization with npm)"
 description: " "
 date: 2023-11-10
-tags: [데이터시각화]
+tags: [npm]
 comments: true
 share: true
 ---

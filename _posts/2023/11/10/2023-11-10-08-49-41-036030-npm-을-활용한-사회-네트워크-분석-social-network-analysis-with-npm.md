@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 사회 네트워크 분석 (Social network analysis with npm)"
 description: " "
 date: 2023-11-10
-tags: [사회네트워크분석]
+tags: [npm]
 comments: true
 share: true
 ---
