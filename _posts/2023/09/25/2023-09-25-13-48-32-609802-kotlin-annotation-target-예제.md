@@ -3,7 +3,7 @@ layout: post
 title: "kotlin annotation target 예제"
 description: " "
 date: 2023-09-25
-tags: [Kotlin, Annotation]
+tags: [Kotlin]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "React Hooks를 이용한 Two-way Data Binding 구현하기"
 description: " "
 date: 2023-09-15
-tags: [React, ReactHooks]
+tags: [React]
 comments: true
 share: true
 ---

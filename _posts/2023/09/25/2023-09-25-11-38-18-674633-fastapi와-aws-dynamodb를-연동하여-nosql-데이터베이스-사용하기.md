@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 AWS DynamoDB를 연동하여 NoSQL 데이터베이스 사용하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, DynamoDB]
+tags: [FastAPI]
 comments: true
 share: true
 ---

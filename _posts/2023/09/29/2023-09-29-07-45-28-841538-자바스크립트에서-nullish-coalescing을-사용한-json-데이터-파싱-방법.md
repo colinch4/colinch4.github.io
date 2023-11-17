@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트에서 Nullish Coalescing을 사용한 JSON 데이터 파싱 방법"
 description: " "
 date: 2023-09-29
-tags: [nullishcoalescing]
+tags: [javascript]
 comments: true
 share: true
 ---

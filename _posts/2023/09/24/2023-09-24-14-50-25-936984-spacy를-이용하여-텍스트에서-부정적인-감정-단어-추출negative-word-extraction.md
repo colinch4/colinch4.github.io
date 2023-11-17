@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트에서 부정적인 감정 단어 추출(Negative Word Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy, NegativeWordExtraction]
+tags: [SpaCy]
 comments: true
 share: true
 ---

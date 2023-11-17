@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용하여 텍스트의 문맥 추론(Contextual Inference)"
 description: " "
 date: 2023-09-24
-tags: [NLProc, SpaCy]
+tags: [SpaCy]
 comments: true
 share: true
 ---

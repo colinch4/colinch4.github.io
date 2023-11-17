@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 Firebase Realtime Database를 연동하여 실시간 데이터 동기화하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, Firebase]
+tags: [FastAPI]
 comments: true
 share: true
 ---

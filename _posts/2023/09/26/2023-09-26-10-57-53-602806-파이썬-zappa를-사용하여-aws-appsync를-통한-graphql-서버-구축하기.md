@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 Zappa를 사용하여 AWS AppSync를 통한 GraphQL 서버 구축하기"
 description: " "
 date: 2023-09-26
-tags: [Zappa, AppSync]
+tags: [Zappa]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 Firebase Cloud Messaging을 연동하여 푸시 알림 서비스 구현하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, FirebaseCloudMessaging]
+tags: [FastAPI]
 comments: true
 share: true
 ---

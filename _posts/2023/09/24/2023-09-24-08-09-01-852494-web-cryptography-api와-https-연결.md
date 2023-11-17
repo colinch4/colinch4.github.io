@@ -3,7 +3,7 @@ layout: post
 title: "Web Cryptography API와 HTTPS 연결"
 description: " "
 date: 2023-09-24
-tags: [WebCryptographyAPI, HTTPS]
+tags: [javascript]
 comments: true
 share: true
 ---

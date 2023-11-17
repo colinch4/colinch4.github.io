@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js의 computed 속성과 watch 속성을 활용한 Two-way Data Binding 실시간 감지 구현 방법 비교 분석하기"
 description: " "
 date: 2023-09-15
-tags: [VueJS, computed, watch, TwoWayDataBinding]
+tags: [TwoWayDataBinding]
 comments: true
 share: true
 ---

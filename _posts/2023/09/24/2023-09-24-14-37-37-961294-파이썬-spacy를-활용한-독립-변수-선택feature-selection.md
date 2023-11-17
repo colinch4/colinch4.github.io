@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 독립 변수 선택(Feature Selection)"
 description: " "
 date: 2023-09-24
-tags: [FeatureSelection]
+tags: [SpaCy]
 comments: true
 share: true
 ---

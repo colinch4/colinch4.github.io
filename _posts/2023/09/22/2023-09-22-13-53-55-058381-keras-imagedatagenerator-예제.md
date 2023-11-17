@@ -3,7 +3,7 @@ layout: post
 title: "keras imagedatagenerator 예제"
 description: " "
 date: 2023-09-22
-tags: [Keras, ImageDataGenerator]
+tags: [python]
 comments: true
 share: true
 ---

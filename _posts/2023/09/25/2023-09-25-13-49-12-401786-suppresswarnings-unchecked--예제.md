@@ -3,7 +3,7 @@ layout: post
 title: "@suppresswarnings( unchecked ) 예제"
 description: " "
 date: 2023-09-25
-tags: [Java, Generics]
+tags: [Java]
 comments: true
 share: true
 ---

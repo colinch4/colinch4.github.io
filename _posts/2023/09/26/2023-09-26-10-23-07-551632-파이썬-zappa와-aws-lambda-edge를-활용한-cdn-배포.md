@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 Zappa와 AWS Lambda Edge를 활용한 CDN 배포"
 description: " "
 date: 2023-09-26
-tags: [Zappa, AWSLambda]
+tags: [Zappa]
 comments: true
 share: true
 ---

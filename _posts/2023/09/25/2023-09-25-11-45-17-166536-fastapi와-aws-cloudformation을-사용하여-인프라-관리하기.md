@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 AWS CloudFormation을 사용하여 인프라 관리하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, AWSCloudFormation]
+tags: [FastAPI]
 comments: true
 share: true
 ---

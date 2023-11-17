@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 Firebase Cloud Firestore를 연동하여 데이터베이스 사용하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, Firebase]
+tags: [FastAPI]
 comments: true
 share: true
 ---

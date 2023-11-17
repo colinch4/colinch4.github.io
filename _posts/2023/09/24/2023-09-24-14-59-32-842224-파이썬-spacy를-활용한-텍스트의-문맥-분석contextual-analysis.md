@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 텍스트의 문맥 분석(Contextual Analysis)"
 description: " "
 date: 2023-09-24
-tags: [NaturalLanguageProcessing, SpaCy]
+tags: [SpaCy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "vscode live sass compiler"
 description: " "
 date: 2023-09-22
-tags: [sass, vscode]
+tags: [sass]
 comments: true
 share: true
 ---

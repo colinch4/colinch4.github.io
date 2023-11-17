@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트에서 정보 손실 제어(Information Loss Control)"
 description: " "
 date: 2023-09-24
-tags: [NaturalLanguageProcessing, SpaCy]
+tags: [SpaCy]
 comments: true
 share: true
 ---

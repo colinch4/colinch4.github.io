@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 텍스트의 상반된 의미 분석(Opposite Meaning Analysis)"
 description: " "
 date: 2023-09-24
-tags: [NaturalLanguageProcessing, TextAnalysis]
+tags: [SpaCy]
 comments: true
 share: true
 ---

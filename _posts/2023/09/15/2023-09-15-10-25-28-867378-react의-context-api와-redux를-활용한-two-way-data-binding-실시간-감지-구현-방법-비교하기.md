@@ -3,7 +3,7 @@ layout: post
 title: "React의 Context API와 Redux를 활용한 Two-way Data Binding 실시간 감지 구현 방법 비교하기"
 description: " "
 date: 2023-09-15
-tags: [React, ContextAPI, Redux, TwoWayDataBinding]
+tags: [TwoWayDataBinding]
 comments: true
 share: true
 ---

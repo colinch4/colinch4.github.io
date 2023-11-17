@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 텍스트에서 대조적 의미 분석(Contrastive Meaning Analysis)"
 description: " "
 date: 2023-09-24
-tags: [NaturalLanguageProcessing, ContrastiveMeaningAnalysis]
+tags: [SpaCy]
 comments: true
 share: true
 ---

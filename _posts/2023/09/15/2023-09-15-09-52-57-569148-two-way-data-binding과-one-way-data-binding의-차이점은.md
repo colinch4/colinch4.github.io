@@ -3,7 +3,7 @@ layout: post
 title: "Two-way Data Binding과 One-way Data Binding의 차이점은?"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding, OneWayDataBinding]
+tags: [TwoWayDataBinding]
 comments: true
 share: true
 ---

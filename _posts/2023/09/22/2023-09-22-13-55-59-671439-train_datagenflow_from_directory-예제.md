@@ -3,7 +3,7 @@ layout: post
 title: "train_datagen.flow_from_directory 예제"
 description: " "
 date: 2023-09-22
-tags: [ImageDataGenerator]
+tags: [python]
 comments: true
 share: true
 ---

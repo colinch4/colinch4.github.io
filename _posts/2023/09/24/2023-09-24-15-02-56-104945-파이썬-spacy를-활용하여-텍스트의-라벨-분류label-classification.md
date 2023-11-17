@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용하여 텍스트의 라벨 분류(Label Classification)"
 description: " "
 date: 2023-09-24
-tags: [spaCy, labelclassification]
+tags: [SpaCy]
 comments: true
 share: true
 ---

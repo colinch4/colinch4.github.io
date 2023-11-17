@@ -3,7 +3,7 @@ layout: post
 title: "requestAnimationFrame을 이용한 반짝이는 애니메이션 만들기"
 description: " "
 date: 2023-10-18
-tags: [requestAnimationFrame]
+tags: [javascript]
 comments: true
 share: true
 ---

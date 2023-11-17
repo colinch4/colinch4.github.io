@@ -3,7 +3,7 @@ layout: post
 title: "파이썬을 사용한 FaaS(Function as a Service) 개발 방법"
 description: " "
 date: 2023-09-20
-tags: [FaaS]
+tags: [python]
 comments: true
 share: true
 ---

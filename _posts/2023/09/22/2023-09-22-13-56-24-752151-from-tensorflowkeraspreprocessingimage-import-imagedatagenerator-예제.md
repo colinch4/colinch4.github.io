@@ -3,7 +3,7 @@ layout: post
 title: "from tensorflow.keras.preprocessing.image import imagedatagenerator 예제"
 description: " "
 date: 2023-09-22
-tags: [tensorflow, keras]
+tags: [python]
 comments: true
 share: true
 ---

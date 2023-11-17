@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트에서 이중 부정 문장 분석(Double Negative Sentence Analysis)"
 description: " "
 date: 2023-09-24
-tags: [natural]
+tags: [SpaCy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "kafka partition consumer"
 description: " "
 date: 2023-09-22
-tags: [BigData, Kafka]
+tags: [kafka]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트의 감정 분석(Sentiment Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SentimentAnalysis]
+tags: [SpaCy]
 comments: true
 share: true
 ---

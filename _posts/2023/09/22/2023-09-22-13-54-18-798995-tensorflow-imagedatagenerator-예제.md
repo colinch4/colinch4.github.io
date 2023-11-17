@@ -3,7 +3,7 @@ layout: post
 title: "tensorflow imagedatagenerator 예제"
 description: " "
 date: 2023-09-22
-tags: [tensorflow, ImageDataGenerator]
+tags: [python]
 comments: true
 share: true
 ---

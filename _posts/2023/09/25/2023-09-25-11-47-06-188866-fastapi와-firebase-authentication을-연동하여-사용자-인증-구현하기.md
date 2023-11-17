@@ -3,7 +3,7 @@ layout: post
 title: "FastAPI와 Firebase Authentication을 연동하여 사용자 인증 구현하기"
 description: " "
 date: 2023-09-25
-tags: [FastAPI, Firebase]
+tags: [FastAPI]
 comments: true
 share: true
 ---
