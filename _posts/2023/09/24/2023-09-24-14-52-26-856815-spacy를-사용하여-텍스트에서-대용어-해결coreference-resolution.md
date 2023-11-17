@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에서 대용어 해결(Coreference Resolution)"
 description: " "
 date: 2023-09-24
-tags: [NaturalLanguageProcessing, CoreferenceResolution]
+tags: [SpaCy]
 comments: true
 share: true
 ---
