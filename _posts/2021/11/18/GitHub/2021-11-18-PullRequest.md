@@ -3,7 +3,7 @@ layout: post
 title: "[github] Pull Request"
 description: " "
 date: 2021-11-18
-tags: [github]
+tags: [git]
 comments: true
 share: true
 ---

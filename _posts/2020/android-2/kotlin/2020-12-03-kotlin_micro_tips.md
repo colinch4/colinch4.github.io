@@ -3,7 +3,7 @@ layout: post
 title: "[코틀린] 기초 함수"
 description: " "
 date: 2020-12-03
-tags: [Kotlin]
+tags: [kotlin]
 comments: true
 share: true
 ---

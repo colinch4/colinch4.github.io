@@ -3,7 +3,7 @@ layout: post
 title: "[코틀린] Kotlin’s hidden costs - Part.3"
 description: " "
 date: 2020-12-03
-tags: [Kotlin]
+tags: [kotlin]
 comments: true
 share: true
 ---

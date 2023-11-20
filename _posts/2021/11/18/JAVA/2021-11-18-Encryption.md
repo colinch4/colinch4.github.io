@@ -3,7 +3,7 @@ layout: post
 title: "[JAVA] Encryption"
 description: " "
 date: 2021-11-18
-tags: [JAVA]
+tags: [java]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[코틀린기초] 26. getter 와 setter"
 description: " "
 date: 2020-12-01
-tags: [Kotlin]
+tags: [kotlin]
 comments: true
 share: true
 ---  

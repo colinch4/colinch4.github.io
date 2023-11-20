@@ -3,7 +3,7 @@ layout: post
 title: "thymeleaf alert message 예제"
 description: " "
 date: 2023-09-25
-tags: [Java]
+tags: [java]
 comments: true
 share: true
 ---

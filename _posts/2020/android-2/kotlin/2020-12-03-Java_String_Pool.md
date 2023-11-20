@@ -3,7 +3,7 @@ layout: post
 title: "[코틀린] Java String Pool"
 description: " "
 date: 2020-12-03
-tags: [Kotlin]
+tags: [kotlin]
 comments: true
 share: true
 ---
