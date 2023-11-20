@@ -3,7 +3,7 @@ layout: post
 title: "[Docker] 4. Docker Swarm"
 description: " "
 date: 2020-01-04
-tags: [Docker]
+tags: [docker]
 comments: true
 share: true
 ---

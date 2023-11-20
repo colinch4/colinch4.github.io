@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 사용하여 JavaScript 프로젝트의 테스트 커버리지 확인하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

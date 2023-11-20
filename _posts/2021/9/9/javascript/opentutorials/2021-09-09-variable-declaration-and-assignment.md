@@ -3,7 +3,7 @@ layout: post
 title: "[JavaScript] 변수 선언 / 값 할당"
 description: " "
 date: 2021-09-09
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

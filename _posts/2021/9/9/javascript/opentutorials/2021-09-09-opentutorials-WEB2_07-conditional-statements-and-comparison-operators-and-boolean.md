@@ -3,7 +3,7 @@ layout: post
 title: "[JavaScript] 조건문과 비교 연산자 그리고 불리언"
 description: " "
 date: 2021-09-09
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

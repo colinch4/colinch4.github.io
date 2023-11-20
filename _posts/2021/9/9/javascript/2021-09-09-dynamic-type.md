@@ -3,7 +3,7 @@ layout: post
 title: "[JavaScript] 동적 형 지정 / 자동 형 변환"
 description: " "
 date: 2021-09-09
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ngModelOptions를 활용한 Two-way Data Binding 커스텀 디렉티브 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---

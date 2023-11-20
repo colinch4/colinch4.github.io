@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 사용하여 JavaScript 프로젝트의 로그인 환경 설정하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

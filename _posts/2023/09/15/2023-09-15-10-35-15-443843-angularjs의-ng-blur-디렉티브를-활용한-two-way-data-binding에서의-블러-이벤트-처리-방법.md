@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-blur 디렉티브를 활용한 Two-way Data Binding에서의 블러 이벤트 처리 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---

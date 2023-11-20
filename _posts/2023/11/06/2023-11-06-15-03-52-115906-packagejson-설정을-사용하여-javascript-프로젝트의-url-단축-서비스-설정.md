@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 사용하여 JavaScript 프로젝트의 URL 단축 서비스 설정"
 description: " "
 date: 2023-11-06
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

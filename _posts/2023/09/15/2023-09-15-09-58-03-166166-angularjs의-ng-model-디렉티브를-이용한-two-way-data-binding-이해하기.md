@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-model 디렉티브를 이용한 Two-way Data Binding 이해하기"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---

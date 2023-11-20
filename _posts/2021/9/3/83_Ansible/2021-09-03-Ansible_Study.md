@@ -3,7 +3,7 @@ layout: post
 title: "[Ansible] Ansible 정리"
 description: " "
 date: 2021-09-03
-tags: [Ansible]
+tags: [개발]
 comments: true
 share: true
 ---

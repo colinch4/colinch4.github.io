@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ngModelOptions를 이용한 Two-way Data Binding 유효성 검사 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-model과 Vue.js의 v-model을 이용한 Two-way Data Binding 비교 분석하기"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---

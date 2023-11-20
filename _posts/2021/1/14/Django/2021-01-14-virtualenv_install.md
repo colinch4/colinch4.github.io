@@ -3,7 +3,7 @@ layout: post
 title: "[Django] VirtualEnv 설치 (OS X)"
 description: " "
 date: 2021-01-14
-tags: [Django]
+tags: [django]
 comments: true
 share: true
 ---

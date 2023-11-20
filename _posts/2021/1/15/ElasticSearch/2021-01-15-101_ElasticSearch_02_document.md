@@ -3,7 +3,7 @@ layout: post
 title: "[ElasticSearch] 2장. 엘라스틱서치의 구성 요소"
 description: " "
 date: 2021-01-15
-tags: [ElasticSearch]
+tags: [Solr]
 comments: true
 share: true
 ---

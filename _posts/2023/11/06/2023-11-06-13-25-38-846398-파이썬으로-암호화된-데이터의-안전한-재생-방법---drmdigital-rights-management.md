@@ -3,7 +3,7 @@ layout: post
 title: "파이썬으로 암호화된 데이터의 안전한 재생 방법 - DRM(Digital Rights Management)"
 description: " "
 date: 2023-11-06
-tags: [Python]
+tags: [python]
 comments: true
 share: true
 ---

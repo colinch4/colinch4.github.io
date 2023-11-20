@@ -3,7 +3,7 @@ layout: post
 title: "[JavaScript] 변수와 대입 연산자"
 description: " "
 date: 2021-09-09
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

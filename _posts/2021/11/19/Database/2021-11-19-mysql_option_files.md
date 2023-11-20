@@ -3,7 +3,7 @@ layout: post
 title: "[Database] MySQL Option Files"
 description: " "
 date: 2021-11-19
-tags: [Database]
+tags: [sql]
 comments: true
 share: true
 ---

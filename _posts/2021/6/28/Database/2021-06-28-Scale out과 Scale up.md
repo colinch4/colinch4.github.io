@@ -3,7 +3,7 @@ layout: post
 title: "[DB] Scale up 과 Scale out"
 description: " "
 date: 2021-06-28
-tags: [DB]
+tags: [SQL]
 comments: true
 share: true
 ---

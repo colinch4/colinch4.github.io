@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 활용하여 JavaScript 프로젝트의 실시간 알림 설정하기"
 description: " "
 date: 2023-11-06
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

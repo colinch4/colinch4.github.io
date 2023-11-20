@@ -3,7 +3,7 @@ layout: post
 title: "[Container] 2. K8S solution"
 description: " "
 date: 2021-09-03
-tags: [Container]
+tags: [개발]
 comments: true
 share: true
 ---

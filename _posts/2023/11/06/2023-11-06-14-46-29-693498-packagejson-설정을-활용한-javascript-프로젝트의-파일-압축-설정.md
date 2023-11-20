@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 활용한 JavaScript 프로젝트의 파일 압축 설정"
 description: " "
 date: 2023-11-06
-tags: [JavaScript]
+tags: [javascript]
 comments: true
 share: true
 ---

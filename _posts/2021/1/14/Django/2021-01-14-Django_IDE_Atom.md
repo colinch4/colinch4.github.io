@@ -3,7 +3,7 @@ layout: post
 title: "[Django] Atom을 Python 개발 툴로 사용하기 (OS x)"
 description: " "
 date: 2021-01-14
-tags: [Django]
+tags: [django]
 comments: true
 share: true
 ---

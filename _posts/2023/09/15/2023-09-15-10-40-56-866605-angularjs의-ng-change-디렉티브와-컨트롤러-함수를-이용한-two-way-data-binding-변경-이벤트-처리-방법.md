@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-change 디렉티브와 컨트롤러 함수를 이용한 Two-way Data Binding 변경 이벤트 처리 방법"
 description: " "
 date: 2023-09-15
-tags: [AngularJS]
+tags: [angularjs]
 comments: true
 share: true
 ---
