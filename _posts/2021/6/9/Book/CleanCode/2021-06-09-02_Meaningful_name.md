@@ -3,7 +3,7 @@ layout: post
 title: "[Clean Code] 2장 의미 있는 이름"
 description: " "
 date: 2021-06-09
-tags: [Book]
+tags: [book]
 comments: true
 share: true
 ---

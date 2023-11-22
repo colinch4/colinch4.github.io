@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 람다 표현식"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

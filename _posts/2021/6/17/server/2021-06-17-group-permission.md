@@ -3,7 +3,7 @@ layout: post
 title: "[server] 리눅스에서 그룹 권한 설정하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

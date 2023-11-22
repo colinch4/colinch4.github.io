@@ -3,7 +3,7 @@ layout: post
 title: "[용어정리] SEM (전략적 기업 경영, Strategic Enterprise Management)"
 description: " "
 date: 2021-09-16
-tags: [용어정리]
+tags: [개발]
 comments: true
 share: true
 ---

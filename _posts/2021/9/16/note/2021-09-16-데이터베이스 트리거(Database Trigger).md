@@ -3,7 +3,7 @@ layout: post
 title: "[용어정리] 데이터베이스 트리거(Database Trigger)"
 description: " "
 date: 2021-09-16
-tags: [용어정리]
+tags: [개발]
 comments: true
 share: true
 ---

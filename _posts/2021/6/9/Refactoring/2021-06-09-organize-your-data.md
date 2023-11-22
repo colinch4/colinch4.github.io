@@ -3,7 +3,7 @@ layout: post
 title: "[Refactoring] 데이터 체계화"
 description: " "
 date: 2021-06-09
-tags: [Refactoring]
+tags: [개발]
 comments: true
 share: true
 ---

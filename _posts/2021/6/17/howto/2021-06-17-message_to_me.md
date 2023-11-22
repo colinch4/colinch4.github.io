@@ -3,7 +3,7 @@ layout: post
 title: "[howto] 작업 결과를 내게 알려주기"
 description: " "
 date: 2021-06-17
-tags: [howto]
+tags: [개발]
 comments: true
 share: true
 ---

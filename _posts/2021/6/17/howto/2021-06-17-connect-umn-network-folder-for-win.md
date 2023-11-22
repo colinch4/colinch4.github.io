@@ -3,7 +3,7 @@ layout: post
 title: "[howto] Windows에서 네트워크 드라이브 연결하기"
 description: " "
 date: 2021-06-17
-tags: [howto]
+tags: [개발]
 comments: true
 share: true
 ---

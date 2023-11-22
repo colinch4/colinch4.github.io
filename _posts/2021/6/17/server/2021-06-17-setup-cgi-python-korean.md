@@ -3,7 +3,7 @@ layout: post
 title: "[server] 리눅스 서버에 파이썬 cgi 환경설정하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 함수형 프로그래밍 기법"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

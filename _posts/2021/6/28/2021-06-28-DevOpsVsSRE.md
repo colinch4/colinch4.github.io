@@ -3,7 +3,7 @@ layout: post
 title: "SRE (Site Reliability Engineering)"
 description: " "
 date: 2021-06-28
-tags: [SRE]
+tags: [개발]
 comments: true
 share: true
 ---

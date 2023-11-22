@@ -3,7 +3,7 @@ layout: post
 title: "[SpringBoot] Spring Boot 스프링 부트 기초"
 description: " "
 date: 2021-06-07
-tags: [SpringBoot]
+tags: [spring]
 comments: true
 share: true
 ---

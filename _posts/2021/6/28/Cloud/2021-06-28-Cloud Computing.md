@@ -3,7 +3,7 @@ layout: post
 title: "[cloud] Cloud Computing"
 description: " "
 date: 2021-06-28
-tags: [cloud]
+tags: [web]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[데이터사이언스] 데이터과학 강의자료"
 description: " "
 date: 2021-06-17
-tags: [데이터사이언스]
+tags: [개발]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[server] 서버의 현재상황 모니터링하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

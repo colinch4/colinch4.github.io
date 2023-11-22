@@ -3,7 +3,7 @@ layout: post
 title: "[etc] Web Server 와 WAS 차이"
 description: " "
 date: 2021-06-18
-tags: [etc]
+tags: [개발]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[sketch] About sketch"
 description: " "
 date: 2021-09-09
-tags: [sketch]
+tags: [uxui]
 comments: true
 share: true
 ---

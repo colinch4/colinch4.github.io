@@ -3,7 +3,7 @@ layout: post
 title: "[데이터사이언스] 모두를 위한 딥러닝 강좌 시즌 1 by 김성훈 교수"
 description: " "
 date: 2021-06-17
-tags: [데이터사이언스]
+tags: [개발]
 comments: true
 share: true
 ---

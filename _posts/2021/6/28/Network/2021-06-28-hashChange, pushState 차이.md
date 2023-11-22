@@ -3,7 +3,7 @@ layout: post
 title: "[네트워크] hashChange, pushState 차이"
 description: " "
 date: 2021-06-28
-tags: [네트워크]
+tags: [network]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[etc] Local & Cookie & Session 비교"
 description: " "
 date: 2021-06-18
-tags: [etc]
+tags: [개발]
 comments: true
 share: true
 ---

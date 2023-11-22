@@ -3,7 +3,7 @@ layout: post
 title: "[데이터사이언스] 케라스 오픈 챗에서 유용한 자료"
 description: " "
 date: 2021-06-17
-tags: [데이터사이언스]
+tags: [개발]
 comments: true
 share: true
 ---

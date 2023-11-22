@@ -3,7 +3,7 @@ layout: post
 title: "[용어정리] 트랜잭션(Transaction)의 특성(ACID)"
 description: " "
 date: 2021-09-16
-tags: [용어정리]
+tags: [개발]
 comments: true
 share: true
 ---

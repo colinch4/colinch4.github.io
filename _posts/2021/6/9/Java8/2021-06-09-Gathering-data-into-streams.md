@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 스트림으로 데이터 수집"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

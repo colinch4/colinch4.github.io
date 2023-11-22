@@ -3,7 +3,7 @@ layout: post
 title: "[springcore] Spring IoC컨테이너와 Bean"
 description: " "
 date: 2021-06-18
-tags: [springcore]
+tags: [spring]
 comments: true
 share: true
 ---

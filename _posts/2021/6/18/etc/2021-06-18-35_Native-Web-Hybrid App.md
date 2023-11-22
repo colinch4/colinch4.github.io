@@ -3,7 +3,7 @@ layout: post
 title: "[etc] Native / Web / Hybrid App"
 description: " "
 date: 2021-06-18
-tags: [etc]
+tags: [개발]
 comments: true
 share: true
 ---

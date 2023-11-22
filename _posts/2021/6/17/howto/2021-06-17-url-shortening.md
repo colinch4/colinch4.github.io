@@ -3,7 +3,7 @@ layout: post
 title: "[howto] QR 코드와 URL 단축하기"
 description: " "
 date: 2021-06-17
-tags: [howto]
+tags: [개발]
 comments: true
 share: true
 ---

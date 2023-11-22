@@ -3,7 +3,7 @@ layout: post
 title: "[howto] YouTube 클립의 특정시간에 링크 걸어주기"
 description: " "
 date: 2021-06-17
-tags: [howto]
+tags: [개발]
 comments: true
 share: true
 ---

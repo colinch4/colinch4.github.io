@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 리팩토링, 테스팅, 디버깅"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

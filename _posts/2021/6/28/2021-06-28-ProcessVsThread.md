@@ -3,7 +3,7 @@ layout: post
 title: "Program vs Process vs Thread"
 description: " "
 date: 2021-06-28
-tags: [computer]
+tags: [개발]
 comments: true
 share: true
 ---

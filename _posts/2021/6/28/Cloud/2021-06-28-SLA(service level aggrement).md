@@ -3,7 +3,7 @@ layout: post
 title: "[cloud] SLA(Service Level Aggrement)"
 description: " "
 date: 2021-06-28
-tags: [cloud]
+tags: [web]
 comments: true
 share: true
 ---

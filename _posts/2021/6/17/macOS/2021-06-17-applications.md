@@ -3,7 +3,7 @@ layout: post
 title: "[macOS] 맥 추천 프로그램"
 description: " "
 date: 2021-06-17
-tags: [macOS]
+tags: [ios]
 comments: true
 share: true
 ---

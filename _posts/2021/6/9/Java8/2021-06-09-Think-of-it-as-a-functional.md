@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 함수형 관점으로 생각하기"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

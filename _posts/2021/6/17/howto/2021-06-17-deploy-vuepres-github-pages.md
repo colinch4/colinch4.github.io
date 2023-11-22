@@ -3,7 +3,7 @@ layout: post
 title: "[howto] Vuepress와 GitHub Pages로 웹 호스팅하기"
 description: " "
 date: 2021-06-17
-tags: [howto]
+tags: [개발]
 comments: true
 share: true
 ---

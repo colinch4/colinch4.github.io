@@ -3,7 +3,7 @@ layout: post
 title: "클린코드"
 description: " "
 date: 2021-06-28
-tags: [클린코드]
+tags: [개발]
 comments: true
 share: true
 ---

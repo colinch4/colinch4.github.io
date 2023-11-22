@@ -3,7 +3,7 @@ layout: post
 title: "[server] 깃을 통해 실행서버에 코드 배포하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

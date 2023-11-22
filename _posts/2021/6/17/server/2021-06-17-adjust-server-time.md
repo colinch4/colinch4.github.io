@@ -3,7 +3,7 @@ layout: post
 title: "[server] 서버 시간 조정하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

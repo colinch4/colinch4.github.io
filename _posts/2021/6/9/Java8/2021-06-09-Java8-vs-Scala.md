@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] OOP와 FP의 조화 : 자바8과 스칼라 비교"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

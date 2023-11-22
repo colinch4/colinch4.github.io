@@ -3,7 +3,7 @@ layout: post
 title: "[server] 웹서버에서 디렉토리 보이는 것 감추기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---

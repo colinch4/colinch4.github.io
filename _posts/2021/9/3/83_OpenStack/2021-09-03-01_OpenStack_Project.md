@@ -3,7 +3,7 @@ layout: post
 title: "[OpenStack] OpenStack Project"
 description: " "
 date: 2021-09-03
-tags: [OpenStack]
+tags: [개발]
 comments: true
 share: true
 ---

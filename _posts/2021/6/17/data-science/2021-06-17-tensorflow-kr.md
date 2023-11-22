@@ -3,7 +3,7 @@ layout: post
 title: "[데이터사이언스] 텐서플로우 코리아에서 스크랩"
 description: " "
 date: 2021-06-17
-tags: [데이터사이언스]
+tags: [개발]
 comments: true
 share: true
 ---

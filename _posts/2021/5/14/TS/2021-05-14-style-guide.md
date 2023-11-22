@@ -3,7 +3,7 @@ layout: post
 title: "[ts] Style Guide"
 description: " "
 date: 2021-05-14
-tags: [ts]
+tags: [typescript]
 comments: true
 share: true
 ---

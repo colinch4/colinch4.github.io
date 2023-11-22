@@ -3,7 +3,7 @@ layout: post
 title: "[Refactoring] 메서드 호출 단순화"
 description: " "
 date: 2021-06-09
-tags: [Refactoring]
+tags: [개발]
 comments: true
 share: true
 ---

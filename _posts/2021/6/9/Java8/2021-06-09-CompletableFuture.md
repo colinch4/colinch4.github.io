@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] CompletableFuture 조합할 수 있는 비동기 프로그래밍"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[MacOS] MacOS Commands"
 description: " "
 date: 2021-11-19
-tags: [MacOS]
+tags: [ios]
 comments: true
 share: true
 ---

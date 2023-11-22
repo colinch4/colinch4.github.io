@@ -3,7 +3,7 @@ layout: post
 title: "[실용주의 프로그래머] 실용주의 프로그래머"
 description: " "
 date: 2021-06-09
-tags: [Book]
+tags: [book]
 comments: true
 share: true
 ---

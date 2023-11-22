@@ -3,7 +3,7 @@ layout: post
 title: "[etc] 배치(batch)파일/쉘스크립트(shellscript)란?"
 description: " "
 date: 2021-06-18
-tags: [etc]
+tags: [개발]
 comments: true
 share: true
 ---

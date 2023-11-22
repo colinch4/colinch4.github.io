@@ -3,7 +3,7 @@ layout: post
 title: "[etc] 정규 표현식 (Regular Expressions)"
 description: " "
 date: 2021-06-18
-tags: [etc]
+tags: [개발]
 comments: true
 share: true
 ---

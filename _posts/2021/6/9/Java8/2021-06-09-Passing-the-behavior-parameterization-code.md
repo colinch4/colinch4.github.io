@@ -3,7 +3,7 @@ layout: post
 title: "[Java8] 동작 파라미터화 코드 전달하기"
 description: " "
 date: 2021-06-09
-tags: [Java8]
+tags: [java]
 comments: true
 share: true
 ---

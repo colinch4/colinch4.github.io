@@ -3,7 +3,7 @@ layout: post
 title: "[SpringBoot]Thymeleaf 사용하기"
 description: " "
 date: 2021-06-07
-tags: [SpringBoot]
+tags: [spring]
 comments: true
 share: true
 ---

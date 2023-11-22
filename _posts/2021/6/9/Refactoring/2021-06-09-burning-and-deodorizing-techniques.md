@@ -3,7 +3,7 @@ layout: post
 title: "[Refactoring] 구린내와 탈취 기법"
 description: " "
 date: 2021-06-09
-tags: [Refactoring]
+tags: [개발]
 comments: true
 share: true
 ---

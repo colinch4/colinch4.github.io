@@ -3,7 +3,7 @@ layout: post
 title: "[server] Vultr 서버 GUI 환경 구축하기"
 description: " "
 date: 2021-06-17
-tags: [server]
+tags: [web]
 comments: true
 share: true
 ---
