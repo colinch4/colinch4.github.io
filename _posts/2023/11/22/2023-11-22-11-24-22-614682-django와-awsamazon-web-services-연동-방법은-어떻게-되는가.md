@@ -84,12 +84,13 @@ def upload_file(request):
 
 ```html
 <!-- upload.html -->
-
+{% raw %}
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file" name="file">
     <button type="submit">Upload</button>
 </form>
+{% endraw %}
 ```
 
 ## 마무리

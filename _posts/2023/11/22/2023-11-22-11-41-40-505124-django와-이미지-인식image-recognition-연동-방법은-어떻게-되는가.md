@@ -53,6 +53,7 @@ def upload_image(request):
 이제, Django 템플릿을 작성하여 이미지를 업로드하는 폼을 만들고, 결과를 표시할 수 있습니다.
 
 ```html
+{% raw %}
 <!-- upload.html -->
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
@@ -63,6 +64,7 @@ def upload_image(request):
 {% if result %}
     <h1>Result: {{ result }}</h1>
 {% endif %}
+{% endraw %}
 ```
 
 위의 코드에서 `result`는 이미지 인식 결과를 표시하기 위한 변수입니다. 따라서, 이미지 인식 로직에서 결과를 템플릿으로 전달해야 합니다.
