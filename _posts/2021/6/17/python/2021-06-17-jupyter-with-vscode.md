@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] VS Code에서 Jupyter 돌리기"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[lib] Reachability란?"
 description: " "
 date: 2021-05-14
-tags: [lib]
+tags: [swift]
 comments: true
 share: true
 ---

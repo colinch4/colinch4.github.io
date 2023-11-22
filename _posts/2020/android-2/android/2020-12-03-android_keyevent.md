@@ -3,7 +3,7 @@ layout: post
 title: "[안드로이드] Android 키 입력 전달 메커니즘"
 description: " "
 date: 2020-12-03
-tags: [안드로이드]
+tags: [android]
 comments: true
 share: true
 ---

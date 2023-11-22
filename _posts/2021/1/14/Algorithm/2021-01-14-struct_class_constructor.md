@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] 구조체 / 클래스 / 생성자"
 description: " "
 date: 2021-01-14
-tags: [알고리즘]
+tags: [c++]
 comments: true
 share: true
 ---

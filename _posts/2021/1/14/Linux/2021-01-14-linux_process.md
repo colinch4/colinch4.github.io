@@ -3,7 +3,7 @@ layout: post
 title: "[리눅스] 프로세스에 대하여"
 description: " "
 date: 2021-01-14
-tags: [리눅스]
+tags: [linux]
 comments: true
 share: true
 ---

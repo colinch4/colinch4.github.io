@@ -3,7 +3,7 @@ layout: post
 title: "[React] 5장. state와 stateless"
 description: " "
 date: 2021-01-15
-tags: [React]
+tags: [react]
 comments: true
 share: true
 ---

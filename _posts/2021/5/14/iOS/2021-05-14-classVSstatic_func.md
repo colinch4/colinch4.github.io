@@ -3,7 +3,7 @@ layout: post
 title: "[iOS] class func vs staticfunc"
 description: " "
 date: 2021-05-14
-tags: [iOS]
+tags: [ios]
 comments: true
 share: true
 ---

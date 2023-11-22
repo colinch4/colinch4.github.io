@@ -3,7 +3,7 @@ layout: post
 title: "[웹] HTTP Message"
 description: " "
 date: 2021-01-14
-tags: [웹]
+tags: [network]
 comments: true
 share: true
 ---

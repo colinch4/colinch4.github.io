@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 로지스틱 회귀(Logistic Regression)"
 description: " "
 date: 2021-09-16
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

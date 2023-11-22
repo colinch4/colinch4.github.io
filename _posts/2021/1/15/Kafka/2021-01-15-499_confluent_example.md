@@ -3,7 +3,7 @@ layout: post
 title: "[Kafka] 10장. Kafka CI Tools 실습해보기"
 description: " "
 date: 2021-01-15
-tags: [Kafka]
+tags: [kafka]
 comments: true
 share: true
 ---

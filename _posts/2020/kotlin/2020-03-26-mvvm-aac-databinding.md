@@ -4,7 +4,7 @@ title: "[Kotlin] MVVM AAC Databinding 사용법"
 date: 2020-03-26 14:36
 category: 
 author: kskim2
-tags: [kotlin, mvvm]
+tags: [kotlin]
 description: "해당 문서는 안드로이드 공식 문서를 기반으로 만들어졌습니다. "
 summary: 
 ---

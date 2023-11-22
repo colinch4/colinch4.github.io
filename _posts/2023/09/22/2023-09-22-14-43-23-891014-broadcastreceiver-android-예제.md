@@ -3,7 +3,7 @@ layout: post
 title: "broadcastreceiver android 예제"
 description: " "
 date: 2023-09-22
-tags: [Android]
+tags: [android]
 comments: true
 share: true
 ---

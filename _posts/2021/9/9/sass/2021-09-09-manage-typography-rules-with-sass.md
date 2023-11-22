@@ -3,7 +3,7 @@ layout: post
 title: "[Sass] Sass로 타이포그래피 규칙 관리하기"
 description: " "
 date: 2021-09-09
-tags: [Sass]
+tags: [web]
 comments: true
 share: true
 ---

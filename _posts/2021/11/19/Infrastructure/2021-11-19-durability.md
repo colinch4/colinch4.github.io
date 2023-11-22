@@ -3,7 +3,7 @@ layout: post
 title: "[Infrastructure] Durability"
 description: " "
 date: 2021-11-19
-tags: [Infrastructure]
+tags: [aws]
 comments: true
 share: true
 ---

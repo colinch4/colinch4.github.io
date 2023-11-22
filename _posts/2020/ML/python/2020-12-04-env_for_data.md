@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 데이터 분석을 위한 파이썬 환경설정 "
 description: " "
 date: 2020-12-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

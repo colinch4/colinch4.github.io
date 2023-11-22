@@ -3,7 +3,7 @@ layout: post
 title: "[Kafka] 9장. 데이터 파이프라인 구축하기"
 description: " "
 date: 2021-01-15
-tags: [Kafka]
+tags: [kafka]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[iOS] iOS 실제 화면 크기의 서브 뷰 추가"
 description: " "
 date: 2021-05-14
-tags: [iOS]
+tags: [ios]
 comments: true
 share: true
 ---

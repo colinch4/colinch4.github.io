@@ -3,7 +3,7 @@ layout: post
 title: "[redux] Redux-Saga"
 description: " "
 date: 2021-05-14
-tags: [jreduxs]
+tags: [redux]
 comments: true
 share: true
 ---

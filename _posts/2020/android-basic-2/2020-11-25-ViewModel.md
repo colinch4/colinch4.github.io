@@ -3,7 +3,7 @@ layout: post
 title: "[안드로이드] ViewModel 이란"
 description: " "
 date: 2020-11-25
-tags: [Android]
+tags: [android]
 comments: true
 share: true
 ---

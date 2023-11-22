@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 에러&예외 (Errors and Exceptions)"
 description: " "
 date: 2021-06-18
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] 띄어쓰기로 구분된 문자열을 입력받아, 띄어쓰기 기준의 단어들을 하나씩 배열 안에 넣고 싶을"
 description: " "
 date: 2021-01-14
-tags: [알고리즘]
+tags: [c++]
 comments: true
 share: true
 ---

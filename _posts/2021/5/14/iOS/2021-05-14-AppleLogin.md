@@ -3,7 +3,7 @@ layout: post
 title: "[iOS] 애플 로그인"
 description: " "
 date: 2021-05-14
-tags: [iOS]
+tags: [ios]
 comments: true
 share: true
 ---

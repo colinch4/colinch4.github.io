@@ -3,7 +3,7 @@ layout: post
 title: "[데이터베이스] Relational Algebra1 (관계대수)"
 description: " "
 date: 2021-01-14
-tags: [데이터베이스]
+tags: [sql]
 comments: true
 share: true
 ---

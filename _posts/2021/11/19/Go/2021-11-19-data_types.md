@@ -3,7 +3,7 @@ layout: post
 title: "[Go] Data Types"
 description: " "
 date: 2021-11-19
-tags: [Go]
+tags: [go]
 comments: true
 share: true
 ---

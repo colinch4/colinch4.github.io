@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 나이브 베이즈(Naive Bayes)"
 description: " "
 date: 2021-09-16
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

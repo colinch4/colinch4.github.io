@@ -3,7 +3,7 @@ layout: post
 title: "[안드로이드] Task 와 LaunchMode"
 description: " "
 date: 2020-11-25
-tags: [Android]
+tags: [android]
 comments: true
 share: true
 ---

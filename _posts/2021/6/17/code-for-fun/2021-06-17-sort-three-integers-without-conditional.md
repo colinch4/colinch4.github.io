@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘]] 조건문 쓰지 않고 정수 3개 정렬하기"
 description: " "
 date: 2021-06-17
-tags: [알고리즘]
+tags: [c++]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[Objective-C++] Objective-C++ 은 무엇일까? "
 description: " "
 date: 2021-06-11
-tags: [Objective-C++]
+tags: [c++]
 comments: true
 share: true
 ---

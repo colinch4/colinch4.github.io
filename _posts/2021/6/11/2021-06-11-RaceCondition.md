@@ -3,7 +3,7 @@ layout: post
 title: "[programing] race condition (경쟁상태)"
 description: " "
 date: 2021-06-11
-tags: [programing]
+tags: [개발]
 comments: true
 share: true
 ---

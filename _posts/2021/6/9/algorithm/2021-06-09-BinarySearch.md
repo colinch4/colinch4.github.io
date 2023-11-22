@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] 이진 탐색(Binary Search)"
 description: " "
 date: 2021-06-09
-tags: [알고리즘]
+tags: [java]
 comments: true
 share: true
 ---

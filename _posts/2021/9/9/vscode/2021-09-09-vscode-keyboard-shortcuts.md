@@ -3,7 +3,7 @@ layout: post
 title: "[VSCode] Vscode Keyboard Shortcuts"
 description: " "
 date: 2021-09-09
-tags: [VSCode]
+tags: [ide]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[RxAndroid] RxAndroid Basic: Part2"
 description: " "
 date: 2020-12-03
-tags: [RxAndroid]
+tags: [rxandroid]
 comments: true
 share: true
 ---

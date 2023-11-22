@@ -3,7 +3,7 @@ layout: post
 title: "[RxJava] .flatMap() 과 .map()의 차이"
 description: " "
 date: 2020-12-03
-tags: [RxJava]
+tags: [rxjava]
 comments: true
 share: true
 ---

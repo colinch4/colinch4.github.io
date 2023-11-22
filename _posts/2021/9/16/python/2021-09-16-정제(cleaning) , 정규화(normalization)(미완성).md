@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 정제(cleaning) , 정규화(normalization)"
 description: " "
 date: 2021-09-16
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

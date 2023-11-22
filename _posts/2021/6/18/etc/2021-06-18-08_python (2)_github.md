@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 2. 깃허브 보충"
 description: " "
 date: 2021-06-18
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] Sphinx를 이용하여 파이썬 코드 문서화하기"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

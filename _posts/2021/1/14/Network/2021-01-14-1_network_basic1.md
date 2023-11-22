@@ -3,7 +3,7 @@ layout: post
 title: "[네트워크] 컴퓨터 네트워크 기본1"
 description: " "
 date: 2021-01-14
-tags: [네트워크]
+tags: [network]
 comments: true
 share: true
 ---

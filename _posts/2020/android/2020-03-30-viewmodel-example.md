@@ -3,7 +3,7 @@ layout: post
 title: 
 date: 2020-03-30 14:45
 author: kskim2
-tags: [architecture, mvvm]
+tags: [개발]
 summary: 
 description: "A little over two years ago, I was working on Android for Beginners; a class that takes students from zero programming to their first Android app. As part of the course, students build a very simple one screen app called Court-Counter."
 comments: true

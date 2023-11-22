@@ -3,7 +3,7 @@ layout: post
 title: "[DB] Data Modeling"
 description: " "
 date: 2021-06-28
-tags: [SQL]
+tags: [sql]
 comments: true
 share: true
 ---

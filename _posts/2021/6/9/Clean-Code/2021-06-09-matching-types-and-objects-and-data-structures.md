@@ -3,7 +3,7 @@ layout: post
 title: "[CleanCode] 형식 마추기"
 description: " "
 date: 2021-06-09
-tags: [CleanCode]
+tags: [java]
 comments: true
 share: true
 ---

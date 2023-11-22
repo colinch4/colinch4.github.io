@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] Disjoint-Set(서로수 집합) 알고리즘"
 description: " "
 date: 2021-06-09
-tags: [알고리즘]
+tags: [java]
 comments: true
 share: true
 ---

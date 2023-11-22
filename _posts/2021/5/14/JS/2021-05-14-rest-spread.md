@@ -3,7 +3,7 @@ layout: post
 title: "[js] rest 파라미터와 스프레드"
 description: " "
 date: 2021-05-14
-tags: [js]
+tags: [javascript]
 comments: true
 share: true
 ---

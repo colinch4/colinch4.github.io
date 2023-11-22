@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] 비트 조작 기법"
 description: " "
 date: 2021-01-14
-tags: [알고리즘]
+tags: [c++]
 comments: true
 share: true
 ---

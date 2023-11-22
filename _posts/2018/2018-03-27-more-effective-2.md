@@ -3,7 +3,7 @@ layout: post
 title: "항목 2 : 가능한 c++ 스타일의 캐스트를 즐겨 쓰자"
 description: "캐스트(cast, 형변환)은 프로그래밍계의 1급 기피대상이다."
 date: 2018-03-27
-tags: [More Effective C++]
+tags: [c++]
 comments: true
 share: true
 ---

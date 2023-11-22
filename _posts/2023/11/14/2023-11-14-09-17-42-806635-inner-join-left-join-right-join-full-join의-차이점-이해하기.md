@@ -3,7 +3,7 @@ layout: post
 title: "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN의 차이점 이해하기"
 description: " "
 date: 2023-11-14
-tags: [SQL]
+tags: [sql]
 comments: true
 share: true
 ---

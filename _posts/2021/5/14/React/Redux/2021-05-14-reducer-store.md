@@ -3,7 +3,7 @@ layout: post
 title: "[redux] 리듀서, 스토어"
 description: " "
 date: 2021-05-14
-tags: [jreduxs]
+tags: [redux]
 comments: true
 share: true
 ---

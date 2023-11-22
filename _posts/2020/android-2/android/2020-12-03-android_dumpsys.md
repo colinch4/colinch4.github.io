@@ -3,7 +3,7 @@ layout: post
 title: "[안드로이드] Dumpsys"
 description: " "
 date: 2020-12-03
-tags: [안드로이드]
+tags: [android]
 comments: true
 share: true
 ---

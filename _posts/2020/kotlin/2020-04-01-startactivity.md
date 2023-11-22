@@ -4,7 +4,7 @@ title: "[Kotlin] startactivity, putextra"
 date: 2020-04-01 14:21
 category: 
 author: kskim2
-tags: [kotlin, mvvm]
+tags: [kotlin]
 description: "코틀린에서는 더이상 자바처럼  findViewById  할 필요가 없다. 코드에  `view`의  `id`를 적으면 자동완성에 어느 layout의 view를 import 할 것인지 표시된다. 코드에서 메인 레이아웃에 있는 ‘nextBtn’라는 id의 버튼 View를 호출하면, 상단에 다음과 같이 import 된다."
 summary: 
 ---

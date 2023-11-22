@@ -3,7 +3,7 @@ layout: post
 title: "[AWS] services - Front-End Web 과 Mobile"
 description: " "
 date: 2021-11-18
-tags: [AWS]
+tags: [aws]
 comments: true
 share: true
 ---

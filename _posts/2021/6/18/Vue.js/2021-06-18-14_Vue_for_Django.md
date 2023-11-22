@@ -3,7 +3,7 @@ layout: post
 title: "[Vuetify] 14. Vue for Django"
 description: " "
 date: 2021-06-18
-tags: [Vuetify]
+tags: [vuetify]
 comments: true
 share: true
 ---

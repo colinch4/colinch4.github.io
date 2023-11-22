@@ -3,7 +3,7 @@ layout: post
 title: "[리눅스] grep 명령어 정리"
 description: " "
 date: 2021-01-14
-tags: [리눅스]
+tags: [linux]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[AWS] CloudWatch"
 description: " "
 date: 2021-11-19
-tags: [AWS]
+tags: [aws]
 comments: true
 share: true
 ---

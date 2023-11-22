@@ -3,7 +3,7 @@ layout: post
 title: "[Tensorflow] Multinomial Logistic Regression"
 description: " "
 date: 2020-12-04
-tags: [Tensorflow]
+tags: [tensorflow]
 comments: true
 share: true
 ---

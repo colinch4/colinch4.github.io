@@ -3,7 +3,7 @@ layout: post
 title: "[js] 프로토타입"
 description: " "
 date: 2021-05-14
-tags: [js]
+tags: [javascript]
 comments: true
 share: true
 ---

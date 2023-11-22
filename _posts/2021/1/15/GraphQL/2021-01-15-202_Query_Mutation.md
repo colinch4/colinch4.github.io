@@ -3,7 +3,7 @@ layout: post
 title: "[GraphQL] 2장. 쿼리와 뮤테이션"
 description: " "
 date: 2021-01-15
-tags: [GraphQL]
+tags: [graphql]
 comments: true
 share: true
 ---

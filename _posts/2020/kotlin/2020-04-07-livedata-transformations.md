@@ -4,7 +4,7 @@ title: "[Kotlin] Transformations로 LiveData 변형하기"
 date: 2020-04-07 15:07
 category: 
 author: kskim2
-tags: [kotlin, livedata]
+tags: [kotlin]
 description: "프로젝트 개발시 ViewModel을 사용함과 동시에 궁합이 잘 맞는 LiveData를 많이 사용한다. 그러나 Observavle을 위해  LiveData를 그 자체로만 사용한다면 LiveData의 편리함을 모두 누릴 수 없다. Transformations 클래스를 알아보면서 평소 생각없이 사용했던 LiveData를 더 가치있게 만들어보자."
 summary: 
 ---

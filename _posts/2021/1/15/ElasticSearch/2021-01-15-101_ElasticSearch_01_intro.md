@@ -3,7 +3,7 @@ layout: post
 title: "[ElasticSearch] 1장. 엘라스틱서치 Intro"
 description: " "
 date: 2021-01-15
-tags: [Solr]
+tags: [solr]
 comments: true
 share: true
 ---

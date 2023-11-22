@@ -3,7 +3,7 @@ layout: post
 title: "[Linux] Linux Commands"
 description: " "
 date: 2021-11-19
-tags: [Linux]
+tags: [linux]
 comments: true
 share: true
 ---

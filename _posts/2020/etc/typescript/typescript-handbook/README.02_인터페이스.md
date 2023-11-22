@@ -3,7 +3,7 @@ layout: post
 title: "[Typescript] 2. 인터페이스"
 description: " "
 date: 2020-12-03
-tags: [Typescript]
+tags: [typescript]
 comments: true
 share: true
 ---

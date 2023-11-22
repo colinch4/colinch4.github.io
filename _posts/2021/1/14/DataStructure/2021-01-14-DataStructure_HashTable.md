@@ -3,7 +3,7 @@ layout: post
 title: "[자료구조] Hash Table"
 description: " "
 date: 2021-01-14
-tags: [자료구조]
+tags: [cs]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[Sass] import-once 믹스인으로 스타일 유출 방지하기"
 description: " "
 date: 2021-09-09
-tags: [Sass]
+tags: [web]
 comments: true
 share: true
 ---

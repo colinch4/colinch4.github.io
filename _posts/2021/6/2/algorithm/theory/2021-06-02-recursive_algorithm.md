@@ -3,7 +3,7 @@ layout: post
 title: "[알고리즘] Recursive Algorithm"
 description: " "
 date: 2021-06-02
-tags: [알고리즘]
+tags: [python]
 comments: true
 share: true
 ---

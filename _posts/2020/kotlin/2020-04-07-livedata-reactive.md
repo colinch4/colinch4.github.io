@@ -4,7 +4,7 @@ title: "[Kotlin] Transformations와 MediatorLiveData를 이용한 Reactive 패�
 date: 2020-04-07 15:13
 category: 
 author: kskim2
-tags: [kotlin, livedata]
+tags: [kotlin]
 description: "Reactive 아키텍처는 수년 동안 Android에서 인기있는 주제였습니다. Android 컨퍼런스에서 꾸준히 언급 된 주제이며,보통 RxJava를 사용한 예제와 함께 언급되었었습니다.(아래의 Rx 섹션을 참조 해 주세요). Reactive 프로그래밍은 데이터 흐름 및 변경 사항 전파와 관련된 패러다임으로, 앱 구축을 단순화하고 비동기 동작의 결과값을 표시 할 수 있습니다."
 summary: 
 ---

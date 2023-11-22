@@ -3,7 +3,7 @@ layout: post
 title: "[함수형프로그래밍] Higher Order Function (고차 함수)"
 description: " "
 date: 2021-06-11
-tags: [함수형프로그래밍]
+tags: [swift]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] PyCharm 구동시 에러 해결"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

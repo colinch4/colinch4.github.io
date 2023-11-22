@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] Flask를 이용한 앱의 반응이 너무 느릴 때"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

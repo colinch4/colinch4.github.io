@@ -3,7 +3,7 @@ layout: post
 title: "[js] JS와 브라우저"
 description: " "
 date: 2021-05-14
-tags: [js]
+tags: [javascript]
 comments: true
 share: true
 ---

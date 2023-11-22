@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] context manager를 이용하여 프로파일용 타이머 쉽게 구현하기"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

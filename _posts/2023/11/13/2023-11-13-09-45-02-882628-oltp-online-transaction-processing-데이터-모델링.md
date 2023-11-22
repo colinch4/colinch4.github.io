@@ -3,7 +3,7 @@ layout: post
 title: "OLTP (Online Transaction Processing) 데이터 모델링"
 description: " "
 date: 2023-11-13
-tags: [SQL]
+tags: [sql]
 comments: true
 share: true
 ---

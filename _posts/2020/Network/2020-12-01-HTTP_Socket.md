@@ -3,7 +3,7 @@ layout: post
 title: "[Network기초] 4. HTTP Socket"
 description: " "
 date: 2020-01-12
-tags: [Network기초]
+tags: [network]
 comments: true
 share: true
 ---

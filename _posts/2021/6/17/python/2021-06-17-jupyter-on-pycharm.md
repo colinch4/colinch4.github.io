@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] PyCharm를 이용해서 Jupyter 노트북 만들기"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "[VSCode] VSCode로 Sass 컴파일하기"
 description: " "
 date: 2021-09-09
-tags: [VSCode]
+tags: [ide]
 comments: true
 share: true
 ---

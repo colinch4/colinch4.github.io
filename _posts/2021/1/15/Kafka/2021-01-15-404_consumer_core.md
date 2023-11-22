@@ -3,7 +3,7 @@ layout: post
 title: "[Kafka] 4장. 카프카 컨슈머 : 중요 개념"
 description: " "
 date: 2021-01-15
-tags: [Kafka]
+tags: [kafka]
 comments: true
 share: true
 ---

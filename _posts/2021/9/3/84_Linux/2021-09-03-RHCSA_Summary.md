@@ -3,7 +3,7 @@ layout: post
 title: "[Linux] RHCSA"
 description: " "
 date: 2021-09-03
-tags: [Linux]
+tags: [linux]
 comments: true
 share: true
 ---

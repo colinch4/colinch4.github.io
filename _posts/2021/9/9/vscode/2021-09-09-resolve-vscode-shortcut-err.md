@@ -3,7 +3,7 @@ layout: post
 title: "[VSCode] vscode 단축키 오류 해결하기"
 description: " "
 date: 2021-09-09
-tags: [VSCode]
+tags: [ide]
 comments: true
 share: true
 ---

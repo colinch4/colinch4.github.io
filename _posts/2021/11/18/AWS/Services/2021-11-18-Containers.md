@@ -3,7 +3,7 @@ layout: post
 title: "[AWS] services - Amazon Elastic Container Service(ECS)"
 description: " "
 date: 2021-11-18
-tags: [AWS]
+tags: [aws]
 comments: true
 share: true
 ---

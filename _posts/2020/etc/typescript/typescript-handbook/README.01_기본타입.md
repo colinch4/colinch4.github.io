@@ -3,7 +3,7 @@ layout: post
 title: "[Typescript] 1. 기본 타입"
 description: " "
 date: 2020-12-03
-tags: [Typescript]
+tags: [typescript]
 comments: true
 share: true
 ---

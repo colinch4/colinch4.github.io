@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] sys.stdin.readline()"
 description: " "
 date: 2020-12-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

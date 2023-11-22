@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 파이썬 가상 환경"
 description: " "
 date: 2020-12-04
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

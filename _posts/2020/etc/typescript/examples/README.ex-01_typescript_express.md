@@ -3,7 +3,7 @@ layout: post
 title: "[Typescript] 3. Backend Sample 프로젝트"
 description: " "
 date: 2020-12-03
-tags: [Typescript]
+tags: [typescript]
 comments: true
 share: true
 ---

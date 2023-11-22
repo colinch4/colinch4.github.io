@@ -3,7 +3,7 @@ layout: post
 title: "[Kafka] 6장. 스키마 레지스트리"
 description: " "
 date: 2021-01-15
-tags: [Kafka]
+tags: [kafka]
 comments: true
 share: true
 ---

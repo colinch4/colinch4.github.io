@@ -3,7 +3,7 @@ layout: post
 title: "[파이썬] 파이썬으로 간단하게 웹서버 띄우기"
 description: " "
 date: 2021-06-17
-tags: [파이썬]
+tags: [python]
 comments: true
 share: true
 ---

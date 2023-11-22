@@ -3,7 +3,7 @@ layout: post
 title: "[RxJava] rx-Paralllization"
 description: " "
 date: 2020-12-03
-tags: [RxJava]
+tags: [rxjava]
 comments: true
 share: true
 ---

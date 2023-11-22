@@ -3,7 +3,7 @@ layout: post
 title: "[리눅스] 리눅스 명령어 관련<br>"
 description: " "
 date: 2021-01-14
-tags: [리눅스]
+tags: [linux]
 comments: true
 share: true
 ---

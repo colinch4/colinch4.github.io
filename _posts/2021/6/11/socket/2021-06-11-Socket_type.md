@@ -3,7 +3,7 @@ layout: post
 title: "[socket] A stream socket"
 description: " "
 date: 2021-06-11
-tags: [socket]
+tags: [network]
 comments: true
 share: true
 ---

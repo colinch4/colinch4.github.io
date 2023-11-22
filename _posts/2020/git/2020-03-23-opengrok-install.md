@@ -4,7 +4,7 @@ title: "OpenGrok 설치하기 (How to install OpenGrok)"
 date: 2020-03-23 14:20
 description: "Opengrok은 소스코드를 빠르고 유용하게 찾을 수 있는 엔진입니다. 저는 Linux kernel, Systemd, glib, glibc 등의 Code를 다운받고 빠르게 검색하는 용도로 자주 사용하고 있습니다. 다양한 컴퓨터 언어에 대해 지원하고 있으니 굉장히 유용하니 한번 구축해서 사용해 보시는 걸 추천드립니다. 그럼 지금부터 시작해보겠습니다. (저는 ubuntu 16.04 기준으로 작성합니다..)"
 author: "kskim2"
-tags: [OpenGrok]
+tags: [linux]
 summary: 
 comments: true
 share: true
