@@ -45,6 +45,7 @@ Apache Commons Math의 구조는 간단하고 모듈화되어 있으며, 다음�
 다음은 Apache Commons Math를 사용하여 행렬의 연산을 수행하는 예제 코드입니다.
 
 ```java
+{% raw %}
 import org.apache.commons.math4.linear.MatrixUtils;
 import org.apache.commons.math4.linear.RealMatrix;
 
@@ -60,6 +61,7 @@ public class MatrixExample {
         System.out.println("Inverted Matrix: " + invertedMatrix);
     }
 }
+{% endraw %}
 ```
 
 위의 예제에서는 `MatrixUtils` 클래스를 사용하여 행렬을 생성한 후, `transpose()`와 `inverse()` 메소드를 사용하여 행렬의 전치와 역행렬을 계산하고 출력합니다.

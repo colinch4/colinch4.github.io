@@ -35,6 +35,7 @@ Apache Commons Math는 다양한 수학적 계산과 통계적 분석을 위한 
 Apache Commons Math는 벡터(Vector)와 행렬(Matrix) 연산을 위한 클래스와 메서드를 제공합니다. 벡터를 생성하고, 덧셈, 뺄셈, 내적 등의 연산을 수행할 수 있습니다. 또한 행렬의 생성, 행렬과 스칼라 간의 연산, 행렬의 곱셈 등을 수행할 수 있습니다.
 
 ```java
+{% raw %}
 // 벡터 생성
 RealVector vector = MatrixUtils.createRealVector(new double[] {1.0, 2.0, 3.0});
 
@@ -46,6 +47,7 @@ RealMatrix matrix = MatrixUtils.createRealMatrix(new double[][] {{1.0, 2.0}, {3.
 
 // 행렬 곱셈
 RealMatrix product = matrix.multiply(MatrixUtils.createRealMatrix(new double[][] {{5.0}, {6.0}}));
+{% endraw %}
 ```
 
 ### 2.2. 수치적 최적화

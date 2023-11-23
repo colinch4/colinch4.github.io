@@ -40,6 +40,7 @@ System.out.println("Scalar multiplication: " + scalarVector);
 Apache Commons Math는 행렬 연산을 위한 클래스와 메서드를 제공합니다. 이를 통해 행렬의 곱셈, 전치, 역행렬 등 다양한 연산을 수행할 수 있습니다. 기존 Java 라이브러리에서는 이러한 기능을 제공하지 않기 때문에 Apache Commons Math를 사용하는 것이 편리합니다.
 
 ```java
+{% raw %}
 import org.apache.commons.math3.linear.Array2DRowRealMatrix;
 import org.apache.commons.math3.linear.RealMatrix;
 
@@ -58,6 +59,7 @@ System.out.println("Transpose: " + transposeMatrix);
 // 행렬 역행렬
 RealMatrix inverseMatrix = matrix1.inverse();
 System.out.println("Inverse: " + inverseMatrix);
+{% endraw %}
 ```
 
 ## 3. 확률 분포 함수
