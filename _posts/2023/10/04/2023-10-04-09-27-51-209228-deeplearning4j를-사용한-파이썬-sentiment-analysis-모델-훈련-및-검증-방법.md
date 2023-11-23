@@ -3,7 +3,7 @@ layout: post
 title: "Deeplearning4j를 사용한 파이썬 Sentiment analysis 모델 훈련 및 검증 방법"
 description: " "
 date: 2023-10-04
-tags: [deeplearning4j, sentiment]
+tags: [python]
 comments: true
 share: true
 ---
