@@ -3,7 +3,7 @@ layout: post
 title: "브라우저 객체 모델(Browser Object Model, BOM)의 개요"
 description: " "
 date: 2023-10-13
-tags: [BOM]
+tags: [bom]
 comments: true
 share: true
 ---
