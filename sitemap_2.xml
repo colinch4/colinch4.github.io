@@ -3,7 +3,7 @@ layout: null
 ---
 
 {% assign urls_per_sitemap = 50000 %}
-{% assign post_index = 50000 %}
+{% assign post_index = 0 %}
 {% assign total_urls = site.posts | size %}
 
 {% for i in (1..total_urls | divided_by: urls_per_sitemap | plus: 1) %}
