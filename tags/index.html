@@ -55,16 +55,16 @@ permalink: /tags/
 
 <script>
   function showTag(tag) {
-    // 숨겨진 모든 태그 포스트 숨기기
+    // 모든 tag-title과 tag-post 보여주기
+    var tagTitles = document.querySelectorAll('.tag-title');
     var tagPosts = document.querySelectorAll('.tag-post');
-    tagPosts.forEach(function(post) {
-      post.style.display = 'none';
+
+    tagTitles.forEach(function(title) {
+      title.style.display = 'block';
     });
 
-    // 선택한 태그 포스트 보여주기
-    var selectedTag = document.getElementById(tag);
-    if (selectedTag) {
-      selectedTag.style.display = 'block';
-    }
+    tagPosts.forEach(function(post) {
+      post.style.display = 'block';
+    });
   }
 </script>
