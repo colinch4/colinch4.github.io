@@ -7,7 +7,7 @@
 
   {% for i in (1..num_sitemaps) %}
     <sitemap>
-      <loc>{{ site.url }}/sitemap_{{ i | append: '.xml' }}</loc>
+      <loc>{{ site.url }}/sitemap_{{ i }}.xml</loc>
     </sitemap>
   {% endfor %}
 </sitemapindex>
