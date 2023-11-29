@@ -1,0 +1,42 @@
+---
+layout: null
+---
+
+{% assign urls_per_sitemap = 50000 %}
+{% assign post_index = 0 %}
+{% assign total_urls = site.posts | size %}
+
+{% for i in (1..total_urls | divided_by: urls_per_sitemap | plus: 1) %}
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% assign remaining_urls = total_urls | minus: post_index %}
+    {% assign current_urls = remaining_urls | minus: urls_per_sitemap | divided_by: 2 | times: -1 %}
+    {% assign current_urls = current_urls | default: remaining_urls %}
+
+    {% for j in (0..current_urls | minus: 1) %}
+      {% assign post = site.posts[post_index] %}
+      <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastmod == null %}
+          <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+          <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+
+        {% if post.sitemap.changefreq == null %}
+          <changefreq>weekly</changefreq>
+        {% else %}
+          <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+        {% else %}
+          <priority>{{ post.sitemap.priority }}</priority>
+        {% endif %}
+
+      </url>
+      {% assign post_index = post_index | plus: 1 %}
+    {% endfor %}
+  </urlset>
+{% endfor %}
