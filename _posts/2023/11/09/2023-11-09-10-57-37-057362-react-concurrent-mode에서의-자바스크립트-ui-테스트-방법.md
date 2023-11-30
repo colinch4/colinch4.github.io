@@ -3,7 +3,7 @@ layout: post
 title: "React Concurrent Mode에서의 자바스크립트 UI 테스트 방법"
 description: " "
 date: 2023-11-09
-tags: [React]
+tags: [react]
 comments: true
 share: true
 ---

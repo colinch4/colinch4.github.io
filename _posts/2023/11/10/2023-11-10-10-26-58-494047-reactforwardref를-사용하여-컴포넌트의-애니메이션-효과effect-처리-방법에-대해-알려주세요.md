@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 컴포넌트의 애니메이션 효과(Effect) 처리 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: [React]
+tags: [react]
 comments: true
 share: true
 ---

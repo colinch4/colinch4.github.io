@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js와 React에서의 상태 관리와 Two-way Data Binding의 차이점"
 description: " "
 date: 2023-09-15
-tags: [React]
+tags: [react]
 comments: true
 share: true
 ---
