@@ -1,0 +1,50 @@
+자바 ORM 프레임워크의 사용 여부
+인기 있는 자바 데이터베이스 연동 프레임워크 소개
+자바 데이터베이스 연동 프레임워크 선택시 고려해야 할 요소
+자바 데이터베이스 연동에서의 성능 비교
+자바 데이터베이스 연동 프레임워크의 장단점
+Hibernate과 MyBatis의 차이점
+JPA와 JDBC의 비교
+Spring Data JPA와 Spring JDBC의 선택 기준
+자바 데이터베이스 연동 프레임워크의 설정 방법
+자바 데이터베이스 연동에서의 SQL 쿼리 처리 방식 비교
+데이터베이스 커넥션 풀링과 관련된 프레임워크 비교
+자바 데이터베이스 연동에서의 트랜잭션 처리 방식 비교
+JPA에서의 Entity와 MyBatis에서의 Mapper의 역할 비교
+자바 데이터베이스 연동 프레임워크에서의 캐싱 방식 비교
+자바 데이터베이스 연동 프레임워크에서의 데이터베이스 마이그레이션 도구 비교
+자바 데이터베이스 연동 프레임워크에서의 데이터베이스 스키마 관리 방식 비교
+Hibernate의 세션과 MyBatis의 SqlSession의 역할 비교
+JPA 프레임워크 상속 관계 매핑과 MyBatis의 일대일 관계 매핑 비교
+Spring Data JPA와 Spring JDBC의 테스트 환경 구축 방법 비교
+자바 데이터베이스 연동 프레임워크에서의 비동기 처리 방식 비교
+자바 데이터베이스 연동 프레임워크에서의 분산 트랜잭션 처리 비교
+Hibernate의 쿼리 언어 HQL과 MyBatis의 XML 매퍼 비교
+JPA와 JDBC의 성능 비교
+Spring Data JPA와 Spring JDBC의 성능 비교
+자바 데이터베이스 연동 프레임워크에서의 샤딩(Sharding) 지원 비교
+자바 데이터베이스 연동 프레임워크에서의 로깅 방식 비교
+Hibernate의 트랜잭션 관리 방식과 MyBatis의 트랜잭션 관리 방식 비교
+JPA에서의 코드 중복 문제와 MyBatis에서의 SQL 문제 해결 방식 비교
+Spring Data JPA와 Spring JDBC의 배치 처리 방식 비교
+자바 데이터베이스 연동 프레임워크에 대한 성능 최적화 방법
+JPA의 영속성 컨텍스트와 MyBatis의 일대다 매핑 비교
+Spring Data JPA와 Spring JDBC의 트래픽 처리 능력 비교
+자바 데이터베이스 연동 프레임워크에서의 동적 쿼리 처리 방식 비교
+Hibernate의 쿼리 튜닝 기능과 MyBatis의 쿼리 튜닝 기능 비교
+JPA에서의 연관 관계 설정과 MyBatis에서의 조인 처리 비교
+Spring Data JPA와 Spring JDBC의 디버깅 방법 비교
+자바 데이터베이스 연동 프레임워크에서의 다중 데이터소스 지원 비교
+Hibernate의 캐시 사용 방법과 MyBatis의 캐시 사용 방법 비교
+JPA에서의 엔티티 매핑 설정과 MyBatis에서의 resultMap 설정 비교
+Spring Data JPA와 Spring JDBC의 확장성 비교
+자바 데이터베이스 연동 프레임워크에서의 트랜잭션 격리 수준 비교
+Hibernate의 프로젝션과 MyBatis의 resultMap 비교
+JPA에서의 프록시와 MyBatis에서의 동적 SQL문 처리 비교
+Spring Data JPA와 Spring JDBC의 에러 핸들링 방식 비교
+자바 데이터베이스 연동 프레임워크에서의 유효성 검사 방식 비교
+Hibernate의 상속 매핑 방식과 MyBatis의 일대다 매핑 비교
+JPA에서의 연관 관계 로딩 방식과 MyBatis에서의 N+1 문제 해결 방법 비교
+Spring Data JPA와 Spring JDBC의 보안 기능 비교
+자바 데이터베이스 연동 프레임워크의 업데이트 주기 비교
+Hibernate의 성능 튜닝 방법과 MyBatis의 성능 튜닝 방법 비교
