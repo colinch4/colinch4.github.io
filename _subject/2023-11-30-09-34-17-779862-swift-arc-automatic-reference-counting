@@ -1,0 +1,50 @@
+스위프트 ARC (Automatic Reference Counting) 개요
+ARC의 동작 원리
+ARC의 장점과 단점
+약한 참조 (Weak Reference)
+강한 참조 (Strong Reference)
+비소유 참조 (Unowned Reference)
+그래프 순환 참조 (Retain Cycles)
+약한 참조와 비소유 참조의 차이점
+unowned(unsafe) vs unowned(safe)
+값 타입과 참조 타입의 차이와 ARC의 영향
+weak, strong, unowned 키워드 사용 방법
+weak, strong, unowned 키워드의 활용 사례
+weak, strong, unowned 키워드 실습 예제
+weak, strong, unowned 키워드 사용 시 주의사항
+ARC 메모리 관리 관련 기술적 고려 사항
+ARC 상황에 따른 메모리 누수 예방 방법
+ARC에서의 순환 참조 탐지 방식
+ARC를 사용한 메모리 관리의 성능 비교
+ARC의 동작 속도와 메모리 사용량
+리소스 관리를 위한 ARC 최적화 팁
+ARC와 메모리 구조의 상호작용
+ARC와 다중 스레딩 환경에서의 동작
+ARC와 리소스 해제 시점
+ARC와 autoreleasepool의 관계
+객체 수명과 ARC의 관계
+자동 레퍼런스 카운트 추적 알고리즘
+ARC의 성능 최적화 방법
+ARC에서의 메모리 관리 이슈
+weak, strong, unowned의 특징과 사용 사례
+순환 참조 감지 툴과 ARC
+ARC 디버깅 및 문제 해결 방법
+ARC와 메모리 누수의 관련된 디버깅 팁
+ARC에 대한 주요 문제와 대응 전략
+앱 크래시와 ARC의 관계
+ARC의 메모리 관리 모델
+weak, strong, unowned 사용 시 발생할 수 있는 문제점
+더블 참조(Double Reference) 문제와 ARC의 함께 사용
+메모리 누수 분석 도구와 ARC
+ARC 컴파일러 최적화 옵션
+앱 용량과 ARC의 관계
+ARC와 메모리 접근 패턴
+weak, strong, unowned의 장단점 비교
+ARC에 대한 최신 동향과 업데이트
+앱 개발 시 ARC 활용 사례 예시
+ARC가 없는 다른 언어와의 비교
+순환 참조 탐지 알고리즘의 한계와 문제점
+ARC 코드의 가독성과 효율성
+ARC와 기존의 수동 메모리 관리 방식의 차이점
+ARC와 메모리 관리 Best Practices
+리소스 해제 및 메모리 관리에 대한 ARC의 보장 방법

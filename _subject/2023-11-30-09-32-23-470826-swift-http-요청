@@ -1,0 +1,50 @@
+Swift로 HTTP 요청 보내는 방법
+Swift로 GET 요청 보내기
+Swift로 POST 요청 보내기
+Swift로 PUT 요청 보내기
+Swift로 DELETE 요청 보내기
+Swift로 HTTP 요청 헤더 설정하기
+Swift로 HTTP 요청에 파라미터 추가하기
+Swift로 HTTP 요청에 인증 정보 추가하기
+Swift로 HTTP 요청에 파일 업로드하기
+Swift로 HTTP 요청에 JSON 데이터 전송하기
+Swift로 비동기 HTTP 요청 보내기
+Swift로 동기 HTTP 요청 보내기
+Swift로 HTTP 요청 시간 초과 설정하기
+Swift로 HTTP 요청 응답 받기
+Swift로 HTTP 요청 에러 처리하기
+Swift로 HTTP 요청 쿠키 설정하기
+Swift로 HTTP 요청 캐시 설정하기
+Swift로 HTTP 요청 중단하기
+Swift로 HTTP 요청 다시 시도하기
+Swift로 멀티파트 HTTP 요청 보내기
+Swift로 파일 다운로드 요청 보내기
+Swift로 파일 업로드 요청 보내기
+Swift로 파일 다운로드 진행상황 보기
+Swift로 파일 업로드 진행상황 보기
+Swift로 웹페이지 스크래핑하기
+Swift로 JSON API 요청 보내기
+Swift로 SOAP 요청 보내기
+Swift로 REST API 요청 보내기
+Swift로 OAuth 요청 보내기
+Swift로 HTTP 로그인 요청 보내기
+Swift로 HTTPS 요청 보내기
+Swift로 HTTP 요청에서 쿠키 가져오기
+Swift로 HTTP 요청에서 헤더 가져오기
+Swift로 HTTP 요청에서 상태 코드 가져오기
+Swift로 HTTP 요청에서 응답 본문 가져오기
+Swift로 HTTP 요청에서 JSON 파싱하기
+Swift로 HTTP 요청에서 XML 파싱하기
+Swift로 HTTP 요청에서 HTML 파싱하기
+Swift로 HTTP 요청에서 바이너리 데이터 받기
+Swift로 HTTP 요청에 인증 토큰 추가하기
+Swift로 WebSocket 요청 보내기
+Swift로 HTTP 요청에 사용자 에이전트 설정하기
+Swift로 HTTP 요청에 리다이렉션 처리하기
+Swift로 HTTP 요청에 Gzip 압축 적용하기
+Swift로 HTTP 요청에 헤더 인코딩 설정하기
+Swift로 HTTP 요청에 사용자 정의 헤더 추가하기
+Swift로 HTTP 요청에 요청 본문 암호화하기
+Swift로 HTTP 요청에 요청 본문 압축하기
+Swift로 HTTP 요청에 TLS 인증서 설정하기
+Swift로 HTTP 요청에 Basic 인증 추가하기

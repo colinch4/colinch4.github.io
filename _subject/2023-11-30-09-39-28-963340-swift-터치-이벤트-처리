@@ -1,0 +1,50 @@
+터치 이벤트 처리 기본 개념
+Swift에서의 터치 이벤트 처리 방법
+터치 이벤트 처리를 위한 UITapGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UILongPressGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UIPanGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UISwipeGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UIRotationGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UIPinchGestureRecognizer 사용법
+멀티 터치 이벤트 처리 개념
+멀티 터치 이벤트 처리를 위한 UITouch 사용법
+멀티 터치 감지를 위한 UIPanGestureRecognizer 사용법
+멀티 터치 감지를 위한 UILongPressGestureRecognizer 사용법
+멀티 터치 감지를 위한 UISwipeGestureRecognizer 사용법
+멀티 터치 감지를 위한 UIRotationGestureRecognizer 사용법
+멀티 터치 감지를 위한 UIPinchGestureRecognizer 사용법
+터치 이벤트 처리를 위한 UIResponder 사용법
+터치 이벤트 처리를 위한 UIView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIControl에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIScrollView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITableView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UICollectionView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIButton에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIImageView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UILabel에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITextField에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITextView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISlider에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISwitch에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIStepper에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UINavigationBar에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITabBar에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIWebView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIImagePickerController에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIPickerView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIDatePicker에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIActionSheet에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIAlertController에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISearchBar에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIPageControl에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIActivityIndicatorView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIProgressView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISegmentedControl에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITextView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITableView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UICollectionView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIScrollView에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UIStepper에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISwitch에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UISlider에서의 UIResponder 사용법
+터치 이벤트 처리를 위한 UITextField에서의 UIResponder 사용법
