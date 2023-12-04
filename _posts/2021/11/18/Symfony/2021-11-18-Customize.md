@@ -3,7 +3,7 @@ layout: post
 title: "[Symfony] Customize with Symfony"
 description: " "
 date: 2021-11-18
-tags: [Symfony]
+tags: [php]
 comments: true
 share: true
 ---

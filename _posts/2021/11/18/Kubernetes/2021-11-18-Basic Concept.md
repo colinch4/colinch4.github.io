@@ -3,7 +3,7 @@ layout: post
 title: "[Kubernetes] Basic Concept"
 description: " "
 date: 2021-11-18
-tags: [Kubernetes]
+tags: [개발]
 comments: true
 share: true
 ---
