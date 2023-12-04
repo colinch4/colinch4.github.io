@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js에서 Two-way Data Binding을 사용한 상태 관리 방식 이해하기"
 description: " "
 date: 2023-09-15
-tags: [Vuejs]
+tags: [vuejs]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js와 React에서의 Two-way Data Binding 비교"
 description: " "
 date: 2023-09-15
-tags: [Vuejs]
+tags: [vuejs]
 comments: true
 share: true
 ---

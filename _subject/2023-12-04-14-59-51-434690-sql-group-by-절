@@ -1,0 +1,50 @@
+SQL GROUP BY 절의 기능과 역할
+GROUP BY 절을 사용하여 데이터 그룹화하기
+GROUP BY 절을 이용한 데이터 집계 함수 사용하기
+GROUP BY 절과 HAVING 절의 차이점
+GROUP BY 절을 사용하여 중복 데이터 제거하기
+GROUP BY 절을 활용한 데이터의 분류와 정렬
+GROUP BY 절을 이용한 그룹별 통계 정보 추출하기
+GROUP BY 절의 다양한 활용 사례
+GROUP BY 절을 사용하여 날짜별 데이터 그룹화하기
+GROUP BY 절을 활용하여 여러 열을 기준으로 데이터 그룹화하기
+GROUP BY 절을 사용하여 NULL 값 처리하기
+GROUP BY 절을 이용한 피벗 테이블 생성하기
+GROUP BY 절과 함께 사용되는 ORDER BY 절
+GROUP BY 절을 사용하여 데이터의 빈도수 계산하기
+GROUP BY 절을 활용하여 데이터의 상위/하위 그룹 추출하기
+GROUP BY 절을 이용한 다중 칼럼 그룹화
+GROUP BY 절과 WHERE 절의 차이점
+GROUP BY 절과 함께 사용되는 JOIN 절
+GROUP BY 절을 사용하여 데이터의 합계 계산하기
+GROUP BY 절을 이용한 데이터의 평균값 계산하기
+GROUP BY 절을 활용하여 데이터의 최대값/최소값 계산하기
+GROUP BY 절을 사용한 데이터의 중간값 계산하기
+GROUP BY 절을 이용한 데이터의 분산/표준편차 계산하기
+GROUP BY 절을 활용하여 데이터의 개수 세기
+GROUP BY 절을 사용하여 가장 최근/가장 오래된 날짜 추출하기
+GROUP BY 절을 이용한 월별/분기별 데이터 그룹화하기
+GROUP BY 절을 활용하여 요일별 데이터 그룹화하기
+GROUP BY 절을 사용한 특정 기간별 데이터 그룹화하기
+GROUP BY 절을 이용한 동일 열의 값 그룹화하기
+GROUP BY 절을 활용하여 다른 열의 값 그룹화하기
+GROUP BY 절을 사용하여 문자열 데이터 그룹화하기
+GROUP BY 절을 이용한 정규식 패턴에 따른 그룹화
+GROUP BY 절을 활용하여 조건별 그룹화
+GROUP BY 절을 사용하여 특정 조건에 따라 데이터 필터링하기
+GROUP BY 절을 이용한 멀티레벨 그룹화
+GROUP BY 절을 활용하여 데이터의 라벨링 및 카테고리화
+GROUP BY 절을 사용한 데이터의 빈도수 히스토그램 생성
+GROUP BY 절을 이용하여 데이터의 랭킹 생성
+GROUP BY 절을 활용하여 데이터의 순위 계산하기
+GROUP BY 절을 사용하여 중복 데이터의 중복 체크
+GROUP BY 절을 이용한 정렬 및 순서 지정
+GROUP BY 절을 활용하여 상관관계 분석하기
+GROUP BY 절을 사용하여 선호도/평가점수 계산하기
+GROUP BY 절을 이용한 상위/하위 그룹의 특정 값 추출하기
+GROUP BY 절을 활용하여 특정 그룹의 데이터 필터링하기
+GROUP BY 절을 사용하여 조건에 맞는 그룹 추출하기
+GROUP BY 절을 이용한 수치 형태의 그룹화
+GROUP BY 절을 활용하여 데이터의 분포 분석하기
+GROUP BY 절을 사용하여 핵심 그룹 식별하기
+GROUP BY 절을 이용한 데이터의 변동성 분석하기

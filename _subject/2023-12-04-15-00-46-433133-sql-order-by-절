@@ -1,0 +1,20 @@
+SQL ORDER BY 절의 역할
+오름차순(ASC)으로 정렬하는 방법
+내림차순(DESC)으로 정렬하는 방법
+ORDER BY를 사용하여 여러 열로 정렬하는 방법
+문자열을 기준으로 정렬하는 방법
+숫자를 기준으로 정렬하는 방법
+날짜를 기준으로 정렬하는 방법
+NULL 값을 제외하고 정렬하는 방법
+ORDER BY와 LIMIT를 함께 사용하는 방법
+ORDER BY와 WHERE를 함께 사용하는 방법
+ORDER BY와 GROUP BY를 함께 사용하는 방법
+다중 열로 정렬하여 우선순위를 결정하는 방법
+ORDER BY 절을 사용하여 결과를 페이징하는 방법
+ORDER BY의 옵션을 활용하여 정렬 방식을 조정하는 방법
+ORDER BY와 JOIN을 함께 사용하는 방법
+ORDER BY의 사용 예시
+SQL SERVER에서 ORDER BY 절의 사용법
+MySQL에서 ORDER BY 절의 사용법
+Oracle에서 ORDER BY 절의 사용법
+PostgreS

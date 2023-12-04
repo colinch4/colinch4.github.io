@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js에서 v-model 디렉티브를 활용한 Two-way Data Binding 구현하기"
 description: " "
 date: 2023-09-15
-tags: [Vuejs]
+tags: [vuejs]
 comments: true
 share: true
 ---

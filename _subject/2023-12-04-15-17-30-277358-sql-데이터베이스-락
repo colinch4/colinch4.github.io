@@ -1,0 +1,50 @@
+동시성 제어란 무엇인가요?
+데이터베이스 락이란 무엇인가요?
+공유 락과 배타적 락의 차이점은 무엇인가요?
+락 충돌이란 무엇이며 어떻게 발생하나요?
+락 에스컬레이션은 무엇인가요?
+락 타임아웃이란 무엇인가요?
+데드락이란 무엇이며 어떻게 처리되나요?
+교착 상태를 해결하기 위한 방법은 무엇이 있나요?
+트랜잭션 격리 단계(Isolation Level)란 무엇인가요?
+Serializable, Repeatable Read, Read Committed, Read Uncommitted 격리 단계의 차이점은 무엇인가요?
+트랜잭션 격리 단계 설정 방법은 무엇인가요?
+락 모드(Row-level, Page-level, Table-level)의 차이점은 무엇인가요?
+락 타입(Shared Lock, Exclusive Lock)의 역할과 차이점은 무엇인가요?
+락 충돌을 최소화하기 위한 방법은 무엇인가요?
+락 공유 정책(Lock Escalation Policy)이란 무엇인가요?
+락 전파(Lock Promotion)란 무엇인가요?
+클라이언트 락과 서버 락의 차이점은 무엇인가요?
+락 모드(Mode)와 락 상태(State)의 차이점은 무엇인가요?
+두 개 이상의 트랜잭션에서 동시에 같은 데이터를 수정하는 경우, 어떻게 처리되나요?
+동시성 제어를 위한 대표적인 알고리즘은 무엇인가요?
+실시간 데이터베이스 처리 시스템에서의 락 관리 방법은 무엇인가요?
+락 테이블(Lock Table)이란 무엇인가요?
+락 해제(Lock Release)란 무엇인가요?
+락 대기(Lock Wait)란 무엇인가요?
+락 비우기(Lock Demotion)란 무엇인가요?
+락 처리를 위한 가이드라인은 무엇인가요?
+락 스케쥴링(Lock Scheduling)이란 무엇인가요?
+락 힌트(Lock Hint)와 락 플레이그(Lock Flag)의 역할은 무엇인가요?
+락 대기 시간 추정(Lock Wait Time Estimation)이란 무엇인가요?
+락(락킹)과 세마포어(Semaphore)의 차이점은 무엇인가요?
+락 타임 스탬핑(Lock Time-Stamping)이란 무엇인가요?
+락 매니저(Lock Manager)의 역할은 무엇인가요?
+락 메커니즘(Locking Mechanism)이란 무엇인가요?
+락 프로토콜(Lock Protocol)이란 무엇인가요?
+머리 락(Head Lock)이란 무엇인가요?
+꼬리 락(Tail Lock)이란 무엇인가요?
+중재자 락(Arbitrator Lock)이란 무엇인가요?
+우선순위 락(Priority Lock)이란 무엇인가요?
+명시적 락(Explicit Lock)과 암묵적 락(Implicit Lock)의 차이점은 무엇인가요?
+제약 락(Constraint Lock)이란 무엇인가요?
+유효성 검사 락(Validity Lock)이란 무엇인가요?
+백그라운드 락(Background Lock)이란 무엇인가요?
+락 타입 정의 방법은 무엇인가요?
+락 관리 도구를 사용하는 이유는 무엇인가요?
+다중 모드 락(Multi-Mode Lock)이란 무엇인가요?
+전역 락(Global Lock)이란 무엇인가요?
+지역 락(Local Lock)이란 무엇인가요?
+액세스 락(Access Lock)이란 무엇인가요?
+검색 락(Search Lock)이란 무엇인가요?
+갱신 락(Update Lock)이란 무엇인가요?
