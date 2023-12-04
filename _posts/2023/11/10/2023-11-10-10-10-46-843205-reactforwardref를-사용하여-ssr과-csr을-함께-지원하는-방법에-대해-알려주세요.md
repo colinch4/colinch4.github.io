@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 SSR과 CSR을 함께 지원하는 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: [react]
+tags: [reactjs]
 comments: true
 share: true
 ---

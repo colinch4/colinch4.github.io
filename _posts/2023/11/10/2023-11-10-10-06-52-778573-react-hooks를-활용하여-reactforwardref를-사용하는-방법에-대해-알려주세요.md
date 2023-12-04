@@ -3,7 +3,7 @@ layout: post
 title: "React Hooks를 활용하여 React.forwardRef()를 사용하는 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: [react]
+tags: [reactjs]
 comments: true
 share: true
 ---

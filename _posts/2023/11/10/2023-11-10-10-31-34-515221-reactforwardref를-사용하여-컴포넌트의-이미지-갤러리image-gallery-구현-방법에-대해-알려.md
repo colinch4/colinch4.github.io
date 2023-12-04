@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()를 사용하여 컴포넌트의 이미지 갤러리(Image Gallery) 구현 방법에 대해 알려"
 description: " "
 date: 2023-11-10
-tags: [react]
+tags: [reactjs]
 comments: true
 share: true
 ---

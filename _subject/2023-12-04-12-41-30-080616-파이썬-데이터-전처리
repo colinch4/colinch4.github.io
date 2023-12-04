@@ -1,0 +1,50 @@
+데이터 전처리의 개념
+파이썬을 이용한 데이터 전처리 과정
+누락된 데이터 처리 방법
+이상치(outlier) 처리 방법
+중복된 데이터 처리 방법
+데이터 정규화(Normalization)
+데이터 표준화(Standardization)
+범주형 데이터 처리 방법
+텍스트 데이터 전처리 방법
+날짜 및 시간 데이터 전처리 방법
+데이터 변환(Transform) 기법
+데이터 스케일링(Scaling) 방법
+데이터 인코딩(Encoding) 방법
+데이터 디코딩(Decoding) 방법
+데이터 잘라내기(Split) 방법
+데이터 합치기(Merge) 방법
+데이터 정렬(Sort) 방법
+데이터 필터링(Filtering) 방법
+데이터 변환(Reshape) 방법
+데이터 리샘플링(Resampling) 방법
+데이터 결합(Join) 방법
+데이터 이진화(Binarization)
+데이터 원핫인코딩(One-hot encoding)
+데이터 시계열(Time series) 전처리 방법
+피처 선택(Feature Selection) 방법
+피처 추출(Feature Extraction) 방법
+데이터 표현(Representation) 방법
+데이터 평활화(Smoothing) 방법
+데이터 군집(Clustering) 방법
+데이터 차원축소(Dimensionality Reduction) 방법
+주성분 분석(PCA, Principal Component Analysis)
+t-SNE(Stochastic Neighbor Embedding)
+UMAP(Uniform Manifold Approximation and Projection)
+데이터 샘플링(Sampling) 방법
+언더샘플링(Undersampling)
+오버샘플링(Oversampling)
+합성마이너리티오버샘플링(SMOTE, Synthetic Minority Over-sampling Technique)
+앙상블 기법(Ensemble Technique)
+교차검증(Cross-validation)
+하이퍼파라미터 튜닝(Hyperparameter Tuning)
+매개변수 그리드 검색(Grid search)
+랜덤서치(Random Search)
+베이지안 최적화(Bayesian Optimization)
+모델 성능 평가(Evaluation)
+정확도(Accuracy)
+정밀도(Precision)
+재현율(Recall)
+F1 스코어(F1 Score)
+ROC 곡선(Receiver Operating Characteristic Curve)
+AUC(Area Under the Curve)

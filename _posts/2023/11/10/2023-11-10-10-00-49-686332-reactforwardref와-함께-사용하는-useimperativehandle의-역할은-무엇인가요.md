@@ -3,7 +3,7 @@ layout: post
 title: "React.forwardRef()와 함께 사용하는 useImperativeHandle()의 역할은 무엇인가요?"
 description: " "
 date: 2023-11-10
-tags: [react]
+tags: [reactjs]
 comments: true
 share: true
 ---
