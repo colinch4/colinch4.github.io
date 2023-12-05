@@ -1,0 +1,50 @@
+Go 언어에서의 구조체(struct)의 개념
+구조체(struct)를 선언하는 방법
+구조체(struct) 멤버 변수와 멤버 함수
+구조체(struct)의 초기화 방법
+구조체(struct)의 값 복사와 참조 복사의 차이
+구조체(struct)의 포인터 사용 방법
+구조체(struct)의 메모리 할당과 해제
+구조체(struct)의 중첩 구조 구현
+구조체(struct)와 변수의 크기 계산 방법
+구조체(struct)의 상속과 다형성 개념
+구조체(struct)의 필드 태그(tag) 옵션 사용법
+구조체(struct)의 익명 필드(anonymous field) 사용법
+구조체(struct)의 암시적 타입 변환(Implicit type conversion)
+구조체(struct)의 비교 연산자 사용법
+구조체(struct)의 필드 순서와 저장 공간 배치 방식
+구조체(struct)를 배열과 함께 사용하는 방법
+구조체(struct)를 맵(map)과 함께 사용하는 방법
+구조체(struct)와 인터페이스(interface)의 관계
+구조체(struct)를 슬라이스(slice)와 함께 사용하는 방법
+구조체(struct)의 메서드(Method) 정의와 호출 방법
+구조체(struct)를 JSON 형식으로 직렬화(Serialization)
+구조체(struct)를 XML 형식으로 직렬화(Serialization)
+구조체(struct)를 데이터베이스에 저장하는 방법
+구조체(struct)를 파일에 저장하는 방법
+구조체(struct)의 태그(tag)를 이용한 데이터 검증 및 유효성 체크
+구조체(struct)를 모듈로 분리하여 사용하는 방법
+구조체(struct)의 읽기 전용(read-only) 필드 정의 방법
+구조체(struct)의 메서드 체이닝(Method Chaining) 사용법
+구조체(struct)의 패키지 간 상속 개념
+구조체(struct)를 포인터로 전달하는 방법
+구조체(struct)의 캡슐화 및 정보 은닉 개념
+구조체(struct)를 활용한 데이터 구조 설계 방법
+구조체(struct)의 재사용 가능한 디자인 패턴
+구조체(struct)를 사용한 효율적인 메모리 관리 방법
+구조체(struct)를 사용한 비동기 처리 방법
+구조체(struct)의 메서드(interface)를 구현하는 방법
+구조체(struct) 내에서 인터페이스(interface)를 사용하는 방법
+구조체(struct)와 포인터의 관계와 사용법
+구조체(struct)를 사용한 객체 지향 프로그래밍 개념
+구조체(struct)를 사용한 함수 전달(First-class Function)
+구조체(struct)와 패키지(private, public) 접근 제어
+구조체(struct)의 임베딩(Embedding) 개념과 사용 방법
+구조체(struct)의 생성자(Constructor) 개념과 사용 방법
+구조체(struct)의 getter와 setter 함수 구현 방법
+구조체(struct)를 사용한 로깅(logging) 및 디버깅 방법
+구조체(struct)의 상수(Constant)와 초기화 방법
+구조체(struct)를 사용한 암호화 및 보안 기능 구현 방법
+구조체(struct)를 사용한 에러 처리(Error Handling) 방법
+구조체(struct)를 사용한 패턴 매칭(Pattern Matching) 방법
+구조체(struct)를 사용한 메서드 오버로딩(Method Overloading) 개념
