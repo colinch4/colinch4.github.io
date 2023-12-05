@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 사용하여 JavaScript 프로젝트의 에러 핸들링하기"
 description: " "
 date: 2023-11-06
-tags: [Package]
+tags: [package]
 comments: true
 share: true
 ---

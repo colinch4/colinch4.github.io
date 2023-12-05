@@ -3,7 +3,7 @@ layout: post
 title: "npm 을 활용한 뉴스 크롤링 (News scraping with npm)"
 description: " "
 date: 2023-11-10
-tags: [news]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "SSR을 활용한 웹 애플리케이션의 국제화 (Internationalization, i18n) 전략"
 description: " "
 date: 2023-10-16
-tags: [i18n]
+tags: [javascript]
 comments: true
 share: true
 ---

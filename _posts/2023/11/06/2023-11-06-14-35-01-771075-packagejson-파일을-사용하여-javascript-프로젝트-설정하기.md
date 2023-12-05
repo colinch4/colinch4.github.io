@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 파일을 사용하여 JavaScript 프로젝트 설정하기"
 description: " "
 date: 2023-11-06
-tags: [Package]
+tags: [package]
 comments: true
 share: true
 ---

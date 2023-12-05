@@ -3,7 +3,7 @@ layout: post
 title: "Package.json 설정을 사용하여 JavaScript 프로젝트의 동적인 모듈 로딩 설정"
 description: " "
 date: 2023-11-06
-tags: [Package]
+tags: [package]
 comments: true
 share: true
 ---

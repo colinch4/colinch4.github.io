@@ -3,7 +3,7 @@ layout: post
 title: "[mac] iTerm2로 강력한 터미널 설정하기"
 description: " "
 date: 2021-09-09
-tags: [mac]
+tags: [개발]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Package.json을 활용한 JavaScript 프로젝트의 로그 설정하기"
 description: " "
 date: 2023-11-06
-tags: [Package]
+tags: [package]
 comments: true
 share: true
 ---

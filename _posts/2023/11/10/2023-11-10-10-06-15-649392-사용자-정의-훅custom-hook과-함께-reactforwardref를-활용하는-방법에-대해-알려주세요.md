@@ -3,7 +3,7 @@ layout: post
 title: "사용자 정의 훅(Custom Hook)과 함께 React.forwardRef()를 활용하는 방법에 대해 알려주세요."
 description: " "
 date: 2023-11-10
-tags: [CustomHook]
+tags: [customhook]
 comments: true
 share: true
 ---
