@@ -1,0 +1,50 @@
+코틀린에서의 Getter와 Setter
+프로퍼티의 Getter와 Setter 정의하기
+코틀린에서의 자동 생성된 Getter와 Setter
+커스텀 Getter와 Setter 구현하기
+Getter와 Setter의 접근 제어 지시자
+Getter와 Setter의 가시성 변경하기
+Getter와 Setter의 디폴트 가시성
+지연 초기화 프로퍼티의 Getter와 Setter
+lateinit 프로퍼티의 Getter와 Setter
+읽기 전용 프로퍼티의 Getter와 Setter
+var 프로퍼티의 Getter와 Setter
+val 프로퍼티의 Getter와 Setter
+open 프로퍼티의 Getter와 Setter
+상속에서 프로퍼티의 Getter와 Setter 오버라이딩
+추상 프로퍼티의 Getter와 Setter
+접근자의 이름 변경하기
+프로퍼티에 애노테이션 적용하기
+프로퍼티의 Getter와 Setter에서 예외 처리하기
+프로퍼티 값의 유효성 검사하기
+프로퍼티 값 변경 이벤트 처리하기
+프로퍼티에 대한 문서화 주석 추가하기
+코틀린 DSL에서 사용되는 Getter와 Setter
+inner 클래스의 프로퍼티의 Getter와 Setter
+Getter와 Setter의 성능 이슈
+Getter와 Setter 사용시 주의할 점
+확장 함수에서 프로퍼티의 Getter와 Setter 사용하기
+상수 프로퍼티의 Getter와 Setter
+열거형 클래스의 프로퍼티의 Getter와 Setter
+데이터 클래스의 프로퍼티의 Getter와 Setter
+인터페이스의 프로퍼티의 Getter와 Setter
+Getter와 Setter 없이 프로퍼티 사용하기
+간단한 데이터 클래스의 프로퍼티의 Getter와 Setter
+번들 데이터 클래스의 프로퍼티의 Getter와 Setter
+뷰 바인딩 클래스의 프로퍼티의 Getter와 Setter
+레트로핏 클래스의 프로퍼티의 Getter와 Setter
+싱글톤 클래스의 프로퍼티의 Getter와 Setter
+프라이빗 클래스의 프로퍼티의 Getter와 Setter
+속성 위임을 사용한 프로퍼티의 Getter와 Setter
+프로퍼티 델리게이션을 사용한 Getter와 Setter
+전역 변수의 Getter와 Setter
+코루틴에서 프로퍼티의 Getter와 Setter 사용하기
+동시성 문제 해결을 위한 프로퍼티의 Getter와 Setter
+안드로이드에서 프로퍼티의 Getter와 Setter 사용하기
+안드로이드 데이터 바인딩 클래스의 프로퍼티의 Getter와 Setter
+Android Room 라이브러리에서 프로퍼티의 Getter와 Setter
+안드로이드 뷰모델에서 프로퍼티의 Getter와 Setter 사용하기
+안드로이드 Parcelable 인터페이스를 사용한 프로퍼티의 Getter와 Setter
+코틀린 리플렉션을 사용한 프로퍼티의 Getter와 Setter
+코틀린 속성 위임을 사용한 프로퍼티의 Getter와 Setter
+상수 프로퍼티의 Getter와 Setter 사용하기

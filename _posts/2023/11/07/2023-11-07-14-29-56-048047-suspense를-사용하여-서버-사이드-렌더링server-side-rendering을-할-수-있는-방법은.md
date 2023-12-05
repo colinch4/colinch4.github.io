@@ -3,7 +3,7 @@ layout: post
 title: "Suspense를 사용하여 서버 사이드 렌더링(Server-side rendering)을 할 수 있는 방법은?"
 description: " "
 date: 2023-11-07
-tags: [Suspense]
+tags: [suspense]
 comments: true
 share: true
 ---
