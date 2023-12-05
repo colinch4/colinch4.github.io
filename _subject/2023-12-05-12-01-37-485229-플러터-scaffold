@@ -1,0 +1,50 @@
+플러터 Scaffold란 무엇인가요?
+Scaffold의 역할은 무엇인가요?
+플러터 Scaffold를 사용해야 하는 이유는 무엇인가요?
+Scaffold로 앱의 뼈대를 구성하는 방법은 어떻게 되나요?
+플러터 Scaffold의 구성 요소는 무엇인가요?
+Scaffold에서 AppBar의 기능은 무엇인가요?
+플러터 Scaffold에서 BottomNavigationBar를 사용하는 방법은 어떻게 되나요?
+Scaffold를 사용하여 앱의 테마를 설정하는 방법은 어떻게 되나요?
+플러터 Scaffold의 drawer 기능은 어떻게 구현되나요?
+Scaffold의 body 속성을 활용하여 앱의 내용을 구성하는 방법은 어떻게 되나요?
+플러터 Scaffold의 floatingActionButton으로 무엇을 할 수 있나요?
+Scaffold에서의 floatingActionButton 위치 설정은 어떻게 해야 하나요?
+플러터 Scaffold에서 SnackBar를 사용하는 방법은 어떻게 되나요?
+Scaffold에서의 persistentFooterButtons를 활용하는 방법은 어떻게 되나요?
+플러터 Scaffold에서의 body 속성을 변경하는 방법은 어떻게 되나요?
+Scaffold에서의 body 속성을 ListView로 구성하는 방법은 어떻게 되나요?
+플러터 Scaffold에서의 ListView.builder의 작동 방식은 어떻게 되나요?
+Scaffold에서의 RaisedButton을 활용하는 방법은 어떻게 되나요?
+플러터 Scaffold에서의 FlatButton 사용법은 어떻게 되나요?
+Scaffold에서의 IconButton을 사용하는 방법은 어떻게 되나요?
+AppBar에 제목을 추가하는 방법은 어떻게 되나요?
+Scaffold에서 AppBar의 배경색을 변경하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 AppBar의 텍스트 스타일링을 변경하는 방법은 어떻게 되나요?
+Scaffold에서 AppBar의 아이콘을 변경하는 방법은 어떻게 되나요?
+플러터 Scaffold의 AppBar에 메뉴 아이콘을 추가하는 방법은 어떻게 되나요?
+Scaffold에서의 BottomNavigationBar의 작동 방식은 어떻게 되나요?
+플러터 Scaffold에서 BottomNavigationBar의 아이템을 구성하는 방법은 어떻게 되나요?
+Scaffold에서 BottomNavigationBar의 아이템을 클릭했을 때 라우팅하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 테마를 변경하는 방법은 어떻게 되나요?
+Scaffold에서 색상 테마를 변경하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 어두운 테마를 사용하는 방법은 어떻게 되나요?
+Scaffold에서 이미지를 배경으로 사용하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 배경 이미지와 콘텐츠를 함께 사용하는 방법은 어떻게 되나요?
+Scaffold에서 옆에 drawer를 추가하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 drawer의 아이템을 구성하는 방법은 어떻게 되나요?
+Scaffold에서 drawer 아이템을 클릭했을 때 라우팅하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 SnackBar를 띄우는 방법은 어떻게 되나요?
+Scaffold에서 SnackBar의 내용과 액션을 변경하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 persistentFooterButtons를 사용하는 방법은 어떻게 되나요?
+Scaffold에서 persistentFooterButtons를 클릭했을 때의 동작을 정의하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 ListView를 사용하여 스크롤 가능한 목록을 구현하는 방법은 어떻게 되나요?
+Scaffold에서 ListView에 아이템을 추가하고 삭제하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 RaisedButton을 터치했을 때의 동작을 정의하는 방법은 어떻게 되나요?
+Scaffold에서 FlatButton을 활용하여 버튼을 구성하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 IconButton을 클릭했을 때의 동작을 정의하는 방법은 어떻게 되나요?
+Scaffold에서 AppBar를 스크롤시 숨기고 다시 표시하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 AppBar를 투명하게 만드는 방법은 어떻게 되나요?
+Scaffold에서 AppBar를 확장하여 추가 정보를 표시하는 방법은 어떻게 되나요?
+플러터 Scaffold에서 AppBar의 위치를 변경하는 방법은 어떻게 되나요?
+Scaffold에서 AppBar를 터치했을 때 상위로 스크롤되는 방법은 어떻게 되나요?
