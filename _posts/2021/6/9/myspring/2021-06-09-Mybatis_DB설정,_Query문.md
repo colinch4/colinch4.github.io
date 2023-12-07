@@ -3,7 +3,7 @@ layout: post
 title: "[spring] mybatis-DB설정"
 description: " "
 date: 2021-06-09
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

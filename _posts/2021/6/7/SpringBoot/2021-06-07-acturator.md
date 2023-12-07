@@ -3,7 +3,7 @@ layout: post
 title: "[SpringBoot] Spring Boot Acturator로 프로젝트 관리하기"
 description: " "
 date: 2021-06-07
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

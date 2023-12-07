@@ -3,7 +3,7 @@ layout: post
 title: "[springcore] SpEL (스프링 Expression Language)"
 description: " "
 date: 2021-06-18
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

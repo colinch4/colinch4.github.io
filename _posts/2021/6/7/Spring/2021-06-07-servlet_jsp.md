@@ -3,7 +3,7 @@ layout: post
 title: "[spring] Servlet 서블릿 & JSP"
 description: " "
 date: 2021-06-07
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

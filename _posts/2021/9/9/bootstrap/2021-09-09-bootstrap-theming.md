@@ -3,7 +3,7 @@ layout: post
 title: "[bootstrap] Bootstrap 테마 설정"
 description: " "
 date: 2021-09-09
-tags: [bootstrap]
+tags: [css]
 comments: true
 share: true
 ---

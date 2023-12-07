@@ -3,7 +3,7 @@ layout: post
 title: "[springcore] 데이터 바인딩 추상화"
 description: " "
 date: 2021-06-18
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

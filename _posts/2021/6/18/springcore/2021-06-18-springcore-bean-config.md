@@ -3,7 +3,7 @@ layout: post
 title: "[springcore] 빈 설정 방법"
 description: " "
 date: 2021-06-18
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

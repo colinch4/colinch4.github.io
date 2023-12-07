@@ -3,7 +3,7 @@ layout: post
 title: "[보안] Local Storage??"
 description: " "
 date: 2021-05-14
-tags: [보안]
+tags: [개발]
 comments: true
 share: true
 ---

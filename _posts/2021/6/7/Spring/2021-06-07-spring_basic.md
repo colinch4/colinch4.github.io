@@ -3,7 +3,7 @@ layout: post
 title: "[spring] Spring 프레임워크 기초"
 description: " "
 date: 2021-06-07
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

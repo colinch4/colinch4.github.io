@@ -3,7 +3,7 @@ layout: post
 title: "[springcore] Resource 추상화"
 description: " "
 date: 2021-06-18
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

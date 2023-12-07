@@ -3,7 +3,7 @@ layout: post
 title: "[SpringBoot] Spring Boot 스프링 부트 환경설정"
 description: " "
 date: 2021-06-07
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---

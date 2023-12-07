@@ -3,7 +3,7 @@ layout: post
 title: "[spring] Bean 등록 메타정보 구성 전략"
 description: " "
 date: 2021-06-07
-tags: [spring]
+tags: [springboot]
 comments: true
 share: true
 ---
