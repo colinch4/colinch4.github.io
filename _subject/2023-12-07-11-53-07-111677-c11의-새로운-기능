@@ -1,0 +1,50 @@
+자동 타입 추론 (auto)
+람다 표현식 (Lambda expressions)
+범위 기반 for 루프 (Range-based for loop)
+이니셜라이저 리스트 (Initializer lists)
+nullptr
+오른값 참조 (Rvalue references)
+이동 생성자 (Move constructors)
+이동 할당 연산자 (Move assignment operators)
+템플릿 별칭 (Template aliases)
+constexpr 키워드
+static_assert
+멤버 초기화 리스트 (Member initializer list)
+디폴트 및 삭제된 함수 (Defaulted and deleted functions)
+variadic templates
+컴파일 타임 연산 (Compile-time computations)
+user-defined 리터럴
+강제 타입 변환 (Explicit conversions)
+Scoped enumerations
+noexcept specifier
+Thread-local storage duration specifier
+std::initializer_list
+std::function
+std::thread
+std::mutex
+std::shared_ptr
+std::unique_ptr
+std::tuple
+std::chrono library
+std::random library
+std::regex library
+std::atomic
+Type traits
+집합과 맵의 초기화 방법
+nullptr와 NULL의 차이
+Smart pointers의 종류와 사용법
+Overload resolution improvements
+lambda capture expressions
+Inline namespaces
+Delegating constructors
+Generalized constant expressions
+Expression SFINAE
+Improved static assertions
+Trailing return type syntax
+Standardized attributes
+Variadic template improvements
+Improved type inference in templates
+User-defined literals
+Compile-time type checking
+Generalized lambda capture
+Aggregate initialization improvements

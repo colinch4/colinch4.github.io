@@ -1,0 +1,50 @@
+Auto return type deduction
+Generic lambdas
+Variable templates
+std::make_unique and std::make_shared
+Binary literals
+Aggregates and aggregate initialization
+Variable length recursive templates
+Constexpr member functions
+Inline namespaces
+User-defined literals
+Thread-local storage
+Extended constexpr
+Relaxed constexpr restrictions
+Digit separators
+std::exchange and std::exchange_if_not
+std::string_view
+std::optional
+Type trait improvements
+std::index_sequence
+Variable capturing initializers
+Generalized lambda capture
+SFINAE-friendly std::common_type
+std::experimental::optional
+Function return type deduction
+Constructors for aggregate classes
+std::experimental::string_view
+Structured bindings
+Extended friend declarations
+Fixed deduced return type for normal functions
+Constexpr if
+Inline variables
+Trigraph elimination
+constexpr lambda
+std::is_constant_evaluated()
+Relaxed restrictions on constexpr functions
+[[deprecated]] attribute
+deprecated attribute with message
+Conditional explicit
+Non-type template parameters with auto
+std::quoted
+Relaxed requirements for range-based for loops
+Make std::initializer_list constexpr
+Pointer comparisons
+__has_include
+std::filesystem
+Polymorphic memory resources
+std::clamp
+std::byte
+std::not_fn
+std::sample
