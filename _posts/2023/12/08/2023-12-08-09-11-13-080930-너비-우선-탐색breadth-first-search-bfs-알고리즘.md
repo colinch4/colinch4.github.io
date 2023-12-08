@@ -46,13 +46,14 @@ void bfs(std::vector<std::vector<int>>& graph, int start) {
         }
     }
 }
-
+{% raw %}
 int main() {
     std::vector<std::vector<int>> graph = {{1, 2}, {0, 3, 4}, {0, 5, 6}, {1}, {1}, {2}, {2}};
     bfs(graph, 0);
 
     return 0;
 }
+{% endraw %}
 ```
 
 위 코드는 인접 리스트를 사용하여 그래프를 나타내고, BFS 알고리즘을 구현한 예시입니다.

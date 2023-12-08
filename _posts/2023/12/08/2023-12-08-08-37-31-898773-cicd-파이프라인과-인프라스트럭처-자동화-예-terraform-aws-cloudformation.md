@@ -18,7 +18,7 @@ CI/CD 파이프라인은 개발자들이 코드를 변경하고 릴리스 하는
 
 ```typescript
 // .github/workflows/main.yml
-
+{% raw %}
 name: CI/CD Pipeline
 
 on:
@@ -48,6 +48,7 @@ jobs:
         if [ ${{ github.event_name }} == 'push' ]; then
           # deploy to production
         fi
+{% endraw %}
 ```
 
 ## AWS CloudFormation을 이용한 인프라스트럭처 자동화

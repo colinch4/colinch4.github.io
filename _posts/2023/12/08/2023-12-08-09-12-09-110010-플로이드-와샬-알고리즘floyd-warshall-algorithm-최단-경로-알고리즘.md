@@ -45,7 +45,7 @@ void floydWarshall(int graph[][V]) {
         std::cout << std::endl;
     }
 }
-
+{% raw %}
 int main() {
     int graph[V][V] = {{0, 5, INF, 10},
                        {INF, 0, 3, INF},
@@ -55,6 +55,7 @@ int main() {
     floydWarshall(graph);
     return 0;
 }
+{% endraw %}
 ```
 
 이 코드는 4개의 정점과 특정 간선 가중치를 포함하는 그래프에 플로이드-와샬 알고리즘을 적용하여 모든 쌍의 최단 거리를 계산합니다.

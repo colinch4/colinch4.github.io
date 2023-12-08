@@ -36,6 +36,7 @@ Dismissible(
 React Native에서 Swipeable을 구현하려면 `react-native-gesture-handler` 라이브러리를 사용하여 Swipeable View를 만들 수 있습니다. 다음은 React Native에서 Swipeable을 구현하는 예제입니다.
 
 ```javascript
+{% raw %}
 import { Swipeable } from 'react-native-gesture-handler';
 
 function ListItem() {
@@ -53,6 +54,7 @@ function ListItem() {
     </Swipeable>
   );
 }
+{% endraw %}
 ```
 
 ## 결론
