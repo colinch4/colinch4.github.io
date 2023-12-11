@@ -1,0 +1,50 @@
+ARC 개요
+ARC의 역할
+ARC와 메모리 관리
+강한 참조와 약한 참조
+미소유 참조
+참조 순환 문제
+weak 참조와 unowned 참조
+클로저와 ARC
+ARC의 장단점
+ARC 메모리 누수 방지 방법
+weak self와 unowned self 사용
+weak 참조의 동작 방식
+unowned 참조의 동작 방식
+weak 참조의 활용
+unowned 참조의 활용
+strong reference cycle 해결 방법
+weak 참조 사용시 주의할 점
+nil 처리와 weak 참조
+weak var vs. weak self
+unowned var vs. unowned self
+메모리 누수와 ARC
+retain cycle 이슈
+dealloc 메서드
+weak 참조 순환 해결 방법
+unowned 참조 순환 해결 방법
+weak 참조 사용 예시
+unowned 참조 사용 예시
+weak 참조의 적절한 사용 시나리오
+unowned 참조의 적절한 사용 시나리오
+참조 순환 예방을 위한 디자인 패턴
+weak self 패턴
+unowned self 패턴
+자동 해제된 인스턴스에 대한 참조 처리
+weak 참조와 nil 처리
+weak 참조의 암시적 언래핑
+weak 참조의 강제 언래핑
+weak 참조의 옵셔널 체이닝
+unowned 참조의 안전한 사용
+unowned 참조의 nil 처리
+unowned 참조의 사용 시 주의점
+weak 참조와 클로저 캡처 리스트
+unowned 참조와 클로저 캡처 리스트
+weak 참조의 약한 참조
+unowned 참조의 미소유 참조
+메모리 해제 시기와 ARC
+weak 참조의 메모리 해제 시점
+unowned 참조의 메모리 해제 시점
+ARC와 암시적 추출 프로퍼티
+weak 참조의 실제 동작 방식
+unowned 참조의 실제 동작 방식

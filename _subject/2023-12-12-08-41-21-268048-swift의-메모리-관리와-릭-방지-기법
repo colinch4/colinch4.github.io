@@ -1,0 +1,50 @@
+자동 참조 계수 (ARC)
+순환 참조와 ARC
+weak 참조
+unowned 참조
+메모리 누수 방지
+weak self와 unowned self
+클로저에서의 순환 참조 방지
+미소유 참조 주의사항
+ARC에 의한 메모리 관리
+댕글링 포인터 방지하기
+메모리 관리 최적화
+weak 참조를 사용하는 이유
+메모리 관리 삽질방지
+weak self의 활용
+unowned self의 활용
+객체 소유를 관리하는 방법
+레퍼런스 사이클 방지 전략
+레퍼런스 순환 방지
+weak 참조의 특징
+unowned 참조의 특징
+weak self의 쓰임새
+unowned self의 쓰임새
+클로저에서의 strong 참조와 weak 참조
+순환 참조를 해결하는 방법
+weak 참조의 잠재적인 문제점
+unowned 참조의 잠재적인 문제점
+weak 참조의 사용 사례
+unowned 참조의 사용 사례
+메모리 관리 팁
+ARC의 작동 방식 이해하기
+strong 참조와 weak 참조의 차이
+릭 방지 기법
+순환참조 탐지와 해결
+weak 참조 패턴
+unowned 참조 패턴
+클로저에서의 메모리 관리
+weak 참조의 성능 영향
+unowned 참조의 성능 영향
+메모리 관리 예방책
+순환 참조의 의도적 사용
+클로저에서의 순환 참조 디버깅
+weak 참조의 사용 방법
+unowned 참조의 사용 방법
+메모리 해제를 통한 릭 방지
+weak self의 주의사항
+unowned self의 주의사항
+ARC와 성능 최적화
+참조 주기 관리
+메모리 관리 실수 방지
+순환 참조의 영구적인 해결 방법

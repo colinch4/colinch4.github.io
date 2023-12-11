@@ -1,0 +1,50 @@
+변수와 상수
+데이터 타입
+연산자
+제어문 (if, else, switch)
+반복문 (for, while)
+함수
+클로저
+클래스
+구조체
+열거형
+프로토콜
+확장(extension)
+옵셔널(Optional)
+타입 캐스팅(Type Casting)
+타입 안전(Type Safety)
+초기화(Initialization)
+속성(Properties)
+메서드(Methods)
+서브스크립트(Subscripts)
+중첩 데이터 타입(Nested Data Types)
+생성자(Constructor)
+소멸자(Deinitializer)
+접근 제어(Access Control)
+프로퍼티 감시자(Property Observers)
+익스텐션(Extension)
+제네릭(Generic)
+더하기 연산자의 오버로딩(Operator Overloading for the + Operator)
+서브스크립트(Subscript)
+중첩 타입(Nested Types)
+익스텐션(Extensions)
+에러 핸들링(Error Handling)
+종료 처리(Defer)
+타입 캐스팅(Type Casting)
+다운캐스팅(Downcasting)
+구조체와 클래스의 차이점(Differences Between Classes and Structures)
+열거형과 패턴 일치(Enumerations and Pattern Matching)
+프로토콜 지향 프로그래밍(Protocol-Oriented Programming)
+프로퍼티 래퍼(Property Wrappers)
+메모리 관리(Memory Management)
+가비지 컬렉션(Garbage Collection)
+참조 카운팅(Reference Counting)
+자동 참조 계산(ARC)
+메모리 누수(Memory Leaks)
+swiftUI
+코드 점검(Static Code Analysis)
+디버깅(Debugging)
+유닛 테스트(Unit Testing)
+통합 테스트(Integration Testing)
+클로저 표현식(Closure Expressions)
+에러 타입(Error Types)

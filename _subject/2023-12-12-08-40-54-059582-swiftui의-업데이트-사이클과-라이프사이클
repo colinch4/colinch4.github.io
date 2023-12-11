@@ -1,0 +1,50 @@
+SwiftUI의 업데이트 사이클
+SwiftUI 뷰의 초기화
+SwiftUI 뷰의 데이터 업데이트
+SwiftUI 뷰의 레이아웃 업데이트
+SwiftUI 뷰의 상태 변화
+SwiftUI 뷰의 다시 그리기
+SwiftUI 뷰의 이벤트 처리
+SwiftUI 뷰의 애니메이션 처리
+SwiftUI 뷰의 수정자 적용
+SwiftUI 뷰의 프로퍼티 감시자
+SwiftUI의 라이플 사이클
+SwiftUI 뷰의 등장
+SwiftUI 뷰의 사라짐
+SwiftUI 뷰의 편성
+SwiftUI 뷰의 사이즈 변경
+SwiftUI 뷰의 위해 세팅과 갱신
+SwiftUI 뷰의 위해 외부객체사용
+SwiftUI 뷰의 지오메트리 변경
+SwiftUI 뷰의 프레임 변경
+SwiftUI 뷰의 백그라운드 동작
+SwiftUI 뷰의 준비
+SwiftUI 뷰의 일시중지
+SwiftUI 뷰의 다시시작
+SwiftUI 뷰의 레이아웃 업데이트
+SwiftUI 뷰의 레이아웃 변경
+SwiftUI 뷰의 데이터 변경
+SwiftUI 뷰의 상태 감시
+SwiftUI 뷰의 상태 변경
+SwiftUI 뷰의 다시그리기
+SwiftUI 뷰의 컨텍스트 변경
+SwiftUI 뷰의 프레젠테이션 변경
+SwiftUI 뷰의 포커스 변경
+SwiftUI 뷰의 활성화/비활성화
+SwiftUI 뷰의 기억 제어
+SwiftUI 뷰의 메모리 해제
+SwiftUI 뷰의 메모리 해제 전처리
+SwiftUI 뷰의 캐시처리
+SwiftUI 뷰의 로드 시점
+SwiftUI 뷰의 소멸 시점
+SwiftUI 뷰의 릴리스 시점
+SwiftUI 뷰의 해제 시점
+SwiftUI 뷰의 비활성화 시점
+SwiftUI 뷰의 활성화 시점
+SwiftUI 뷰의 서브뷰 라이프사이클
+SwiftUI 뷰의 부모뷰 라이프사이클
+SwiftUI 뷰의 자식뷰 라이프사이클
+SwiftUI 뷰의 이벤트 디스패치
+SwiftUI 뷰의 스토리보드 연동
+SwiftUI 뷰의 UI 테스트
+SwiftUI 뷰의 성능 최적화
