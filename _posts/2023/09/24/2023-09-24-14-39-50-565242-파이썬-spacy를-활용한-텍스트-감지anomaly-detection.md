@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 텍스트 감지(Anomaly Detection)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

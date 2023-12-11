@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트의 문체 분석(Stylistic Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

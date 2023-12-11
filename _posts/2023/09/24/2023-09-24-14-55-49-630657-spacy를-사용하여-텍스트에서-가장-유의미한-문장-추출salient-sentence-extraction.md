@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에서 가장 유의미한 문장 추출(Salient Sentence Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

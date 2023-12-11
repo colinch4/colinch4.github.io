@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용하여 텍스트에서 중복된 내용 제거(Duplicate Removal)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

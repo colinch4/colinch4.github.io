@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용한 텍스트의 중의성 해소(Ambiguity Resolution)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

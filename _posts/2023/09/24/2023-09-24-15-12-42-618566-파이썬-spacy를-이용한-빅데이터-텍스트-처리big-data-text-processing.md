@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 빅데이터 텍스트 처리(Big Data Text Processing)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

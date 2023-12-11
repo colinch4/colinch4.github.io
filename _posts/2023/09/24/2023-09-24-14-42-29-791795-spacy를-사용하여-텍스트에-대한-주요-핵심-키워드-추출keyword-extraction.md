@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에 대한 주요 핵심 키워드 추출(Keyword Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

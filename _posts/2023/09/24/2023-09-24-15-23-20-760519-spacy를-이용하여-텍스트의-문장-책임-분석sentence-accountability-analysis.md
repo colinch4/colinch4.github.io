@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트의 문장 책임 분석(Sentence Accountability Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용한 텍스트 분포 분석(Distribution Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

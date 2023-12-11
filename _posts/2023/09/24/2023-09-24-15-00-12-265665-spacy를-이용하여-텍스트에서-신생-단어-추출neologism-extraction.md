@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트에서 신생 단어 추출(Neologism Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

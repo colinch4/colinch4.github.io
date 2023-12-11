@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 자연어 이해(Natural Language Understanding) 작업"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

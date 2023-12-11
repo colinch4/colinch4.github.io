@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에서 수치적인 표현 추출(Numerical Representation Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 의미역 라벨링(Semantic Role Labeling)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

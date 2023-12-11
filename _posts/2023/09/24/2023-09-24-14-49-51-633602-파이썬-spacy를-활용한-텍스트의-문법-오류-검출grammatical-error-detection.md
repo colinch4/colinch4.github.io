@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 텍스트의 문법 오류 검출(Grammatical Error Detection)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

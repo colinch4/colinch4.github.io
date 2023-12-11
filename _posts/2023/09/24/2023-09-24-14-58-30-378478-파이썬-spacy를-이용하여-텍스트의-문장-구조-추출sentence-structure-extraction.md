@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용하여 텍스트의 문장 구조 추출(Sentence Structure Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

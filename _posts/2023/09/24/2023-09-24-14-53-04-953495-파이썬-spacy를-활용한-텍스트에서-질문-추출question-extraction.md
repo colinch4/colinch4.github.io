@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용한 텍스트에서 질문 추출(Question Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

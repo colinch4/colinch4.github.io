@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트에서 최소한의 정보 추출(Minimal Information Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

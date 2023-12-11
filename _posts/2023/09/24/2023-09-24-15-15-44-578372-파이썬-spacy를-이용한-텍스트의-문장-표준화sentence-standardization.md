@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 텍스트의 문장 표준화(Sentence Standardization)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

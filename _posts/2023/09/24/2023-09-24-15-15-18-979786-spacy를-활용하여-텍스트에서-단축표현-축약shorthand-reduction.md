@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트에서 단축표현 축약(Shorthand Reduction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

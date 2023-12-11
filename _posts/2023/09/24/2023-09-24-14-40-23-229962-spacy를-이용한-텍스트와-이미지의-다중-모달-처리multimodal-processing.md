@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 텍스트와 이미지의 다중 모달 처리(Multimodal Processing)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

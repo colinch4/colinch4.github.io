@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용한 개체명 인식(Named Entity Recognition) 작업"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

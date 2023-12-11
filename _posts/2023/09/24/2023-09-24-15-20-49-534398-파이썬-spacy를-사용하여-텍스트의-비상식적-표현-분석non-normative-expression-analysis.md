@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용하여 텍스트의 비상식적 표현 분석(Non-Normative Expression Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

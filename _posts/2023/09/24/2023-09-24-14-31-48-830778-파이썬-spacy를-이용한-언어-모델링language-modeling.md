@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 이용한 언어 모델링(Language Modeling)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

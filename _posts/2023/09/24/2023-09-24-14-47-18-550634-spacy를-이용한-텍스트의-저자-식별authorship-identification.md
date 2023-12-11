@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 텍스트의 저자 식별(Authorship Identification)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

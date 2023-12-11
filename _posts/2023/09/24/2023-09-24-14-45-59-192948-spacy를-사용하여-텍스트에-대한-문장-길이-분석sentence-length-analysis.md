@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 사용하여 텍스트에 대한 문장 길이 분석(Sentence Length Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

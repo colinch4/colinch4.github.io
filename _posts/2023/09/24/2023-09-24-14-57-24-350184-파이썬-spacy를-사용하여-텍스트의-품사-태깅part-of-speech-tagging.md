@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 사용하여 텍스트의 품사 태깅(Part-of-speech Tagging)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

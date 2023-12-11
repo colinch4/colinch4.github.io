@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트의 의미 복원(Semantic Restoration)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트에서 형용사 카테고리 분류(Adjective Categorization)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

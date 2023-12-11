@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 텍스트의 인지적 일관성 분석(Cognitive Consistency Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

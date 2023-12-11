@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용한 텍스트와 이미지의 연관성 분석(Association Analysis)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

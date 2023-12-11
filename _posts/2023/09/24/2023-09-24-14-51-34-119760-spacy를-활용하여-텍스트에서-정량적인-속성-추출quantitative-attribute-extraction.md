@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 활용하여 텍스트에서 정량적인 속성 추출(Quantitative Attribute Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

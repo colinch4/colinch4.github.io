@@ -3,7 +3,7 @@ layout: post
 title: "SpaCy를 이용하여 텍스트에서 알레고리컬 표현 추출(Allegorical Expression Extraction)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---

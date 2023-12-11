@@ -3,7 +3,7 @@ layout: post
 title: "파이썬 SpaCy를 활용하여 벡터 공간에서 텍스트 유사도 측정(Vector Similarity)"
 description: " "
 date: 2023-09-24
-tags: [SpaCy]
+tags: [spacy]
 comments: true
 share: true
 ---
