@@ -3,7 +3,7 @@ layout: post
 title: "Redux Thunk를 사용한 이미지 lazy loading 구현 예제"
 description: " "
 date: 2023-10-18
-tags: [ReduxThunk]
+tags: [reduxthunk]
 comments: true
 share: true
 ---

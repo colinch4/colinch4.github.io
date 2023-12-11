@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js의 v-on 디렉티브와 커스텀 이벤트를 이용한 Two-way Data Binding 실시간 감지 구현하기"
 description: " "
 date: 2023-09-15
-tags: [Vue]
+tags: [vuejs]
 comments: true
 share: true
 ---
