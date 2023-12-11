@@ -3,7 +3,7 @@ layout: post
 title: "Azure Machine Learning Pipelines와 파이썬을 사용한 머신러닝 워크플로우 개발"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "파이썬으로 Azure Cognitive Services API 사용하기"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

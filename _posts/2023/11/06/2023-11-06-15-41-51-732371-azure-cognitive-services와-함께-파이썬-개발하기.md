@@ -3,7 +3,7 @@ layout: post
 title: "Azure Cognitive Services와 함께 파이썬 개발하기"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Azure Kubernetes Service와 파이썬을 이용한 컨테이너 오케스트레이션"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

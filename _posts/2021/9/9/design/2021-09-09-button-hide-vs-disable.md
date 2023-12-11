@@ -3,7 +3,7 @@ layout: post
 title: "[design] 버튼 숨기기 vs 비활성화"
 description: " "
 date: 2021-09-09
-tags: [design]
+tags: [uxui]
 comments: true
 share: true
 ---

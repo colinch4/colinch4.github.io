@@ -3,7 +3,7 @@ layout: post
 title: "Azure Machine Learning Designer와 파이썬을 활용한 시각적 머신러닝 개발"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

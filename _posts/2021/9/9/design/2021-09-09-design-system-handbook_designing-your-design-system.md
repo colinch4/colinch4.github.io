@@ -3,7 +3,7 @@ layout: post
 title: "[design] Design System Handbook"
 description: " "
 date: 2021-09-09
-tags: [design]
+tags: [uxui]
 comments: true
 share: true
 ---

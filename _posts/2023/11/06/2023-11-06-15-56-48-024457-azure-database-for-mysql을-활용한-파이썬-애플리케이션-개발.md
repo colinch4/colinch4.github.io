@@ -3,7 +3,7 @@ layout: post
 title: "Azure Database for MySQL을 활용한 파이썬 애플리케이션 개발"
 description: " "
 date: 2023-11-06
-tags: [Azure]
+tags: [azure]
 comments: true
 share: true
 ---

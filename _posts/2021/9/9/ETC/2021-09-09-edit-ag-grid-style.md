@@ -3,7 +3,7 @@ layout: post
 title: "[design] ag-grid 디자인을 원하는대로 수정하기"
 description: " "
 date: 2021-09-09
-tags: [design]
+tags: [uxui]
 comments: true
 share: true
 ---
