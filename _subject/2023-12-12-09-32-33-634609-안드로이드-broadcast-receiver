@@ -1,0 +1,50 @@
+안드로이드 Broadcast Receiver란 무엇인가요?
+Broadcast Receiver의 역할은 무엇인가요?
+안드로이드 앱에서 Broadcast Receiver를 사용하는 이유
+Broadcast Receiver의 동작원리
+안드로이드 Broadcast Receiver 등록 방법
+Broadcast Receiver를 통해 받을 수 있는 시스템 레벨 브로드캐스트의 예시
+사용자 지정 브로드캐스트를 받는 방법
+Broadcast Receiver를 통해 다른 앱의 브로드캐스트를 받는 방법
+Broadcast Receiver의 수신 우선순위 설정 방법
+Broadcast Receiver를 통해 전달되는 Intent의 종류
+안드로이드 Broadcast Receiver와 암시적 Intent
+Broadcast Receiver를 사용하여 배터리 상태를 모니터링하는 방법
+안드로이드 시스템에서 전송되는 Broadcast Intent 목록
+Broadcast Receiver를 사용하여 네트워크 상태 변경 감지하는 방법
+Broadcast Receiver를 사용하여 앱 내의 데이터 동기화 처리하는 방법
+Broadcast Receiver를 통해 디바이스 부팅 시 작업 수행하는 방법
+Broadcast Receiver를 사용하여 특정 시간에 알림을 보내는 방법
+BroadcastReceiver를 활용하여 푸시 알림을 수신하는 방법
+Broadcast Receiver를 사용하여 외부 기기와 통신하는 방법
+Broadcast Receiver를 사용하여 사용자 정의 Intent를 발생시키는 방법
+Broadcast Receiver를 사용하여 화면 상태 변경 감지하는 방법
+Broadcast Receiver를 사용하여 디바이스의 위치 변경 감지하는 방법
+Broadcast Receiver를 사용하여 전화, SMS 등 통신 이벤트 감지하는 방법
+BroadcastReceiver를 사용하여 이미지 다운로드 완료 알림을 수신히는 방법
+Broadcast Receiver를 사용하여 배터리 잔량 변화 감지하는 방법
+Broadcast Receiver를 사용하여 외부 액세서리의 연결과 해제 감지하는 방법
+Broadcast Receiver를 사용하여 파일 다운로드 완료 알림을 수신하는 방법
+Broadcast Receiver를 사용하여 화면상태(락,언락) 감지하는 방법
+Broadcast Receiver를 사용하여 디바이스가 USB 케이블을 연결/해제 감지하는 방법
+Broadcast Receiver를 사용하여 특정 Wi-Fi 네트워크 연결/해제 감지하는 방법
+Broadcast Receiver를 사용하여 핸드폰의 전화 상태 변경 감지하는 방법
+BroadcastReceiver를 사용하여 특정 액션을 갖는 브로드캐스트에 응답하는 방법
+Broadcast Receiver를 사용하여 시스템 로컬 환경 설정 변경 감지하는 방법
+Broadcast Receiver를 사용하여 외부 스토리지 마운트/언마운트 감지하는 방법
+Broadcast Receiver를 사용하여 미디어 장비 연결/해제 감지하는 방법
+Broadcast Receiver를 사용하여 카메라 버튼 클릭 감지하는 방법
+Broadcast Receiver를 사용하여 알람 시계 시간 도달 감지하는 방법
+BroadcastReceiver를 사용하여 네트워크 연결/해제 감지하는 방법
+Broadcast Receiver를 사용하여 화면이 켜질 때 액션 수행하는 방법
+Broadcast Receiver를 사용하여 화면이 꺼질 때 액션 수행하는 방법
+BroadcastReceiver를 사용하여 Bluetooth 장치 연결/해제 감지하는 방법
+Broadcast Receiver를 사용하여 앱 잠금 및 잠금해제 감지하는 방법
+Broadcast Receiver를 사용하여 배터리 잔량 낮음 알림 수신하는 방법
+Broadcast Receiver를 사용하여 손전등을 켜거나 끌 때 작업 수행하는 방법
+Broadcast Receiver를 사용하여 특정 단어가 포함된 SMS 수신하는 방법
+Broadcast Receiver를 사용하여 알람 시간에 알림을 수신하는 방법
+Broadcast Receiver를 사용하여 Wi-Fi 신호 강도 변경 감지하는 방법
+Broadcast Receiver를 사용하여 핸드폰 잠금 시 동작하는 방법
+Broadcast Receiver를 사용하여 네트워크 상태 변경을 통지하는 방법
+Broadcast Receiver를 사용하여 카메라 촬영 완료 알림을 수신하는 방법
