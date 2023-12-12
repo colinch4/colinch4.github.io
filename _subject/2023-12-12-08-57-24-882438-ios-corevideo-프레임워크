@@ -1,0 +1,50 @@
+CoreVideo 프레임워크 소개
+CoreVideo 프레임워크의 주요 기능
+CoreVideo와 CoreImage 프레임워크의 차이점
+CoreVideo 프레임워크의 사용 예시
+CoreVideo 프레임워크에서의 샘플 버퍼 처리
+CoreVideo 프레임워크의 비디오 스케일링
+CoreVideo 프레임워크를 활용한 화면 회전 처리
+CoreVideo 프레임워크에서의 픽셀 버퍼 관리
+CoreVideo 프레임워크의 YUV 및 RGB 형식 지원
+CoreVideo 프레임워크에서의 색 공간 변환 처리
+CoreVideo 프레임워크를 이용한 비디오 렌더링
+CoreVideo 프레임워크에서의 프레임 타입 및 타이밍
+CoreVideo 프레임워크와 Metal 프레임워크의 통합
+CoreVideo 프레임워크의 GPU 가속화 지원
+CoreVideo 프레임워크의 메모리 관리 기능
+CoreVideo 프레임워크를 활용한 실시간 영상처리
+CoreVideo 프레임워크를 이용한 화면 캡쳐 기능
+CoreVideo 프레임워크의 내부 동작 메커니즘
+CoreVideo 프레임워크를 활용한 동영상 플레이어 구현
+CoreVideo 프레임워크에서의 프레임 버퍼와 픽셀 데이터 처리
+CoreVideo 프레임워크를 사용한 비디오 스트리밍 처리
+CoreVideo 프레임워크의 실시간 영상 인코딩 및 디코딩 기능
+CoreVideo 프레임워크를 활용한 영상 압축 및 해제
+CoreVideo 프레임워크에서의 영상 효과 및 필터링
+CoreVideo 프레임워크를 이용한 비디오 분석 기능
+CoreVideo 프레임워크와 AVFoundation 프레임워크의 통합 활용
+CoreVideo 프레임워크를 활용한 실시간 화면 스트리밍
+CoreVideo 프레임워크의 비디오 싱크 및 타임코드 처리
+CoreVideo 프레임워크를 이용한 영상 관리 및 편집 기능
+CoreVideo 프레임워크에서의 영상 분할 및 합성 처리
+CoreVideo 프레임워크를 활용한 화면 캡쳐 및 녹화 기능
+CoreVideo 프레임워크에서의 영상 스트리밍 및 전송 처리
+CoreVideo 프레임워크를 사용한 화상 콜 기능
+CoreVideo 프레임워크를 활용한 영상 코덱 처리
+CoreVideo 프레임워크와 CoreMedia 프레임워크의 통합 활용
+CoreVideo 프레임워크의 비디오 신호 처리 및 조절 기능
+CoreVideo 프레임워크에서의 영상 재생 및 스트리밍 기능
+CoreVideo 프레임워크를 이용한 영상 파일 및 스트림 관리
+CoreVideo 프레임워크의 영상 처리 및 편집 도구 구현
+CoreVideo 프레임워크에서의 비디오 퀄리티 관리 기능
+CoreVideo 프레임워크를 활용한 UI와의 통합 구현
+CoreVideo 프레임워크에서의 영상 인코딩 및 디코딩 최적화
+CoreVideo 프레임워크를 사용한 화면 미러링 및 캐스팅 기능
+CoreVideo 프레임워크의 화면 전환 및 전환 효과 처리
+CoreVideo 프레임워크를 이용한 영상 분석 및 인식 기능
+CoreVideo 프레임워크에서의 동시 다중 비디오 재생 처리
+CoreVideo 프레임워크를 활용한 비디오 레코딩 및 스트리밍
+CoreVideo 프레임워크의 영상 슬라이드 쇼 및 프레젠테이션 기능
+CoreVideo 프레임워크에서의 영상 데이터 압축 및 해제 처리
+CoreVideo 프레임워크와 OpenGL 또는 Metal과의 통합 활용

@@ -1,0 +1,50 @@
+ASAuthorizationController 클래스
+ASAuthorizationAppleIDProvider 클래스
+ASAuthorizationPasswordProvider 클래스
+ASAuthorizationControllerDelegate 프로토콜
+ASAuthorizationProvider 프로토콜
+ASAuthorizationRequest 클래스
+ASAuthorizationControllerPresentationContextProviding 프로토콜
+ASAuthorizationAppleIDRequest 클래스
+ASAuthorizationPasswordRequest 클래스
+ASAuthorizationScope 열거형
+애플 디바이스 등록
+사용자 인증
+애플 ID 로그인
+비밀번호 공급자 지정
+비밀번호 인증
+Apple ID 제공자 상태 처리
+인증 요청 수락 및 거부 처리
+로그인 취소 처리
+사용자 동의 요청
+얼굴 ID 및 터치 ID 인증
+사용자 인증 플로우 커스터마이제이션
+애플 ID 로그인 버튼 구현
+서버 인증 토큰 처리
+로그인 성공 및 실패 처리
+인증 과정 로깅
+다중 요청 처리
+인증 이벤트 처리
+자동 로그인 처리
+애플 ID 연동 상태 확인
+웹사이트 및 앱 연동 설정
+리소스 접근 권한 설정
+개인정보 처리 동의
+인증 후 추가 동작 처리
+인증 세션 관리
+애플 ID 로그인 보안 관련 이슈
+비밀번호 재설정 요청
+애플 ID 연동 해제 처리
+사용자 계정 관리
+인증 피드백 및 가이던스 제공
+다중 계정 처리
+테스트 용 인증 데이터 생성
+사용자 정보 쿼리 및 관리
+사용자 식별 정보 저장 및 보호
+인증 서비스 확장 기능
+소셜 로그인 연동
+보안 키체인 관리
+사용자 권한 관리
+사전 로그인 처리
+인증 이벤트 로컬화 처리
+서버 백엔드 연동 및 토큰 처리
