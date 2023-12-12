@@ -1,0 +1,50 @@
+안드로이드 SharedPreferences란
+SharedPreferences 파일 구조
+SharedPreferences를 사용하는 이유
+SharedPreferences에 데이터 저장
+SharedPreferences에서 데이터 읽기
+SharedPreferences에 데이터 수정
+SharedPreferences에서 데이터 삭제
+SharedPreferences에 여러 종류의 데이터 저장하기
+SharedPreferences와 SQLite 데이터베이스 비교
+SharedPreferences의 장단점
+SharedPreferences와 파일 저장소 비교
+SharedPreferences와 내부 저장소 비교
+SharedPreferences와 외부 저장소 비교
+SharedPreferences와 데이터 보안
+SharedPreferences에서 데이터 공유하기
+SharedPreferences에 데이터 유형
+SharedPreferences에 문자열 저장
+SharedPreferences에 정수 저장
+SharedPreferences에 부동 소수점 숫자 저장
+SharedPreferences에 논리 값 저장
+SharedPreferences에 직렬화된 객체 저장
+SharedPreferences에 배열 저장
+SharedPreferences에서 데이터 유형 읽기
+SharedPreferences에서 문자열 읽기
+SharedPreferences에서 정수 읽기
+SharedPreferences에서 부동 소수점 숫자 읽기
+SharedPreferences에서 논리 값 읽기
+SharedPreferences에서 직렬화된 객체 읽기
+SharedPreferences에서 배열 읽기
+SharedPreferences와 다른 애플리케이션에서 데이터 공유
+SharedPreferences에 암호화된 데이터 저장
+SharedPreferences에 데이터 유효성 검사
+SharedPreferences 데이터 백업 및 복원
+SharedPreferences에서 데이터 세션 관리
+SharedPreferences를 사용한 로그인 정보 저장
+SharedPreferences를 사용한 사용자 환경 설정 저장
+SharedPreferences를 사용한 애플리케이션 상태 저장
+SharedPreferences에 관련된 보안 취약점
+SharedPreferences와 데이터 무결성
+SharedPreferences를 사용한 사용자 프로필 정보 저장
+SharedPreferences를 사용한 애플리케이션 설정 변경
+SharedPreferences에 데이터 유효 기간 설정
+SharedPreferences에 데이터 용량 제한 설정
+SharedPreferences를 사용한 테마 및 스타일 설정 저장
+SharedPreferences와 애플리케이션 데이터 관리
+SharedPreferences를 사용한 애플리케이션 상태 유지
+SharedPreferences를 사용한 애플리케이션 성능 향상
+SharedPreferences를 사용한 사용자 선호도 저장
+SharedPreferences를 사용한 애플리케이션 로컬 데이터 저장
+SharedPreferences를 이용한 데이터 백그라운드 동기화
