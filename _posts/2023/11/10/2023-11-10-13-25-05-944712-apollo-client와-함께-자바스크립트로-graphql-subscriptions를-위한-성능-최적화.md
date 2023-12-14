@@ -3,7 +3,7 @@ layout: post
 title: "Apollo Client와 함께 자바스크립트로 GraphQL Subscriptions를 위한 성능 최적화"
 description: " "
 date: 2023-11-10
-tags: [GraphQL]
+tags: [graphql]
 comments: true
 share: true
 ---

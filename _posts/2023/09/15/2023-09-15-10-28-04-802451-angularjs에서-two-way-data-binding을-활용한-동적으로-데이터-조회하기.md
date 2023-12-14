@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS에서 Two-way Data Binding을 활용한 동적으로 데이터 조회하기"
 description: " "
 date: 2023-09-15
-tags: [angularjs]
+tags: [javascript]
 comments: true
 share: true
 ---

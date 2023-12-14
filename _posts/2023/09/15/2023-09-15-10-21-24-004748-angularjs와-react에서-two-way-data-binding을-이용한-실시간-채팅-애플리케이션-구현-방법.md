@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS와 React에서 Two-way Data Binding을 이용한 실시간 채팅 애플리케이션 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding]
+tags: [javascript]
 comments: true
 share: true
 ---

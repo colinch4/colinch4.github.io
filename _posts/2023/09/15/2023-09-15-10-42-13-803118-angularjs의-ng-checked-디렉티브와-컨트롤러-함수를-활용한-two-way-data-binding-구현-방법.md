@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS의 ng-checked 디렉티브와 컨트롤러 함수를 활용한 Two-way Data Binding 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [angularjs]
+tags: [javascript]
 comments: true
 share: true
 ---

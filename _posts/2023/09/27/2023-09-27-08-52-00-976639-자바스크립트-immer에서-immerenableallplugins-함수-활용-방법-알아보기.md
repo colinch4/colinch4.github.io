@@ -3,7 +3,7 @@ layout: post
 title: "자바스크립트 Immer에서 immer.enableAllPlugins 함수 활용 방법 알아보기"
 description: " "
 date: 2023-09-27
-tags: [Immer]
+tags: [immer]
 comments: true
 share: true
 ---

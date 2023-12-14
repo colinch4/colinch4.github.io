@@ -3,7 +3,7 @@ layout: post
 title: "리액트의 Controlled Components를 활용한 Two-way Data Binding"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding]
+tags: [javascript]
 comments: true
 share: true
 ---

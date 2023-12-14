@@ -3,7 +3,7 @@ layout: post
 title: "Immer와 immer.setAutoFreeze의 차이점 이해하기"
 description: " "
 date: 2023-09-27
-tags: [Immer]
+tags: [immer]
 comments: true
 share: true
 ---

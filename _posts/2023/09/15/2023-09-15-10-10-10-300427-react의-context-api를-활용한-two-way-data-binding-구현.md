@@ -3,7 +3,7 @@ layout: post
 title: "React의 Context API를 활용한 Two-way Data Binding 구현"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding]
+tags: [javascript]
 comments: true
 share: true
 ---

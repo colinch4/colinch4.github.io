@@ -3,7 +3,7 @@ layout: post
 title: "Vue.js의 watch 속성을 활용한 Two-way Data Binding 실시간 감지 구현하기"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding]
+tags: [javascript]
 comments: true
 share: true
 ---

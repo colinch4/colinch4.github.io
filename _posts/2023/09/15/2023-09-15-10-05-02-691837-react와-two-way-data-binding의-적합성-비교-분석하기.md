@@ -3,7 +3,7 @@ layout: post
 title: "React와 Two-way Data Binding의 적합성 비교 분석하기"
 description: " "
 date: 2023-09-15
-tags: [TwoWayDataBinding]
+tags: [javascript]
 comments: true
 share: true
 ---

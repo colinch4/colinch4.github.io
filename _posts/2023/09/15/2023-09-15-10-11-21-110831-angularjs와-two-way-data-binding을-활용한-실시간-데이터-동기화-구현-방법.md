@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS와 Two-way Data Binding을 활용한 실시간 데이터 동기화 구현 방법"
 description: " "
 date: 2023-09-15
-tags: [angularjs]
+tags: [javascript]
 comments: true
 share: true
 ---

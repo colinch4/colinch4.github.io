@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS에서 Two-way Data Binding을 사용한 도시 선택 기능 구현하기"
 description: " "
 date: 2023-09-15
-tags: [angularjs]
+tags: [javascript]
 comments: true
 share: true
 ---
