@@ -17,8 +17,10 @@ share: true
 앱에서 Google Play Services를 사용하기 위해서는 `build.gradle` 파일에 의존성을 추가해야 합니다. 다음은 Google Play Services 라이브러리를 추가하는 예시입니다:
 
 ```gradle
+{% raw %}
 implementation 'com.google.android.gms:play-services-games:{{version}}' // 게임용 API
 implementation 'com.google.android.gms:play-services-auth:{{version}}' // 로그인 및 권한부여 API
+{% endraw %}
 ```
 
 앱에 Google Play Services를 추가한 후에는 Google Play 게임 서비스를 초기화하고 리더 보드를 표시하고 플레이어의 점수를 기록할 수 있습니다. 
