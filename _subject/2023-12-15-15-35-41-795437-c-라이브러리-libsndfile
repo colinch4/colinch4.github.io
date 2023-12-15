@@ -1,0 +1,50 @@
+Libsndfile의 기능
+Libsndfile의 설치 방법
+Libsndfile을 이용한 오디오 파일 읽고 쓰기
+Libsndfile을 이용한 오디오 데이터 변환
+Libsndfile과 오디오 코덱 호환성
+Libsndfile을 이용한 메타데이터 처리
+Libsndfile을 이용한 오디오 파일 형식 지원
+Libsndfile과 C++ 스트림 처리
+Libsndfile의 오디오 샘플 처리
+Libsndfile을 이용한 스펙트럼 분석
+Libsndfile과 실시간 오디오 처리
+Libsndfile을 이용한 오디오 파형 시각화
+Libsndfile을 이용한 오디오 데이터 압축
+Libsndfile과 오디오 신호 처리
+Libsndfile을 이용한 오디오 녹음 및 재생
+Libsndfile을 이용한 오디오 편집 기능
+Libsndfile과 가속화된 오디오 처리
+Libsndfile을 이용한 오디오 출력 형식 제어
+Libsndfile과 오디오 신호 처리 필터
+Libsndfile을 이용한 멀티채널 오디오 처리
+Libsndfile과 실시간 스펙트럼 분석
+Libsndfile을 이용한 사운드 이펙트 적용
+Libsndfile과 오디오 데이터 정규화
+Libsndfile을 이용한 오디오 파일 정보 읽기
+Libsndfile과 C++11 이상의 버전과의 호환성
+Libsndfile을 이용한 오디오 처리 알고리즘
+Libsndfile과 주파수 영역 변환
+Libsndfile을 이용한 오디오 데이터 마스킹
+Libsndfile과 C++17 이상의 버전과의 호환성
+Libsndfile을 이용한 오디오 신호 처리 시간 도메인 분석
+Libsndfile과 시계열 분석
+Libsndfile을 이용한 주파수 응답 계산
+Libsndfile과 음향학적 분석
+Libsndfile을 이용한 신호 잡음 처리
+Libsndfile과 실시간 오디오 스펙트럼 분석
+Libsndfile을 이용한 오디오 파형 시간-주파수 변환
+Libsndfile과 음악 정보 검색
+Libsndfile을 이용한 오디오 기록 및 재생
+Libsndfile과 FFT (Fast Fourier Transform)
+Libsndfile을 이용한 음악 정보 추출
+Libsndfile과 음질 변환
+Libsndfile을 이용한 오디오 신호 처리 필터링
+Libsndfile과 디지털 오디오 신호 처리
+Libsndfile을 이용한 오디오 파일 포맷 지원
+Libsndfile과 MP3 디코딩
+Libsndfile을 이용한 오디오 파형 재생
+Libsndfile과 오디오 스트리밍
+Libsndfile을 이용한 오디오 데이터 암호화
+Libsndfile과 오디오 잡음 제거
+Libsndfile을 이용한 오디오 파일 검증
