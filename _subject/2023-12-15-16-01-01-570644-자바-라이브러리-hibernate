@@ -1,0 +1,50 @@
+Hibernate란 무엇인가?
+Hibernate의 역사
+Hibernate의 주요 기능
+Hibernate와 JDBC의 차이
+Hibernate의 장단점
+Hibernate의 성능 최적화 방법
+Hibernate의 설정 파일
+Hibernate의 엔티티 매핑
+Hibernate의 데이터베이스 연동
+Hibernate의 쿼리 언어
+Hibernate와 JPA(Java Persistence API)
+Hibernate의 다양한 어노테이션
+Hibernate와 관계형 데이터베이스 매핑
+Hibernate의 트랜잭션 관리
+Hibernate와 캐싱
+Hibernate와 세션 관리
+Hibernate와 객체-관계 매핑(ORM)
+Hibernate와 연관 관계 매핑
+Hibernate의 스프링 통합
+Hibernate의 일반적인 문제 해결 방법
+Hibernate의 버전 관리
+Hibernate의 갱신 및 삭제 기능
+Hibernate와 데이터 유효성 검사
+Hibernate와 다중 데이터베이스 지원
+Hibernate와 NoSQL 데이터베이스 통합
+Hibernate의 자동 생성 기능
+Hibernate와 데이터베이스 스키마 관리
+Hibernate와 동적 쿼리 생성
+Hibernate의 예외 처리
+Hibernate와 테스트와 디버깅 기능
+Hibernate와 클러스터링
+Hibernate와 분산 시스템 통합
+Hibernate와 보안 관련 기능
+Hibernate와 JSON/XML 데이터 처리
+Hibernate와 트리거 기능
+Hibernate와 로깅
+Hibernate와 멀티 스레딩
+Hibernate와 AOP(Aspect-Oriented Programming)의 통합
+Hibernate와 데이터 마이그레이션
+Hibernate의 특별한 애너테이션들
+Hibernate의 다양한 연산자
+Hibernate와 데이터베이스 동기화
+Hibernate와 데이터베이스 뷰 지원
+Hibernate와 JMX(Java Management Extensions)
+Hibernate와 데이터베이스 성능 측정
+Hibernate와 데이터베이스 백업 및 복구
+Hibernate와 데이터베이스 보안
+Hibernate와 데이터베이스 병행 처리
+Hibernate와 데이터베이스 복제
+Hibernate의 미래 전망

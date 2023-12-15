@@ -1,0 +1,50 @@
+MyBatis란 무엇인가?
+MyBatis의 주요 기능은 무엇인가?
+MyBatis의 장단점은 무엇인가?
+MyBatis와 Hibernate의 비교
+MyBatis 설정 방법
+MyBatis XML 매핑 파일 작성 방법
+MyBatis 애노테이션을 사용한 매핑 방법
+MyBatis 동적 쿼리 생성
+MyBatis의 파라미터 매핑
+MyBatis의 결과 매핑
+MyBatis에서의 연관 관계 매핑
+MyBatis의 트랜잭션 관리 방법
+MyBatis의 캐시 설정
+MyBatis의 성능 최적화 방법
+MyBatis의 페이징 처리 방법
+MyBatis와 Spring의 통합 방법
+MyBatis와 Spring Boot의 통합
+MyBatis에서의 동적 SQL 구문
+MyBatis와 데이터베이스 연동
+MyBatis를 사용한 CRUD 작업 처리 방법
+MyBatis의 트랜잭션 롤백 처리 방법
+MyBatis와 JPA의 비교
+MyBatis와 JDBC의 비교
+MyBatis를 사용한 프로시저 호출 방법
+MyBatis에서의 예외 처리 방법
+MyBatis의 로깅 및 디버깅 방법
+MyBatis를 사용한 동적 쿼리 작성 팁
+MyBatis와 ORM(Object-Relational Mapping)의 관계
+MyBatis의 라이브러리 의존성 관리
+MyBatis의 임시 테이블 사용 방법
+MyBatis와 다양한 데이터베이스 연동 방법
+MyBatis와 NoSQL 데이터베이스의 연동
+MyBatis와 RESTful API의 관계
+MyBatis의 테스트 케이스 작성 방법
+MyBatis와 트랜잭션 격리 수준 설정 방법
+MyBatis와 동적 쿼리 생성 라이브러리 비교
+MyBatis와 AOP(Aspect-Oriented Programming)의 활용
+MyBatis와 데이터 액세스 객체(DAO) 패턴
+MyBatis의 커스텀 매퍼 및 핸들러 구현
+MyBatis의 트랜잭션 롤백 처리 방법
+MyBatis의 성능 튜닝 방법
+MyBatis와 멀티스레드 환경에서의 안전성 보장
+MyBatis의 데이터베이스 연결 풀링 설정
+MyBatis와 분산 트랜잭션 처리
+MyBatis와 JTA(Java Transaction API)의 통합
+MyBatis와 데이터베이스 시퀀스 사용 방법
+MyBatis의 로깅 설정 및 활용
+MyBatis와 쿼리 최적화
+MyBatis의 동적 SQL 템플릿 활용 방법
+MyBatis와 데이터베이스 연동 보안 관리
