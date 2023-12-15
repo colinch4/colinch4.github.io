@@ -1,0 +1,50 @@
+스프링 JPA 소개
+JPA 엔티티와 DTO
+JPA 리포지토리
+스프링 데이터 JPA
+JPA 쿼리 메서드
+JPA 네이티브 쿼리
+JPA 캐시
+JPA 리스너
+JPA 트랜잭션 처리
+스프링 부트와 JPA 연동
+JPA와 Hibernate의 관계
+JPA와 NoSQL
+JPA 엔티티 관계 매핑
+JPA 프록시
+JPA와 데이터베이스 연동
+스프링 데이터 JPA 페이징
+JPA 상속 매핑
+JPA 및 스프링 시큐리티
+JPA 검증 및 유효성 검사
+JPA와 RESTful 웹 서비스
+JPA와 데이터베이스 트랜잭션
+JPA 캐싱 전략
+JPA와 멀티 데이터 소스
+JPA 테스트
+JPA와 자바 8의 호환성
+JPA와 마이그레이션
+JPA 성능 튜닝
+JPA 통합 테스트
+JPA와 락(Lock) 처리
+JPA와 다중 조회
+JPA와 데이터 액세스 계층
+JPA 동적 쿼리 생성
+JPA와 스키마 생성 전략
+JPA와 벌크 연산
+JPA와 무결성 제약
+JPA 영속성 전이(Cascade)
+JPA와 세션 관리
+JPA와 제약조건
+JPA와 연관관계
+JPA 프로젝션
+JPA와 뷰매핑
+JPA와 연관관계 지연 로딩
+JPA와 영속성 컨텍스트
+JPA의 필드 액세스 전략
+JPA와 모델 검증
+JPA와 데이터 액세스 로직
+JPA 엔티티 생명주기
+JPA와 상태 전이
+JPA와 연관관계 삭제
+JPA와 프록시 패턴

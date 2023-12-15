@@ -3,7 +3,7 @@ layout: post
 title: "[RxJava] Subject's Problem"
 description: " "
 date: 2020-12-03
-tags: [rxjava]
+tags: [java]
 comments: true
 share: true
 ---

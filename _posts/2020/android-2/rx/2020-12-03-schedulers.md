@@ -3,7 +3,7 @@ layout: post
 title: "[RxJava] 다양한 스케줄러"
 description: " "
 date: 2020-12-03
-tags: [rxjava]
+tags: [java]
 comments: true
 share: true
 ---

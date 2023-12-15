@@ -1,0 +1,50 @@
+스프링 Core 개념
+의존성 주입(Dependency Injection)
+제어 역전(Inversion of Control)
+빈(Bean)과 컨테이너(Container)
+어플리케이션 컨텍스트(Application Context)
+라이프 사이클 콜백(Life-cycle Callback)
+컴포넌트 스캔(Component Scan)
+어노테이션 기반 설정(Annotation-based configuration)
+프로퍼티 파일 사용(Property File Usage)
+프로파일(Profile)
+@Autowired 어노테이션
+@Qualifier 어노테이션
+@Value 어노테이션
+프락시(Proxy)
+AOP(Aspect-Oriented Programming)
+의존성 주입 종류(Constructor Injection, Setter Injection)
+빈 스코프(Bean Scope)
+싱글톤(Singleton)
+프로토타입(Prototype)
+웹 어플리케이션에서의 설정법
+AspectJ
+@Component 어노테이션
+@Service 어노테이션
+@Repository 어노테이션
+@Configuration 어노테이션
+@Bean 어노테이션
+스프링 EL(Expression Language)
+스프링 Core에서의 예외 처리
+스프링 Core에서의 데이터 유효성 검사
+스프링 Core와 JDBC
+스프링 Core와 ORM
+스프링 Core와 JPA
+스프링 Core와 하이버네이트
+JdbcTemplate 사용법
+NamedParameterJdbcTemplate 사용법
+사용자 정의 Validator 작성 방법
+DataAccessException 처리 방법
+스프링 Core에서의 인터셉터(Interceptor) 설정
+Profile 및 Environment 활용법
+프로파일과 프로퍼티 설정
+프로퍼티 소스(PropertySource)
+프로파일과 어노테이션 프로세서(Annotation Processor)
+@PropertySource 어노테이션
+스프링 Core의 트랜잭션 처리
+Transactional 어노테이션
+@EnableTransactionManagement 어노테이션
+트랜잭션 속성 설정
+@Transactional 어노테이션 속성 설정
+PlatformTransactionManager 설정 방법
+TransactionTemplate 사용법

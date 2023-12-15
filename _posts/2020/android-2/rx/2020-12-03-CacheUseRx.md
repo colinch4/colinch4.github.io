@@ -3,7 +3,7 @@ layout: post
 title: "[RxJava] Rx와 캐시"
 description: " "
 date: 2020-12-03
-tags: [rxjava]
+tags: [java]
 comments: true
 share: true
 ---
