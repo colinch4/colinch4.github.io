@@ -1,0 +1,50 @@
+Spek 코틀린 라이브러리 소개
+Spek 라이브러리 기능
+Spek 라이브러리 사용 방법
+Spek 테스트 작성 예제
+Spek 테스트 러너 설정
+Spek 테스트 실행 방법
+Spek 테스트 더블(Double) 활용
+Spek 테스트 익스텐션 활용
+Spek 테스트 시나리오 작성
+Spek 테스트 컨텍스트 설정
+Spek 테스트 조건부 실행
+Spek 테스트 픽스쳐 설정
+Spek 테스트 어캐스트(Accept) 기능
+Spek 테스트 스키픽(Specific) 기능
+Spek 테스트 배리에이션(Variation) 작성
+Spek 테스트 테스크(Session) 설정
+Spek 테스트 어설션(Assertion) 활용
+Spek 테스트 가이드(Guide)
+Spek 테스트 라이프사이클 설정
+Spek 테스트 보고서 작성 설정
+Spek 테스트 파라미터화 설정
+Spek 테스트 테스트 러너 변경
+Spek 테스트 테스트 범위 설정
+Spek 테스트 테스트 템플릿 설정
+Spek 테스트 테스트 구문 설정
+Spek 테스트 테스트 델리게이트 설정
+Spek 테스트 테스트 어사이즈(AdHoc) 설정
+Spek 테스트 데이터 드라이븐(Driven) 설정
+Spek 테스트 포인트컷 설정
+Spek 테스트 모킹(Mocking) 설정
+Spek 테스트 스파이링(Spying) 설정
+Spek 테스트 더미(Dummy) 설정
+Spek 테스트 테스트 분리 설정
+Spek 테스트 테스트 커버리지 설정
+Spek 테스트 테스트 라이프사이클 설정
+Spek 테스트 테스트 로깅 설정
+Spek 테스트 케쳐 설정
+Spek 테스트 테스트 케이스 설정
+Spek 테스트 테스트 드리븐 설정
+Spek 테스트 테스트 다코(Deco) 설정
+Spek 테스트 테스트 리트라이 설정
+Spek 테스트 테스트 설정
+Spek 테스트 테스트 스코프 설정
+Spek 테스트 테스트 슈티트링(Substring) 설정
+Spek 테스트 테스트 세밀함 설정
+Spek 테스트 테스트 펩러럴 설정
+Spek 테스트 테스트 펩하이어러키 (Hierarchy) 설정
+Spek 테스트 테스트 성능(Performance) 설정
+Spek 테스트 테스트 분석(Analysis) 설정
+Spek 테스트 테스트 리뷰 설정

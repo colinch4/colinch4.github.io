@@ -1,0 +1,50 @@
+kotlinx.serialization 개요
+kotlinx.serialization 특징
+kotlinx.serialization 사용법
+kotlinx.serialization 설치 방법
+kotlinx.serialization의 주요 모듈
+kotlinx.serialization의 주요 클래스
+kotlinx.serialization의 JSON 지원
+kotlinx.serialization의 XML 지원
+kotlinx.serialization의 Protobuf 지원
+kotlinx.serialization과 안드로이드 개발
+kotlinx.serialization과 서버 개발
+kotlinx.serialization과 데이터 클래스
+kotlinx.serialization과 커스텀 직렬화
+kotlinx.serialization과 직렬화 어노테이션
+kotlinx.serialization과 직렬화 인터페이스
+kotlinx.serialization과 포맷 전략
+kotlinx.serialization과 버전 호환성
+kotlinx.serialization과 컬렉션 직렬화
+kotlinx.serialization과 코드 분할 방법
+kotlinx.serialization과 안전한 직렬화
+kotlinx.serialization과 프로퍼티 순서
+kotlinx.serialization과 널 가능한 값
+kotlinx.serialization과 사용자 지정 직렬화
+kotlinx.serialization과 직렬화 프로퍼티
+kotlinx.serialization과 내장 직렬화
+kotlinx.serialization과 맞춤 직렬화
+kotlinx.serialization과 클래스 변환
+kotlinx.serialization과 명명된 매개변수
+kotlinx.serialization과 다형 클래스
+kotlinx.serialization과 중첩된 객체
+kotlinx.serialization과 직렬화 키워드
+kotlinx.serialization과 확장 함수
+kotlinx.serialization과 인텔리전트 직렬화
+kotlinx.serialization과 JSON 타입 확인
+kotlinx.serialization과 컬렉션 직렬화
+kotlinx.serialization과 데이터 클래스 지원
+kotlinx.serialization과 맵 직렬화
+kotlinx.serialization과 맞춤 직렬화
+kotlinx.serialization과 코틀린 멀티 플랫폼 프로젝트
+kotlinx.serialization과 자바 통합
+kotlinx.serialization과 직렬화 인터페이스
+kotlinx.serialization과 문서화
+kotlinx.serialization과 테스트 지원
+kotlinx.serialization과 애노테이션 프로세서
+kotlinx.serialization과 최적화
+kotlinx.serialization과 성능 향상
+kotlinx.serialization과 에러 처리
+kotlinx.serialization과 공식 문서
+kotlinx.serialization과 GitHub 저장소
+kotlinx.serialization과 커뮤니티 지원
