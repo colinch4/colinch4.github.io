@@ -3,7 +3,7 @@ layout: post
 title: "[dagger] Dagger2 Practice"
 description: " "
 date: 2020-12-03
-tags: [dagger]
+tags: [java]
 comments: true
 share: true
 ---
