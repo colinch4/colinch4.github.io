@@ -11,10 +11,11 @@ share: true
 go 언어의 `text/template`와 `html/template` 패키지는 텍스트나 HTML을 동적으로 생성하기 위한 강력한 기능을 제공합니다. 특히 `text/template` 패키지의 `Execute` 함수를 사용하여 HTML 템플릿을 생성하는 방법을 알아보겠습니다.
 
 ## 템플릿 작성하기
-
+{% raw %}
 먼저, HTML 템플릿을 작성합니다. 템플릿은 텍스트 파일에 작성하고, 동적으로 변하는 부분은 `{{}}` 안에 작성합니다. 예를 들어, 다음과 같은 간단한 템플릿을 작성해보겠습니다.
-
+{% endraw %}
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +25,7 @@ go 언어의 `text/template`와 `html/template` 패키지는 텍스트나 HTML�
     <h1>Hello, {{.Name}}!</h1>
 </body>
 </html>
+{% endraw %}
 ```
 
 위의 템플릿은 `Title`과 `Name`이라는 두 가지 동적인 값을 가지고 있습니다.

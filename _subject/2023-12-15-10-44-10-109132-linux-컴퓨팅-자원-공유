@@ -1,0 +1,50 @@
+공유 호스트 설정
+NFS(Network File System)를 통한 파일 공유
+Samba를 사용한 Windows와의 파일 공유
+SSH를 사용한 원격 접속 및 파일 전송
+NIS(Network Information Service)를 사용한 사용자 계정 및 그룹 정보 공유
+LDAP를 통한 중앙화된 디렉터리 서비스 구축
+FTP(File Transfer Protocol)를 통한 파일 공유
+WebDAV를 사용한 웹 기반 파일 공유
+CIFS(Common Internet File System)를 통한 파일 및 프린터 공유
+클러스터링을 통한 자원 공유 및 부하 분산
+IPC(Inter-Process Communication)를 통한 프로세스 간 통신
+AFS(Andrew File System)를 사용한 분산 파일 시스템 구축
+공유 디스크를 사용한 클러스터 파일 시스템 구성
+VPN을 활용한 원격 사용자와의 자원 공유
+DFS(Distributed File System)를 사용한 파일 공유 및 관리
+마운트 포인트 설정 및 관리
+디스크 공간 공유를 위한 볼륨 그룹 설정
+자원 공유를 위한 보안 설정 및 권한 관리
+캐싱을 이용한 자원 공유 성능 향상
+자원 공유 대상의 모니터링 및 관리
+NFSv4의 새로운 보안 기능을 활용한 파일 공유
+NFS export 및 import 설정 방법
+Samba를 이용한 Windows 및 Linux 간 파일 공유 설정
+SSH 터널링을 통한 안전한 데이터 전송
+GFS(Global File System)를 사용한 분산 파일 시스템 설정
+자원 공유를 위한 보안 프로토콜 설정
+자원 공유를 위한 네트워크 구성 및 관리
+iSCSI를 이용한 스토리지 자원 공유
+Cluster Shared Volumes(CSV)를 사용한 클러스터 파일 시스템 설정
+리눅스 커널 설정을 통한 자원 공유 최적화
+자원 공유를 위한 네트워크 대역폭 관리
+클러스터 마운트 포인트 배치 전략
+자원 공유를 위한 마스터-슬레이브 동기화 설정
+공유 디스크 복제 및 백업 전략
+자원 공유를 위한 데이터 무결성 검사
+고가용성을 위한 자원 공유 구성
+NAS(Network Attached Storage)를 활용한 파일 공유
+파일 시스템의 인코딩 및 로캘 관리
+자원 공유 서비스 모니터링 및 장애 대응
+RAID를 활용한 데이터 보호 및 성능 향상
+자원 공유를 위한 데이터 전송 프로토콜 선택
+파일 락 및 동시 액세스 관리
+자원 공유를 위한 데이터 저장소 관리
+Storage Area Network(SAN)을 활용한 자원 공유
+네트워크 보안을 고려한 자원 공유 구성
+파일 시스템 튜닝을 통한 자원 공유 성능 최적화
+디스크 캐시를 통한 파일 접근 속도 향상
+자원 공유를 위한 데이터 무결성 및 복구 전략
+파일 저장 및 전송을 위한 데이터 압축 기술
+클라우드 스토리지를 활용한 자원 공유 방법

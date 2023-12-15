@@ -21,7 +21,7 @@ import (
 	"html/template"
 	"os"
 )
-
+{% raw %}
 func main() {
 	t := template.New("example")
 	t, err := t.Parse("Hello, {{.}}!")
@@ -33,6 +33,7 @@ func main() {
 		panic(err)
 	}
 }
+{% endraw %}
 ```
 
 ## 2. html/template 패키지 사용
@@ -46,7 +47,7 @@ import (
 	"html/template"
 	"os"
 )
-
+{% raw %}
 func main() {
 	t := template.New("example")
 	t, err := t.Parse("Hello, {{.}}!")
@@ -58,6 +59,7 @@ func main() {
 		panic(err)
 	}
 }
+{% endraw %}
 ```
 
 Go 언어는 이러한 방어 메커니즘을 통해 프로그래머가 웹 어플리케이션을 개발할 때 XSS 공격을 방어할 수 있도록 도와줍니다.  만약 필요하다면 자체적인 보안 미들웨어를 개발하여 추가 보안을 적용할 수도 있습니다.

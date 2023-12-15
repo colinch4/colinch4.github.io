@@ -25,7 +25,7 @@ import (
 	"os"
 	"text/template"
 )
-
+{% raw %}
 func main() {
 	data := map[string]interface{}{
 		"Name": "John Doe",
@@ -42,6 +42,7 @@ func main() {
 		panic(err)
 	}
 }
+{% endraw %}
 ```
 
 이 예제에서는 `text/template`을 사용하여 JSON 형식의 템플릿을 정의하고, `Execute` 함수를 통해 데이터를 적용하여 결과를 생성합니다.

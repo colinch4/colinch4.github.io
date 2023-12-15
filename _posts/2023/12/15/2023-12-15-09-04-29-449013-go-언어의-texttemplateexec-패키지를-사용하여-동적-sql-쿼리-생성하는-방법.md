@@ -21,7 +21,7 @@ import (
 	"os"
 	"text/template"
 )
-
+{% raw %}
 func main() {
 	sqlTemplate := "SELECT * FROM users WHERE {{.Condition}};"
 
@@ -41,6 +41,7 @@ func main() {
 		panic(err)
 	}
 }
+{% endraw %}
 ```
 
 위 예제에서는 `sqlTemplate` 문자열에 SQL 쿼리의 템플릿을 정의하고, text/template 패키지를 사용하여 데이터를 주입하여 최종 SQL 쿼리를 생성하고 출력합니다.
