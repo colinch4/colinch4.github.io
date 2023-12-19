@@ -3,7 +3,7 @@ layout: post
 title: "[gulp] super gulp"
 description: " "
 date: 2021-11-18
-tags: [gulp]
+tags: [javascript]
 comments: true
 share: true
 ---

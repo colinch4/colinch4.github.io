@@ -3,7 +3,7 @@ layout: post
 title: "[design] 스크린 해상도 정의하기"
 description: " "
 date: 2021-09-09
-tags: [uxui]
+tags: [개발]
 comments: true
 share: true
 ---

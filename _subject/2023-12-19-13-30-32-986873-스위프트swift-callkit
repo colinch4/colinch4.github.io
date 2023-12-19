@@ -1,0 +1,50 @@
+스위프트(swift)를 사용한 CallKit이란?
+CallKit의 주요 기능
+CallKit의 장단점
+스위프트로 CallKit 통합하기
+CallKit과 VoIP(Internet Protocol)-(IP-)기반 통화
+CallKit과 전화 앱 연동하기
+CallKit 사용 시 주의사항
+CallKit과 통화 기록 저장
+CallKit과 알림(notification)의 관계
+CallKit을 활용한 화상통화 기술
+CallKit과 비동기(asynchronous) 통화 관리
+CallKit과 통화 거절 기능
+CallKit과 통화 미루기 기능
+CallKit과 통화 합류(join) 기능
+CallKit과 통화 커스터마이징
+CallKit과 통화 통계(statistics)
+CallKit과 통화 녹음
+CallKit과 통화 블록(block) 기능
+CallKit과 통화 전환(transfer) 기능
+CallKit과 통화 홀드(hold) 기능
+CallKit과 통화 대기(waiting) 기능
+CallKit과 통화 관리자(administrator)
+CallKit과 통화 앱 인터페이스
+CallKit과 통화 등급(grading) 기능
+CallKit과 통화 아이콘(icon)
+CallKit과 통화 알림(notification) 커스터마이징
+CallKit과 통화 파라미터(parameter) 설정
+CallKit과 통화 API
+CallKit과 통화 상태(status) 표시
+CallKit과 통화 상세 정보(detail) 표시
+CallKit과 통화 버튼(button) 커스터마이징
+CallKit과 통화 사운드(sound) 설정
+CallKit과 통화 연결(connect) 설정
+CallKit과 통화 종료(disconnect) 기능
+CallKit과 통화 뮤트(mute) 기능
+CallKit과 통화 진동(vibrate) 설정
+CallKit과 통화 알림(notification) 카테고리
+CallKit과 통화 앱 프로토콜(protocol)
+CallKit과 통화 화면(screen) 커스터마이징
+CallKit과 통화 로깅(logging) 기능
+CallKit과 통화 오디오(audio) 설정
+CallKit과 통화 비디오(video) 설정
+CallKit과 통화 지연(delay) 관리
+CallKit과 통화 부재(not reachable) 설정
+CallKit과 통화 여러 파티(multi-party) 설정
+CallKit과 통화 에러(error) 핸들링
+CallKit과 통화 멤버십(membership) 관리
+CallKit과 통화 서버(server) 통합
+CallKit과 통화 클라이언트(client) 통합
+CallKit과 통화 UI/UX 디자인

@@ -1,0 +1,47 @@
+- iOS에서 CoreTelephony 프레임워크 사용법
+- CoreTelephony 프레임워크의 주요 기능
+- CoreTelephony를 사용한 네트워크 상태 모니터링
+- CoreTelephony 프레임워크를 활용한 통화 정보 추출
+- CoreTelephony를 활용한 이동통신사 정보 확인
+- CoreTelephony를 사용한 데이터 네트워크 상태 모니터링
+- CoreTelephony 프레임워크의 이벤트 처리 방법
+- CoreTelephony를 활용한 네트워크 변경 감지
+- CoreTelephony와 네트워크 연결 상태 감지
+- CoreTelephony 프레임워크에서의 각종 이벤트 처리
+- CoreTelephony를 활용한 셀룰러 네트워크 상태 확인
+- CoreTelephony 프레임워크를 이용한 통화 연결 정보 추출
+- CoreTelephony를 사용한 이동통신사 신호 세기 확인
+- CoreTelephony 프레임워크에서의 네트워크 변경 감지 및 처리
+- CoreTelephony를 활용한 데이터 네트워크 연결 정보 추출
+- CoreTelephony에서의 SIM 카드 정보 추출 및 관리
+- CoreTelephony를 사용한 네트워크 사용량 모니터링
+- CoreTelephony 프레임워크를 활용한 통화 발신 및 수신 상태 확인
+- CoreTelephony에서의 네트워크 연결 유형 확인
+- CoreTelephony를 활용한 데이터 네트워크 연결 유형 확인
+- CoreTelephony 프레임워크를 사용한 데이터 로밍 여부 확인
+- CoreTelephony를 이용한 네트워크 연결 변경 감지
+- CoreTelephony에서의 이동통신사 변경 감지 및 처리
+- CoreTelephony를 활용한 이동통신사 서비스 유형 확인
+- CoreTelephony에서의 통화 연결 시간 정보 추출
+- CoreTelephony 프레임워크를 사용한 데이터 네트워크 연결 유형 확인
+- CoreTelephony를 활용한 이동통신사 SIM 잠금 상태 확인
+- CoreTelephony에서의 통화 연결 유형 확인
+- CoreTelephony를 이용한 데이터 네트워크 연결 상태 확인
+- CoreTelephony에서의 네트워크 연결 상태 변경 감지
+- CoreTelephony를 활용한 데이터 네트워크 연결 상태 변경 감지
+- CoreTelephony 프레임워크를 사용한 데이터 로밍 지역 확인
+- CoreTelephony를 이용한 네트워크 연결 상태 변경 이벤트 처리
+- CoreTelephony에서의 이동통신사 SIM 카드 상태 확인
+- CoreTelephony를 사용한 이동통신사 서비스 지역 확인
+- CoreTelephony에서의 통화 연결 정보 및 이벤트 처리
+- CoreTelephony를 활용한 데이터 네트워크 사용량 추출
+- CoreTelephony를 사용한 네트워크 연결 상태 변화 감지
+- CoreTelephony에서의 이동통신사 서비스 유형 확인
+- CoreTelephony를 이용한 데이터 네트워크 연결 변경 감지
+- CoreTelephony 프레임워크를 사용한 통화 연결 상태 변화 감지
+- CoreTelephony를 활용한 데이터 네트워크 연결 상태 변화 감지
+- CoreTelephony에서의 SIM 카드 상태 변경 이벤트 처리
+- CoreTelephony를 사용한 이동통신사 신호 강도 확인
+- CoreTelephony를 활용한 데이터 로밍 상태 확인
+- CoreTelephony에서의 통화 연결 유형 변화 감지
+- CoreTelephony를 이용한 데이터 네트워크 연결 타입 변경 감지

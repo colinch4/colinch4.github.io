@@ -3,7 +3,7 @@ layout: post
 title: "호출 규약(Calling Convention)"
 description: " "
 date: 2021-06-11
-tags: [c]
+tags: [c언어]
 comments: true
 share: true
 ---

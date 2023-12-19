@@ -1,0 +1,50 @@
+NotificationCenter의 역할
+NotificationCenter와 옵저버 패턴
+NotificationCenter를 사용하는 이유
+NotificationCenter 구현 방법
+NotificationCenter를 이용한 데이터 전달
+NotificationCenter에 등록된 옵저버 해제
+NotificationCenter와 델리게이트(Delagate)의 차이점
+NotificationCenter를 활용한 통신
+NotificationCenter를 이용한 푸시 알림
+NotificationCenter의 활용 예시
+NotificationCenter를 사용한 이벤트 처리
+NotificationCenter의 확장성
+NotificationCenter와 메시지 전달 방식의 비교
+NotificationCenter가 제공하는 유연성
+NotificationCenter와 비동기 데이터 전달
+NotificationCenter와 UI 업데이트
+NotificationCenter를 이용한 특정 동작 감지
+NotificationCenter의 특징
+NotificationCenter의 동작 원리
+NotificationCenter를 활용한 앱 간 통신
+NotificationCenter와 뷰 간 데이터 전달
+NotificationCenter를 이용한 상태 변화 감지
+NotificationCenter를 활용한 이벤트 핸들링
+NotificationCenter의 상호 작용
+NotificationCenter를 사용한 테스팅
+NotificationCenter와 싱글톤 패턴
+NotificationCenter를 이용한 알림 처리
+NotificationCenter의 메모리 관리
+NotificationCenter와 스위프트의 관계
+NotificationCenter와 비동기 작업 처리
+NotificationCenter를 사용한 사용자 정의 이벤트 처리
+NotificationCenter와 MVC 디자인 패턴
+NotificationCenter를 이용한 시스템 이벤트 감지
+NotificationCenter와 데이터 갱신
+NotificationCenter와 UI 갱신
+NotificationCenter의 이점
+NotificationCenter를 활용한 다국어 지원
+NotificationCenter와 데이터 유효성 검사
+NotificationCenter를 이용한 로그인/로그아웃 처리
+NotificationCenter와 상태 변화 시 행동 처리
+NotificationCenter를 사용한 화면 간 전환
+NotificationCenter와 사용자 설정 변경 감지
+NotificationCenter와 네트워크 상태 변경 감지
+NotificationCenter를 이용한 데이터 동기화
+NotificationCenter와 비즈니스 로직 분리
+NotificationCenter를 활용한 에러 처리
+NotificationCenter와 비동기 작업 상태 감지
+NotificationCenter를 사용한 앱 초기화 처리
+NotificationCenter와 화면 간 통신
+NotificationCenter와 특정 동작 감지

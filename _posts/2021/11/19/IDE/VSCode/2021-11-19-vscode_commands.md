@@ -3,7 +3,7 @@ layout: post
 title: "[IDE] VS Code Commands"
 description: " "
 date: 2021-11-19
-tags: [ide]
+tags: [개발]
 comments: true
 share: true
 ---

@@ -1,0 +1,50 @@
+CoreTelephony 프레임워크란 무엇인가
+CoreTelephony 프레임워크에 대한 기본적인 개요
+CoreTelephony 프레임워크의 주요 기능
+CoreTelephony를 사용하여 통화 상태를 확인하는 방법
+CoreTelephony를 활용한 네트워크 변화 감지 방법
+CoreTelephony 프레임워크의 주요 클래스와 메서드
+CoreTelephony를 활용한 이동 통신 연결 상태 확인 방법
+CoreTelephony 프레임워크를 이용한 통화 연결 상태 확인 방법
+CoreTelephony를 활용한 데이터 연결 상태 확인 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 네트워크 정보 확인 방법
+CoreTelephony를 이용한 통화 및 데이터 사용량 모니터링 방법
+CoreTelephony 프레임워크의 이동 통신 운영자 정보 관리 기능
+CoreTelephony를 활용한 데이터 로밍 상태 확인하는 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 신호 강도 확인 방법
+CoreTelephony를 활용한 이동 통신 이벤트 모니터링 방법
+CoreTelephony 프레임워크를 이용한 이동 통신 국가 코드 확인 방법
+CoreTelephony를 활용한 이동 통신 서비스 타입 확인 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 데이터 활성화 상태 확인 방법
+CoreTelephony를 활용한 통화 기능 활성화 상태 확인 방법
+CoreTelephony 프레임워크를 이용한 이동 통신 이벤트 핸들링 방법
+CoreTelephony를 활용한 로밍 상태 감지 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 네트워크 변경 감지 방법
+CoreTelephony를 활용한 연결 가능한 이동 통신 데이터 네트워크 확인 방법
+CoreTelephony 프레임워크를 사용하여 통화 품질 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 데이터 네트워크 타입 확인 방법
+CoreTelephony 프레임워크를 이용한 통화 계정 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 서비스 정보 확인 방법
+CoreTelephony 프레임워크를 사용하여 통화 시간 및 통화 유형 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 주파수 밴드 확인 방법
+CoreTelephony 프레임워크를 이용한 SIM 카드 상태 확인 방법
+CoreTelephony를 활용한 이동 통신 접속 포인트(APN) 정보 확인 방법
+CoreTelephony 프레임워크를 사용하여 데이터 품질 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 품질 이벤트 모니터링 방법
+CoreTelephony 프레임워크를 이용한 이동 통신 서비스 제공업체 확인 방법
+CoreTelephony를 활용한 통화 종료 원인 정보 확인 방법
+CoreTelephony 프레임워크를 사용하여 인터넷 연결 상태 확인 방법
+CoreTelephony를 활용한 이동 통신 데이터 사용 제한 방법
+CoreTelephony 프레임워크를 이용한 이동 통신 이벤트 로깅 방법
+CoreTelephony를 활용한 통화 중 이동 통신 네트워크 변경 감지 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 연결 유형 확인 방법
+CoreTelephony를 활용한 데이터 로밍 제한 방법
+CoreTelephony 프레임워크를 이용한 이동 통신 네트워크 품질 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 네트워크 선인기 상태 확인 방법
+CoreTelephony 프레임워크를 사용하여 이동 통신 데이터 활성화 및 비활성화 방법
+CoreTelephony를 활용한 이동 통신 데이터 네트워크 속도 확인 방법
+CoreTelephony 프레임워크를 이용한 이미 사용 중인 데이터 네트워크 타입 확인 방법
+CoreTelephony를 활용한 이동 통신 네트워크 연결 속도 제한 방법
+CoreTelephony 프레임워크를 사용하여 통화 프로토콜 정보 확인 방법
+CoreTelephony를 활용한 이동 통신 연결 중 패킷 손실 감지 방법
+CoreTelephony 프레임워크를 이용한 통화 및 데이터 사용 제한 방법

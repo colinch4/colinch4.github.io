@@ -3,7 +3,7 @@ layout: post
 title: "[sketch] 레이어 복제시 자동으로 붙는 Copy 해제하기"
 description: " "
 date: 2021-09-09
-tags: [uxui]
+tags: [개발]
 comments: true
 share: true
 ---

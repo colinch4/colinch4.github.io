@@ -3,7 +3,7 @@ layout: post
 title: "[Vuetify] 10. Youtube Broswer"
 description: " "
 date: 2021-06-18
-tags: [vuetify]
+tags: [javascript]
 comments: true
 share: true
 ---

@@ -1,0 +1,50 @@
+스위프트(swift) CoreBluetooth 개요
+CoreBluetooth의 주요 기능
+CoreBluetooth를 사용하는 이유
+스위프트로 CoreBluetooth 설정하기
+CoreBluetooth 프레임워크의 구조
+Bluetooth Low Energy(BLE)와 CoreBluetooth의 관계
+CoreBluetooth의 주요 클래스와 프로토콜
+CoreBluetooth의 주요 메서드와 속성
+스위프트로 BLE 장치 연결하기
+BLE 장치에서 데이터 읽고 쓰기
+CoreBluetooth의 주요 이벤트 처리 방법
+BLE 특성과 설명자(Descriptor)의 이해
+CoreBluetooth의 백그라운드 작동 지원
+BLE 보안과 CoreBluetooth
+CoreBluetooth의 디버깅과 테스팅 방법
+CoreBluetooth와 다른 Bluetooth 프로토콜의 비교
+CoreBluetooth를 활용한 응용 프로그램의 사례
+BLE 서비스와 특성을 활용한 스위프트 앱 개발
+BLE 연결 상태 관리하기
+CoreBluetooth의 에러 처리 방법
+BLE Advertising과 스캔
+CoreBluetooth와 외부 액세서리의 통합
+BLE 연결 관리 및 유지 방법
+CoreBluetooth의 스레드 안전성
+BLE 프로파일과 CoreBluetooth
+CoreBluetooth를 활용한 위치 기반 서비스
+BLE Mesh 네트워킹과 CoreBluetooth
+CoreBluetooth를 활용한 실시간 데이터 스트리밍
+BLE 스캔 필터링과 CoreBluetooth
+CoreBluetooth의 취약점과 보안 강화 방법
+BLE 데이터 패킷 관리하기
+CoreBluetooth와 다중 연결 관리
+BLE 연결 간 최적의 전환 방법
+CoreBluetooth API의 업데이트 및 변화
+BLE 서비스 디스커버리와 CoreBluetooth
+CoreBluetooth를 이용한 블루투스 센서 통합
+BLE 프로파일과 규격
+CoreBluetooth와 오디오 프로파일 연동
+BLE 네트워킹과 CoreBluetooth
+CoreBluetooth를 활용한 사용자 간 데이터 공유
+BLE 데이터 캐싱과 CoreBluetooth
+BLE 장치 간 페어링 및 연결 설정
+CoreBluetooth를 활용한 실시간 위치 추적 서비스
+BLE 표준 규격과 CoreBluetooth의 일치 여부
+CoreBluetooth와 다른 무선 통신 기술의 비교
+BLE 통신 범위의 최적화와 CoreBluetooth
+CoreBluetooth를 활용한 실시간 상호작용 애플리케이션 개발
+BLE 장치와의 안전한 데이터 송수신을 위한 CoreBluetooth 보안 기능
+CoreBluetooth를 사용한 멀티플랫폼 호환성 확보
+BLE 데이터 압축 및 암호화에 대한 CoreBluetooth의 지원

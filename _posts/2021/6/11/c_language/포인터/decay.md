@@ -3,7 +3,7 @@ layout: post
 title: "[포인터] Decay란"
 description: " "
 date: 2021-06-11
-tags: [c]
+tags: [c언어]
 comments: true
 share: true
 ---

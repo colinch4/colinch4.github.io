@@ -3,7 +3,7 @@ layout: post
 title: "[Tool] Git 소스트리 사용법 정리(모르는 내용 정리)"
 description: " "
 date: 2021-06-09
-tags: [ide]
+tags: [개발]
 comments: true
 share: true
 ---

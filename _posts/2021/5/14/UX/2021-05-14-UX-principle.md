@@ -3,7 +3,7 @@ layout: post
 title: "[ux] UX 원칙"
 description: " "
 date: 2021-05-14
-tags: [uxui]
+tags: [개발]
 comments: true
 share: true
 ---

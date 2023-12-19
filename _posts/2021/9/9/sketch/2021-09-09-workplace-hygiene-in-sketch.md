@@ -3,7 +3,7 @@ layout: post
 title: "[sketch] 스케치 작업 환경 설정하기"
 description: " "
 date: 2021-09-09
-tags: [uxui]
+tags: [개발]
 comments: true
 share: true
 ---

@@ -1,0 +1,50 @@
+AVKit 소개
+AVKit의 주요 기능
+AVPlayerViewController 사용법
+AVFoundation 프레임워크와 AVKit의 관계
+AVKit를 이용한 동영상 재생
+AVPlayerLayer의 활용
+AVKit를 활용한 음악 재생
+AVPlayerItem과 AVPlayer의 차이
+AVKit에서 지원하는 동영상 포맷
+AVFoundation과 AVKit의 동작 원리
+AVKit 사용 시 주의할 점
+AVKit를 이용한 미디어 스트리밍
+AVKit를 활용한 사용자 정의 미디어 재생 화면 구성
+AVKit를 이용한 동영상 편집 기능
+AVKit 사용법에 대한 튜토리얼
+AVKit에서 지원하는 미디어 코덱
+AVKit에서의 캡션 및 자막 표시 기능
+AVKit를 활용한 미디어 컨트롤러 구성
+AVKit를 이용한 미디어 플레이어 UI 커스터마이징
+AVPlayer와 AVPlayerItem의 이벤트 처리
+AVPlayer의 시간 제어 기능
+AVPlayer의 비디오 루프 설정
+AVKit를 활용한 터치 제스처 기능 구현
+AVKit를 이용한 미디어 재생 시 컨트롤러 숨기기
+AVKit를 이용한 오디오 프레임 워크
+AVPlayer의 재생 상태 변화 처리
+AVKit를 활용한 미디어 재생 시간 표시 기능
+AVPlayer의 구간 반복 재생 기능
+AVPlayer의 화면 모드 설정
+AVPlayer의 화면 비율 설정
+AVPlayer의 오디오 출력 설정
+AVPlayer의 비디오 퀄리티 설정
+AVPlayer의 부드러운 재생 기능
+AVPlayer의 재생 속도 조절
+AVPlayer의 미디어 스트리밍 처리
+AVPlayer의 화질 변환 기능
+AVPlayer의 오디오 트랙 선택 기능
+AVPlayer의 자막 트랙 선택 기능
+AVPlayer의 동영상 품질 자동 조정 기능
+AVPlayer의 화면 밝기 조절 기능
+AVPlayer의 비디오 스냅샷 촬영 기능
+AVPlayer의 미디어 파일 다운로드 기능
+AVPlayer의 파일 스트리밍 설정
+AVPlayer의 미디어 재생 이력 기록
+AVPlayer의 재생 중지 후 이어보기 기능
+AVPlayer의 네트워크 상태에 따른 재생 제어
+AVPlayer의 코덱 에러 처리
+AVPlayer의 미디어 로딩 상태 표시 기능
+AVPlayer의 에러 핸들링
+AVPlayer의 화질 설정 및 전환 기능
