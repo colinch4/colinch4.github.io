@@ -31,10 +31,12 @@ permalink: /tags/
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
   <article>
-
-  <div class="tag-title" id="{{ this_tag }}">
+<details>
+  <summary>
+  <span class="tag-title" id="{{ this_tag }}">
     {{ this_tag }}
-  </div>
+  </span>
+  </summary>
     <ul>
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
@@ -50,6 +52,7 @@ permalink: /tags/
     {% endif %}
     {% endfor %}
     </ul>
+    </details>
   </article>
 {% endunless %}
 {% endfor %}
