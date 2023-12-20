@@ -1,0 +1,50 @@
+타입스크립트로 AWS SDK 사용하기
+AWS SDK를 사용하여 S3 버킷에 파일 업로드하기
+AWS SDK를 사용하여 S3 버킷에서 파일 다운로드하기
+타입스크립트를 사용하여 AWS SDK로 DynamoDB에 데이터 쓰기
+타입스크립트를 사용하여 AWS SDK로 DynamoDB에서 데이터 읽기
+타입스크립트를 사용하여 AWS SDK로 EC2 인스턴스 시작하기
+타입스크립트를 사용하여 AWS SDK로 Lambda 함수 실행하기
+AWS SDK를 사용하여 타입스크립트로 SNS 메시지 보내기
+타입스크립트로 AWS SDK를 사용하여 SQS 메시지 전송 및 수신하기
+AWS SDK를 사용하여 타입스크립트로 CloudWatch 모니터링 및 로깅 구성하기
+타입스크립트로 AWS SDK를 사용하여 API Gateway 설정하기
+타입스크립트를 사용하여 AWS SDK로 RDS 데이터베이스에 연결하기
+AWS SDK를 사용하여 타입스크립트로 데이터 파이프라인 구축하기
+타입스크립트로 AWS SDK를 사용하여 Cognito로 사용자 인증하기
+AWS SDK를 사용하여 타입스크립트로 IoT 서비스 관리하기
+타입스크립트를 사용하여 AWS SDK로 Elastic Beanstalk 애플리케이션 관리하기
+AWS SDK를 사용하여 타입스크립트로 Kinesis 데이터 스트림 처리하기
+타입스크립트를 사용하여 AWS SDK로 CloudFormation 스택 관리하기
+타입스크립트로 AWS SDK를 사용하여 X-Ray로 애플리케이션 추적하기
+AWS SDK를 사용하여 타입스크립트로 S3 버킷에 객체 수명주기 규칙 설정하기
+타입스크립트로 AWS SDK를 사용하여 SES로 이메일 전송하기
+AWS SDK를 사용하여 타입스크립트로 Step Functions 구성하기
+타입스크립트를 사용하여 AWS SDK로 SSM 파라미터 저장소 관리하기
+타입스크립트를 사용하여 AWS SDK로 CloudFront 배포 설정하기
+AWS SDK를 사용하여 타입스크립트로 Route 53 DNS 레코드 설정하기
+타입스크립트를 사용하여 AWS SDK로 CloudWatch 이벤트 구성하기
+타입스크립트를 사용하여 AWS SDK로 Fargate 컨테이너 관리하기
+타입스크립트를 사용하여 AWS SDK로 ECS 작업 정의하기
+AWS SDK를 사용하여 타입스크립트로 EMR 클러스터 설정하기
+타입스크립트를 사용하여 AWS SDK로 Glue 데이터 카탈로그 구축하기
+타입스크립트를 사용하여 AWS SDK로 Redshift 클러스터 관리하기
+타입스크립트를 사용하여 AWS SDK로 Athena 쿼리 실행하기
+타입스크립트를 사용하여 AWS SDK로 QuickSight 대시보드 구성하기
+AWS SDK를 사용하여 타입스크립트로 KMS 키 관리하기
+AWS SDK를 사용하여 타입스크립트로 Secrets Manager 설정하기
+타입스크립트를 사용하여 AWS SDK로 Directory Service 관리하기
+타입스크립트를 사용하여 AWS SDK로 Elasticsearch 서비스 구성하기
+타입스크립트를 사용하여 AWS SDK로 API Gateway 사용량 및 로깅 모니터링하기
+AWS SDK를 사용하여 타입스크립트로 서버리스 애플리케이션 배포하기
+타입스크립트로 AWS SDK를 사용하여 서버리스 프레임워크로 애플리케이션 구축하기
+AWS SDK를 사용하여 타입스크립트로 Amplify를 통한 앱 개발하기
+타입스크립트로 AWS SDK를 사용하여 AppSync로 GraphQL API 구축하기
+AWS SDK를 사용하여 타입스크립트로 IoT Core를 통한 장치 관리하기
+타입스크립트를 사용하여 AWS SDK로 CDK를 통한 클라우드 인프라 관리하기
+타입스크립트를 사용하여 AWS SDK로 인프라 프로비저닝 및 구성 관리하기
+타입스크립트를 사용하여 AWS SDK로 자동화된 배포 파이프라인 설정하기
+타입스크립트를 사용하여 AWS SDK로 탄력적인 백엔드 시스템 구축하기
+타입스크립트를 사용하여 AWS SDK로 보안 및 규정 준수 설정하기
+타입스크립트를 사용하여 AWS SDK로 비즈니스 분석 및 모니터링 구축하기
+AWS SDK를 사용하여 타입스크립트로 클라우드 비용 및 예산 관리하기
