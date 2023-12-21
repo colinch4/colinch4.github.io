@@ -1,0 +1,15 @@
+Angular CLI를 사용한 빌드 프로세스
+빌드 시스템에 대한 이해
+Angular 프로젝트의 빌드 과정
+빌드를 위한 Angular 설정
+Angular 프로젝트의 빌드 속도 향상 방법
+Production 모드에서의 Angular 빌드
+빌드 시에 발생할 수 있는 오류 해결 방법
+빌드 후의 결과물 분석 및 최적화
+빌드 관련 Best Practice
+Angular 빌드 도구 및 옵션 사용법
+빌드 후의 디버그 및 테스트 방법
+코드 최적화를 고려한 Angular 빌드 방법
+Lazy Loading 모듈을 사용한 빌드 최적화 방법
+Angular 애플리케이션의 무거운 부분을 위한 최적화 전략
+빌드 프로세스에서의 보안 고려사항

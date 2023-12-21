@@ -1,0 +1,50 @@
+Angular 모듈 구조화
+Angular 컴포넌트 구조화
+Angular 서비스 구조화
+Angular 디렉티브 구조화
+Angular 파이프 구조화
+Angular 라우팅 구조화
+Angular 모듈 파일 구조
+Angular 컴포넌트 파일 구조
+Angular 서비스 파일 구조
+Angular 템플릿 파일 구조
+Angular 모듈 폴더 구조
+Angular 컴포넌트 폴더 구조
+Angular 서비스 폴더 구조
+Angular 모듈 구조화 가이드라인
+Angular 컴포넌트 구조화 가이드라인
+Angular 서비스 구조화 가이드라인
+Angular 코드 구조화 패턴
+Angular 코드 구조화 최적화
+Angular 모듈 의존성 관리
+Angular 모듈 lazy loading 구조화
+Angular 모듈 공유 구조화
+Angular 모듈 단일 책임 원칙
+Angular 모듈 추상화
+Angular 서비스 싱글톤 패턴
+Angular 서비스 모듈 의존성 주입
+Angular 서비스 비즈니스 로직 분리
+Angular 서비스 API 호출 구조화
+Angular 컴포넌트 재사용 구조화
+Angular 컴포넌트 스마트-덤 컴포넌트 패턴
+Angular 컴포넌트 프레젠테이셔널 컴포넌트 패턴
+Angular 라우터 가드 구조화
+Angular 라우터 이벤트 핸들러 구조화
+Angular 디렉티브 커스텀 구조화
+Angular 디렉티브 속성 바인딩 구조화
+Angular 디렉티브 호스트 바인딩 구조화
+Angular 파이프 순수성 유지
+Angular 파이프 파이프 체이닝 구조화
+Angular 파이프 커스텀 파이프 구조화
+Angular 애플리케이션 전역 상태 관리 구조화
+Angular 상태 관리 라이브러리 구조화
+Angular 상태 관리 액션 유형 구조화
+Angular 상태 관리 리듀서 구조화
+Angular 테스트 코드 구조화
+Angular 테스트 스위트 구조화
+Angular 테스트 케이스 구조화
+Angular 테스트 더미 데이터 구조화
+Angular 테스트 스파이 구조화
+Angular 테스트 가짜 서비스 구조화
+Angular 테스트 주입된 서비스 구조화
+Angular 테스트 스터브 구조화

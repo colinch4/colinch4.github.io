@@ -1,0 +1,10 @@
+Angular 퍼포먼스 최적화를 위한 기본 지침
+모듈 분할을 통한 Angular 애플리케이션의 성능 향상
+레이지 로딩을 활용한 Angular 애플리케이션의 초기 로딩 시간 최적화
+ChangeDetectionStrategy를 활용한 Angular 성능 향상
+Angular에서의 HTTP 요청 최적화 방법
+AOT 컴파일을 통한 Angular 애플리케이션의 성능 향상
+프로덕션 모드에서의 Angular 성능 향상을 위한 최적화 방법
+Angular Lazy Loading을 통한 애플리케이션의 성능 향상
+Angular의 성능 향상을 위한 코드 최적화 전략
+Angular의 이미지 및 자원 로딩 최적화 방법
