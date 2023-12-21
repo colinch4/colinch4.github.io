@@ -1,0 +1,50 @@
+Leiningen 빌드 도구
+Boot 빌드 도구
+ClojureScript 컴파일러
+Figwheel 리로딩 개발 서버
+CIDER 에디터 플러그인
+La Clojure IDE
+Clojure.spec 라이브러리
+Ring 웹 애플리케이션 라이브러리
+Compojure 웹 프레임워크
+Hiccup HTML 생성 라이브러리
+Datomic 데이터베이스
+Immutant 애플리케이션 서버 통합
+core.async 비동기 프로그래밍
+clojure.test 테스트 프레임워크
+datascript 데이터베이스 라이브러리
+korma SQL 쿼리 빌더
+clj-http HTTP 클라이언트
+re-frame 프런트엔드 프레임워크
+Specmonk 명세 기반 테스트 라이브러리
+Cheshire JSON 라이브러리
+Pallet 인프라스트럭처 자동화
+data.csv CSV 라이브러리
+core.logic 논리 프로그래밍
+clj-time 날짜 및 시간 라이브러리
+Postal 이벤트 브로커
+Selmer 템플릿 엔진
+Bidi 라우팅 라이브러리
+core.rrb-vector 영속적인 벡터
+Mount 상태 관리 라이브러리
+honeysql SQL 구문 빌더
+Neanderthal 선형대수 라이브러리
+Luminus 웹 프레임워크 템플릿
+Propolis 소프트웨어 카탈로그
+Sente 실시간 웹 소켓
+Enlive HTML 템플릿 라이브러리
+Macchiato 클라이언트 및 서버 사이드 클로저스크립트
+Korma SQL 라이브러리
+Buddy 인증 및 권한 라이브러리
+core.matrix 행렬 및 선형 대수 라이브러리
+BorderPatrol 네트워크 보안 라이브러리
+Component 컴포넌트 기반 아키텍처
+Robin 데이터 갱신 및 저장소 연합
+Aleph 비동기 네트워킹 프레임워크
+Babashka Clojure 스크립트 실행기
+Dojo 클로저 라이브러리
+Ki 블록체인 클라이언트
+Middleman Clojure 미들웨어 프레임워크
+Multicore 데이터 병렬처리 라이브러리
+Transducers 함수형 변환 라이브러리
+HornetQ 큐 메시지 브로커

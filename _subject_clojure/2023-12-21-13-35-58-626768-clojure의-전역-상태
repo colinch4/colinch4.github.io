@@ -1,0 +1,20 @@
+Clojure의 전역 상태란 무엇인가?
+Clojure에서 전역 상태를 관리하는 방법
+Clojure의 전역 상태와 로컬 상태의 차이
+Clojure 전역 상태를 사용하는 이유
+Clojure 전역 상태의 장단점
+Clojure의 전역 상태 변경 방법
+Clojure 전역 상태에 대한 best practice
+Clojure 전역 상태 관리 시 주의할 점
+Clojure 전역 상태를 다루는 일반적인 패턴
+Clojure 전역 상태가 응용프로그램에 미치는 영향
+Clojure 전역 상태의 병행성(Concurrent) 처리
+Clojure 전역 상태 관리 라이브러리
+Clojure 전역 상태 관리 시의 주요 이슈
+Clojure 전역 상태에 대한 테스트 전략
+Clojure 전역 상태를 활용한 예시 프로젝트
+Clojure 전역 상태의 가시성과 접근 범위
+Clojure 전역 상태와 레퍼런스의 관계
+Clojure 전역 상태의 변경과 영속성
+Clojure 전역 상태를 이용한 데이터 공유
+Clojure 전역 상태를 이용한 응용프로그램 상태 관리

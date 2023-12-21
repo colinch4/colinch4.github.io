@@ -1,0 +1,50 @@
+<!DOCTYPE> 선언
+<html> 태그
+<head> 태그
+<title> 태그
+<meta> 태그
+<link> 태그
+<style> 태그
+<script> 태그
+<body> 태그
+<h1>~<h6> 제목 태그
+<p> 단락 태그
+<a> 링크 태그
+<img> 이미지 태그
+<ul> 순서 없는 목록 태그
+<ol> 순서 있는 목록 태그
+<li> 목록 항목 태그
+<div> 블록 요소 태그
+<span> 인라인 요소 태그
+<table> 테이블 태그
+<tr> 테이블 행 태그
+<th> 테이블 제목 셀 태그
+<td> 테이블 데이터 셀 태그
+<form> 폼 태그
+<input> 입력 필드 태그
+<button> 버튼 태그
+<select> 드롭다운 메뉴 태그
+<option> 드롭다운 메뉴 항목 태그
+<textarea> 텍스트 영역 태그
+<label> 라벨 태그
+<fieldset> 폼 요소 그룹화 태그
+<legend> 폼 그룹 제목 태그
+<audio> 오디오 태그
+<video> 비디오 태그
+<canvas> 캔버스 태그
+<footer> 푸터 태그
+<header> 헤더 태그
+<nav> 내비게이션 태그
+<aside> 사이드바 태그
+<section> 섹션 태그
+<article> 아티클 태그
+<main> 메인 태그
+웹접근성
+시맨틱 웹
+웹 표준
+웹 호환성
+웹 브라우저
+웹 디자인
+반응형 웹
+CSS
+JavaScript

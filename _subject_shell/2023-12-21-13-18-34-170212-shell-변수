@@ -1,0 +1,10 @@
+Shell 변수 정의
+환경 변수와 Shell 변수의 차이
+Shell 변수 사용 예시
+Shell 변수 설정 및 변경 방법
+Shell 변수 삭제하는 방법
+변수 확장 (Variable expansion)
+Shell 변수 유효범위 (Scope of shell variables)
+중괄호 확장 (Brace expansion)
+포지셔널 파라미터 (Positional parameters)
+특수 변수 (Special variables)

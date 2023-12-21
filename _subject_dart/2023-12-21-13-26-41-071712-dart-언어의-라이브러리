@@ -1,0 +1,50 @@
+Flutter SDK의 핵심 라이브러리
+Async/await를 위한 dart:async 라이브러리
+HTTP 통신을 위한 http 라이브러리
+데이터 처리를 위한 dart:convert 라이브러리
+웹 개발을 위한 dart:html 라이브러리
+로컬 데이터베이스를 위한 moor 라이브러리
+상태 관리를 위한 provider 라이브러리
+UI 디자인을 위한 flutter_bloc 라이브러리
+테스트를 위한 flutter_test 라이브러리
+Firebase와 통합을 위한 firebase_core 라이브러리
+다국어 지원을 위한 flutter_localizations 라이브러리
+이미지 처리를 위한 image 라이브러리
+지리적 위치 정보를 위한 geolocator 라이브러리
+클라우드 서비스와 통합을 위한 cloud_firestore 라이브러리
+애니메이션을 위한 flutter_animation_set 라이브러리
+디버깅을 위한 devtools 라이브러리
+저장소를 위한 shared_preferences 라이브러리
+그래픽 렌더링을 위한 flutter_svg 라이브러리
+플랫폼 간 호환성을 위한 flutter_platform_widgets 라이브러리
+음성 처리를 위한 speech_to_text 라이브러리
+웹소캣 통신을 위한 web_socket_channel 라이브러리
+머터리얼 디자인을 위한 flutter_material_color_picker 라이브러리
+사용자 인증을 위한 firebase_auth 라이브러리
+소셜 미디어 통합을 위한 flutter_twitter 라이브러리
+데이터 시각화를 위한 charts_flutter 라이브러리
+로그인 UI를 위한 flutter_login 라이브러리
+디자인 툴을 위한 rive 라이브러리
+사운드 처리를 위한 just_audio 라이브러리
+푸시 알림을 위한 firebase_messaging 라이브러리
+날짜와 시간을 처리하기 위한 time_machine 라이브러리
+플러터 플러그인을 위한 flutter_plugin_android_lifecycle 라이브러리
+QR 코드 생성을 위한 qr_flutter 라이브러리
+텍스트 처리를 위한 flutter_quill 라이브러리
+앱 설정을 위한 app_settings 라이브러리
+웹 스크래핑을 위한 flutter_web_scraper 라이브러리
+센서와 통합을 위한 sensors 라이브러리
+지문 인증을 위한 local_auth 라이브러리
+패키지 관리를 위한 pub_semver 라이브러리
+에러 처리를 위한 sentry_flutter 라이브러리
+동적 테마를 위한 dynamic_theme 라이브러리
+웹뷰를 위한 webview_flutter 라이브러리
+네트워크 상태를 확인하기 위한 connectivity 라이브러리
+카메라 및 갤러리 접근을 위한 image_picker 라이브러리
+텍스트 인식을 위한 firebase_ml_vision 라이브러리
+알람 관리를 위한 flutter_local_notifications 라이브러리
+애니메이션 상호작용을 위한 flare_flutter 라이브러리
+웹소캣 서버를 위한 web_socket_channel 라이브러리
+지역화 및 다국어 처리를 위한 flutter_i18n 라이브러리
+블루투스 통신을 위한 flutter_blue 라이브러리
+광고를 위한 firebase_admob 라이브러리

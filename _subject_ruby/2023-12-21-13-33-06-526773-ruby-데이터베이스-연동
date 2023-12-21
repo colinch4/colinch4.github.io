@@ -1,0 +1,10 @@
+Ruby on Rails와 데이터베이스 연동
+ActiveRecord를 사용한 Ruby 데이터베이스 연동
+PostgreSQL과의 Ruby 데이터베이스 연동
+MySQL과의 Ruby 데이터베이스 연동
+MongoDB와의 Ruby 데이터베이스 연동
+SQLite와의 Ruby 데이터베이스 연동
+데이터베이스 연동을 위한 Ruby gem
+데이터베이스 연동 오류 해결 방법
+외부 데이터베이스와의 연동을 위한 Ruby 확장
+데이터베이스 연동을 위한 보안 관련 사항

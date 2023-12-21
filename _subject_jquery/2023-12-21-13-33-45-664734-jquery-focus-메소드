@@ -1,0 +1,10 @@
+jQuery focus 메소드의 기본 구문
+jQuery focus 메소드를 사용하여 요소에 초점을 맞추는 방법
+focus 이벤트와 jQuery focus 메소드의 차이점
+jQuery focus 메소드를 사용하여 입력 요소에 초점을 맞추는 예제
+jQuery blur 메소드와의 차이점
+jQuery focus 메소드를 사용하여 특정 요소에 초점을 맞춘 후 작업 수행하기
+focus 이벤트와 함께 사용되는 jQuery focus 메소드
+다수의 요소에 대해 jQuery focus 메소드를 일괄 적용하는 방법
+jQuery focus 메소드를 사용하여 특정 입력 요소에 포커스를 설정하는 방법
+focus 메소드를 사용하여 특정 요소에 포커스를 맞출 때 발생할 수 있는 문제 해결 방법

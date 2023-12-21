@@ -1,0 +1,50 @@
+Ruby에서 AWS SDK 세팅하기
+Ruby를 사용하여 AWS S3에 파일 업로드하기
+Ruby를 사용하여 AWS EC2 인스턴스 시작하기
+Ruby에서 AWS RDS에 데이터베이스 연결 설정하기
+Ruby를 사용하여 AWS Lambda 함수 작성하기
+Ruby와 AWS API Gateway 통합하기
+Ruby를 사용하여 AWS Elastic Beanstalk 애플리케이션 배포하기
+Ruby에서 AWS IAM 권한 관리하기
+Ruby를 사용하여 AWS CloudFormation 템플릿 작성하기
+Ruby로 AWS 서버리스 애플리케이션 개발하기
+Ruby에서 AWS SES를 사용하여 이메일 전송하기
+Ruby와 AWS SNS를 사용하여 푸시 알림 보내기
+Ruby를 사용하여 AWS CloudWatch 지표 검색 및 모니터링하기
+Ruby와 AWS SQS를 사용하여 메시지 대기열 구현하기
+Ruby를 사용하여 AWS DynamoDB 데이터 읽기 및 쓰기
+Ruby로 AWS Cognito를 사용하여 사용자 인증 및 관리하기
+Ruby에서 AWS S3 버킷 정책 설정하기
+Ruby와 AWS CloudFront를 사용하여 콘텐츠 전송 네트워크 설정하기
+Ruby를 사용하여 AWS ECS에 컨테이너 실행하기
+Ruby로 AWS Kinesis를 사용하여 데이터 스트리밍 처리하기
+Ruby에서 AWS CodeDeploy로 애플리케이션 배포 자동화하기
+Ruby와 AWS Route 53을 사용하여 도메인 관리하기
+Ruby를 사용하여 AWS Athena를 통한 쿼리 실행하기
+Ruby로 AWS Glue를 사용하여 데이터 ETL 작업 수행하기
+Ruby에서 AWS Systems Manager를 사용하여 인프라 관리하기
+Ruby를 사용하여 AWS Step Functions로 워크플로우 관리하기
+Ruby와 AWS IoT를 사용하여 인터넷 연결된 장치 관리하기
+Ruby로 AWS X-Ray를 사용하여 애플리케이션 추적 및 분석하기
+Ruby에서 AWS API Gateway를 사용하여 RESTful API 구축하기
+Ruby와 AWS AppSync를 사용하여 GraphQL API 구축하기
+Ruby를 사용하여 AWS Fargate를 통해 컨테이너 실행하기
+Ruby와 AWS CloudTrail을 사용하여 액세스 모니터링 및 감사 로깅 구성하기
+Ruby를 사용하여 AWS WorkSpaces를 통해 가상 데스크톱 제공하기
+Ruby로 AWS Batch를 통해 작업 스케쥴링 및 자동 크기 조정하기
+Ruby에서 AWS Artifact를 사용하여 규정 준수 문서 얻기
+Ruby와 AWS Direct Connect를 사용하여 온프레미스 네트워크 연결하기
+Ruby를 사용하여 AWS Fargate에서 로드 밸런싱 구성하기
+Ruby로 AWS Transit Gateway를 사용한 가상 프라이빗 클라우드 구축하기
+Ruby와 AWS Organizations를 사용하여 멀티 어카운트 전략 구현하기
+Ruby에서 AWS Security Hub을 사용하여 보안 및 규정 준수 관리하기
+Ruby를 사용하여 AWS KMS로 데이터 암호화 및 관리하기
+Ruby와 AWS Config를 사용하여 리소스 구성 관리하기
+Ruby를 사용하여 AWS CloudHSM을 통한 하드웨어 보안 모듈 관리하기
+Ruby로 AWS WAF를 사용하여 웹 애플리케이션 보호하기
+Ruby와 AWS Shield를 사용하여 DDoS 보호 설정하기
+Ruby에서 AWS Artifact를 통해 규정 준수 문서 얻기
+Ruby와 AWS Inspector를 사용하여 보안 취약성 검사하기
+Ruby를 사용하여 AWS Firewall Manager를 통해 보안 그룹 관리하기
+Ruby와 AWS Certificate Manager를 사용하여 SSL/TLS 인증서 관리하기
+Ruby로 AWS Secrets Manager를 사용하여 암호 관리하기
