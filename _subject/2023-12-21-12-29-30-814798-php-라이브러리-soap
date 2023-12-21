@@ -1,0 +1,50 @@
+SOAP 기본 개념
+PHP에서 SOAP 사용하기
+SOAP 클라이언트 설정
+SOAP 서버 설정
+WSDL 파일 생성
+PHP에서 WSDL 이용하여 SOAP 클라이언트 만들기
+PHP SOAP 클라이언트의 함수 호출
+SOAP 요청과 응답 처리
+SOAP 인증 및 보안
+PHP SOAP 예외 처리
+SOAP 오류 처리 방법
+PHP SOAP 헤더 추가
+SOAP 요청과 응답 로깅
+PHP에서 SOAP 테스트하기
+SOAP와 REST의 차이점
+PHP에서 다중 SOAP 클라이언트 만들기
+PHP에서 동시에 여러 SOAP 요청 보내기
+SOAP 연결 타임아웃 설정
+PHP에서 SOAP 응답 유효성 검사
+SOAP 바인딩 유형
+PHP에서 비동기 SOAP 호출
+SOAP와 HTTP 프로토콜
+PHP에서 SSL/TLS를 이용한 안전한 SOAP 통신 설정
+PHP와 SOAP 웹 서비스 연동 방법
+PHP에서 SOAP 통신 중 압축 설정하기
+SOAP와 XML-RPC 비교
+PHP에서 SOAP 통신 중 캐시 설정
+SOAP 행위와 정책 처리
+PHP의 SOAP 통신에서의 CORS 문제 해결
+SOAP와 GraphQL 비교
+PHP에서 SOAP 통신 시 버전 관리
+SOAP의 MIME 타입
+PHP에서 SOAP 통신 중 요청과 응답 중간에 추가 작업 수행하기
+PHP에서 SOAP 통신 중 프록시 설정
+SOAP와 서비스 디스커버리
+PHP에서 SOAP 타임스탬프 처리
+SOAP의 요청과 응답 메시지 구문 분석
+PHP에서 SOAP 통신 중 캐시 처리
+SOAP 통신에서의 데이터 암호화
+PHP에서 SOAP 통신 중 스트림 처리
+SOAP와 웹 서비스 보안 표준
+PHP에서 SOAP 통신 중 비즈니스 룰 처리
+SOAP의 전역 요소
+PHP에서의 SOAP 테스트 환경 구성
+SOAP 통신에 대한 로그 기록
+PHP에서 SOAP 통신을 통한 데이터 변환
+SOAP 통신에 대한 지속적인 모니터링
+PHP에서 SOAP 위임 처리
+SOAP의 암호화 프로토콜
+PHP에서 SOAP 통신 중 품질관리 처리

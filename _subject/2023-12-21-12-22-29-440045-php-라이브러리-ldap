@@ -1,0 +1,50 @@
+LDAP (Lightweight Directory Access Protocol) 이해
+PHP에서 LDAP 사용하기
+PHP LDAP 라이브러리의 장점
+PHP에서의 LDAP 인증 처리
+PHP LDAP 연결 설정
+PHP에서의 LDAP 쿼리 작성
+PHP LDAP 필터링 기능 사용하기
+PHP에서의 LDAP 검색과 검색 옵션
+PHP LDAP 수정 작업
+PHP에서의 LDAP 사용 권한 관리
+PHP LDAP 설정 파일 구성
+PHP에서의 LDAP 연결 보안 설정
+PHP LDAP 오류 처리
+PHP에서의 LDAP 디렉터리 구조 다루기
+PHP LDAP와 데이터베이스 간의 연동
+PHP에서의 LDAP 멀티스레딩 처리
+PHP LDAP과 다른 인증 방식 비교
+PHP에서의 LDAP 테스트 시나리오 작성
+PHP LDAP 의존 라이브러리 관리
+PHP LDAP 클라이언트와 서버 간 통신
+PHP에서의 LDAP 속성(attribute) 조작
+PHP LDAP 디렉터리 트리와 디렉터리 구조의 이해
+PHP LDAP 보안 프로토콜 및 암호화
+PHP에서의 LDAP 사용자 관리
+PHP LDAP과 통합 디렉터리 서비스(IDS) 연동
+PHP LDAP와 Active Directory 통합
+PHP에서의 LDAP 인증과 권한 부여(Authorization) 처리
+PHP LDAP와 OAuth/OpenID 연동
+PHP에서의 LDAP 백엔드 시스템 통합
+PHP LDAP 스키마(schema) 관리
+PHP에서의 LDAP 서버 상태 모니터링
+PHP LDAP 사용 시의 보안 Best Practice
+PHP LDAP와 SSL/TLS 연동
+PHP에서의 LDAP 연동을 위한 성능 최적화
+PHP LDAP와 네트워크 보안
+PHP에서의 LDAP 백엔드 데이터 저장 방법
+PHP LDAP와 모바일 애플리케이션 통합
+PHP에서의 LDAP 디렉터리 데이터 백업 및 복원
+PHP LDAP와 SAML(Security Assertion Markup Language) 연동
+PHP에서의 LDAP 사용을 위한 웹 보안 기법
+PHP LDAP와 인증 오케스트레이션(orchestration) 연동
+PHP에서의 LDAP 클라우드 통합
+PHP LDAP와 데이터 동기화
+PHP에서의 LDAP 사용을 위한 API 설계
+PHP LDAP 확장성을 위한 아키텍처 설계
+PHP LDAP와 디렉터리 서비스 기능 확장
+PHP에서의 LDAP 모니터링 및 로깅
+PHP LDAP와 비지니스 프로세스 통합(BPM)
+PHP에서의 LDAP 관리 인터페이스(UI) 구현
+PHP LDAP와 보안 정책 일치 여부 확인

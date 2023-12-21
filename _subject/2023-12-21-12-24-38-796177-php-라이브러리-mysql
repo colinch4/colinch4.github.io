@@ -1,0 +1,20 @@
+PHP에서 MySQL 라이브러리 사용법
+MySQL 연결 설정 및 연결 해제
+데이터베이스 및 테이블 생성
+데이터 삽입 (INSERT) 및 수정 (UPDATE)
+데이터 삭제 (DELETE) 및 검색 (SELECT)
+데이터베이스 백업 및 복원
+PHP와 MySQL의 데이터 유형 매핑
+PHP에서 MySQL 트랜잭션 처리
+데이터베이스 트리거와 PHP 연동
+데이터베이스 인덱스 및 PHP 성능 향상
+데이터베이스 관련 에러 핸들링 및 PHP 예외 처리
+PHP와 MySQL 연동 시 보안 측면
+PHP 내에서 MySQL 쿼리 실행
+MySQL 데이터베이스 디자인 및 PHP 개발 최적화
+PHP와 MySQL 클라이언트-서버 통신 프로토콜 에러 처리
+데이터베이스 락 및 PHP 프로세스 제어
+PHP에서 MySQL 스토어드 프로시저 및 함수 사용법
+PHP와 MySQL 데이터베이스 성능 모니터링 및 최적화
+MySQL 데이터베이스 및 PHP 애플리케이션 보안 관리
+PHP의 패스워드 해싱 및 MySQL 저장 방법
