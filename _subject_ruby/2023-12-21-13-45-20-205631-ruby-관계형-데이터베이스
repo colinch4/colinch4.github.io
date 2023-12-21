@@ -1,0 +1,10 @@
+Ruby on Rails와 관계형 데이터베이스
+Ruby에서의 MySQL 연동
+ActiveRecord를 사용하여 관계형 데이터베이스 조작하기
+SQLite와의 Ruby 연동
+PostgreSQL을 활용한 Ruby 애플리케이션 개발
+SQL 쿼리를 이용한 Ruby 데이터베이스 다루기
+Ruby와 MariaDB 연동 방법
+Oracle과의 Ruby 연동
+Active Record Migration 작업과 관계형 데이터베이스 스키마 변경
+관계형 데이터베이스의 연관관계 설정과 Ruby 모델 연결
