@@ -1,0 +1,20 @@
+바벨(Babel) 설명 및 기능
+리액트(React)와 바벨(Babel)의 관계
+바벨(Babel) 설정 파일 작성 방법
+바벨(Babel) 플러그인 및 프리셋 사용법
+바벨(Babel) 통해 ES6+ 문법을 ES5로 변환하기
+바벨(Babel)과 웹팩(Webpack) 통합
+바벨(Babel)과 리액트(React) 프로젝트 설정 방법
+JSX를 바벨(Babel)로 컴파일하는 방법
+바벨(Babel)과 TypeScript 통합
+바벨(Babel) 동적 임포트 처리 방법
+바벨(Babel) 환경별 설정(dev, prod) 방법
+바벨(Babel) 폴리필(polyfill) 적용 방법
+바벨(Babel)의 코드 최적화 및 최적화 플러그인
+바벨(Babel) 코드 변환 과정과 동작 원리
+바벨(Babel) Config 파일 타입(JavaScript, JSON) 선택 방법
+바벨(Babel) 동적 임포트 및 코드 분할
+바벨(Babel)과 ECMAScript 모듈(ESM) 통합 방법
+바벨(Babel)과 리액트(React) 호환성
+바벨(Babel)과 리액트 네이티브(React Native) 통합 방법
+바벨(Babel)과 리액트(React) 라이브러리 사용 시 주의점
