@@ -1,0 +1,50 @@
+ATL (Active Template Library)
+atlcom.h 헤더 파일
+ATL 서비스 개체
+COM (Component Object Model)
+ATL 기반 COM 프로그래밍
+atlcom.h 파일의 기능
+ATL COM 클래스
+ATL COM 모듈
+ATL 서버
+atlcom.h 헤더 파일의 구조
+ATL COM 이벤트 처리기
+atlcom.h에서 지원하는 기능
+ATL COM 인터페이스
+atlcom.h의 유틸리티 함수
+ATL COM 이벤트 맵
+atlcom.h의 주요 매크로
+ATL COM 클래스 팩토리
+atlcom.h의 사용 예시
+ATL COM 스레딩 모델
+atlcom.h에서의 예외 처리
+ATL COM 매타 데이터
+atlcom.h의 속성 매크로
+ATL COM 서비스 객체
+atlcom.h의 빌드 옵션
+ATL COM Aggregation
+atlcom.h의 디버깅 지원
+ATL COM 라이프 사이클
+atlcom.h의 멀티 스레드 지원
+ATL COM 경로 검색
+atlcom.h의 보안 고려 사항
+ATL COM 타입 라이브러리
+atlcom.h의 모듈 및 오브젝트 등록
+ATL COM 런타임 모듈
+atlcom.h의 성능 최적화
+ATL COM 컴포넌트 검색
+atlcom.h의 버전 관리
+ATL COM 속성 저장소
+atlcom.h의 리소스 관리
+ATL COM 컬렉션
+atlcom.h의 자동화 객체 지원
+ATL COM 스크립팅
+atlcom.h의 타임 스탬프 지원
+ATL COM 라이브러리 의존성
+atlcom.h의 사용자 지정 소스 코드
+ATL COM 티피드 라이브러리
+atlcom.h의 멤버 함수 열거
+ATL COM COM+ 기능
+atlcom.h의 멤버 함수 매핑
+ATL COM 네임 서버
+atlcom.h의 테스트 및 디버깅 도구

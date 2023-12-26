@@ -1,0 +1,50 @@
+stdafx.h의 역할
+stdafx.h의 의미
+stdafx.h의 사용 방법
+stdafx.h가 필요한 이유
+stdafx.h와 전처리 지시문
+stdafx.h의 구성 요소
+stdafx.h와 Precompiled Header
+stdafx.h와 다른 헤더 파일의 차이
+stdafx.h의 필요성
+stdafx.h의 장단점
+stdafx.h와 프로그래밍 성능
+stdafx.h와 컴파일 속도
+stdafx.h와 헤더 파일의 순서
+stdafx.h와 컴파일 에러
+stdafx.h와 컴파일 경고
+stdafx.h와 미리 컴파일 된 헤더 파일
+stdafx.h와 즉석 컴파일
+stdafx.h와 표준 라이브러리
+stdafx.h와 윈도우 프로그래밍
+stdafx.h와 리눅스 프로그래밍
+stdafx.h와 메모리 사용
+stdafx.h와 헤더 파일의 중복 포함
+stdafx.h와 명명 규칙
+stdafx.h와 코드 재사용
+stdafx.h와 소스 파일의 구조
+stdafx.h와 전처리기 매크로
+stdafx.h와 빌드 프로세스
+stdafx.h와 컴파일 옵션
+stdafx.h와 템플릿
+stdafx.h와 클래스 선언
+stdafx.h와 함수 선언
+stdafx.h와 데이터 타입
+stdafx.h와 헤더 파일 경로
+stdafx.h와 라이브러리 경로
+stdafx.h와 외부 라이브러리
+stdafx.h와 개발 환경 설정
+stdafx.h와 프로젝트 설정
+stdafx.h와 빌드 오류
+stdafx.h와 런타임 오류
+stdafx.h와 예외 처리
+stdafx.h와 디버깅
+stdafx.h와 테스트 케이스
+stdafx.h와 버전 관리
+stdafx.h와 코드 정리
+stdafx.h와 코드 리뷰
+stdafx.h와 보안 취약점
+stdafx.h와 코드 최적화
+stdafx.h와 컴파일러 호환성
+stdafx.h와 플랫폼 호환성
+stdafx.h와 이식성

@@ -1,0 +1,50 @@
+atlbase.h 헤더 파일
+ATL(Active Template Library)
+atlbase.h의 역할
+atlbase.h 파일 구조
+atlbase.h의 헤더 가드
+atlbase.h의 include 문
+atlbase.h 내부 매크로
+atlbase.h에서 정의된 타입들
+atlbase.h에서 제공하는 클래스들
+atlbase.h와 ATL 컴포넌트
+atlbase.h에서 사용되는 유틸리티 함수
+atlbase.h와 Windows API
+atlbase.h와 COM(Component Object Model)
+atlbase.h와 MFC(Microsoft Foundation Class)
+atlbase.h의 버전 및 업데이트 내역
+atlbase.h를 사용하여 ATL 프로젝트 생성하기
+atlbase.h와 Visual Studio의 호환성
+atlbase.h에서 제공하는 예외 처리 기능
+atlbase.h와 멀티스레딩
+atlbase.h와 데이터베이스 연동
+atlbase.h의 문자열 처리 기능
+atlbase.h를 이용한 파일 입출력
+atlbase.h와 네트워크 프로그래밍
+atlbase.h와 웹 서비스 개발
+atlbase.h와 디버깅 도구 활용
+atlbase.h를 이용한 UI 개발
+atlbase.h를 활용한 이벤트 처리
+atlbase.h와 메모리 관리
+atlbase.h를 활용한 플러그인 개발
+atlbase.h와 리팩토링
+atlbase.h에서 제공하는 보안 기능
+atlbase.h를 이용한 테스팅
+atlbase.h와 성능 최적화
+atlbase.h와 코드 검사 도구
+atlbase.h에서 제공하는 알고리즘 라이브러리
+atlbase.h와 데이터 구조
+atlbase.h를 활용한 시각화 프로그래밍
+atlbase.h와 사운드 처리
+atlbase.h와 영상 처리
+atlbase.h를 이용한 장치 제어
+atlbase.h의 확장성
+atlbase.h를 활용한 운영체제 간 플랫폼 호환성
+atlbase.h와 다국어 지원
+atlbase.h를 이용한 서비스 개발
+atlbase.h와 시뮬레이션 프로그래밍
+atlbase.h의 데이터베이스 보안
+atlbase.h를 활용한 자원 관리
+atlbase.h와 웹 개발
+atlbase.h에서 제공하는 XML 처리 기능
+atlbase.h를 이용한 앱 개발

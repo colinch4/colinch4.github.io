@@ -1,0 +1,50 @@
+System.DirectoryServices.Protocols 개요
+LDAP 프로토콜
+DirectoryEntry 클래스
+DirectorySearcher 클래스
+DistinguishedName 속성
+DirectoryAttribute 클래스
+DirectoryAttributeModification 클래스
+LDAP 연결 설정
+검색 필터
+검색 범위 설정
+속성 반환 설정
+검색 결과 처리 방법
+LDAP 트리 검색
+디렉터리 추가
+디렉터리 삭제
+디렉터리 수정
+보안 설정
+SSL 연결 설정
+루트 디렉터리 설정
+LDAP 연결 유지 관리
+디렉터리 서비스 응답 시간 관리
+사용자 인증
+익명 바인딩
+네트워크 프로토콜 설정
+LDAP 오브젝트 클래스
+특정 속성 검색
+디렉터리 서버 설정
+트리 트랜스벌센트 경로 설정
+LDAP URL 포맷
+속성 유형 설정
+디렉터리 스키마
+LDIF 포맷
+DN 문자열
+LDAP 트랜잭션
+디렉터리 응답 처리
+연결 오류 처리
+네트워크 타임아웃 설정
+LDAP 버전 설정
+Paging 처리
+범위 제약 설정
+디렉터리 서버 유휴 시간 설정
+특정 서버 연결 설정
+디렉터리 서비스의 모니터링
+디렉터리 속성 타입 설정
+디렉터리 서비스 이벤트 처리
+디렉터리 엔트리의 복사와 이동
+디렉터리 서비스 예외 처리
+디렉터리 서비스 디버깅
+LDAP 보안 프로토콜
+디렉터리 서비스 파티션 관리

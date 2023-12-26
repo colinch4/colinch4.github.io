@@ -1,0 +1,54 @@
+System.Web.HttpUtility의 역할
+System.Web.HttpUtility의 주요 메서드
+System.Web.HttpUtility.UrlEncode
+System.Web.HttpUtility.UrlDecode
+System.Web.HttpUtility.HtmlEncode
+System.Web.HttpUtility.HtmlDecode
+System.Web.HttpUtility.UrlPathEncode
+System.Web.HttpUtility.UrlDecodeToBytes
+System.Web.HttpUtility.UrlEncodeToBytes
+System.Web.HttpUtility.ParseQueryString
+System.Web.HttpUtility.ParseQueryString 메서드의 사용법
+System.Web.HttpUtility.UrlPathEncode 사용 예시
+System.Web.HttpUtility를 사용한 웹 개발
+System.Web.HttpUtility를 사용한 데이터 전달
+System.Web.HttpUtility.EncodeUrl vs Encode vs PathEncode
+
+System.Web.HttpUtility의 시큐어 코딩 가이드
+System.Web.HttpUtility를 사용한 보안 취약점 방지
+System.Web.HttpUtility의 쿠키 처리
+System.Web.HttpUtility의 HtmlEncode와 JavaScriptEncode 차이점
+System.Web.HttpUtility의 UrlDecodeToBytes 사용 방법
+System.Web.HttpUtility를 이용한 URL 파싱
+System.Web.HttpUtility의 캐릭터 인코딩
+System.Web.HttpUtility의 웹 폼 데이터 처리 기능
+System.Web.HttpUtility를 활용한 파일 다운로드
+System.Web.HttpUtility의 HTML과 URL 인코딩 비교
+
+System.Web.HttpUtility의 multipart/form-data 처리
+System.Web.HttpUtility의 HTTP 요청과 응답 처리
+System.Web.HttpUtility를 사용한 웹 애플리케이션 보안
+System.Web.HttpUtility의 웹 서비스 구축
+System.Web.HttpUtility를 활용한 RESTful API 처리
+System.Web.HttpUtility를 사용한 데이터 전송 보안
+System.Web.HttpUtility의 사용자 입력 검증
+System.Web.HttpUtility의 특수문자 처리
+System.Web.HttpUtility를 사용한 웹 스크레이핑
+System.Web.HttpUtility를 활용한 데이터 파싱
+
+System.Web.HttpUtility의 SOAP 서비스 처리
+System.Web.HttpUtility의 웹 요청 파라미터 처리
+System.Web.HttpUtility를 사용한 웹 애플리케이션 테스팅
+System.Web.HttpUtility의 웹 애플리케이션 로깅
+System.Web.HttpUtility의 HTTP 메시지 처리
+System.Web.HttpUtility를 이용한 웹 소켓 통신
+System.Web.HttpUtility의 인코딩 오류 처리
+System.Web.HttpUtility를 사용한 웹 애플리케이션 모니터링
+System.Web.HttpUtility의 URL 디코딩 로직
+System.Web.HttpUtility의 HTTP 요청 헤더 처리
+
+System.Web.HttpUtility를 사용한 웹 애플리케이션 성능 최적화
+System.Web.HttpUtility의 REST API 디자인
+System.Web.HttpUtility를 활용한 웹 애플리케이션 보안 강화
+System.Web.HttpUtility를 사용한 웹 애플리케이션 상태 관리
+System.Web.HttpUtility를 사용한 웹 애플리케이션 에러 처리

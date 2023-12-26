@@ -1,0 +1,50 @@
+System.Threading.Tasks Overview
+Task Class in System.Threading.Tasks
+TaskFactory Class in System.Threading.Tasks
+TaskCompletionSource Class in System.Threading.Tasks
+Parallel Class in System.Threading.Tasks
+Task-based Asynchronous Pattern (TAP) in C#
+async and await keywords in C#
+TaskScheduler Class in System.Threading.Tasks
+CancellationToken Class in System.Threading.Tasks
+Task Parallel Library (TPL) in C#
+Task Continuation
+Task.Wait and Task.WaitAll Methods
+Task.Run Method
+Task.WhenAll and Task.WhenAny Methods
+Task.Delay Method
+Task.Yield Method
+Task.Result Property
+Task.IsCompleted Property
+Task.Exception Property
+Task.AsyncState Property
+Task.Start Method
+TaskFactory.StartNew Method
+TaskCreationOptions Enumeration
+Parallel.Invoke Method
+Parallel.For and Parallel.ForEach Methods
+Data Parallelism with Parallel LINQ (PLINQ)
+SynchronizationContext in Task-based Asynchronous Programming
+Task Cancellation in C#
+Task Exceptions Handling
+Task Continuation Options
+Child Tasks
+Long-Running Tasks
+Best Practices in Using System.Threading.Tasks
+Task and ThreadPool
+Task-based Asynchronous I/O
+Custom Task Schedulers
+Debugging Tasks in Visual Studio
+TaskCompletionSource Task
+Task.Unwrap Method
+Task.FromCanceled and Task.FromException Methods
+Task Parallelism vs Data Parallelism
+Task-based Asynchronous File I/O
+Task-based Asynchronous Networking
+Task Parallel Library in Multi-threaded Applications
+Task-based Asynchronous Database Access
+Asynchronous Task Composition
+Task-based Asynchronous User Interface Programming
+Task-based Asynchronous Testing
+Task-based Asynchronous Design Patterns
+Task-based Asynchronous Performance Optimization

@@ -1,0 +1,50 @@
+Serialization 개념
+Formatter 클래스
+직렬화(Serialization)와 역직렬화(Deserialization)
+Binary 포맷
+SOAP 포맷
+XML 포맷
+JSON 포맷
+Surrogate 직렬화
+Serializable 속성
+NonSerialized 속성
+직렬화 가능한 타입
+SerializationInfo 클래스
+ISerializable 인터페이스
+FormatterConverter 클래스
+FormatterServices 클래스
+SerializationBinder 클래스
+XmlObjectSerializer 인터페이스
+DataContractSerializer 클래스
+NetDataContractSerializer 클래스
+Json 포맷터
+BinaryFormatter 클래스
+SoapFormatter 클래스
+XmlSerializer 클래스
+DataContractJsonSerializer 클래스
+DataContractResolver 클래스
+IDataContractSurrogate 인터페이스
+Custom Serialization
+Serialization Callbacks
+Serialization 피하기
+Version-Tolerant Serialization
+Serialization Security
+Secure Serialization
+Formatter 솔루션
+Serialization Best Practices
+Serialization Performance
+압축된 Serialization
+Encryption과 Serialization
+C# Serialization 속도
+Serialization Patterns
+Formatters 비교
+Binary vs XML Serialization
+SOAP vs REST Serialization
+직렬화의 문제해결
+Serialization 예외 처리
+Serialization 구현 방법
+Serialization 테스트 방법
+Serialization 라이브러리 선택
+Serialization 문서화
+Serialization 디자인 패턴
+Serialization 공통 문제

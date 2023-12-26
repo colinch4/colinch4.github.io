@@ -1,0 +1,50 @@
+클레임(claim)이란 무엇인가요?
+클레임 기반 인증(Claim-based authentication)이란 무엇인가요?
+System.Security.Claims 네임스페이스란 무엇인가요?
+클레임 인증(Claims authentication)과 역할 기반 인증(Role-based authentication)의 차이는?
+클레임 기반 보안(Claim-based security)이란?
+System.Security.Claims에서의 클레임 관리
+클레임의 유형에는 어떤 것이 있나요?
+클레임을 사용한 사용자 인가(User authorization using claims)
+클레임의 주요 속성들
+클레임의 사용 예시
+클레임과 보안
+클레임을 활용한 액세스 제어
+클레임 인증을 지원하는 다른 라이브러리
+클레임 기반 애플리케이션(Claim-based application)의 구현
+클레임과 데이터 보호
+클레임과 권한 설정
+System.Security.Claims에서의 클레임 검증(claim validation)
+클레임의 규칙(Rules) 및 클레임 처리
+클레임과 보안 컨텍스트(Security context)
+클레임 변조 및 방지
+클레임과 토큰(Token) 관리
+클레임과 사용자 식별(Identification)
+System.Security.Claims에서의 클레임 권한 부여
+클레임 인증을 위한 구성(Setup for claims authentication)
+클레임과 API 보안
+클레임을 활용한 사용자 관리
+클레임과 보안 정책
+System.Security.Claims에서의 클레임 강화
+클레임과 로그인 과정
+클레임에 대한 적절한 사용 사례
+System.Security.Claims에서의 클레임 저장 및 관리
+클레임과 권한 상속
+클레임과 암호화
+클레임과 사용자 그룹
+클레임과 권한 획득
+System.Security.Claims에서의 클레임 인증 및 권한 부여
+클레임의 보안 문제 해결
+클레임과 보호 구성(Configuration for claims protection)
+클레임과 보안 상태 관리
+클레임과 권한 검사
+클레임과 로그인 보안
+클레임과 위조 방지
+클레임과 세션 관리
+클레임과 인증 과정
+클레임의 다중 계층 인가(Multi-layer authorization with claims)
+클레임의 신뢰성 검증(Trust validation for claims)
+클레임과 API 접근 제어
+클레임과 사용자 행동 분석
+클레임의 보안 전략
+클레임과 보안 이벤트 처리

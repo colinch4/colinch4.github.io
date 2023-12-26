@@ -1,0 +1,50 @@
+System.Runtime.Serialization의 개요
+데이터 직렬화와 역직렬화
+데이터 컨트랙트와 데이터 멤버
+XML 직렬화
+이진 직렬화
+JSON 직렬화
+Surrogate 직렬화
+가변 형식과 설정 가능한 직렬화
+SerializationInfo 클래스
+ISerializable 인터페이스
+DataContractSerializer 클래스
+XmlSerializer 클래스
+DataMember 속성
+DataContract 속성
+ObjectIDGenerator 클래스
+Formatter 클래스
+IFormatter 인터페이스
+StreamingContext 구조체
+OnDeserialized 어트리뷰트
+OnDeserializing 어트리뷰트
+OnSerialized 어트리뷰트
+OnSerializing 어트리뷰트
+SerilizationBinder 클래스
+SerializationCallbacks 클래스
+FormatterConverter 클래스
+FormatterServices 클래스
+SurrogateSelector 클래스
+TypeFilterLevel 열거형
+SafeSerializationEventArgs 클래스
+IDeserializationCallback 인터페이스
+IObjectReference 인터페이스
+DeserializationCallbackAttribute 클래스
+싱글톤 패턴과 직렬화
+객체 참조 추적
+Versioning and Backward Compatibility
+필드와 속성 직렬화
+사전을 직렬화
+배열과 컬렉션 직렬화
+파일 직렬화
+메모리 스트림 직렬화
+텍스트 파일 직렬화
+객체 그래프와 순환 참조 해결
+대규모 데이터 직렬화 최적화
+데이터 압축과 암호화를 포함한 보안 직렬화
+생성자와 소멸자 직렬화
+사용자 지정 직렬화 동작 구현
+서버 간 통신을 위한 데이터 직렬화
+클라이언트-서버 모델에서의 직렬화
+데이터베이스 저장 및 로드를 위한 직렬화
+데이터 스냅샷 직렬화 및 복원

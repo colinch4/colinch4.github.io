@@ -1,0 +1,50 @@
+System.Net.Http 라이브러리 개요
+HttpClient 클래스
+HttpRequestMessage 클래스
+HttpResponseMessage 클래스
+HttpContent 클래스
+HttpHeaders 클래스
+HttpMessageHandler 클래스
+HttpClientFactory 클래스
+HttpClient 인스턴스 관리
+HTTP 요청 보내기
+HTTP 응답 처리하기
+HTTP 헤더 조작하기
+HTTP 요청 및 응답 로깅
+HTTP 클라이언트 보안
+HTTP 요청 타임아웃 설정
+HTTP 요청 인터셉트
+HTTP 요청 취소
+HTTP 요청 재시도
+HTTP 요청 병렬 처리
+HTTP 클라이언트 인증
+HTTP 요청에 캐시 적용
+HTTP 요청 리다이렉트
+HTTP 요청에서 쿠키 사용
+HTTP 요청에 토큰 인증 추가하기
+HTTP 요청에서 CORS 처리
+HTTP 요청에서 GZIP 압축 사용
+HTTP 요청에서 인코딩 처리
+HTTP 요청 성능 최적화
+HTTP 요청과 관련된 예외 처리
+HTTP 요청에 대한 단위 테스트 작성
+HTTP 프록시 설정
+HTTP 요청에 사용할 사용자 정의 헤더 추가
+HTTP 요청과 관련된 보안 취약점
+HTTP 요청에 대한 URL 인코딩
+HTTP 요청과 관련된 SSL/TLS 설정
+HTTP 요청에 대한 올바른 예외 처리
+HTTP 요청에 대한 로컬 캐시 사용
+HTTP 요청에서 비동기 처리
+HTTP 요청에서 동기 처리
+HTTP 요청과 관련된 디버깅 방법
+HTTP 요청에서 HATEOAS 구현
+HTTP 요청의 레이어드 아키텍처
+HTTP 요청과 관련된 취약점 보완
+HTTP 요청과 관련된 보안 모범 사례
+HTTP 요청과 관련된 데이터 보호
+HTTP 요청과 RESTful 아키텍처
+HTTP 요청과 다른 프로토콜 통신
+HTTP 요청의 표준 규약 준수
+HTTP 요청의 사용자 정의 구현
+HTTP 요청에서 에러 핸들링

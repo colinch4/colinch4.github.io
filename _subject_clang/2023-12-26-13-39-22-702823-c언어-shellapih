@@ -1,0 +1,50 @@
+C 언어에서 ShellAPI.h 란 무엇인가요?
+ShellAPI.h 헤더 파일의 역할은 무엇인가요?
+ShellAPI.h에는 어떤 함수들이 포함되어 있나요?
+ShellExecute 함수의 기능과 사용법은 무엇인가요?
+ShellExecuteEx 함수의 역할과 활용 방법을 알려주세요.
+Shell_NotifyIcon 함수로 무엇을 할 수 있나요?
+DragFinish 함수의 사용법과 목적을 설명해 주세요.
+SHBrowseForFolder 함수를 사용하여 어떻게 폴더를 선택할 수 있나요?
+SHGetPathFromIDList 함수는 어떤 기능을 하는 것인가요?
+SHGetSpecialFolderPath 함수를 사용하면 어떤 특수 폴더 경로를 얻을 수 있나요?
+SHAppBarMessage 함수의 역할과 활용 방법에 대해 알려주세요.
+SHFileOperation 함수를 사용하여 파일을 어떻게 복사하거나 이동할 수 있을까요?
+SHGetFileInfo 함수를 사용하여 파일에 대한 정보를 얻는 방법을 설명해 주세요.
+ShellAbout 함수를 사용하여 무엇을 표시할 수 있나요?
+SHLimitInputEdit 함수의 기능은 무엇인가요?
+SHGetDiskFreeSpace 함수를 사용하여 디스크 공간을 어떻게 확인할 수 있나요?
+ShellExecuteEx를 사용하여 어떻게 외부 프로그램을 실행할 수 있나요?
+Shell_NotifyIcon를 사용하여 시스템 트레이 아이콘에 무엇을 표시할 수 있나요?
+ShellExecute 함수를 통해 파일을 열어 볼 때 주의할 점은 무엇인가요?
+SHBrowseForFolder 함수를 사용하여 얻은 폴더 경로를 어떻게 활용할 수 있을까요?
+SHFileOperation 함수를 사용하여 파일을 복사하거나 이동할 때 에러를 처리하는 방법을 알려주세요.
+SHGetFileInfo 함수를 사용하여 파일의 아이콘과 속성 정보를 어떻게 얻을 수 있을까요?
+ShellExecuteEx 함수를 사용하여 실행한 프로세스의 상태를 어떻게 확인할 수 있을까요?
+SHAppBarMessage 함수를 사용하여 작업 표시줄의 상태를 제어하는 방법을 알려주세요.
+ShellExecute 함수를 사용하여 파일을 실행할 때 발생할 수 있는 보안 문제를 어떻게 해결할 수 있을까요?
+SHGetDiskFreeSpace 함수를 사용하여 얻은 디스크 공간 정보를 활용하는 방법에 대해 설명해 주세요.
+Shell_NotifyIcon 함수를 사용하여 트레이 아이콘에 메시지를 어떻게 표시할 수 있을까요?
+DragFinish 함수를 사용하여 드래그 앤 드롭 작업을 완료한 후에 처리해야 하는 일은 무엇인가요?
+SHGetPathFromIDList 함수를 사용하여 얻은 폴더 경로를 어떻게 문자열로 변환할 수 있을까요?
+ShellAPI.h 헤더 파일을 프로그램에 포함시키는 방법에 대해 설명해 주세요.
+ShellExecute 함수를 사용하여 특정 파일을 실행할 때 발생하는 예외 상황을 어떻게 처리할 수 있을까요?
+ShellExecuteEx 함수를 사용하여 실행한 프로세스의 종료 상태를 어떻게 확인할 수 있을까요?
+SHAppBarMessage 함수를 사용하여 작업 표시줄에 버튼을 추가하는 방법을 알려주세요.
+SHFileOperation 함수를 사용하여 파일을 삭제할 때 주의해야 할 점은 무엇인가요?
+SHGetFileInfo 함수를 사용하여 얻은 파일의 아이콘을 어떻게 화면에 표시할 수 있을까요?
+ShellExecute 함수를 사용하여 알려진 보안 취약점을 어떻게 방어할 수 있을까요?
+SHBrowseForFolder 함수를 사용하여 선택한 폴더를 올바르게 처리하기 위해 필요한 검증 작업은 무엇인가요?
+ShellExecuteEx 함수를 사용하여 실행한 프로세스의 출력을 어떻게 캡처할 수 있을까요?
+SHAppBarMessage 함수를 사용하여 작업 표시줄의 크기나 위치를 변경하는 방법을 알려주세요.
+SHFileOperation 함수를 사용하여 파일 복사 또는 이동 작업 중에 발생할 수 있는 예외 상황을 어떻게 처리할 수 있을까요?
+SHGetFileInfo 함수를 사용하여 얻은 파일의 정보를 어떻게 사용자에게 표시할 수 있을까요?
+ShellExecute 함수를 사용하여 실행한 외부 프로그램의 출력을 가져오는 방법을 설명해 주세요.
+SHBrowseForFolder 함수를 사용하여 얻은 폴더 경로를 저장하기 위한 적절한 데이터 구조는 무엇인가요?
+ShellExecuteEx 함수를 사용하여 실행한 프로세스의 우선 순위를 설정하는 방법을 알려주세요.
+SHAppBarMessage 함수를 사용하여 작업 표시줄에 새로운 아이콘을 추가하는 방법에 대해 설명해 주세요.
+SHFileOperation 함수를 사용하여 파일 복사 또는 이동 작업 중에 진행 상태를 사용자에게 표시하는 방법을 알려주세요.
+SHGetFileInfo 함수를 사용하여 얻은 파일의 정보를 어떻게 로깅하거나 기록할 수 있을까요?
+ShellExecute 함수를 사용하여 실행한 프로세스의 출력을 실시간으로 화면에 표시하는 방법을 설명해 주세요.
+SHAppBarMessage 함수를 사용하여 작업 표시줄의 특정 항목을 제어하는 예제 코드를 보여주세요.
+SHFileOperation 함수를 사용하여 파일 복사 또는 이동 작업 중에 발생하는 오류 코드를 해석하는 방법을 알려주세요.

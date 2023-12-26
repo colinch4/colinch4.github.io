@@ -1,0 +1,50 @@
+C언어에서의 wchar.h 헤더 파일
+wchar.h의 역할과 기능
+wchar.h 헤더 파일의 사용 예
+wchar_t 데이터 타입
+wchar.h와 다국어 처리
+wchar.h와 유니코드
+wchar.h와 멀티바이트 문자열 처리
+wchar.h로의 문자열 입출력
+wchar.h를 사용한 파일 입출력
+wchar.h와 문자 집합 변환
+wchar.h에서의 형식 지정자
+wchar.h의 함수들과 기능
+문자열 길이 계산 함수(wcslen 등)
+문자열 복사 함수(wcscpy 등)
+문자열 비교 함수(wcscmp 등)
+문자열 검색 함수(wcsstr 등)
+문자열 변환 함수(wcstombs, mbstowcs 등)
+문자열 형식 지정 함수(swprintf, vswprintf 등)
+wide character와 멀티바이트 문자열 차이
+wchar.h와 다른 표준 라이브러리 헤더 파일의 차이
+wchar.h와 wctype.h의 관련성
+wchar.h와 특수 문자 처리
+wchar.h와 유니코드 인코딩 방식
+wchar_t와 문자열 표현
+wchar.h를 사용한 다국어 문자열 처리 방법
+wchar.h를 사용한 파일 입출력 방법
+멀티바이트 문자열을 wchar_t로 변환하는 방법
+wchar_t 데이터 타입의 크기와 특성
+널 종료된 wide character 문자열
+wchar.h를 사용한 텍스트 파일 읽기와 쓰기
+wchar_t 배열과 포인터
+wchar.h에서의 메모리 할당
+wchar.h를 사용한 텍스트 파일 포맷 변환
+wchar.h와 유니코드 호환성
+wchar_t와 다국어 지원
+wchar.h를 사용한 문자열에서의 대소문자 변환
+wchar.h와 형식 지정자의 활용
+유니코드 문자열 다루기
+wchar.h를 사용한 다국어 환경에서의 문자열 비교
+wchar.h와 유니코드 문자열 출력
+wchar.h를 사용한 다국어 문자열 형식 변환
+wchar_t와 멀티바이트 문자열의 혼용
+wchar.h를 사용한 유니코드 텍스트 파일 다루기
+wchar_t를 사용한 다국어 환경에서의 표준 입출력
+wchar.h와 다국어 문자열의 서로 다른 길이 표현
+wchar.h를 사용한 다국어 환경에서의 문자열 검색 및 치환
+wchar.h와 다국어 환경에서의 문자열 분리
+wchar.h를 사용한 다국어 환경에서의 데이터베이스 연동
+wchar.h와 유니코드 이스케이핑
+wchar.h를 사용한 프로그램 국제화 및 지역화

@@ -1,0 +1,50 @@
+C#에서 System.Xml.Serialization 사용법
+XML 직렬화와 역직렬화
+XmlSerializer 클래스
+XmlAttribute 및 XmlElement 어트리뷰트
+XmlIgnore 어트리뷰트의 사용
+XmlRoot 어트리뷰트와 XmlType 어트리뷰트
+Serialize 메서드와 Deserialize 메서드
+XML 직렬화와 역직렬화 예제
+커스텀 XML 직렬화
+XML 직렬화의 성능 고려사항
+XML 직렬화와 주석 처리
+XML 직렬화에서 데이터형식 지정
+XML 직렬화와 XML 스키마
+XML 직렬화와 네임스페이스
+XmlArray와 XmlArrayItem 어트리뷰트
+XML 직렬화에서 오류 처리
+XML 직렬화와 디폴트 네임스페이스
+XML을 사용한 객체 직렬화
+XML 직렬화를 이용한 데이터 전송
+XML 직렬화를 이용한 파일 저장과 로드
+XML 요소의 순서 제어
+XML 직렬화와 콜렉션
+위임된 직렬화와 직렬화 리셋
+XML 직렬화와 스트림 처리
+XML 직렬화와 데이터 복합체
+XML 직렬화와 관계형 데이터
+XML 직렬화와 바이너리 데이터
+XML 직렬화와 JSON 변환
+XML 직렬화와 데이터 유효성 검사
+속성의 이름과 형식 변경
+XML 기반 설정 작성 및 읽기
+XML 직렬화를 이용한 객체 복제
+XML 직렬화와 보안 고려사항
+XML 직렬화를 이용한 웹 서비스 통신
+XML 직렬화와 스레드 안전성
+XML 직렬화와 성능 최적화
+XML 직렬화와 데이터 압축
+복합 키와 XML 직렬화
+XML 직렬화와 RESTful 서비스
+XML 직렬화를 이용한 템플릿 처리
+XML 직렬화와 메시지 패턴
+XML 직렬화를 이용한 이벤트 기록
+XML 직렬화의 장단점
+XML 직렬화와 데이터 검색
+매핑된 타입과 XML 직렬화
+XML 직렬화와 동적 데이터 구조
+XML 직렬화와 버전 호환성
+XML 직렬화를 이용한 API 통신
+XML 직렬화를 이용한 데이터 분석
+XML 직렬화와 캐시 관리

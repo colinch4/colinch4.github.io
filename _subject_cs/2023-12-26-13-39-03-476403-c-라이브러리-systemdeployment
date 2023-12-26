@@ -1,0 +1,10 @@
+System.Deployment 네임스페이스의 기능
+ClickOnce 배포에 사용되는 System.Deployment 네임스페이스
+System.Deployment.Application 클래스의 활용
+ClickOnce 배포 프로세스와 System.Deployment
+배포 관련 예외 처리 및 System.Deployment
+System.Deployment의 보안 기능
+ClickOnce 배포에서의 갱신 관리와 System.Deployment
+System.Deployment를 활용한 애플리케이션 버전 관리
+코드 서명 및 인증서 적용을 위한 System.Deployment 활용
+배포 업그레이드 및 롤백을 위한 System.Deployment의 사용

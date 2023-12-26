@@ -1,0 +1,50 @@
+afxdisp.h 파일의 역할
+afxdisp.h 헤더 파일의 포함 방법
+afxdisp.h의 주요 기능
+afxdisp.h 파일의 구조
+afxdisp.h와 MFC
+afxdisp.h의 클래스와 함수
+afxdisp.h와 COM (Component Object Model)
+afxdisp.h와 Automation
+afxdisp.h와 OLE (Object Linking and Embedding)
+afxdisp.h와 IDispatch 인터페이스
+afxdisp.h와 속성, 메서드, 이벤트
+afxdisp.h와 DISP_ 매크로
+afxdisp.h와 VARIANT 데이터 형식
+afxdisp.h를 사용한 ActiveX 컨트롤 개발
+afxdisp.h와 개체 모델
+afxdisp.h와 속성 페이지
+afxdisp.h와 MFC 문서-뷰 구조
+afxdisp.h와 라이브러리 기능
+afxdisp.h와 디버깅
+afxdisp.h를 사용한 응용프로그램 개발
+afxdisp.h와 이벤트 처리
+afxdisp.h와 메시지 처리
+afxdisp.h와 멀티스레딩
+afxdisp.h와 메모리 관리
+afxdisp.h와 예외 처리
+afxdisp.h와 오류 처리
+afxdisp.h와 예외 코드
+afxdisp.h와 예외 분석
+afxdisp.h와 리소스 관리
+afxdisp.h와 사용자 정의 컨트롤
+afxdisp.h와 리스트 컨트롤
+afxdisp.h와 트리뷰 컨트롤
+afxdisp.h와 다이얼로그 상자
+afxdisp.h와 상태 표시줄
+afxdisp.h와 프린터 및 인쇄 관리
+afxdisp.h와 메뉴 및 툴바
+afxdisp.h와 파일 입출력
+afxdisp.h와 레지스트리 작업
+afxdisp.h와 테스팅
+afxdisp.h와 성능 최적화
+afxdisp.h와 보안
+afxdisp.h와 네트워킹
+afxdisp.h와 웹 개발
+afxdisp.h와 데이터베이스 연동
+afxdisp.h와 XML 처리
+afxdisp.h와 디자인 패턴
+afxdisp.h와 버전 관리
+afxdisp.h와 프로그래밍 권고 사항
+afxdisp.h와 실무 프로젝트에서의 활용
+afxdisp.h를 활용한 실제 예제

@@ -1,0 +1,50 @@
+System.Security.Principal 네임스페이스
+WindowsIdentity 클래스
+WindowsPrincipal 클래스
+GenericIdentity 클래스
+GenericPrincipal 클래스
+IIdentity 인터페이스
+IPrincipal 인터페이스
+AppDomainPrincipal 클래스
+ClaimsIdentity 클래스
+ClaimsPrincipal 클래스
+IdentityReference 클래스
+IdentityNotMappedException 클래스
+IdentityReferenceCollection 클래스
+NTAccount 클래스
+SecurityIdentifier 클래스
+IdentityReferenceComparer 클래스
+IdentityReferenceImpl 클래스
+IdentityNotMappedException 클래스
+JsonClaimsIdentity 클래스
+JsonClaimsPrincipal 클래스
+RoleClaimProvider 클래스
+RoleProvider 클래스
+RoleProviderAttribute 클래스
+RoleProviderPermissionAttribute 클래스
+SecurityIdentifier 클래스
+TokenImpersonationLevel 열거형
+TokenInformation 클래스
+TokenAccessLevels 열거형
+WellKnownSidType 열거형
+WindowsBuiltInRole 열거형
+WindowsAccountType 열거형
+WindowsImpersonationContext 클래스
+WindowsPrincipal 클래스의 생성자
+WindowsPrincipal 클래스의 속성
+WindowsPrincipal 클래스의 메서드
+WindowsPrincipal 클래스의 예외 처리
+WindowsPrincipal 클래스의 사용 사례
+설정 관리
+데이터 보호
+Windows 보안 주체
+사용자 식별
+사용자 권한
+Windows 인증
+보안 주체 인식
+권한 검사
+Windows 보안 모델
+Windows 권한 관리
+Windows 계정 연동
+Windows 시스템 보안
+Windows 보안 구현

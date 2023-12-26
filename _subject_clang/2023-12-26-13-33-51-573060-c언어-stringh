@@ -1,0 +1,50 @@
+string.h의 기능
+string.h의 역할
+string.h의 헤더 파일 구조
+string.h의 주요 함수
+string.h에서 사용되는 데이터 타입
+string.h와 관련된 표준 라이브러리 함수
+string.h에서의 문자열 처리
+string.h에서의 메모리 할당과 해제
+string.h에서의 문자열 검색과 비교
+string.h에서의 문자열 결합과 복사
+string.h에서의 문자열 자르기
+string.h에서의 문자열 변환 함수
+strcpy() 함수
+strncpy() 함수
+strcat() 함수
+strncat() 함수
+strcmp() 함수
+strncmp() 함수
+strlen() 함수
+strchr() 함수
+strrchr() 함수
+strstr() 함수
+memcpy() 함수
+memmove() 함수
+memset() 함수
+strtok() 함수
+strpbrk() 함수
+strspn() 함수
+strcspn() 함수
+strerror() 함수
+strerror_r() 함수
+memchr() 함수
+memcmp() 함수
+memccpy() 함수
+strcpy_s() 함수
+strtok_s() 함수
+wcscpy() 함수
+wcsncpy() 함수
+wcscat() 함수
+wcsncat() 함수
+wcscmp() 함수
+wcsncmp() 함수
+wcslen() 함수
+wcspbrk() 함수
+wcsspn() 함수
+wcscspn() 함수
+wmemchr() 함수
+wcschr() 함수
+wcsrchr() 함수
+wcsrchr() 함수

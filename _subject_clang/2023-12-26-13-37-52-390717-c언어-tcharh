@@ -1,0 +1,50 @@
+tchar.h 헤더 파일
+tchar.h의 역할
+tchar.h와 문자열 처리
+tchar.h와 유니코드
+tchar.h와 멀티바이트 문자열
+tchar.h로의 전환
+tchar.h와 TCHAR 데이터 타입
+tchar.h와 문자열 길이
+tchar.h와 문자열 복사
+tchar.h와 문자열 비교
+tchar.h와 문자열 변환
+tchar.h와 TCHAR와의 호환성
+tchar.h와 유니코드 변환
+tchar.h와 멀티바이트 문자열 변환
+tchar.h와 반복문 처리
+tchar.h와 문자열 조작 함수
+tchar.h와 파일 입출력
+tchar.h와 형식화된 입력 및 출력
+tchar.h와 버퍼 처리
+tchar.h와 strtok 함수
+tchar.h와 문자열 토큰화
+tchar.h와 메모리 할당
+tchar.h와 메모리 해제
+tchar.h와 동적 배열
+tchar.h와 문자열 검색
+tchar.h와 문자열 필터링
+tchar.h와 문자열 대체
+tchar.h와 서식 문자열
+tchar.h와 다국어 지원
+tchar.h와 형식 관련 함수
+tchar.h와 문자 입력 함수
+tchar.h와 문자 출력 함수
+tchar.h와 텍스트 처리
+tchar.h와 텍스트 표시
+tchar.h와 텍스트 파일 처리
+tchar.h와 텍스트 인코딩
+tchar.h와 윈도우즈 API
+tchar.h와 시스템 함수
+tchar.h와 프로세스 제어
+tchar.h와 디렉토리 처리
+tchar.h와 파일 및 폴더 접근
+tchar.h와 환경 변수 처리
+tchar.h와 시간 및 날짜 처리
+tchar.h와 메시지 처리
+tchar.h와 리소스 문자열
+tchar.h와 오류 처리
+tchar.h와 디버깅 정보 출력
+tchar.h와 로깅
+tchar.h와 템플릿 프로그래밍
+tchar.h와 예외 처리
