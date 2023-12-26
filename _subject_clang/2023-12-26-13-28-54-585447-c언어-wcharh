@@ -1,0 +1,50 @@
+wchar_t 데이터 타입
+wchar.h 헤더 파일
+wint_t
+wctype.h 헤더 파일
+wcslen 함수
+wcscpy 함수
+wcscat 함수
+wcschr 함수
+wcscmp 함수
+wcscoll 함수
+wcsftime 함수
+wcslcpy 함수
+wprintf 함수
+wscanf 함수
+fwprintf 함수
+fgetwc 함수
+fputwc 함수
+getwchar 함수
+putwchar 함수
+wchar.h의 멀티바이트 및 와이드 문자 함수
+setlocale 함수
+towlower 함수
+towupper 함수
+wcstod 함수
+wcstof 함수
+wcstol 함수
+wcstoul 함수
+wcstoll 함수
+wcstoull 함수
+wcstombs 함수
+mbstowcs 함수
+mbrlen 함수
+mbrtowc 함수
+mbsrtowcs 함수
+wcstok 함수
+wcscspn 함수
+wcsncat 함수
+wcsncmp 함수
+wcsncpy 함수
+wcspbrk 함수
+wcsrev 함수
+wmemchr 함수
+wmemcmp 함수
+wmemcpy 함수
+wmemmove 함수
+wmemset 함수
+wcsxfrm 함수
+wcstok 함수
+wcscspn 함수
+wcsstr 함수

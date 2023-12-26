@@ -1,0 +1,50 @@
+System.Web.Mvc의 역할
+MVC(Model-View-Controller) 패턴
+Controller 클래스
+Controller 클래스의 역할
+View 클래스
+View 클래스의 역할
+Model 클래스
+Model 클래스의 역할
+Action 메서드
+Action 메서드의 역할
+라우팅(Route)
+라우팅의 역할
+모델 바인딩(Model binding)
+HTML Helper 클래스
+HTML Helper의 역할
+속성(Attribute)
+속성(Attribute)의 역할
+TempData
+TempData의 역할
+지역화(Localization)
+지역화(Localization)의 역할
+뷰 엔진(View Engine)
+뷰 엔진(View Engine)의 역할
+액션 필터(Action Filter)
+액션 필터(Action Filter)의 역할
+모델 바인딩(Model binding) 속성
+부분 뷰(Partial View)
+부분 뷰(Partial View)의 역할
+모델 검증(Model Validation)
+모델 검증(Model Validation)의 역할
+모델 상속(Model inheritance)
+모델 상속(Model inheritance)의 역할
+모델 바인딩(Model binding) 속성
+웹 애플리케이션 개발(Web Application Development)
+웹 애플리케이션 개발(Web Application Development)의 역할
+참조 데이터 유효성 검사(Referenced Data Validation)
+참조 데이터 유효성 검사(Referenced Data Validation)의 역할
+입력 폼(Input Form)
+입력 폼(Input Form)의 역할
+모델 상세화(Model Detailing)
+모델 상세화(Model Detailing)의 역할
+세션(Session)
+세션(Session)의 역할
+유단등재(Exclusion)
+유단등재(Exclusion)의 역할
+XML 데이터 전송(XML Data Transfer)
+XML 데이터 전송(XML Data Transfer)의 역할
+JSON 데이터 전송(JSON Data Transfer)
+JSON 데이터 전송(JSON Data Transfer)의 역할
+뷰 모델(View Model)

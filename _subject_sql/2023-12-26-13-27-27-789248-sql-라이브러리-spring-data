@@ -1,0 +1,50 @@
+Spring Data JPA
+Spring Data JDBC
+Spring Data MongoDB
+Spring Data Redis
+Spring Data Neo4j
+Spring Data Cassandra
+Spring Data Elasticsearch
+Spring Data Solr
+Spring Data Couchbase
+Spring Data Gemfire
+Spring Data REST
+Spring Data Envers
+Spring Data with Custom Queries
+Spring Data Query Methods
+Spring Data Repository
+Spring Data Pageable
+Spring Data Sorting and Pagination
+Spring Data Specification
+Spring Data Projections
+Spring Data Native Queries
+Spring Data JPA Auditing
+Spring Data JPA Locking
+Spring Data JPA Entity Graphs
+Spring Data JPA Custom Repositories
+Spring Data JPA @NamedQuery
+Spring Data JPA ORM Mapping
+Spring Data JPA Persistent Context
+Spring Data JPA QueryDSL
+Spring Data JPA Server-side Pagination
+Spring Data JPA Transaction Management
+Spring Data JPA Caching
+Spring Data JPA Data Conversion
+Spring Data JPA Composite Key
+Spring Data JPA @Query Annotation
+Spring Data JPA Soft Delete
+Spring Data JPA Named Queries
+Spring Data JPA Derived Queries
+Spring Data JPA Secondary Tables
+Spring Data JPA Hibernate Integration
+Spring Data JPA Specification and Predicate
+Spring Data JPA Custom Projections
+Spring Data JPA Entity Inheritance
+Spring Data JPA Projection Interface
+Spring Data JPA Native SQL Queries
+Spring Data JPA Entity Listener
+Spring Data JPA Many-to-Many Relationship
+Spring Data JPA One-to-One Relationship
+Spring Data JPA One-to-Many Relationship
+Spring Data JPA Many-to-One Relationship
+Spring Data JPA Soft Deletes and Archiving

@@ -1,0 +1,50 @@
+stdalign.h 소개
+stdalign.h의 역할
+stdalign.h의 헤더 파일
+alignas 키워드
+alignof 연산자
+alignas 키워드와 alignof 연산자 사용 예시
+alignas 키워드의 구문
+alignof 연산자의 반환 값
+stdalign.h의 표준 규격
+stdalign.h의 사용 예시
+stdalign.h를 이용한 메모리 정렬
+메모리 정렬과 성능
+stdalign.h와 데이터 구조 정렬
+alignas 키워드의 장단점
+alignas 키워드를 사용한 데이터 정렬
+alignof 연산자와 데이터 정렬
+메모리 정렬 시 고려해야 할 점
+데이터 정렬과 효율성
+stdalign.h와 성능 최적화
+stdalign.h와 함께 사용하는 다른 라이브러리
+stdalign.h와 메모리 접근 패턴
+stdalign.h의 특징과 장점
+stdalign.h의 한계점
+메모리 정렬과 오버헤드
+stdalign.h를 사용한 구조체 정렬
+alignas 키워드의 실제 응용
+alignof 연산자의 활용
+alignas 키워드의 활용
+stdalign.h의 쓰임새
+메모리 정렬과 데이터 처리 속도
+stdalign.h의 성능 향상에 대한 연구
+stdalign.h의 안정성
+alignas 키워드와 데이터 크기
+stdalign.h와 메모리 최적화
+alignas와 데이터 보호
+stdalign.h의 활용 예시
+alignof 연산자의 반환 형식
+stdalign.h의 역사
+alignas 키워드와 다중 스레드 환경
+stdalign.h와 포인터 정렬
+메모리 정렬과 플랫폼 호환성
+스택과 stdalign.h
+stdalign.h의 비동기 작업 처리
+alignas 키워드와 동기화
+stdalign.h와 메모리 손실
+alignof 연산자의 사용법
+stdalign.h와 네트워크 프로그래밍
+메모리 정렬과 캐시 일관성
+stdalign.h와 변수 정렬
+alignas 키워드와 함수 정렬

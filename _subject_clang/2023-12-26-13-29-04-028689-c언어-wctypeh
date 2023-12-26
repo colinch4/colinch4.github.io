@@ -1,0 +1,50 @@
+wctype.h 소개
+wctype.h의 역할
+wctype.h 함수
+wctype.h 헤더 파일
+wctype.h의 사용 방법
+wctype.h와 ctype.h의 차이
+wctype.h의 문자 분류 함수
+wctype.h의 확장 문자 집합 지원
+wctype.h와 유니코드
+wctype.h의 정의 및 선언
+wctype.h의 locale 지원
+wctype.h와 다중 스레딩
+wctype.h와 와이드 문자
+wctype.h와 문자 분류
+wctype.h 함수의 예제
+wctype.h와 대소문자 변환
+wctype.h와 문자 클래스 검사
+wctype.h와 문자 속성 검사
+wctype.h와 다국어 환경 지원
+wctype.h와 유니코드 호환성
+wctype.h를 이용한 문자 검사 및 변환
+wctype.h와 확장 문자 집합
+wctype.h와 와이드 문자 집합
+wctype.h의 문자 클래스
+wctype.h와 고유 문자 속성
+wctype.h와 문자 집합 변환
+wctype.h를 이용한 문자 대소문자 변환
+wctype.h를 이용한 고유 문자 클래스 검사
+wctype.h를 이용한 문자 속성 검사
+wctype.h의 locale 설정
+wctype.h와 다중 언어 지원
+wctype.h의 다국어 문자 분류
+wctype.h와 유니코드 표준
+wctype.h와 다중 바이트 문자 집합
+wctype.h와 유니코드 호환성 검사
+wctype.h를 사용한 와이드 문자 클래스 검사
+wctype.h를 사용한 와이드 문자 속성 검사
+wctype.h와 문자 코드 포인트 변환
+wctype.h를 이용한 문자 클래스 변환
+wctype.h와 다중 바이트 문자 처리
+wctype.h의 다국어 문자 변환
+wctype.h와 유니코드 자료형 지원
+wctype.h의 유니코드 호환성 함수
+wctype.h를 사용한 문자 집합 변환
+wctype.h를 사용한 문자 속성 변환
+wctype.h와 로케일 설정
+wctype.h를 사용한 다국어 문자 속성 검사
+wctype.h를 사용한 유니코드 호환성 검사
+wctype.h와 다중 바이트 문자 클래스 검사
+wctype.h를 사용한 문자 코드 포인트 변환

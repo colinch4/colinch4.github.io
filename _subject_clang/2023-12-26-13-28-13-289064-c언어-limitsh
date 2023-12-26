@@ -1,0 +1,50 @@
+limits.h 소개
+limits.h의 역할
+limits.h의 헤더 파일
+limits.h의 사용법
+limits.h에 정의된 상수들
+limits.h에서 정의된 MIN과 MAX
+limits.h의 제약 사항
+limits.h와 데이터 타입의 관련성
+limits.h와 시스템 아키텍처의 관련성
+limits.h와 데이터 표현 범위
+limits.h와 정수형 데이터 타입
+limits.h와 부호 있는 정수의 범위
+limits.h와 부호 없는 정수의 범위
+limits.h와 char 타입의 범위
+limits.h와 short 타입의 범위
+limits.h와 int 타입의 범위
+limits.h와 long 타입의 범위
+limits.h와 long long 타입의 범위
+limits.h와 float 타입의 범위
+limits.h와 double 타입의 범위
+limits.h와 long double 타입의 범위
+limits.h와 특정 아키텍처의 한계
+limits.h와 데이터 표현의 한계
+limits.h와 시스템의 메모리 크기의 한계
+limits.h와 표현 가능한 최대 값
+limits.h와 표현 가능한 최소 값
+limits.h와 음수 표현 방식
+limits.h와 부호 있는 정수 표현 방식
+limits.h와 부호 없는 정수 표현 방식
+limits.h와 최대값의 표현
+limits.h와 최소값의 표현
+limits.h와 데이터 타입 크기의 한계
+limits.h와 시스템의 워드 크기
+limits.h와 특정 데이터 타입의 비트 수
+limits.h와 CHAR_BIT의 값
+limits.h와 SCHAR_MIN 상수
+limits.h와 SCHAR_MAX 상수
+limits.h와 UCHAR_MAX 상수
+limits.h와 SHRT_MIN 상수
+limits.h와 SHRT_MAX 상수
+limits.h와 USHRT_MAX 상수
+limits.h와 INT_MIN 상수
+limits.h와 INT_MAX 상수
+limits.h와 UINT_MAX 상수
+limits.h와 LONG_MIN 상수
+limits.h와 LONG_MAX 상수
+limits.h와 ULONG_MAX 상수
+limits.h와 LLONG_MIN 상수
+limits.h와 LLONG_MAX 상수
+limits.h와 ULLONG_MAX 상수

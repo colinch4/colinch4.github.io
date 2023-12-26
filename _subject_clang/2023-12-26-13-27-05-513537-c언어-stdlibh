@@ -1,0 +1,50 @@
+stdlib.h 헤더 파일 소개
+stdlib.h 헤더 파일 역할
+stdlib.h의 표준 라이브러리 함수
+stdlib.h에서 사용되는 자료형
+stdlib.h에서 사용되는 매크로
+stdlib.h와 관련된 표준 예외 처리
+stdlib.h의 포인터 함수
+stdlib.h의 동적 메모리 할당 함수
+stdlib.h의 문자열 변환 함수
+stdlib.h의 난수 생성 함수
+stdlib.h의 파일 입출력 함수
+stdlib.h와 관련된 시스템 함수
+stdlib.h에서 사용되는 정렬 및 검색 함수
+stdlib.h의 환경 설정 관련 함수
+stdlib.h의 프로세스 제어 함수
+stdlib.h의 시간 및 날짜 관련 함수
+stdlib.h를 사용한 문자열 처리 함수
+stdlib.h의 수학 함수
+stdlib.h의 시스템 리소스 관리 함수
+stdlib.h의 메모리 관리 함수
+stdlib.h의 통신 관련 함수
+stdlib.h의 파일 및 디렉토리 관리 함수
+stdlib.h를 사용한 동적 메모리 할당 및 해제
+stdlib.h의 예외 처리 함수
+stdlib.h를 사용한 다양한 데이터 타입의 변환
+stdlib.h의 수학 연산 관련 함수
+stdlib.h의 문자열 함수
+stdlib.h를 사용한 프로그램 종료 관련 함수
+stdlib.h의 시스템 상호작용 함수
+stdlib.h를 사용한 입출력 함수
+stdlib.h의 오류 처리 함수
+stdlib.h를 사용한 날짜 및 시간 관련 함수
+stdlib.h의 난수 생성 및 조작 함수
+stdlib.h를 사용한 파일 입출력 함수
+stdlib.h의 메모리 할당 및 해제 함수
+stdlib.h를 사용한 시스템 정보 조회 함수
+stdlib.h의 문자열 변환 함수
+stdlib.h를 사용한 프로세스 제어 함수
+stdlib.h의 시스템 리소스 제어 함수
+stdlib.h의 데이터 타입 정의
+stdlib.h의 에러 처리 관련 함수
+stdlib.h를 사용한 문자 인코딩 및 디코딩 함수
+stdlib.h의 수학 상수 정의
+stdlib.h를 사용한 시스템 설정 관련 함수
+stdlib.h의 프로그램 실행 관련 함수
+stdlib.h를 사용한 동적 메모리 관리 함수
+stdlib.h의 시스템 상호작용 함수
+stdlib.h를 사용한 환경 변수 관리 함수
+stdlib.h의 프로세스 제어 및 통신 함수
+stdlib.h의 시스템 호출 함수

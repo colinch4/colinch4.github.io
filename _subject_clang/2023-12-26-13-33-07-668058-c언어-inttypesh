@@ -1,0 +1,50 @@
+inttypes.h 파일이란
+inttypes.h의 역할
+inttypes.h 헤더 파일 추가하기
+inttypes.h의 데이터 형식
+inttypes.h의 사용법
+inttypes.h에 정의된 매크로
+inttypes.h의 포맷 지정자
+inttypes.h와 stdint.h의 차이
+inttypes.h를 사용한 예제 코드
+inttypes.h의 정수 형식 지정자
+uint8_t 와 int8_t의 차이
+inttypes.h의 정수 형식 지정자 종류
+inttypes.h의 정수 형식 변환
+inttypes.h의 가장 큰 정수 형식
+inttypes.h의 가장 작은 정수 형식
+intmax_t와 inttypes.h
+inttypes.h에 정의된 최대값 상수들
+inttypes.h의 integer data types
+inttypes.h의 정수 형식 크기
+inttypes.h의 정수 형식 범위
+inttypes.h에서 int16_t 사용하기
+inttypes.h에서 int32_t 사용하기
+inttypes.h에서 int64_t 사용하기
+inttypes.h로 데이터 출력하기
+inttypes.h로 데이터 읽기
+inttypes.h의 fprintf와 fscanf
+inttypes.h의 printf와 scanf
+inttypes.h의 정수 형식 지정자 사용 예제
+inttypes.h의 데이터 형식 변환
+inttypes.h의 정수 형식 변환 지정자
+inttypes.h의 정수 형식 변환 함수
+inttypes.h의 integer data type 크기
+inttypes.h의 정수 형식 크기 비교
+inttypes.h의 정수 형식 크기 출력
+inttypes.h의 정수 형식 크기 비교 예제
+inttypes.h의 정수 형식 범위 확인
+inttypes.h의 정수 형식 범위 표시
+inttypes.h의 정수 형식 범위 확인하는 방법
+inttypes.h의 정수 형식 범위 확인 예제
+inttypes.h의 정수 형식 간 변환
+inttypes.h의 정수 형식 변환 함수 사용법
+inttypes.h의 정수 형식 변환 예제
+inttypes.h의 정수 형식 변환 시 주의할 점
+inttypes.h의 정수 형식 변환 시 에러 처리
+inttypes.h의 정수 형식 변환 시 소수점 처리
+inttypes.h의 정수 형식 변환 시 반올림 처리
+inttypes.h의 정수 형식 변환 시 최대값 확인
+inttypes.h의 정수 형식 변환 시 최소값 확인
+inttypes.h의 정수 형식 변환 시 부호 확인
+inttypes.h의 정수 형식 변환 시 예외 처리

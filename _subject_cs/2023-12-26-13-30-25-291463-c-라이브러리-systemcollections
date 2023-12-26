@@ -1,0 +1,50 @@
+System.Collections 네임스페이스 개요
+ArrayList 클래스 이해하기
+BitArray 클래스 활용법
+Hashtable 클래스의 활용 방법
+Queue 클래스의 개념과 활용
+Stack 클래스의 활용 방법
+SortedList 클래스의 기능
+CollectionBase 클래스의 활용 방법
+Comparer 클래스의 활용 방법
+DictionaryBase 클래스의 역할과 활용 방법
+Hashtable 및 SortedList 성능 비교
+ArrayList와 List의 차이점
+ArrayList 업캐스팅과 다운캐스팅
+ArrayList에 요소 추가하는 방법
+ArrayList에서 요소 제거하는 방법
+BitArray의 내부 구조
+BitArray를 사용한 비트 연산
+BitArray의 복사와 병합
+Hashtable에 키-값 쌍 추가
+Hashtable에서 특정 키로 값 찾기
+Hashtable 내부 메커니즘 이해
+Queue의 FIFO(First-In-First-Out) 동작 원리
+Queue에서 요소 제거하는 방법
+Queue에 요소 추가하는 방법
+Stack의 LIFO(Last-In-First-Out) 동작 원리
+Stack에 요소 추가하는 방법
+Stack에서 요소 제거하는 방법
+SortedList의 키-값 쌍 추가하기
+SortedList에서 값으로 키 찾기
+CollectionBase 클래스를 상속받는 사용자 지정 컬렉션 만들기
+CollectionBase 클래스의 가상 메서드 오버라이딩
+CollectionBase 클래스에서 컬렉션 요소 추가하기
+Comparer 클래스의 사용 예시
+Comparer 클래스를 활용한 커스텀 비교기 만들기
+DictionaryBase 클래스의 활용 예시
+Hashtable과 Dictionary의 차이점
+DictionaryBase 클래스를 상속받는 사용자 지정 컬렉션 만들기
+Hashtable과 SortedList의 성능 차이
+ArrayList의 정렬 방법
+ArrayList의 이진 검색 알고리즘
+ArrayList의 요소 순회 방법
+ArrayList의 요소 복사 방법
+ArrayList의 내부 메커니즘 이해
+BitArray 클래스의 메모리 최적화
+BitArray의 비트 반전 연산
+BitArray를 사용한 비트 필터링
+BitArray 병합 알고리즘
+Hashtable의 충돌 해결 방법
+Hashtable의 내부 버킷 구조
+Hashtable의 해시 함수 선택 방법

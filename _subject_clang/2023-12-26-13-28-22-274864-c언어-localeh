@@ -1,0 +1,50 @@
+C언어 locale.h의 역할
+locale.h 헤더 파일의 정의
+locale.h의 기능
+현지화와 locale.h
+locale.h의 지역화 관련 함수
+locale.h에서 사용되는 데이터 타입
+locale.h의 환경 설정과 관련된 함수
+locale.h와 다국어 지원
+numeric formatting과 locale.h
+문자열 정렬과 locale.h
+문자 변환 함수와 locale.h
+locale.h를 사용한 날짜 및 시간 형식 지정
+locale.h와 통화 형식
+locale.h의 환경 설정과 코딩 스타일
+locale.h 내 문화권 수용
+문자 번역 및 번역 관리에 locale.h 적용
+locale.h를 사용한 지역별 파일 형식 지정
+collation과 locale.h
+locale.h와 국제화
+문자열 포맷 지정과 locale.h
+encoding 및 locale.h
+locale.h와 유니코드 문자 처리
+locale.h 함수의 예외 처리
+locale.h에서의 숫자와 날짜 형식
+locale.h와 다국어 데이터 처리
+다문화 지원과 locale.h
+locale.h를 사용한 유니코드 지원
+locale.h와 파일 입출력
+locale.h와 문자열 검색 및 비교
+locale.h의 다국어 문자열 처리
+locale.h를 사용한 현지화 자원 관리
+locale.h와 시간대 처리
+locale.h에서의 숫자 및 통화 변환
+format parsing과 locale.h
+locale.h의 수학 함수와 현지화
+locale.h와 정규 표현식
+locale.h 함수의 오버로딩
+문자열 토크나이징과 locale.h
+locale.h와 단위 변환
+locale.h를 활용한 다국어 UI
+locale.h와 소프트웨어 로케일 설정
+시스템 로케일 및 locale.h
+locale.h의 언어별 형식 규칙
+locale.h와 사전순 정렬
+locale.h를 사용한 지역화 문자열 출력
+locale.h와 동적 현지화
+locale.h를 이용한 언어 자원 관리
+locale.h와 다국어 문자열 검색
+locale.h의 통화 변환 함수
+locale.h와 신호 처리

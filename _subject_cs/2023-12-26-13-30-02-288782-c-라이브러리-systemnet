@@ -1,0 +1,50 @@
+System.Net 네임스페이스 소개
+System.Net.Http 네임스페이스
+System.Net.Sockets 네임스페이스
+System.Net.WebSockets 네임스페이스
+System.Net.Mail 네임스페이스
+System.Net.NetworkInformation 네임스페이스
+System.Net.Security 네임스페이스
+System.Net.WebClient 클래스
+System.Net.WebRequest 클래스
+System.Net.HttpWebRequest 클래스
+System.Net.HttpWebResponse 클래스
+System.Net.Sockets.Socket 클래스
+System.Net.WebSockets.WebSocket 클래스
+System.Net.Mail.SmtpClient 클래스
+System.Net.NetworkInformation.Ping 클래스
+System.Net.NetworkInformation.NetworkInterface 클래스
+System.Net.Security.SslStream 클래스
+System.Net.WebClient의 다운로드 메서드
+System.Net.WebClient의 업로드 메서드
+System.Net.WebRequest의 create 메서드
+System.Net.HttpWebRequest의 AddRange 메서드
+System.Net.HttpWebResponse의 StatusCode 속성
+System.Net.Sockets.Socket의 Connect 메서드
+System.Net.WebSockets.WebSocket의 SendAsync 메서드
+System.Net.Mail.SmtpClient의 Send 메서드
+System.Net.NetworkInformation.Ping의 Send 메서드
+System.Net.NetworkInformation.NetworkInterface의 GetAllNetworkInterfaces 메서드
+System.Net.Security.SslStream의 AuthenticateAsClient 메서드
+System.Net.WebClient의 DownloadString 메서드
+System.Net.WebClient의 UploadString 메서드
+System.Net.WebRequest의 GetResponse 메서드
+System.Net.HttpWebRequest의 ContentType 속성
+System.Net.HttpWebResponse의 Headers 속성
+System.Net.Sockets.Socket의 Receive 메서드
+System.Net.WebSockets.WebSocket의 ReceiveAsync 메서드
+System.Net.Mail.SmtpClient의 EnableSsl 속성
+System.Net.NetworkInformation.Ping의 SendPingAsync 메서드
+System.Net.NetworkInformation.NetworkInterface의 Description 속성
+System.Net.Security.SslStream의 Read 메서드
+System.Net.WebClient의 DownloadData 메서드
+System.Net.WebClient의 UploadData 메서드
+System.Net.WebRequest의 GetRequestStream 메서드
+System.Net.HttpWebRequest의 Timeout 속성
+System.Net.HttpWebResponse의 ProtocolVersion 속성
+System.Net.Sockets.Socket의 RemoteEndPoint 속성
+System.Net.WebSockets.WebSocket의 CloseAsync 메서드
+System.Net.Mail.SmtpClient의 UseDefaultCredentials 속성
+System.Net.NetworkInformation.Ping의 SendAsync 메서드
+System.Net.NetworkInformation.NetworkInterface의 IsReceiveOnly 속성
+System.Net.Security.SslStream의 Write 메서드
